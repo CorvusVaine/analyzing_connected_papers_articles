@@ -1,0 +1,389 @@
+@article{50bc1202b413b924204fbde8897b2ff922b73d36,
+title = {GMEmbeddings: An R Package to Apply Embedding Techniques to Microbiome Data},
+year = {2022},
+url = {https://www.semanticscholar.org/paper/50bc1202b413b924204fbde8897b2ff922b73d36},
+abstract = {Large-scale microbiome studies investigating disease-inducing microbial roles base their findings on differences between microbial count data in contrasting environments (e.g., stool samples between cases and controls). These microbiome survey studies are often impeded by small sample sizes and database bias. Combining data from multiple survey studies often results in obvious batch effects, even when DNA preparation and sequencing methods are identical. Relatedly, predictive models trained on one microbial DNA dataset often do not generalize to outside datasets. In this study, we address these limitations by applying word embedding algorithms (GloVe) and PCA transformation to ASV data from the American Gut Project and generating translation matrices that can be applied to any 16S rRNA V4 region gut microbiome sequencing study. Because these approaches contextualize microbial occurrences in a larger dataset while reducing dimensionality of the feature space, they can improve generalization of predictive models that predict host phenotype from stool associated gut microbiota. The GMEmbeddings R package contains GloVe and PCA embedding transformation matrices at 50, 100 and 250 dimensions, each learned using ∼15,000 samples from the American Gut Project. It currently supports the alignment, matching, and matrix multiplication to allow users to transform their V4 16S rRNA data into these embedding spaces. We show how to correlate the properties in the new embedding space to KEGG functional pathways for biological interpretation of results. Lastly, we provide benchmarking on six gut microbiome datasets describing three phenotypes to demonstrate the ability of embedding-based microbiome classifiers to generalize to independent datasets. Future iterations of GMEmbeddings will include embedding transformation matrices for other biological systems. Available at: https://github.com/MaudeDavidLab/GMEmbeddings.},
+author = {Christine A. Tataru and Austin Eaton and M. David},
+doi = {10.3389/fbinf.2022.828703},
+}
+
+@article{c88f041be39dc05b3698b8d3162a4ef4f7922fb4,
+title = {Decoding the language of microbiomes using word-embedding techniques, and applications in inflammatory bowel disease},
+year = {2020},
+url = {https://www.semanticscholar.org/paper/c88f041be39dc05b3698b8d3162a4ef4f7922fb4},
+abstract = {Microbiomes are complex ecological systems that play crucial roles in understanding natural phenomena from human disease to climate change. Especially in human gut microbiome studies, where collecting clinical samples can be arduous, the number of taxa considered in any one study often exceeds the number of samples ten to one hundred-fold. This discrepancy decreases the power of studies to identify meaningful differences between samples, increases the likelihood of false positive results, and subsequently limits reproducibility. Despite the vast collections of microbiome data already available, biome-specific patterns of microbial structure are not currently leveraged to inform studies. Here, we derive microbiome-level properties by applying an embedding algorithm to quantify taxon co-occurrence patterns in over 18,000 samples from the American Gut Project (AGP) microbiome crowdsourcing effort. We then compare the predictive power of models trained using properties, normalized taxonomic count data, and another commonly used dimensionality reduction method, Principal Component Analysis in categorizing samples from individuals with inflammatory bowel disease (IBD) and healthy controls. We show that predictive models trained using property data are the most accurate, robust, and generalizable, and that property-based models can be trained on one dataset and deployed on another with positive results. Furthermore, we find that properties correlate significantly with known metabolic pathways. Using these properties, we are able to extract known and new bacterial metabolic pathways associated with inflammatory bowel disease across two completely independent studies. By providing a set of pre-trained embeddings, we allow any V4 16S amplicon study to apply the publicly informed properties to increase the statistical power, reproducibility, and generalizability of analysis.},
+author = {Christine A. Tataru and M. David},
+doi = {10.1371/journal.pcbi.1007859},
+pmid = {32365061},
+}
+
+@article{98b61a3325eb039a772ae607e2db80054f02d8b2,
+title = {Multi-kingdom microbiota analyses identify bacterial–fungal interactions and biomarkers of colorectal cancer across cohorts},
+year = {2022},
+url = {https://www.semanticscholar.org/paper/98b61a3325eb039a772ae607e2db80054f02d8b2},
+abstract = {Despite recent progress in our understanding of the association between the gut microbiome and colorectal cancer (CRC), multi-kingdom gut microbiome dysbiosis in CRC across cohorts is unexplored. We investigated four-kingdom microbiota alterations using CRC metagenomic datasets of 1,368 samples from 8 distinct geographical cohorts. Integrated analysis identified 20 archaeal, 27 bacterial, 20 fungal and 21 viral species for each single-kingdom diagnostic model. However, our data revealed superior diagnostic accuracy for models constructed with multi-kingdom markers, in particular the addition of fungal species. Specifically, 16 multi-kingdom markers including 11 bacterial, 4 fungal and 1 archaeal feature, achieved good performance in diagnosing patients with CRC (area under the receiver operating characteristic curve (AUROC) = 0.83) and maintained accuracy across 3 independent cohorts. Coabundance analysis of the ecological network revealed associations between bacterial and fungal species, such as Talaromyces islandicus and Clostridium saccharobutylicum. Using metagenome shotgun sequencing data, the predictive power of the microbial functional potential was explored and elevated D-amino acid metabolism and butanoate metabolism were observed in CRC. Interestingly, the diagnostic model based on functional EggNOG genes achieved high accuracy (AUROC = 0.86). Collectively, our findings uncovered CRC-associated microbiota common across cohorts and demonstrate the applicability of multi-kingdom and functional markers as CRC diagnostic tools and, potentially, as therapeutic targets for the treatment of CRC.},
+author = {Ningning Liu and Na Jiao and Jingcong Tan and Ziliang Wang and Dingfeng Wu and An-jun Wang and Jie Chen and Liwen Tao and Chenfen Zhou and W. Fang and I. Cheong and W. Pan and W. Liao and Z. Kozlakidis and C. Heeschen and G. Moore and Lixin Zhu and Xingdong Chen and Guoqing Zhang and Ruixin Zhu and Hui Wang},
+doi = {10.1038/s41564-021-01030-7},
+pmid = {35087227},
+}
+
+@article{f3fbc1a6fe546948e6d4373ccaf46049356b53d0,
+title = {Multi-omic meta-analysis identifies functional signatures of airway microbiome in chronic obstructive pulmonary disease},
+year = {2020},
+url = {https://www.semanticscholar.org/paper/f3fbc1a6fe546948e6d4373ccaf46049356b53d0},
+abstract = {The interaction between airway microbiome and host in chronic obstructive pulmonary disease (COPD) is poorly understood. Here we used a multi-omic meta-analysis approach to characterize the functional signature of airway microbiome in COPD. We retrieved all public COPD sputum microbiome datasets, totaling 1640 samples from 16S rRNA gene datasets and 26 samples from metagenomic datasets from across the world. We identified microbial taxonomic shifts using random effect meta-analysis and established a global classifier for COPD using 12 microbial genera. We inferred the metabolic potentials for the airway microbiome, established their molecular links to host targets, and explored their effects in a separate meta-analysis on 1340 public human airway transcriptome samples for COPD. 29.6% of differentially expressed human pathways were predicted to be targeted by microbiome metabolism. For inferred metabolite–host interactions, the flux of disease-modifying metabolites as predicted from host transcriptome was generally concordant with their predicted metabolic turnover in microbiome, suggesting a synergistic response between microbiome and host in COPD. The meta-analysis results were further validated by a pilot multi-omic study on 18 COPD patients and 10 controls, in which airway metagenome, metabolome, and host transcriptome were simultaneously characterized. 69.9% of the proposed “microbiome-metabolite–host” interaction links were validated in the independent multi-omic data. Butyrate, homocysteine, and palmitate were the microbial metabolites showing strongest interactions with COPD-associated host genes. Our meta-analysis uncovered functional properties of airway microbiome that interacted with COPD host gene signatures, and demonstrated the possibility of leveraging public multi-omic data to interrogate disease biology.},
+author = {Zhang Wang and Yuqiong Yang and Zhengzheng Yan and Hai-yue Liu and Boxuan Chen and Zhenyu Liang and Fengyan Wang and B. Miller and R. Tal-Singer and X. Yi and Jintian Li and M. Stampfli and Hongwei Zhou and C. Brightling and James R. Brown and Martin Wu and Rongchang Chen and Wensheng Shu},
+doi = {10.1038/s41396-020-0727-y},
+pmid = {32719402},
+}
+
+@article{ec82f4bb1f57e8202920d97d83fe495c86d283c7,
+title = {Evaluation of Compatibility of 16S rRNA V3V4 and V4 Amplicon Libraries for Clinical Microbiome Profiling},
+year = {2020},
+url = {https://www.semanticscholar.org/paper/ec82f4bb1f57e8202920d97d83fe495c86d283c7},
+abstract = {Sequencing of the 16S rRNA gene by Illumina next-generation sequencing is broadly used in microbiome studies. Different hypervariable regions of the 16S rRNA gene, V3V4 (amplified with primers 341F–805R) or V4 (V4O; primers 515F–806R), are selected, depending on the targeted resolution. However, in population-based clinical studies, combining V3V4 and V4 data from different studies for a meta-analysis is challenging. Reads generated by short-read (150-bp) high-throughput sequencing platforms do not fully recover the V4 region read-length. Here, we evaluated the compatibility of 16S rRNA V3V4 and V4 amplicons for microbiome profiling. We compared taxonomic compositions obtained by the analysis of V3V4 and V4 amplicons, and V4 fragments trimmed from V3V4 amplicons. We also evaluated an alternative V4 region (V4N; primers 519F–798R) designed for efficient stitching with 150-bp paired-end sequencing. First, we simulated a global investigation of environmental prokaryotes in silico. This revealed that V4O primers recovered the highest proportion of fragments (81.7%) and most phyla, including archaea. Empirical sequencing of standard (mock) and human fecal samples revealed biased patterns of each primer that were similar to the ones determined by in silico simulation. Further, for human fecal microbiome profiling, the between-sample variance was greater than the systematic bias of each primer. The use of trimmed V4 fragments and single-end amplicons resulted in the same systematic bias. In conclusion, paired-end V4O sequencing yielded the most accurate data for both, simulation and mock community sequencing; the V4O amplicons were compatible with trimmed V4 sequences for microbiome profiling. IMPORTANCE Next-generation sequencing of the 16S rRNA gene is a commonly used approach for clinical microbiome studies. Different amplicons of the 16S rRNA hypervariable regions are used in different studies, which creates incompatible sequence features when comparing and integrating data among studies by using 16S denoising pipelines. Here we compared the type of data and coverage obtained when different 16S rRNA amplicons were analyzed. In silico and empirical analyses of the human fecal microbiome revealed that the V3V4 amplicons are compatible with V4 amplicons after trimming up to the same region. These observations demonstrate that reconciling the compatibility of clinical microbiome data from different studies improve not only the sample size but also the confidence of the hypothesis tested.},
+author = {Po-Yu Liu and Wei-Kai Wu and Chieh-Chang Chen and Suraphan Panyod and L. Sheen and Ming-Shiang Wu},
+doi = {10.1101/2020.08.18.256818},
+}
+
+@article{1c1d6fa4dfcd11f793eeb14b4b23217f5f468cad,
+title = {Microbiome meta-analysis and cross-disease comparison enabled by the SIAMCAT machine-learning toolbox},
+year = {2020},
+url = {https://www.semanticscholar.org/paper/1c1d6fa4dfcd11f793eeb14b4b23217f5f468cad},
+abstract = {The human microbiome is increasingly mined for diagnostic and therapeutic biomarkers using machine learning (ML). However, metagenomics-specific software is scarce and overoptimistic evaluation and limited cross-study generalization are prevailing issues. To address these, we developed SIAMCAT, a versatile R toolbox for ML-based comparative metagenomics. We demonstrate its capabilities in a meta-analysis of fecal metagenomic studies (10,803 samples). When naively transferred across studies, ML models lost accuracy and disease specificity, which could however be resolved by a novel training set augmentation strategy. This revealed some biomarkers to be disease-specific, others shared across multiple conditions. SIAMCAT is freely available from siamcat.embl.de.},
+author = {J. Wirbel and Konrad Zych and Morgan Essex and N. Karcher and Ece Kartal and G. Salazar and P. Bork and S. Sunagawa and G. Zeller},
+doi = {10.1101/2020.02.06.931808},
+}
+
+@article{6343cf56e1189de4cdc0e9f4e283992144531668,
+title = {From Culture to High-Throughput Sequencing and Beyond: A Layperson's Guide to the "Omics" and Diagnostic Potential of the Microbiome.},
+year = {2017},
+url = {https://www.semanticscholar.org/paper/6343cf56e1189de4cdc0e9f4e283992144531668},
+abstract = {Detailed knowledge of the community of organisms in the gut has become possible in recent years because of the development of culture-independent methods. Largely based on latest DNA sequencing platforms, it is now possible to establish the composition of the microbiota and the repertoire of biochemical functions it encodes. Variations in either or both of these parameters have been linked to intestinal and extraintestinal disease. This article summarizes how these methods are applied, with special reference to gastroenterology, and describes the achievements and future potential of microbiota analysis as a diagnostic tool.},
+author = {P. O’Toole and B. Flemer},
+doi = {10.1016/j.gtc.2016.09.003},
+pmid = {28164855},
+}
+
+@article{b3702924438716ee1b7ec5f4f8573968326ba429,
+title = {Microbiome Search Engine 2: a Platform for Taxonomic and Functional Search of Global Microbiomes on the Whole-Microbiome Level},
+year = {2021},
+url = {https://www.semanticscholar.org/paper/b3702924438716ee1b7ec5f4f8573968326ba429},
+abstract = {A search-based strategy is useful for large-scale mining of microbiome data sets, such as a bird’s-eye view of the microbiome data space and disease diagnosis via microbiome big data. Here, we introduce Microbiome Search Engine 2 (MSE 2), a microbiome database platform for searching query microbiomes against the existing microbiome data sets on the basis of their similarity in taxonomic structure or functional profile. ABSTRACT Metagenomic data sets from diverse environments have been growing rapidly. To ensure accessibility and reusability, tools that quickly and informatively correlate new microbiomes with existing ones are in demand. Here, we introduce Microbiome Search Engine 2 (MSE 2), a microbiome database platform for searching query microbiomes in the global metagenome data space based on the taxonomic or functional similarity of a whole microbiome to those in the database. MSE 2 consists of (i) a well-organized and regularly updated microbiome database that currently contains over 250,000 metagenomic shotgun and 16S rRNA gene amplicon samples associated with unified metadata collected from 798 studies, (ii) an enhanced search engine that enables real-time and fast (<0.5 s per query) searches against the entire database for best-matched microbiomes using overall taxonomic or functional profiles, and (iii) a Web-based graphical user interface for user-friendly searching, data browsing, and tutoring. MSE 2 is freely accessible via http://mse.ac.cn. For standalone searches of customized microbiome databases, the kernel of the MSE 2 search engine is provided at GitHub (https://github.com/qibebt-bioinfo/meta-storms). IMPORTANCE A search-based strategy is useful for large-scale mining of microbiome data sets, such as a bird’s-eye view of the microbiome data space and disease diagnosis via microbiome big data. Here, we introduce Microbiome Search Engine 2 (MSE 2), a microbiome database platform for searching query microbiomes against the existing microbiome data sets on the basis of their similarity in taxonomic structure or functional profile. Key improvements include database extension, data compatibility, a search engine kernel, and a user interface. The new ability to search the microbiome space via functional similarity greatly expands the scope of search-based mining of the microbiome big data.},
+author = {Gongchao Jing and Lu Liu and Zengbin Wang and Yufeng Zhang and Li Qian and Chunxiao Gao and Meng Zhang and Min Li and Zhenkun Zhang and Xiaohan Liu and Jian Xu and Xiaoquan Su},
+doi = {10.1128/mSystems.00943-20},
+pmid = {33468706},
+}
+
+@article{3ebdb4df7667ea89dbee3dfe9b9ace3a2afed3f0,
+title = {Revealing General Patterns of Microbiomes That Transcend Systems: Potential and Challenges of Deep Transfer Learning},
+year = {2022},
+url = {https://www.semanticscholar.org/paper/3ebdb4df7667ea89dbee3dfe9b9ace3a2afed3f0},
+abstract = {A growing body of research has established that the microbiome can mediate the dynamics and functional capacities of diverse biological systems. Yet, we understand little about what governs the response of these microbial communities to host or environmental changes. ABSTRACT A growing body of research has established that the microbiome can mediate the dynamics and functional capacities of diverse biological systems. Yet, we understand little about what governs the response of these microbial communities to host or environmental changes. Most efforts to model microbiomes focus on defining the relationships between the microbiome, host, and environmental features within a specified study system and therefore fail to capture those that may be evident across multiple systems. In parallel with these developments in microbiome research, computer scientists have developed a variety of machine learning tools that can identify subtle, but informative, patterns from complex data. Here, we recommend using deep transfer learning to resolve microbiome patterns that transcend study systems. By leveraging diverse public data sets in an unsupervised way, such models can learn contextual relationships between features and build on those patterns to perform subsequent tasks (e.g., classification) within specific biological contexts.},
+author = {M. David and Christine A. Tataru and Quintin Pope and L. Baker and Mary K. English and Hannah E. Epstein and Austin Hammer and Michael Kent and Michael J Sieler and Ryan S. Mueller and T. Sharpton and F. Tomas and R. V. Thurber and Xiaoli Z. Fernc},
+doi = {10.1128/msystems.01058-21},
+pmid = {35040699},
+}
+
+@article{1f3cdb05225ee953061cf4f6c381b02d03c2fd3a,
+title = {Decoding the Language of Microbiomes: Leveraging Patterns in 16S Public Data using Word-Embedding Techniques and Applications in Inflammatory Bowel Disease},
+year = {2019},
+url = {https://www.semanticscholar.org/paper/1f3cdb05225ee953061cf4f6c381b02d03c2fd3a},
+abstract = {Microbiomes are complex ecological systems that play crucial roles in understanding natural phenomena from human disease to climate change. Especially in human gut microbiome studies, where collecting clinical samples can be arduous, the number of taxa considered in any one study often exceeds the number of samples ten to one hundred-fold. This discrepancy decreases the power of studies to identify meaningful differences between samples, increases the likelihood of false positive results, and subsequently limits reproducibility. Despite the vast collections of microbiome data already available, biome-specific patterns of microbial structure are not currently leveraged to inform studies. Instead, most microbiome survey studies focus on differential abundance testing per taxa in pursuit of specific biomarkers for a given phenotype. This methodology assumes differences in individual species, genera, or families can be used to distinguish between microbial communities and ignores community-level response. In this paper, we propose to leverage public microbiome databases to shift the analysis paradigm from a focus on taxonomic counts to a focus on comprehensive properties that more completely characterize microbial community members’ function and environmental relationships. We learn these properties by applying an embedding algorithm to quantify taxa co-occurrence patterns in over 18,000 samples from the American Gut Project (AGP) microbiome crowdsourcing effort. The resulting set of embeddings transforms human gut microbiome data from thousands of taxa counts to a latent variable landscape of only one hundred “properties”, or contextual relationships. We then compare the predictive power of models trained using properties, normalized taxonomic count data, and another commonly used dimensionality reduction method, Principal Component Analysis in categorizing samples from individuals with inflammatory bowel disease (IBD) and healthy controls. We show that predictive models trained using property data are the most accurate, robust, and generalizable, and that property-based models can be trained on one dataset and deployed on another with positive results. Furthermore, we find that these properties can be interpreted in the context of current knowledge; properties correlate significantly with known metabolic pathways, and distances between taxa in “property space” roughly correlate with their phylogenetic distances. Using these properties, we are able to extract known and new bacterial metabolic pathways associated with inflammatory bowel disease across two completely independent studies. More broadly, this paper explores a reframing of the microbiome analysis mindset, from taxonomic counts to comprehensive community-level properties. By providing a set of pre-trained embeddings, we allow any V4 16S amplicon study to leverage and apply the publicly informed properties presented to increase the statistical power, reproducibility, and generalizability of analysis.},
+author = {Christine A. Tataru and M. David},
+doi = {10.1101/748152},
+}
+
+@article{6c1c4769d8c2b016d262324674f47af9f5e3fcac,
+title = {Kernel principal components based cascade forest towards disease identification with human microbiota},
+year = {2020},
+url = {https://www.semanticscholar.org/paper/6c1c4769d8c2b016d262324674f47af9f5e3fcac},
+abstract = {
+ Numerous pieces of clinical evidence have shown that many phenotypic traits of human disease are related to their gut microbiome. Through supervised classification, it is feasible to determine the human disease states by revealing the intestinal microbiota compositional information. However, the abundance matrix of microbiome data is so sparse, an interpretable deep model is crucial to further represent and mine the data for expansion, such as the deep forest. What's more, overfitting can still exist in the original deep forest model when dealing with such “large p, small n” biology data. Feature reduction is considered to improve the ensemble forest model especially towards the disease identification in the human microbiota. In this work, we propose the kernel principal components based cascade forest method, so-called KPCCF, to classify the disease states of patients by using taxonomic profiles of the microbiome at the family level. In detail, the kernel principal components analysis method is first used to reduce the original dimension of human microbiota datasets. Besides, the processed data is fed into the cascade forest to preliminarily discriminate the disease state of the samples. Thus, the proposed KPCCF algorithm can represent the small-scale and high-dimension human microbiota datasets with the sparse feature matrix. Systematic comparison experiments demonstrate that our method consistently outperforms the state-of-the-art methods with the comparative study on 4 datasets. Additionally, compared to other dimensionality reduction methods, kernel principal components analysis method is more suitable for microbiota datasets.},
+author = {Jiayu Zhou and Yanqing Ye and Jiang Jiang},
+doi = {10.1186/s12911-021-01705-5},
+pmid = {34949186},
+}
+
+@article{8ae22da666a1e41b0b1c1712b3b34deb49e0eefa,
+title = {Removal of rare amplicon sequence variants from 16S rRNA gene sequence surveys biases the interpretation of community structure data},
+year = {2020},
+url = {https://www.semanticscholar.org/paper/8ae22da666a1e41b0b1c1712b3b34deb49e0eefa},
+abstract = {Methods for remediating PCR and sequencing artifacts in 16S rRNA gene sequence collections are in continuous development and have significant ramifications on the inferences that can be drawn. A common approach is to remove rare amplcon sequence variants (ASVs) from datasets. But, the definition of rarity is generally selected without regard for the number of sequences in the samples or the variation in sequencing depth across samples within a study. I analyzed the impact of removing rare ASVs on metrics of alpha and beta diversity using samples collected across 12 published datasets. Removal of rare ASVs significantly decreased the number of ASVs and operational taxonomic units as well as their diversity. Furthermore, their removal increased the variation in community structure between samples. When simulating a known effect size, removal of rare ASVs reduced the power to detect the effect relative to not removing rare ASVs. Removal of rare ASVs did not affect the false detection rate when samples were randomized to simulate a null model. However, the false detection rate increased when rare ASVs were removed using a null distribution and assignment of samples to simulated treatment groups according to their sequencing depth. The false detection rate did not vary when rare ASVs were retained. This analysis demonstrates the problems inherent in removing rare ASVs. Researchers are encouraged to retain rare ASVs, to select approaches that minimize PCR and sequencing artifacts, and to use rarefaction to control for uneven sequencing effort. Importance Removing rare amplicon sequence variants (ASVs) from 16S rRNA gene sequence collections is an approach that has grown in popularity for limiting PCR and sequencing artifacts. Yet, it is unclear what impact an abundance-based filter has on downstream analyses. To investigate the effects of removing rare ASVs, I analyzed the community distributions found in the samples of 12 published datasets. Analysis of these data and simulations based on them showed that removal of rare ASVs distorts the representation of microbial communities. This has the effect of artificially making it more difficult to detect differences between treatment groups. Also of concern was the observation that if sequencing depth is confounded with the treatment, then the probability of falsely detecting a difference between the treatment groups increased with the removal of rare ASVs. The practice of removing rare ASVs should stop, lest researcher adversely affect the interpretation of their data.},
+author = {P. Schloss},
+doi = {10.1101/2020.12.11.422279},
+}
+
+@article{fcdc7ac6ea7b20f03ab2b016eda0cc566db82d82,
+title = {Knomics-Biota - a system for exploratory analysis of human gut microbiota data},
+year = {2018},
+url = {https://www.semanticscholar.org/paper/fcdc7ac6ea7b20f03ab2b016eda0cc566db82d82},
+abstract = {Summary Metagenomic surveys of human microbiota are becoming increasingly widespread in academic research as well as in food and pharmaceutical industries and clinical context. Intuitive tools for exploration of experimental data are of high interest to researchers. Knomics-Biota is a Web-based resource for exploratory analysis of human gut metagenomes. Users can generate analytical reports that correspond to common experimental schemes (like case-control study or paired comparison). Statistical analysis and visualizations of microbiota composition are provided in association with the external factors and in the context of thousands of publicly available datasets. Availability and Implementation The Web-service is available at https://biota.knomics.ru. Contact anna.popenko@knomics.ru or a.tyakht@gmail.com. Supplementary information Supplementary figures are available at Bioinformatics online.},
+author = {Daria Efimova and A. Tyakht and A. Popenko and A. Vasilyev and I. Altukhov and N. Dovidchenko and Vera Odintsova and N. Klimenko and Robert Loshkarev and M. Pashkova and Anna Elizarova and Viktoriya Voroshilova and Sergei Slavskii and Y. Pekov and E. Filippova and T. Shashkova and E. Levin and D. Alexeev},
+doi = {10.1186/s13040-018-0187-3},
+pmid = {30450127},
+}
+
+@article{f1ce6c88b35f03de25efaacc12d928a5725c1cdd,
+title = {Host phenotype classification from human microbiome data is mainly driven by the presence of microbial taxa},
+year = {2022},
+url = {https://www.semanticscholar.org/paper/f1ce6c88b35f03de25efaacc12d928a5725c1cdd},
+abstract = {Machine learning-based classification approaches are widely used to predict host phenotypes from microbiome data. Classifiers are typically employed by considering operational taxonomic units or relative abundance profiles as input features. Such types of data are intrinsically sparse, which opens the opportunity to make predictions from the presence/absence rather than the relative abundance of microbial taxa. This also poses the question whether it is the presence rather than the abundance of particular taxa to be relevant for discrimination purposes, an aspect that has been so far overlooked in the literature. In this paper, we aim at filling this gap by performing a meta-analysis on 4,128 publicly available metagenomes associated with multiple case-control studies. At species-level taxonomic resolution, we show that it is the presence rather than the relative abundance of specific microbial taxa to be important when building classification models. Such findings are robust to the choice of the classifier and confirmed by statistical tests applied to identifying differentially abundant/present taxa. Results are further confirmed at coarser taxonomic resolutions and validated on 4,026 additional 16S rRNA samples coming from 30 public case-control studies.},
+author = {Renato Giliberti and Sara Cavaliere and I. E. Mauriello and D. Ercolini and Edoardo Pasolli},
+doi = {10.1371/journal.pcbi.1010066},
+pmid = {35446845},
+}
+
+@article{dc4c839c244048a351e508359379c85efb91b6b0,
+title = {Transfer learning improves antibiotic resistance class prediction},
+year = {2020},
+url = {https://www.semanticscholar.org/paper/dc4c839c244048a351e508359379c85efb91b6b0},
+abstract = {Motivation Antibiotic resistance is a growing public health problem, which affects millions of people worldwide, and if left unchecked is expected to upend many aspects of healthcare as it is practiced today. Identifying the type of antibiotic resistant genes in genome and metagenomic sample is of utmost importance in the prevention, diagnosis, and treatment of infections. Today there are multiple tools available that predict antibiotic resistance class from DNA and protein sequences, yet there is a lack of benchmarks on the performances of these tools. Results We have developed a dataset that is curated from 15 available databases, and annotated with their antibiotic class labels. We also developed a transfer learning approach with neural networks, TRAC, that outperforms existing antiobiotic resistance prediction tools. While TRAC provides the current state-of-the-art performance, we hope our newly developed dataset will also provide the community with a much needed standardized dataset to develop novel methods that can predict antibiotic resistance class with superior prediction performance. Availability TRAC is available at github (https://github.com/nafizh/TRAC) and the datasets are available at figshare (https://doi.org/10.6084/m9.figshare.11413302). Contact mhamid@mgh.harvard.edu, idoerg@iastate.edu},
+author = {Md-Nafiz Hamid and I. Friedberg},
+doi = {10.1101/2020.04.17.047316},
+}
+
+@article{43b4030e7abb27eb7f64f12a16bd090c1d4bb9d1,
+title = {Soil enzymes as indicators of soil function: A step toward greater realism in microbial ecological modeling},
+year = {2021},
+url = {https://www.semanticscholar.org/paper/43b4030e7abb27eb7f64f12a16bd090c1d4bb9d1},
+abstract = {Soil carbon (C) and nitrogen (N) cycles and their complex responses to environmental changes have received increasing attention. However, large uncertainties in model predictions remain, partially due to the lack of explicit representation and parameterization of microbial processes. One great challenge is to effectively integrate rich microbial functional traits into ecosystem modeling for better predictions. Here, using soil enzymes as indicators of soil function, we developed a competitive dynamic enzyme allocation scheme and detailed enzyme‐mediated soil inorganic N processes in the Microbial‐ENzyme Decomposition (MEND) model. We conducted a rigorous calibration and validation of MEND with diverse soil C‐N fluxes, microbial C:N ratios, and functional gene abundances from a 12‐year CO2 × N grassland experiment (BioCON) in Minnesota, USA. In addition to accurately simulating soil CO2 fluxes and multiple N variables, the model correctly predicted microbial C:N ratios and their negative response to enriched N supply. Model validation further showed that, compared to the changes in simulated enzyme concentrations and decomposition rates, the changes in simulated activities of eight C‐N‐associated enzymes were better explained by the measured gene abundances in responses to elevated atmospheric CO2 concentration. Our results demonstrated that using enzymes as indicators of soil function and validating model predictions with functional gene abundances in ecosystem modeling can provide a basis for testing hypotheses about microbially mediated biogeochemical processes in response to environmental changes. Further development and applications of the modeling framework presented here will enable microbial ecologists to address ecosystem‐level questions beyond empirical observations, toward more predictive understanding, an ultimate goal of microbial ecology.},
+author = {Gangsheng Wang and Qun Gao and Yunfeng Yang and S. Hobbie and P. Reich and Jizhong Zhou},
+doi = {10.1111/gcb.16036},
+pmid = {34905647},
+}
+
+@article{704a1a4ff7b6fed65b0c49ef87b6845d60755fa7,
+title = {TwinBERT: Distilling Knowledge to Twin-Structured BERT Models for Efficient Retrieval},
+year = {2020},
+url = {https://www.semanticscholar.org/paper/704a1a4ff7b6fed65b0c49ef87b6845d60755fa7},
+abstract = {Pre-trained language models like BERT have achieved great success in a wide variety of NLP tasks, while the superior performance comes with high demand in computational resources, which hinders the application in low-latency IR systems. We present TwinBERT model for effective and efficient retrieval, which has twin-structured BERT-like encoders to represent query and document respectively and a crossing layer to combine the embeddings and produce a similarity score. Different from BERT, where the two input sentences are concatenated and encoded together, TwinBERT decouples them during encoding and produces the embeddings for query and document independently, which allows document embeddings to be pre-computed offline and cached in memory. Thereupon, the computation left for run-time is from the query encoding and query-document crossing only. This single change can save large amount of computation time and resources, and therefore significantly improve serving efficiency. Moreover, a few well-designed network layers and training strategies are proposed to further reduce computational cost while at the same time keep the performance as remarkable as BERT model. Lastly, we develop two versions of TwinBERT for retrieval and relevance tasks correspondingly, and both of them achieve close or on-par performance to BERT-Base model. 
+The model was trained following the teacher-student framework and evaluated with data from one of the major search engines. Experimental results showed that the inference time was significantly reduced and was firstly controlled around 20ms on CPUs while at the same time the performance gain from fine-tuned BERT-Base model was mostly retained. Integration of the models into production systems also demonstrated remarkable improvements on relevance metrics with negligible influence on latency.},
+author = {Wenhao Lu and Jian Jiao and Ruofei Zhang},
+arxivid = {2002.06275},
+}
+
+@article{c11c4c40933f23d147f20c813d7d5fc90ce9c862,
+title = {Using Autoencoders for Predicting Latent Microbiome Community Shifts Responding to Dietary Changes},
+year = {2019},
+url = {https://www.semanticscholar.org/paper/c11c4c40933f23d147f20c813d7d5fc90ce9c862},
+abstract = {Human gut microbiome responds rapidly to diet and has important consequences to host health such as obesity and other metabolic disease. Computational tools of modeling microbiome dynamics responding to diet are import in facilitating the development of effective prebiotic and probiotics for disease prevention and treatment. In this work, we present a deep neural network to predict gut microbiome responding to diet change. Our model uses an autoencoder to capture intrinsic structure in data and an artificial neural network to model the nonlinear dynamics of microbiome. Our evaluation using three time-course datasets of murine gut microbiome shows promising results.},
+author = {Derek Reiman and Yang Dai},
+doi = {10.1109/BIBM47256.2019.8983124},
+}
+
+@article{332193875476bb4fbb57695e8f519de5180190f5,
+title = {Learning Universal Representations from Word to Sentence},
+year = {2020},
+url = {https://www.semanticscholar.org/paper/332193875476bb4fbb57695e8f519de5180190f5},
+abstract = {Despite the well-developed cut-edge representation learning for language, most language representation models usually focus on specific level of linguistic unit, which cause great inconvenience when being confronted with handling multiple layers of linguistic objects in a unified way. Thus this work introduces and explores the universal representation learning, i.e., embeddings of different levels of linguistic unit in a uniform vector space through a task-independent evaluation. We present our approach of constructing analogy datasets in terms of words, phrases and sentences and experiment with multiple representation models to examine geometric properties of the learned vector space. Then we empirically verify that well pre-trained Transformer models incorporated with appropriate training settings may effectively yield universal representation. Especially, our implementation of fine-tuning ALBERT on NLI and PPDB datasets achieves the highest accuracy on analogy tasks in different language levels. Further experiments on the insurance FAQ task show effectiveness of universal representation models in real-world applications.},
+author = {Yian Li and Hai Zhao},
+arxivid = {2009.04656},
+}
+
+@article{c9550f0d1940ee1adf1549c9a0d699ef896dbefd,
+title = {StableMoE: Stable Routing Strategy for Mixture of Experts},
+year = {2022},
+url = {https://www.semanticscholar.org/paper/c9550f0d1940ee1adf1549c9a0d699ef896dbefd},
+abstract = {The Mixture-of-Experts (MoE) technique can scale up the model size of Transformers with an affordable computational overhead. We point out that existing learning-to-route MoE methods suffer from the routing fluctuation issue, i.e., the target expert of the same input may change along with training, but only one expert will be activated for the input during inference. The routing fluctuation tends to harm sample efficiency because the same input updates different experts but only one is finally used. In this paper, we propose StableMoE with two training stages to address the routing fluctuation problem. In the first training stage, we learn a balanced and cohesive routing strategy and distill it into a lightweight router decoupled from the backbone model. In the second training stage, we utilize the distilled router to determine the token-to-expert assignment and freeze it for a stable routing strategy. We validate our method on language modeling and multilingual machine translation. The results show that StableMoE outperforms existing MoE methods in terms of both convergence speed and performance.},
+author = {Damai Dai and Li Dong and Shuming Ma and Bo Zheng and Zhifang Sui and Baobao Chang and Furu Wei},
+doi = {10.48550/arXiv.2204.08396},
+arxivid = {2204.08396},
+}
+
+@article{32d281a1e7a0a2d4e2b3f34e0f71780c987e1374,
+title = {DeCLUTR: Deep Contrastive Learning for Unsupervised Textual Representations},
+year = {2020},
+url = {https://www.semanticscholar.org/paper/32d281a1e7a0a2d4e2b3f34e0f71780c987e1374},
+abstract = {Sentence embeddings are an important component of many natural language processing (NLP) systems. Like word embeddings, sentence embeddings are typically learned on large text corpora and then transferred to various downstream tasks, such as clustering and retrieval. Unlike word embeddings, the highest performing solutions for learning sentence embeddings require labelled data, limiting their usefulness to languages and domains where labelled data is abundant. In this paper, we present DeCLUTR: Deep Contrastive Learning for Unsupervised Textual Representations. Inspired by recent advances in deep metric learning (DML), we carefully design a self-supervised objective for learning universal sentence embeddings that does not require labelled training data. When used to extend the pretraining of transformer-based language models, our approach closes the performance gap between unsupervised and supervised pretraining for universal sentence encoders. Importantly, our experiments suggest that the quality of the learned embeddings scale with both the number of trainable parameters and the amount of unlabelled training data. Our code and pretrained models are publicly available and can be easily adapted to new domains or used to embed unseen text.},
+author = {John Giorgi and O. Nitski and Gary D Bader and Bo Wang},
+doi = {10.18653/v1/2021.acl-long.72},
+arxivid = {2006.03659},
+}
+
+@article{d39095062df23485cd6b3c8bbe8bc3bc6e159572,
+title = {BoostingBERT: Integrating Multi-Class Boosting into BERT for NLP Tasks},
+year = {2020},
+url = {https://www.semanticscholar.org/paper/d39095062df23485cd6b3c8bbe8bc3bc6e159572},
+abstract = {As a pre-trained Transformer model, BERT (Bidirectional Encoder Representations from Transformers) has achieved ground-breaking performance on multiple NLP tasks. On the other hand, Boosting is a popular ensemble learning technique which combines many base classifiers and has been demonstrated to yield better generalization performance in many machine learning tasks. Some works have indicated that ensemble of BERT can further improve the application performance. However, current ensemble approaches focus on bagging or stacking and there has not been much effort on exploring the boosting. In this work, we proposed a novel Boosting BERT model to integrate multi-class boosting into the BERT. Our proposed model uses the pre-trained Transformer as the base classifier to choose harder training sets to fine-tune and gains the benefits of both the pre-training language knowledge and boosting ensemble in NLP tasks. We evaluate the proposed model on the GLUE dataset and 3 popular Chinese NLU benchmarks. Experimental results demonstrate that our proposed model significantly outperforms BERT on all datasets and proves its effectiveness in many NLP tasks. Replacing the BERT base with RoBERTa as base classifier, BoostingBERT achieves new state-of-the-art results in several NLP Tasks. We also use knowledge distillation within the "teacher-student" framework to reduce the computational overhead and model storage of BoostingBERT while keeping its performance for practical application.},
+author = {Tongwen Huang and Qingyun She and Junlin Zhang},
+arxivid = {2009.05959},
+}
+
+@article{08460ecff91b8a54358b9c1709d7dc6a77417f62,
+title = {Distiller: A Systematic Study of Model Distillation Methods in Natural Language Processing},
+year = {2021},
+url = {https://www.semanticscholar.org/paper/08460ecff91b8a54358b9c1709d7dc6a77417f62},
+abstract = {Knowledge Distillation (KD) offers a natural way to reduce the latency and memory/energy usage of massive pretrained models that have come to dominate Natural Language Processing (NLP) in recent years. While numerous sophisticated variants of KD algorithms have been proposed for NLP applications, the key factors underpinning the optimal distillation performance are often confounded and remain unclear. We aim to identify how different components in the KD pipeline affect the resulting performance and how much the optimal KD pipeline varies across different datasets/tasks, such as the data augmentation policy, the loss function, and the intermediate representation for transferring the knowledge between teacher and student. To tease apart their effects, we propose Distiller, a meta KD framework that systematically combines a broad range of techniques across different stages of the KD pipeline, which enables us to quantify each component’s contribution. Within Distiller, we unify commonly used objectives for distillation of intermediate representations under a universal mutual information (MI) objective and propose a class of MI-objective functions with better bias/variance trade-off for estimating the MI between the teacher and the student. On a diverse set of NLP datasets, the best Distiller configurations are identified via large-scale hyper-parameter optimization. Our experiments reveal the following: 1) the approach used to distill the intermediate representations is the most important factor in KD performance, 2) among different objectives for intermediate distillation, MI-performs the best, and 3) data augmentation provides a large boost for small training datasets or small student networks. Moreover, we find that different datasets/tasks prefer different KD algorithms, and thus propose a simple AutoDistiller algorithm that can recommend a good KD pipeline for a new dataset.},
+author = {Haoyu He and Xingjian Shi and Jonas Mueller and Sheng Zha and Mu Li and G. Karypis},
+doi = {10.18653/v1/2021.sustainlp-1.13},
+arxivid = {2109.11105},
+}
+
+@article{bcb40a7f2009259e660e14d12ec75bae1c184b1e,
+title = {Identifying the Limits of Cross-Domain Knowledge Transfer for Pretrained Models},
+year = {2021},
+url = {https://www.semanticscholar.org/paper/bcb40a7f2009259e660e14d12ec75bae1c184b1e},
+abstract = {There is growing evidence that pretrained language models improve task-specific fine-tuning even where the task examples are radically different from those seen in training. We study an extreme case of transfer learning by providing a systematic exploration of how much transfer occurs when models are denied any information about word identity via random scrambling. In four classification tasks and two sequence labeling tasks, we evaluate LSTMs using GloVe embeddings, BERT, and baseline models. Among these models, we find that only BERT shows high rates of transfer into our scrambled domains, and for classification but not sequence labeling tasks. Our analyses seek to explain why transfer succeeds for some tasks but not others, to isolate the separate contributions of pretraining versus fine-tuning, to show that the fine-tuning process is not merely learning to unscramble the scrambled inputs, and to quantify the role of word frequency. Furthermore, our results suggest that current benchmarks may overestimate the degree to which current models actually understand language.},
+author = {Zhengxuan Wu and Nelson F. Liu and Christopher Potts},
+doi = {10.18653/v1/2022.repl4nlp-1.11},
+arxivid = {2104.08410},
+}
+
+@article{a49bfc1fc1d5df9700a344e9043a44bc5c0fbe85,
+title = {Unified Denoising Pretraining and Finetuning for Data and Texts},
+year = {2021},
+url = {https://www.semanticscholar.org/paper/a49bfc1fc1d5df9700a344e9043a44bc5c0fbe85},
+abstract = {Text-to-Text (T2T) denoising-pretrainingfinetuning (DPF) paradigms (e.g. BERT, BART, GPT) have achieved great success in a wide range of encoding and decoding tasks in NLP. However, little has been explored on data-to-data (D2D) and data-to-text (D2T) tasks using DPF paradigms. This work fills in the gap by investigating D2D and T2T denoising-pretraining for D2T tasks. D2D and T2T DPF paradigms can leverage large amount of unlabeled structural data (e.g. knowledge sub-graphs, annotated triples and other forms) and texts to train large capacity models. With the proposed T2T and D2D denoising pretraining, we improve the state-of-the-art performance of D2T tasks by 1.3 and 0.8 BLEU points for WebNLG and E2ENLG evaluation respectively.},
+author = {Jiayi Xian and Dingcheng Li and Alexander Hanbo Li and Derek Liu and Xing Fan and Chenlei Guo and Yang Liu and Y. Tang},
+}
+
+@article{bf22ef16a6a912763780aea454198edc3e2bb3c9,
+title = {HealthPrompt: A Zero-shot Learning Paradigm for Clinical Natural Language Processing},
+year = {2022},
+url = {https://www.semanticscholar.org/paper/bf22ef16a6a912763780aea454198edc3e2bb3c9},
+abstract = {Deep learning algorithms are dependent on the availability of large-scale annotated clinical text datasets. The lack of such publicly available datasets is the biggest bottleneck for the development of clinical Natural Language Processing(NLP) systems. Zero-Shot Learning(ZSL) refers to the use of deep learning models to classify instances from new classes of which no training data have been seen before. Prompt-based learning is an emerging ZSL technique where we define task-based templates for NLP tasks. We developed a novel prompt-based clinical NLP framework called HealthPrompt and applied the paradigm of prompt-based learning on clinical texts. In this technique, rather than fine-tuning a Pre-trained Language Model(PLM), the task definitions are tuned by defining a prompt template. We performed an in-depth analysis of HealthPrompt on six different PLMs in a no-data setting. Our experiments prove that prompts effectively capture the context of clinical texts and perform remarkably well without any training data.},
+author = {Sonish Sivarajkumar and Yanshan Wang},
+doi = {10.48550/arXiv.2203.05061},
+arxivid = {2203.05061},
+}
+
+@article{384dd5f966a36493e5a88c04df75f2f6a6b8869f,
+title = {Searching for Legal Clauses by Analogy. Few-shot Semantic Retrieval Shared Task},
+year = {2019},
+url = {https://www.semanticscholar.org/paper/384dd5f966a36493e5a88c04df75f2f6a6b8869f},
+abstract = {We introduce a novel shared task for semantic retrieval from legal texts, where one is expected to perform a so-called contract discovery -- extract specified legal clauses from documents given a few examples of similar clauses from other legal acts. The task differs substantially from conventional NLI and legal information extraction shared tasks. Its specification is followed with evaluation of multiple k-NN based solutions within the unified framework proposed for this branch of methods. It is shown that state-of-the-art pre-trained encoders fail to provide satisfactory results on the task proposed, whereas Language Model based solutions perform well, especially when unsupervised fine-tuning is applied. In addition to the ablation studies, the questions regarding relevant text fragments detection accuracy depending on number of examples available were addressed. In addition to dataset and reference results, legal-specialized LMs were made publicly available.},
+author = {Łukasz Borchmann and Dawid Wisniewski and Andrzej Gretkowski and Izabela Kosmala and Dawid Jurkiewicz and Lukasz Szalkiewicz and Gabriela Pałka and Karol Kaczmarek and Agnieszka Kaliska and Filip Grali'nski},
+arxivid = {1911.03911},
+}
+
+@article{964507d336882280500129c446e6eb0d342172bb,
+title = {Equitable Exchange: A Framework for Diversity and Inclusion in the Geosciences},
+year = {2020},
+url = {https://www.semanticscholar.org/paper/964507d336882280500129c446e6eb0d342172bb},
+abstract = {We highlight a mechanism for the coproduction of research with local communities as a means of elevating the social relevance of the geosciences, increasing the potential for broader and more diverse participation. We outline the concept of an “Equitable Exchange” as an ethical framework guiding these interactions. This principled research model emphasizes that “currencies”—the rewards and value from participating in research—may differ between local communities and geoscientists. For those engaged in this work, an Equitable Exchange emboldens boundary spanning geoscientists to bring their whole selves to the work, providing a means for inclusive climates and rewarding cultural competency.},
+author = {L. Harris and C. Garza and M. Hatch and J. Parrish and J. Posselt and J. P. Alvarez Rosario and E. Davidson and G. Eckert and K. W. Wilson Grimes and J. E. García and R. Haacker and M. C. Horner-Devine and A. Johnson and J. Lemus and A. Prakash and L. Thompson and P. Vitousek and M. P. Martin Bras and K. Reyes},
+doi = {10.1029/2020AV000359},
+}
+
+@article{f37fe381234372f76b2546b1463768520d329106,
+title = {Introducing huBERT},
+year = {2021},
+url = {https://www.semanticscholar.org/paper/f37fe381234372f76b2546b1463768520d329106},
+abstract = {This paper introduces the huBERT family of models. The flagship is the eponymous BERT Base model trained on the new Hungarian Webcorpus 2.0, a 9-billion-token corpus of Web text collected from the Common Crawl. This model outperforms the multilingual BERT in masked language modeling by a huge margin, and achieves state-ofthe-art performance in named entity recognition and NP chunking. The models are freely downloadable.},
+author = {Nemeskey Dávid Márk},
+}
+
+@article{f0b8389a9f9f0630255bf623eeb0749c444e4b39,
+title = {SloBERTa: Slovene monolingual large pretrained masked language model},
+year = {2021},
+url = {https://www.semanticscholar.org/paper/f0b8389a9f9f0630255bf623eeb0749c444e4b39},
+abstract = {Large pretrained language models, based on the transformer architecture, show excellent results in solving many natural language processing tasks. The research is mostly focused on Eng-lish language; however, many monolingual models for other languages have recently been trained. We trained first such monolingual model for Slovene, based on the RoBERTa model. We evaluated the newly trained SloBERTa model on several classification tasks. The results show an improvement over existing multilingual and monolingual models and present current state-of-the-art for Slovene.},
+author = {Matej Ulcar and Marko Robnik-Šikonja},
+}
+
+@article{354ea313970e4d54e43f32fcb99f7ec0376c07f9,
+title = {Structure and Function of Rhizobiome},
+year = {2020},
+url = {https://www.semanticscholar.org/paper/354ea313970e4d54e43f32fcb99f7ec0376c07f9},
+abstract = {Plant roots can select for certain microbial species from soil microbiome and interact with them. As a consequence, the structure (or composition) of root-associated microbiome (here after referred to as rhizobiome) is significantly different from that of soil microbiome. Although, it is widely accepted that rhizobiome positively influences plant growth and health, relatively less is known about its complete structure and function. High-resolution and large-scale studies are essential to unravel the structure and function of rhizobiome. Moreover, identification of “core rhizobiome” or “heritable rhizobiome” of different crop plants is a top priority for accelerating translational research toward improving crop productivity in an environmentally sustainable manner. Here, I summarize information about the structure and function of various rhizobiomes that is recently made available using culture-independent technologies. I also review the factors that regulate composition of rhizobiome. Specifically, I discuss the role of root exudates and plant immune system in shaping rhizobiome.},
+author = {R. Vukanti},
+doi = {10.1007/978-3-030-36248-5_13},
+}
+
+@article{27c39dd62635791a0ec3c0c81c2690e7a9bd62ad,
+title = {LICHEE: Improving Language Model Pre-training with Multi-grained Tokenization},
+year = {2021},
+url = {https://www.semanticscholar.org/paper/27c39dd62635791a0ec3c0c81c2690e7a9bd62ad},
+abstract = {Language model pre-training based on large corpora has achieved tremendous success in terms of constructing enriched contextual representations and has led to significant performance gains on a diverse range of Natural Language Understanding (NLU) tasks. Despite the success, most current pre-trained language models, such as BERT, are trained based on single-grained tokenization, usually with fine-grained characters or sub-words, making it hard for them to learn the precise meaning of coarse-grained words and phrases. In this paper, we propose a simple yet effective pretraining method named LICHEE to efficiently incorporate multi-grained information of input text. Our method can be applied to various pretrained language models and improve their representation capability. Extensive experiments conducted on CLUE and SuperGLUE demonstrate that our method achieves comprehensive improvements on a wide variety of NLU tasks in both Chinese and English with little extra inference cost incurred, and that our best ensemble model achieves the state-of-the-art performance on CLUE benchmark competition.},
+author = {Weidong Guo and Mingjun Zhao and Lusheng Zhang and Di Niu and Jinwen Luo and Zhenhua Liu and Zhenyang Li and J. Tang},
+doi = {10.18653/v1/2021.findings-acl.119},
+arxivid = {2108.00801},
+}
+
+@article{ca206f8623dd07812d470e5afb5d317a8c6b71e2,
+title = {Microbes and Climate Change: a Research Prospectus for the Future},
+year = {2022},
+url = {https://www.semanticscholar.org/paper/ca206f8623dd07812d470e5afb5d317a8c6b71e2},
+abstract = {Climate change is the most serious challenge facing humanity. Microbes produce and consume three major greenhouse gases—carbon dioxide, methane, and nitrous oxide—and some microbes cause human, animal, and plant diseases that can be exacerbated by climate change. ABSTRACT Climate change is the most serious challenge facing humanity. Microbes produce and consume three major greenhouse gases—carbon dioxide, methane, and nitrous oxide—and some microbes cause human, animal, and plant diseases that can be exacerbated by climate change. Hence, microbial research is needed to help ameliorate the warming trajectory and cascading effects resulting from heat, drought, and severe storms. We present a brief summary of what is known about microbial responses to climate change in three major ecosystems: terrestrial, ocean, and urban. We also offer suggestions for new research directions to reduce microbial greenhouse gases and mitigate the pathogenic impacts of microbes. These include performing more controlled studies on the climate impact on microbial processes, system interdependencies, and responses to human interventions, using microbes and their carbon and nitrogen transformations for useful stable products, improving microbial process data for climate models, and taking the One Health approach to study microbes and climate change.},
+author = {J. Tiedje and M. A. Bruns and A. Casadevall and C. Criddle and E. Eloe-Fadrosh and D. Karl and Nguyen K. Nguyen and Jizhong Zhou},
+doi = {10.1128/mbio.00800-22},
+pmid = {35438534},
+}
+
+@article{449d4bd740353365857b21ce294c2cf5dde277cc,
+title = {Language representation learning models: A comparative study},
+year = {2020},
+url = {https://www.semanticscholar.org/paper/449d4bd740353365857b21ce294c2cf5dde277cc},
+abstract = {Recently, Natural Language Processing has shown significant development, especially in text mining and analysis. An important task in this area is learning vector-space representations of text. Since various machine learning algorithms require representing their inputs in a vector format. In this paper, we highlight the most important language representation learning models used in the literature, ranging from the free contextual approaches like word2vec and Glove until the appearance of recent modern contextualized approaches such as ELMo, BERT, and XLNet. We show and discuss their main architectures and their main strengths and limits.},
+author = {Sanae Achsas and E. Nfaoui},
+doi = {10.1145/3419604.3419773},
+}
+
+@article{debae1ab52cf0352807f175f5ecd5bfb28e4d93e,
+title = {An Empirical Study of Pre-trained Embedding on Ultra-Fine Entity Typing},
+year = {2020},
+url = {https://www.semanticscholar.org/paper/debae1ab52cf0352807f175f5ecd5bfb28e4d93e},
+abstract = {The embedding generated by pre-trained models has attracted the attention of many scholars in the past few years. Most of the context-sensitive embeddings have confirmed the positive impact on some basic tasks of classification, which have only a few types. In this paper, we make an empirical comparison of different pre-trained embeddings on the task of ultra-fine entity typing which has more than 10k types. We apply 7 kinds of pre-trained embedding to the typing model to prove whether the pre-trained embedding has a positive effect. The results indicate that almost all context-sensitive pre-trained embeddings improve the performance of models using Glove. The pre-trained embedding generated by BERT achieves the best performance in the Ultra-Fine dataset and OntoNotes dataset, which shows BERT has better capability to extract finer-grained information than other pre-trained models.},
+author = {Yanping Wang and Xin Xin and Ping Guo},
+doi = {10.1109/SMC42975.2020.9283464},
+}
+
+@article{01e5070c66f7af28dacdc6582c5cc8ccc3e4911e,
+title = {The high burden of infectious disease.},
+year = {2021},
+url = {https://www.semanticscholar.org/paper/01e5070c66f7af28dacdc6582c5cc8ccc3e4911e},
+abstract = {},
+author = {C. Armitage},
+doi = {10.1038/d41586-021-02909-5},
+pmid = {34707308},
+}
+
+@article{3186deef8c2aa3839b40c7f56b05807592cbe918,
+title = {An Empirical Study on Large-Scale Multi-Label Text Classification Including Few and Zero-Shot Labels},
+year = {2020},
+url = {https://www.semanticscholar.org/paper/3186deef8c2aa3839b40c7f56b05807592cbe918},
+abstract = {Large-scale Multi-label Text Classification (LMTC) has a wide range of Natural Language Processing (NLP) applications and presents interesting challenges. First, not all labels are well represented in the training set, due to the very large label set and the skewed label distributions of LMTC datasets. Also, label hierarchies and differences in human labelling guidelines may affect graph-aware annotation proximity. Finally, the label hierarchies are periodically updated, requiring LMTC models capable of zero-shot generalization. Current state-of-the-art LMTC models employ Label-Wise Attention Networks (LWANs), which (1) typically treat LMTC as flat multi-label classification; (2) may use the label hierarchy to improve zero-shot learning, although this practice is vastly understudied; and (3) have not been combined with pre-trained Transformers (e.g. BERT), which have led to state-of-the-art results in several NLP benchmarks. Here, for the first time, we empirically evaluate a battery of LMTC methods from vanilla LWANs to hierarchical classification approaches and transfer learning, on frequent, few, and zero-shot learning on three datasets from different domains. We show that hierarchical methods based on Probabilistic Label Trees (PLTs) outperform LWANs. Furthermore, we show that Transformer-based approaches outperform the state-of-the-art in two of the datasets, and we propose a new state-of-the-art method which combines BERT with LWANs. Finally, we propose new models that leverage the label hierarchy to improve few and zero-shot learning, considering on each dataset a graph-aware annotation proximity measure that we introduce.},
+author = {Ilias Chalkidis and Manos Fergadiotis and Sotiris Kotitsas and Prodromos Malakasiotis and Nikolaos Aletras and Ion Androutsopoulos},
+doi = {10.18653/v1/2020.emnlp-main.607},
+arxivid = {2010.01653},
+}
+
+@article{6ea8796346ed16dd2e380e04ac84d173bbd97b56,
+title = {PRE-TRAINING AND FINE-TUNING ELECTRA MODELS FOR VARIOUS VIETNAMESE NATURAL LANGUAGE PROCESSING TASKS},
+year = {2021},
+url = {https://www.semanticscholar.org/paper/6ea8796346ed16dd2e380e04ac84d173bbd97b56},
+abstract = {In recent years, the Natural Language Processing community was impacted greatly by models based on the BERT architecture (Devlin et al., 2018). The Transformer-based Masked Language Model (MLM) has yielded significant improvement on many Natural Language Processing problems. However, it requires huge computing power and makes pre-training models a resource-consuming process. To overcome this impediment, in March 2020, Clark et al. have published a new model named ELECTRA. It carries the same structural framework as BERT, but the pre-training task was essentially modified, which makes it effective while cost-saving. The English ELECTRA models have gained remarkable results on the GLUE Natural Language Understanding benchmark, compared to BERT and GPT. In this paper, we introduce our Vietnamese ELECTRA models (ViELECTRA). On a similar amount of text, the pre-training resource of ViELECTRA was around 1/5 to 1/2 of PhoBERT’s (Nguyen and Nguyen, 2020). We fine-tuned the models on various downstream tasks such as Dependency Parsing, Named Entity Recognition, Part of Speech Tagging, and Natural Language Inference. ViELECTRA-Base outperformed PhoBERT-Base on the Natural Language Inference task with an accuracy score of 79.1% over 78.5%. On the Dependency Parsing task, we achieved 83.66% UAS and 75.27% LAS which is on average 2.5% lower than PhoBERT. The evaluation results show that ELECTRA is promisingly applicable in the Vietnamese language and there is still room for further development.},
+author = {Nguyen Minh Vu and Huynh Chi Tuan and Luong An Vinh},
+doi = {10.15625/vap.2021.0089},
+}
+
+@article{19a36282a195f14ed19c18a1b8c96f03d804fb64,
+title = {Robust Document Representations using Latent Topics and Metadata},
+year = {2020},
+url = {https://www.semanticscholar.org/paper/19a36282a195f14ed19c18a1b8c96f03d804fb64},
+abstract = {Task specific fine-tuning of a pre-trained neural language model using a custom softmax output layer is the de facto approach of late when dealing with document classification problems. This technique is not adequate when labeled examples are not available at training time and when the metadata artifacts in a document must be exploited. We address these challenges by generating document representations that capture both text and metadata artifacts in a task agnostic manner. Instead of traditional auto-regressive or auto-encoding based training, our novel self-supervised approach learns a soft-partition of the input space when generating text embeddings. Specifically, we employ a pre-learned topic model distribution as surrogate labels and construct a loss function based on KL divergence. Our solution also incorporates metadata explicitly rather than just augmenting them with text. The generated document embeddings exhibit compositional characteristics and are directly used by downstream classification tasks to create decision boundaries from a small number of labeled examples, thereby eschewing complicated recognition methods. We demonstrate through extensive evaluation that our proposed cross-model fusion solution outperforms several competitive baselines on multiple datasets.},
+author = {Natraj Raman and Armineh Nourbakhsh and Sameena Shah and M. Veloso},
+arxivid = {2010.12681},
+}
+
+@article{e2e1ed4850099176f31eac1a8d156f9678aeb124,
+title = {Dissection of the mutation accumulation process during bacterial range expansions},
+year = {2020},
+url = {https://www.semanticscholar.org/paper/e2e1ed4850099176f31eac1a8d156f9678aeb124},
+abstract = {
+ Background Recent experimental work has shown that the evolutionary dynamics of bacteria expanding across space can differ dramatically from what we expect under well-mixed conditions. During spatial expansion, deleterious mutations can accumulate due to inefficient selection on the expansion front, potentially interfering with and modifying adaptive evolutionary processes.Results We used whole genome sequencing to follow the genomic evolution of 10 mutator Escherichia coli lines during 39 days (∼1650 generations) of a spatial expansion, which allowed us to gain a temporal perspective on the interaction of adaptive and non-adaptive evolutionary processes during range expansions. We used elastic net regression to infer the positive or negative effects of mutations on colony growth. Even though the colony size, measured after three day of growth, decreased at the end of the experiment in all 10 lines, and mutations accumulated at a nearly constant rate over the whole experiment. We find evidence that beneficial mutations accumulate primarily at an early stage of the experiment, leading to a non-linear change of colony size over time. Indeed, colony size remains almost constant at the beginning of the experiment and then decreases after ∼12 days of evolution. We also find that beneficial mutations are enriched in flagella genes, genes encoding transport proteins, and genes coding for the membrane structure, whereas deleterious mutations show no enrichment for any biological process.Conclusions Our experiment shows that beneficial mutations target specific biological functions mostly involved in inter or extra membrane processes, whereas deleterious mutations are randomly distributed over the whole gnome. It thus appears that the interaction between genetic drift and the availability or depletion of beneficial mutations determines the change in fitness of bacterial populations during range expansion.},
+author = {L. Bosshard and S. Peischl and M. Ackermann and L. Excoffier},
+doi = {10.1186/s12864-020-6676-z},
+pmid = {32293258},
+}
+
+@article{7ae66327976bfc15309ec680f94619737c8ccacd,
+title = {A Refined View of Airway Microbiome in Chronic Obstructive Pulmonary Disease at Species and Strain-Levels},
+year = {2020},
+url = {https://www.semanticscholar.org/paper/7ae66327976bfc15309ec680f94619737c8ccacd},
+abstract = {Little is known about the species and strain-level diversity of the airway microbiome, and its implication in chronic obstructive pulmonary disease (COPD). Here we report the first comprehensive analysis of the COPD airway microbiome at species and strain-levels. The full-length 16S rRNA gene was sequenced from sputum in 98 stable COPD patients and 27 age-matched healthy controls, using the ‘third-generation’ Pacific Biosciences sequencing platform. Individual species within the same genus exhibited reciprocal relationships with COPD and disease severity. Species dominant in health can be taken over by another species within the same genus in GOLD IV patients. Such turnover was also related to enhanced symptoms and exacerbation frequency. Ralstonia mannitolilytica, an opportunistic pathogen, was significantly increased in COPD frequent exacerbators. There were inflammatory phenotype-specific associations of microbiome at the species-level. One group of four pathogens including Haemophilus influenzae and Moraxella catarrhalis, were specifically associated with sputum mediators for neutrophilic inflammation. Another group of seven species, including Tropheryma whipplei, showed specific associations with mediators for eosinophilic inflammation. Strain-level detection uncovered three non-typeable H. influenzae strains PittEE, PittGG and 86-028NP in the airway microbiome, where PittGG and 86-028NP abundances may inversely predict eosinophilic inflammation. The full-length 16S data augmented the power of functional inference and led to the unique identification of butyrate-producing and nitrate reduction pathways as significantly depleted in COPD. Our analysis uncovered substantial intra-genus heterogeneity in the airway microbiome associated with inflammatory phenotypes and could be of clinical importance, thus enabled a refined view of the airway microbiome in COPD. “Take-home” message The species-level analysis using the ‘third-generation’ sequencing enabled a refined view of the airway microbiome and its relationship with clinical outcome and inflammatory phenotype in COPD.},
+author = {Zhang Wang and Hai-yue Liu and Fengyan Wang and Yuqiong Yang and Xiaojuan Wang and Boxuan Chen and M. Stampfli and Hongwei Zhou and Wensheng Shu and C. Brightling and Zhenyu Liang and Rongchang Chen},
+doi = {10.3389/fmicb.2020.01758},
+pmid = {32849386},
+}

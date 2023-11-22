@@ -1,0 +1,430 @@
+@article{f2b0b25fb5dfc34b180824fcfde35b283b96f170,
+title = {A novel deep learning method for predictive modeling of microbiome data},
+year = {2020},
+url = {https://www.semanticscholar.org/paper/f2b0b25fb5dfc34b180824fcfde35b283b96f170},
+abstract = {With the development and decreasing cost of next-generation sequencing technologies, the study of the human microbiome has become a rapid expanding research field, which provides an unprecedented opportunity in various clinical applications such as drug response predictions and disease diagnosis. It is thus essential and desirable to build a prediction model for clinical outcomes based on microbiome data that usually consist of taxon abundance and a phylogenetic tree. Importantly, all microbial species are not uniformly distributed in the phylogenetic tree but tend to be clustered at different phylogenetic depths. Therefore, the phylogenetic tree represents a unique correlation structure of microbiome, which can be an important prior to improve the prediction performance. However, prediction methods that consider the phylogenetic tree in an efficient and rigorous way are under-developed. Here, we develop a novel deep learning prediction method MDeep (microbiome-based deep learning method) to predict both continuous and binary outcomes. Conceptually, MDeep designs convolutional layers to mimic taxonomic ranks with multiple convolutional filters on each convolutional layer to capture the phylogenetic correlation among microbial species in a local receptive field and maintain the correlation structure across different convolutional layers via feature mapping. Taken together, the convolutional layers with its built-in convolutional filters capture microbial signals at different taxonomic levels while encouraging local smoothing and preserving local connectivity induced by the phylogenetic tree. We use both simulation studies and real data applications to demonstrate that MDeep outperforms competing methods in both regression and binary classifications. Availability and Implementation: MDeep software is available at https://github.com/lichen-lab/MDeep Contact:chen61@iu.edu.},
+author = {Ye Wang and T. Bhattacharya and Yuchao Jiang and Xiao Qin and Yue Wang and Yunlong Liu and A. Saykin and L. Chen},
+doi = {10.1093/bib/bbaa073},
+pmid = {32406914},
+}
+
+@article{c616e4ed59a41077da5a4fb965789cb35ab727c7,
+title = {Variance Component Selection With Applications to Microbiome Taxonomic Data},
+year = {2018},
+url = {https://www.semanticscholar.org/paper/c616e4ed59a41077da5a4fb965789cb35ab727c7},
+abstract = {High-throughput sequencing technology has enabled population-based studies of the role of the human microbiome in disease etiology and exposure response. Microbiome data are summarized as counts or composition of the bacterial taxa at different taxonomic levels. An important problem is to identify the bacterial taxa that are associated with a response. One method is to test the association of specific taxon with phenotypes in a linear mixed effect model, which incorporates phylogenetic information among bacterial communities. Another type of approaches consider all taxa in a joint model and achieves selection via penalization method, which ignores phylogenetic information. In this paper, we consider regression analysis by treating bacterial taxa at different level as multiple random effects. For each taxon, a kernel matrix is calculated based on distance measures in the phylogenetic tree and acts as one variance component in the joint model. Then taxonomic selection is achieved by the lasso (least absolute shrinkage and selection operator) penalty on variance components. Our method integrates biological information into the variable selection problem and greatly improves selection accuracies. Simulation studies demonstrate the superiority of our methods versus existing methods, for example, group-lasso. Finally, we apply our method to a longitudinal microbiome study of Human Immunodeficiency Virus (HIV) infected patients. We implement our method using the high performance computing language Julia. Software and detailed documentation are freely available at https://github.com/JingZhai63/VCselection.},
+author = {Jing Zhai and Juhyun Kim and K. Knox and H. Twigg and Hua Zhou and Jin J. Zhou},
+doi = {10.3389/fmicb.2018.00509},
+pmid = {29643839},
+}
+
+@article{476cf677e5b5726df8bd4e3e054a867122da1559,
+title = {MIPMLP – Microbiome Preprocessing Machine Learning Pipeline},
+year = {2020},
+url = {https://www.semanticscholar.org/paper/476cf677e5b5726df8bd4e3e054a867122da1559},
+abstract = {16S sequencing results are often used for Machine Learning (ML) tasks. 16S gene sequences are represented as feature counts, which are associated with taxonomic representation. Raw feature counts may not be the optimal representation for ML. We checked multiple preprocessing steps and tested the optimal combination for 16S sequencing-based classification tasks. We computed the contribution of each step to the accuracy as measured by the Area Under Curve (AUC) of the classification. We show that the log of the feature counts is much more informative than the relative counts. We further show that merging features associated with the same taxonomy at a given level, through a dimension reduction step for each group of bacteria improves the AUC. Finally, we show that z-scoring has a very limited effect on the results. These preprocessing steps are integrated into the MIPMLP - Microbiome Preprocessing Machine Learning Pipeline, which is available as a stand alone version at https://github.com/louzounlab/microbiome/tree/master/Preprocess or as a service at http://mip-mlp.math.biu.ac.il/Home Importance Microbiome composition has been proposed as a biomarker (mic-marker) for multiple diseases. However, a clear analysis of the optimal way to represent the gene sequence counts is still lacking. We propose a simple and straight forward method that significantly improves the accuracy of mic-marker studies. This method can be of use to merge two of the most important advances in biology in the last decade: Microbiome analysis, and the introduction of machine learning methods to biological studies.},
+author = {Yoel Y Jasner and Anna Belogolovski and M. Ben-Itzhak and O. Koren and Y. Louzoun},
+doi = {10.1101/2020.11.24.397174},
+}
+
+@article{38c8cd82eebd0f6eddb96f2b73a74c2d05682e14,
+title = {Deep Learning for Metagenomic Data: using 2D Embeddings and Convolutional Neural Networks},
+year = {2017},
+url = {https://www.semanticscholar.org/paper/38c8cd82eebd0f6eddb96f2b73a74c2d05682e14},
+abstract = {Deep learning (DL) techniques have had unprecedented success when applied to images, waveforms, and texts to cite a few. In general, when the sample size (N) is much greater than the number of features (d), DL outperforms previous machine learning (ML) techniques, often through the use of convolution neural networks (CNNs). However, in many bioinformatics ML tasks, we encounter the opposite situation where d is greater than N. In these situations, applying DL techniques (such as feed-forward networks) would lead to severe overfitting. Thus, sparse ML techniques (such as LASSO e.g.) usually yield the best results on these tasks. In this paper, we show how to apply CNNs on data which do not have originally an image structure (in particular on metagenomic data). Our first contribution is to show how to map metagenomic data in a meaningful way to 1D or 2D images. Based on this representation, we then apply a CNN, with the aim of predicting various diseases. The proposed approach is applied on six different datasets including in total over 1000 samples from various diseases. This approach could be a promising one for prediction tasks in the bioinformatics field.},
+author = {T. Nguyen and Y. Chevaleyre and E. Prifti and Nataliya Sokolovska and Jean-Daniel Zucker},
+arxivid = {1712.00244},
+}
+
+@article{b067701cf2a2d54ecde7b4e9c25b843d787b66c2,
+title = {Machine Learning Meta-analysis of Large Metagenomic Datasets: Tools and Biological Insights},
+year = {2016},
+url = {https://www.semanticscholar.org/paper/b067701cf2a2d54ecde7b4e9c25b843d787b66c2},
+abstract = {Shotgun metagenomic analysis of the human associated microbiome provides a rich set of microbial features for prediction and biomarker discovery in the context of human diseases and health conditions. However, the use of such high-resolution microbial features presents new challenges, and validated computational tools for learning tasks are lacking. Moreover, classification rules have scarcely been validated in independent studies, posing questions about the generality and generalization of disease-predictive models across cohorts. In this paper, we comprehensively assess approaches to metagenomics-based prediction tasks and for quantitative assessment of the strength of potential microbiome-phenotype associations. We develop a computational framework for prediction tasks using quantitative microbiome profiles, including species-level relative abundances and presence of strain-specific markers. A comprehensive meta-analysis, with particular emphasis on generalization across cohorts, was performed in a collection of 2424 publicly available metagenomic samples from eight large-scale studies. Cross-validation revealed good disease-prediction capabilities, which were in general improved by feature selection and use of strain-specific markers instead of species-level taxonomic abundance. In cross-study analysis, models transferred between studies were in some cases less accurate than models tested by within-study cross-validation. Interestingly, the addition of healthy (control) samples from other studies to training sets improved disease prediction capabilities. Some microbial species (most notably Streptococcus anginosus) seem to characterize general dysbiotic states of the microbiome rather than connections with a specific disease. Our results in modelling features of the “healthy” microbiome can be considered a first step toward defining general microbial dysbiosis. The software framework, microbiome profiles, and metadata for thousands of samples are publicly available at http://segatalab.cibio.unitn.it/tools/metaml.},
+author = {Edoardo Pasolli and D. Truong and Fa Malik and L. Waldron and N. Segata},
+doi = {10.1371/journal.pcbi.1004977},
+pmid = {27400279},
+}
+
+@article{92dd26f66c9630f760d150b7f98e541bb0aac0bc,
+title = {MetaPheno: A critical evaluation of deep learning and machine learning in metagenome-based disease prediction.},
+year = {2019},
+url = {https://www.semanticscholar.org/paper/92dd26f66c9630f760d150b7f98e541bb0aac0bc},
+abstract = {The human microbiome plays a number of critical roles, impacting almost every aspect of human health and well-being. Conditions in the microbiome have been linked to a number of significant diseases. Additionally, revolutions in sequencing technology have led to a rapid increase in publicly-available sequencing data. Consequently, there have been growing efforts to predict disease status from metagenomic sequencing data, with a proliferation of new approaches in the last few years. Some of these efforts have explored utilizing a powerful form of machine learning called deep learning, which has been applied successfully in several biological domains. Here, we review some of these methods and the algorithms that they are based on, with a particular focus on deep learning methods. We also perform a deeper analysis of Type 2 Diabetes and obesity datasets that have eluded improved results, using a variety of machine learning and feature extraction methods. We conclude by offering perspectives on study design considerations that may impact results and future directions the field can take to improve results and offer more valuable conclusions. The scripts and extracted features for the analyses conducted in this paper are available via GitHub:https://github.com/nlapier2/metapheno.},
+author = {N. Lapierre and C. Ju and Guangyu Zhou and Wei Wang},
+doi = {10.1016/j.ymeth.2019.03.003},
+pmid = {30885720},
+}
+
+@article{8c9f5cf69ef341723992d7f205d6317ae3344d89,
+title = {Robust regression with compositional covariates},
+year = {2019},
+url = {https://www.semanticscholar.org/paper/8c9f5cf69ef341723992d7f205d6317ae3344d89},
+abstract = {Many high-throughput sequencing data sets in biology are compositional in nature. A prominent example is microbiome profiling data, including targeted amplicon-based and metagenomic sequencing data. These profiling data comprises surveys of microbial communities in their natural habitat and sparse proportional (or compositional) read counts that represent operational taxonomic units or genes. When paired measurements of other covariates, including physicochemical properties of the habitat or phenotypic variables of the host, are available, inference of parsimonious and robust statistical relationships between the microbial abundance data and the covariate measurements is often an important first step in exploratory data analysis. To this end, we propose a sparse robust statistical regression framework that considers compositional and non-compositional measurements as predictors and identifies outliers in continuous response variables. Our model extends the seminal log-contrast model of Aitchison and Bacon-Shone (1984) by a mean shift formulation for capturing outliers, sparsity-promoting convex and non-convex penalties for parsimonious model selection, and data-driven robust initialization procedures adapted to the compositional setting. We show, in theory and simulations, the ability of our approach to jointly select a sparse set of predictive microbial features and identify outliers in the response. We illustrate the viability of our method by robustly predicting human body mass indices from American Gut Project amplicon data and non-compositional covariate data. We believe that the robust estimators introduced here and available in the R package RobRegCC can serve as a practical tool for reliable statistical regression analysis of compositional data, including microbiome survey data.},
+author = {Aditya Mishra and Christian L. Müller},
+doi = {10.1016/J.CSDA.2021.107315},
+arxivid = {1909.04990},
+}
+
+@article{166f887d93992858440b29b01951bb00910ca2fa,
+title = {Meta-Signer: Metagenomic Signature Identifier based on Rank Aggregation of Features},
+year = {2020},
+url = {https://www.semanticscholar.org/paper/166f887d93992858440b29b01951bb00910ca2fa},
+abstract = {Background The advance of metagenomic studies provides the opportunity to identify microbial taxa that are associated to human diseases. Multiple methods exist for the association analysis. However, the results could be inconsistent, presenting challenges in interpreting the host-microbiome interactions. To address this issue, we introduce Meta-Signer, a novel Metagenomic Signature Identifier tool based on rank aggregation of features identified from multiple machine learning models including Random Forest, Support Vector Machines, LASSO, Multi-Layer Perceptron Neural Networks, and our recently developed Convolutional Neural Network framework (PopPhy-CNN). Meta-Signer generates ranked taxa lists by training individual machine learning models over multiple training partitions and aggregates them into a single ranked list by an optimization procedure to represent the most informative and robust microbial features. Meta-Signer can rank taxa using two input forms of the data: the relative abundances of the original taxa and taxa from the populated taxonomic trees generated from the original taxa. The latter form allows the evaluation of the association of microbial features at different taxonomic levels to the disease, which is attributed to our novel model of PopPhy-CNN. Results We evaluate Mega-Signer on five different human gut-microbiome datasets. We demonstrate that the features derived from Meta-Signer were more informative compared to those obtained from other available feature ranking methods. The highly ranked features are strongly supported by published literature. Conclusion Meta-Signer is capable of deriving a robust set of microbial features at multiple taxonomic levels for the prediction of host phenotype. Meta-Signer is user-friendly and customizable, allowing users to explore their datasets quickly and efficiently.},
+author = {Derek Reiman and A. Metwally and Jun Sun and Yang Dai},
+doi = {10.1101/2020.05.09.085993},
+}
+
+@article{5d0991f40a685d6aa2760c1c0bdcaaecaa3ba702,
+title = {Phylogeny-Based Kernels with Application to Microbiome Association Studies},
+year = {2017},
+url = {https://www.semanticscholar.org/paper/5d0991f40a685d6aa2760c1c0bdcaaecaa3ba702},
+abstract = {The human microbiome, the collection of the microorganisms and their genomes associated with the human body, has received tremendous attention recently due to its important role in human health and disease. Next generation sequencing technology opens a new era for microbiome research via direct sequencing of the microbial DNA. One widely used approach sequences the bacterial 16S rRNA gene to profile the bacterial content of the human microbiome, resulting in a sparse species abundance table, together with a phylogenetic tree among species. Due to the complex interaction between bacterial species and the environment, linear model is not appropriate for microbiome data. Kernel methods, which allow modeling nonlinear relationship, have become increasingly popular for microbiome data. Moreover, kernel methods allow easy incorporation of prior structure information by defining a problem-specific kernel function. For microbiome data, the phylogenetic tree provides important prior information about how these bacterial species are related, and incorporating the phylogenetic tree into analysis can potentially improve the efficiency and power of the analysis. While there are methods for converting the phylogeny-based distance measures into kernels, a formal kernel function that allows flexible integration of the tree does not exist. Here we provide a three-parameter phylogeny-based kernel, which allows modeling a wide range of nonlinear relationships. Each parameter has a nice biological interpretation and, by tuning the parameter, we can gain insights about how the microbiome interacts with the environment. We demonstrated the performance of the phylogeny-based kernel in the context of kernel machine-based microbiome association test. We show that the test based on our new kernel outperforms that based on traditional distance-converted kernels. We finally applied the phylogeny-based kernel to a real gut microbiome data from a diet-microbiome association study. We identified more nutrients associated with the gut microbiome using the phylogeny-based kernel.},
+author = {Jian Xiao and Jun Chen},
+doi = {10.1007/978-3-319-69416-0_13},
+}
+
+@article{8dd0092f8c3295866bde0ceb1724c5d83437fec8,
+title = {Statistical Methods for Analyzing Tree-Structured Microbiome Data},
+year = {2021},
+url = {https://www.semanticscholar.org/paper/8dd0092f8c3295866bde0ceb1724c5d83437fec8},
+abstract = {},
+author = {Tao Wang and Hongyu Zhao},
+doi = {10.1007/978-3-030-73351-3_8},
+}
+
+@article{4d61146863fbf3ace0c002a9e205c21505e7f302,
+title = {PopPhy-CNN: A Phylogenetic Tree Embedded Architecture for Convolutional Neural Networks to Predict Host Phenotype From Metagenomic Data},
+year = {2020},
+url = {https://www.semanticscholar.org/paper/4d61146863fbf3ace0c002a9e205c21505e7f302},
+abstract = {Accurate prediction of the host phenotype from a metagenomic sample and identification of the associated microbial markers are important in understanding potential host-microbiome interactions related to disease initiation and progression. We introduce PopPhy-CNN, a novel convolutional neural network (CNN) learning framework that effectively exploits phylogenetic structure in microbial taxa for host phenotype prediction. Our approach takes an input format of a 2D matrix representing the phylogenetic tree populated with the relative abundance of microbial taxa in a metagenomic sample. This conversion empowers CNNs to explore the spatial relationship of the taxonomic annotations on the tree and their quantitative characteristics in metagenomic data. We show the competitiveness of our model compared to other available methods using nine metagenomic datasets of moderate size for binary classification. With synthetic and biological datasets, we show the superior and robust performance of our model for multi-class classification. Furthermore, we design a novel scheme for feature extraction from the learned CNN models and demonstrate improved performance when the extracted features. PopPhy-CNN is a practical deep learning framework for the prediction of host phenotype with the ability of facilitating the retrieval of predictive microbial taxa.},
+author = {Derek Reiman and Ahmed A. Metwally and Jun Sun and Yang Dai},
+doi = {10.1109/JBHI.2020.2993761},
+pmid = {32396115},
+}
+
+@article{8025c578471747e57a5a98b594e476b19f7db604,
+title = {Prediction of histone post-translational modifications using deep learning},
+year = {2020},
+url = {https://www.semanticscholar.org/paper/8025c578471747e57a5a98b594e476b19f7db604},
+abstract = {MOTIVATION
+Histone post-translational modifications (PTMs) are involved in a variety of essential regulatory processes in the cell, including transcription control. Recent studies have shown that histone PTMs can be accurately predicted from the knowledge of transcription factor binding or DNase hypersensitivity data. Similarly, it has been shown that one can predict PTMs from the underlying DNA primary sequence.
+
+
+RESULTS
+In this study, we introduce a deep learning architecture called DeepPTM for predicting histone PTMs from transcription factor binding data and the primary DNA sequence. Extensive experimental results show that our deep learning model outperforms the prediction accuracy of the model proposed in Benveniste et al. (PNAS 2014) and DeepHistone (BMC Genomics 2019). The competitive advantage of our framework lies in the synergistic use of deep learning combined with an effective pre-processing step. Our classification framework has also enabled the discovery that the knowledge of a small subset of transcription factors (which are histone-PTM and cell-type specific) can provide almost the same prediction accuracy that can be obtained using all the transcription factors data.
+
+
+AVAILABILITY
+https://github.com/dDipankar/DeepPTM.},
+author = {D. Baisya and S. Lonardi},
+doi = {10.1093/bioinformatics/btaa1075},
+pmid = {33367499},
+}
+
+@article{b92f52985b8e92fadf3ad5b47ab07b85f6e97777,
+title = {LinDA: linear models for differential abundance analysis of microbiome compositional data},
+year = {2021},
+url = {https://www.semanticscholar.org/paper/b92f52985b8e92fadf3ad5b47ab07b85f6e97777},
+abstract = {Differential abundance analysis is at the core of statistical analysis of microbiome data. The compositional nature of microbiome sequencing data makes false positive control challenging. Here, we show that the compositional effects can be addressed by a simple, yet highly flexible and scalable, approach. The proposed method, LinDA, only requires fitting linear regression models on the centered log-ratio transformed data, and correcting the bias due to compositional effects. We show that LinDA enjoys asymptotic FDR control and can be extended to mixed-effect models for correlated microbiome data. Using simulations and real examples, we demonstrate the effectiveness of LinDA.},
+author = {Huijuan Zhou and Kejun He and Jun Chen and Xianyang Zhang},
+doi = {10.1186/s13059-022-02655-5},
+pmid = {35421994},
+arxivid = {2104.00242},
+}
+
+@article{352cacba2b94f8928b5dc3bee5f9be2f6838033d,
+title = {PopPhy-CNN: A Phylogenetic Tree Embedded Architecture for Convolution Neural Networks for Metagenomic Data},
+year = {2018},
+url = {https://www.semanticscholar.org/paper/352cacba2b94f8928b5dc3bee5f9be2f6838033d},
+abstract = {Motivation Accurate prediction of the host phenotype from a metgenomic sample and identification of the associated bacterial markers are important in metagenomic studies. We introduce PopPhy-CNN, a novel convolutional neural networks (CNN) learning architecture that effectively exploits phylogentic structure in microbial taxa. PopPhy-CNN provides an input format of 2D matrix created by embedding the phylogenetic tree that is populated with the relative abundance of microbial taxa in a metagenomic sample. This conversion empowers CNNs to explore the spatial relationship of the taxonomic annotations on the tree and their quantitative characteristics in metagenomic data. Results PopPhy-CNN is evaluated using three metagenomic datasets of moderate size. We show the superior performance of PopPhy-CNN compared to random forest, support vector machines, LASSO and a baseline 1D-CNN model constructed with relative abundance microbial feature vectors. In addition, we design a novel scheme of feature extraction from the learned CNN models and demonstrate the improved performance when the extracted features are used to train support vector machines. Conclusion PopPhy-CNN is a novel deep learning framework for the prediction of host phenotype from metagenomic samples. PopPhy-CNN can efficiently train models and does not require excessive amount of data. PopPhy-CNN facilities not only retrieval of informative microbial taxa from the trained CNN models but also visualization of the taxa on the phynogenetic tree. Contact yagndai@uic.edu Availability Source code is publicly available at https://github.com/derekreiman/PopPhy-CNN Supplementary information Supplementary data are available at Bioinformatics online.},
+author = {Derek Reiman and Ahmed A. Metwally and Yang Dai},
+doi = {10.1101/257931},
+}
+
+@article{ee0e13f4ed8e523306fb4d8ed3dbfecda157a884,
+title = {Small Sample Kernel Association Tests for Human Genetic and Microbiome Association Studies},
+year = {2016},
+url = {https://www.semanticscholar.org/paper/ee0e13f4ed8e523306fb4d8ed3dbfecda157a884},
+abstract = {Kernel machine based association tests (KAT) have been increasingly used in testing the association between an outcome and a set of biological measurements due to its power to combine multiple weak signals of complex relationship with the outcome through the specification of a relevant kernel. Human genetic and microbiome association studies are two important applications of KAT. However, the classic KAT framework relies on large sample theory, and conservativeness has been observed for small sample studies, especially for microbiome association studies. The common approach for addressing the small sample problem relies on computationally intensive resampling methods. Here, we derive an exact test for KAT with continuous traits, which resolve the small sample conservatism of KAT without the need for resampling. The exact test has significantly improved power to detect association for microbiome studies. For binary traits, we propose a similar approximate test, and we show that the approximate test is very powerful for a wide range of kernels including common variant‐ and microbiome‐based kernels, and the approximate test controls the type I error well for these kernels. In contrast, the sequence kernel association tests have slightly inflated genomic inflation factors after small sample adjustment. Extensive simulations and application to a real microbiome association study are used to demonstrate the utility of our method.},
+author = {Jun Chen and Wenan Chen and Ni Zhao and Michael C. Wu and D. Schaid},
+doi = {10.1002/gepi.21934},
+pmid = {26643881},
+}
+
+@article{152f2a8780fe03a323b2f1e05df7377c406a5232,
+title = {A Phylogeny-Regularized Sparse Regression Model for Predictive Modeling of Microbial Community Data},
+year = {2018},
+url = {https://www.semanticscholar.org/paper/152f2a8780fe03a323b2f1e05df7377c406a5232},
+abstract = {Fueled by technological advancement, there has been a surge of human microbiome studies surveying the microbial communities associated with the human body and their links with health and disease. As a complement to the human genome, the human microbiome holds great potential for precision medicine. Efficient predictive models based on microbiome data could be potentially used in various clinical applications such as disease diagnosis, patient stratification and drug response prediction. One important characteristic of the microbial community data is the phylogenetic tree that relates all the microbial taxa based on their evolutionary history. The phylogenetic tree is an informative prior for more efficient prediction since the microbial community changes are usually not randomly distributed on the tree but tend to occur in clades at varying phylogenetic depths (clustered signal). Although community-wide changes are possible for some conditions, it is also likely that the community changes are only associated with a small subset of “marker” taxa (sparse signal). Unfortunately, predictive models of microbial community data taking into account both the sparsity and the tree structure remain under-developed. In this paper, we propose a predictive framework to exploit sparse and clustered microbiome signals using a phylogeny-regularized sparse regression model. Our approach is motivated by evolutionary theory, where a natural correlation structure among microbial taxa exists according to the phylogenetic relationship. A novel phylogeny-based smoothness penalty is proposed to smooth the coefficients of the microbial taxa with respect to the phylogenetic tree. Using simulated and real datasets, we show that our method achieves better prediction performance than competing sparse regression methods for sparse and clustered microbiome signals.},
+author = {Jian Xiao and Li Chen and Yue Yu and Xianyang Zhang and Jun Chen},
+doi = {10.3389/fmicb.2018.03112},
+pmid = {30619188},
+}
+
+@article{131301604c451e79d25da313c9dc7f90011ccfbe,
+title = {Kernel Methods for Regression Analysis of Microbiome Compositional Data},
+year = {2013},
+url = {https://www.semanticscholar.org/paper/131301604c451e79d25da313c9dc7f90011ccfbe},
+abstract = {With the development of next generation sequencing technologies, the human microbiome can now be studied using direct DNA sequencing. Many human diseases have been shown to be associated with the disorder of the human microbiome. Previous statistical methods for associating the microbiome composition with an outcome such as disease status focus on the association of the abundance of individual taxon or their abundance ratios with the outcome variable. However, the problem of multiple testing leads to loss of power to detect the association. When individual taxon-level association test fails, an overall test, which pools the individually weak association signal, can be applied to test the significance of the effect of the overall microbiome composition on an outcome variable. In this paper, we propose a kernel-based semi-parametric regression method for testing the significance of the effect of the microbiome composition on a continuous or binary outcome. Our method provides the flexibility to incorporate the phylogenetic information into the kernels as well as the ability to naturally adjust for the covariate effects. We evaluate our methods using simulations as well as a real data set on testing the significance of the human gut microbiome composition on body mass index (BMI) while adjusting for total fat intake. Our result suggests that the gut microbiome has a strong effect on BMI and this effect is independent of total fat intake.},
+author = {Jun Chen and Hongzhe Li},
+doi = {10.1007/978-1-4614-7846-1_16},
+}
+
+@article{1ef6ce234d8b42365d92e28be708958ea6c53dcb,
+title = {A Dirichlet‐tree multinomial regression model for associating dietary nutrients with gut microorganisms},
+year = {2017},
+url = {https://www.semanticscholar.org/paper/1ef6ce234d8b42365d92e28be708958ea6c53dcb},
+abstract = {Understanding the factors that alter the composition of the human microbiota may help personalized healthcare strategies and therapeutic drug targets. In many sequencing studies, microbial communities are characterized by a list of taxa, their counts, and their evolutionary relationships represented by a phylogenetic tree. In this article, we consider an extension of the Dirichlet multinomial distribution, called the Dirichlet‐tree multinomial distribution, for multivariate, over‐dispersed, and tree‐structured count data. To address the relationships between these counts and a set of covariates, we propose the Dirichlet‐tree multinomial regression model for which we develop a penalized likelihood method for estimating parameters and selecting covariates. For efficient optimization, we adopt the accelerated proximal gradient approach. Simulation studies are presented to demonstrate the good performance of the proposed procedure. An analysis of a data set relating dietary nutrients with bacterial counts is used to show that the incorporation of the tree structure into the model helps increase the prediction power.},
+author = {Tao Wang and Hongyu Zhao},
+doi = {10.1111/biom.12654},
+pmid = {28112797},
+}
+
+@article{4060fcc520700ea600ca82f37f1492bf2fcaa557,
+title = {Incorporating phylogenetic information in microbiome abundance studies has no effect on detection power and FDR control},
+year = {2020},
+url = {https://www.semanticscholar.org/paper/4060fcc520700ea600ca82f37f1492bf2fcaa557},
+abstract = {We consider the problem of incorporating evolutionary information (e.g. taxonomic or phylogenic trees) in the context of metagenomics differential analysis. Recent results published in the literature propose different ways to leverage the tree structure to increase the detection rate of differentially abundant taxa. Here, we propose instead to use a different hierachical structure, in the form of a correlation-based tree, as it may capture the structure of the data better than the phylogeny. We first show that the correlation tree and the phylogeny are significantly different before turning to the impact of tree choice on detection rates. Using synthetic data, we show that the tree does have an impact: smoothing p-values according to the phylogeny leads to equal or inferior rates as smoothing according to the correlation tree. However, both trees are outperformed by the classical, non hierachical, Benjamini-Hochberg (BH) procedure in terms of detection rates. Other procedures may use the hierachical structure with profit but do not control the False Discovery Rate (FDR) a priori and remain inferior to a classical Benjamini-Hochberg procedure with the same nominal FDR. On real datasets, no hierarchical procedure had significantly higher detection rate that BH. Although intuition advocates the use of a hierachical structure, be it the phylogeny or the correlation tree, to increase the detection rate in microbiome studies, current hierachical procedures are still inferior to non hierachical ones and effective procedures remain to be invented.},
+author = {A. Bichat and J. Plassais and C. Ambroise and M. Mariadassou},
+doi = {10.1101/2020.01.31.928309},
+}
+
+@article{357e680f577f757a15261b8c67aad598d0d0cbcf,
+title = {glmgraph: an R package for variable selection and predictive modeling of structured genomic data},
+year = {2015},
+url = {https://www.semanticscholar.org/paper/357e680f577f757a15261b8c67aad598d0d0cbcf},
+abstract = {UNLABELLED
+One central theme of modern high-throughput genomic data analysis is to identify relevant genomic features as well as build up a predictive model based on selected features for various tasks such as personalized medicine. Correlating the large number of 'omics' features with a certain phenotype is particularly challenging due to small sample size (n) and high dimensionality (p). To address this small n, large p problem, various forms of sparse regression models have been proposed by exploiting the sparsity assumption. Among these, network-constrained sparse regression model is of particular interest due to its ability to utilize the prior graph/network structure in the omics data. Despite its potential usefulness for omics data analysis, no efficient R implementation is publicly available. Here we present an R software package 'glmgraph' that implements the graph-constrained regularization for both sparse linear regression and sparse logistic regression. We implement both the L1 penalty and minimax concave penalty for variable selection and Laplacian penalty for coefficient smoothing. Efficient coordinate descent algorithm is used to solve the optimization problem. We demonstrate the use of the package by applying it to a human microbiome dataset, where phylogeny structure among bacterial taxa is available.
+
+
+AVAILABILITY AND IMPLEMENTATION
+'glmgraph' is implemented in R and C++ Armadillo and publicly available under CRAN.},
+author = {Li Chen and Han Liu and J. Kocher and Hongzhe Li and Jun Chen},
+doi = {10.1093/bioinformatics/btv497},
+pmid = {26315909},
+}
+
+@article{3a2cbfaf7854379af2f38a103af815a465e3b1f9,
+title = {Testing in Microbiome-Profiling Studies with MiRKAT, the Microbiome Regression-Based Kernel Association Test.},
+year = {2015},
+url = {https://www.semanticscholar.org/paper/3a2cbfaf7854379af2f38a103af815a465e3b1f9},
+abstract = {High-throughput sequencing technology has enabled population-based studies of the role of the human microbiome in disease etiology and exposure response. Distance-based analysis is a popular strategy for evaluating the overall association between microbiome diversity and outcome, wherein the phylogenetic distance between individuals' microbiome profiles is computed and tested for association via permutation. Despite their practical popularity, distance-based approaches suffer from important challenges, especially in selecting the best distance and extending the methods to alternative outcomes, such as survival outcomes. We propose the microbiome regression-based kernel association test (MiRKAT), which directly regresses the outcome on the microbiome profiles via the semi-parametric kernel machine regression framework. MiRKAT allows for easy covariate adjustment and extension to alternative outcomes while non-parametrically modeling the microbiome through a kernel that incorporates phylogenetic distance. It uses a variance-component score statistic to test for the association with analytical p value calculation. The model also allows simultaneous examination of multiple distances, alleviating the problem of choosing the best distance. Our simulations demonstrated that MiRKAT provides correctly controlled type I error and adequate power in detecting overall association. "Optimal" MiRKAT, which considers multiple candidate distances, is robust in that it suffers from little power loss in comparison to when the best distance is used and can achieve tremendous power gain in comparison to when a poor distance is chosen. Finally, we applied MiRKAT to real microbiome datasets to show that microbial communities are associated with smoking and with fecal protease levels after confounders are controlled for.},
+author = {Ni Zhao and Jun Chen and I. Carroll and T. Ringel-Kulka and M. Epstein and Huan Zhou and Jin J. Zhou and Y. Ringel and Hongzhe Li and Michael C. Wu},
+doi = {10.1016/j.ajhg.2015.04.003},
+pmid = {25957468},
+}
+
+@article{0b7906bc16e88f245141dd1c74af6f5a8fac23db,
+title = {Meta-Signer: Metagenomic Signature Identifier based onrank aggregation of features},
+year = {2021},
+url = {https://www.semanticscholar.org/paper/0b7906bc16e88f245141dd1c74af6f5a8fac23db},
+abstract = {The advance of metagenomic studies provides the opportunity to identify microbial taxa that are associated with human diseases. Multiple methods exist for the association analysis. However, the results could be inconsistent, presenting challenges in interpreting the host-microbiome interactions. To address this issue, we develop Meta-Signer, a novel Meta genomic Sign ature Identifi er tool based on rank aggregation of features identified from multiple machine learning models including Random Forest, Support Vector Machines, Logistic Regression, and Multi-Layer Perceptron Neural Networks. Meta-Signer generates ranked taxa lists by training individual machine learning models over multiple training partitions and aggregates the ranked lists into a single list by an optimization procedure to represent the most informative and robust microbial features. A User will receive speedy assessment on the predictive performance of each ma-chine learning model using different numbers of the ranked features and determine the final models to be used for evaluation on external datasets. Meta-Signer is user-friendly and customizable, allowing users to explore their datasets quickly and efficiently.},
+author = {Derek Reiman and Ahmed A. Metwally and Jun Sun and Yang Dai},
+doi = {10.12688/F1000RESEARCH.27384.1},
+}
+
+@article{7f06cc72872e714f0688e7c8f4d83477db79e9ad,
+title = {A small‐sample kernel association test for correlated data with application to microbiome association studies},
+year = {2018},
+url = {https://www.semanticscholar.org/paper/7f06cc72872e714f0688e7c8f4d83477db79e9ad},
+abstract = {Recent research has highlighted the importance of the human microbiome in many human disease and health conditions. Most current microbiome association analyses focus on unrelated samples; such methods are not appropriate for analysis of data collected from more advanced study designs such as longitudinal and pedigree studies, where outcomes can be correlated. Ignoring such correlations can sometimes lead to suboptimal results or even possibly biased conclusions. Thus, new methods to handle correlated outcome data in microbiome association studies are needed. In this paper, we propose the correlated sequence kernel association test (CSKAT) to address such correlations using the linear mixed model. Specifically, random effects are used to account for the outcome correlations and a variance component test is used to examine the microbiome effect. Compared to existing genetic association tests for longitudinal and family samples, we implement a correction procedure to better calibrate the null distribution of the score test statistic to accommodate the small sample size nature of data collected from a typical microbiome study. Comprehensive simulation studies are conducted to demonstrate the validity and efficiency of our method, and we show that CSKAT achieves a higher power than existing methods while correctly controlling the Type I error rate. We also apply our method to a microbiome data set collected from a UK twin study to illustrate its potential usefulness. A free implementation of our method in R software is available at https://github.com/jchen1981/SSKAT.},
+author = {Xiang Zhan and Lingzhou Xue and Haotian Zheng and A. Plantinga and Michael C. Wu and D. Schaid and Ni Zhao and Jun Chen},
+doi = {10.1002/gepi.22160},
+pmid = {30218543},
+}
+
+@article{5eb1c93893d36044577e1a3852b0d333177b3044,
+title = {Graph Embedding Deep Learning Guides Microbial Biomarkers' Identification},
+year = {2019},
+url = {https://www.semanticscholar.org/paper/5eb1c93893d36044577e1a3852b0d333177b3044},
+abstract = {The microbiome-wide association studies are to figure out the relationship between microorganisms and humans, with the goal of discovering relevant biomarkers to guide disease diagnosis. However, the microbiome data is complex, with high noise and dimensions. Traditional machine learning methods are limited by the models' representation ability and cannot learn complex patterns from the data. Recently, deep learning has been widely applied to fields ranging from text processing to image recognition due to its efficient flexibility and high capacity. But the deep learning models must be trained with enough data in order to achieve good performance, which is impractical in reality. In addition, deep learning is considered as black box and hard to interpret. These factors make deep learning not widely used in microbiome-wide association studies. In this work, we construct a sparse microbial interaction network and embed this graph into deep model to alleviate the risk of overfitting and improve the performance. Further, we explore a Graph Embedding Deep Feedforward Network (GEDFN) to conduct feature selection and guide meaningful microbial markers' identification. Based on the experimental results, we verify the feasibility of combining the microbial graph model with the deep learning model, and demonstrate the feasibility of applying deep learning and feature selection on microbial data. Our main contributions are: firstly, we utilize different methods to construct a variety of microbial interaction networks and combine the network via graph embedding deep learning. Secondly, we introduce a feature selection method based on graph embedding and validate the biological meaning of microbial markers. The code is available at https://github.com/MicroAVA/GEDFN.git.},
+author = {Qiang Zhu and Xingpeng Jiang and Qing Zhu and Min Pan and Tingting He},
+doi = {10.3389/fgene.2019.01182},
+pmid = {31824573},
+}
+
+@article{a8388b0845bab1fd839d3a35c2371d6e50126ce4,
+title = {Incorporating Phylogenetic Information in Microbiome Differential Abundance Studies Has No Effect on Detection Power and FDR Control},
+year = {2020},
+url = {https://www.semanticscholar.org/paper/a8388b0845bab1fd839d3a35c2371d6e50126ce4},
+abstract = {We consider the problem of incorporating evolutionary information (e.g., taxonomic or phylogenic trees) in the context of metagenomics differential analysis. Recent results published in the literature propose different ways to leverage the tree structure to increase the detection rate of differentially abundant taxa. Here, we propose instead to use a different hierarchical structure, in the form of a correlation-based tree, as it may capture the structure of the data better than the phylogeny. We first show that the correlation tree and the phylogeny are significantly different before turning to the impact of tree choice on detection rates. Using synthetic data, we show that the tree does have an impact: smoothing p-values according to the phylogeny leads to equal or inferior rates as smoothing according to the correlation tree. However, both trees are outperformed by the classical, non-hierarchical, Benjamini–Hochberg (BH) procedure in terms of detection rates. Other procedures may use the hierarchical structure with profit but do not control the False Discovery Rate (FDR) a priori and remain inferior to a classical Benjamini–Hochberg procedure with the same nominal FDR. On real datasets, no hierarchical procedure had significantly higher detection rate that BH. Intuition advocates that the use of hierarchical structures should increase the detection rate of differentially abundant taxa in microbiome studies. However, our results suggest that current hierarchical procedures are still inferior to standard methods and more effective procedures remain to be invented.},
+author = {A. Bichat and J. Plassais and C. Ambroise and M. Mariadassou},
+doi = {10.3389/fmicb.2020.00649},
+pmid = {32351481},
+}
+
+@article{70b25c4e2432ac9de15b868ef6b8339e7dbfae66,
+title = {Microbiome Preprocessing Machine Learning Pipeline},
+year = {2021},
+url = {https://www.semanticscholar.org/paper/70b25c4e2432ac9de15b868ef6b8339e7dbfae66},
+abstract = {Background 16S sequencing results are often used for Machine Learning (ML) tasks. 16S gene sequences are represented as feature counts, which are associated with taxonomic representation. Raw feature counts may not be the optimal representation for ML. Methods We checked multiple preprocessing steps and tested the optimal combination for 16S sequencing-based classification tasks. We computed the contribution of each step to the accuracy as measured by the Area Under Curve (AUC) of the classification. Results We show that the log of the feature counts is much more informative than the relative counts. We further show that merging features associated with the same taxonomy at a given level, through a dimension reduction step for each group of bacteria improves the AUC. Finally, we show that z-scoring has a very limited effect on the results. Conclusions The prepossessing of microbiome 16S data is crucial for optimal microbiome based Machine Learning. These preprocessing steps are integrated into the MIPMLP - Microbiome Preprocessing Machine Learning Pipeline, which is available as a stand-alone version at: https://github.com/louzounlab/microbiome/tree/master/Preprocess or as a service at http://mip-mlp.math.biu.ac.il/Home Both contain the code, and standard test sets.},
+author = {Yoel Y Jasner and Anna Belogolovski and M. Ben-Itzhak and O. Koren and Y. Louzoun},
+doi = {10.3389/fimmu.2021.677870},
+pmid = {34220823},
+}
+
+@article{be813b90620b2627226864eaf5e0f3eec9d50e85,
+title = {A Review and Tutorial of Machine Learning Methods for Microbiome Host Trait Prediction},
+year = {2019},
+url = {https://www.semanticscholar.org/paper/be813b90620b2627226864eaf5e0f3eec9d50e85},
+abstract = {With the growing importance of microbiome research, there is increasing evidence that host variation in microbial communities is associated with overall host health. Advancement in genetic sequencing methods for microbiomes has coincided with improvements in machine learning, with important implications for disease risk prediction in humans. One aspect specific to microbiome prediction is the use of taxonomy-informed feature selection. In this review for non-experts, we explore the most commonly used machine learning methods, and evaluate their prediction accuracy as applied to microbiome host trait prediction. Methods are described at an introductory level, and R/Python code for the analyses is provided.},
+author = {Yi‐Hui Zhou and P. Gallins},
+doi = {10.3389/fgene.2019.00579},
+pmid = {31293616},
+}
+
+@article{d8ece85d1d53dbd19d15f8ea7360cd3df285a77e,
+title = {Phy-PMRFI: Phylogeny-Aware Prediction of Metagenomic Functions Using Random Forest Feature Importance},
+year = {2019},
+url = {https://www.semanticscholar.org/paper/d8ece85d1d53dbd19d15f8ea7360cd3df285a77e},
+abstract = {High-throughput sequencing techniques have accelerated functional metagenomics studies through the generation of large volumes of omics data. The integration of these data using computational approaches is potentially useful for predicting metagenomic functions. Machine learning (ML) models can be trained using microbial features which are then used to classify microbial data into different functional classes. For example, ML analyses over the human microbiome data has been linked to the prediction of important biological states. For analysing omics data, integrating abundance count of taxonomical features with their biological relationships is important. These relationships can potentially be uncovered from the phylogenetic tree of microbial taxa. In this paper, we propose a novel integrative framework Phy-PMRFI. This framework is driven by the phylogeny-based modeling of omics data to predict metagenomic functions using important features selected by a random forest importance (RFI) strategy. The proposed framework integrates the underlying phylogenetic tree information with abundance measures of microbial species (features) by creating a novel phylogeny and abundance aware matrix structure (PAAM). Phy-PMRFI progresses by ranking the microbial features using an RFI measure. This is then used as input for microbiome classification. The resultant feature set enhances the performance of the state-of-art methods such as support vector machines. Our proposed integrative framework also outperforms the state-of-the-art pipeline of phylogenetic isometric log-ratio transform (PhILR) and MetaPhyl. Prediction accuracy of 90 % is obtained with Phy-PMRFI over human throat microbiome in comparison to other approaches of PhILR with 53% and MetaPhyl with 71% accuracy.},
+author = {Jyotsna Talreja Wassan and Haiying Wang and Fiona Browne and Huiru Zheng},
+doi = {10.1109/TNB.2019.2912824},
+pmid = {31021803},
+}
+
+@article{d708571991b4dcf16909e8de51aa9b4c8fa26984,
+title = {Predictive Modeling of Microbiome Data Using a Phylogeny-Regularized Generalized Linear Mixed Model},
+year = {2018},
+url = {https://www.semanticscholar.org/paper/d708571991b4dcf16909e8de51aa9b4c8fa26984},
+abstract = {Recent human microbiome studies have revealed an essential role of the human microbiome in health and disease, opening up the possibility of building microbiome-based predictive models for individualized medicine. One unique characteristic of microbiome data is the existence of a phylogenetic tree that relates all the microbial species. It has frequently been observed that a cluster or clusters of bacteria at varying phylogenetic depths are associated with some clinical or biological outcome due to shared biological function (clustered signal). Moreover, in many cases, we observe a community-level change, where a large number of functionally interdependent species are associated with the outcome (dense signal). We thus develop “glmmTree,” a prediction method based on a generalized linear mixed model framework, for capturing clustered and dense microbiome signals. glmmTree uses the similarity between microbiomes, which is defined based on the microbiome composition and the phylogenetic tree, to predict the outcome. The effects of other predictive variables (e.g., age, sex) can be incorporated readily in the regression framework. Additional tuning parameters enable a data-adaptive approach to capture signals at different phylogenetic depth and abundance level. Simulation studies and real data applications demonstrated that “glmmTree” outperformed existing methods in the dense and clustered signal scenarios.},
+author = {Jian Xiao and Li Chen and Stephen Johnson and Yue Yu and Xianyang Zhang and Jun Chen},
+doi = {10.3389/fmicb.2018.01391},
+pmid = {29997602},
+}
+
+@article{73e3609a8b44e2641786490b5ffd978fb88313af,
+title = {An omnibus test for differential distribution analysis of microbiome sequencing data},
+year = {2018},
+url = {https://www.semanticscholar.org/paper/73e3609a8b44e2641786490b5ffd978fb88313af},
+abstract = {Motivation
+One objective of human microbiome studies is to identify differentially abundant microbes across biological conditions. Previous statistical methods focus on detecting the shift in the abundance and/or prevalence of the microbes and treat the dispersion (spread of the data) as a nuisance. These methods also assume that the dispersion is the same across conditions, an assumption which may not hold in presence of sample heterogeneity. Moreover, the widespread outliers in the microbiome sequencing data make existing parametric models not overly robust. Therefore, a robust and powerful method that allows covariate-dependent dispersion and addresses outliers is still needed for differential abundance analysis.
+
+
+Results
+We introduce a novel test for differential distribution analysis of microbiome sequencing data by jointly testing the abundance, prevalence and dispersion. The test is built on a zero-inflated negative binomial regression model and winsorized count data to account for zero-inflation and outliers. Using simulated data and real microbiome sequencing datasets, we show that our test is robust across various biological conditions and overall more powerful than previous methods.
+
+
+Availability and implementation
+R package is available at https://github.com/jchen1981/MicrobiomeDDA.
+
+
+Contact
+chen.jun2@mayo.edu or zhiwei@njit.edu.
+
+
+Supplementary information
+Supplementary data are available at Bioinformatics online.},
+author = {Jun Chen and E. King and R. Deek and Zhi Wei and Yue Yu and D. Grill and K. Ballman},
+doi = {10.1093/bioinformatics/btx650},
+pmid = {29040451},
+}
+
+@article{f8faae7ae8847de8dada496093a930d011e7cfd2,
+title = {A powerful microbiome-based association test and a microbial taxa discovery framework for comprehensive association mapping},
+year = {2017},
+url = {https://www.semanticscholar.org/paper/f8faae7ae8847de8dada496093a930d011e7cfd2},
+abstract = {BackgroundThe role of the microbiota in human health and disease has been increasingly studied, gathering momentum through the use of high-throughput technologies. Further identification of the roles of specific microbes is necessary to better understand the mechanisms involved in diseases related to microbiome perturbations. MethodsHere, we introduce a new microbiome-based group association testing method, optimal microbiome-based association test (OMiAT). OMiAT is a data-driven testing method which takes an optimal test throughout different tests from the sum of powered score tests (SPU) and microbiome regression-based kernel association test (MiRKAT). We illustrate that OMiAT efficiently discovers significant association signals arising from varying microbial abundances and different relative contributions from microbial abundance and phylogenetic information. We also propose a way to apply it to fine-mapping of diverse upper-level taxa at different taxonomic ranks (e.g., phylum, class, order, family, and genus), as well as the entire microbial community, within a newly introduced microbial taxa discovery framework, microbiome comprehensive association mapping (MiCAM).ResultsOur extensive simulations demonstrate that OMiAT is highly robust and powerful compared with other existing methods, while correctly controlling type I error rates. Our real data analyses also confirm that MiCAM is especially efficient for the assessment of upper-level taxa by integrating OMiAT as a group analytic method.ConclusionsOMiAT is attractive in practice due to the high complexity of microbiome data and the unknown true nature of the state. MiCAM also provides a hierarchical association map for numerous microbial taxa and can also be used as a guideline for further investigation on the roles of discovered taxa in human health and disease.},
+author = {Hyunwook Koh and M. Blaser and Huilin Li},
+doi = {10.1186/s40168-017-0262-x},
+pmid = {28438217},
+}
+
+@article{a0760f5138048d6721f0852b0cc445056ea3251a,
+title = {KERNEL-PENALIZED REGRESSION FOR ANALYSIS OF MICROBIOME DATA.},
+year = {2015},
+url = {https://www.semanticscholar.org/paper/a0760f5138048d6721f0852b0cc445056ea3251a},
+abstract = {The analysis of human microbiome data is often based on dimension-reduced graphical displays and clusterings derived from vectors of microbial abundances in each sample. Common to these ordination methods is the use of biologically motivated definitions of similarity. Principal coordinate analysis, in particular, is often performed using ecologically defined distances, allowing analyses to incorporate context-dependent, non-Euclidean structure. In this paper, we go beyond dimension-reduced ordination methods and describe a framework of high-dimensional regression models that extends these distance-based methods. In particular, we use kernel-based methods to show how to incorporate a variety of extrinsic information, such as phylogeny, into penalized regression models that estimate taxonspecific associations with a phenotype or clinical outcome. Further, we show how this regression framework can be used to address the compositional nature of multivariate predictors comprised of relative abundances; that is, vectors whose entries sum to a constant. We illustrate this approach with several simulations using data from two recent studies on gut and vaginal microbiomes. We conclude with an application to our own data, where we also incorporate a significance test for the estimated coefficients that represent associations between microbial abundance and a percent fat.},
+author = {T. Randolph and Sen Zhao and W. Copeland and M. Hullar and A. Shojaie},
+doi = {10.1214/17-AOAS1102},
+pmid = {30224943},
+arxivid = {1511.00297},
+}
+
+@article{0b7834a359eb2ae19e5bb2b61aa49b892eeedf70,
+title = {Hybrid-denovo: a de novo OTU-picking pipeline integrating single-end and paired-end 16S sequence tags},
+year = {2017},
+url = {https://www.semanticscholar.org/paper/0b7834a359eb2ae19e5bb2b61aa49b892eeedf70},
+abstract = {Abstract Background Illumina paired-end sequencing has been increasingly popular for 16S rRNA gene-based microbiota profiling. It provides higher phylogenetic resolution than single-end reads due to a longer read length. However, the reverse read (R2) often has significant low base quality, and a large proportion of R2s will be discarded after quality control, resulting in a mixture of paired-end and single-end reads. A typical 16S analysis pipeline usually processes either paired-end or single-end reads but not a mixture. Thus, the quantification accuracy and statistical power will be reduced due to the loss of a large amount of reads. As a result, rare taxa may not be detectable with the paired-end approach, or low taxonomic resolution will result in a single-end approach. Results To have both the higher phylogenetic resolution provided by paired-end reads and the higher sequence coverage by single-end reads, we propose a novel OTU-picking pipeline, hybrid-denovo, that can process a hybrid of single-end and paired-end reads. Using high-quality paired-end reads as a gold standard, we show that hybrid-denovo achieved the highest correlation with the gold standard and performed better than the approaches based on paired-end or single-end reads in terms of quantifying the microbial diversity and taxonomic abundances. By applying our method to a rheumatoid arthritis (RA) data set, we demonstrated that hybrid-denovo captured more microbial diversity and identified more RA-associated taxa than a paired-end or single-end approach. Conclusions Hybrid-denovo utilizes both paired-end and single-end 16S sequencing reads and is recommended for 16S rRNA gene targeted paired-end sequencing data.},
+author = {Xianfeng Chen and Stephen Johnson and P. Jeraldo and Junwen Wang and N. Chia and J. Kocher and Jun Chen},
+doi = {10.1093/gigascience/gix129},
+pmid = {29267858},
+}
+
+@article{8830aefa426ba9448d08f530cf7c892a715673c4,
+title = {Statistical Methods for Human Microbiome Data Analysis},
+year = {2012},
+url = {https://www.semanticscholar.org/paper/8830aefa426ba9448d08f530cf7c892a715673c4},
+abstract = {STATISTICAL METHODS FOR HUMAN MICROBIOME DATA ANALYSIS Jun Chen Hongzhe Li, PhD The human microbiome is the totality of the microbes, their genetic elements and the interactions they have with surrounding environments throughout the human body. Studies have implicated the human microbiome in health and disease. Two central themes of human microbiome studies are to identify potential factors influencing the microbiome composition, and to define the relationship between microbiome features and biological or clinical outcomes. With the development of next generation sequencing technologies, the human microbiome composition can be interrogated using high-throughput DNA sequencing. One strategy sequences the bacterial 16S ribosomal RNA gene for species identification. These 16S sequences are usually clustered into Operational Taxonomic Units (OTUs). Analysis of such OTU data raises several important statistical challenges, including taking into account the phylogenetic relationship among OTUs and modeling high-dimensional overdispersed count data. This dissertation presents three statistical methods developed specifically for 16S data analysis centering around the two themes. To test the association between overall microbiome composition and a covariate/an outcome, a testing procedure based on a generalized UniFrac distance was developed. The generalized UniFrac distance corrects the unduly weighting of classic UniFrac distances on either highly abundant or rare lineages, and was shown to be more powerful than the classic UniFracs. Under the framework of canonical correlation analysis (CCA), a structure-constrained sparse CCA was proposed to select the OTUs and their correlated covariates. A phylogenetic structure-constrained penalty function was imposed to induce certain smoothness on the linear coefficients according to the OTU phylogenetic relationship. Structure-constrained sparse CCA performed much better than sparse CCA in selecting relevant OTUs. Finally, a sparse Dirichlet-multinomial},
+author = {Jun Chen},
+}
+
+@article{a43baa951c72c10b716f23909a2b3be58a8b8a89,
+title = {Constructing Predictive Microbial Signatures at Multiple Taxonomic Levels},
+year = {2017},
+url = {https://www.semanticscholar.org/paper/a43baa951c72c10b716f23909a2b3be58a8b8a89},
+abstract = {ABSTRACT Recent advances in DNA sequencing technology have enabled rapid advances in our understanding of the contribution of the human microbiome to many aspects of normal human physiology and disease. A major goal of human microbiome studies is the identification of important groups of microbes that are predictive of host phenotypes. However, the large number of bacterial taxa and the compositional nature of the data make this goal difficult to achieve using traditional approaches. Furthermore, the microbiome data are structured in the sense that bacterial taxa are not independent of one another and are related evolutionarily by a phylogenetic tree. To deal with these challenges, we introduce the concept of variable fusion for high-dimensional compositional data and propose a novel tree-guided variable fusion method. Our method is based on the linear regression model with tree-guided penalty functions. It incorporates the tree information node-by-node and is capable of building predictive models comprised of bacterial taxa at different taxonomic levels. A gut microbiome data analysis and simulations are presented to illustrate the good performance of the proposed method. Supplementary materials for this article are available online.},
+author = {Tao Wang and Hongyu Zhao},
+doi = {10.1080/01621459.2016.1270213},
+}
+
+@article{720e4b9e33e96fef4ddf51d42aaf3cf288e1cb94,
+title = {An adaptive association test for microbiome data},
+year = {2016},
+url = {https://www.semanticscholar.org/paper/720e4b9e33e96fef4ddf51d42aaf3cf288e1cb94},
+abstract = {AbstractThere is increasing interest in investigating how the compositions of microbial communities are associated with human health and disease. Although existing methods have identified many associations, a proper choice of a phylogenetic distance is critical for the power of these methods. To assess an overall association between the composition of a microbial community and an outcome of interest, we present a novel multivariate testing method called aMiSPU, that is joint and highly adaptive over all observed taxa and thus high powered across various scenarios, alleviating the issue with the choice of a phylogenetic distance. Our simulations and real-data analyses demonstrated that the aMiSPU test was often more powerful than several competing methods while correctly controlling type I error rates. The R package MiSPU is available at https://github.com/ChongWu-Biostat/MiSPU
+and CRAN.},
+author = {Chong Wu and Jun Chen and Junghi Kim and W. Pan},
+doi = {10.1186/s13073-016-0302-3},
+pmid = {27198579},
+}
+
+@article{c0e691074e12483027aab2b25a0e41022d8d4abf,
+title = {False discovery rate control incorporating phylogenetic tree increases detection power in microbiome‐wide multiple testing},
+year = {2017},
+url = {https://www.semanticscholar.org/paper/c0e691074e12483027aab2b25a0e41022d8d4abf},
+abstract = {Motivation: Next generation sequencing technologies have enabled the study of the human microbiome through direct sequencing of microbial DNA, resulting in an enormous amount of microbiome sequencing data. One unique characteristic of microbiome data is the phylogenetic tree that relates all the bacterial species. Closely related bacterial species have a tendency to exhibit a similar relationship with the environment or disease. Thus, incorporating the phylogenetic tree information can potentially improve the detection power for microbiome‐wide association studies, where hundreds or thousands of tests are conducted simultaneously to identify bacterial species associated with a phenotype of interest. Despite much progress in multiple testing procedures such as false discovery rate (FDR) control, methods that take into account the phylogenetic tree are largely limited. Results: We propose a new FDR control procedure that incorporates the prior structure information and apply it to microbiome data. The proposed procedure is based on a hierarchical model, where a structure‐based prior distribution is designed to utilize the phylogenetic tree. By borrowing information from neighboring bacterial species, we are able to improve the statistical power of detecting associated bacterial species while controlling the FDR at desired levels. When the phylogenetic tree is mis‐specified or non‐informative, our procedure achieves a similar power as traditional procedures that do not take into account the tree structure. We demonstrate the performance of our method through extensive simulations and real microbiome datasets. We identified far more alcohol‐drinking associated bacterial species than traditional methods. Availability and implementation: R package StructFDR is available from CRAN. Contact: chen.jun2@mayo.edu Supplementary information: Supplementary data are available at Bioinformatics online.},
+author = {Jian Xiao and H. Cao and Jun Chen},
+doi = {10.1093/bioinformatics/btx311},
+pmid = {28505251},
+}
+
+@article{86d89ab87533fd8f580236144ed14be20eeaba74,
+title = {Taxonomy-aware feature engineering for microbiome classification},
+year = {2018},
+url = {https://www.semanticscholar.org/paper/86d89ab87533fd8f580236144ed14be20eeaba74},
+abstract = {BackgroundWhat is a healthy microbiome? The pursuit of this and many related questions, especially in light of the recently recognized microbial component in a wide range of diseases has sparked a surge in metagenomic studies. They are often not simply attributable to a single pathogen but rather are the result of complex ecological processes. Relatedly, the increasing DNA sequencing depth and number of samples in metagenomic case-control studies enabled the applicability of powerful statistical methods, e.g. Machine Learning approaches. For the latter, the feature space is typically shaped by the relative abundances of operational taxonomic units, as determined by cost-effective phylogenetic marker gene profiles. While a substantial body of microbiome/microbiota research involves unsupervised and supervised Machine Learning, very little attention has been put on feature selection and engineering.ResultsWe here propose the first algorithm to exploit phylogenetic hierarchy (i.e. an all-encompassing taxonomy) in feature engineering for microbiota classification. The rationale is to exploit the often mono- or oligophyletic distribution of relevant (but hidden) traits by virtue of taxonomic abstraction. The algorithm is embedded in a comprehensive microbiota classification pipeline, which we applied to a diverse range of datasets, distinguishing healthy from diseased microbiota samples.ConclusionWe demonstrate substantial improvements over the state-of-the-art microbiota classification tools in terms of classification accuracy, regardless of the actual Machine Learning technique while using drastically reduced feature spaces. Moreover, generalized features bear great explanatory value: they provide a concise description of conditions and thus help to provide pathophysiological insights. Indeed, the automatically and reproducibly derived features are consistent with previously published domain expert analyses.},
+author = {Mai Oudah and Andreas Henschel},
+doi = {10.1186/s12859-018-2205-3},
+pmid = {29907097},
+}
+
+@article{653b6f7c814b3f29fe048796f40e5fdadc2fd4b2,
+title = {Zero-inflated generalized Dirichlet multinomial regression model for microbiome compositional data analysis.},
+year = {2018},
+url = {https://www.semanticscholar.org/paper/653b6f7c814b3f29fe048796f40e5fdadc2fd4b2},
+abstract = {There is heightened interest in using high-throughput sequencing technologies to quantify abundances of microbial taxa and linking the abundance to human diseases and traits. Proper modeling of multivariate taxon counts is essential to the power of detecting this association. Existing models are limited in handling excessive zero observations in taxon counts and in flexibly accommodating complex correlation structures and dispersion patterns among taxa. In this article, we develop a new probability distribution, zero-inflated generalized Dirichlet multinomial (ZIGDM), that overcomes these limitations in modeling multivariate taxon counts. Based on this distribution, we propose a ZIGDM regression model to link microbial abundances to covariates (e.g. disease status) and develop a fast expectation-maximization algorithm to efficiently estimate parameters in the model. The derived tests enable us to reveal rich patterns of variation in microbial compositions including differential mean and dispersion. The advantages of the proposed methods are demonstrated through simulation studies and an analysis of a gut microbiome dataset.},
+author = {Zheng-Zheng Tang and Guanhua Chen},
+doi = {10.1093/biostatistics/kxy025},
+pmid = {29939212},
+}
+
+@article{d381f4cbbe79b3f80a8261ecf8407b85712c6419,
+title = {Microbiome, Metagenomics, and High-Dimensional Compositional Data Analysis},
+year = {2015},
+url = {https://www.semanticscholar.org/paper/d381f4cbbe79b3f80a8261ecf8407b85712c6419},
+abstract = {The human microbiome is the totality of all microbes in and on the human body, and its importance in health and disease has been increasingly recognized. High-throughput sequencing technologies have recently enabled scientists to obtain an unbiased quantification of all microbes constituting the microbiome. Often, a single sample can produce hundreds of millions of short sequencing reads. However, unique characteristics of the data produced by the new technologies, as well as the sheer magnitude of these data, make drawing valid biological inferences from microbiome studies difficult. Analysis of these big data poses great statistical and computational challenges. Important issues include normalization and quantification of relative taxa, bacterial genes, and metabolic abundances; incorporation of phylogenetic information into analysis of metagenomics data; and multivariate analysis of high-dimensional compositional data. We review existing methods, point out their limitations, and outline future research...},
+author = {Hongzhe Li},
+doi = {10.1146/ANNUREV-STATISTICS-010814-020351},
+}
+
+@article{3c17fd1a305ad585fbadb52cf06e114af50be59a,
+title = {A small‐sample multivariate kernel machine test for microbiome association studies},
+year = {2017},
+url = {https://www.semanticscholar.org/paper/3c17fd1a305ad585fbadb52cf06e114af50be59a},
+abstract = {High‐throughput sequencing technologies have enabled large‐scale studies of the role of the human microbiome in health conditions and diseases. Microbial community level association test, as a critical step to establish the connection between overall microbiome composition and an outcome of interest, has now been routinely performed in many studies. However, current microbiome association tests all focus on a single outcome. It has become increasingly common for a microbiome study to collect multiple, possibly related, outcomes to maximize the power of discovery. As these outcomes may share common mechanisms, jointly analyzing these outcomes can amplify the association signal and improve statistical power to detect potential associations. We propose the multivariate microbiome regression‐based kernel association test (MMiRKAT) for testing association between multiple continuous outcomes and overall microbiome composition, where the kernel used in MMiRKAT is based on Bray‐Curtis or UniFrac distance. MMiRKAT directly regresses all outcomes on the microbiome profiles via a semiparametric kernel machine regression framework, which allows for covariate adjustment and evaluates the association via a variance‐component score test. Because most of the current microbiome studies have small sample sizes, a novel small‐sample correction procedure is implemented in MMiRKAT to correct for the conservativeness of the association test when the sample size is small or moderate. The proposed method is assessed via simulation studies and an application to a real data set examining the association between host gene expression and mucosal microbiome composition. We demonstrate that MMiRKAT is more powerful than large sample based multivariate kernel association test, while controlling the type I error. A free implementation of MMiRKAT in R language is available at http://research.fhcrc.org/wu/en.html.},
+author = {Xiang Zhan and Xingwei Tong and Ni Zhao and A. Maity and Michael C. Wu and Jun Chen},
+doi = {10.1002/gepi.22030},
+pmid = {28019040},
+}

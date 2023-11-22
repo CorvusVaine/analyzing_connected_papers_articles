@@ -1,0 +1,398 @@
+@article{89aca890cd86c40fa631ea7eb4f9f2fbdd3fdd67,
+title = {Deep in the Bowel: Highly Interpretable Neural Encoder-Decoder Networks Predict Gut Metabolites from Gut Microbiome},
+year = {2019},
+url = {https://www.semanticscholar.org/paper/89aca890cd86c40fa631ea7eb4f9f2fbdd3fdd67},
+abstract = {Technological advances in next-generation sequencing (NGS) and chromatographic assays [e.g., liquid chromatography mass spectrometry (LC-MS)] have made it possible to identify thousands of microbe and metabolite species, and to measure their relative abundance. In this paper, we propose a sparse neural encoder-decoder network to predict metabolite abundances from microbe abundances. Using paired data from a cohort of inflammatory bowel disease (IBD) patients, we show that our neural encoder-decoder model outperforms linear univariate and multivariate methods in terms of accuracy, sparsity, and stability. Importantly, we show that our neural encoder-decoder model is not simply a black box designed to maximize predictive accuracy. Rather, the network’s hidden layer (i.e., the latent space, comprised only of sparsely weighted microbe counts) actually captures key microbe-metabolite relationships that are themselves clinically meaningful. Although this hidden layer is learned without any knowledge of the patient’s diagnosis, we show that the learned latent features are structured in a way that predicts IBD and treatment status with high accuracy. By imposing a non-negative weights constraint, the network becomes a directed graph where each downstream node is interpretable as the additive combination of the upstream nodes. Here, the middle layer comprises distinct microbe-metabolite axes that relate key microbial biomarkers with metabolite biomarkers. By pre-processing the microbiome and metabolome data using compositional data analysis methods, we ensure that our proposed multi-omics workflow will generalize to any pair of -omics data. To the best of our knowledge, this work is the first application of neural encoder-decoders for the interpretable integration of multi-omics biological data.},
+author = {Vuong Le and T. Quinn and T. Tran and S. Venkatesh},
+doi = {10.1186/s12864-020-6652-7},
+pmid = {32689932},
+}
+
+@article{4c1d6a25c513cda291576350dfdaad69adc78aa0,
+title = {Amalgams: data-driven amalgamation for the dimensionality reduction of compositional data},
+year = {2020},
+url = {https://www.semanticscholar.org/paper/4c1d6a25c513cda291576350dfdaad69adc78aa0},
+abstract = {Abstract Many next-generation sequencing datasets contain only relative information because of biological and technical factors that limit the total number of transcripts observed for a given sample. It is not possible to interpret any one component in isolation. The field of compositional data analysis has emerged with alternative methods for relative data based on log-ratio transforms. However, these data often contain many more features than samples, and thus require creative new ways to reduce the dimensionality of the data. The summation of parts, called amalgamation, is a practical way of reducing dimensionality, but can introduce a non-linear distortion to the data. We exploit this non-linearity to propose a powerful yet interpretable dimension method called data-driven amalgamation. Our new method, implemented in the user-friendly R package amalgam, can reduce the dimensionality of compositional data by finding amalgamations that optimally (i) preserve the distance between samples, or (ii) classify samples as diseased or not. Our benchmark on 13 real datasets confirm that these amalgamations compete with state-of-the-art methods in terms of performance, but result in new features that are easily understood: they are groups of parts added together.},
+author = {T. Quinn and I. Erb},
+doi = {10.1093/nargab/lqaa076},
+pmid = {33575624},
+}
+
+@article{c1b34e3858b78361e5123a77c588a380e2dfe6c6,
+title = {DeepTRIAGE: interpretable and individualised biomarker scores using attention mechanism for the classification of breast cancer sub-types},
+year = {2019},
+url = {https://www.semanticscholar.org/paper/c1b34e3858b78361e5123a77c588a380e2dfe6c6},
+abstract = {Motivation Breast cancer is a collection of multiple tissue pathologies, each with a distinct molecular signature that correlates with patient prognosis and response to therapy. Accurately differentiating between breast cancer sub-types is an important part of clinical decision-making. Already, this problem has been addressed using machine learning methods that separate tissue samples into distinct groups. However, there remains unexplained heterogeneity within the established sub-types that cannot be resolved by the commonly used classification algorithms. In this paper, we propose a novel deep learning architecture, called DeepTRIAGE (Deep learning for the TRactable Individualised Analysis of Gene Expression), which not only classifies cancer sub-types with comparable accuracy, but simultaneously assigns each patient their own set of interpretable and individualised biomarker scores. These personalised scores describe how important each feature is in the classification of each patient, and can be analysed post-hoc to generate new hypotheses about intra-class heterogeneity. Results We apply the DeepTRIAGE framework to classify the gene expression signatures of luminal A and luminal B breast cancer sub-types, and illustrate its use for genes and gene set (i.e., GO and KEGG) features. Using DeepTRIAGE, we find that the GINS1 gene and the kinetochore organisation GO term are the most important features for luminal sub-type classification. Through classification, DeepTRIAGE simultaneously reveals heterogeneity within the luminal A biomarker scores that significantly associate with tumour stage, placing all luminal samples along a continuum of severity. Availability and implementation The proposed model is implemented in Python using Py-Torch framework. The analysis is done in Python and R. All Methods and models are freely available from https://github.com/adham/BiomarkerAttend.},
+author = {A. Beykikhoshk and Thomas P. Quinn and Samuel C. Lee and T. Tran and S. Venkatesh},
+doi = {10.1186/s12920-020-0658-5},
+pmid = {32093737},
+}
+
+@article{a188cc91aeb6ba859ddc5555e2bafeb81f57894b,
+title = {Using balances to engineer features for the classification of health biomarkers: a new approach to balance selection},
+year = {2019},
+url = {https://www.semanticscholar.org/paper/a188cc91aeb6ba859ddc5555e2bafeb81f57894b},
+abstract = {Since the turn of the century, technological advances have made it possible to obtain a molecular profile of any tissue in a cost-effective manner. Among these advances include sophisticated high-throughput assays that measure the relative abundance of microorganisms, RNA molecules, and metabolites. While these data are most often collected to gain new insights into biological systems, they can also be used as biomarkers to create clinically useful diagnostic classifiers. How best to classify high-dimensional “-omics” data remains an area of active research. However, few explicitly model the relative nature of these data, and instead rely on cumbersome normalizations which often invoke untestable assumptions. This report (a) emphasizes the relative nature of health biomarkers, (b) discusses the literature surrounding the classification of relative data, and (c) benchmarks how different transformations perform across multiple biomarker types. In doing so, this report explores how one could use balances to engineer features prior to classification, and proposes a simple procedure, called discriminative balance analysis, to select discriminative 2- and 3-part balances.},
+author = {T. Quinn and I. Erb},
+doi = {10.1101/600122},
+}
+
+@article{22aa6b6c013db0885aceb45dba37abe5e4e479e6,
+title = {Visualizing balances of compositional data: A new alternative to balance dendrograms},
+year = {2018},
+url = {https://www.semanticscholar.org/paper/22aa6b6c013db0885aceb45dba37abe5e4e479e6},
+abstract = {Balances have become a cornerstone of compositional data analysis. However, conceptualizing balances is difficult, especially for high-dimensional data. Most often, investigators visualize balances with the balance dendrogram, but this technique is not necessarily intuitive and does not scale well for large data. This manuscript introduces the 'balance' package for the R programming language. This package visualizes balances of compositional data using an alternative to the balance dendrogram. This alternative contains the same information coded by the balance dendrogram, but projects data on a common scale that facilitates direct comparisons and accommodates high-dimensional data. By stripping the branches from the tree, 'balance' can cleanly visualize any subset of balances without disrupting the interpretation of the remaining balances. As an example, this package is applied to a publicly available meta-genomics data set measuring the relative abundance of 500 microbe taxa.},
+author = {T. Quinn},
+doi = {10.12688/f1000research.15858.1},
+pmid = {30228880},
+}
+
+@article{aca5d6c5febd6a74a137b9280e54fbce230517ed,
+title = {Examining microbe–metabolite correlations by linear methods},
+year = {2021},
+url = {https://www.semanticscholar.org/paper/aca5d6c5febd6a74a137b9280e54fbce230517ed},
+abstract = {},
+author = {Thomas P. Quinn and I. Erb},
+doi = {10.1038/s41592-020-01006-1},
+pmid = {33398187},
+}
+
+@article{0aac77b2d35561bca935c56acb3df87218a0aad2,
+title = {Amalgamations are valid in compositional data analysis, can be used in agglomerative clustering, and their logratios have an inverse transformation},
+year = {2020},
+url = {https://www.semanticscholar.org/paper/0aac77b2d35561bca935c56acb3df87218a0aad2},
+abstract = {Abstract Amalgamations (i.e. summing) of parts can be included as new parts in compositional data analysis, and logratios can then be formed using these amalgamations as well as any of the individual parts themselves. In the first contribution of this paper, a comparison is made of the performance of different logratio transformations in explaining the structure of a geochemical data set ​− ​some of the transformations include amalgamations. The second contribution shows how amalgamations suggest a natural way of clustering compositional data, leading to a new clustering algorithm for compositional data. The third contribution deals with the inverse transformation where amalgamations are involved in the logratios. In the case of a linearly independent set of logratios of parts and amalgamated parts, consisting of one less logratio than the number of compositional parts and where each part is present in at least one logratio, it is possible to back-transform this set of logratios to the original parts. The solution is defined by a set of linear equations. A special case is a set of linearly independent pairwise logratios of parts, which are also invertible back to the original parts.},
+author = {M. Greenacre},
+doi = {10.1016/j.acags.2019.100017},
+}
+
+@article{cec4194db520e0abb11b2c187f0263315f8b50f8,
+title = {Revisiting microbe-metabolite interactions: doing better than random},
+year = {2019},
+url = {https://www.semanticscholar.org/paper/cec4194db520e0abb11b2c187f0263315f8b50f8},
+abstract = {Recently, Quinn and Erb et al [1] made the case that when used correctly, correlation and proportionality can outperform MMvec when identifying microbe-metabolite interactions. We revisit this comparison and show that the proposed correlation and proportionality are outperformed by MMvec on real data due to their inability to deal with sparsity commonly observed in microbiome and metabolome datasets.},
+author = {James T. Morton and D. McDonald and A. Aksenov and L. Nothias and James R. Foulds and R. Quinn and M. Badri and Tami L. Swenson and Marc Warwick Van Goethem and T. Northen and Y. Vázquez-Baeza and Mingxun Wang and N. Bokulich and A. Watters and Se Jin Song and Richard Bonneau and P. Dorrestein and R. Knight},
+doi = {10.1101/2019.12.10.871905},
+}
+
+@article{9cca193dd459776771beaf3e6f0512b55bb4c8de,
+title = {Some thoughts on counts in sequencing studies},
+year = {2020},
+url = {https://www.semanticscholar.org/paper/9cca193dd459776771beaf3e6f0512b55bb4c8de},
+abstract = {Abstract Measurements in sequencing studies are mostly based on counts. There is a lack of theoretical developments for the analysis and modelling of this type of data. Some thoughts in this direction are presented, which might serve as a seed. The main issues addressed are the compositional character of multinomial probabilities and the corresponding representation in orthogonal (isometric) coordinates, and modelling distributions for sequencing data taking into account possible effects of amplification techniques.},
+author = {J. Egozcue and J. Graffelman and M. I. Ortego and V. Pawlowsky-Glahn},
+doi = {10.1093/nargab/lqaa094},
+pmid = {33575638},
+}
+
+@article{92dd26f66c9630f760d150b7f98e541bb0aac0bc,
+title = {MetaPheno: A critical evaluation of deep learning and machine learning in metagenome-based disease prediction.},
+year = {2019},
+url = {https://www.semanticscholar.org/paper/92dd26f66c9630f760d150b7f98e541bb0aac0bc},
+abstract = {The human microbiome plays a number of critical roles, impacting almost every aspect of human health and well-being. Conditions in the microbiome have been linked to a number of significant diseases. Additionally, revolutions in sequencing technology have led to a rapid increase in publicly-available sequencing data. Consequently, there have been growing efforts to predict disease status from metagenomic sequencing data, with a proliferation of new approaches in the last few years. Some of these efforts have explored utilizing a powerful form of machine learning called deep learning, which has been applied successfully in several biological domains. Here, we review some of these methods and the algorithms that they are based on, with a particular focus on deep learning methods. We also perform a deeper analysis of Type 2 Diabetes and obesity datasets that have eluded improved results, using a variety of machine learning and feature extraction methods. We conclude by offering perspectives on study design considerations that may impact results and future directions the field can take to improve results and offer more valuable conclusions. The scripts and extracted features for the analyses conducted in this paper are available via GitHub:https://github.com/nlapier2/metapheno.},
+author = {N. Lapierre and C. Ju and Guangyu Zhou and Wei Wang},
+doi = {10.1016/j.ymeth.2019.03.003},
+pmid = {30885720},
+}
+
+@article{00d542f098b19a05645efe15e44eb901ec42b3a4,
+title = {Microbiome Learning Repo (ML Repo): A public repository of microbiome regression and classification tasks},
+year = {2019},
+url = {https://www.semanticscholar.org/paper/00d542f098b19a05645efe15e44eb901ec42b3a4},
+abstract = {Abstract The use of machine learning in high-dimensional biological applications, such as the human microbiome, has grown exponentially in recent years, but algorithm developers often lack the domain expertise required for interpretation and curation of the heterogeneous microbiome datasets. We present Microbiome Learning Repo (ML Repo, available at https://knights-lab.github.io/MLRepo/), a public, web-based repository of 33 curated classification and regression tasks from 15 published human microbiome datasets. We highlight the use of ML Repo in several use cases to demonstrate its wide application, and we expect it to be an important resource for algorithm developers.},
+author = {P. Vangay and Benjamin M Hillmann and D. Knights},
+doi = {10.1093/gigascience/giz042},
+pmid = {31042284},
+}
+
+@article{da741bd3884d7f4ff7ae321e675372df1ce36b53,
+title = {Counts: an outstanding challenge for log-ratio analysis of compositional data in the molecular biosciences},
+year = {2020},
+url = {https://www.semanticscholar.org/paper/da741bd3884d7f4ff7ae321e675372df1ce36b53},
+abstract = {Abstract Thanks to sequencing technology, modern molecular bioscience datasets are often compositions of counts, e.g. counts of amplicons, mRNAs, etc. While there is growing appreciation that compositional data need special analysis and interpretation, less well understood is the discrete nature of these count compositions (or, as we call them, lattice compositions) and the impact this has on statistical analysis, particularly log-ratio analysis (LRA) of pairwise association. While LRA methods are scale-invariant, count compositional data are not; consequently, the conclusions we draw from LRA of lattice compositions depend on the scale of counts involved. We know that additive variation affects the relative abundance of small counts more than large counts; here we show that additive (quantization) variation comes from the discrete nature of count data itself, as well as (biological) variation in the system under study and (technical) variation from measurement and analysis processes. Variation due to quantization is inevitable, but its impact on conclusions depends on the underlying scale and distribution of counts. We illustrate the different distributions of real molecular bioscience data from different experimental settings to show why it is vital to understand the distributional characteristics of count data before applying and drawing conclusions from compositional data analysis methods.},
+author = {David R. Lovell and Xin-Yi Chua and A. McGrath},
+doi = {10.1093/nargab/lqaa040},
+pmid = {33575593},
+}
+
+@article{ffa02d78d32d4d8fa36070aba4a9d4d1cd868b4d,
+title = {Another look at microbe–metabolite interactions: how scale invariant correlations can outperform a neural network},
+year = {2019},
+url = {https://www.semanticscholar.org/paper/ffa02d78d32d4d8fa36070aba4a9d4d1cd868b4d},
+abstract = {Many scientists are now interested in studying the correlative relationships between microbes and metabolites. However, these kinds of analyses are complicated by the compositional (i.e., relative) nature of the data. Recently, Morton et al. proposed a neural network architecture called mmvec to predict metabolite abundances from microbe presence. They introduce this method as a scale invariant solution to the integration of multi-omics compositional data, and claim that “mmvec is the only method robust to scale deviations”. We do not doubt the utility of mmvec, but write in defense of simple linear statistics. In fact, when used correctly, correlation and proportionality can actually outperform the mmvec neural network.},
+author = {T. Quinn and I. Erb},
+doi = {10.1101/847475},
+}
+
+@article{93b4ff16e94bea78f3fb3dd3d1b639ec678e5eec,
+title = {Variable Selection in Compositional Data Analysis Using Pairwise Logratios},
+year = {2018},
+url = {https://www.semanticscholar.org/paper/93b4ff16e94bea78f3fb3dd3d1b639ec678e5eec},
+abstract = {AbstractIn the approach to compositional data analysis originated by John Aitchison, a set of linearly independent logratios (i.e., ratios of compositional parts, logarithmically transformed) explains all the variability in a compositional data set. Such a set of ratios can be represented by an acyclic connected graph of all the parts, with edges one less than the number of parts. There are many such candidate sets of ratios, each of which explains 100% of the compositional logratio variance. A simple choice consists in using additive logratios, and it is demonstrated how to identify one set that can serve as a substitute for the original data set in the sense of best approximating the essential multivariate structure. When all pairwise ratios of parts are candidates for selection, a smaller set of ratios can be determined by automatic selection, but preferably assisted by expert knowledge, which explains as much variability as required to reveal the underlying structure of the data. Conventional univariate statistical summary measures as well as multivariate methods can be applied to these ratios. Such a selection of a small set of ratios also implies the choice of a subset of parts, that is, a subcomposition, which explains a maximum percentage of variance. This approach of ratio selection, designed to simplify the task of the practitioner, is illustrated on an archaeometric data set as well as three further data sets in an “Appendix”. Comparisons are also made with existing proposals for selecting variables in compositional data analysis.
+},
+author = {M. Greenacre},
+doi = {10.1007/s11004-018-9754-x},
+}
+
+@article{d8741e37ae8e39fdc96c5f4426efe4e398742418,
+title = {GutBalance: a server for the human gut microbiome-based disease prediction and biomarker discovery with compositionality addressed},
+year = {2021},
+url = {https://www.semanticscholar.org/paper/d8741e37ae8e39fdc96c5f4426efe4e398742418},
+abstract = {The compositionality of the microbiome data is well-known but often neglected. The compositional transformation pertains to the supervised learning of microbiome data and is a critical step that decides the performance and reliability of the disease classifiers. We value the excellent performance of the distal discriminative balance analysis (DBA) method, which selects distal balances of pairs and trios of bacteria, in addressing the classification of high-dimensional microbiome data. By applying this method to the species-level abundances of all the disease phenotypes in the GMrepo database, we build a balance-based model repository for the classification of human gut microbiome-related diseases. The model repository supports the prediction of disease risks for new sample(s). More importantly, we highlight the concept of balance-disease associations rather than the conventional microbe-disease associations and develop the human Gut Balance-Disease Association Database (GBDAD). Each predictable balance for each disease model indicates a potential biomarker-disease relationship and can be interpreted as a bacteria ratio positively or negatively correlated with the disease. Furthermore, by linking the balance-disease associations to the evidenced microbe-disease associations in MicroPhenoDB, we surprisingly found that most species-disease associations inferred from the shotgun metagenomic datasets can be validated by external evidence beyond MicroPhenoDB. The balance-based species-disease association inference will accelerate the generation of new microbe-disease association hypotheses in gastrointestinal microecology research and clinical trials. The model repository and the GBDAD database are deployed on the GutBalance server, which supports interactive visualization and systematic interrogation of the disease models, disease-related balances and disease-related species of interest.},
+author = {Fenglong Yang and Q. Zou and B. Gao},
+doi = {10.1093/bib/bbaa436},
+pmid = {33515036},
+}
+
+@article{182dcff08e59d9bbd4dbc149b93b57523552b849,
+title = {A field guide for the compositional analysis of any-omics data},
+year = {2018},
+url = {https://www.semanticscholar.org/paper/182dcff08e59d9bbd4dbc149b93b57523552b849},
+abstract = {Next-generation sequencing (NGS) has made it possible to determine the sequence and relative abundance of all nucleotides in a biological or environmental sample. Today, NGS is routinely used to understand many important topics in biology from human disease to microorganism diversity. A cornerstone of NGS is the quantification of RNA or DNA presence as counts. However, these counts are not counts per se: the magnitude of the counts are determined arbitrarily by the sequencing depth, not by the input material. Consequently, counts must undergo normalization prior to use. Conventional normalization methods require a set of assumptions: they assume that the majority of features are unchanged, and that all environments under study have the same carrying capacity for nucleotide synthesis. These assumptions are often untestable and may not hold when comparing heterogeneous samples (e.g., samples collected across distinct cancers or tissues). Instead, methods developed within the field of compositional data analysis offer a general solution that is assumption-free and valid for all data. In this manuscript, we synthesize the extant literature to provide a concise guide on how to apply compositional data analysis to NGS count data. In doing so, we review zero replacement, differential abundance analysis, and within-group and between-group coordination analysis. We then discuss how this pipeline can accommodate complex study design, facilitate the analysis of vertically and horizontally integrated data, including multiomics data, and further extend to single-cell sequencing data. In highlighting the limitations of total library size, effective library size, and spike-in normalizations, we propose the log-ratio transformation as a general solution to answer the question, “Relative to some important activity of the cell, what is changing?”. Taken together, this manuscript establishes the first fully comprehensive analysis protocol that is suitable for any and all -omics data.},
+author = {T. Quinn and I. Erb and G. Gloor and C. Notredame and M. Richardson and T. Crowley},
+doi = {10.1101/484766},
+pmid = {31544212},
+}
+
+@article{02418d479a06cc94139b3b1720a75dd0df93d556,
+title = {Learning sparse log-ratios for high-throughput sequencing data},
+year = {2021},
+url = {https://www.semanticscholar.org/paper/02418d479a06cc94139b3b1720a75dd0df93d556},
+abstract = {The automatic discovery of sparse biomarkers that are associated with an outcome of interest is a central goal of bioinformatics. In the context of high-throughput sequencing (HTS) data, and compositional data (CoDa) more generally, an important class of biomarkers are the log-ratios between the input variables. However, identifying predictive log-ratio biomarkers from HTS data is a combinatorial optimization problem, which is computationally challenging. Existing methods are slow to run and scale poorly with the dimension of the input, which has limited their application to low- and moderate-dimensional metagenomic datasets. Building on recent advances from the field of deep learning, we present CoDaCoRe, a novel learning algorithm that identifies sparse, interpretable, and predictive log-ratio biomarkers. Our algorithm exploits a continuous relaxation to approximate the underlying combinatorial optimization problem. This relaxation can then be optimized efficiently using the modern ML toolbox, in particular, gradient descent. As a result, CoDaCoRe runs several orders of magnitude faster than competing methods, all while achieving state-of-the-art performance in terms of predictive accuracy and sparsity. We verify the outperformance of CoDaCoRe across a wide range of microbiome, metabolite, and microRNA benchmark datasets, as well as a particularly high-dimensional dataset that is outright computationally intractable for existing sparse log-ratio selection methods.1},
+author = {E. Gordon-Rodríguez and T. Quinn and J. Cunningham},
+doi = {10.1093/bioinformatics/btab645},
+pmid = {34498030},
+}
+
+@article{9e489aa7e2832a1321949b8ac5994bd9881f6c2d,
+title = {Interpretable Log Contrasts for the Classification of Health Biomarkers: a New Approach to Balance Selection},
+year = {2020},
+url = {https://www.semanticscholar.org/paper/9e489aa7e2832a1321949b8ac5994bd9881f6c2d},
+abstract = {High-throughput sequencing provides an easy and cost-effective way to measure the relative abundance of bacteria in any environmental or biological sample. When these samples come from humans, the microbiome signatures can act as biomarkers for disease prediction. However, because bacterial abundance is measured as a composition, the data have unique properties that make conventional analyses inappropriate. To overcome this, analysts often use cumbersome normalizations. This article proposes an alternative method that identifies pairs and trios of bacteria whose stoichiometric presence can differentiate between diseased and nondiseased samples. By using interpretable log contrasts called balances, we developed an entirely normalization-free classification procedure that reduces the feature space and improves the interpretability, without sacrificing classifier performance. ABSTRACT Since the turn of the century, technological advances have made it possible to obtain the molecular profile of any tissue in a cost-effective manner. Among these advances are sophisticated high-throughput assays that measure the relative abundances of microorganisms, RNA molecules, and metabolites. While these data are most often collected to gain new insights into biological systems, they can also be used as biomarkers to create clinically useful diagnostic classifiers. How best to classify high-dimensional -omics data remains an area of active research. However, few explicitly model the relative nature of these data and instead rely on cumbersome normalizations. This report (i) emphasizes the relative nature of health biomarkers, (ii) discusses the literature surrounding the classification of relative data, and (iii) benchmarks how different transformations perform for regularized logistic regression across multiple biomarker types. We show how an interpretable set of log contrasts, called balances, can prepare data for classification. We propose a simple procedure, called discriminative balance analysis, to select groups of 2 and 3 bacteria that can together discriminate between experimental conditions. Discriminative balance analysis is a fast, accurate, and interpretable alternative to data normalization. IMPORTANCE High-throughput sequencing provides an easy and cost-effective way to measure the relative abundance of bacteria in any environmental or biological sample. When these samples come from humans, the microbiome signatures can act as biomarkers for disease prediction. However, because bacterial abundance is measured as a composition, the data have unique properties that make conventional analyses inappropriate. To overcome this, analysts often use cumbersome normalizations. This article proposes an alternative method that identifies pairs and trios of bacteria whose stoichiometric presence can differentiate between diseased and nondiseased samples. By using interpretable log contrasts called balances, we developed an entirely normalization-free classification procedure that reduces the feature space and improves the interpretability, without sacrificing classifier performance.},
+author = {T. Quinn and I. Erb},
+doi = {10.1128/mSystems.00230-19},
+pmid = {32265314},
+}
+
+@article{e158fd7a009d69f11bd883f520421bca551a40ce,
+title = {A comparison of isometric and amalgamation logratio balances in compositional data analysis},
+year = {2020},
+url = {https://www.semanticscholar.org/paper/e158fd7a009d69f11bd883f520421bca551a40ce},
+abstract = {Abstract The isometric logratio transformation, in the form of a so-called “balance”, has been promoted as a way to contrast two groups of parts in a compositional data set by forming ratios of their respective geometric means. This transformation has attractive theoretical properties and hence provides a useful reference, but geometric means are highly affected by parts with small relative values. When a comparison between two groups of parts is required in practical applications, such as the investigation and construction of models, while making use of substantive domain knowledge, it is demonstrated that the logratio of two amalgamations serves as an alternative, interpretable form of balance. A geochemical data set is considered, which has been analyzed previously by transforming to a set of isometric logratio balances. An alternative approach, using a reduced set of pairwise logratios of parts, optionally involving prescribed amalgamations, is very close to optimal in accounting for the variance in this compositional data set. These simpler transformations also have an exact back-transformation to the original parts. This approach highlights for this dataset which compositional parts are driving the data structure, using variables that are easy to interpret and that map well to research-driven objectives.},
+author = {M. Greenacre and E. Grunsky and J. Bacon-Shone},
+doi = {10.1016/J.CAGEO.2020.104621},
+}
+
+@article{7c7adf9d9bbb5e408786f390fbd87d8979c50c77,
+title = {Predicting microbiomes through a deep latent space},
+year = {2020},
+url = {https://www.semanticscholar.org/paper/7c7adf9d9bbb5e408786f390fbd87d8979c50c77},
+abstract = {Motivation Microbial communities influence their environment by modifying the availability of compounds such as nutrients or chemical elicitors. Knowing the microbial composition of a site is therefore relevant to improving productivity or health. However, sequencing facilities are not always available, or may be prohibitively expensive in some cases. Thus, it would be desirable to computationally predict the microbial composition from more accessible, easily-measured features. Results Integrating Deep Learning techniques with microbiome data, we propose an artificial neural network architecture based on heterogeneous autoencoders to condense the long vector of microbial abundance values into a deep latent space representation. Then, we design a model to predict the deep latent space and, consequently, to predict the complete microbial composition using environmental features as input. The performance of our system is examined using the rhizosphere microbiome of Maize. We reconstruct the microbial composition (717 taxa) from the deep latent space (10 values) with high fidelity (¿0.9 Pearson correlation). We then successfully predict microbial composition from environmental variables such as plant age, temperature or precipitation (0.73 Pearson correlation, 0.42 Bray-Curtis). We extend this to predict microbiome composition under hypothetical scenarios, such as future climate change conditions. Finally, via transfer learning, we predict microbial composition in a distinct scenario with only a hundred sequences, and distinct environmental features. We propose that our deep latent space may assist microbiome-engineering strategies when technical or financial resources are limited, through predicting current or future microbiome compositions. Availability Software, results, and data are available at https://github.com/jorgemf/DeepLatentMicrobiome},
+author = {Beatriz García-Jiménez and Jorge Muñoz and Sara Cabello and Joaquín Medina and M. Wilkinson},
+doi = {10.1093/bioinformatics/btaa971},
+pmid = {33289510},
+}
+
+@article{aeafc71d647a32022139d41c37d0e338876abdff,
+title = {DeepCoDA: personalized interpretability for compositional health data},
+year = {2020},
+url = {https://www.semanticscholar.org/paper/aeafc71d647a32022139d41c37d0e338876abdff},
+abstract = {Interpretability allows the domain-expert to directly evaluate the model's relevance and reliability, a practice that offers assurance and builds trust. In the healthcare setting, interpretable models should implicate relevant biological mechanisms independent of technical factors like data pre-processing. We define personalized interpretability as a measure of sample-specific feature attribution, and view it as a minimum requirement for a precision health model to justify its conclusions. Some health data, especially those generated by high-throughput sequencing experiments, have nuances that compromise precision health models and their interpretation. These data are compositional, meaning that each feature is conditionally dependent on all other features. We propose the Deep Compositional Data Analysis (DeepCoDA) framework to extend precision health modelling to high-dimensional compositional data, and to provide personalized interpretability through patient-specific weights. Our architecture maintains state-of-the-art performance across 25 real-world data sets, all while producing interpretations that are both personalized and fully coherent for compositional data.},
+author = {T. Quinn and Dang Nguyen and S. Rana and Sunil Gupta and S. Venkatesh},
+arxivid = {2006.01392},
+}
+
+@article{5eb1c93893d36044577e1a3852b0d333177b3044,
+title = {Graph Embedding Deep Learning Guides Microbial Biomarkers' Identification},
+year = {2019},
+url = {https://www.semanticscholar.org/paper/5eb1c93893d36044577e1a3852b0d333177b3044},
+abstract = {The microbiome-wide association studies are to figure out the relationship between microorganisms and humans, with the goal of discovering relevant biomarkers to guide disease diagnosis. However, the microbiome data is complex, with high noise and dimensions. Traditional machine learning methods are limited by the models' representation ability and cannot learn complex patterns from the data. Recently, deep learning has been widely applied to fields ranging from text processing to image recognition due to its efficient flexibility and high capacity. But the deep learning models must be trained with enough data in order to achieve good performance, which is impractical in reality. In addition, deep learning is considered as black box and hard to interpret. These factors make deep learning not widely used in microbiome-wide association studies. In this work, we construct a sparse microbial interaction network and embed this graph into deep model to alleviate the risk of overfitting and improve the performance. Further, we explore a Graph Embedding Deep Feedforward Network (GEDFN) to conduct feature selection and guide meaningful microbial markers' identification. Based on the experimental results, we verify the feasibility of combining the microbial graph model with the deep learning model, and demonstrate the feasibility of applying deep learning and feature selection on microbial data. Our main contributions are: firstly, we utilize different methods to construct a variety of microbial interaction networks and combine the network via graph embedding deep learning. Secondly, we introduce a feature selection method based on graph embedding and validate the biological meaning of microbial markers. The code is available at https://github.com/MicroAVA/GEDFN.git.},
+author = {Qiang Zhu and Xingpeng Jiang and Qing Zhu and Min Pan and Tingting He},
+doi = {10.3389/fgene.2019.01182},
+pmid = {31824573},
+}
+
+@article{23c35c8f05727d78c19f0b59c476e845b04e2b6f,
+title = {Utilizing longitudinal microbiome taxonomic profiles to predict food allergy via Long Short-Term Memory networks},
+year = {2019},
+url = {https://www.semanticscholar.org/paper/23c35c8f05727d78c19f0b59c476e845b04e2b6f},
+abstract = {Food allergy is usually difficult to diagnose in early life, and the inability to diagnose patients with atopic diseases at an early age may lead to severe complications. Numerous studies have suggested an association between the infant gut microbiome and development of allergy. In this work, we investigated the capacity of Long Short-Term Memory (LSTM) networks to predict food allergies in early life (0-3 years) from subjects’ longitudinal gut microbiome profiles. Using the DIABIMMUNE dataset, we show an increase in predictive power using our model compared to Hidden Markov Model, Multi-Layer Perceptron Neural Network, Support Vector Machine, Random Forest, and LASSO regression. We further evaluated whether the training of LSTM networks benefits from reduced representations of microbial features. We considered sparse autoencoder for extraction of potential latent representations in addition to standard feature selection procedures based on Minimum Redundancy Maximum Relevance (mRMR) and variance prior to the training of LSTM networks. The comprehensive evaluation reveals that LSTM networks with the mRMR selected features achieve significantly better performance compared to the other tested machine learning models.},
+author = {Ahmed A. Metwally and Philip S. Yu and Derek Reiman and Yang Dai and P. Finn and D. Perkins},
+doi = {10.1371/journal.pcbi.1006693},
+pmid = {30716085},
+}
+
+@article{8eada562425272e0441d4c357156fb223fa2fd4e,
+title = {Understanding sequencing data as compositions: an outlook and review},
+year = {2017},
+url = {https://www.semanticscholar.org/paper/8eada562425272e0441d4c357156fb223fa2fd4e},
+abstract = {Motivation Although seldom acknowledged explicitly, count data generated by sequencing platforms exist as compositions for which the abundance of each component (e.g., gene or transcript) is only coherently interpretable relative to other components within that sample. This property arises from the assay technology itself, whereby the number of counts recorded for each sample is constrained by an arbitrary total sum (i.e., library size). Consequently, sequencing data, as compositional data, exist in a non-Euclidean space that renders invalid many conventional analyses, including distance measures, correlation coefficients, and multivariate statistical models. Results The purpose of this review is to summarize the principles of compositional data analysis (CoDA), provide evidence for why sequencing data are compositional, discuss compositionally valid methods available for analyzing sequencing data, and highlight future directions with regard to this field of study.},
+author = {T. Quinn and I. Erb and M. Richardson and T. Crowley},
+doi = {10.1093/bioinformatics/bty175},
+pmid = {29608657},
+}
+
+@article{766ed61f34ce1cde6aceeb0aeb4cde9c9268c1d7,
+title = {Partial correlations in compositional data analysis},
+year = {2019},
+url = {https://www.semanticscholar.org/paper/766ed61f34ce1cde6aceeb0aeb4cde9c9268c1d7},
+abstract = {Partial correlations quantify linear association between two variables adjusting for the influence of the remaining variables. They form the backbone for graphical models and are readily obtained from the inverse of the covariance matrix. For compositional data, the covariance structure is specified from log ratios of variables, so unless we try to "open" the data via a normalization, this implies changes in the definition and interpretation of partial correlations. In the present work, we elucidate how results derived by Aitchison (1986) lead to a natural definition of partial correlation that has a number of advantages over current measures of association. For this, we show that the residuals of log-ratios between a variable with a reference, when adjusting for all remaining variables including the reference, are reference-independent. Since the reference itself can be controlled for, correlations between residuals are defined for the variables directly without the necessity to recur to ratios except when specifying which variables are partialled out. Thus, perhaps surprisingly, partial correlations do not have the problems commonly found with measures of pairwise association on compositional data. They are well-defined between two variables, are properly scaled, and allow for negative association. By design, they are subcompositionally incoherent, but they share this property with conventional partial correlations (where results change when adjusting for the influence of fewer variables). We discuss the equivalence with normalization-based approaches whenever the normalizing variables are controlled for. We also discuss the partial variances and correlations we obtain from a previously studied data set of Roman glass cups.},
+author = {I. Erb},
+doi = {10.1016/j.acags.2020.100026},
+arxivid = {1904.09480},
+}
+
+@article{f833e4723ada230bdbf52c793274e6173887ccf8,
+title = {MicroPheno: predicting environments and host phenotypes from 16S rRNA gene sequencing using a k-mer based representation of shallow sub-samples},
+year = {2018},
+url = {https://www.semanticscholar.org/paper/f833e4723ada230bdbf52c793274e6173887ccf8},
+abstract = {Motivation Microbial communities play important roles in the function and maintenance of various biosystems, ranging from the human body to the environment. A major challenge in microbiome research is the classification of microbial communities of different environments or host phenotypes. The most common and cost-effective approach for such studies to date is 16S rRNA gene sequencing. Recent falls in sequencing costs have increased the demand for simple, efficient, and accurate methods for rapid detection or diagnosis with proved applications in medicine, agriculture, and forensic science. We describe a reference- and alignment-free approach for predicting environments and host phenotypes from 16S rRNA gene sequencing based on k-mer representations that benefits from a bootstrapping framework for investigating the sufficiency of shallow sub-samples. Deep learning methods as well as classical approaches were explored for predicting environments and host phenotypes. Results k-mer distribution of shallow sub-samples outperformed the computationally costly Operational Taxonomic Unit (OTU) features in the tasks of body-site identification and Crohn's disease prediction. Aside from being more accurate, using k-mer features in shallow sub-samples allows (i) skipping computationally costly sequence alignments required in OTU-picking, and (ii) provided a proof of concept for the sufficiency of shallow and short-length 16S rRNA sequencing for phenotype prediction. In addition, k-mer features predicted representative 16S rRNA gene sequences of 18 ecological environments, and 5 organismal environments with high macro-F1 scores of 0.88 and 0.87. For large datasets, deep learning outperformed classical methods such as Random Forest and SVM. Availability The software and datasets are available at https://llp.berkeley.edu/micropheno.},
+author = {Ehsaneddin Asgari and Kiavash Garakani and A. Mchardy and M. Mofrad},
+doi = {10.1093/bioinformatics/bty296},
+pmid = {29950008},
+}
+
+@article{689c591150551eb0bce47f00d06df9d2d3ebe231,
+title = {Amalgams: data-driven amalgamation for the reference-free dimensionality reduction of zero-laden compositional data},
+year = {2020},
+url = {https://www.semanticscholar.org/paper/689c591150551eb0bce47f00d06df9d2d3ebe231},
+abstract = {In the health sciences, many data sets produced by next-generation sequencing (NGS) only contain relative information because of biological and technical factors that limit the total number of nucleotides observed for a given sample. As mutually dependent elements, it is not possible to interpret any component in isolation, at least without normalization. The field of compositional data analysis (CoDA) has emerged with alternative methods for relative data based on log-ratio transforms. However, NGS data often contain many more features than samples, and thus require creative new ways to reduce the dimensionality of the data without sacrificing interpretability. The summation of parts, called amalgamation, is a practical way of reducing dimensionality, but can introduce a non-linear distortion to the data. We exploit this non-linearity to propose a powerful yet interpretable dimension reduction method. In this report, we present data-driven amalgamation as a new method and conceptual framework for reducing the dimensionality of compositional data. Unlike expert-driven amalgamation which requires prior domain knowledge, our data-driven amalgamation method uses a genetic algorithm to answer the question, “What is the best way to amalgamate the data to achieve the user-defined objective?”. We present a user-friendly R package, called amalgam, that can quickly find the optimal amalgamation to (a) preserve the distance between samples, or (b) classify samples as diseased or not. Our benchmark on 13 real data sets confirm that these amalgamations compete with the state-of-the-art unsupervised and supervised dimension reduction methods in terms of performance, but result in new variables that are much easier to understand: they are groups of features added together.},
+author = {Thomas P. Quinn and I. Erb},
+doi = {10.1101/2020.02.27.968677},
+}
+
+@article{3e150fcc1e3cd9da54bf433286acba01ecdc4ca3,
+title = {Benchmarking differential expression analysis tools for RNA-Seq: normalization-based vs. log-ratio transformation-based methods},
+year = {2018},
+url = {https://www.semanticscholar.org/paper/3e150fcc1e3cd9da54bf433286acba01ecdc4ca3},
+abstract = {BackgroundCount data generated by next-generation sequencing assays do not measure absolute transcript abundances. Instead, the data are constrained to an arbitrary “library size” by the sequencing depth of the assay, and typically must be normalized prior to statistical analysis. The constrained nature of these data means one could alternatively use a log-ratio transformation in lieu of normalization, as often done when testing for differential abundance (DA) of operational taxonomic units (OTUs) in 16S rRNA data. Therefore, we benchmark how well the ALDEx2 package, a transformation-based DA tool, detects differential expression in high-throughput RNA-sequencing data (RNA-Seq), compared to conventional RNA-Seq methods such as edgeR and DESeq2.ResultsTo evaluate the performance of log-ratio transformation-based tools, we apply the ALDEx2 package to two simulated, and two real, RNA-Seq data sets. One of the latter was previously used to benchmark dozens of conventional RNA-Seq differential expression methods, enabling us to directly compare transformation-based approaches. We show that ALDEx2, widely used in meta-genomics research, identifies differentially expressed genes (and transcripts) from RNA-Seq data with high precision and, given sufficient sample sizes, high recall too (regardless of the alignment and quantification procedure used). Although we show that the choice in log-ratio transformation can affect performance, ALDEx2 has high precision (i.e., few false positives) across all transformations. Finally, we present a novel, iterative log-ratio transformation (now implemented in ALDEx2) that further improves performance in simulations.ConclusionsOur results suggest that log-ratio transformation-based methods can work to measure differential expression from RNA-Seq data, provided that certain assumptions are met. Moreover, these methods have very high precision (i.e., few false positives) in simulations and perform well on real data too. With previously demonstrated applicability to 16S rRNA data, ALDEx2 can thus serve as a single tool for data from multiple sequencing modalities.},
+author = {T. Quinn and T. Crowley and M. Richardson},
+doi = {10.1186/s12859-018-2261-8},
+pmid = {30021534},
+}
+
+@article{6062bdaff6ae1e91c25ab4dfa2856d6782eba7e3,
+title = {Balances: a New Perspective for Microbiome Analysis},
+year = {2017},
+url = {https://www.semanticscholar.org/paper/6062bdaff6ae1e91c25ab4dfa2856d6782eba7e3},
+abstract = {We propose a new algorithm for the identification of microbial signatures. These microbial signatures can be used for diagnosis, prognosis, or prediction of therapeutic response based on an individual’s specific microbiota. ABSTRACT High-throughput sequencing technologies have revolutionized microbiome research by allowing the relative quantification of microbiome composition and function in different environments. In this work we focus on the identification of microbial signatures, groups of microbial taxa that are predictive of a phenotype of interest. We do this by acknowledging the compositional nature of the microbiome and the fact that it carries relative information. Thus, instead of defining a microbial signature as a linear combination in real space corresponding to the abundances of a group of taxa, we consider microbial signatures given by the geometric means of data from two groups of taxa whose relative abundances, or balance, are associated with the response variable of interest. In this work we present selbal, a greedy stepwise algorithm for selection of balances or microbial signatures that preserves the principles of compositional data analysis. We illustrate the algorithm with 16S rRNA abundance data from a Crohn’s microbiome study and an HIV microbiome study. IMPORTANCE We propose a new algorithm for the identification of microbial signatures. These microbial signatures can be used for diagnosis, prognosis, or prediction of therapeutic response based on an individual’s specific microbiota.},
+author = {J. Rivera-Pinto and J. Egozcue and V. Pawlowsky-Glahn and R. Paredes and M. Noguera-Julián and M. Calle},
+doi = {10.1128/mSystems.00053-18},
+pmid = {30035234},
+}
+
+@article{9e10f259f46dcd1549448333694e2acb66076185,
+title = {A Critique of Differential Abundance Analysis, and Advocacy for an Alternative},
+year = {2021},
+url = {https://www.semanticscholar.org/paper/9e10f259f46dcd1549448333694e2acb66076185},
+abstract = {It is largely taken for granted that differential abundance analysis is, by default, the best first step when analyzing genomic data. We argue that this is not necessarily the case. In this article, we identify key limitations that are intrinsic to differential abundance analysis: it is (a) dependent on unverifiable assumptions, (b) an unreliable construct, and (c) overly reductionist. We formulate an alternative framework called ratio-based biomarker analysis which does not suffer from the identified limitations. Moreover, ratio-based biomarkers are highly flexible. Beyond replacing DAA, they can also be used for many other bespoke analyses, including dimension reduction and multi-omics data integration.},
+author = {Thomas P. Quinn and E. Gordon-Rodríguez and I. Erb},
+doi = {10.5281/ZENODO.4692004},
+arxivid = {2104.07266},
+}
+
+@article{d2fc03e9eeb4cfa6188d60a1d98b5003082dbb9e,
+title = {Statistical Analysis of Metagenomics Data},
+year = {2019},
+url = {https://www.semanticscholar.org/paper/d2fc03e9eeb4cfa6188d60a1d98b5003082dbb9e},
+abstract = {Understanding the role of the microbiome in human health and how it can be modulated is becoming increasingly relevant for preventive medicine and for the medical management of chronic diseases. The development of high-throughput sequencing technologies has boosted microbiome research through the study of microbial genomes and allowing a more precise quantification of microbiome abundances and function. Microbiome data analysis is challenging because it involves high-dimensional structured multivariate sparse data and because of its compositional nature. In this review we outline some of the procedures that are most commonly used for microbiome analysis and that are implemented in R packages. We place particular emphasis on the compositional structure of microbiome data. We describe the principles of compositional data analysis and distinguish between standard methods and those that fit into compositional data analysis.},
+author = {M. Calle},
+doi = {10.5808/GI.2019.17.1.e6},
+pmid = {30929407},
+}
+
+@article{aef538d3dde70c0c2eaaa5fc95bea7e92303a522,
+title = {Variable selection in microbiome compositional data analysis},
+year = {2020},
+url = {https://www.semanticscholar.org/paper/aef538d3dde70c0c2eaaa5fc95bea7e92303a522},
+abstract = {Abstract Though variable selection is one of the most relevant tasks in microbiome analysis, e.g. for the identification of microbial signatures, many studies still rely on methods that ignore the compositional nature of microbiome data. The applicability of compositional data analysis methods has been hampered by the availability of software and the difficulty in interpreting their results. This work is focused on three methods for variable selection that acknowledge the compositional structure of microbiome data: selbal, a forward selection approach for the identification of compositional balances, and clr-lasso and coda-lasso, two penalized regression models for compositional data analysis. This study highlights the link between these methods and brings out some limitations of the centered log-ratio transformation for variable selection. In particular, the fact that it is not subcompositionally consistent makes the microbial signatures obtained from clr-lasso not readily transferable. Coda-lasso is computationally efficient and suitable when the focus is the identification of the most associated microbial taxa. Selbal stands out when the goal is to obtain a parsimonious model with optimal prediction performance, but it is computationally greedy. We provide a reproducible vignette for the application of these methods that will enable researchers to fully leverage their potential in microbiome studies.},
+author = {Antoni Susin and Yiwen Wang and K. Lê Cao and M. Calle},
+doi = {10.1093/nargab/lqaa029},
+pmid = {33575585},
+}
+
+@article{d65b84bbf6b76dc22a92bf8baa5ec3aa1baa9f65,
+title = {TaxoNN: ensemble of neural networks on stratified microbiome data for disease prediction},
+year = {2020},
+url = {https://www.semanticscholar.org/paper/d65b84bbf6b76dc22a92bf8baa5ec3aa1baa9f65},
+abstract = {Abstract Motivation Research supports the potential use of microbiome as a predictor of some diseases. Motivated by the findings that microbiome data is complex in nature, and there is an inherent correlation due to hierarchical taxonomy of microbial Operational Taxonomic Units (OTUs), we propose a novel machine learning method incorporating a stratified approach to group OTUs into phylum clusters. Convolutional Neural Networks (CNNs) were used to train within each of the clusters individually. Further, through an ensemble learning approach, features obtained from each cluster were then concatenated to improve prediction accuracy. Our two-step approach comprising stratification prior to combining multiple CNNs, aided in capturing the relationships between OTUs sharing a phylum efficiently, as compared to using a single CNN ignoring OTU correlations. Results We used simulated datasets containing 168 OTUs in 200 cases and 200 controls for model testing. Thirty-two OTUs, potentially associated with risk of disease were randomly selected and interactions between three OTUs were used to introduce non-linearity. We also implemented this novel method in two human microbiome studies: (i) Cirrhosis with 118 cases, 114 controls; (ii) type 2 diabetes (T2D) with 170 cases, 174 controls; to demonstrate the model’s effectiveness. Extensive experimentation and comparison against conventional machine learning techniques yielded encouraging results. We obtained mean AUC values of 0.88, 0.92, 0.75, showing a consistent increment (5%, 3%, 7%) in simulations, Cirrhosis and T2D data, respectively, against the next best performing method, Random Forest. Availability and implementation https://github.com/divya031090/TaxoNN_OTU. Supplementary information Supplementary data are available at Bioinformatics online.},
+author = {Divya Sharma and A. Paterson and Wei Xu},
+doi = {10.1093/bioinformatics/btaa542},
+pmid = {32449747},
+}
+
+@article{461847d24b5726551690b260f2be66a22dcc4aac,
+title = {Compositional analysis of dietary patterns},
+year = {2018},
+url = {https://www.semanticscholar.org/paper/461847d24b5726551690b260f2be66a22dcc4aac},
+abstract = {Instead of looking at individual nutrients or foods, dietary pattern analysis has emerged as a promising approach to examine the relationship between diet and health outcomes. Despite dietary patterns being compositional (i.e. usually a higher intake of some foods implies that less of other foods are being consumed), compositional data analysis has not yet been applied in this setting. We describe three compositional data analysis approaches (compositional principal component analysis, balances and principal balances) that enable the extraction of dietary patterns by using control subjects from the Spanish multicase-control (MCC-Spain) study. In particular, principal balances overcome the limitations of purely data-driven or investigator-driven methods and present dietary patterns as trade-offs between eating more of some foods and less of others.},
+author = {M. Solans and G. Coenders and R. Marcos-Gragera and A. Castelló and E. Gracia-Lavedán and Y. Benavente and V. Moreno and B. Pérez-Gómez and P. Amiano and T. Fernández-Villa and M. Guevara and I. Gómez-Acebo and G. Fernández-Tardón and M. Vanaclocha-Espi and M. Chirlaque and R. Capelo and R. Barrios and N. Aragonés and A. Molinuevo and F. Vitelli-Storelli and J. Castilla and T. Dierssen-Sotos and G. Castaño-Vinyals and M. Kogevinas and M. Pollán and M. Sáez},
+doi = {10.1177/0962280218790110},
+pmid = {30045678},
+}
+
+@article{a0c582c7823d113bd2d50071b0af282d128db391,
+title = {Deep Learning Tools for Human Microbiome Big Data},
+year = {2016},
+url = {https://www.semanticscholar.org/paper/a0c582c7823d113bd2d50071b0af282d128db391},
+abstract = {Deep Learning is a branch of Machine Learning, which focuses on a set of algorithms that model high-level abstractions in data by using a deep representation of multiple processing layers. The goal of Machine Learning is to map input patterns to output values. This paper will suggest a potential application of Deep Learning Algorithms for the analysis of large amounts of data produced by the research of the Human Microbiome. Humans have coevolved with microbes in the environment, and each body habitat has a unique set of microorganisms (microbiota). The most abundant and well-studied microbiota are found in the gut, where the bacterial density reaches 1011–1012 cells/g in the distal human colon. The number of bacteria in the human gut has been estimated to exceed the number of somatic cells in the body by an order of magnitude and that the biomass of the gut microbiota may reach up to 1.5 kg. This paper presents different methods that have been implemented and tested on a Human Microbiome Dataset. Besides the findings concerning accuracy and runtime, the results suggest that the Deep Learning algorithms could be successfully used to analyze large amounts of Microbiota data.},
+author = {O. Geman and Iuliana Chiuchisan and M. Covasa and C. Doloc and M. Milici and L. Milici},
+doi = {10.1007/978-3-319-62521-8_21},
+}
+
+@article{9d18f0d2e772c5373e79eb1d2341376a3e4ea231,
+title = {Approximation of a Microbiome Composition Shift by a Change in a Single Balance Between Two Groups of Taxa},
+year = {2022},
+url = {https://www.semanticscholar.org/paper/9d18f0d2e772c5373e79eb1d2341376a3e4ea231},
+abstract = {The method proposed here extends the range of compositional methods providing interpretation of classical statistical tools applied to data converted to the ILR coordinates. It provides a strictly optimal solution in several special cases. The approach is universally applicable to compositional data of any nature, including microbiome data sets. ABSTRACT Linking microbiome composition obtained from metagenomic or 16S rRNA sequencing to various factors poses a real challenge. The compositional approach to such data is well described: a so-called isometric log-ratio (ILR) transform provides correct treatment of relative abundances. Most existing compositional methods differ in the particular choice of the transform. Although this choice does not influence the prediction of a model, it determines the subset of balances between groups of microbial taxa subsequently used for interpreting the composition shifts. We propose a method to interpret these shifts independently of the initial choice of ILR coordinates by the nearest single-balance shift. We describe here application of the method to regression, classification, and principal balance analysis of compositional data. Analytical treatment and cross-validation show that the approach provides the least-squares estimate of a single-balance shift associated with a factor with possible adjustment for covariates. As for classification and principal balance analysis, the nearest balance method provides results comparable to other compositional tools. Its advantages are the absence of assumptions about the number of taxa included in the balance and its low computational cost. The method is implemented in the R package NearestBalance. IMPORTANCE The method proposed here extends the range of compositional methods providing interpretation of classical statistical tools applied to data converted to the ILR coordinates. It provides a strictly optimal solution in several special cases. The approach is universally applicable to compositional data of any nature, including microbiome data sets.},
+author = {V. Odintsova and Natalia S Klimenko and A. Tyakht},
+doi = {10.1128/msystems.00155-22},
+pmid = {35532211},
+}
+
+@article{12e57fe3e8feccba0434d1a5c90d4805f044853a,
+title = {On interpretations of tests and effect sizes in regression models with a compositional predictor},
+year = {2020},
+url = {https://www.semanticscholar.org/paper/12e57fe3e8feccba0434d1a5c90d4805f044853a},
+abstract = {Compositional data analysis is concerned with the relative importance of positive variables, expressed through their log-ratios. The literature has proposed a range of manners to compute log-ratios, some of whose interrelationships have never been reported when used as explanatory variables in regression models. This article shows their similarities and differences in interpretation based on the notion that one log-ratio has to be interpreted keeping all others constant. The article shows that centred, additive, pivot, balance and pairwise log-ratios lead to simple reparametrizations of the same model which can be combined to provide useful tests and comparable effect size estimates.},
+author = {G. Gallart and V. Pawlowsky-Glahn},
+doi = {10.2436/20.8080.02.100},
+}
+
+@article{d7648d9b919d96852a8f2e4a732e9feb06114e7b,
+title = {Reply to: Examining microbe–metabolite correlations by linear methods},
+year = {2021},
+url = {https://www.semanticscholar.org/paper/d7648d9b919d96852a8f2e4a732e9feb06114e7b},
+abstract = {},
+author = {James T. Morton and D. McDonald and A. Aksenov and L. Nothias and James R. Foulds and R. Quinn and M. Badri and Tami L. Swenson and Marc Warwick Van Goethem and T. Northen and Y. Vázquez-Baeza and Mingxun Wang and N. Bokulich and A. Watters and Se Jin Song and Richard Bonneau and P. Dorrestein and R. Knight},
+doi = {10.1038/s41592-020-01007-0},
+pmid = {33398188},
+}
+
+@article{e7d8f4556e10cca6235aba0a0f4ba9ccd280d141,
+title = {Analysing Pairwise Logratios Revisited},
+year = {2021},
+url = {https://www.semanticscholar.org/paper/e7d8f4556e10cca6235aba0a0f4ba9ccd280d141},
+abstract = {Even though the logratio methodology provides a range of both generic, mostly exploratory, and purpose-built coordinate representations of compositional data, simple pairwise logratios are preferred by many for multivariate analysis in the geochemical practice, principally because of their simpler interpretation. However, the logratio coordinate systems that incorporate them are predominantly oblique, resulting in both conceptual and practical problems. We propose a new approach, called backwards pivot coordinates, where each pairwise logratio is linked to one orthogonal coordinate system, and these systems are then used together to produce a concise output. In this work, principal component analysis and regression with compositional explanatory variables are used as primary methods to demonstrate the methodological and interpretative advantages of the proposal. In the applied part of this study, sediment compositions from the Jizera River, Czech Republic, were analysed using these techniques through backwards pivot coordinates. This allowed us to discuss grain size control of the element composition of sediments and clearly distinguish anthropogenically contaminated and uncontaminated strata in sediment depth profiles.},
+author = {K. Hron and G. Coenders and P. Filzmoser and J. Palarea‐Albaladejo and M. Faměra and T. Matys Grygar},
+doi = {10.1007/s11004-021-09938-w},
+}
+
+@article{ae54cc2a0cfa0e623bf864574fb6e2417148e699,
+title = {DisBalance: a platform to automatically build balance-based disease prediction models and discover microbial biomarkers from microbiome data},
+year = {2021},
+url = {https://www.semanticscholar.org/paper/ae54cc2a0cfa0e623bf864574fb6e2417148e699},
+abstract = {How best to utilize the microbial taxonomic abundances in regard to the prediction and explanation of human diseases remains appealing and challenging, and the relative nature of microbiome data necessitates a proper feature selection method to resolve the compositional problem. In this study, we developed an all-in-one platform to address a series of issues in microbiome-based human disease prediction and taxonomic biomarkers discovery. We prioritize the interpretation, runtime and classification accuracy of the distal discriminative balances analysis (DBA-distal) method in selecting a set of distal discriminative balances, and develop DisBalance, a comprehensive platform, to integrate and streamline the workflows of disease model building, disease risk prediction and disease-related biomarker discovery for microbiome-based binary classifications. DisBalance allows the de novo model-building and disease risk prediction in a very fast and convenient way. To facilitate the model-driven and knowledge-driven discoveries, DisBalance dedicates multiple strategies for the mining of microbial biomarkers. The independent validation of the models constructed by the DisBalance pipeline is performed on seven microbiome datasets from the original article of DBA-distal. The implementation of the DisBalance platform is demonstrated by a complete analysis of a shotgun metagenomic dataset of Ulcerative Colitis (UC). As a free and open-source, DisBlance can be accessed at http://lab.malab.cn/soft/DisBalance. The source code and demo data for Disbalance are available at https://github.com/yangfenglong/DisBalance.},
+author = {Fenglong Yang and Q. Zou},
+doi = {10.1093/bib/bbab094},
+pmid = {33834198},
+}
+
+@article{7e6f6dd07774925bbff374e35c5ebe8acc1a7afb,
+title = {Comments on: Compositional data: the sample space and its structure},
+year = {2019},
+url = {https://www.semanticscholar.org/paper/7e6f6dd07774925bbff374e35c5ebe8acc1a7afb},
+abstract = {},
+author = {P. Filzmoser and K. Hron},
+doi = {10.1007/S11749-019-00671-5},
+}

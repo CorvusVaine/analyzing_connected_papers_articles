@@ -1,0 +1,410 @@
+@article{c226879739de4b72fcfcfdcc4a650c76739c86d6,
+title = {Embedding the de Bruijn graph, and applications to metagenomics},
+year = {2020},
+url = {https://www.semanticscholar.org/paper/c226879739de4b72fcfcfdcc4a650c76739c86d6},
+abstract = {Fast mapping of sequencing reads to taxonomic clades is a crucial step in metagenomics, which however raises computational challenges as the numbers of reads and of taxonomic clades increases. Besides alignment-based methods, which are accurate but computational costly, faster compositional approaches have recently been proposed to predict the taxonomic clade of a read based on the set of k-mers it contains. Machine learning-based compositional approaches, in particular, have recently reached accuracies similar to alignment-based models, while being considerably faster. It has been observed that the accuracy of these models increases with the length k of the k-mers they use, however existing methods are limited to handle k-mers of lengths up to k = 12 or 13 because of their large memory footprint needed to store the model coefficients for each possible k-mer. In order to explore the performance of machine learning-based compositional approaches for longer k-mers than currently possible, we propose to reduce the memory footprint of these methods by binning together k-mers that appear together in the sequencing reads used to train the models. We achieve this binning by learning a vector embedding for the vertices of a compacted de Bruijn graph, allowing us to embed any DNA sequence in a low-dimensional vector space where a machine learning system can be trained. The resulting method, which we call Brume, allows us to train compositional machine learning-based models with k-mers of length up to k = 31. We show on two metagenomics benchmark that Brume reaches better performance than previously achieved, thanks to the use of longer k-mers.},
+author = {Romain Menegaux and Jean-Philippe Vert},
+doi = {10.1101/2020.03.06.980979},
+}
+
+@article{464954967f345bc0c1f568e407c35112443f0e83,
+title = {Domain adaptive neural networks improve cross-species prediction of transcription factor binding},
+year = {2021},
+url = {https://www.semanticscholar.org/paper/464954967f345bc0c1f568e407c35112443f0e83},
+abstract = {The intrinsic DNA sequence preferences and cell-type specific cooperative partners of transcription factors (TFs) are typically highly conserved. Hence, despite the rapid evolutionary turnover of individual TF binding sites, predictive sequence models of cell-type specific genomic occupancy of a TF in one species should generalize to closely matched cell types in a related species. To assess the viability of cross-species TF binding prediction, we train neural networks to discriminate ChIP-seq peak locations from genomic background and evaluate their performance within and across species. Cross-species predictive performance is consistently worse than within-species performance, which we show is caused in part by species-specific repeats. To account for this domain shift, we use an augmented network architecture to automatically discourage learning of training species-specific sequence features. This domain adaptation approach corrects for prediction errors on species-specific repeats and improves overall cross-species model performance. Our results demonstrate that cross-species TF binding prediction is feasible when models account for domain shifts driven by species-specific repeats.},
+author = {K. Cochran and Divyanshi Srivastava and Avanti Shrikumar and Akshay Balsubramani and R. Hardison and A. Kundaje and Shaun Mahony},
+doi = {10.1101/2021.02.13.431115},
+}
+
+@article{81eb1671e74ba01d0c14576395d20a1e6b7163d6,
+title = {DeepMicrobes: taxonomic classification for metagenomics with deep learning},
+year = {2019},
+url = {https://www.semanticscholar.org/paper/81eb1671e74ba01d0c14576395d20a1e6b7163d6},
+abstract = {Taxonomic classification is a crucial step for metagenomics applications including disease diagnostics, microbiome analyses, and outbreak tracing. Yet it is unknown what deep learning architecture can capture microbial genome-wide features relevant to this task. We report DeepMicrobes (https://github.com/MicrobeLab/DeepMicrobes), a computational framework that can perform large-scale training on > 10,000 RefSeq complete microbial genomes and accurately predict the species-of-origin of whole metagenome shotgun sequencing reads. We show the advantage of DeepMicrobes over state-of-the-art tools in precisely identifying species from microbial community sequencing data. Therefore, DeepMicrobes expands the toolbox of taxonomic classification for metagenomics and enables the development of further deep learning-based bioinformatics algorithms for microbial genomic sequence analysis.},
+author = {Qiaoxing Liang and P. Bible and Yu Liu and B. Zou and Lai Wei},
+doi = {10.1093/nargab/lqaa009},
+pmid = {33575556},
+}
+
+@article{015d05537f274c7cfe2c6efd35aa7a34c50ea6af,
+title = {Large-scale machine learning for metagenomics sequence classification},
+year = {2015},
+url = {https://www.semanticscholar.org/paper/015d05537f274c7cfe2c6efd35aa7a34c50ea6af},
+abstract = {Motivation: Metagenomics characterizes the taxonomic diversity of microbial communities by sequencing DNA directly from an environmental sample. One of the main challenges in metagenomics data analysis is the binning step, where each sequenced read is assigned to a taxonomic clade. Because of the large volume of metagenomics datasets, binning methods need fast and accurate algorithms that can operate with reasonable computing requirements. While standard alignment-based methods provide state-of-the-art performance, compositional approaches that assign a taxonomic class to a DNA read based on the k-mers it contains have the potential to provide faster solutions. Results: We propose a new rank-flexible machine learning-based compositional approach for taxonomic assignment of metagenomics reads and show that it benefits from increasing the number of fragments sampled from reference genome to tune its parameters, up to a coverage of about 10, and from increasing the k-mer size to about 12. Tuning the method involves training machine learning models on about 108 samples in 107 dimensions, which is out of reach of standard softwares but can be done efficiently with modern implementations for large-scale machine learning. The resulting method is competitive in terms of accuracy with well-established alignment and composition-based tools for problems involving a small to moderate number of candidate species and for reasonable amounts of sequencing errors. We show, however, that machine learning-based compositional approaches are still limited in their ability to deal with problems involving a greater number of species and more sensitive to sequencing errors. We finally show that the new method outperforms the state-of-the-art in its ability to classify reads from species of lineage absent from the reference database and confirm that compositional approaches achieve faster prediction times, with a gain of 2–17 times with respect to the BWA-MEM short read mapper, depending on the number of candidate species and the level of sequencing noise. Availability and implementation: Data and codes are available at http://cbio.ensmp.fr/largescalemetagenomics. Contact: pierre.mahe@biomerieux.com Supplementary information: Supplementary data are available at Bioinformatics online.},
+author = {Kévin Vervier and P. Mahé and M. Tournoud and J. Veyrieras and Jean-Philippe Vert},
+doi = {10.1093/bioinformatics/btv683},
+pmid = {26589281},
+arxivid = {1505.06915},
+}
+
+@article{fbfbc5396f28e8dbeeb3b95e49fb6646d455cc9b,
+title = {GeNet: Deep Representations for Metagenomics},
+year = {2019},
+url = {https://www.semanticscholar.org/paper/fbfbc5396f28e8dbeeb3b95e49fb6646d455cc9b},
+abstract = {We introduce GeNet, a method for shotgun metagenomic classification from raw DNA sequences that exploits the known hierarchical structure between labels for training. We provide a comparison with state-of-the-art methods Kraken and Centrifuge on datasets obtained from several sequencing technologies, in which dataset shift occurs. We show that GeNet obtains competitive precision and good recall, with orders of magnitude less memory requirements. Moreover, we show that a linear model trained on top of representations learned by GeNet achieves recall comparable to state-of-the-art methods on the aforementioned datasets, and achieves over 90% accuracy in a challenging pathogen detection problem. This provides evidence of the usefulness of the representations learned by GeNet for downstream biological tasks.},
+author = {Mateo Rojas-Carulla and I. Tolstikhin and G. Luque and Nicholas D. Youngblut and R. Ley and B. Schölkopf},
+doi = {10.1101/537795},
+arxivid = {1901.11015},
+}
+
+@article{92349549f2154f157d54d3b07380eb5b242e0f0a,
+title = {EnSVMB: Metagenomics Fragments Classification using Ensemble SVM and BLAST},
+year = {2017},
+url = {https://www.semanticscholar.org/paper/92349549f2154f157d54d3b07380eb5b242e0f0a},
+abstract = {Metagenomics brings in new discoveries and insights into the uncultured microbial world. One fundamental task in metagenomics analysis is to determine the taxonomy of raw sequence fragments. Modern sequencing technologies produce relatively short fragments and greatly increase the number of fragments, and thus make the taxonomic classification considerably more difficult than before. Therefore, fast and accurate techniques are called to classify large-scale fragments. We propose EnSVM (Ensemble Support Vector Machine) and its advanced method called EnSVMB (EnSVM with BLAST) to accurately classify fragments. EnSVM divides fragments into a large confident (or small diffident) set, based on whether the fragments get consistent (or inconsistent) predictions from linear SVMs trained with different k-mers. Empirical study shows that sensitivity and specificity of EnSVM on confident set are higher than 90% and 97%, but on diffident set are lower than 60% and 75%. To further improve the performance on diffident set, EnSVMB takes advantage of best hits of BLAST to reclassify fragments in that set. Experimental results show EnSVM can efficiently and effectively divide fragments into confident and diffident sets, and EnSVMB achieves higher accuracy, sensitivity and more true positives than related state-of-the-art methods and holds comparable specificity with the best of them.},
+author = {Yuan Jiang and Jun Wang and Dawen Xia and Guoxian Yu},
+doi = {10.1038/s41598-017-09947-y},
+pmid = {28842700},
+}
+
+@article{c1844bdb3c766f29cd5b63c02f25481187ca4504,
+title = {Continuous Embeddings of DNA Sequencing Reads and Application to Metagenomics},
+year = {2019},
+url = {},
+abstract = {We propose a new model for fast classification of DNA sequences output by next-generation sequencing machines. The model, which we call fastDNA, embeds DNA sequences in a vector space by learning continuous low-dimensional representations of the k-mers it contains. We show on metagenomics benchmarks that it outperforms the state-of-the-art methods in terms of accuracy and scalability.},
+author = {Romain Menegaux and Jean-Philippe Vert},
+}
+
+@article{7dffa54366a1ff1910ba5b56625626cef4b25fc9,
+title = {MetaVW: Large-Scale Machine Learning for Metagenomics Sequence Classification.},
+year = {2018},
+url = {https://www.semanticscholar.org/paper/7dffa54366a1ff1910ba5b56625626cef4b25fc9},
+abstract = {Metagenomics is the study of microbial community diversity, especially the uncultured microorganisms by shotgun sequencing environmental samples. As the sequencers throughput and the data volume increase, it becomes challenging to develop scalable bioinformatics tools that reconstruct microbiome structure by binning sequencing reads to reference genomes. Standard alignment-based methods, such as BWA-MEM, provide state-of-the-art performance, but we demonstrate in Vervier et al. (2016) that compositional approaches using nucleotides motifs have faster analysis time, for comparable accuracy. In this work, we describe how to use MetaVW, a scalable machine learning implementation for short sequencing reads binning, based on their k-mers profile. We provide a step-by-step guideline on how we trained the classification models and how it can easily generalize to user-defined reference genomes and specific applications. We also give additional details on what effect parameters in the algorithm have on performances.},
+author = {Kévin Vervier and P. Mahé and Jean-Philippe Vert},
+doi = {10.1007/978-1-4939-8561-6_2},
+pmid = {30030800},
+}
+
+@article{20244befaa0c5331fc22be0fb9f56ae20d6f8fe5,
+title = {fastISM: Performant in-silico saturation mutagenesis for convolutional neural networks},
+year = {2020},
+url = {https://www.semanticscholar.org/paper/20244befaa0c5331fc22be0fb9f56ae20d6f8fe5},
+abstract = {Deep learning models such as convolutional neural networks are able to accurately map biological sequences to associated functional readouts and properties by learning predictive de novo representations. In-silico saturation mutagenesis (ISM) is a popular feature attribution technique for inferring contributions of all characters in an input sequence to the model’s predicted output. The main drawback of ISM is its runtime, as it involves multiple forward propagations of all possible mutations of each character in the input sequence through the trained model to predict the effects on the output. We present fastISM, an algorithm that speeds up ISM by a factor of over 10x for commonly used convolutional neural network architectures. fastISM is based on the observations that the majority of computation in ISM is spent in convolutional layers, and a single mutation only disrupts a limited region of intermediate layers, rendering most computation redundant. fastISM reduces the gap between backpropagation-based feature attribution methods and ISM. It far surpasses the runtime of backpropagation-based methods on multi-output architectures, making it feasible to run ISM on a large number of sequences. An easy-to-use Keras/TensorFlow 2 implementation of fastISM is available at https://github.com/kundajelab/fastISM, and a hands-on tutorial at https://colab.research.google.com/github/kundajelab/fastISM/blob/master/notebooks/colab/DeepSEA.ipynb.},
+author = {Surag Nair and Avanti Shrikumar and A. Kundaje},
+doi = {10.1101/2020.10.13.337147},
+}
+
+@article{3641cba49fce0c02c764c163bc45d5500307c47f,
+title = {Interpreting Deep Neural Networks Beyond Attribution Methods: Quantifying Global Importance of Genomic Features},
+year = {2020},
+url = {https://www.semanticscholar.org/paper/3641cba49fce0c02c764c163bc45d5500307c47f},
+abstract = {Despite deep neural networks (DNNs) having found great success at improving performance on various prediction tasks in computational genomics, it remains difficult to understand why they make any given prediction. In genomics, the main approaches to interpret a high-performing DNN are to visualize learned representations via weight visualizations and attribution methods. While these methods can be informative, each has strong limitations. For instance, attribution methods only uncover the independent contribution of single nucleotide variants in a given sequence. Here we discuss and argue for global importance analysis which can quantify population-level importance of putative features and their interactions learned by a DNN. We highlight recent work that has benefited from this interpretability approach and then discuss connections between global importance analysis and causality.},
+author = {Peter K. Koo and Matthew Ploenzke},
+doi = {10.1101/2020.02.19.956896},
+}
+
+@article{3dc46d3a5c8bd9fc98b76b027e2ab348633db685,
+title = {Low-Density Locality-Sensitive Hashing Boosts Metagenomic Binning},
+year = {2016},
+url = {https://www.semanticscholar.org/paper/3dc46d3a5c8bd9fc98b76b027e2ab348633db685},
+abstract = {Metagenomic binning is an essential task in analyzing metagenomic sequence datasets. To analyze structure or function of microbial communities from environmental samples, metagenomic sequence fragments are assigned to their taxonomic origins. Although sequence alignment algorithms can readily be used and usually provide high-resolution alignments and accurate binning results, the computational cost of such alignment-based methods becomes prohibitive as metagenomic datasets continue to grow. Alternative compositional-based methods, which exploit sequence composition by profiling local short k-mers in fragments, are often faster but less accurate than alignment-based methods. Inspired by the success of linear error correcting codes in noisy channel communication, we introduce Opal, a fast and accurate novel compositional-based binning method. It incorporates ideas from Gallager's low-density parity-check code to design a family of compact and discriminative locality-sensitive hashing functions that encode long-range compositional dependencies in long fragments. By incorporating the Gallager LSH functions as features in a simple linear SVM, Opal provides fast, accurate and robust binning for datasets consisting of a large number of species, even with mutations and sequencing errors. Opal not only performs up to two orders of magnitude faster than BWA, an alignment-based binning method, but also achieves improved binning accuracy and robustness to sequencing errors. Opal also outperforms models built on traditional k-mer profiles in terms of robustness and accuracy. Finally, we demonstrate that we can effectively use Opal in the "coarse search" stage of a compressive genomics pipeline to identify a much smaller candidate set of taxonomic origins for a subsequent alignment-based method to analyze, thus providing metagenomic binning with high scalability, high accuracy and high resolution.},
+author = {Yunan Luo and Jianyang Zeng and B. Berger and Jian Peng},
+pmid = {28127592},
+arxivid = {1604.02699},
+}
+
+@article{fac2c9fd55dc88948f9c00743a90aa7800ed67cb,
+title = {ARK: Aggregation of Reads by K-Means for Estimation of Bacterial Community Composition},
+year = {2015},
+url = {https://www.semanticscholar.org/paper/fac2c9fd55dc88948f9c00743a90aa7800ed67cb},
+abstract = {Motivation Estimation of bacterial community composition from high-throughput sequenced 16S rRNA gene amplicons is a key task in microbial ecology. Since the sequence data from each sample typically consist of a large number of reads and are adversely impacted by different levels of biological and technical noise, accurate analysis of such large datasets is challenging. Results There has been a recent surge of interest in using compressed sensing inspired and convex-optimization based methods to solve the estimation problem for bacterial community composition. These methods typically rely on summarizing the sequence data by frequencies of low-order k-mers and matching this information statistically with a taxonomically structured database. Here we show that the accuracy of the resulting community composition estimates can be substantially improved by aggregating the reads from a sample with an unsupervised machine learning approach prior to the estimation phase. The aggregation of reads is a pre-processing approach where we use a standard K-means clustering algorithm that partitions a large set of reads into subsets with reasonable computational cost to provide several vectors of first order statistics instead of only single statistical summarization in terms of k-mer frequencies. The output of the clustering is then processed further to obtain the final estimate for each sample. The resulting method is called Aggregation of Reads by K-means (ARK), and it is based on a statistical argument via mixture density formulation. ARK is found to improve the fidelity and robustness of several recently introduced methods, with only a modest increase in computational complexity. Availability An open source, platform-independent implementation of the method in the Julia programming language is freely available at https://github.com/dkoslicki/ARK. A Matlab implementation is available at http://www.ee.kth.se/ctsoftware.},
+author = {D. Koslicki and S. Chatterjee and Damon Shahrivar and A. Walker and Suzanna C. Francis and Louise J. Fraser and Mikko Vehkaperä and Y. Lan and J. Corander},
+doi = {10.1371/journal.pone.0140644},
+pmid = {26496191},
+}
+
+@article{d707044b7f4bf5438320f7ffbe432c49f5e0d70e,
+title = {A Review of Deep Transfer Learning and Recent Advancements},
+year = {2022},
+url = {https://www.semanticscholar.org/paper/d707044b7f4bf5438320f7ffbe432c49f5e0d70e},
+abstract = {A successful deep learning model is dependent on extensive training data and processing power and time (known as training costs). There exist many tasks without enough number of labeled data to train a deep learning model. Further, the demand is rising for running deep learning models on edge devices with limited processing capacity and training time. Deep transfer learning (DTL) methods are the answer to tackle such limitations, e.g., fine-tuning a pre-trained model on a massive semi-related dataset proved to be a simple and effective method for many problems. DTLs handle limited target data concerns as well as drastically reduce the training costs. In this paper, the definition and taxonomy of deep transfer learning is reviewed. Then we focus on the subcategory of network-based DTLs since it is the most common types of DTLs that have been applied to various applications in the last decade.},
+author = {Mohammadreza Iman and K. Rasheed and H. Arabnia},
+arxivid = {2201.09679},
+}
+
+@article{d2e73e0b92ea710c528da60cb93965a8349fe657,
+title = {Hypothesis testing for phylogenetic composition: a minimum-cost flow perspective.},
+year = {2020},
+url = {https://www.semanticscholar.org/paper/d2e73e0b92ea710c528da60cb93965a8349fe657},
+abstract = {Quantitative comparison of microbial composition from different populations is a fundamental task in various microbiome studies. We consider two-sample testing for microbial compositional data by leveraging phylogenetic information. Motivated by existing phylogenetic distances, we take a minimum-cost flow perspective to study such testing problems. We first show that multivariate analysis of variance with permutation using phylogenetic distances, one of the most commonly used methods in practice, is essentially a sum-of-squares type of test and has better power for dense alternatives. However, empirical evidence from real datasets suggests that the phylogenetic microbial composition difference between two populations is usually sparse. Motivated by this observation, we propose a new maximum type test, detector of active flow on a tree, and investigate its properties. We show that the proposed method is particularly powerful against sparse phylogenetic composition difference and enjoys certain optimality. The practical merit of the proposed method is demonstrated by simulation studies and an application to a human intestinal biopsy microbiome dataset on patients with ulcerative colitis.},
+author = {Shulei Wang and T. Cai and Hongzhe Li},
+doi = {10.1093/biomet/asaa061},
+pmid = {33716568},
+}
+
+@article{a7146f1cb9fd4f8c539a19dde9de53c560c99c10,
+title = {Optimization of alignment-based methods for taxonomic binning of metagenomics reads},
+year = {2016},
+url = {https://www.semanticscholar.org/paper/a7146f1cb9fd4f8c539a19dde9de53c560c99c10},
+abstract = {MOTIVATION
+Alignment-based taxonomic binning for metagenome characterization proceeds in two steps: reads mapping against a reference database (RDB) and taxonomic assignment according to the best hits. Beyond the sequencing technology and the completeness of the RDB, selecting the optimal configuration of the workflow, in particular the mapper parameters and the best hit selection threshold, to get the highest binning performance remains quite empirical.
+
+
+RESULTS
+We developed a statistical framework to perform such optimization at a minimal computational cost. Using an optimization experimental design and simulated datasets for three sequencing technologies, we built accurate prediction models for five performance indicators and then derived the parameter configuration providing the optimal performance. Whatever the mapper and the dataset, we observed that the optimal configuration yielded better performance than the default configuration and that the best hit selection threshold had a large impact on performance. Finally, on a reference dataset from the Human Microbiome Project, we confirmed that the optimized configuration increased the performance compared with the default configuration.
+
+
+AVAILABILITY AND IMPLEMENTATION
+Not applicable.
+
+
+CONTACT
+magali.dancette@biomerieux.com
+
+
+SUPPLEMENTARY INFORMATION
+Supplementary data are available at Bioinformatics online.},
+author = {M. Jaillard and M. Tournoud and F. Meynier and J. Veyrieras},
+doi = {10.1093/bioinformatics/btw040},
+pmid = {26833346},
+}
+
+@article{4fda14830edb93c6c404ad39fc3ee7b06f611aca,
+title = {An Overview of the Application of Deep Learning in Short Read Sequence Classification},
+year = {2020},
+url = {https://www.semanticscholar.org/paper/4fda14830edb93c6c404ad39fc3ee7b06f611aca},
+abstract = {Advances in sequencing technology have led to an ever increasing amount of available short read sequencing data. This has, consequently, exacerbated the need for efficient and precise classification tools that can be used in the analysis of this data. As it stands, recent years have shown that massive leaps in performance can be achieved when it comes to approaches that are based in heuristics, and alongside these improvements there has been an ever increasing interest in applying deep learning techniques to revolutionize this classification task. We attempt to gather up these approaches and to evaluate their performance in a reproducible fashion to get a better perspective on the current state of deep learning based methods when it comes to the classification of short read sequencing data.},
+author = {Kristaps Bebris and I. Poļaka},
+doi = {10.1101/2020.09.19.304782},
+}
+
+@article{f83a0d62b8fa7c380d4142d7aae18715fa4083b0,
+title = {TransPrise: a novel machine learning approach for eukaryotic promoter prediction},
+year = {2019},
+url = {https://www.semanticscholar.org/paper/f83a0d62b8fa7c380d4142d7aae18715fa4083b0},
+abstract = {As interest in genetic resequencing increases, so does the need for effective mathematical, computational, and statistical approaches. One of the difficult problems in genome annotation is determination of precise positions of transcription start sites. In this paper we present TransPrise—an efficient deep learning tool for prediction of positions of eukaryotic transcription start sites. Our pipeline consists of two parts: the binary classifier operates the first, and if a sequence is classified as TSS-containing the regression step follows, where the precise location of TSS is being identified. TransPrise offers significant improvement over existing promoter-prediction methods. To illustrate this, we compared predictions of TransPrise classification and regression models with the TSSPlant approach for the well annotated genome of Oryza sativa. Using a computer equipped with a graphics processing unit, the run time of TransPrise is 250 minutes on a genome of 374 Mb long. The Matthews correlation coefficient value for TransPrise is 0.79, more than two times larger than the 0.31 for TSSPlant classification models. This represents a high level of prediction accuracy. Additionally, the mean absolute error for the regression model is 29.19 nt, allowing for accurate prediction of TSS location. TransPrise was also tested in Homo sapiens, where mean absolute error of the regression model was 47.986 nt. We provide the full basis for the comparison and encourage users to freely access a set of our computational tools to facilitate and streamline their own analyses. The ready-to-use Docker image with all necessary packages, models, code as well as the source code of the TransPrise algorithm are available at (http://compubioverne.group/). The source code is ready to use and customizable to predict TSS in any eukaryotic organism.},
+author = {S. Pachganov and K. Murtazalieva and A. Zarubin and D. Sokolov and Duane R. Chartier and T. Tatarinova},
+doi = {10.7717/peerj.7990},
+pmid = {31695967},
+}
+
+@article{c9d86c56de0d0b9e814fdd0d0d1bc4e97b857882,
+title = {Keeping up with the genomes: efficient learning of our increasing knowledge of the tree of life},
+year = {2019},
+url = {https://www.semanticscholar.org/paper/c9d86c56de0d0b9e814fdd0d0d1bc4e97b857882},
+abstract = {Background It is a computational challenge for current metagenomic classifiers to keep up with the pace of training data generated from genome sequencing projects, such as the exponentially-growing NCBI RefSeq bacterial genome database. When new reference sequences are added to training data, statically trained classifiers must be rerun on all data, resulting in a highly inefficient process. The rich literature of “incremental learning” addresses the need to update an existing classifier to accommodate new data without sacrificing much accuracy compared to retraining the classifier with all data. Results We demonstrate how classification improves over time by incrementally training a classifier on progressive RefSeq snapshots and testing it on: (a) all known current genomes (as a ground truth set) and (b) a real experimental metagenomic gut sample. We demonstrate that as a classifier model’s knowledge of genomes grows, classification accuracy increases. The proof-of-concept naïve Bayes implementation, when updated yearly, now runs in 1/4 t h of the non-incremental time with no accuracy loss. Conclusions It is evident that classification improves by having the most current knowledge at its disposal. Therefore, it is of utmost importance to make classifiers computationally tractable to keep up with the data deluge. The incremental learning classifier can be efficiently updated without the cost of reprocessing nor the access to the existing database and therefore save storage as well as computation resources.},
+author = {Zhengqiao Zhao and A. Cristian and G. Rosen},
+doi = {10.1101/758755},
+pmid = {32957925},
+}
+
+@article{1c09370f56ec9d25a95d47f652fb1a70f8faac2d,
+title = {ChromWave: Deciphering the DNA-encoded competition between transcription factors and nucleosomes with deep neural networks},
+year = {2021},
+url = {https://www.semanticscholar.org/paper/1c09370f56ec9d25a95d47f652fb1a70f8faac2d},
+abstract = {Transcription factors (TFs) regulate gene expression by recognising and binding specific DNA sequences. At times, these regulatory elements may be occluded by nucleosomes, making them inaccessible for TF-binding. The competition for DNA occupancy between TFs and nucleosomes, and associated gene regulatory outputs, are important consequences of the cis-regulatory information encoded in the genome. However, these sequence patterns are subtle and remain difficult to interpret. Here, we introduce ChromWave, a deep-learning model that, for the first time, predicts the competing profiles for TF and nucleosomes occupancies with remarkable accuracy. Models trained using short- and long-fragment MNase-Seq data successfully learn the sequence preferences underlying TF and nucleosome occupancies across the entire yeast genome. They recapitulate nucleosome evictions from regions containing “strong” TF binding sites and knock-out simulations show nucleosomes gaining occupancy in the absence of these TFs, accompanied by lateral rearrangement of adjacent nucleosomes. At a local level, models anticipate with high accuracy the outcomes of detailed experimental analysis of partially unwrapped nucleosomes at the GAL4 UAS locus. Finally, we trained a ChromWave model that successfully predicts nucleosome positions at promoters in the human genome. We find that human promoters generally contain few sites at which simple sequence changes can alter nucleosome occupancies and that these positions align well with causal variants linked to DNase hypersensitivity. ChromWave is readily combined with diverse genomic datasets and can be trained to predict any output that is linked to the underlying genomic sequence.},
+author = {S. A. Cakiroglu and Sebastian Steinhauser and Jonathan C. Smith and Wei Xing and N. Luscombe},
+doi = {10.1101/2021.03.19.436198},
+}
+
+@article{9de375f8ac55041a6878d650062ba9a216a0e085,
+title = {Metagenomic binning through low-density hashing},
+year = {2017},
+url = {https://www.semanticscholar.org/paper/9de375f8ac55041a6878d650062ba9a216a0e085},
+abstract = {Bacterial microbiomes of incredible complexity are found throughout the world, from exotic marine locations to the soil in our yards to within our very guts. With recent advances in Next-Generation Sequencing (NGS) technologies, we have vastly greater quantities of microbial genome data, but the nature of environmental samples is such that DNA from different species are mixed together. Here, we present Opal for metagenomic binning, the task of identifying the origin species of DNA sequencing reads. Our Opal method introduces low-density, even-coverage hashing to bioinformatics applications, enabling quick and accurate metagenomic binning. Our tool is up to two orders of magnitude faster than leading alignment-based methods at similar or improved accuracy, allowing computational tractability on large metagenomic datasets. Moreover, on public benchmarks, Opal is substantially more accurate than both alignment-based and alignment-free methods (e.g. on SimHC20.500, Opal achieves 95% F1-score while Kraken and CLARK achieve just 91% and 88%, respectively); this improvement is likely due to the fact that the latter methods cannot handle computationally-costly long-range dependencies, which our even-coverage, low-density fingerprints resolve. Notably, capturing these long-range dependencies drastically improves Opal’s ability to detect unknown species that share a genus or phylum with known bacteria. Additionally, the family of hash functions Opal uses can be generalized to other sequence analysis tasks that rely on k-mer based methods to encode long-range dependencies.},
+author = {Yunan Luo and Y. Yu and Jianyang Zeng and B. Berger and Jian Peng},
+doi = {10.1093/bioinformatics/bty611},
+pmid = {30010790},
+}
+
+@article{1190d0c50ad3187652f4deb5ab325f6847c3f513,
+title = {Recent Computational Advances in Metagenomics (RCAM’15)},
+year = {2015},
+url = {},
+abstract = {High-throughput sequencing of 16S/18S RNA amplicons has opened new horizons in the study of microbe communities. With the sequencing at great depth the current processing pipelines struggle to run rapidly and the most effective solutions are often designed for specialists. These tools are designed to give both the abundance table of operational taxonomic units (OTUs) and their taxonomic affiliation. In this context we developed the pipeline FROGS: « Find Rapidly OTU with Galaxy Solution ». Developed for the Galaxy platform [1-3], FROGS was designed to be run in two modes: with or without demultiplexed sequences. A preprocessing tool merges paired sequences into contigs with flash [4], cleans the data with cutadapt [5], deletes the chimeras with VSEARCH [6] and dereplicates sequences with a home-made python script. The clusterisation tool runs with SWARM [7] that uses a local clustering threshold, not a global clustering threshold like other software do. This tool generate the OTU’s abundance table. The affiliation tool returns taxonomic affiliation for each OTU using both RDPClassifier [8] and NCBI Blast+ [9] on Silva SSU 119 and 123 [10]. And finally, the post processing tool allows users to process this table with the user-specified filters and provides statistical results and numerous graphical illustrations of these data. FROGS has been developed to be very fast even on large amounts of MiSeq data in using cutting-edge tools and an optimized design, also it is portable on all Galaxy platforms with a minimum of informatics and architecture dependencies. FROGS was tested on several simulated data sets. The tool has been extremely rapid, robust and highly sensitive for the detection of OTU with very few false positives compared to other pipelines widely used by the community. 1. Blankenberg, D., et al., Galaxy: a web-based genome analysis tool for experimentalists. Curr Protoc Mol Biol, 2010. Chapter 19: p. Unit 19 10 1-21. 2. Giardine, B., et al., Galaxy: a platform for interactive large-scale genome analysis. Genome Res, 2005. 15(10): p. 1451-5. 3. Goecks, J., et al., Galaxy: a comprehensive approach for supporting accessible, reproducible, and transparent computational research in the life sciences. Genome Biol, 2010. 11(8): p. R86. 4. Magoc, T. and S.L. Salzberg, FLASH: fast length adjustment of short reads to improve genome assemblies. Bioinformatics, 2011. 27(21): p. 2957-63. 5. Martin, M., Cutadapt removes adapter sequences from high-throughput sequencing reads. EMBnet.journal, 2011. 17(1): p. 10-12. 6. Flouri, T., et al., the VSEARCH GitHub repository, release 1.0.16, doi 10.5281/zenodo.15524. 7. Mahé, F., et al., Swarm: robust and fast clustering method for amplicon-based studies. PeerJ, 2014(2:e593). 8. Wang, Q., G. M. Garrity, J. M. Tiedje, and J. R. Cole, Naïve Bayesian Classifier for Rapid Assignment of rRNA Sequences into the New Bacterial Taxonomy. Appl Environ Appl Environ Microbiol. , 2007. 73(16): p. 5261-7. 9. Camacho, C., et al., BLAST+: architecture and applications. BMC Bioinformatics, 2009. 10: p. 421. 10. Quast, C., et al., The SILVA ribosomal RNA gene database project: improved data processing and web-based tools. Nucleic Acids Res, 2013. 41(Database issue): p. D590-6.},
+author = {Mohamed Mysara and N. Leys and J. Raes and P. Monsieurs},
+}
+
+@article{25b3aacaa9b98f0e0d41588cf0e36efe4fb7dc43,
+title = {BERTax: taxonomic classification of DNA sequences with Deep Neural Networks},
+year = {2021},
+url = {https://www.semanticscholar.org/paper/25b3aacaa9b98f0e0d41588cf0e36efe4fb7dc43},
+abstract = {Taxonomic classification, i.e., the identification and assignment to groups of biological organisms with the same origin and characteristics, is a common task in genetics. Nowadays, taxonomic classification is mainly based on genome similarity search to large genome databases. In this process, the classification quality depends heavily on the database since representative relatives have to be known already. Many genomic sequences cannot be classified at all or only with a high misclassification rate. Here we present BERTax, a program that uses a deep neural network to pre-cisely classify the superkingdom, phylum, and genus of DNA sequences taxonomically without the need for a known representative relative from a database. For this, BERTax uses the natural language processing model BERT trained to represent DNA. We show BERTax to be at least on par with the state-of-the-art approaches when taxonomically similar species are part of the training data. In case of an entirely novel organism, however, BERTax clearly outperforms any existing approach. Finally, we show that BERTax can also be combined with database approaches to further increase the prediction quality. Since BERTax is not based on homologous entries in databases, it allows precise taxonomic classification of a broader range of genomic sequences. This leads to a higher number of correctly classified sequences and thus increases the overall information gain.},
+author = {Florian Mock and Fleming Kretschmer and Anton Kriese and S. Böcker and M. Marz},
+doi = {10.1101/2021.07.09.451778},
+}
+
+@article{606c173ccf0ff2ea80d605ff184f1d0a788d18b5,
+title = {A multi-modal neural network for learning cis and trans regulation of stress response in yeast.},
+year = {2019},
+url = {https://www.semanticscholar.org/paper/606c173ccf0ff2ea80d605ff184f1d0a788d18b5},
+abstract = {Deciphering gene regulatory networks is a central problem in computational biology. Here, we explore the use of multi-modal neural networks to learn predictive models of gene expression that include cis and trans regulatory components. We learn models of stress response in the budding yeast Saccharomyces cerevisiae. Our models achieve high performance and substantially outperform other state-of-the-art methods such as boosting algorithms that use pre-defined cis-regulatory features. Our model learns several cis and trans regulators including well-known master stress response regulators. We use our models to perform in-silico TF knock-out experiments and demonstrate that in-silico predictions of target gene changes correlate with the results of the corresponding TF knockout microarray experiment.},
+author = {Boxiang Liu and N. Hussami and Avanti Shrikumar and Tyler C. Shimko and Salil S. Bhate and S. Longwell and S. Montgomery and A. Kundaje},
+arxivid = {1908.09426},
+}
+
+@article{0d90c4a1378bf57e58b64e4de9abb010ffeba678,
+title = {Identifying polyadenylation signals with biological embedding via self-attentive gated convolutional highway networks},
+year = {2021},
+url = {https://www.semanticscholar.org/paper/0d90c4a1378bf57e58b64e4de9abb010ffeba678},
+abstract = {},
+author = {Yanbu Guo and Dongming Zhou and Weihua Li and Jinde Cao and Rencan Nie and Lei Xiong and Xiaoli Ruan},
+doi = {10.1016/j.asoc.2021.107133},
+}
+
+@article{ae010710c476375ad344137f44849c15e58d43fe,
+title = {Metagenomic binning through low-density hashing},
+year = {2017},
+url = {https://www.semanticscholar.org/paper/9de375f8ac55041a6878d650062ba9a216a0e085},
+abstract = {Bacterial microbiomes of incredible complexity are found throughout the world, from exotic marine locations to the soil in our yards to within our very guts. With recent advances in Next-Generation Sequencing (NGS) technologies, we have vastly greater quantities of microbial genome data, but the nature of environmental samples is such that DNA from different species are mixed together. Here, we present Opal for metagenomic binning, the task of identifying the origin species of DNA sequencing reads. Our Opal method introduces low-density, even-coverage hashing to bioinformatics applications, enabling quick and accurate metagenomic binning. Our tool is up to two orders of magnitude faster than leading alignment-based methods at similar or improved accuracy, allowing computational tractability on large metagenomic datasets. Moreover, on public benchmarks, Opal is substantially more accurate than both alignment-based and alignment-free methods (e.g. on SimHC20.500, Opal achieves 95% F1-score while Kraken and CLARK achieve just 91% and 88%, respectively); this improvement is likely due to the fact that the latter methods cannot handle computationally-costly long-range dependencies, which our even-coverage, low-density fingerprints resolve. Notably, capturing these long-range dependencies drastically improves Opal’s ability to detect unknown species that share a genus or phylum with known bacteria. Additionally, the family of hash functions Opal uses can be generalized to other sequence analysis tasks that rely on k-mer based methods to encode long-range dependencies.},
+author = {Yunan Luo and Y. Yu and Jianyang Zeng and B. Berger and Jian Peng},
+doi = {10.1093/bioinformatics/bty611},
+pmid = {30010790},
+}
+
+@article{f6d711bef532a8dc796bfb5496d0bd0e70951ce3,
+title = {Structured machine learning methods for microbiology : mass spectrometry and high-throughput sequencing. (Méthodes d'apprentissage structuré pour la microbiologie : spectrométrie de masse et séquençage haut-débit)},
+year = {2015},
+url = {https://www.semanticscholar.org/paper/f6d711bef532a8dc796bfb5496d0bd0e70951ce3},
+abstract = {Using high-throughput technologies is changing scientific practices and landscape in microbiology. On one hand, mass spectrometry is already used in clinical microbiology laboratories. On the other hand, the last ten years dramatic progress in sequencing technologies allows cheap and fast characterization of microbial diversity in complex clinical samples. Consequently, the two technologies are approached in future diagnostics solutions. This thesis aims to play a part in new in vitro diagnostics (IVD) systems based on high-throughput technologies, like mass spectrometry or next generation sequencing, and their applications in microbiology.Because of the volume of data generated by these new technologies and the complexity of measured parameters, we develop innovative and versatile statistical learning methods for applications in IVD and microbiology. Statistical learning field is well-suited for tasks relying on high-dimensional raw data that can hardly be used by medical experts, like mass-spectrum classification or affecting a sequencing read to the right organism. Here, we propose to use additional known structures in order to improve quality of the answer. For instance, we convert a sequencing read (raw data) into a vector in a nucleotide composition space and use it as a structuredinput for machine learning approaches. We also add prior information related to the hierarchical structure that organizes the reachable micro-organisms (structured output).},
+author = {Kevin Vervier},
+}
+
+@article{e7d2c6fb43437e3ec5bb73c817630e079051d6ff,
+title = {An Overview of the Application of Deep Learning in Short-Read Sequence Classification},
+year = {2020},
+url = {https://www.semanticscholar.org/paper/e7d2c6fb43437e3ec5bb73c817630e079051d6ff},
+abstract = {Advances in sequencing technology have led to an ever increasing amount of available short-read sequencing data. This has, consequently, exacerbated the need for efficient and precise classification tools that can be used in the analysis of these data. As it stands, recent years have shown that massive leaps in performance can be achieved when it comes to approaches that are based on heuristics, and apart from these improvements there has been an ever increasing interest in applying deep learning techniques to revolutionize this classification task. We attempt to study these approaches and to evaluate their performance in a reproducible fashion to get a better perspective on the current state of deep learning based methods when it comes to the classification of short-read sequencing data},
+author = {Kristaps Bebris and I. Poļaka},
+doi = {10.7250/itms-2020-0005},
+}
+
+@article{0b6ef0db81a6f9198a1ae4c4f70816a4373e5ed7,
+title = {Taxonomic classification of metagenomic sequences from Relative Abundance Index profiles using deep learning},
+year = {2021},
+url = {https://www.semanticscholar.org/paper/0b6ef0db81a6f9198a1ae4c4f70816a4373e5ed7},
+abstract = {Abstract We propose a Convolutional Neural Network approach based on k-mer representation for metagenomic fragment classification problem. The proposed model consists of two steps; the first step is representation of DNA based on k-mer frequency with Relative Abundance Index (RAI) and the second step is classification metagenomic fragments with CNN. RAI scores, as DNA fragment representations are fed to CNN classifiers (CNN-RAI). RAI consist of the over- and under abundance statistics gathered from the taxon for each k-mer. In order to compare the performances of CNN-RAI and RAIphy, which classifies metagenomic fragments using the same input attributes with an expectation-maximization based approach, databases of different metagenomic scenarios were tested. Metagenomics data that were generated (or simulated) by different Next-Generation Sequencing platforms, respectively Illumina technology and Oxford Nanopore MinION were compiled into shotgun metagenomics or 16S rRNA datasets. RAI based method and CNN models were trained on represented data with read lengths ranging between 200 and 10,000 bp, also with distinct k-mer size ( 3 ≤ k ≤ 7 ) at genus level. RAI score was used for the first time in the deep learning algorithm as a spectral representation with improved performance thanks to the ability of deep learning on each dataset for a range of parameters. The proposed representation was compared to the current spectral methods and shown to be competitive for all datasets used in this study.},
+author = {Meryem Altın Karagöz and O. Nalbantoglu},
+doi = {10.1016/J.BSPC.2021.102539},
+}
+
+@article{52c419a6cbf0f2f3a33b85d0160a643353d907bf,
+title = {Targeted optimization of regulatory DNA sequences with neural editing architectures},
+year = {2019},
+url = {https://www.semanticscholar.org/paper/52c419a6cbf0f2f3a33b85d0160a643353d907bf},
+abstract = {Targeted optimizing of existing DNA sequences for useful properties, has the potential to enable several synthetic biology applications from modifying DNA to treat genetic disorders to designing regulatory elements to fine tune context-specific gene expression. Current approaches for targeted genome editing are largely based on prior biological knowledge or ad-hoc rules. Few if any machine learning approaches exist for targeted optimization of regulatory DNA sequences. Here, we propose a novel generative neural network architecture for targeted DNA sequence editing – the EDA architecture – consisting of an encoder, decoder, and analyzer. We showcase the use of EDA to optimize regulatory DNA sequences to bind to the transcription factor SPI1. Compared to other state-of-the-art approaches such as a textual variational autoencoder and rule-based editing, EDA significantly improves predicted binding of SPI1 of genomic sequences with the minimal set of edits. We also use EDA to design regulatory elements with optimized grammars of CREB1 binding sites that can tune reporter expression levels as measured by massively parallel reporter assays (MPRA). We analyze the properties of the binding sites in the edited sequences and find patterns that are consistent with previously reported grammatical rules which tie gene expression to CRE binding site density, spacing and affinity.},
+author = {Anvita Gupta and A. Kundaje},
+doi = {10.1101/714402},
+}
+
+@article{7c0fdb0fb72ba1ca91cff8f255aa3167f3aec7fb,
+title = {DeepHPV: a deep learning model to predict human papillomavirus integration sites},
+year = {2020},
+url = {https://www.semanticscholar.org/paper/7c0fdb0fb72ba1ca91cff8f255aa3167f3aec7fb},
+abstract = {Human papillomavirus (HPV) integrating into human genome is the main cause of cervical carcinogenesis. HPV integration selection preference shows strong dependence on local genomic environment. Due to this theory, it is possible to predict HPV integration sites. However, a published bioinformatic tool is not available to date. Thus, we developed an attention-based deep learning model DeepHPV to predict HPV integration sites by learning environment features automatically. In total, 3608 known HPV integration sites were applied to train the model, and 584 reviewed HPV integration sites were used as the testing dataset. DeepHPV showed an area under the receiver-operating characteristic (AUROC) of 0.6336 and an area under the precision recall (AUPR) of 0.5670. Adding RepeatMasker and TCGA Pan Cancer peaks improved the model performance to 0.8464 and 0.8501 in AUROC and 0.7985 and 0.8106 in AUPR, respectively. Next, we tested these trained models on independent database VISDB and found the model adding TCGA Pan Cancer performed better (AUROC: 0.7175, AUPR: 0.6284) than the model adding RepeatMasker peaks (AUROC: 0.6102, AUPR: 0.5577). Moreover, we introduced attention mechanism in DeepHPV and enriched the transcription factor binding sites including BHLHA15, CHR, COUP-TFII, DMRTA2, E2A, HIC1, INR, NPAS, Nr5a2, RARa, SCL, Snail1, Sox10, Sox3, Sox4, Sox6, STAT6, Tbet, Tbx5, TEAD, Tgif2, ZNF189, ZNF416 near attention intensive sites. Together, DeepHPV is a robust and explainable deep learning model, providing new insights into HPV integration preference and mechanism. Availability: DeepHPV is available as an open-source software and can be downloaded from https://github.com/JiuxingLiang/DeepHPV.git, Contact: huzheng1998@163.com, liangjiuxing@m.scnu.edu.cn, lizheyzy@163.com.},
+author = {R. Tian and P. Zhou and Mengyuan Li and Jinfeng Tan and Zifeng Cui and W. Xu and Jingyue Wei and Jingjing Zhu and Zhuang Jin and Chen Cao and Weiwen Fan and Weiling Xie and Zhaoyue Huang and Hongxian Xie and Z. You and Gang Niu and Canbiao Wu and Xiaofang Guo and X. Weng and X. Tian and Fubing Yu and Zhiying Yu and Jiuxing Liang and Zheng Hu},
+doi = {10.1093/bib/bbaa242},
+pmid = {33059369},
+}
+
+@article{b134fe6be2e6b4edf1266bc9237aa2ba67e2d12c,
+title = {CS-SCORE: Rapid identification and removal of human genome contaminants from metagenomic datasets.},
+year = {2015},
+url = {https://www.semanticscholar.org/paper/b134fe6be2e6b4edf1266bc9237aa2ba67e2d12c},
+abstract = {UNLABELLED
+Metagenomic sequencing data, obtained from host-associated microbial communities, are usually contaminated with host genome sequence fragments. Prior to performing any downstream analyses, it is necessary to identify and remove such contaminating sequence fragments. The time and memory requirements of available host-contamination detection techniques are enormous. Thus, processing of large metagenomic datasets is a challenging task. This study presents CS-SCORE--a novel algorithm that can rapidly identify host sequences contaminating metagenomic datasets. Validation results indicate that CS-SCORE is 2-6 times faster than the current state-of-the-art methods. Furthermore, the memory footprint of CS-SCORE is in the range of 2-2.5GB, which is significantly lower than other available tools. CS-SCORE achieves this efficiency by incorporating (1) a heuristic pre-filtering mechanism and (2) a directed-mapping approach that utilizes a novel sequence composition metric (cs-score). CS-SCORE is expected to be a handy 'pre-processing' utility for researchers analyzing metagenomic datasets.
+
+
+AVAILABILITY
+For academic users, an implementation of CS-SCORE is freely available at: http://metagenomics.atc.tcs.com/cs-score (or) https://metagenomics.atc.tcs.com/preprocessing/cs-score.},
+author = {Mohammed M. Haque and T. Bose and Anirban Dutta and Ch. V. Siva K. Reddy and S. Mande},
+doi = {10.1016/j.ygeno.2015.04.005},
+pmid = {25944184},
+}
+
+@article{0cfe52ed6b38bc99cccd02d9d5c3fb0bf3204245,
+title = {GroopM: an automated tool for the recovery of population genomes from related metagenomes},
+year = {2014},
+url = {https://www.semanticscholar.org/paper/0cfe52ed6b38bc99cccd02d9d5c3fb0bf3204245},
+abstract = {Metagenomic binning methods that leverage differential population abundances in microbial communities (differential coverage) are emerging as a complementary approach to conventional composition-based binning. Here we introduce GroopM, an automated binning tool that primarily uses differential coverage to obtain high fidelity population genomes from related metagenomes. We demonstrate the effectiveness of GroopM using synthetic and real-world metagenomes, and show that GroopM produces results comparable with more time consuming, labor-intensive methods.},
+author = {Michael Imelfort and Donovan H. Parks and B. Woodcroft and P. Dennis and P. Hugenholtz and G. Tyson},
+doi = {10.7717/peerj.603},
+pmid = {25289188},
+}
+
+@article{d31f51e95528b05d3375bfef4ffb442331b2011e,
+title = {Identify pathogen organisms from a stream of RNA sequences},
+year = {2014},
+url = {https://www.semanticscholar.org/paper/d31f51e95528b05d3375bfef4ffb442331b2011e},
+abstract = {Metagenomics is an interesting new field of science focused on characterization of microbial communities from environmental samples. It is especially important as many organisms cannot be cultivated in a laboratory and therefore can reveal previously unknown species. This thesis presents a taxonomy-dependent alignment-based method for determining species present in a given metagenomic sample. Main premise is identification and analysis of ribosomal coding sequences which are considered to be indicators of presence of organisms. The solution works with RNA-seq data and is tested on a real dataset from an environmental sample.},
+author = {M. Sosic},
+}
+
+@article{056967d40bfde0c5118925bf903eb41064aa5662,
+title = {Determinants of nucleosome positioning},
+year = {2013},
+url = {https://www.semanticscholar.org/paper/056967d40bfde0c5118925bf903eb41064aa5662},
+abstract = {Nucleosome positioning is critical for gene expression and most DNA-related processes. Here we review the dominant patterns of nucleosome positioning that have been observed and summarize the current understanding of their underlying determinants. The genome-wide pattern of nucleosome positioning is determined by the combination of DNA sequence, ATP-dependent nucleosome remodeling enzymes and transcription factors that include activators, components of the preinitiation complex and elongating RNA polymerase II. These determinants influence each other such that the resulting nucleosome positioning patterns are likely to differ among genes and among cells in a population, with consequent effects on gene expression.},
+author = {K. Struhl and E. Segal},
+doi = {10.1038/nsmb.2506},
+pmid = {23463311},
+}
+
+@article{931524f9d957ddd5400976cd743fc911900711c3,
+title = {A comprehensive fitness landscape model reveals the evolutionary history and future evolvability of eukaryotic cis-regulatory DNA sequences},
+year = {2021},
+url = {https://www.semanticscholar.org/paper/931524f9d957ddd5400976cd743fc911900711c3},
+abstract = {Mutations in non-coding cis-regulatory DNA sequences can alter gene expression, organismal phenotype, and fitness. Fitness landscapes, which map DNA sequence to organismal fitness, are a long-standing goal in biology, but have remained elusive because it is challenging to generalize accurately to the vast space of possible sequences using models built on measurements from a limited number of endogenous regulatory sequences. Here, we construct a sequence-to-expression model for such a landscape and use it to decipher principles of cis-regulatory evolution. Using tens of millions of randomly sampled promoter DNA sequences and their measured expression levels in the yeast Sacccharomyces cerevisiae, we construct a deep transformer neural network model that generalizes with exceptional accuracy, and enables sequence design for gene expression engineering. Using our model, we predict and experimentally validate expression divergence under random genetic drift and strong selection weak mutation regimes, show that conflicting expression objectives in different environments constrain expression adaptation, and find that stabilizing selection on gene expression leads to the moderation of regulatory complexity. We present an approach for detecting selective constraint on gene expression using our model and natural sequence variation, and validate it using observed cis-regulatory diversity across 1,011 yeast strains, cross-species RNA-seq from three different clades, and measured expression-to-fitness curves. Finally, we develop a characterization of regulatory evolvability, use it to visualize fitness landscapes in two dimensions, discover evolvability archetypes, quantify the mutational robustness of individual sequences and highlight the mutational robustness of extant natural regulatory sequence populations. Our work provides a general framework that addresses key questions in the evolution of cis-regulatory sequences.},
+author = {E. D. Vaishnav and Carl G. de Boer and M. Yassour and Jennifer Molinet and Lin Fan and X. Adiconis and D. Thompson and F. Cubillos and J. Levin and A. Regev},
+doi = {10.1101/2021.02.17.430503},
+}
+
+@article{493a23f694b5a6582bb041d029553f0c48ead3a2,
+title = {DNA Sequence Preferences of Transcriptional Activators Correlate More Strongly than Repressors with Nucleosomes},
+year = {2012},
+url = {https://www.semanticscholar.org/paper/493a23f694b5a6582bb041d029553f0c48ead3a2},
+abstract = {Summary Transcription factors (TFs) and histone octamers are two abundant classes of DNA binding proteins that coordinate the transcriptional program in cells. Detailed studies of individual TFs have shown that TFs bind to nucleosome-occluded DNA sequences and induce nucleosome disruption/repositioning, while recent global studies suggest this is not the only mechanism used by all TFs. We have analyzed to what extent the intrinsic DNA binding preferences of TFs and histones play a role in determining nucleosome occupancy, in addition to nonintrinsic factors such as the enzymatic activity of chromatin remodelers. The majority of TFs in budding yeast have an intrinsic sequence preference overlapping with nucleosomal histones. TFs with intrinsic DNA binding properties highly correlated with those of histones tend to be associated with gene activation and might compete with histones to bind to genomic DNA. Consistent with this, we show that activators induce more nucleosome disruption upon transcriptional activation than repressors.},
+author = {Varodom Charoensawan and S. Janga and M. Bulyk and M. Babu and S. Teichmann},
+doi = {10.1016/j.molcel.2012.06.028},
+pmid = {22841002},
+}
+
+@article{78dbff8babc72525e4fb567483cec3e547161cc9,
+title = {Mechanisms underlying nucleosome positioning in vivo.},
+year = {2014},
+url = {https://www.semanticscholar.org/paper/78dbff8babc72525e4fb567483cec3e547161cc9},
+abstract = {It has been some 40 years since repeating subunits in eukaryotic chromatin, initially termed "nu bodies," were described. Four decades of study have characterized the structural organization of the nucleosome, from multiple crystal structures of individual nucleosomes to genome-wide maps of nucleosome positions in scores of organisms. Nucleosome positioning can impact essentially all DNA-templated processes, making an appreciation of the forces shaping the nucleosomal landscape in eukaryotes key to fully understanding genomic regulation. Here, we review the factors impacting nucleosome positioning and the ways that nucleosomes can control the output of the genome.},
+author = {A. Hughes and O. Rando},
+doi = {10.1146/annurev-biophys-051013-023114},
+pmid = {24702039},
+}
+
+@article{d98b15d18bc3d67c44c20758502e7067fc4d8c57,
+title = {Interpreting neural networks for biological sequences by learning stochastic masks},
+year = {2021},
+url = {https://www.semanticscholar.org/paper/d98b15d18bc3d67c44c20758502e7067fc4d8c57},
+abstract = {Sequence-based neural networks can learn to make accurate predictions from large biological datasets, but model interpretation remains challenging. Many existing feature attribution methods are optimized for continuous rather than discrete input patterns and assess individual feature importance in isolation, making them ill-suited for interpreting nonlinear interactions in molecular sequences. Here, building on work in computer vision and natural language processing, we developed an approach based on deep learning—scrambler networks—wherein the most important sequence positions are identified with learned input masks. Scramblers learn to predict position-specific scoring matrices where unimportant nucleotides or residues are scrambled by raising their entropy. We apply scramblers to interpret the effects of genetic variants, uncover nonlinear interactions between cis -regulatory elements, explain binding specificity for protein–protein interactions, and identify structural determinants of de novo-designed proteins. We show that scramblers enable efficient attribution across large datasets and result in high-quality explanations, often outperforming state-of-the-art methods. Neural networks have become a useful approach for predicting biological function from large-scale DNA and protein sequence data; however, researchers are often unable to understand which features in an input sequence are important for a given model, making it difficult to explain predictions in terms of known biology. The authors introduce scrambler networks, a feature attribution method tailor-made for discrete sequence inputs.},
+author = {Johannes Linder and Alyssa La Fleur and Zibo Chen and A. Ljubetič and D. Baker and Sreeram Kannan and G. Seelig},
+doi = {10.1101/2021.04.29.441979},
+pmid = {35966405},
+}
+
+@article{e0288dc4e54144d4de6ddef9828959451e2b6446,
+title = {Nucleosome Stability Distinguishes Two Different Promoter Types at All Protein-Coding Genes in Yeast.},
+year = {2015},
+url = {https://www.semanticscholar.org/paper/e0288dc4e54144d4de6ddef9828959451e2b6446},
+abstract = {Previous studies indicate that eukaryotic promoters display a stereotypical chromatin landscape characterized by a well-positioned +1 nucleosome near the transcription start site and an upstream -1 nucleosome that together demarcate a nucleosome-free (or -depleted) region. Here we present evidence that there are two distinct types of promoters distinguished by the resistance of the -1 nucleosome to micrococcal nuclease digestion. These different architectures are characterized by two sequence motifs that are broadly deployed at one set of promoters where a nuclease-sensitive ("fragile") nucleosome forms, but concentrated in a narrower, nucleosome-free region at all other promoters. The RSC nucleosome remodeler acts through the motifs to establish stable +1 and -1 nucleosome positions, while binding of a small set of general regulatory (pioneer) factors at fragile nucleosome promoters plays a key role in their destabilization. We propose that the fragile nucleosome promoter architecture is adapted for regulation of highly expressed, growth-related genes.},
+author = {Slawomir Kubik and M. Bruzzone and Philippe Jacquet and J. Falcone and J. Rougemont and D. Shore},
+doi = {10.1016/j.molcel.2015.10.002},
+pmid = {26545077},
+}
+
+@article{4fbf8badfe3cd8e38d5a6a808a704d0744965f71,
+title = {A computational approach to map nucleosome positions and alternative chromatin states with base pair resolution},
+year = {2016},
+url = {https://www.semanticscholar.org/paper/4fbf8badfe3cd8e38d5a6a808a704d0744965f71},
+abstract = {Understanding chromatin function requires knowing the precise location of nucleosomes. MNase-seq methods have been widely applied to characterize nucleosome organization in vivo, but generally lack the accuracy to determine the precise nucleosome positions. Here we develop a computational approach leveraging digestion variability to determine nucleosome positions at a base-pair resolution from MNase-seq data. We generate a variability template as a simple error model for how MNase digestion affects the mapping of individual nucleosomes. Applied to both yeast and human cells, this analysis reveals that alternatively positioned nucleosomes are prevalent and create significant heterogeneity in a cell population. We show that the periodic occurrences of dinucleotide sequences relative to nucleosome dyads can be directly determined from genome-wide nucleosome positions from MNase-seq. Alternatively positioned nucleosomes near transcription start sites likely represent different states of promoter nucleosomes during transcription initiation. Our method can be applied to map nucleosome positions in diverse organisms at base-pair resolution. DOI: http://dx.doi.org/10.7554/eLife.16970.001},
+author = {Xu Zhou and A. Blocker and E. Airoldi and E. O’Shea},
+doi = {10.7554/eLife.16970},
+pmid = {27623011},
+}
+
+@article{660ff3e579f60db34d21ee5df38ee84cd99762a0,
+title = {Thermodynamic modeling of genome-wide nucleosome depleted regions in yeast},
+year = {2020},
+url = {https://www.semanticscholar.org/paper/660ff3e579f60db34d21ee5df38ee84cd99762a0},
+abstract = {Nucleosome positioning in the genome is essential for the regulation of many nuclear processes. We currently have limited capability to predict nucleosome positioning in vivo, especially the locations and sizes of nucleosome depleted regions (NDRs). Here, we present a thermodynamic model that incorporates the intrinsic affinity of histones, competitive binding of sequence-specific factors, and nucleosome remodeling to predict nucleosome positioning in budding yeast. The model shows that the intrinsic affinity of histones, at near-saturating histone concentration, is not sufficient in generating NDRs in the genome. However, the binding of a few factors, especially RSC towards GC-rich and poly(A/T) sequences, allows us to predict ~ 66% of genome-wide NDRs. The model also shows that nucleosome remodeling activity is required to predict the correct NDR sizes. The validity of the model was further supported by the agreement between the predicted and the measured nucleosome positioning upon factor deletion or on exogenous sequences introduced into yeast. Overall, our model quantitatively evaluated the impact of different genetic components on NDR formation and illustrated the vital roles of sequence-specific factors and nucleosome remodeling in this process.},
+author = {Hungyo Kharerin and Lu Bai},
+doi = {10.1371/journal.pcbi.1008560},
+pmid = {33428627},
+}

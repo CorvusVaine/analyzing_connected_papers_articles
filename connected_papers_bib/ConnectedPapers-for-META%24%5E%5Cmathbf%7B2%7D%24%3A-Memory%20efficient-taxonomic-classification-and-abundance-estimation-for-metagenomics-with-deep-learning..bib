@@ -1,0 +1,441 @@
+@article{f2de6b866f01edafa19147663f5adf9c36648034,
+title = {META$^\mathbf{2}$: Memory-efficient taxonomic classification and abundance estimation for metagenomics with deep learning.},
+year = {2019},
+url = {https://www.semanticscholar.org/paper/f2de6b866f01edafa19147663f5adf9c36648034},
+abstract = {Metagenomic studies have increasingly utilized sequencing technologies in order to analyze DNA fragments found in environmental samples.One important step in this analysis is the taxonomic classification of the DNA fragments. Conventional read classification methods require large databases and vast amounts of memory to run, with recent deep learning methods suffering from very large model sizes. We therefore aim to develop a more memory-efficient technique for taxonomic classification. A task of particular interest is abundance estimation in metagenomic samples. Current attempts rely on classifying single DNA reads independently from each other and are therefore agnostic to co-occurence patterns between taxa. In this work, we also attempt to take these patterns into account. We develop a novel memory-efficient read classification technique, combining deep learning and locality-sensitive hashing. We show that this approach outperforms conventional mapping-based and other deep learning methods for single-read taxonomic classification when restricting all methods to a fixed memory footprint. Moreover, we formulate the task of abundance estimation as a Multiple Instance Learning (MIL) problem and we extend current deep learning architectures with two different types of permutation-invariant MIL pooling layers: a) deepsets and b) attention-based pooling. We illustrate that our architectures can exploit the co-occurrence of species in metagenomic read sets and outperform the single-read architectures in predicting the distribution over taxa at higher taxonomic ranks.},
+author = {Andreas Georgiou and Vincent Fortuin and Harun Mustafa and Gunnar Rätsch},
+arxivid = {1909.13146},
+}
+
+@article{cdcbb428932f026bc469d39836076228a0e10eb8,
+title = {MetaGraph: Indexing and Analysing Nucleotide Archives at Petabase-scale},
+year = {2020},
+url = {https://www.semanticscholar.org/paper/cdcbb428932f026bc469d39836076228a0e10eb8},
+abstract = {The amount of biological sequencing data available in public repositories is growing exponentially, forming an invaluable biomedical research resource. Yet, making all this sequencing data searchable and easily accessible to life science and data science researchers is an unsolved problem. We present MetaGraph, a versatile framework for the scalable analysis of extensive sequence repositories. MetaGraph efficiently indexes vast collections of sequences to enable fast search and comprehensive analysis. A wide range of underlying data structures offer different practically relevant trade-offs between the space taken by the index and its query performance. MetaGraph provides a flexible methodological framework allowing for index construction to be scaled from consumer laptops to distribution onto a cloud compute cluster for processing terabases to petabases of input data. Achieving compression ratios of up to 1,000-fold over the already compressed raw input data, MetaGraph can represent the content of large sequencing archives in the working memory of a single compute server. We demonstrate our framework’s scalability by indexing over 1.4 million whole genome sequencing (WGS) records from NCBI’s Sequence Read Archive, representing a total input of more than three petabases. Besides demonstrating the utility of MetaGraph indexes on key applications, such as experiment discovery, sequence alignment, error correction, and differential assembly, we make a wide range of indexes available as a community resource, including those over 450,000 microbial WGS records, more than 110,000 fungi WGS records, and more than 20,000 whole metagenome sequencing records. A subset of these indexes is made available online for interactive queries. All indexes created from public data comprising in total more than 1 million records are available for download or usage in the cloud. As an example of our indexes’ integrative analysis capabilities, we introduce the concept of differential assembly, which allows for the extraction of sequences present in a foreground set of samples but absent in a given background set. We apply this technique to differentially assemble contigs to identify pathogenic agents transfected via human kidney transplants. In a second example, we indexed more than 20,000 human RNA-Seq records from the TCGA and GTEx cohorts and use them to extract transcriptome features that are hard to characterize using a classical linear reference. We discovered over 200 trans-splicing events in GTEx and found broad evidence for tissue-specific non-A-to-I RNA-editing in GTEx and TCGA.},
+author = {Mikhail Karasikov and Harun Mustafa and D. Danciu and Christopher Barber and M. Zimmermann and G. Rätsch and A. Kahles},
+doi = {10.1101/2020.10.01.322164},
+}
+
+@article{a86b309adeea5833564d232de3c2ceea2ae8c13b,
+title = {Metagenome2Vec: Building Contextualized Representations for Scalable Metagenome Analysis},
+year = {2021},
+url = {https://www.semanticscholar.org/paper/a86b309adeea5833564d232de3c2ceea2ae8c13b},
+abstract = {Advances in next-generation metagenome sequencing have the potential to revolutionize the point-of-care diagnosis of novel pathogen infections, which could help prevent potential widespread transmission of diseases. Given the high volume of metagenome sequences, there is a need for scalable frameworks to analyze and segment metagenome sequences from clinical samples, which can be highly imbalanced. There is an increased need for learning robust representations from metagenome reads since pathogens within a family can have highly similar genome structures (some more than 90%) and hence enable the segmentation and identification of novel pathogen sequences with limited labeled data. In this work, we propose Metagenome2Vec - a contextualized representation that captures the global structural properties inherent in metagenome data and local contextualized properties through self-supervised representation learning. We show that the learned representations can help detect six (6) related pathogens from clinical samples with less than 100 labeled sequences. Extensive experiments on simulated and clinical metagenome data show that the proposed representation encodes compositional properties that can generalize beyond annotations to segment novel pathogens in an unsupervised setting.},
+author = {Sathyanarayanan N. Aakur and Vineela Indla and Vennela Indla and S. Narayanan and A. Bagavathi and Vishalini Laguduva Ramnath and A. Ramachandran},
+doi = {10.1109/ICDMW53433.2021.00067},
+arxivid = {2111.08001},
+}
+
+@article{81eb1671e74ba01d0c14576395d20a1e6b7163d6,
+title = {DeepMicrobes: taxonomic classification for metagenomics with deep learning},
+year = {2019},
+url = {https://www.semanticscholar.org/paper/81eb1671e74ba01d0c14576395d20a1e6b7163d6},
+abstract = {Taxonomic classification is a crucial step for metagenomics applications including disease diagnostics, microbiome analyses, and outbreak tracing. Yet it is unknown what deep learning architecture can capture microbial genome-wide features relevant to this task. We report DeepMicrobes (https://github.com/MicrobeLab/DeepMicrobes), a computational framework that can perform large-scale training on > 10,000 RefSeq complete microbial genomes and accurately predict the species-of-origin of whole metagenome shotgun sequencing reads. We show the advantage of DeepMicrobes over state-of-the-art tools in precisely identifying species from microbial community sequencing data. Therefore, DeepMicrobes expands the toolbox of taxonomic classification for metagenomics and enables the development of further deep learning-based bioinformatics algorithms for microbial genomic sequence analysis.},
+author = {Qiaoxing Liang and P. Bible and Yu Liu and B. Zou and Lai Wei},
+doi = {10.1093/nargab/lqaa009},
+pmid = {33575556},
+}
+
+@article{d117dcecb13de285cbb8352fec8c0b2d182524d0,
+title = {MetaFlow: Metagenomic profiling based on whole-genome coverage analysis with min-cost flows},
+year = {2016},
+url = {https://www.semanticscholar.org/paper/d117dcecb13de285cbb8352fec8c0b2d182524d0},
+abstract = {High-throughput sequencing (HTS) of metagenomes is proving essential in understanding the environment and diseases. State-of-the-art methods for discovering the species and their abundances in an HTS metagenomic sample are based on genome-specific markers, which can lead to skewed results, especially at species level. We present MetaFlow, the first method based on coverage analysis across entire genomes that also scales to HTS samples. We formulated this problem as an NP-hard matching problem in a bipartite graph, which we solved in practice by min-cost flows. On synthetic data sets of varying complexity and similarity, MetaFlow is more precise and sensitive than popular tools such as MetaPhlAn, mOTU, GSMer and BLAST, and its abundance estimations at species level are two to four times better in terms of ℓ1-norm. On a real human stool data set, MetaFlow identifies B.uniformis as most predominant, in line with previous human gut studies, whereas marker-based methods report it as rare. MetaFlow is freely available at http://cs.helsinki.fi/gsa/metaflow},
+author = {Ahmed Sobih and Alexandru I. Tomescu and V. Mäkinen},
+doi = {10.1101/038208},
+}
+
+@article{fbca626c05b45fad1c1f375fdc890ac2d0a9f0a1,
+title = {Using Genome Graph Topology to Guide Annotation Matrix Sparsification},
+year = {2020},
+url = {https://www.semanticscholar.org/paper/fbca626c05b45fad1c1f375fdc890ac2d0a9f0a1},
+abstract = {Since the amount of published biological sequencing data is growing exponentially, efficient methods for storing and indexing this data are more needed than ever to truly benefit from this invaluable resource for biomedical research. Labeled de Bruijn graphs are a frequently-used approach for representing large sets of sequencing data. While significant progress has been made to succinctly represent the graph itself, efficient methods for storing labels on such graphs are still rapidly evolving. In this paper, we present RowDiff, a new technique for compacting graph labels by leveraging expected similarities in annotations of nodes adjacent in the graph. RowDiff can be constructed in linear time relative to the number of nodes and labels in the graph, and the construction can be efficiently parallelized and distributed, significantly reducing construction time. RowDiff can be viewed as an intermediary sparsification step of the initial annotation matrix and can thus naturally be combined with existing generic schemes for compressed binary matrix representation. Our experiments on the Fungi subset of the RefSeq collection show that applying RowDiff sparsification reduces the size of individual annotation columns stored as compressed bit vectors by an average factor of 42. When combining RowDiff with a Multi-BRWT representation, the resulting annotation is 26 times smaller than Mantis-MST, the previously known smallest annotation representation. In addition, experiments on 10,000 RNA-seq datasets show that RowDiff combined with Multi-BRWT results in a 30% reduction in annotation footprint over Mantis-MST.},
+author = {D. Danciu and Mikhail Karasikov and Harun Mustafa and A. Kahles and G. Rätsch},
+doi = {10.1101/2020.11.17.386649},
+}
+
+@article{fbfbc5396f28e8dbeeb3b95e49fb6646d455cc9b,
+title = {GeNet: Deep Representations for Metagenomics},
+year = {2019},
+url = {https://www.semanticscholar.org/paper/fbfbc5396f28e8dbeeb3b95e49fb6646d455cc9b},
+abstract = {We introduce GeNet, a method for shotgun metagenomic classification from raw DNA sequences that exploits the known hierarchical structure between labels for training. We provide a comparison with state-of-the-art methods Kraken and Centrifuge on datasets obtained from several sequencing technologies, in which dataset shift occurs. We show that GeNet obtains competitive precision and good recall, with orders of magnitude less memory requirements. Moreover, we show that a linear model trained on top of representations learned by GeNet achieves recall comparable to state-of-the-art methods on the aforementioned datasets, and achieves over 90% accuracy in a challenging pathogen detection problem. This provides evidence of the usefulness of the representations learned by GeNet for downstream biological tasks.},
+author = {Mateo Rojas-Carulla and I. Tolstikhin and G. Luque and Nicholas D. Youngblut and R. Ley and B. Schölkopf},
+doi = {10.1101/537795},
+arxivid = {1901.11015},
+}
+
+@article{4f147a58758492f015c31dc989004683d9905463,
+title = {Tamock: simulation of habitat-specific benchmark data in metagenomics},
+year = {2021},
+url = {https://www.semanticscholar.org/paper/4f147a58758492f015c31dc989004683d9905463},
+abstract = {Background Simulated metagenomic reads are widely used to benchmark software and workflows for metagenome interpretation. The results of metagenomic benchmarks depend on the assumptions about their underlying ecosystems. Conclusions from benchmark studies are therefore limited to the ecosystems they mimic. Ideally, simulations are therefore based on genomes, which resemble particular metagenomic communities realistically. Results We developed Tamock to facilitate the realistic simulation of metagenomic reads according to a metagenomic community, based on real sequence data. Benchmarks samples can be created from all genomes and taxonomic domains present in NCBI RefSeq. Tamock automatically determines taxonomic profiles from shotgun sequence data, selects reference genomes accordingly and uses them to simulate metagenomic reads. We present an example use case for Tamock by assessing assembly and binning method performance for selected microbiomes. Conclusions Tamock facilitates automated simulation of habitat-specific benchmark metagenomic data based on real sequence data and is implemented as a user-friendly command-line application, providing extensive additional information along with the simulated benchmark data. Resulting benchmarks enable an assessment of computational methods, workflows, and parameters specifically for a metagenomic habitat or ecosystem of a metagenomic study. Availability Source code, documentation and install instructions are freely available at GitHub ( https://github.com/gerners/tamock ).},
+author = {Samuel M. Gerner and Alexandra B. Graf and T. Rattei},
+doi = {10.1186/s12859-021-04154-z},
+pmid = {33932979},
+}
+
+@article{e1b23cea3258d099c7acddd4c41ed86632ca7c2f,
+title = {kASA: Taxonomic Analysis of Metagenomic Data on a Notebook},
+year = {2019},
+url = {https://www.semanticscholar.org/paper/e1b23cea3258d099c7acddd4c41ed86632ca7c2f},
+abstract = {The taxonomic analysis of sequencing data has become important in many areas of life sciences. However, currently available software tools for that purpose either consume large amounts of RAM or yield an insufficient quality of the results. Here we present kASA, a k-mer based software capable of identifying and profiling metagenomic sequences with high computational efficiency and a small user-definable memory footprint. We ensure high sensitivity and precision via k-mers on amino acid level with a dynamic length of multiple k’s. Custom algorithms and data structures that are optimised for external memory storage enable for the first time a full-scale metagenomics analysis without compromise on a standard notebook.},
+author = {Silvio Weging and A. Gogol-Döring and I. Grosse},
+doi = {10.1101/713966},
+}
+
+@article{a2f45ffa4dbb6ac62a4909c74222cefc7a12c7c6,
+title = {Topology-based sparsification of graph annotations},
+year = {2020},
+url = {https://www.semanticscholar.org/paper/a2f45ffa4dbb6ac62a4909c74222cefc7a12c7c6},
+abstract = {Abstract Motivation Since the amount of published biological sequencing data is growing exponentially, efficient methods for storing and indexing this data are more needed than ever to truly benefit from this invaluable resource for biomedical research. Labeled de Bruijn graphs are a frequently-used approach for representing large sets of sequencing data. While significant progress has been made to succinctly represent the graph itself, efficient methods for storing labels on such graphs are still rapidly evolving. Results In this article, we present RowDiff, a new technique for compacting graph labels by leveraging expected similarities in annotations of vertices adjacent in the graph. RowDiff can be constructed in linear time relative to the number of vertices and labels in the graph, and in space proportional to the graph size. In addition, construction can be efficiently parallelized and distributed, making the technique applicable to graphs with trillions of nodes. RowDiff can be viewed as an intermediary sparsification step of the original annotation matrix and can thus naturally be combined with existing generic schemes for compressed binary matrices. Experiments on 10 000 RNA-seq datasets show that RowDiff combined with multi-BRWT results in a 30% reduction in annotation footprint over Mantis-MST, the previously known most compact annotation representation. Experiments on the sparser Fungi subset of the RefSeq collection show that applying RowDiff sparsification reduces the size of individual annotation columns stored as compressed bit vectors by an average factor of 42. When combining RowDiff with a multi-BRWT representation, the resulting annotation is 26 times smaller than Mantis-MST. Availability and implementation RowDiff is implemented in C++ within the MetaGraph framework. The source code and the data used in the experiments are publicly available at https://github.com/ratschlab/row_diff.},
+author = {D. Danciu and Mikhail Karasikov and Harun Mustafa and A. Kahles and G. Rätsch},
+doi = {10.1093/bioinformatics/btab330},
+pmid = {34252940},
+}
+
+@article{f70a88b03df925fa38578db83656a35166bdf50b,
+title = {Benchmarking Metagenomics Tools for Taxonomic Classification},
+year = {2019},
+url = {https://www.semanticscholar.org/paper/f70a88b03df925fa38578db83656a35166bdf50b},
+abstract = {Metagenomic sequencing is revolutionizing the detection and characterization of microbial species, and a wide variety of software tools are available to perform taxonomic classification of these data. The fast pace of development of these tools and the complexity of metagenomic data make it important that researchers are able to benchmark their performance. Here, we review current approaches for metagenomic analysis and evaluate the performance of 20 metagenomic classifiers using simulated and experimental datasets. We describe the key metrics used to assess performance, offer a framework for the comparison of additional classifiers, and discuss the future of metagenomic data analysis.},
+author = {S. Ye and K. Siddle and D. Park and Pardis C Sabeti},
+doi = {10.1016/j.cell.2019.07.010},
+pmid = {31398336},
+}
+
+@article{405ea3397786adb536265041bdc4995c7574d0da,
+title = {taxMaps - Ultra-comprehensive and highly accurate taxonomic classification of short-read data in reasonable time},
+year = {2017},
+url = {https://www.semanticscholar.org/paper/c39678125b21974477bb712aaf5754ca30819efc},
+abstract = {High-throughput sequencing is a revolutionary technology for the analysis of metagenomic samples. However, querying large volumes of reads against comprehensive DNA/RNA databases in a sensitive manner can be compute-intensive. Here, we present taxMaps, a highly efficient, sensitive and fully scalable taxonomic classification tool, capable of delivering classification accuracy comparable to that of BLASTn, but at up to 3 orders of magnitude less computational cost. taxMaps is freely available for academic and non-commercial research purposes at https://github.com/nygenome/taxmaps.},
+author = {A. Corvelo and Wayne E. Clarke and N. Robine and M. Zody},
+doi = {10.1101/134023},
+pmid = {29588360},
+}
+
+@article{2e9285b2501875835545ffc76e35da535f388540,
+title = {Raptor: A fast and space-efficient pre-filter for querying very large collections of nucleotide sequences},
+year = {2020},
+url = {https://www.semanticscholar.org/paper/2e9285b2501875835545ffc76e35da535f388540},
+abstract = {We present Raptor, a tool for approximately searching many queries in large collections of nucleotide sequences. In comparison with similar tools like Mantis and COBS, Raptor is 12-144 times faster and uses up to 30 times less memory. Raptor uses winnowing minimizers to define a set of representative k-mers, an extension of the Interleaved Bloom Filters (IBF) as a set membership data structure, and probabilistic thresholding for minimizers. Our approach allows compression and a partitioning of the IBF to enable the effective use of secondary memory.},
+author = {E. Seiler and Svenja Mehringer and Mitra Darvish and Etienne Turc and K. Reinert},
+doi = {10.1016/j.isci.2021.102782},
+pmid = {34337360},
+}
+
+@article{2776e255e7d442b1d6cfb48319cd853814106dfb,
+title = {deSPI: efficient classification of metagenomics reads with lightweight de Bruijn graph-based reference indexing},
+year = {2018},
+url = {https://www.semanticscholar.org/paper/2776e255e7d442b1d6cfb48319cd853814106dfb},
+abstract = {One of the core problems in metagenomics is the classification of shotgun sequencing reads to identify species present in samples. Many supervised classification tools have been developed recently, but they either consume large memory or large computation time. Herein we propose a new classification method, de Bruijn Graph-based Species Identifier (deSPI), which takes advantage of de Bruijn graph and FM-index data structures and a hierarchical top-down strategy to do classification. The experimental results suggest that deSPI uses much less memory than Clark and Kraken and classifies reads much faster than Centrifuge and Kaiju, while maintaining a comparable sensitivity and accuracy.},
+author = {Dengfeng Guan and Bo Liu and Yadong Wang},
+doi = {10.1109/BIBM.2018.8621235},
+}
+
+@article{c9d86c56de0d0b9e814fdd0d0d1bc4e97b857882,
+title = {Keeping up with the genomes: efficient learning of our increasing knowledge of the tree of life},
+year = {2019},
+url = {https://www.semanticscholar.org/paper/c9d86c56de0d0b9e814fdd0d0d1bc4e97b857882},
+abstract = {Background It is a computational challenge for current metagenomic classifiers to keep up with the pace of training data generated from genome sequencing projects, such as the exponentially-growing NCBI RefSeq bacterial genome database. When new reference sequences are added to training data, statically trained classifiers must be rerun on all data, resulting in a highly inefficient process. The rich literature of “incremental learning” addresses the need to update an existing classifier to accommodate new data without sacrificing much accuracy compared to retraining the classifier with all data. Results We demonstrate how classification improves over time by incrementally training a classifier on progressive RefSeq snapshots and testing it on: (a) all known current genomes (as a ground truth set) and (b) a real experimental metagenomic gut sample. We demonstrate that as a classifier model’s knowledge of genomes grows, classification accuracy increases. The proof-of-concept naïve Bayes implementation, when updated yearly, now runs in 1/4 t h of the non-incremental time with no accuracy loss. Conclusions It is evident that classification improves by having the most current knowledge at its disposal. Therefore, it is of utmost importance to make classifiers computationally tractable to keep up with the data deluge. The incremental learning classifier can be efficiently updated without the cost of reprocessing nor the access to the existing database and therefore save storage as well as computation resources.},
+author = {Zhengqiao Zhao and A. Cristian and G. Rosen},
+doi = {10.1101/758755},
+pmid = {32957925},
+}
+
+@article{6bd3a44e70c62195170928ea15385b17ba645deb,
+title = {CLARK: fast and accurate classification of metagenomic and genomic sequences using discriminative k-mers},
+year = {2015},
+url = {https://www.semanticscholar.org/paper/6bd3a44e70c62195170928ea15385b17ba645deb},
+abstract = {BackgroundThe problem of supervised DNA sequence classification arises in several fields of computational molecular biology. Although this problem has been extensively studied, it is still computationally challenging due to size of the datasets that modern sequencing technologies can produce.ResultsWe introduce Clark a novel approach to classify metagenomic reads at the species or genus level with high accuracy and high speed. Extensive experimental results on various metagenomic samples show that the classification accuracy of Clark is better or comparable to the best state-of-the-art tools and it is significantly faster than any of its competitors. In its fastest single-threaded mode Clark classifies, with high accuracy, about 32 million metagenomic short reads per minute. Clark can also classify BAC clones or transcripts to chromosome arms and centromeric regions.ConclusionsClark is a versatile, fast and accurate sequence classification method, especially useful for metagenomics and genomics applications. It is freely available at http://clark.cs.ucr.edu/.},
+author = {R. Ounit and S. Wanamaker and T. Close and S. Lonardi},
+doi = {10.1186/s12864-015-1419-2},
+pmid = {25879410},
+}
+
+@article{057ff83f4b5e2a2137371a038e3a4e713f8c1342,
+title = {deSPI: efficient classification of metagenomic reads with lightweight de Bruijn graph-based reference indexing},
+year = {2016},
+url = {https://www.semanticscholar.org/paper/057ff83f4b5e2a2137371a038e3a4e713f8c1342},
+abstract = {Summary In metagenomic studies, fast and effective tools are on wide demand to implement taxonomy classification for upto billions of reads. Herein, we propose deSPI, a novel read classification method that classifies reads by recognizing and analyzing the matches between reads and reference with de Bruijn graph-based lightweight reference indexing. deSPI has faster speed with relatively small memory footprint, meanwhile, it can also achieve higher or similar sensitivity and accuracy. Availability the C++ source code of deSPI is available at https://github.com/hitbc/deSPI Contact ydwang@hit.edu.cn Supplementary information Supplementary data are available at Bioinformatics online.},
+author = {Dengfeng Guan and Bo Liu and Yadong Wang},
+doi = {10.1101/080200},
+}
+
+@article{4cc6d4776478a2bd1d11ff058cec7efb6ffdb3c1,
+title = {The impact of contaminants on the accuracy of genome skimming and the effectiveness of exclusion read filters},
+year = {2020},
+url = {https://www.semanticscholar.org/paper/4cc6d4776478a2bd1d11ff058cec7efb6ffdb3c1},
+abstract = {The ability to detect the identity of a sample obtained from its environment is a cornerstone of molecular ecological research. Thanks to the falling price of shotgun sequencing, genome skimming, the acquisition of short reads spread across the genome at low coverage, is emerging as an alternative to traditional barcoding. By obtaining far more data across the whole genome, skimming has the promise to increase the precision of sample identification beyond traditional barcoding while keeping the costs manageable. While methods for assembly‐free sample identification based on genome skims are now available, little is known about how these methods react to the presence of DNA from organisms other than the target species. In this paper, we show that the accuracy of distances computed between a pair of genome skims based on k‐mer similarity can degrade dramatically if the skims include contaminant reads; i.e., any reads originating from other organisms. We establish a theoretical model of the impact of contamination. We then suggest and evaluate a solution to the contamination problem: Query reads in a genome skim against an extensive database of possible contaminants (e.g., all microbial organisms) and filter out any read that matches. We evaluate the effectiveness of this strategy when implemented using Kraken‐II, in detailed analyses. Our results show substantial improvements in accuracy as a result of filtering but also point to limitations, including a need for relatively close matches in the contaminant database.},
+author = {Eleonora Rachtman and M. Balaban and V. Bafna and S. Mirarab},
+doi = {10.1111/1755-0998.13135},
+pmid = {31943790},
+}
+
+@article{7de3ecf36cfaa0bbc847e7ca8cefe0a223fcf8a1,
+title = {Centrifuge: rapid and sensitive classification of metagenomic sequences.},
+year = {2016},
+url = {},
+abstract = {Centrifuge is a novel microbial classification engine that enables rapid, accurate, and sensitive labeling of reads and quantification of species on desktop computers. The system uses an indexing scheme based on the Burrows-Wheeler transform (BWT) and the Ferragina-Manzini (FM) index, optimized specifically for the metagenomic classification problem. Centrifuge requires a relatively small index (4.2 GB for 4078 bacterial and 200 archaeal genomes) and classifies sequences at very high speed, allowing it to process the millions of reads from a typical high-throughput DNA sequencing run within a few minutes. Together, these advances enable timely and accurate analysis of large metagenomics data sets on conventional desktop computers. Because of its space-optimized indexing schemes, Centrifuge also makes it possible to index the entire NCBI nonredundant nucleotide sequence database (a total of 109 billion bases) with an index size of 69 GB, in contrast to k-mer-based indexing schemes, which require far more extensive space.},
+author = {Daehwan Kim and Li Song and F. Breitwieser and S. Salzberg},
+}
+
+@article{0b6ef0db81a6f9198a1ae4c4f70816a4373e5ed7,
+title = {Taxonomic classification of metagenomic sequences from Relative Abundance Index profiles using deep learning},
+year = {2021},
+url = {https://www.semanticscholar.org/paper/0b6ef0db81a6f9198a1ae4c4f70816a4373e5ed7},
+abstract = {Abstract We propose a Convolutional Neural Network approach based on k-mer representation for metagenomic fragment classification problem. The proposed model consists of two steps; the first step is representation of DNA based on k-mer frequency with Relative Abundance Index (RAI) and the second step is classification metagenomic fragments with CNN. RAI scores, as DNA fragment representations are fed to CNN classifiers (CNN-RAI). RAI consist of the over- and under abundance statistics gathered from the taxon for each k-mer. In order to compare the performances of CNN-RAI and RAIphy, which classifies metagenomic fragments using the same input attributes with an expectation-maximization based approach, databases of different metagenomic scenarios were tested. Metagenomics data that were generated (or simulated) by different Next-Generation Sequencing platforms, respectively Illumina technology and Oxford Nanopore MinION were compiled into shotgun metagenomics or 16S rRNA datasets. RAI based method and CNN models were trained on represented data with read lengths ranging between 200 and 10,000 bp, also with distinct k-mer size ( 3 ≤ k ≤ 7 ) at genus level. RAI score was used for the first time in the deep learning algorithm as a spectral representation with improved performance thanks to the ability of deep learning on each dataset for a range of parameters. The proposed representation was compared to the current spectral methods and shown to be competitive for all datasets used in this study.},
+author = {Meryem Altın Karagöz and O. Nalbantoglu},
+doi = {10.1016/J.BSPC.2021.102539},
+}
+
+@article{1d2d381fd1d2fe3d2b65e3b1e371717c5536ded1,
+title = {A deep learning approach to pattern recognition for short DNA sequences},
+year = {2018},
+url = {https://www.semanticscholar.org/paper/1d2d381fd1d2fe3d2b65e3b1e371717c5536ded1},
+abstract = {Motivation Inferring properties of biological sequences--such as determining the species-of-origin of a DNA sequence or the function of an amino-acid sequence--is a core task in many bioinformatics applications. These tasks are often solved using string-matching to map query sequences to labeled database sequences or via Hidden Markov Model-like pattern matching. In the current work we describe and assess a deep learning approach which trains a deep neural network (DNN) to predict database-derived labels directly from query sequences. Results We demonstrate this DNN performs at state-of-the-art or above levels on a difficult, practically important problem: predicting species-of-origin from short reads of 16S ribosomal DNA. When trained on 16S sequences of over 13,000 distinct species, our DNN achieves read-level species classification accuracy within 2.0% of perfect memorization of training data, and produces more accurate genus-level assignments for reads from held-out species than k-mer, alignment, and taxonomic binning baselines. Moreover, our models exhibit greater robustness than these existing approaches to increasing noise in the query sequences. Finally, we show that these DNNs perform well on experimental 16S mock community dataset. Overall, our results constitute a first step towards our long-term goal of developing a general-purpose deep learning approach to predicting meaningful labels from short biological sequences. Availability TensorFlow training code is available through GitHub (https://github.com/tensorflow/models/tree/master/research). Data in TensorFlow TFRecord format is available on Google Cloud Storage (gs://brain-genomics-public/research/seq2species/). Contact seq2species-interest@google.com Supplementary information Supplementary data are available in a separate document.},
+author = {A. Busia and George E. Dahl and C. Fannjiang and David Alexander and Elizabeth Dorfman and R. Poplin and C. McLean and Pi-Chuan Chang and M. DePristo},
+doi = {10.1101/353474},
+}
+
+@article{c39678125b21974477bb712aaf5754ca30819efc,
+title = {taxMaps - Ultra-comprehensive and highly accurate taxonomic classification of short-read data in reasonable time},
+year = {2017},
+url = {https://www.semanticscholar.org/paper/c39678125b21974477bb712aaf5754ca30819efc},
+abstract = {High-throughput sequencing is a revolutionary technology for the analysis of metagenomic samples. However, querying large volumes of reads against comprehensive DNA/RNA databases in a sensitive manner can be compute-intensive. Here, we present taxMaps, a highly efficient, sensitive and fully scalable taxonomic classification tool, capable of delivering classification accuracy comparable to that of BLASTn, but at up to 3 orders of magnitude less computational cost. taxMaps is freely available for academic and non-commercial research purposes at https://github.com/nygenome/taxmaps.},
+author = {A. Corvelo and Wayne E. Clarke and N. Robine and M. Zody},
+doi = {10.1101/134023},
+pmid = {29588360},
+}
+
+@article{c566d97ab5fb8738c3e5fc69b71189049ed708c2,
+title = {LVQ-KNN: Composition-based DNA/RNA binning of short nucleotide sequences utilizing a prototype-based k-nearest neighbor approach.},
+year = {2018},
+url = {https://www.semanticscholar.org/paper/c566d97ab5fb8738c3e5fc69b71189049ed708c2},
+abstract = {Unbiased sequencing is an upcoming method to gain information of the microbiome in a sample and for the detection of unrecognized pathogens. There are many software tools for a taxonomic classification of such metagenomics datasets available. Numerous of them have a satisfactory sensitivity and specificity for known organisms, but they fail if the sample contains unknown organisms, which cannot be detected by similarity-based classification employing available databases. However, recognition of unknowns is especially important for the detection of newly emerging pathogens, which are often RNA viruses. Here we present the composition-based analysis tool LVQ-KNN for binning unclassified nucleotide sequence reads into their provenance classes DNA or RNA. With a 5-fold cross-validation, LVQ-KNN reached correct classification rates (CCR) of up to 99.9% for the classification into DNA/RNA. Real datasets gained CCRs of up to 94.5%. Comparing the method to another composition-based analysis tool, similar or better classification results were reached. LVQ-KNN is a new tool for DNA/RNA classification of sequence reads from unbiased sequencing approaches that could be applicable for the detection of yet unknown RNA viruses in metagenomic samples. The source-code, training and test data for LVQ-KNN is available at Github (https://github.com/ab1989/LVQ-KNN).},
+author = {Ariane Belka and Mareike Fischer and A. Pohlmann and M. Beer and D. Höper},
+doi = {10.1016/j.virusres.2018.10.002},
+pmid = {30291874},
+}
+
+@article{f75f6793a88e159b6526457d6e5156845295bc1e,
+title = {Deep Multiple Instance Learning for Taxonomic Classification of Metagenomic read sets},
+year = {2019},
+url = {https://www.semanticscholar.org/paper/f75f6793a88e159b6526457d6e5156845295bc1e},
+abstract = {Metagenomic studies have increasingly utilized sequencing technologies in order to analyze DNA fragments found in environmental samples. It can provide useful insights for studying the interactions between hosts and microbes, infectious disease proliferation, and novel species discovery. One important step in this analysis is the taxonomic classification of those DNA fragments. Of particular interest is the determination of the distribution of the taxa of microbes in metagenomic samples. Recent attempts using deep learning focus on architectures that classify single DNA reads independently from each other. In this work, we attempt to solve the task of directly predicting the distribution over the taxa of whole metagenomic read sets. We formulate this task as a Multiple Instance Learning (MIL) problem. We extend architectures used in single-read taxonomic classification with two different types of permutation-invariant MIL pooling layers: a) deepsets and b) attention-based pooling. We illustrate that our architecture can exploit the co-occurrence of species in metagenomic read sets and outperforms the single-read architectures in predicting the distribution over the taxa at higher taxonomic ranks.},
+author = {Andreas Georgiou and Vincent Fortuin and Harun Mustafa and G. Rätsch},
+}
+
+@article{9b4548ffc9cdcc23f1f941054266422bbcf889c7,
+title = {Systematic classification error profoundly impacts inference in high-depth Whole Genome Shotgun Sequencing datasets},
+year = {2022},
+url = {https://www.semanticscholar.org/paper/9b4548ffc9cdcc23f1f941054266422bbcf889c7},
+abstract = {There is little consensus in the literature as to which approach for classification of Whole Genome Shotgun (WGS) sequences is best. In this paper, we examine two of the most popular algorithms, Kraken2 and Metaphlan2 utilizing four publicly available datasets. As expected from previous literature, we found that Kraken2 reports more overall taxa while Metaphlan2 reports fewer taxa while classifying fewer overall reads. To our surprise, however, Kraken 2 reported not only more taxa but many more taxa that were significantly associated with metadata. This implies that either Kraken2 is more sensitive to taxa that are biologically relevant and are simply missed by Metaphlan2, or that Kraken2’s classification errors are generated in such a way to impact inference. To discriminate between these two possibilities, we compared Spearman correlations coefficients of each taxa against each taxa with higher abundance from the same dataset. We found that Kraken2, but not Metaphlan2, showed a consistent pattern of classifying low abundance taxa that generated high correlation coefficients with higher abundance taxa. Neither Metaphlan2, nor 16S sequences that were available for two of our four datasets, showed this pattern. Simple simulations based on a variable Poisson error rate sampled from the uniform distribution with an average error rate of 0.0005 showed strikingly strong concordance with the observed correlation patterns from Kraken2. Our results suggest that Kraken2 consistently misclassifies high abundance taxa into the same erroneous low abundance taxa creating “phantom” taxa have a similar pattern of inference as the high abundance source. Because of the large sequencing depths of modern WGS cohorts, these “phantom” taxa will appear statistically significant in statistical models even with a low overall rate of classification error from Kraken. Our simulations suggest that this can occur with average error rates as low as 1 in 2,000 reads. These data suggest a novel metric for evaluating classifier accuracy and suggest that the pattern of classification errors should be considered in addition to overall classification error rate since consistent classification errors have a more profound impact on inference compared to classification errors that do not always result in assignment to the same erroneous taxa. This work highlights fundamental questions on how classifiers function and interact with large sequencing depth and statistical models that still need to be resolved for WGS, especially if correlation coefficients between taxa are to be used to build covariance networks. Our work also suggests that despite its limitations, 16S rRNA sequencing may still be useful as neither of the two most popular 16S classifiers showed these patterns of inflated correlation coefficients between taxa.},
+author = {James Johnson and Shan Sun and A. Fodor},
+doi = {10.1101/2022.04.04.487034},
+}
+
+@article{f0fe09ee4aba9bac8761cfc9781d8bc89685f6ce,
+title = {MetaCache: context-aware classification of metagenomic reads using minhashing},
+year = {2017},
+url = {https://www.semanticscholar.org/paper/f0fe09ee4aba9bac8761cfc9781d8bc89685f6ce},
+abstract = {Motivation
+Metagenomic shotgun sequencing studies are becoming increasingly popular with prominent examples including the sequencing of human microbiomes and diverse environments. A fundamental computational problem in this context is read classification, i.e. the assignment of each read to a taxonomic label. Due to the large number of reads produced by modern high-throughput sequencing technologies and the rapidly increasing number of available reference genomes corresponding software tools suffer from either long runtimes, large memory requirements or low accuracy.
+
+
+Results
+We introduce MetaCache-a novel software for read classification using the big data technique minhashing. Our approach performs context-aware classification of reads by computing representative subsamples of k-mers within both, probed reads and locally constrained regions of the reference genomes. As a result, MetaCache consumes significantly less memory compared to the state-of-the-art read classifiers Kraken and CLARK while achieving highly competitive sensitivity and precision at comparable speed. For example, using NCBI RefSeq draft and completed genomes with a total length of around 140 billion bases as reference, MetaCache's database consumes only 62 GB of memory while both Kraken and CLARK fail to construct their respective databases on a workstation with 512 GB RAM. Our experimental results further show that classification accuracy continuously improves when increasing the amount of utilized reference genome data.
+
+
+Availability and implementation
+MetaCache is open source software written in C ++ and can be downloaded at http://github.com/muellan/metacache.
+
+
+Contact
+bertil.schmidt@uni-mainz.de.
+
+
+Supplementary information
+Supplementary data are available at Bioinformatics online.},
+author = {André Müller and Christian Hundt and A. Hildebrandt and T. Hankeln and B. Schmidt},
+doi = {10.1093/bioinformatics/btx520},
+pmid = {28961782},
+}
+
+@article{9375edf4fffa6738280e6d684917f4b7ee95e8da,
+title = {Metagenomic microbial community profiling using unique clade-specific marker genes},
+year = {2012},
+url = {https://www.semanticscholar.org/paper/9375edf4fffa6738280e6d684917f4b7ee95e8da},
+abstract = {Metagenomic shotgun sequencing data can identify microbes populating a microbial community and their proportions, but existing taxonomic profiling methods are inefficient for increasingly large data sets. We present an approach that uses clade-specific marker genes to unambiguously assign reads to microbial clades more accurately and >50× faster than current approaches. We validated our metagenomic phylogenetic analysis tool, MetaPhlAn, on terabases of short reads and provide the largest metagenomic profiling to date of the human gut. It can be accessed at http://huttenhower.sph.harvard.edu/metaphlan/.},
+author = {N. Segata and L. Waldron and Annalisa Ballarini and Vagheesh M. Narasimhan and O. Jousson and C. Huttenhower},
+doi = {10.1038/nmeth.2066},
+pmid = {22688413},
+}
+
+@article{37412dc29924479399c226ea1a641403357cd7d4,
+title = {On the impact of contaminants on the accuracy of genome skimming and the effectiveness of exclusion read filters},
+year = {2019},
+url = {https://www.semanticscholar.org/paper/37412dc29924479399c226ea1a641403357cd7d4},
+abstract = {The ability to detect the identity of a sample obtained from its environment is a cornerstone of molecular ecological research. Thanks to the falling price of shotgun sequencing, genome skimming, the acquisition of short reads spread across the genome at low coverage, is emerging as an alternative to traditional barcoding. By obtaining far more data across the whole genome, skimming has the promise to increase the precision of sample identification beyond traditional barcoding while keeping the costs manageable. While methods for assembly-free sample identification based on genome skims are now available, little is known about how these methods react to the presence of DNA from organisms other than the target species. In this paper, we show that the accuracy of distances computed between a pair of genome skims based on k-mer similarity can degrade dramatically if the skims include contaminant reads; i.e., any reads originating from other organisms. We establish a theoretical model of the impact of contamination. We then suggest and evaluate a solution to the contamination problem: Query reads in a genome skim against an extensive database of possible contaminants (e.g., all microbial organisms) and filter out any read that matches. We evaluate the effectiveness of this strategy when implemented using Kraken-II, in detailed analyses. Our results show substantial improvements in accuracy as a result of filtering but also point to limitations, including a need for relatively close matches in the contaminant database.},
+author = {Eleonora Rachtman and M. Balaban and V. Bafna and S. Mirarab},
+doi = {10.1101/831941},
+}
+
+@article{4e47faa828f34ce05eed5dbcf4b33c7aaa7c3e0c,
+title = {Taxonomic analysis of metagenomic data with kASA},
+year = {2021},
+url = {https://www.semanticscholar.org/paper/4e47faa828f34ce05eed5dbcf4b33c7aaa7c3e0c},
+abstract = {Abstract The taxonomic analysis of sequencing data has become important in many areas of life sciences. However, currently available tools for that purpose either consume large amounts of RAM or yield insufficient quality and robustness. Here, we present kASA, a k-mer based tool capable of identifying and profiling metagenomic DNA or protein sequences with high computational efficiency and a user-definable memory footprint. We ensure both high sensitivity and precision by using an amino acid-like encoding of k-mers together with a range of multiple k’s. Custom algorithms and data structures optimized for external memory storage enable a full-scale taxonomic analysis without compromise on laptop, desktop, and HPCC.},
+author = {Silvio Weging and A. Gogol-Döring and I. Grosse},
+doi = {10.1093/nar/gkab200},
+pmid = {33784400},
+}
+
+@article{7bbac7f7916567616d933d4b2fc8b8acbbb51bdc,
+title = {Kraken: ultrafast metagenomic sequence classification using exact alignments},
+year = {2014},
+url = {https://www.semanticscholar.org/paper/7bbac7f7916567616d933d4b2fc8b8acbbb51bdc},
+abstract = {Kraken is an ultrafast and highly accurate program for assigning taxonomic labels to metagenomic DNA sequences. Previous programs designed for this task have been relatively slow and computationally expensive, forcing researchers to use faster abundance estimation programs, which only classify small subsets of metagenomic data. Using exact alignment of k-mers, Kraken achieves classification accuracy comparable to the fastest BLAST program. In its fastest mode, Kraken classifies 100 base pair reads at a rate of over 4.1 million reads per minute, 909 times faster than Megablast and 11 times faster than the abundance estimation program MetaPhlAn. Kraken is available at http://ccb.jhu.edu/software/kraken/.},
+author = {Derrick E. Wood and S. Salzberg},
+doi = {10.1186/gb-2014-15-3-r46},
+pmid = {24580807},
+}
+
+@article{834d3fa8f1f5f7ad3092784488c78c627e0b2630,
+title = {Higher classification sensitivity of short metagenomic reads with CLARK-S},
+year = {2016},
+url = {https://www.semanticscholar.org/paper/834d3fa8f1f5f7ad3092784488c78c627e0b2630},
+abstract = {The growing number of metagenomic studies in medicine and environmental sciences is creating increasing demands on the computational infrastructure designed to analyze these very large datasets. Often, the construction of ultra-fast and precise taxonomic classifiers can compromise on their sensitivity (i.e., the number of reads correctly classified). Here we introduce CLARK-S, a new software tool that can classify short reads with high precision, high sensitivity and high speed at the same time.},
+author = {R. Ounit and S. Lonardi},
+doi = {10.1101/053462},
+pmid = {27540266},
+}
+
+@article{317ed0164a83f1b4ed2fa00983747f27fc525cc0,
+title = {Using Nucleus and TensorFlow for DNA Sequencing Error Correction},
+year = {2019},
+url = {https://www.semanticscholar.org/paper/317ed0164a83f1b4ed2fa00983747f27fc525cc0},
+abstract = {},
+author = {Gunjan Baid and Helen Li and Pi-Chuan Chang},
+}
+
+@article{f29b3beb5c6c7de3202652fa39086920b41a843c,
+title = {A novel data structure to support ultra-fast taxonomic classification of metagenomic sequences with k-mer signatures},
+year = {2017},
+url = {https://www.semanticscholar.org/paper/f29b3beb5c6c7de3202652fa39086920b41a843c},
+abstract = {Motivation
+Metagenomic read classification is a critical step in the identification and quantification of microbial species sampled by high-throughput sequencing. Although many algorithms have been developed to date, they suffer significant memory and/or computational costs. Due to the growing popularity of metagenomic data in both basic science and clinical applications, as well as the increasing volume of data being generated, efficient and accurate algorithms are in high demand.
+
+
+Results
+We introduce MetaOthello, a probabilistic hashing classifier for metagenomic sequencing reads. The algorithm employs a novel data structure, called l-Othello, to support efficient querying of a taxon using its k-mer signatures. MetaOthello is an order-of-magnitude faster than the current state-of-the-art algorithms Kraken and Clark, and requires only one-third of the RAM. In comparison to Kaiju, a metagenomic classification tool using protein sequences instead of genomic sequences, MetaOthello is three times faster and exhibits 20-30% higher classification sensitivity. We report comparative analyses of both scalability and accuracy using a number of simulated and empirical datasets.
+
+
+Availability and implementation
+MetaOthello is a stand-alone program implemented in C ++. The current version (1.0) is accessible via https://doi.org/10.5281/zenodo.808941.
+
+
+Contact
+liuj@cs.uky.edu.
+
+
+Supplementary information
+Supplementary data are available at Bioinformatics online.},
+author = {Xinan Liu and Ye Yu and Jinpeng Liu and Corrine F. Elliott and Chen Qian and Jinze Liu},
+doi = {10.1093/bioinformatics/btx432},
+pmid = {29036588},
+}
+
+@article{8a77adf1bde82647db55126513053b5c4021e3e0,
+title = {Interactive metagenomic visualization in a Web browser},
+year = {2011},
+url = {https://www.semanticscholar.org/paper/8a77adf1bde82647db55126513053b5c4021e3e0},
+abstract = {BackgroundA critical output of metagenomic studies is the estimation of abundances of taxonomical or functional groups. The inherent uncertainty in assignments to these groups makes it important to consider both their hierarchical contexts and their prediction confidence. The current tools for visualizing metagenomic data, however, omit or distort quantitative hierarchical relationships and lack the facility for displaying secondary variables.ResultsHere we present Krona, a new visualization tool that allows intuitive exploration of relative abundances and confidences within the complex hierarchies of metagenomic classifications. Krona combines a variant of radial, space-filling displays with parametric coloring and interactive polar-coordinate zooming. The HTML5 and JavaScript implementation enables fully interactive charts that can be explored with any modern Web browser, without the need for installed software or plug-ins. This Web-based architecture also allows each chart to be an independent document, making them easy to share via e-mail or post to a standard Web server. To illustrate Krona's utility, we describe its application to various metagenomic data sets and its compatibility with popular metagenomic analysis tools.ConclusionsKrona is both a powerful metagenomic visualization tool and a demonstration of the potential of HTML5 for highly accessible bioinformatic visualizations. Its rich and interactive displays facilitate more informed interpretations of metagenomic analyses, while its implementation as a browser-based application makes it extremely portable and easily adopted into existing analysis packages. Both the Krona rendering code and conversion tools are freely available under a BSD open-source license, and available from: http://krona.sourceforge.net.},
+author = {Brian D. Ondov and N. Bergman and A. Phillippy},
+doi = {10.1186/1471-2105-12-385},
+pmid = {21961884},
+}
+
+@article{3c4a9cb0f1a8f465211bab88babe55160783ea53,
+title = {k-SLAM: accurate and ultra-fast taxonomic classification and gene identification for large metagenomic data sets},
+year = {2016},
+url = {https://www.semanticscholar.org/paper/3c4a9cb0f1a8f465211bab88babe55160783ea53},
+abstract = {Abstract k-SLAM is a highly efficient algorithm for the characterization of metagenomic data. Unlike other ultra-fast metagenomic classifiers, full sequence alignment is performed allowing for gene identification and variant calling in addition to accurate taxonomic classification. A k-mer based method provides greater taxonomic accuracy than other classifiers and a three orders of magnitude speed increase over alignment based approaches. The use of alignments to find variants and genes along with their taxonomic origins enables novel strains to be characterized. k-SLAM's speed allows a full taxonomic classification and gene identification to be tractable on modern large data sets. A pseudo-assembly method is used to increase classification accuracy by up to 40% for species which have high sequence homology within their genus.},
+author = {David Ainsworth and M. Sternberg and C. Raczy and S. Butcher},
+doi = {10.1093/nar/gkw1248},
+pmid = {27965413},
+}
+
+@article{dc6abfa9ac45c89606c3150b86ee3101d253f93a,
+title = {Accurate annotation of metagenomic data without species-level references},
+year = {2016},
+url = {https://www.semanticscholar.org/paper/dc6abfa9ac45c89606c3150b86ee3101d253f93a},
+abstract = {Taxonomic annotation is a critical first step for analysis of metagenomic data. Despite a lot of tools being developed, the accuracy is still not satisfactory, in particular, when a close species-level reference does not exist in the database. In this paper, we propose a novel annotation tool, MetaAnnotator, to annotate metagenomic reads, which outperforms all existing tools significantly when only genus-level references exist in the database. From our experiments, MetaAnnotator can assign 87.5% reads correctly (67.5% reads are assigned to the exact genus) with only 8.5% reads wrongly assigned. The best existing tool (MetaCluster-TA) can only achieve 73.4% correct read assignment (with only 50.9% reads assigned to the exact genus and 22.6% reads wrongly assigned). The speed of MetaAnnotator is also the second faster (1 hour for 20 million reads). The core concepts behind MetaAnnotator includes: (i) we only consider exact k-mers in coding regions of the references as they should be more significant and accurate; (ii) to assign reads to taxonomy nodes, we construct genome and taxonomy specific probabilistic models from the reference database; and (iii) using the BWT data structure to speed up the k-mer matching process.},
+author = {Haobin Yao and T. Lam and H. Ting and S. Yiu and Yadong Wang and Bo Liu},
+doi = {10.1109/BIBM.2016.7822493},
+}
+
+@article{9bb6766609d1707ebad4f02816ce2cf0729bcdcd,
+title = {Fast and Accurate Classification of Meta-Genomics Long Reads With deSAMBA},
+year = {2021},
+url = {https://www.semanticscholar.org/paper/9bb6766609d1707ebad4f02816ce2cf0729bcdcd},
+abstract = {There is still a lack of fast and accurate classification tools to identify the taxonomies of noisy long reads, which is a bottleneck to the use of the promising long-read metagenomic sequencing technologies. Herein, we propose de Bruijn graph-based Sparse Approximate Match Block Analyzer (deSAMBA), a tailored long-read classification approach that uses a novel pseudo alignment algorithm based on sparse approximate match block (SAMB). Benchmarks on real sequencing datasets demonstrate that deSAMBA enables to achieve high yields and fast speed simultaneously, which outperforms state-of-the-art tools and has many potentials to cutting-edge metagenomics studies.},
+author = {Gaoyang Li and Yongzhuang Liu and Deying Li and Bo Liu and Junyi Li and Yang Hu and Yadong Wang},
+doi = {10.3389/fcell.2021.643645},
+pmid = {34012962},
+}
+
+@article{7172b8b4431c5129a17569458c1debfa98a91ef2,
+title = {KrakenUniq: confident and fast metagenomics classification using unique k-mer counts},
+year = {2018},
+url = {https://www.semanticscholar.org/paper/7172b8b4431c5129a17569458c1debfa98a91ef2},
+abstract = {False-positive identifications are a significant problem in metagenomics classification. We present KrakenUniq, a novel metagenomics classifier that combines the fast k-mer-based classification of Kraken with an efficient algorithm for assessing the coverage of unique k-mers found in each species in a dataset. On various test datasets, KrakenUniq gives better recall and precision than other methods and effectively classifies and distinguishes pathogens with low abundance from false positives in infectious disease samples. By using the probabilistic cardinality estimator HyperLogLog, KrakenUniq runs as fast as Kraken and requires little additional memory. KrakenUniq is freely available at https://github.com/fbreitwieser/krakenuniq.},
+author = {F. Breitwieser and D. Baker and S. Salzberg},
+doi = {10.1186/s13059-018-1568-0},
+pmid = {30445993},
+}
+
+@article{777d8387085deb7c061387373c6639c469e55662,
+title = {Unbiased probabilistic taxonomic classification for DNA barcoding},
+year = {2016},
+url = {https://www.semanticscholar.org/paper/777d8387085deb7c061387373c6639c469e55662},
+abstract = {MOTIVATION
+When targeted to a barcoding region, high-throughput sequencing can be used to identify species or operational taxonomical units from environmental samples, and thus to study the diversity and structure of species communities. Although there are many methods which provide confidence scores for assigning taxonomic affiliations, it is not straightforward to translate these values to unbiased probabilities. We present a probabilistic method for taxonomical classification (PROTAX) of DNA sequences. Given a pre-defined taxonomical tree structure that is partially populated by reference sequences, PROTAX decomposes the probability of one to the set of all possible outcomes. PROTAX accounts for species that are present in the taxonomy but that do not have reference sequences, the possibility of unknown taxonomical units, as well as mislabeled reference sequences. PROTAX is based on a statistical multinomial regression model, and it can utilize any kind of sequence similarity measures or the outputs of other classifiers as predictors.
+
+
+RESULTS
+We demonstrate the performance of PROTAX by using as predictors the output from BLAST, the phylogenetic classification software TIPP, and the RDP classifier. We show that PROTAX improves the predictions of the baseline implementations of TIPP and RDP classifiers, and that it is able to combine complementary information provided by BLAST and TIPP, resulting in accurate and unbiased classifications even with very challenging cases such as 50% mislabeling of reference sequences.
+
+
+AVAILABILITY AND IMPLEMENTATION
+Perl/R implementation of PROTAX is available at http://www.helsinki.fi/science/metapop/Software.htm
+
+
+CONTACT
+panu.somervuo@helsinki.fi
+
+
+SUPPLEMENTARY INFORMATION
+Supplementary data are available at Bioinformatics online.},
+author = {P. Somervuo and Sonja Koskela and J. Pennanen and R. H. Nilsson and O. Ovaskainen},
+doi = {10.1093/bioinformatics/btw346},
+pmid = {27296980},
+}
+
+@article{5bd609ff3c0dd8183b97766221d7f65923571bc5,
+title = {WEVOTE: Weighted Voting Taxonomic Identification Method of Microbial Sequences},
+year = {2016},
+url = {https://www.semanticscholar.org/paper/5bd609ff3c0dd8183b97766221d7f65923571bc5},
+abstract = {Metagenome shotgun sequencing presents opportunities to identify organisms that may prevent or promote disease. The analysis of sample diversity is achieved by taxonomic identification of metagenomic reads followed by generating an abundance profile. Numerous tools have been developed based on different design principles. Tools achieving high precision can lack sensitivity in some applications. Conversely, tools with high sensitivity can suffer from low precision and require long computation time. In this paper, we present WEVOTE (WEighted VOting Taxonomic idEntification), a method that classifies metagenome shotgun sequencing DNA reads based on an ensemble of existing methods using k-mer-based, marker-based, and naive-similarity based approaches. Our evaluation on fourteen benchmarking datasets shows that WEVOTE improves the classification precision by reducing false positive annotations while preserving a high level of sensitivity. WEVOTE is an efficient and automated tool that combines multiple individual taxonomic identification methods to produce more precise and sensitive microbial profiles. WEVOTE is developed primarily to identify reads generated by MetaGenome Shotgun sequencing. It is expandable and has the potential to incorporate additional tools to produce a more accurate taxonomic profile. WEVOTE was implemented using C++ and shell scripting and is available at www.bitbucket.org/ametwally/wevote},
+author = {Ahmed A. Metwally and Yang Dai and P. Finn and D. Perkins},
+doi = {10.1101/054205},
+pmid = {27683082},
+}
+
+@article{fdaf6537833af3ff3428512f3fed82580b9ca7eb,
+title = {Higher Classification Accuracy of Short Metagenomic Reads by Discriminative Spaced k-mers},
+year = {2015},
+url = {https://www.semanticscholar.org/paper/fdaf6537833af3ff3428512f3fed82580b9ca7eb},
+abstract = {The growing number of metagenomic studies in medicine and environmental sciences is creating new computational demands in the analysis of these very large datasets. We have recently proposed a time-efficient algorithm called Clark that can accurately classify metagenomic sequences against a set of reference genomes. The competitive advantage of Clark depends on the use of discriminative contiguous k-mers. In default mode, Clark’s speed is currently unmatched and its precision is comparable to the state-of-the-art, however, its sensitivity still does not match the level of the most sensitive (but slowest) metagenomic classifier. In this paper, we introduce an algorithmic improvement that allows Clark’s classification sensitivity to match the best metagenomic classifier, without a significant loss of speed or precision compared to the original version. Finally, on real metagenomes, Clark can assign with high accuracy a much higher proportion of short reads than its closest competitor. The improved version of Clark, based on discriminative spaced k-mers, is freely available at http://clark.cs.ucr.edu/Spaced/.},
+author = {R. Ounit and S. Lonardi},
+doi = {10.1007/978-3-662-48221-6_21},
+}

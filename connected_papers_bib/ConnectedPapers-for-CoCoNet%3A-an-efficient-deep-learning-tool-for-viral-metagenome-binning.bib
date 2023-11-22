@@ -1,0 +1,436 @@
+@article{d38702ffac9a348ea0d360d145cdfc3e31f97016,
+title = {CoCoNet: an efficient deep learning tool for viral metagenome binning},
+year = {2021},
+url = {https://www.semanticscholar.org/paper/d38702ffac9a348ea0d360d145cdfc3e31f97016},
+abstract = {MOTIVATION
+Metagenomic approaches hold the potential to characterize microbial communities and unravel the intricate link between the microbiome and biological processes. Assembly is one of the most critical steps in metagenomics experiments. It consists of transforming overlapping DNA sequencing reads into sufficiently accurate representations of the community's genomes. This process is computationally difficult and commonly results in genomes fragmented across many contigs. Computational binning methods are used to mitigate fragmentation by partitioning contigs based on their sequence composition, abundance, or chromosome organization into bins representing the community's genomes. Existing binning methods have been principally tuned for bacterial genomes and do not perform favorably on viral metagenomes.
+
+
+RESULTS
+We propose CoCoNet (Composition and Coverage Network), a new binning method for viral metagenomes that leverages the flexibility and the effectiveness of deep learning to model the co-occurrence of contigs belonging to the same viral genome and provide a rigorous framework for binning viral contigs. Our results show that CoCoNet substantially outperforms existing binning methods on viral datasets.
+
+
+AVAILABILITY
+CoCoNet was implemented in Python and is available for download on PyPi. (https://pypi.org/). The source code is hosted on GitHub at https://github.com/Puumanamana/CoCoNet and the documentation is available at https://coconet.readthedocs.io/en/latest/index.html.
+
+
+SUPPLEMENTARY INFORMATION
+Supplementary data are available at Bioinformatics online.},
+author = {Cédric Arisdakessian and O. Nigro and G. Steward and G. Poisson and M. Belcaid},
+doi = {10.1093/bioinformatics/btab213},
+pmid = {33822891},
+}
+
+@article{73a5cad25b7a1c0c5e614f3fdf83b56540e3e0cf,
+title = {AMBER: Assessment of Metagenome BinnERs},
+year = {2017},
+url = {https://www.semanticscholar.org/paper/73a5cad25b7a1c0c5e614f3fdf83b56540e3e0cf},
+abstract = {Reconstructing the genomes of microbial community members is key to the interpretation of shotgun metagenome samples. Genome binning programs deconvolute reads or assembled contigs of such samples into individual bins, but assessing their quality is difficult due to the lack of evaluation software and standardized metrics. We present AMBER, an evaluation package for the comparative assessment of genome reconstructions from metagenome benchmark data sets. It calculates the performance metrics and comparative visualizations used in the first benchmarking challenge of the Initiative for the Critical Assessment of Metagenome Interpretation (CAMI). As an application, we show the outputs of AMBER for ten different binnings on two CAMI benchmark data sets. AMBER is implemented in Python and available under the Apache 2.0 license on GitHub (https://github.com/CAMI-challenge/AMBER).},
+author = {F. Meyer and P. Hofmann and Peter Belmann and R. Garrido-Oter and A. Fritz and A. Sczyrba and A. Mchardy},
+doi = {10.1101/239582},
+pmid = {29893851},
+}
+
+@article{86d29457127027142f41a4281aa5c8b35e7e833f,
+title = {Hundreds of viral families in the healthy infant gut},
+year = {2021},
+url = {https://www.semanticscholar.org/paper/86d29457127027142f41a4281aa5c8b35e7e833f},
+abstract = {
+ The gut microbiome (GM) is shaped through infancy and plays a major role in determining susceptibility to chronic inflammatory diseases later in life. Bacteriophages (phages) are known to modulate bacterial populations in numerous ecosystems, including the gut. However, virome data is difficult to analyse because it mostly consists of unknown viruses, i.e. viral dark matter. Here, we manually resolved the viral dark matter in the largest human virome study published to date. Fecal viromes from a cohort of 647 infants at 1 year of age were deeply sequenced and analysed through successive rounds of clustering and curation. We uncovered more than ten thousand viral species distributed over 248 viral families falling within 17 viral order-level clades. Most of the defined viral families and orders were novel and belonged to the Caudoviricetes viral class. Bacterial hosts were predicted for 79% of the viral species using CRISPR spacers, including those in metagenomes from the same fecal samples. While Bacteroides-infecting Crassphages were present, novel viral families were more predominant, including phages infecting Clostridiales and Bifidobacterium. Phage lifestyles were determined for more than three thousand caudoviral species. Lifestyles were homogeneous at the family level for 149 Caudoviricetes families, including 32 families that were found to be virulent, while 117 were temperate. Virulent phage families were more abundant but temperate ones were more diverse and widespread. Together, the viral families found in this study represent a major expansion of existing bacteriophage taxonomy.},
+author = {D. Nielsen and Shiraz A. Shah and Ling Deng and J. Thorsen and A. G. Pedersen and Moïra B. Dion and J. Castro-Meija and Ronalds Silins and F. Romme and R. Sausset and E. Ndela and M. Hjelmsø and M. Rasmussen and Tamsin A. Redgwell and Gisle Vestergaard and Yichang Zhang and S. Sørensen and H. Bisgaard and François Enault and J. Stokholm and S. Moineau and M. Petit},
+doi = {10.21203/rs.3.rs-748587/v1},
+}
+
+@article{16c1046984aa80d706d3feaaa403230fd61cea89,
+title = {Swapping Metagenomics Preprocessing Pipeline Components Offers Speed and Sensitivity Increases},
+year = {2022},
+url = {https://www.semanticscholar.org/paper/16c1046984aa80d706d3feaaa403230fd61cea89},
+abstract = {In shotgun metagenomics studies that seek to relate changes in microbial DNA across samples, processing the data on a computer often takes longer than obtaining the data from the sequencing instrument. Recently developed software packages that perform individual steps in the pipeline of data processing in principle offer speed advantages, but in practice they may contain pitfalls that prevent their use, for example, they may make approximations that introduce unacceptable errors in the data. ABSTRACT Increasing data volumes on high-throughput sequencing instruments such as the NovaSeq 6000 leads to long computational bottlenecks for common metagenomics data preprocessing tasks such as adaptor and primer trimming and host removal. Here, we test whether faster recently developed computational tools (Fastp and Minimap2) can replace widely used choices (Atropos and Bowtie2), obtaining dramatic accelerations with additional sensitivity and minimal loss of specificity for these tasks. Furthermore, the taxonomic tables resulting from downstream processing provide biologically comparable results. However, we demonstrate that for taxonomic assignment, Bowtie2’s specificity is still required. We suggest that periodic reevaluation of pipeline components, together with improvements to standardized APIs to chain them together, will greatly enhance the efficiency of common bioinformatics tasks while also facilitating incorporation of further optimized steps running on GPUs, FPGAs, or other architectures. We also note that a detailed exploration of available algorithms and pipeline components is an important step that should be taken before optimization of less efficient algorithms on advanced or nonstandard hardware. IMPORTANCE In shotgun metagenomics studies that seek to relate changes in microbial DNA across samples, processing the data on a computer often takes longer than obtaining the data from the sequencing instrument. Recently developed software packages that perform individual steps in the pipeline of data processing in principle offer speed advantages, but in practice they may contain pitfalls that prevent their use, for example, they may make approximations that introduce unacceptable errors in the data. Here, we show that differences in choices of these components can speed up overall data processing by 5-fold or more on the same hardware while maintaining a high degree of correctness, greatly reducing the time taken to interpret results. This is an important step for using the data in clinical settings, where the time taken to obtain the results may be critical for guiding treatment.},
+author = {George Armstrong and C. Martino and Justin Morris and Behnam Khaleghi and Jaeyoung Kang and J. Dereus and Qiyun Zhu and D. Roush and D. McDonald and Antonio Gonazlez and J. Shaffer and C. Carpenter and M. Estaki and Stephen Wandro and S. Eilert and Ameen Akel and Justin Eno and Kenneth E Curewitz and A. Swafford and N. Moshiri and Tajana Rosing and R. Knight},
+doi = {10.1128/msystems.01378-21},
+pmid = {35293792},
+}
+
+@article{4050dbffbaf3859403f40c3e49473b1412571486,
+title = {GraphBin2: Refined and Overlapped Binning of Metagenomic Contigs Using Assembly Graphs},
+year = {2020},
+url = {https://www.semanticscholar.org/paper/4050dbffbaf3859403f40c3e49473b1412571486},
+abstract = {Metagenomic sequencing allows us to study structure, diversity and ecology in microbial communities without the necessity of obtaining pure cultures. In many metagenomics studies, the reads obtained from metagenomics sequencing are first assembled into longer contigs and these contigs are then binned into clusters of contigs where contigs in a cluster are expected to come from the same species. As different species may share common sequences in their genomes, one assembled contig may belong to multiple species. However, existing tools for contig binning only support non-overlapped binning, i.e., each contig is assigned to at most one bin (species). In this paper, we introduce GraphBin2 which refines the binning results obtained from existing tools and, more importantly, is able to assign contigs to multiple bins. GraphBin2 uses the connectivity and coverage information from assembly graphs to adjust existing binning results on contigs and to infer contigs shared by multiple species. Experimental results on both simulated and real datasets demonstrate that GraphBin2 not only improves binning results of existing tools but also supports to assign contigs to multiple bins. 2012 ACM Subject Classification Applied computing → Bioinformatics; Applied computing → Computational genomics},
+author = {V. Mallawaarachchi and A. Wickramarachchi and Yu Lin},
+doi = {10.4230/LIPIcs.WABI.2020.8},
+}
+
+@article{517bc143863a678fbc53180444621dacc2707263,
+title = {Improved metagenome binning and assembly using deep variational autoencoders},
+year = {2021},
+url = {https://www.semanticscholar.org/paper/517bc143863a678fbc53180444621dacc2707263},
+abstract = {Despite recent advances in metagenomic binning, reconstruction of microbial species from metagenomics data remains challenging. Here we develop variational autoencoders for metagenomic binning (VAMB), a program that uses deep variational autoencoders to encode sequence coabundance and k -mer distribution information before clustering. We show that a variational autoencoder is able to integrate these two distinct data types without any previous knowledge of the datasets. VAMB outperforms existing state-of-the-art binners, reconstructing 29–98% and 45% more near-complete (NC) genomes on simulated and real data, respectively. Furthermore, VAMB is able to separate closely related strains up to 99.5% average nucleotide identity (ANI), and reconstructed 255 and 91 NC Bacteroides vulgatus and Bacteroides dorei sample-specific genomes as two distinct clusters from a dataset of 1,000 human gut microbiome samples. We use 2,606 NC bins from this dataset to show that species of the human gut microbiome have different geographical distribution patterns. VAMB can be run on standard hardware and is freely available at https://github.com/RasmussenLab/vamb . Metagenomics data are resolved into their constituent genomes using a new deep learning method.},
+author = {J. Nissen and Joachim Johansen and R. Allesøe and C. Sønderby and J. J. A. Armenteros and C. Grønbech and L. Jensen and H. Nielsen and T. N. Petersen and O. Winther and S. Rasmussen},
+doi = {10.1038/s41587-020-00777-4},
+pmid = {33398153},
+}
+
+@article{c3a2e9a92329040713e7c5972d736243d9775ddc,
+title = {GraphBin: refined binning of metagenomic contigs using assembly graphs},
+year = {2020},
+url = {https://www.semanticscholar.org/paper/c3a2e9a92329040713e7c5972d736243d9775ddc},
+abstract = {MOTIVATION
+The field of metagenomics has provided valuable insights into the structure, diversity and ecology within microbial communities. One key step in metagenomics analysis is to assemble reads into longer contigs which are then binned into groups of contigs that belong to different species present in the metagenomic sample. Binning of contigs plays an important role in metagenomics and most available binning algorithms bin contigs using genomic features such as oligonucleotide/k-mer composition and contig coverage. As metagenomic contigs are derived from the assembly process, they are output from the underlying assembly graph which contains valuable connectivity information between contigs that can be used for binning.
+
+
+RESULTS
+We propose GraphBin, a new binning method that makes use of the assembly graph and applies a label propagation algorithm to refine the binning result of existing tools.We show that GraphBin can make use of the assembly graphs constructed from both the de Bruijn graph and the overlap-layout-consensus approach. Moreover, we demonstrate improved experimental results from GraphBin in terms of identifying mis-binned contigs and binning of contigs discarded by existing binning tools. To the best of our knowledge, this is the first time that the information from the assembly graph has been used in a tool for the binning of metagenomic contigs.
+
+
+AVAILABILITY
+The source code of GraphBin is available at https://github.com/Vini2/GraphBin.
+
+
+SUPPLEMENTARY INFORMATION
+Supplementary data are available at Bioinformatics online.},
+author = {V. Mallawaarachchi and A. Wickramarachchi and Yu Lin},
+doi = {10.1093/bioinformatics/btaa180},
+pmid = {32167528},
+}
+
+@article{d4b62737902885b338aa4b4d48a3bcb541466ff3,
+title = {Rephine.r: a pipeline for correcting gene calls and clusters to improve phage pangenomes and phylogenies},
+year = {2021},
+url = {https://www.semanticscholar.org/paper/d4b62737902885b338aa4b4d48a3bcb541466ff3},
+abstract = {Background A pangenome is the collection of all genes found in a set of related genomes. For microbes, these genomes are often different strains of the same species, and the pangenome offers a means to compare gene content variation with differences in phenotypes, ecology, and phylogenetic relatedness. Though most frequently applied to bacteria, there is growing interest in adapting pangenome analysis to bacteriophages. However, working with phage genomes presents new challenges. First, most phage families are under-sampled, and homologous genes in related viruses can be difficult to identify. Second, homing endonucleases and intron-like sequences may be present, resulting in fragmented gene calls. Each of these issues can reduce the accuracy of standard pangenome analysis tools. Methods We developed an R pipeline called Rephine.r that takes as input the gene clusters produced by an initial pangenomics workflow. Rephine.r then proceeds in two primary steps. First, it identifies three common causes of fragmented gene calls: 1) indels creating early stop codons and new start codons; 2) interruption by a selfish genetic element; and 3) splitting at the ends of the reported genome. Fragmented genes are then fused to create new sequence alignments. In tandem, Rephine.r searches for distant homologs separated into different gene families using Hidden Markov Models. Significant hits are used to merge families into larger clusters. A final round of fragment identification is then run, and results may be used to infer single-copy core genomes and phylogenetic trees. Results We applied Rephine.r to three well-studied phage groups: the Tevenvirinae (e.g. T4), the Studiervirinae (e.g. T7), and the Pbunaviruses (e.g. PB1). In each case, Rephine.r recovered additional members of the single-copy core genome and increased the overall bootstrap support of the phylogeny. The Rephine.r pipeline is provided through GitHub (https://www.github.com/coevoeco/Rephine.r) as a single script for automated analysis and with utility functions and a walkthrough for researchers with specific use cases for each type of correction.},
+author = {Jason W. Shapiro and C. Putonti},
+doi = {10.1101/2021.04.26.441508},
+pmid = {34434663},
+}
+
+@article{e4ed909b73cdb59305f9943a6bade4e13d13df5d,
+title = {Virus-associated organosulfur metabolism in human and environmental systems},
+year = {2021},
+url = {https://www.semanticscholar.org/paper/e4ed909b73cdb59305f9943a6bade4e13d13df5d},
+abstract = {Viruses influence the fate of nutrients and human health by killing microorganisms and altering metabolic processes. Organosulfur metabolism and biologically-derived hydrogen sulfide play dynamic roles in manifestation of diseases, infrastructure degradation, and essential biological processes. While microbial organosulfur metabolism is well-studied, the role of viruses in organosulfur metabolism is unknown. Here we report the discovery of 39 gene families involved in organosulfur metabolism encoded by 3,749 viruses from diverse ecosystems, including human microbiomes. The viruses infect organisms from all three domains of life. Six gene families encode for enzymes that degrade organosulfur compounds into sulfide, while others manipulate organosulfur compounds and may influence sulfide production. We show that viral metabolic genes encode key enzymatic domains, are translated into protein, are maintained after recombination, and that sulfide provides a fitness advantage to viruses. Our results reveal viruses as drivers of organosulfur metabolism with important implications for human and environmental health.},
+author = {Kristopher Kieft and Adam M. Breister and Phil Huss and A. Linz and Elizabeth Zanetakos and Zhichao Zhou and J. Rahlff and Sarah P. Esser and Alexander J. Probst and Srivatsan Raman and S. Roux and Karthik Anantharaman},
+doi = {10.1101/2021.01.05.425418},
+}
+
+@article{1681e9d3eb2e820eb3ee3f9f99dee404068ca333,
+title = {Mining of thousands of prokaryotic genomes reveals high abundance of prophage signals},
+year = {2021},
+url = {https://www.semanticscholar.org/paper/1681e9d3eb2e820eb3ee3f9f99dee404068ca333},
+abstract = {Phages and prophages are one of the principal modulators of microbial populations. However, much of their diversity is still poorly understood. Here, we extracted 33,624 prophages from 13,713 complete prokaryotic genomes in order to explore the prophage diversity and their relationships with their host. Our results reveal that prophages were present in 75% of the genomes studied. In addition, Enterobacterales were significantly enriched in prophages. We also found that pathogens are a significant reservoir of prophages. Finally, we determined that the prophage relatedness and the range of genomic hosts were delimited by the evolutionary relationships of their hosts. On a broader level, we got insights into the prophage population, identified in thousands of publicly available prokaryotic genomes, by comparing the prophage distribution and relatedness between them and their hosts.},
+author = {G. López-Leal and Laura Carolina Camelo-Valera and Juan Manuel Hurtado-Ramírez and Jerome Verleyen and S. Castillo-Ramírez and Alejandro Reyes-Muñoz},
+doi = {10.1101/2021.10.20.465230},
+}
+
+@article{fb2bd0079fa8118c4aa02c69cac6888e94c58d44,
+title = {VirSorter2: a multi-classifier, expert-guided approach to detect diverse DNA and RNA viruses},
+year = {2021},
+url = {https://www.semanticscholar.org/paper/fb2bd0079fa8118c4aa02c69cac6888e94c58d44},
+abstract = {Background Viruses are a significant player in many biosphere and human ecosystems, but most signals remain “hidden” in metagenomic/metatranscriptomic sequence datasets due to the lack of universal gene markers, database representatives, and insufficiently advanced identification tools. Results Here, we introduce VirSorter2, a DNA and RNA virus identification tool that leverages genome-informed database advances across a collection of customized automatic classifiers to improve the accuracy and range of virus sequence detection. When benchmarked against genomes from both isolated and uncultivated viruses, VirSorter2 uniquely performed consistently with high accuracy (F1-score > 0.8) across viral diversity, while all other tools under-detected viruses outside of the group most represented in reference databases (i.e., those in the order Caudovirales ). Among the tools evaluated, VirSorter2 was also uniquely able to minimize errors associated with atypical cellular sequences including eukaryotic genomes and plasmids. Finally, as the virosphere exploration unravels novel viral sequences, VirSorter2’s modular design makes it inherently able to expand to new types of viruses via the design of new classifiers to maintain maximal sensitivity and specificity. Conclusion With multi-classifier and modular design, VirSorter2 demonstrates higher overall accuracy across major viral groups and will advance our knowledge of virus evolution, diversity, and virus-microbe interaction in various ecosystems. Source code of VirSorter2 is freely available ( https://bitbucket.org/MAVERICLab/virsorter2 ), and VirSorter2 is also available both on bioconda and as an iVirus app on CyVerse ( https://de.cyverse.org/de ). Video abstract},
+author = {Jiarong Guo and B. Bolduc and A. A. Zayed and A. Varsani and Guillermo Dominguez-Huerta and Tom O. Delmont and Akbar Adjie Pratama and M. C. Gazitúa and D. Vik and M. Sullivan and S. Roux},
+doi = {10.1186/s40168-020-00990-y},
+pmid = {33522966},
+}
+
+@article{1f0653a1be54967d7de2c74d0a79acddc7177280,
+title = {Comparison of PCR versus PCR-Free DNA Library Preparation for Characterising the Human Faecal Virome},
+year = {2021},
+url = {https://www.semanticscholar.org/paper/1f0653a1be54967d7de2c74d0a79acddc7177280},
+abstract = {The human intestinal microbiota is abundant in viruses, comprising mainly bacteriophages, occasionally outnumbering bacteria 10:1 and is termed the virome. Due to their high genetic diversity and the lack of suitable tools and reference databases, the virome remains poorly characterised and is often referred to as “viral dark matter”. However, the choice of sequencing platforms, read lengths and library preparation make study design challenging with respect to the virome. Here we have compared the use of PCR and PCR-free methods for sequence-library construction on the Illumina sequencing platform for characterising the human faecal virome. Viral DNA was extracted from faecal samples of three healthy donors and sequenced. Our analysis shows that most variation was reflecting the individually specific faecal virome. However, we observed differences between PCR and PCR-free library preparation that affected the recovery of low-abundance viral genomes. Using three faecal samples in this study, the PCR library preparation samples led to a loss of lower-abundance vOTUs evident in their PCR-free pairs (vOTUs 128, 6202 and 8364) and decreased the alpha-diversity indices (Chao1 p-value = 0.045 and Simpson p-value = 0.044). Thus, differences between PCR and PCR-free methods are important to consider when investigating “rare” members of the gut virome, with these biases likely negligible when investigating moderately and highly abundant viruses.},
+author = {S. Hsieh and Mohammad A Tariq and A. Telatin and R. Ansorge and Evelien M. Adriaenssens and G. Savva and C. Booth and T. Wileman and L. Hoyles and S. Carding},
+doi = {10.3390/v13102093},
+pmid = {34696523},
+}
+
+@article{e22d6451590853dfa876fe2d514c3d78237e3301,
+title = {Phage Commander, a software tool for rapid annotation of bacteriophage genomes using multiple programs},
+year = {2020},
+url = {https://www.semanticscholar.org/paper/e22d6451590853dfa876fe2d514c3d78237e3301},
+abstract = {The number of sequenced phage genomes is growing at an exponential rate. The majority of newly sequenced phage genomes are annotated by one or more of several freely-available auto-annotation programs. No program has been shown to consistently outperform the others; thus the choice of which program to use is not obvious. We present the software Phage Commander for rapid annotation of phage genomes using multiple auto-annotation programs. Phage Commander runs a phage genome sequence through nine auto-annotation programs and integrates the results within a single output. Phage Commander generates properly formatted output files for direct export to NCBI GenBank. Users can select the threshold for determining which genes should be exported. Phage Commander was benchmarked using eight high-quality phage genomes whose genes have been identified through experiments. Results show that the best results are obtained by exporting genes identified by at least two or three of the nine auto-annotation programs.},
+author = {Matt Lazeroff and Sarah L. Harris and Philippos K. Tsourkas},
+doi = {10.1101/2020.11.11.378802},
+}
+
+@article{276a0ecd00a11090be3f17ce0ded277873fc6306,
+title = {Evaluating metagenomics tools for genome binning with real metagenomic datasets and CAMI datasets},
+year = {2020},
+url = {https://www.semanticscholar.org/paper/276a0ecd00a11090be3f17ce0ded277873fc6306},
+abstract = {Background Shotgun metagenomics based on untargeted sequencing can explore the taxonomic profile and the function of unknown microorganisms in samples, and complement the shortage of amplicon sequencing. Binning assembled sequences into individual groups, which represent microbial genomes, is the key step and a major challenge in metagenomic research. Both supervised and unsupervised machine learning methods have been employed in binning. Genome binning belonging to unsupervised method clusters contigs into individual genome bins by machine learning methods without the assistance of any reference databases. So far a lot of genome binning tools have emerged. Evaluating these genome tools is of great significance to microbiological research. In this study, we evaluate 15 genome binning tools containing 12 original binning tools and 3 refining binning tools by comparing the performance of these tools on chicken gut metagenomic datasets and the first CAMI challenge datasets. Results For chicken gut metagenomic datasets, original genome binner MetaBat, Groopm2 and Autometa performed better than other original binner, and MetaWrap combined the binning results of them generated the most high-quality genome bins. For CAMI datasets, Groopm2 achieved the highest purity (> 0.9) with good completeness (> 0.8), and reconstructed the most high-quality genome bins among original genome binners. Compared with Groopm2, MetaBat2 had similar performance with higher completeness and lower purity. Genome refining binners DASTool predicated the most high-quality genome bins among all genomes binners. Most genome binner performed well for unique strains. Nonetheless, reconstructing common strains still is a substantial challenge for all genome binner. Conclusions In conclusion, we tested a set of currently available, state-of-the-art metagenomics hybrid binning tools and provided a guide for selecting tools for metagenomic binning by comparing range of purity, completeness, adjusted rand index, and the number of high-quality reconstructed bins. Furthermore, available information for future binning strategy were concluded.},
+author = {Yi Yue and Hao Huang and Zhao Qi and H. Dou and Xin-Yi Liu and Tian-Fei Han and Yue-Qin Chen and Xiangjun Song and You-hua Zhang and J. Tu},
+doi = {10.1186/s12859-020-03667-3},
+pmid = {32723290},
+}
+
+@article{9a5c16883df6d298dd4949c8ee40c00cb48d7913,
+title = {VirionFinder: Identification of Complete and Partial Prokaryote Virus Virion Protein From Virome Data Using the Sequence and Biochemical Properties of Amino Acids},
+year = {2021},
+url = {https://www.semanticscholar.org/paper/9a5c16883df6d298dd4949c8ee40c00cb48d7913},
+abstract = {Viruses are some of the most abundant biological entities on Earth, and prokaryote virus are the dominant members of the viral community. Because of the diversity of prokaryote virus, functional annotation cannot be performed on a large number of genes from newly discovered prokaryote virus by searching the current database; therefore, the development of an alignment-free algorithm for functional annotation of prokaryote virus proteins is important to understand the viral community. The identification of prokaryote virus proteins (PVVPs) is a critical step for many viral analyses, such as species classification, phylogenetic analysis and the exploration of how prokaryote virus interact with their hosts. Although a series of PVVP prediction tools have been developed, the performance of these tools is still not satisfactory. Moreover, viral metagenomic data contains fragmented sequences, leading to the existence of some incomplete genes. Therefore, a tool that can identify partial prokaryote virus proteins is also needed. In this work, we present a novel algorithm, called VirionFinder, to identify the complete and partial PVVPs from non-prokaryote virus virion proteins (non-PVVPs). VirionFinder uses the sequence and biochemical properties of 20 amino acids as the mathematical model to encode the protein sequences and uses a deep learning technique to identify whether a given protein is a PVVP. Compared with the state-of-the-art tools using artificial benchmark datasets, the results show that under the same specificity (Sp), the sensitivity (Sn) of VirionFinder is approximately 10–34% much higher than the Sn of these tools on both complete and partial proteins. When evaluating related tools using real virome data, the recognition rate of PVVP-like sequences of VirionFinder is also much higher than that of the other tools. We expect that VirionFinder will be a powerful tool for identifying novel virion proteins from both complete prokaryote virus genomes and viral metagenomic data. VirionFinder is freely available at https://github.com/zhenchengfang/VirionFinder.},
+author = {Zhencheng Fang and Hongwei Zhou},
+doi = {10.3389/fmicb.2021.615711},
+pmid = {33613485},
+}
+
+@article{dcbf11f9cf431a1f41b1f1810196f30b9cf2ac0f,
+title = {Prophages in the infant gut are largely induced, and may be functionally relevant to their hosts},
+year = {2021},
+url = {https://www.semanticscholar.org/paper/dcbf11f9cf431a1f41b1f1810196f30b9cf2ac0f},
+abstract = {Background Bacteriophages are the most abundant biological entity on the planet, and are key components of any ecosystem they are present in. The gut virome is increasingly being implicated in disease states although these studies largely focus on lytic phages in adults. Here we identify prophages from a large infant cohort and investigate their potential functions. Results We identified 10645 vOTUs from 662 metagenomes. No core virome was found: the most prevalent vOTU was identified in 70% of the samples. The most abundant and prevalent group of phages are a novel group closely related to Bacteroides phage Hanky p00’. Functional annotation of this group revealed the presence of genes in the dDTP-L-rhamnose pathway, possibly involved in the production of capsular polysaccharides. We also found an abundance of diversity generating retroelements in the phages. Additionally, paired virome data allowed us to show that the majority of prophages are induced in at least one sample and that this is not affected by the use of antibiotics in the 4 weeks prior to sampling. Conclusions Prophages in the infant gut are largely unique to the individual and not shared. Most of them appear to be induced and so may be key drivers in shaping the bacterial microbiome. The most abundant group of phages are novel, and possess elements that may allow them to maintain differentially susceptible subpopulations of their host bacterium; whilst also containing diversity generating retroelements that could expand their host range. Prophages are important components of the infant gut that may have far reaching influences on the composition and function of the microbiome.},
+author = {Tamsin A. Redgwell and J. Thorsen and M. Petit and Ling Deng and Gisle Vestergaard and J. Russel and H. Bisgaard and D. Nielsen and S. Sørensen and J. Stokholm and Shiraz A. Shah},
+doi = {10.1101/2021.06.25.449885},
+}
+
+@article{811d35c4650a62319ca4e0ed7d0e2def48963d6f,
+title = {Metaviral SPAdes: assembly of viruses from metagenomic data},
+year = {2020},
+url = {https://www.semanticscholar.org/paper/811d35c4650a62319ca4e0ed7d0e2def48963d6f},
+abstract = {MOTIVATION
+Although the set of currently known viruses has been steadily expanding, only a tiny fraction of the Earth's virome has been sequenced so far. Shotgun metagenomic sequencing provides an opportunity to reveal novel viruses but faces the computational challenge of identifying viral genomes that are often difficult to detect in metagenomic assemblies.
+
+
+RESULTS
+We describe a metaviralSPAdes tool for identifying viral genomes in metagenomic assembly graphs that is based on analyzing variations in the coverage depth between viruses and bacterial chromosomes. We benchmarked metaviralSPAdes on diverse metagenomic datasets, verified our predictions using a set of virus-specific Hidden Markov Models, and demonstrated that it improves on the state-of-the-art viral identification pipelines.
+
+
+AVAILABILITY
+metaviralSPAdes includes viralAssembly, viralVerify, and viralComplete modules that are available as standalone packages: https://github.com/ablab/spades/tree/metaviral_publication, https://github.com/ablab/viralVerify/ and https://github.com/ablab/viralComplete/.
+
+
+SUPPLEMENTARY INFORMATION
+Supplementary data are available at Bioinformatics online.},
+author = {D. Antipov and Mikhail Raiko and A. Lapidus and P. Pevzner},
+doi = {10.1093/bioinformatics/btaa490},
+pmid = {32413137},
+}
+
+@article{44cb4d8414063d6402e5960476551da5d3bfd428,
+title = {Cobamide sharing drives skin microbiome dynamics},
+year = {2021},
+url = {https://www.semanticscholar.org/paper/44cb4d8414063d6402e5960476551da5d3bfd428},
+abstract = {The human skin microbiome is a key player in human health, with diverse functions ranging from defense against pathogens to education of the immune system. While recent studies have begun to shed light on the valuable role that skin microorganisms have in maintaining a healthy skin barrier, a detailed understanding of the complex interactions that shape healthy skin microbial communities is limited. Cobamides, the vitamin B12 class of cofactor, are essential for organisms across the tree of life. Because this vitamin is only produced by a limited fraction of prokaryotes, cobamide sharing has been shown to mediate community dynamics within microbial communities. Here, we provide the first large-scale unbiased metagenomic assessment of cobamide biosynthesis and utilization in the skin microbiome. We show that while numerous and diverse taxa across the major bacterial phyla on the skin are cobamide dependent, relatively few species encode for de novo cobamide biosynthesis. We find that cobamide sharing shapes the network structure in microbial communities across the different microenvironments of the skin and that changes in community structure and microbiome diversity are driven by the abundance of cobamide producers in the Corynebacterium genus, in both healthy and disease skin states. Lastly, we find that de novo cobamide biosynthesis is enriched only in host-associated Corynebacterium species, including those prevalent on human skin. We confirm that the cofactor is produced in excess through quantification of cobamide production by skin-associated species isolated in the laboratory. Taken together, our results support a role for cobamide sharing within skin microbial communities, which we predict stabilizes the microbiome and mediates host interactions.},
+author = {M. Swaney and Shelby Sandstrom and L. Kalan},
+doi = {10.1101/2020.12.02.407395},
+}
+
+@article{80b6a7a04c4aef2cfd811923f9591e647460ffdc,
+title = {nf-core/mag: a best-practice pipeline for metagenome hybrid assembly and binning},
+year = {2021},
+url = {https://www.semanticscholar.org/paper/80b6a7a04c4aef2cfd811923f9591e647460ffdc},
+abstract = {The analysis of shotgun metagenomic data provides valuable insights into microbial communities, while allowing resolution at individual genome level. In absence of complete reference genomes, this requires the reconstruction of metagenome assembled genomes (MAGs) from sequencing reads. We present the nf-core/mag pipeline for metagenome assembly, binning and taxonomic classification. It can optionally combine short and long reads to increase assembly continuity and utilize sample-wise group-information for co-assembly and genome binning. The pipeline is easy to install - all dependencies are provided within containers -, portable and reproducible. It is written in Nextflow and developed as part of the nf-core initiative for best-practice pipeline development. All code is hosted on GitHub under the nf-core organization https://github.com/nf-core/mag and released under the MIT license.},
+author = {Sabrina Krakau and D. Straub and Hadrien Gourlé and G. Gabernet and S. Nahnsen},
+doi = {10.1101/2021.08.29.458094},
+pmid = {35118380},
+}
+
+@article{9f2f45db411dfc2af7d597e5f69f42e89471e645,
+title = {Viral biogeography of gastrointestinal tract and parenchymal organs in two representative species of mammals},
+year = {2021},
+url = {https://www.semanticscholar.org/paper/9f2f45db411dfc2af7d597e5f69f42e89471e645},
+abstract = {
+ In this study we report the first comprehensive metagenomic analysis of the prokaryotic and eukaryotic virome occupying luminal and mucosa-associated habitats along the entire length of the gastrointestinal tract (GIT) in two animal species, the domestic pig and rhesus macaque.
+The highest loads and diversity of bacteriophages are found in the lumen of the large intestine in both mammals. Mucosal samples contain much lower viral loads but a higher proportion of eukaryotic viruses. Parenchymal organs contained significant amounts of bacteriophages of gut origin, in addition to some eukaryotic viruses.
+GIT virome composition is both region- and species-specific with a strong separation between upper and lower gut. Nonetheless, certain viral and phage species are found ubiquitously from the oral cavity to the distal colon. Correlations between individual phages and their potential microbial hosts in the GIT are overwhelmingly positive, which confirms earlier concepts of the temperate-like life cycles of the majority of gut phages and a prevalence of the “piggyback-the-winner” ecological dynamics.},
+author = {A. Shkoporov and S. Stockdale and A. Lavelle and I. Kondova and C. Hueston and Aditya Upadrasta and E. Khokhlova and Imme van der Kamp and B. Ouwerling and L. Draper and J. Langermans and R. P. Ross and C. Hill},
+doi = {10.21203/rs.3.rs-803286/v1},
+}
+
+@article{d08cbfdb9de2ca62e7e2d945559bbff5675356f4,
+title = {MetaBinner: a high-performance and stand-alone ensemble binning method to recover individual genomes from complex microbial communities},
+year = {2021},
+url = {https://www.semanticscholar.org/paper/d08cbfdb9de2ca62e7e2d945559bbff5675356f4},
+abstract = {Binning is an essential procedure during metagenomic data analysis. However, the available individual binning methods usually do not simultaneously fully use different features or biological information. Furthermore, it is challenging to integrate multiple binning results efficiently and effectively. Therefore, we developed an ensemble binner, MetaBinner, which generates component results with multiple types of features and utilizes single-copy gene (SCG) information for k-means initialization. It then utilizes a two-step ensemble strategy based on SCGs to integrate the component results. Extensive experimental results over three large-scale simulated datasets and one real-world dataset demonstrate that MetaBinner outperforms other state-of-the-art individual binners and ensemble binners. MetaBinner is freely available at https://github.com/ziyewang/MetaBinner.},
+author = {Ziye Wang and Pingqin Huang and R. You and Fengzhu Sun and Shanfeng Zhu},
+doi = {10.1101/2021.07.25.453671},
+}
+
+@article{5b160da1f3c69c7472e0df50b9ebd705560e9681,
+title = {Genome binning of viral entities from bulk metagenomics data},
+year = {2021},
+url = {https://www.semanticscholar.org/paper/5b160da1f3c69c7472e0df50b9ebd705560e9681},
+abstract = {Despite the accelerating number of uncultivated virus sequences discovered in metagenomics and their apparent importance for health and disease, the human gut virome and its interactions with bacteria in the gastrointestinal tract are not well understood. This is partly due to a paucity of whole-virome datasets and limitations in current approaches for identifying viral sequences in metagenomics data. Here, combining a deep-learning based metagenomics binning algorithm with paired metagenome and metavirome datasets, we develop Phages from Metagenomics Binning (PHAMB), an approach that allows the binning of thousands of viral genomes directly from bulk metagenomics data, while simultaneously enabling clustering of viral genomes into accurate taxonomic viral populations. When applied on the Human Microbiome Project 2 (HMP2) dataset, PHAMB recovered 6,077 high-quality genomes from 1,024 viral populations, and identified viral-microbial host interactions. PHAMB can be advantageously applied to existing and future metagenomes to illuminate viral ecological dynamics with other microbiome constituents. Here, Johansen et al . develop an approach, Phages from Metagenomics Binning (PHAMB), that allows the binning of thousands of viral genomes directly from bulk metagenomics data, while simultaneously enabling clustering of viral genomes into accurate taxonomic viral populations, unveiling viral-microbial host interactions in the gut.},
+author = {Joachim Johansen and D. Plichta and J. Nissen and M. Jespersen and Shiraz A. Shah and Ling Deng and J. Stokholm and H. Bisgaard and D. Nielsen and S. Sørensen and S. Rasmussen},
+doi = {10.1101/2021.07.07.451412},
+pmid = {35181661},
+}
+
+@article{4ced8b56d18b9d80e7bd48a9ef7f0ea28a3f4904,
+title = {METAMVGL: a multi-view graph-based metagenomic contig binning algorithm by integrating assembly and paired-end graphs},
+year = {2020},
+url = {https://www.semanticscholar.org/paper/4ced8b56d18b9d80e7bd48a9ef7f0ea28a3f4904},
+abstract = {Motivation Due to the complexity of metagenomic community, de novo assembly on next generation sequencing data is commonly unable to produce microbial complete genomes. Metagenomic binning is a crucial task that could group the fragmented contigs into clusters based on their nucleotide compositions and read depths. These features work well on the long contigs, but are not stable for the short ones. Assembly and paired-end graphs can provide the connectedness between contigs, where the linked contigs have high chance to be derived from the same clusters. Results We developed METAMVGL, a multi-view graph-based metagenomic contig binning algorithm by integrating both assembly and paired-end graphs. It could strikingly rescue the short contigs and correct the binning errors from dead ends subgraphs. METAMVGL could learn the graphs’ weights automatically and predict the contig labels in a uniform multi-view label propagation framework. In the experiments, we observed METAMVGL significantly increased the high-confident edges in the combined graph and linked dead ends to the main graph. It also outperformed with many state-of-the-art binning methods, MaxBin2, MetaBAT2, MyCC, CONCOCT, SolidBin and Graphbin on the metagenomic sequencing from simulation, two mock communities and real Sharon data. Availability and implementation The software is available at https://github.com/ZhangZhenmiao/METAMVGL.},
+author = {Zhenmiao Zhang and Luke Zhang},
+doi = {10.1101/2020.10.18.344697},
+pmid = {34294039},
+}
+
+@article{1a8889434294775e76b1ef00c0e2b52b93461158,
+title = {Computational Framework for High-Quality Production and Large-Scale Evolutionary Analysis of Metagenome Assembled Genomes},
+year = {2019},
+url = {https://www.semanticscholar.org/paper/1a8889434294775e76b1ef00c0e2b52b93461158},
+abstract = {Abstract Microbial species play important roles in different environments and the production of high-quality genomes from metagenome data sets represents a major obstacle to understanding their ecological and evolutionary dynamics. Metagenome-Assembled Genomes Orchestra (MAGO) is a computational framework that integrates and simplifies metagenome assembly, binning, bin improvement, bin quality (completeness and contamination), bin annotation, and evolutionary placement of bins via detailed maximum-likelihood phylogeny based on multiple marker genes using different amino acid substitution models, next to average nucleotide identity analysis of genomes for delineation of species boundaries and operational taxonomic units. MAGO offers streamlined execution of the entire metagenomics pipeline, error checking, computational resource distribution and compatibility of data formats, governed by user-tailored pipeline processing. MAGO is an open-source-software package released in three different ways, as a singularity image and a Docker container for HPC purposes as well as for running MAGO on a commodity hardware, and a virtual machine for gaining a full access to MAGO underlying structure and source code. MAGO is open to suggestions for extensions and is amenable for use in both research and teaching of genomics and molecular evolution of genomes assembled from small single-cell projects or large-scale and complex environmental metagenomes.},
+author = {Boštjan Murovec and Leon Deutsch and B. Stres},
+doi = {10.1093/molbev/msz237},
+pmid = {31633780},
+}
+
+@article{21818286078368e92b4a84194872737ee45732ef,
+title = {CheckV assesses the quality and completeness of metagenome-assembled viral genomes},
+year = {2020},
+url = {https://www.semanticscholar.org/paper/21818286078368e92b4a84194872737ee45732ef},
+abstract = {Millions of new viral sequences have been identified from metagenomes, but the quality and completeness of these sequences vary considerably. Here we present CheckV, an automated pipeline for identifying closed viral genomes, estimating the completeness of genome fragments and removing flanking host regions from integrated proviruses. CheckV estimates completeness by comparing sequences with a large database of complete viral genomes, including 76,262 identified from a systematic search of publicly available metagenomes, metatranscriptomes and metaviromes. After validation on mock datasets and comparison to existing methods, we applied CheckV to large and diverse collections of metagenome-assembled viral sequences, including IMG/VR and the Global Ocean Virome. This revealed 44,652 high-quality viral genomes (that is, >90% complete), although the vast majority of sequences were small fragments, which highlights the challenge of assembling viral genomes from short-read metagenomes. Additionally, we found that removal of host contamination substantially improved the accurate identification of auxiliary metabolic genes and interpretation of viral-encoded functions.},
+author = {Stephen Nayfach and A. P. Camargo and F. Schulz and E. Eloe-Fadrosh and S. Roux and N. Kyrpides},
+doi = {10.1038/s41587-020-00774-7},
+pmid = {33349699},
+}
+
+@article{9cf549085af5d81c33ea48edd87113789d41e1ce,
+title = {VirION2: a short- and long-read sequencing and informatics workflow to study the genomic diversity of viruses in nature},
+year = {2020},
+url = {https://www.semanticscholar.org/paper/9cf549085af5d81c33ea48edd87113789d41e1ce},
+abstract = {Microbes play fundamental roles in shaping natural ecosystem properties and functions, but do so under constraints imposed by their viral predators. However, studying viruses in nature can be challenging due to low biomass and the lack of universal gene markers. Though metagenomic short-read sequencing has greatly improved our virus ecology toolkit— and revealed many critical ecosystem roles for viruses — microdiverse populations and fine-scale genomic traits are missed. Some of these microdiverse populations are abundant and the missed regions may be of interest for identifying selection pressures that underpin evolutionary constraints associated with hosts and environments. Though long-read sequencing promises complete virus genomes on single reads, it currently suffers from high DNA requirements and sequencing errors that limit accurate gene prediction. Here we introduce VirION2, an integrated short- and long-read metagenomic wet-lab and informatics pipeline that updates our previous method (VirION) to further enhance the utility of long-read viral metagenomics. Using a viral mock community, we first optimized laboratory protocols (polymerase choice, DNA shearing size, PCR cycling) to enable 76% longer reads (now median length of 6,965 bp) from 100-fold less input DNA (now 1 nanogram). Using a virome from a natural seawater sample, we compared viromes generated with VirION2 against other library preparation options (unamplified, original VirION, and short-read), and optimized downstream informatics for improved long-read error correction and assembly. VirION2 assemblies combined with short-read based data (‘enhanced’viromes), provided significant improvements over VirION libraries in the recovery of longer and more complete viral genomes, and our optimized error-correction strategy using long- and short-read data achieved 99.97% accuracy. In the seawater virome, VirION2 assemblies captured 5,161 viral populations (including all of the virus populations observed in the other assemblies), 30% of which were uniquely assembled through inclusion of long-reads, and 22% of the top 10% most abundant virus populations derived from assembly of long-reads. Viral populations unique to VirION2 assemblies had significantly higher microdiversity, which may explain why short-read virome approaches failed to capture them. These findings suggest the VirION2 sample prep and workflow (updated at protocols.io) can help researchers better investigate the virosphere, even from challenging low-biomass samples. Our new protocols are available to the research community on protocols.io as a ‘living document’ to facilitate dissemination of updates to keep pace with the rapid evolution of long read sequencing technology. Taken together, the addition of long-reads uniquely enabled the recovery of 22% of the most abundant viruses—that would have been missed in short-read only assemblies.},
+author = {O. Zablocki and M. Michelsen and Marie Burris and Natalie E. Solonenko and J. Warwick-Dugdale and Romik Ghosh and J. Pett‐Ridge and M. Sullivan and B. Temperton},
+doi = {10.7717/peerj.11088},
+pmid = {33850654},
+}
+
+@article{c7c0d33aa3a97604b39f04a931b1aeffb57afc97,
+title = {Metagenomic compendium of 189,680 DNA viruses from the human gut microbiome},
+year = {2021},
+url = {https://www.semanticscholar.org/paper/c7c0d33aa3a97604b39f04a931b1aeffb57afc97},
+abstract = {Bacteriophages have important roles in the ecology of the human gut microbiome but are under-represented in reference databases. To address this problem, we assembled the Metagenomic Gut Virus catalogue that comprises 189,680 viral genomes from 11,810 publicly available human stool metagenomes. Over 75% of genomes represent double-stranded DNA phages that infect members of the Bacteroidia and Clostridia classes. Based on sequence clustering we identified 54,118 candidate viral species, 92% of which were not found in existing databases. The Metagenomic Gut Virus catalogue improves detection of viruses in stool metagenomes and accounts for nearly 40% of CRISPR spacers found in human gut Bacteria and Archaea. We also produced a catalogue of 459,375 viral protein clusters to explore the functional potential of the gut virome. This revealed tens of thousands of diversity-generating retroelements, which use error-prone reverse transcription to mutate target genes and may be involved in the molecular arms race between phages and their bacterial hosts.},
+author = {Stephen Nayfach and David Páez-Espino and Lee Call and Soo Jen Low and Hila Sberro and Natalia N. Ivanova and A. Proal and M. Fischbach and A. Bhatt and P. Hugenholtz and N. Kyrpides},
+doi = {10.1038/s41564-021-00928-6},
+pmid = {34168315},
+}
+
+@article{d5aed9ecab9996ba61c5b4ad263cb9ff47713677,
+title = {Improving metagenomic binning results with overlapped bins using assembly graphs},
+year = {2021},
+url = {https://www.semanticscholar.org/paper/d5aed9ecab9996ba61c5b4ad263cb9ff47713677},
+abstract = {Background Metagenomic sequencing allows us to study the structure, diversity and ecology in microbial communities without the necessity of obtaining pure cultures. In many metagenomics studies, the reads obtained from metagenomics sequencing are first assembled into longer contigs and these contigs are then binned into clusters of contigs where contigs in a cluster are expected to come from the same species. As different species may share common sequences in their genomes, one assembled contig may belong to multiple species. However, existing tools for binning contigs only support non-overlapped binning, i.e., each contig is assigned to at most one bin (species). Results In this paper, we introduce GraphBin2 which refines the binning results obtained from existing tools and, more importantly, is able to assign contigs to multiple bins. GraphBin2 uses the connectivity and coverage information from assembly graphs to adjust existing binning results on contigs and to infer contigs shared by multiple species. Experimental results on both simulated and real datasets demonstrate that GraphBin2 not only improves binning results of existing tools but also supports to assign contigs to multiple bins. Conclusion GraphBin2 incorporates the coverage information into the assembly graph to refine the binning results obtained from existing binning tools. GraphBin2 also enables the detection of contigs that may belong to multiple species. We show that GraphBin2 outperforms its predecessor GraphBin on both simulated and real datasets. GraphBin2 is freely available at https://github.com/Vini2/GraphBin2 .},
+author = {V. Mallawaarachchi and A. Wickramarachchi and Yu Lin},
+doi = {10.1186/s13015-021-00185-6},
+pmid = {33947431},
+}
+
+@article{ae45fa55100dffcdc018bc981d52fb35b8a83339,
+title = {Tetranucleotide usage highlights genomic heterogeneity among mycobacteriophages.},
+year = {2015},
+url = {https://www.semanticscholar.org/paper/ae45fa55100dffcdc018bc981d52fb35b8a83339},
+abstract = {Background The genomic sequences of mycobacteriophages, phages infecting mycobacterial hosts, are diverse and mosaic. Mycobacteriophages often share little nucleotide similarity, but most of them have been grouped into lettered clusters and further into subclusters. Traditionally, mycobacteriophage genomes are analyzed based on sequence alignment or knowledge of gene content. However, these approaches are computationally expensive and can be ineffective for significantly diverged sequences. As an alternative to alignment-based genome analysis, we evaluated tetranucleotide usage in mycobacteriophage genomes. These methods make it easier to characterize features of the mycobacteriophage population at many scales. Description We computed tetranucleotide usage deviation (TUD), the ratio of observed counts of 4-mers in a genome to the expected count under a null model. TUD values are comparable between members of a phage subcluster and distinct between subclusters. With few exceptions, neighbor joining phylogenetic trees and hierarchical clustering dendrograms constructed using TUD values place phages in a monophyletic clade with members of the same subcluster. Regions in a genome with exceptional TUD values can point to interesting features of genomic architecture. Finally, we found that subcluster B3 mycobacteriophages contain significantly overrepresented 4-mers and 6-mers that are atypical of phage genomes. Conclusions Statistics based on tetranucleotide usage support established clustering of mycobacteriophages and can uncover interesting relationships within and between sequenced phage genomes. These methods are efficient to compute and do not require sequence alignment or knowledge of gene content. The code to download mycobacteriophage genome sequences and reproduce our analysis is freely available at https://github.com/bsiranosian/tango_final.},
+author = {B. Siranosian and Sudheesha Perera and E. Williams and C. Ye and C. D. de Graffenried and P. Shank},
+doi = {10.12688/f1000research.6077.1},
+pmid = {27134721},
+}
+
+@article{9ad2f0ab1ed13363fd876e7d8bed6ea3afc62c2b,
+title = {Extensive gut virome variation and its associations with host and environmental factors in a population-level cohort},
+year = {2022},
+url = {https://www.semanticscholar.org/paper/9ad2f0ab1ed13363fd876e7d8bed6ea3afc62c2b},
+abstract = {Indigenous bacteriophage communities (virome) in the human gut have a huge impact on the gut bacterial communities (bacteriome), but virome variation at a population scale is not fully investigated yet. Here, we analyse the gut virome in a population-level cohort of 4,198 deeply phenotyped individuals. We discovered thousands of high-quality phage genomes including previously uncharacterized ones with different bacterial hosts than known major phage clades. The distribution of host bacteria was a strong determinant for the distribution of phages, and virome diversity was highly correlated with anti-viral defence mechanisms of the bacteriome, such as CRISPR-Cas and restriction-modification systems. We identified 97 various intrinsic/extrinsic factors that significantly affect the virome, including age, sex, lifestyle, and diet, most of which showed consistent associations with both phages and their predicted bacterial hosts. Among the metadata categories, disease and medication had the strongest effects on the virome structure. Overall, these results present a basis to understand the symbiotic communities of bacteria and their viruses in the human gut, which will facilitate the medical and industrial applications of indigenous viruses.},
+author = {Suguru Nishijima and N. Nagata and Yuya Kiguchi and Y. Kojima and T. Miyoshi‐Akiyama and M. Kimura and M. Ohsugi and K. Ueki and S. Oka and M. Mizokami and T. Itoi and T. Kawai and N. Uemura and M. Hattori},
+doi = {10.1101/2022.07.08.498934},
+}
+
+@article{4cd186a5be97d45f166a882cb0777b6805d773de,
+title = {The virota and its transkingdom interactions in the healthy infant gut},
+year = {2022},
+url = {https://www.semanticscholar.org/paper/4cd186a5be97d45f166a882cb0777b6805d773de},
+abstract = {Significance Microbes colonizing the infant gut during the first year(s) of life play an important role in immune system development. We show that after birth the (nearly) sterile gut is rapidly colonized by bacteria and their viruses (phages), which often show a strong cooccurrence. Most viruses infecting the infant do not cause clinical signs and their numbers strongly increase after day-care entrance. The infant diet is clearly reflected by identification of plant-infecting viruses, whereas fungi and parasites are not part of a stable gut microbiota. These temporal high-resolution baseline data about the gut colonization process will be valuable for further investigations of pathogenic viruses, dynamics between phages and their bacterial host, as well as studies investigating infants with a disturbed microbiota.},
+author = {Leen Beller and W. Deboutte and S. Vieira-Silva and G. Falony and R. Tito and Leen Rymenans and C. Yinda and B. Vanmechelen and Lore Van Espen and D. Jansen and Chenyan Shi and M. Zeller and P. Maes and Karoline Faust and M. Van Ranst and J. Raes and J. Matthijnssens},
+doi = {10.1073/pnas.2114619119},
+pmid = {35320047},
+}
+
+@article{df625b14f91509e0a1e70942930141d0a843b289,
+title = {Gut virome profiling identifies a widespread bacteriophage family associated with metabolic syndrome},
+year = {2022},
+url = {https://www.semanticscholar.org/paper/df625b14f91509e0a1e70942930141d0a843b289},
+abstract = {Gut virome changes associated with metabolic syndrome (MetS), a highly prevalent clinical condition preceding cardiometabolic disease, is shown in 196 participants by combined sequencing of bulk whole genome and virus like particle communities. There is significant interest in altering the course of cardiometabolic disease development via gut microbiomes. Nevertheless, the highly abundant phage members of the complex gut ecosystem -which impact gut bacteria- remain understudied. Here, we show gut virome changes associated with metabolic syndrome (MetS), a highly prevalent clinical condition preceding cardiometabolic disease, in 196 participants by combined sequencing of bulk whole genome and virus like particle communities. MetS gut viromes exhibit decreased richness and diversity. They are enriched in phages infecting Streptococcaceae and Bacteroidaceae and depleted in those infecting Bifidobacteriaceae. Differential abundance analysis identifies eighteen viral clusters (VCs) as significantly associated with either MetS or healthy viromes. Among these are a MetS-associated Roseburia VC that is related to healthy control-associated Faecalibacterium and Oscillibacter VCs. Further analysis of these VCs revealed the Candidatus Heliusviridae, a highly widespread gut phage lineage found in 90+% of participants. The identification of the temperate Ca. Heliusviridae provides a starting point to studies of phage effects on gut bacteria and the role that this plays in MetS.},
+author = {P. A. de Jonge and Koen Wortelboer and Torsten P. M. Scheithauer and B. H. van den Born and A. Zwinderman and Franklin L. Nobrega and B. Dutilh and M. Nieuwdorp and H. Herrema},
+doi = {10.1038/s41467-022-31390-5},
+pmid = {35739117},
+}
+
+@article{05ef45e0552897d9809589a80bb7efc502b2b37b,
+title = {A Previously Undescribed Highly Prevalent Phage Identified in a Danish Enteric Virome Catalog},
+year = {2021},
+url = {https://www.semanticscholar.org/paper/05ef45e0552897d9809589a80bb7efc502b2b37b},
+abstract = {Through generation of the DEVoC, we added numerous previously uncharacterized viral genomes and genes to the ever-increasing worldwide pool of human gut viromes. The DEVoC, the largest human gut virome catalog generated from consistently processed fecal samples, facilitated the analysis of the 91 healthy Danish gut viromes. ABSTRACT Gut viruses are important, yet often neglected, players in the complex human gut microbial ecosystem. Recently, the number of human gut virome studies has been increasing; however, we are still only scratching the surface of the immense viral diversity. In this study, 254 virus-enriched fecal metagenomes from 204 Danish subjects were used to generate the Danish Enteric Virome Catalog (DEVoC) containing 12,986 nonredundant viral scaffolds, of which the majority was previously undescribed, encoding 190,029 viral genes. The DEVoC was used to compare 91 healthy DEVoC gut viromes from children, adolescents, and adults that were used to create the DEVoC. Gut viromes of healthy Danish subjects were dominated by phages. While most phage genomes (PGs) only occurred in a single subject, indicating large virome individuality, 39 PGs were present in more than 10 healthy subjects. Among these 39 PGs, the prevalences of three PGs were associated with age. To further study the prevalence of these 39 prevalent PGs, 1,880 gut virome data sets of 27 studies from across the world were screened, revealing several age-, geography-, and disease-related prevalence patterns. Two PGs also showed a remarkably high prevalence worldwide—a crAss-like phage (20.6% prevalence), belonging to the tentative AlphacrAssvirinae subfamily, and a previously undescribed circular temperate phage infecting Bacteroides dorei (14.4% prevalence), called LoVEphage because it encodes lots of viral elements. Due to the LoVEphage’s high prevalence and novelty, public data sets in which the LoVEphage was detected were de novo assembled, resulting in an additional 18 circular LoVEphage-like genomes (67.9 to 72.4 kb). IMPORTANCE Through generation of the DEVoC, we added numerous previously uncharacterized viral genomes and genes to the ever-increasing worldwide pool of human gut viromes. The DEVoC, the largest human gut virome catalog generated from consistently processed fecal samples, facilitated the analysis of the 91 healthy Danish gut viromes. Characterizing the biggest cohort of healthy gut viromes from children, adolescents, and adults to date confirmed the previously established high interindividual variation in human gut viromes and demonstrated that the effect of age on the gut virome composition was limited to the prevalence of specific phage (groups). The identification of a previously undescribed prevalent phage illustrates the usefulness of developing virome catalogs, and we foresee that the DEVoC will benefit future analysis of the roles of gut viruses in human health and disease.},
+author = {Lore Van Espen and E. G. Bak and Leen Beller and Lila Close and W. Deboutte and H. Juel and T. Nielsen and D. Sinar and L. De Coninck and Christine Frithioff-Bøjsøe and C. Fonvig and Suganya Jacobsen and Maria Kjærgaard and M. Thiele and A. Fullam and Michael Kuhn and J. Holm and P. Bork and A. Krag and T. Hansen and M. Arumugam and J. Matthijnssens},
+doi = {10.1128/mSystems.00382-21},
+pmid = {34665009},
+}
+
+@article{dad832ddab4c5f9cd7258b1dcd79e6e8dc20116c,
+title = {Manual resolution of virome dark matter uncovers hundreds of viral families in the infant gut},
+year = {2021},
+url = {https://www.semanticscholar.org/paper/dad832ddab4c5f9cd7258b1dcd79e6e8dc20116c},
+abstract = {The gut microbiome (GM) is shaped through infancy and plays a major role in determining susceptibility to chronic diseases later in life. Bacteriophages (phage) are known to modulate bacterial populations in numerous ecosystems, including the gut. However, virome data is difficult to analyse because it mostly consists of unknown viruses, i.e. viral dark matter. Here, we manually resolved the viral dark matter in the largest human virome study published to date. Fecal viromes from a cohort of 647 infants at 1 year of age were deeply sequenced and analysed through successive rounds of clustering and curation. This uncovered more than ten thousand viral species distributed over 248 viral families falling within 17 viral order-level clusters. Most of the defined viral families and orders were novel and belonged to the Caudoviricetes viral class. Bacterial hosts were predicted for 79% of the viral species using CRISPR spacers in metagenomes from the same fecal samples. While Bacteroides-infecting Crassphages were present, novel viral families were more predominant, including phages infecting Clostridiales and Bifidobacterium. Phage lifestyles were determined for more than three thousand caudoviral species. Lifestyles were homogeneous at the family level for 149 caudiviral families. 32 families were found to be virulent, while 117 families were temperate. Virulent phage families were more abundant but temperate phage families were more diverse and widespread. Together, the viral families found in this study represent a major expansion of current bacteriophage taxonomy, and the sequences have been put online for use and validation by the community.},
+author = {Shiraz A. Shah and Ling Deng and J. Thorsen and A. G. Pedersen and Moïra B. Dion and J. Castro-Mejía and Ronalds Silins and F. Romme and R. Sausset and E. Ndela and Mathis Hjemlsø and M. Rasmussen and Tamsin A. Redgwell and Gisle Vestergaard and Yichang Zhang and François Enault and S. Sørensen and H. Bisgaard and J. Stokholm and S. Moineau and M. Petit and D. Nielsen},
+doi = {10.1101/2021.07.02.450849},
+}
+
+@article{f5bcb480685f4767c261c05adffbac6493cd266d,
+title = {A Method for Improving the Accuracy and Efficiency of Bacteriophage Genome Annotation},
+year = {2019},
+url = {https://www.semanticscholar.org/paper/f5bcb480685f4767c261c05adffbac6493cd266d},
+abstract = {Bacteriophages are the most numerous entities on Earth. The number of sequenced phage genomes is approximately 8000 and increasing rapidly. Sequencing of a genome is followed by annotation, where genes, start codons, and functions are putatively identified. The mainstays of phage genome annotation are auto-annotation programs such as Glimmer and GeneMark. Due to the relatively small size of phage genomes, many groups choose to manually curate auto-annotation results to increase accuracy. An additional benefit of manual curation of auto-annotated phage genomes is that the process is amenable to be performed by students, and has been shown to improve student recruitment to the sciences. However, despite its greater accuracy and pedagogical value, manual curation suffers from high labor cost, lack of standardization and a degree of subjectivity in decision making, and susceptibility to mistakes. Here, we present a method developed in our lab that is designed to produce accurate annotations while reducing subjectivity and providing a degree of standardization in decision-making. We show that our method produces genome annotations more accurate than auto-annotation programs while retaining the pedagogical benefits of manual genome curation.},
+author = {A. Salisbury and Philippos K. Tsourkas},
+doi = {10.3390/ijms20143391},
+pmid = {31295925},
+}
+
+@article{9e386f6b3bab5b715672efe00003d64ab60f808f,
+title = {DeephageTP: A Convolutional Neural Network  Framework for Identifying Phage-specific Proteins from metagenomic sequencing data},
+year = {2020},
+url = {https://www.semanticscholar.org/paper/9e386f6b3bab5b715672efe00003d64ab60f808f},
+abstract = {
+ Background: Bacteriophage (phage) is the most abundant and diverse biological entity on the Earth. This makes it a challenge to identify and annotate phage genomes efficiently on a large scale. Portal (portal protein), TerL (large terminase subunit protein) and TerS (small terminase subunit protein) are the three specific proteins of the tailed phage. Here, we develop a CNN (convolutional neural network)-based framework, DeephageTP, to identify these three proteins from metagenome data. The framework takes one-hot encoding data of the original protein sequences as the input and extracts the predictive features in the process of modeling. The cutoff loss value for each protein category was determined by exploiting the distributions of the loss values of the sequences within the same category. Finally, we tested the efficacy of the framework using three real metagenomic datasets. Result: The proposed multiclass classification CNN-based model was trained by the training datasets and shows relatively high prediction performance ( A ccuracy : Portal, 98.8%; TerL, 98.6%; TerS, 97.8%) for the three protein categories, respectively. The experiments using the independent mimic dataset demonstrate that the performance of the model could become worse along with the increase of the data size. To address this issue, we determined and set the cutoff loss values (i.e., TerL: -5.2, Portal: -4.2, TerS: -2.9) for each of the three categories, respectively. With these values, the model obtains high performance in terms of Precision in identifying the TerL and Portal sequences (i.e, ~ 94% and ~ 90%, respectively) from the mimic dataset that is 20 times larger than the training dataset. More interestingly, the framework identified from the three real metagenomic datasets many novel phage sequences that are not detectable by the two alignment-based methods (i.e., DIAMOND and HMMER). Conclusion: Compared to the conventional alignment-based methods, our proposed framework shows high performance in identifying phage-specific protein sequences with a particular advantage in identifying the novel protein sequences with remote homology to their known counterparts in public databases. Indeed, our method could also be applied for identifying the other protein sequences with the characteristic of high complexity and low conservation. The DeephageTP is available at https://github.com/chuym726/DeephageTP .},
+author = {Yunmeng Chu and Shun Guo and Dachao Cui and Haoran Zhang and Xiongfei Fu and Yingfei Ma},
+doi = {10.21203/rs.3.rs-21641/v1},
+}
+
+@article{e30a0daf8f71a45d98ca31862269573806ff05d8,
+title = {Members of a highly widespread bacteriophage family are hallmarks of metabolic syndrome gut microbiomes},
+year = {2021},
+url = {https://www.semanticscholar.org/paper/e30a0daf8f71a45d98ca31862269573806ff05d8},
+abstract = {There is significant interest in altering the course of cardiometabolic disease development via the gut microbiome. Nevertheless, the highly abundant phage members -which impact gut bacteria- of the complex gut ecosystem remain understudied. Here, we characterized gut phageome changes associated with metabolic syndrome (MetS), a highly prevalent clinical condition preceding cardiometabolic disease. MetS gut phageome populations exhibited decreased richness and diversity, but larger inter-individual variation. These populations were enriched in phages infecting Bacteroidaceae and depleted in those infecting Ruminococcaeae. Differential abundance analysis identified eighteen viral clusters (VCs) as significantly associated with either MetS or healthy phageomes. Among these are a MetS-associated Roseburia VC that is related to healthy control-associated Faecalibacterium and Oscillibacter VCs. Further analysis of these VCs revealed the Candidatus Heliusviridae, a highly widespread gut phage lineage found in 90+% of the participants. The identification of the temperate Ca. Heliusviridae provides a novel starting point to a better understanding of the effect that phages have on their bacterial hosts and the role that this plays in MetS.},
+author = {P. A. de Jonge and Koen Wortelboer and Torsten P. M. Scheithauer and B. H. van den Born and A. Zwinderman and Franklin L. Nobrega and B. Dutilh and M. Nieuwdorp and H. Herrema},
+doi = {10.1101/2021.03.30.437683},
+}
+
+@article{68f8b61856c6b0f9b23c5504ae1c003a7f135b3a,
+title = {Discovery, diversity, and functional associations of crAss-like phages in human gut metagenomes from four Dutch cohorts},
+year = {2022},
+url = {},
+abstract = {null},
+author = {A. Gulyaeva and S. Garmaeva and R. Ruigrok and Daoming Wang and N. Riksen and M. Netea and C. Wijmenga and R. Weersma and Jingyuan Fu and A. V. Vila and A. Kurilshikov and A. Zhernakova},
+}
+
+@article{291cc11f87b81d9a7e3dc21101d1ea7854369670,
+title = {Corynebacterium Comparative Genomics Reveals a Role for Cobamide Sharing in the Skin Microbiome},
+year = {2020},
+url = {https://www.semanticscholar.org/paper/291cc11f87b81d9a7e3dc21101d1ea7854369670},
+abstract = {The human skin microbiome is a key player in human health, with diverse functions ranging from defense against pathogens to education of the immune system. Recent studies have begun unraveling the complex interactions within skin microbial communities, shedding light on the invaluable role that skin microorganisms have in maintaining a healthy skin barrier. While theCorynebacteriumgenus is a dominant taxon of the skin microbiome, relatively little is known how skin-associated Corynebacteria contribute to microbe-microbe and microbe-host interactions on the skin. Here, we performed a comparative genomics analysis of 71Corynebacteriumspecies from diverse ecosystems, which revealed functional differences between host- and environment-associated species. In particular, host-associated species were enriched forde novobiosynthesis of cobamides, which are a class of cofactor essential for metabolism in organisms across the tree of life but are produced by a limited number of prokaryotes. Because cobamides have been hypothesized to mediate community dynamics within microbial communities, we analyzed skin metagenomes forCorynebacteriumcobamide producers, which revealed a positive correlation between cobamide producer abundance and microbiome diversity, a trait associated with skin health. We also provide the first metagenome-based assessment of cobamide biosynthesis and utilization in the skin microbiome, showing that both dominant and low abundant skin taxa encode for thede novobiosynthesis pathway and that cobamide-dependent enzymes are encoded by phylogenetically diverse taxa across the major bacterial phyla on the skin. Taken together, our results support a role for cobamide sharing within skin microbial communities, which we hypothesize mediates community dynamics.},
+author = {M. Swaney and L. Kalan},
+doi = {10.1101/2020.12.02.407395},
+}
+
+@article{e6494c89e74f59a74d4e6e4e3fb73d7ab61c0e18,
+title = {Plasmid detection and assembly in genomic and metagenomic data sets},
+year = {2019},
+url = {https://www.semanticscholar.org/paper/e6494c89e74f59a74d4e6e4e3fb73d7ab61c0e18},
+abstract = {Although plasmids are important for bacterial survival and adaptation, plasmid detection and assembly from genomic, let alone metagenomic, samples remain challenging. The recently developed plasmidSPAdes assembler addressed some of these challenges in the case of isolate genomes but stopped short of detecting plasmids in metagenomic assemblies, an untapped source of yet to be discovered plasmids. We present the metaplasmidSPAdes tool for plasmid assembly in metagenomic data sets that reduced the false positive rate of plasmid detection compared with the state-of-the-art approaches. We assembled plasmids in diverse data sets and have shown that thousands of plasmids remained below the radar in already completed genomic and metagenomic studies. Our analysis revealed the extreme variability of plasmids and has led to the discovery of many novel plasmids (including many plasmids carrying antibiotic-resistance genes) without significant similarities to currently known ones.},
+author = {D. Antipov and Mikhail Raiko and A. Lapidus and P. Pevzner},
+doi = {10.1101/gr.241299.118},
+pmid = {31048319},
+}
+
+@article{ab778d4656d2a0d7f691c3ac20a7cabeb9b0db3f,
+title = {Phage Commander, an Application for Rapid Gene Identification in Bacteriophage Genomes Using Multiple Programs},
+year = {2021},
+url = {https://www.semanticscholar.org/paper/ab778d4656d2a0d7f691c3ac20a7cabeb9b0db3f},
+abstract = {},
+author = {Matt Lazeroff and Geordie Ryder and Sarah L. Harris and Philippos K. Tsourkas},
+doi = {10.1089/phage.2020.0044},
+}

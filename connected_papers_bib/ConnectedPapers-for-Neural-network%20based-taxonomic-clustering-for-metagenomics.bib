@@ -1,0 +1,402 @@
+@article{0592ec90b70c580effcf575790938640ee2150b0,
+title = {Neural network-based taxonomic clustering for metagenomics},
+year = {2010},
+url = {https://www.semanticscholar.org/paper/0592ec90b70c580effcf575790938640ee2150b0},
+abstract = {Metagenomic studies inherently involve sampling genetic information from an environment potentially containing thousands of distinctly different microbial organisms. This genetic information is sequenced producing many short fragments (<500 base pair (bp)); each is tentatively a small representative of the DNA coding structure. Any of the fragments may belong to any of the organisms in the sample, but the relationship is unknown a priori. Furthermore, most of these organisms have not been identified and correspondingly are not represented in any of the publicly available search databases. Our goal is to be able to predict the taxonomic classification of an organism based on the fragments obtained from an environmental sample that may include many (some previously unidentified) organisms. To elucidate the diversity and composition of the sample, we first use a supervised naïve Bayes classifier to score the fragments of known genomes, followed by an unsupervised clustering to group fragments from similar organisms together. We are then free to analyze each cluster separately. This is challenging since we are not interested in similar sequences, but sequences that come from similar genomes, which are known to vary widely intra-genomically. Our dataset comprises of an extremely challenging scenario involving clustering fragments at the phyla level, where none of the phyla have been previously seen or identified. We present two variations of our proposed approach, one based on ART and K-means. We show that ART can cluster 500bp fragments from 17 novel phyla at an overall isolation/grouping that is 10% better than K-means and nearly 7 times over chance.},
+author = {S. Essinger and R. Polikar and G. Rosen},
+doi = {10.1109/IJCNN.2010.5596644},
+}
+
+@article{21b1708059f738f0cacdb64ef1c84bf399723350,
+title = {Title MetaCluster : unsupervised binning of environmental genomicfragments and taxonomic annotation},
+year = {2010},
+url = {https://www.semanticscholar.org/paper/21b1708059f738f0cacdb64ef1c84bf399723350},
+abstract = {Limited by the laboratory technique, traditional microorganism research usually focuses on one single individual species. This significantly limits the deep analysis of intricate biological processes among complex microorganism communities. With the rapid development of genome sequencing techniques, the traditional research methods of microorganisms based on the isolation and cultivation are gradually replaced by metagenomics, also known as environmental genomics. The first step, which is also the major bottleneck of metagenomic data analysis id the identification and taxonomic characterization of the DNA fragments (reads) resulting from sequencing a sample of mixed species. This step is usually referred as “binning”. Existing binning methods based on sequence similarity and sequence composition markers rely heavily on the reference genomes of known microorganisms and phylogenetic markers. Due to the limited availability of reference genomes and the bias and unstable of markers, these methods may not be applicable in all cases. Not much unsupervised binning methods are reported, but the unsupervised nature of these methods makes them extremely difficult to annotate the clusters with taxonomic labels. In this paper, we present MetaCluster 2.0, an unsupervised binning method which could bin metagenomic sequencing datasets with high accuracy, and also identify unknown genomes and annotate them with proper taxonomic labels. The running time of MetaCluster 2.0 is at least 30 times faster than existing binning algorithms. MetaCluster 2.0, and all the test datasets mentioned in this paper are available at http://i.cs.hku.hk/~alse/MetaCluster/.},
+author = {Bin Yang and Yu Peng and Henry C. M. Leung and S. Yiu and J. Qin and Ruiqiang Li and Francis Y. L. Chin},
+}
+
+@article{147a02a5798c51faf41372cc7946816f1d666444,
+title = {Title MetaCluster 4 . 0 : A novel binning algorithm for NGS reads andhuge number of species},
+year = {2012},
+url = {https://www.semanticscholar.org/paper/147a02a5798c51faf41372cc7946816f1d666444},
+abstract = {Next-generation sequencing (NGS) technologies allow the sequencing of microbial communities directly from the environment without prior culturing. The output of environmental DNA sequencing consists of many reads from genomes of different unknown species, making the clustering together reads from the same (or similar) species (also known as binning) a crucial step. The difficulties of the binning problem are due to the following four factors: (1) the lack of reference genomes; (2) uneven abundance ratio of species; (3) short NGS reads; and (4) a large number of species (can be more than a hundred). None of the existing binning tools can handle all four factors. No tools, including both AbundanceBin and MetaCluster 3.0, have demonstrated reasonable performance on a sample with more than 20 species. In this article, we introduce MetaCluster 4.0, an unsupervised binning algorithm that can accurately (with about 80% precision and sensitivity in all cases and at least 90% in some cases) and efficiently bin short reads with varying abundance ratios and is able to handle datasets with 100 species. The novelty of MetaCluster 4.0 stems from solving a few important problems: how to divide reads into groups by a probabilistic approach, how to estimate the 4-mer distribution of each group, how to estimate the number of species, and how to modify MetaCluster 3.0 to handle a large number of species. We show that Meta Cluster 4.0 is effective for both simulated and real datasets. Supplementary Material is available at www.liebertonline.com/cmb.},
+author = {Henry C. M. Leung and S. Yiu and Francis Y. L. Chin},
+}
+
+@article{da12b558442753bd7dd89cdd400067002656b8d8,
+title = {CompostBin: A DNA Composition-Based Algorithm for Binning Environmental Shotgun Reads},
+year = {2007},
+url = {https://www.semanticscholar.org/paper/da12b558442753bd7dd89cdd400067002656b8d8},
+abstract = {A major hindrance to studies of microbial diversity has been that the vast majority of microbes cannot be cultured in the laboratory and thus are not amenable to traditional methods of characterization. Environmental shotgun sequencing (ESS) overcomes this hurdle by sequencing the DNA from the organisms present in a microbial community. The interpretation of this metagenomic data can be greatly facilitated by associating every sequence read with its source organism. We report the development of CompostBin, a DNA composition-based algorithm for analyzing metagenomic sequence reads and distributing them into taxon-specific bins. Unlike previous methods that seek to bin assembled contigs and often require training on known reference genomes, CompostBin has the ability to accurately bin raw sequence reads without need for assembly or training. CompostBin uses a novel weighted PCA algorithm to project the high dimensional DNA composition data into an informative lower-dimensional space, and then uses the normalized cut clustering algorithm on this filtered data set to classify sequences into taxon-specific bins. We demonstrate the algorithm's accuracy on a variety of low to medium complexity data sets.},
+author = {Sourav Chatterji and I. Yamazaki and Z. Bai and J. Eisen},
+doi = {10.1007/978-3-540-78839-3_3},
+arxivid = {0708.3098},
+}
+
+@article{62895e3fd89673a0d22b1889d3e2e1d40656a585,
+title = {MarkovBin: An Algorithm to Cluster Metagenomic Reads Using a Mixture Modeling of Hierarchical Distributions},
+year = {2013},
+url = {https://www.semanticscholar.org/paper/62895e3fd89673a0d22b1889d3e2e1d40656a585},
+abstract = {Metagenomics is the study of genomic content of microorganisms from environmental samples without isolation and cultivation. Recently developed next generation sequencing (NGS) technologies efficiently generate vast amounts of metagenomic DNA sequences. However, the ultra-high throughput and short read lengths make the separation of reads from different species more challenging. Among the existing computational tools for NGS data, there are supervised methods that use reference databases to classify reads and unsupervised methods that use oligonucleotide patterns to cluster reads. The former may leave a large fraction of reads unclassified due to the absence of closely related references. The latter often rely on long oligonucleotide frequencies and are sensitive to species abundance levels. In this work, we present MarkovBin, a new unsupervised method that can accurately cluster metagenomic reads across various species abundance ratios. We first model the nucleotide sequences as a fixed-order Markov chain. We then propose a hierarchical distribution to model the dependency between paired-end reads. Finally, we employ the mixture model framework to separate reads from different genomes in a metagenomic dataset. Using extensive simulation data, we demonstrate a high accuracy and precision by comparing to selected unsupervised read clustering tools. The software is freely available at http://orleans.cs.wayne.edu/MarkovBin.},
+author = {Tin Chi Nguyen and D. Zhu},
+doi = {10.1145/2506583.2506602},
+}
+
+@article{89a3e2b9acbd306fc12ab6559a08cfc4c8766e0c,
+title = {RAIphy: Phylogenetic classification of metagenomics samples using iterative refinement of relative abundance index profiles},
+year = {2011},
+url = {https://www.semanticscholar.org/paper/89a3e2b9acbd306fc12ab6559a08cfc4c8766e0c},
+abstract = {BackgroundComputational analysis of metagenomes requires the taxonomical assignment of the genome contigs assembled from DNA reads of environmental samples. Because of the diverse nature of microbiomes, the length of the assemblies obtained can vary between a few hundred bp to a few hundred Kbp. Current taxonomic classification algorithms provide accurate classification for long contigs or for short fragments from organisms that have close relatives with annotated genomes. These are significant limitations for metagenome analysis because of the complexity of microbiomes and the paucity of existing annotated genomes.ResultsWe propose a robust taxonomic classification method, RAIphy, that uses a novel sequence similarity metric with iterative refinement of taxonomic models and functions effectively without these limitations. We have tested RAIphy with synthetic metagenomics data ranging between 100 bp to 50 Kbp. Within a sequence read range of 100 bp-1000 bp, the sensitivity of RAIphy ranges between 38%-81% outperforming the currently popular composition-based methods for reads in this range. Comparison with computationally more intensive sequence similarity methods shows that RAIphy performs competitively while being significantly faster. The sensitivity-specificity characteristics for relatively longer contigs were compared with the PhyloPythia and TACOA algorithms. RAIphy performs better than these algorithms at varying clade-levels. For an acid mine drainage (AMD) metagenome, RAIphy was able to taxonomically bin the sequence read set more accurately than the currently available methods, Phymm and MEGAN, and more accurately in two out of three tests than the much more computationally intensive method, PhymmBL.ConclusionsWith the introduction of the relative abundance index metric and an iterative classification method, we propose a taxonomic classification algorithm that performs competitively for a large range of DNA contig lengths assembled from metagenome data. Because of its speed, simplicity, and accuracy RAIphy can be successfully used in the binning process for a broad range of metagenomic data obtained from environmental samples.},
+author = {Ö. U. Nalbantoglu and Samuel F. Way and S. Hinrichs and K. Sayood},
+doi = {10.1186/1471-2105-12-41},
+pmid = {21281493},
+}
+
+@article{78658405cd48f2622c8a36a53521c597cbef8338,
+title = {Clustering metagenomic sequences with interpolated Markov models},
+year = {2010},
+url = {https://www.semanticscholar.org/paper/78658405cd48f2622c8a36a53521c597cbef8338},
+abstract = {BackgroundSequencing of environmental DNA (often called metagenomics) has shown tremendous potential to uncover the vast number of unknown microbes that cannot be cultured and sequenced by traditional methods. Because the output from metagenomic sequencing is a large set of reads of unknown origin, clustering reads together that were sequenced from the same species is a crucial analysis step. Many effective approaches to this task rely on sequenced genomes in public databases, but these genomes are a highly biased sample that is not necessarily representative of environments interesting to many metagenomics projects.ResultsWe present SCIMM (Sequence Clustering with Interpolated Markov Models), an unsupervised sequence clustering method. SCIMM achieves greater clustering accuracy than previous unsupervised approaches. We examine the limitations of unsupervised learning on complex datasets, and suggest a hybrid of SCIMM and supervised learning method Phymm called PHY SCIMM that performs better when evolutionarily close training genomes are available.ConclusionsSCIMM and PHY SCIMM are highly accurate methods to cluster metagenomic sequences. SCIMM operates entirely unsupervised, making it ideal for environments containing mostly novel microbes. PHY SCIMM uses supervised learning to improve clustering in environments containing microbial strains from well-characterized genera. SCIMM and PHY SCIMM are available open source from http://www.cbcb.umd.edu/software/scimm.},
+author = {David R. Kelley and S. Salzberg},
+doi = {10.1186/1471-2105-11-544},
+pmid = {21044341},
+}
+
+@article{4ea98ebfbffdff58a13aa6d90a54c487300914fc,
+title = {Computational Approaches for Binning Metagenomic Reads},
+year = {2016},
+url = {https://www.semanticscholar.org/paper/4ea98ebfbffdff58a13aa6d90a54c487300914fc},
+abstract = {},
+author = {Ying Wang},
+}
+
+@article{d3a6cd2dd5ee16274642632d79415ee787b07ce6,
+title = {A two-way multi-dimensional mixture model for clustering metagenomic sequences},
+year = {2011},
+url = {https://www.semanticscholar.org/paper/d3a6cd2dd5ee16274642632d79415ee787b07ce6},
+abstract = {Motivation: A major challenge facing metagenomics is the development of tools for the characterization of functional and taxonomic content of vast amounts of short metagenome reads. The efficacy of clustering methods depends on the number of reads in the dataset, the read length and relative abundances of source genomes in the microbial community.
+ Results: In this paper, we formulate an unsupervised naive Bayes multi-species, multi-dimensional mixture model for reads from a metagenome. We use the proposed model to cluster metagenomic reads by their species of origin and to characterize the abundance of each species. We model the distribution of word counts along a genome as a Gaussian for shorter, frequent words and as a Poisson for longer words that are rare. We employ either a mixture of Gaussians or mixture of Poissons to model reads within each bin. An additional reason to use these distributions is their flexibility and ease of parameter estimation. Such a paradigm characterizes the compositional heterogeneity of the words along a genome, signifying its genome signature. Further, we handle the high-dimensionality and sparsity associated with the data, by grouping the set of words comprising the reads, resulting in a two-way mixture model. Finally, we derive an unsupervised Expectation Maximization algorithm for the models. Our method provides a general statistical framework for modeling metagenome reads. We demonstrate the accuracy and applicability of this method on simulated and real metagenomes. Our method can accurately cluster reads as short as 100 bps and estimate the species abundance as well. Our method outperforms LikelyBin, another unsupervised composition-based binning method for metagenomes, on datasets of varying abundances, divergences and read lengths.},
+author = {Shruthi Prabhakara and R. Acharya},
+doi = {10.1145/2147805.2147826},
+}
+
+@article{6da09e2ed1908b9417674618ad36c32295e456ec,
+title = {The Effect of Sequence Error and Partial Training Data on BLAST Accuracy},
+year = {2010},
+url = {https://www.semanticscholar.org/paper/6da09e2ed1908b9417674618ad36c32295e456ec},
+abstract = {Metagenomics is the study of environmental samples. Because few tools exist for metagenomic analysis, a natural step has been to utilize the popular homology tool, BLAST, to search for sequence similarity between DNA reads and an administered database. Most biologists use this method today without knowing BLAST’s accuracy, especially when a particular taxonomic class is under-represented in the database. The aim of this paper is to benchmark the performance of BLAST for taxonomic classification of metagenomic datasets in a supervised setting, meaning that the database contains microbes of the same class as the ‘unknown’ query DNA reads. We examine well- and under-represented genera and phyla in order to study their effect on the accuracy of BLAST. We investigate the degradation in BLAST accuracy when genome coverage is reduced in the training database as well as the performance when errors are introduced into the query DNA reads. We conclude that on fine-resolution classes, such as genera, the accuracy of BLAST does not degrade very much with under-representation, but in a highly variant class, such as phyla, performance degrades significantly when whole genomes are used in the training database. BLAST accuracy at the genus level is affected greater than phyla when coverage in the training database is reduced or when 1% sequence error is introduced into the query DNA reads. Our analysis includes five-fold cross validation to substantiate our findings.},
+author = {S. Essinger and G. Rosen},
+doi = {10.1109/BIBE.2010.49},
+}
+
+@article{915307f38d7f3917dae8133cf9164a0e84f209c7,
+title = {Medical Imaging 2015: Computer-Aided Diagnosis},
+year = {2015},
+url = {https://www.semanticscholar.org/paper/915307f38d7f3917dae8133cf9164a0e84f209c7},
+abstract = {},
+author = {L. Hadjiiski and G. Tourassi},
+}
+
+@article{cd498f76a4dd2db68f466ba826299e9e36dbbfd2,
+title = {Information-theoretic approaches to SVM feature selection for metagenome read classification},
+year = {2011},
+url = {https://www.semanticscholar.org/paper/cd498f76a4dd2db68f466ba826299e9e36dbbfd2},
+abstract = {Analysis of DNA sequences isolated directly from the environment, known as metagenomics, produces a large quantity of genome fragments that need to be classified into specific taxa. Most composition-based classification methods use all features instead of a subset of features that may maximize classifier accuracy. We show that feature selection methods can boost performance of taxonomic classifiers. This work proposes three different filter-based feature selection methods that stem from information theory: (1) a technique that combines Kullback-Leibler, Mutual Information, and distance information, (2) a text mining technique, TF-IDF, and (3) minimum redundancy-maximum-relevance (mRMR). The feature selection methods are compared by how well they improve support vector machine classification of genomic reads. Overall, the 6mer mRMR method performs well, especially on the phyla-level. If the number of total features is very large, feature selection becomes difficult because a small subset of features that captures a majority of the data variance is less likely to exist. Therefore, we conclude that there is a trade-off between feature set size and feature selection method to optimize classification performance. For larger feature set sizes, TF-IDF works better for finer-resolutions while mRMR performs the best out of any method for N=6 for all taxonomic levels.},
+author = {E. Garbarine and Joseph DePasquale and V. Gadia and R. Polikar and G. Rosen},
+doi = {10.1016/j.compbiolchem.2011.04.007},
+pmid = {21704267},
+}
+
+@article{6013ecf5b481eb5569067f7dfba7a25a6089b0df,
+title = {Arabic Script Documents Language Identifications Using Fuzzy ART},
+year = {2008},
+url = {https://www.semanticscholar.org/paper/6013ecf5b481eb5569067f7dfba7a25a6089b0df},
+abstract = {The volume of information available on the internet, intranet, digital libraries and newsgroup has increased dramatically in recent years. Therefore, there is a growing interest in helping user better find, filter, and manage these resources. Language identification is the first step of understanding text documents which is written in. It is usually a module within multilingual application. In this paper, we introduce language identification of Arabic script documents by letter frequency. Technique used for identification is fuzzy adaptive resonance theory (ART), which is belong to the neural network architectures that perform incremental unsupervised learning. Arabic script documents such as Arabic, Persian and Urdu were used for performing language identification. From the experiments, we have found that fuzzy ART is particularly promising in terms of accuracy on language identification.},
+author = {A. Selamat and Choon-Ching Ng},
+doi = {10.1109/AMS.2008.47},
+}
+
+@article{e62f2ee2c117d7df2bc7c74f71e8108b936e475f,
+title = {Phymm and PhymmBL: Metagenomic Phylogenetic Classification with Interpolated Markov Models},
+year = {2009},
+url = {https://www.semanticscholar.org/paper/e62f2ee2c117d7df2bc7c74f71e8108b936e475f},
+abstract = {Metagenomics projects collect DNA from uncharacterized environments that may contain thousands of species per sample. One main challenge facing metagenomic analysis is phylogenetic classification of raw sequence reads into groups representing the same or similar taxa, a prerequisite for genome assembly and for analyzing the biological diversity of a sample. New sequencing technologies have made metagenomics easier, by making sequencing faster, and more difficult, by producing shorter reads than previous technologies. Classifying sequences from reads as short as 100 base pairs has until now been relatively inaccurate, requiring researchers to use older, long-read technologies. We present Phymm, a classifier for metagenomic data, that has been trained on 539 complete, curated genomes and can accurately classify reads as short as 100 base pairs, a substantial improvement over previous composition-based classification methods. We also describe how combining Phymm with sequence alignment algorithms improves accuracy.},
+author = {Arthur Brady and S. Salzberg},
+doi = {10.1038/nmeth.1358},
+pmid = {19648916},
+}
+
+@article{bd459daf1d3f9f3857181c292103e8cf0b99fdc9,
+title = {Accurate Genome Relative Abundance Estimation Based on Shotgun Metagenomic Reads},
+year = {2011},
+url = {https://www.semanticscholar.org/paper/bd459daf1d3f9f3857181c292103e8cf0b99fdc9},
+abstract = {Accurate estimation of microbial community composition based on metagenomic sequencing data is fundamental for subsequent metagenomics analysis. Prevalent estimation methods are mainly based on directly summarizing alignment results or its variants; often result in biased and/or unstable estimates. We have developed a unified probabilistic framework (named GRAMMy) by explicitly modeling read assignment ambiguities, genome size biases and read distributions along the genomes. Maximum likelihood method is employed to compute Genome Relative Abundance of microbial communities using the Mixture Model theory (GRAMMy). GRAMMy has been demonstrated to give estimates that are accurate and robust across both simulated and real read benchmark datasets. We applied GRAMMy to a collection of 34 metagenomic read sets from four metagenomics projects and identified 99 frequent species (minimally 0.5% abundant in at least 50% of the data- sets) in the human gut samples. Our results show substantial improvements over previous studies, such as adjusting the over-estimated abundance for Bacteroides species for human gut samples, by providing a new reference-based strategy for metagenomic sample comparisons. GRAMMy can be used flexibly with many read assignment tools (mapping, alignment or composition-based) even with low-sensitivity mapping results from huge short-read datasets. It will be increasingly useful as an accurate and robust tool for abundance estimation with the growing size of read sets and the expanding database of reference genomes.},
+author = {L. C. Xia and Jacob A. Cram and Ting Chen and J. Fuhrman and Fengzhu Sun},
+doi = {10.1371/journal.pone.0027992},
+pmid = {22162995},
+}
+
+@article{e44d4b615cc1cef7ba5ccf306b9d556ccc8404af,
+title = {MetaCluster 5.0: a two-round binning approach for metagenomic data for low-abundance species in a noisy sample},
+year = {2012},
+url = {https://www.semanticscholar.org/paper/e44d4b615cc1cef7ba5ccf306b9d556ccc8404af},
+abstract = {Motivation: Metagenomic binning remains an important topic in metagenomic analysis. Existing unsupervised binning methods for next-generation sequencing (NGS) reads do not perform well on (i) samples with low-abundance species or (ii) samples (even with high abundance) when there are many extremely low-abundance species. These two problems are common for real metagenomic datasets. Binning methods that can solve these problems are desirable. Results: We proposed a two-round binning method (MetaCluster 5.0) that aims at identifying both low-abundance and high-abundance species in the presence of a large amount of noise due to many extremely low-abundance species. In summary, MetaCluster 5.0 uses a filtering strategy to remove noise from the extremely low-abundance species. It separate reads of high-abundance species from those of low-abundance species in two different rounds. To overcome the issue of low coverage for low-abundance species, multiple w values are used to group reads with overlapping w-mers, whereas reads from high-abundance species are grouped with high confidence based on a large w and then binning expands to low-abundance species using a relaxed (shorter) w. Compared to the recent tools, TOSS and MetaCluster 4.0, MetaCluster 5.0 can find more species (especially those with low abundance of say 6× to 10×) and can achieve better sensitivity and specificity using less memory and running time. Availability: http://i.cs.hku.hk/~alse/MetaCluster/ Contact: chin@cs.hku.hk},
+author = {Yi Wang and Henry C. M. Leung and S. Yiu and Francis Y. L. Chin},
+doi = {10.1093/bioinformatics/bts397},
+pmid = {22962452},
+}
+
+@article{430edb1edfd58d5caef2fb7826788cabb03159fc,
+title = {Consensus Clustering for Binning Metagenome Sequences},
+year = {2016},
+url = {https://www.semanticscholar.org/paper/430edb1edfd58d5caef2fb7826788cabb03159fc},
+abstract = {The advances in next-generation sequencing technologies allow researchers to sequence in parallel millions of microbial organisms directly from environmental samples. The result of this “shotgun” sequencing are many short DNA fragments of different organisms, which constitute the basis for the field of metagenomics. Although there are big databases with known microbial DNA that allow us classify some fragments, these databases only represent around 1% of all the species existing in the entire world. For this reason, it is important to use unsupervised methods to group the fragments with the same taxonomic levels. In this paper we focus on the binning step in metagenomics in an unsupervised way. We propose a consensus clustering method based on an iterative clustering process using different lengths of sequences in the databases and a mixture of distance as approach to finding the consensus clustering. The final performance clustering is evaluated according with the purity of clusters. The results achieved by the proposed method outperforms results obtained by simple methods and iterative methods.},
+author = {Isis Bonet and Adriana Escobar and Andrea Mesa Múnera and J. Alzate},
+doi = {10.1007/978-3-319-62428-0_23},
+}
+
+@article{9f5a01ec172c60bd314e527f8ca6c6ed84391093,
+title = {A Two-Way Bayesian Mixture Model for Clustering in Metagenomics},
+year = {2011},
+url = {https://www.semanticscholar.org/paper/9f5a01ec172c60bd314e527f8ca6c6ed84391093},
+abstract = {We present a new and efficient Bayesian mixture model based on Poisson and Multinomial distributions for clustering metagenomic reads by their species of origin. We use the relative abundance of different words along a genome to distinguish reads from different species. The distribution of word counts within a genome is accurately represented by a Poisson distribution. The Multinomial mixture model is derived as a standardized Poisson mixture model. The Bayesian network efficiently encodes the conditional dependencies between word counts in a DNA due to overlaps and hence is most consistent with the data. We present a two-way mixture model that captures the high dimensionality and sparsity associated with the data. Our method can cluster reads as short as 50 bps with accuracy over 80%. The Bayesian mixture models clearly outperform their Naive Bayes counterparts on datasets of varying abundances, divergences and read lengths. Our method attains comparable accuracy to that of state-of-art Scimm and converges at least 5 times faster than Scimm for all the cases tested. The reduced time taken, by our method, to obtain accurate results is highly significant and justifies the use of our proposed method to evaluate large metagenome datasets.},
+author = {Shruthi Prabhakara and R. Acharya},
+doi = {10.1007/978-3-642-24855-9_3},
+}
+
+@article{7698750a2f7c6980a61799d5f2374a6995d11b08,
+title = {The Effects of Novel Feature Vectors on Metagenomic Classification},
+year = {2014},
+url = {https://www.semanticscholar.org/paper/7698750a2f7c6980a61799d5f2374a6995d11b08},
+abstract = {},
+author = {K. Plis},
+}
+
+@article{83f65988b3124c9e1efbc19ef21f2fe9cd2bc169,
+title = {Unsupervised discovery of microbial population structure within metagenomes using nucleotide base composition},
+year = {2011},
+url = {https://www.semanticscholar.org/paper/83f65988b3124c9e1efbc19ef21f2fe9cd2bc169},
+abstract = {An approach to infer the unknown microbial population structure within a metagenome is to cluster nucleotide sequences based on common patterns in base composition, otherwise referred to as binning. When functional roles are assigned to the identified populations, a deeper understanding of microbial communities can be attained, more so than gene-centric approaches that explore overall functionality. In this study, we propose an unsupervised, model-based binning method with two clustering tiers, which uses a novel transformation of the oligonucleotide frequency-derived error gradient and GC content to generate coarse groups at the first tier of clustering; and tetranucleotide frequency to refine these groups at the secondary clustering tier. The proposed method has a demonstrated improvement over PhyloPythia, S-GSOM, TACOA and TaxSOM on all three benchmarks that were used for evaluation in this study. The proposed method is then applied to a pyrosequenced metagenomic library of mud volcano sediment sampled in southwestern Taiwan, with the inferred population structure validated against complementary sequencing of 16S ribosomal RNA marker genes. Finally, the proposed method was further validated against four publicly available metagenomes, including a highly complex Antarctic whale-fall bone sample, which was previously assumed to be too complex for binning prior to functional analysis.},
+author = {I. Saeed and Sen-Lin Tang and S. Halgamuge},
+doi = {10.1093/nar/gkr1204},
+pmid = {22180538},
+}
+
+@article{cef2b5acbc2454fa0d5c1f5ba42e13273823ab47,
+title = {Clustering metagenome fragments using growing self organizing map},
+year = {2013},
+url = {https://www.semanticscholar.org/paper/cef2b5acbc2454fa0d5c1f5ba42e13273823ab47},
+abstract = {The microorganism samples taken directly from environment are not easy to assemble because they contains mixtures of microorganism. If sample complexity is very high and comes from highly diverse environment, the difficulty of assembling DNA sequences is increasing since the interspecies chimeras can happen. To avoid this problem, in this research, we proposed binning based on composition using unsupervised learning. We employed trinucleotide and tetranucleotide frequency as features and GSOM algorithm as clustering method. GSOM was implemented to map features into high dimension feature space. We tested our method using small microbial community dataset. The quality of cluster was evaluated based on the following parameters : topographic error, quantization error, and error percentage. The evaluation results show that the best cluster can be obtained using GSOM and tetranucleotide.},
+author = {Marlinda Vasty Overbeek and W. Kusuma and A. Buono},
+doi = {10.1109/ICACSIS.2013.6761590},
+}
+
+@article{ddf78883ab7bc1ea49138c0d41234941cd3983a6,
+title = {MetaCluster: unsupervised binning of environmental genomic fragments and taxonomic annotation},
+year = {2010},
+url = {https://www.semanticscholar.org/paper/ddf78883ab7bc1ea49138c0d41234941cd3983a6},
+abstract = {Limited by the laboratory technique, traditional microorganism research usually focuses on one single individual species. This significantly limits the deep analysis of intricate biological processes among complex microorganism communities. With the rapid development of genome sequencing techniques, the traditional research methods of microorganisms based on the isolation and cultivation are gradually replaced by metagenomics, also known as environmental genomics. The first step, which is also the major bottleneck of metagenomic data analysis, is the identification and taxonomic characterization of the DNA fragments (reads) resulting from sequencing a sample of mixed species. This step is usually referred as "binning".
+ Existing binning methods based on sequence similarity and sequence composition markers rely heavily on the reference genomes of known microorganisms and phylogenetic markers. Due to the limited availability of reference genomes and the bias and unstableness of markers, these methods may not be applicable in all cases. Not much unsupervised binning methods are reported, but the unsupervised nature of these methods makes them extremely difficult to annotate the clusters with taxonomic labels. In this paper, we present MetaCluster 2.0, an unsupervised binning method which could bin metagenomic sequencing datasets with high accuracy, and also identify unknown genomes and annotate them with proper taxonomic labels. The running time of MetaCluster 2.0 is at least 30 times faster than existing binning algorithms.
+ MetaCluster 2.0, and all the test datasets mentioned in this paper are available at http://i.cs.hku.hk/~alse/MetaCluster/.},
+author = {Bin Yang and Yu Peng and Henry C. M. Leung and S. Yiu and J. Qin and Ruiqiang Li and Francis Y. L. Chin},
+doi = {10.1145/1854776.1854803},
+}
+
+@article{8fe8c1c86e2715ece253ddec44c19319cd3aa304,
+title = {A random-forest-based efficient comparative machine learning predictive DNA-codon metagenomics binning technique for WMD events & applications},
+year = {2013},
+url = {https://www.semanticscholar.org/paper/8fe8c1c86e2715ece253ddec44c19319cd3aa304},
+abstract = {In many counter-terrorism, or natural disasters, geographically distributed large scale sensor-based bio-chemicals agent or microorganisms target identification and prediction applications, such as in WMD events, as well as in many health care and medical applications, efficient large scale metagenomics is crucial for purpose such as rapid and timely decontamination for normal environment restoration, or rapid and timely discovery of the right drug/therapy for the injured individuals. Metagenomics is the study of all bio-chemical and organisms collected directly from large natural environments including geographically distributed disastrous ones. Most of these collected bio-chemical and organisms cannot be cultivated in a laboratory and hence cannot be sequenced as individual organisms. Thus, metagenomics methods allow relatively rapid sequencing of organism genomes obtained directly from a natural environment, and which cannot be cultured in a laboratory. Sequencing random fragments obtained from whole genome shotgun into taxa-based groups is known as binning. Currently, there are two different methods of binning: sequence similarity methods and sequence composition methods. Sequence similarity methods are usually based on sequence alignment to known genome like BLAST, or MEGAN. Sequence composition methods are based on compositional features of a given DNA sequence like K-mers, or other genomic signature(s) like TETRA, Phylopythia, CompostBin, likelyBin. In this paper we propose a machine learning predictive DNA sequence feature selection algorithms to solve binning problems. In our prior work we showed feature selection/reduction and binning prediction based on direct nucleotide k-mers. Here we use a combination of 2 Codons (amino acids) as features to differentiate between sequences. There are 20 different amino acids which are found proteins. The combination of 2 amino acids produce 400 features which we use to differentiate between the metagenomics sequence. The data reads used in this work has an average length of 250, 500, 1000, and 2000 base pairs. Experimental results of the codon-based feature reduction and binning prediction algorithms, namely using respectively a Random forest classifier and a Bayes classifier, are presented along with their comparison to their DNA-based k-mers counterparts. The proposed algorithm accuracy is tested on a variety of data sets and our findings show that the classification/prediction accuracy achieved is between 59%-92% for various data sets using Random forest classifier and 44%-64% using Naïve Bayes classifier. Random forest Classifier did better in classification in all the datasets compared to Naïve Bayes.},
+author = {Helal Saghir and D. Megherbi},
+doi = {10.1109/THS.2013.6698995},
+}
+
+@article{fe54ba47a1875ed73fcf471eca699063cedad017,
+title = {The Binning of Metagenomic Contigs for Microbial Physiology of Mixed Cultures},
+year = {2012},
+url = {https://www.semanticscholar.org/paper/fe54ba47a1875ed73fcf471eca699063cedad017},
+abstract = {So far, microbial physiology has dedicated itself mainly to pure cultures. In nature, cross feeding and competition are important aspects of microbial physiology and these can only be addressed by studying complete communities such as enrichment cultures. Metagenomic sequencing is a powerful tool to characterize such mixed cultures. In the analysis of metagenomic data, well established algorithms exist for the assembly of short reads into contigs and for the annotation of predicted genes. However, the binning of the assembled contigs or unassembled reads is still a major bottleneck and required to understand how the overall metabolism is partitioned over different community members. Binning consists of the clustering of contigs or reads that apparently originate from the same source population. In the present study eight metagenomic samples from the same habitat, a laboratory enrichment culture, were sequenced. Each sample contained 13–23 Mb of assembled contigs and up to eight abundant populations. Binning was attempted with existing methods but they were found to produce poor results, were slow, dependent on non-standard platforms or produced errors. A new binning procedure was developed based on multivariate statistics of tetranucleotide frequencies combined with the use of interpolated Markov models. Its performance was evaluated by comparison of the results between samples with BLAST and in comparison to existing algorithms for four publicly available metagenomes and one previously published artificial metagenome. The accuracy of the new approach was comparable or higher than existing methods. Further, it was up to a 100 times faster. It was implemented in Java Swing as a complete open source graphical binning application available for download and further development (http://sourceforge.net/projects/metawatt).},
+author = {M. Strous and B. Kraft and Regina Bisdorf and H. E. Tegetmeyer},
+doi = {10.3389/fmicb.2012.00410},
+pmid = {23227024},
+}
+
+@article{68781603d6b496c954fdccae212d050b7b4b92af,
+title = {Iterative Clustering Method for Metagenomic Sequences},
+year = {2014},
+url = {https://www.semanticscholar.org/paper/68781603d6b496c954fdccae212d050b7b4b92af},
+abstract = {Metagenomics studies microbial DNA of environmental samples. The sequencing tools produce a set of genome fragments providing a challenge for metagenomics to associate them with the corresponding phylogenetic group. To solve this problem there are binning methods, which are classified into two sequencing categories: similarity and composition. This paper proposes an iterative clustering method, which aim at achieving a low sensitivity of clusters. The approach consists of iteratively run k-means reducing the training data in each step. Selection of data for next iteration depends on the result obtained in the previous, which is based on the compactness measure. The final performance clustering is evaluated according with the sensitivity of clusters. The results demonstrate that proposed model is better than the simple k-means for metagenome databases.},
+author = {Isis Bonet and Widerman Montoya and Andrea Mesa Múnera and J. Alzate},
+doi = {10.1007/978-3-319-13817-6_15},
+}
+
+@article{9d51c67332eeabefd9b278946dfcac0b529f72f0,
+title = {MBBC: an efficient approach for metagenomic binning based on clustering},
+year = {2015},
+url = {https://www.semanticscholar.org/paper/9d51c67332eeabefd9b278946dfcac0b529f72f0},
+abstract = {BackgroundBinning environmental shotgun reads is one of the most fundamental tasks in metagenomic studies, in which mixed reads from different species or operational taxonomical units (OTUs) are separated into different groups. While dozens of binning methods are available, there is still room for improvement.ResultsWe developed a novel taxonomy-independent approach called MBBC (Metagenomic Binning Based on Clustering) to cluster environmental shotgun reads, by considering k-mer frequency in reads and Markov properties of the inferred OTUs. Tested on twelve simulated datasets, MBBC reliably estimated the species number, the genome size, and the relative abundance of each species, independent of whether there are errors in reads. Tested on multiple experimental datasets, MBBC outperformed two state-of-the-art taxonomy-independent methods, in terms of the accuracy of the estimated species number, genome sizes, and percentages of correctly assigned reads, among other metrics.ConclusionsWe have developed a novel method for binning metagenomic reads based on clustering. This method is demonstrated to reliably predict species numbers, genome sizes, relative species abundances, and k-mer coverage in simple datasets. Our method also has a high accuracy in read binning. The MBBC software is freely available at http://eecs.ucf.edu/~xiaoman/MBBC/MBBC.html.},
+author = {Y. Wang and Haiyan Hu and X. Li},
+doi = {10.1186/s12859-015-0473-8},
+pmid = {25652152},
+}
+
+@article{03f1a681848039be618e3660e4b052d58eceefc5,
+title = {Genomic signatures for metagenomic data analysis: Exploiting the reverse complementarity of tetranucleotides},
+year = {2011},
+url = {https://www.semanticscholar.org/paper/03f1a681848039be618e3660e4b052d58eceefc5},
+abstract = {Metagenomics studies microbial communities by analyzing their genomic content directly sequenced from the environment. To this aim metagenomic datasets, consisting of many short DNA or RNA fragments, are computationally analyzed using statistical and machine learning methods with the general purpose of binning or taxonomic annotation. Many of these methods act on features derived from the data through a genomic signature, where a typical genomic signature of a fragment is a vector whose entries specify the frequency with which oligonucleotides appear in that fragment. In this article we analyze experimentally the ability of existing genomic signatures to facilitate the discrimination between fragments belonging to different genomes. We also propose new genomic signatures that take into account that fragments can have been sequenced from both strands of a genome; this is achieved by exploiting the reverse complementarity of oligonucleotides. We conduct extensive experiments on in silico sampled genomic fragments in order to assess comparatively the effectiveness of existing genomic signatures and those proposed in this article. Results of the experiments indicate that the direct use of the reverse complementarity of tetranucleotides in the definition of a genome signatures allows to have performances comparable to the best existing signatures using less features. Therefore the proposed genomic signatures provide an alternative set of features for analyzing metagenomic data. Online Supplementary material is available at http://www.cs.ru.nl/∼gori/signature metagenomics/.},
+author = {Fabio Gori and Dimitrios Mavroedis and M. Jetten and E. Marchiori},
+doi = {10.1109/ISB.2011.6033147},
+}
+
+@article{b09e92f6a195e86bc75163f20da80a880db65e53,
+title = {An efficient comparative machine learning-based metagenomics binning technique via using Random forest},
+year = {2013},
+url = {https://www.semanticscholar.org/paper/b09e92f6a195e86bc75163f20da80a880db65e53},
+abstract = {Metagenomics is the study of microorganisms collected directly from natural environments. Metagenomics studies use DNA fragments obtained directly from a natural environment using whole genome shotgun (WGS) sequencing. Sequencing random fragments obtained from whole genome shotgun into taxa-based groups is known as binning. Currently, there are two different methods of binning: sequence similarity methods and sequence composition methods. Sequence similarity methods are usually based on sequence alignment to known genome like BLAST, or MEGAN. As only a very small fraction of species is available in the current databases, similarity methods do not yield good results. As a given database of organisms grows, the complexity of the search will also grow. Sequence composition methods are based on compositional features of a given DNA sequence like K-mers, or other genomic signature(s). Most of these current methods for binning have two major issues: they do not work well with short sequences and closely related genomes. In this paper we propose new machine learning related predictive DNA sequence feature selection algorithms to solve binning problems in more accurate and efficient ways. In this work we use Oligonucleotide frequencies from 2-mers to 4-mers as features to differentiate between sequences. 2-mers produces 16 features, 3-mers produces 64 features and 4-mers produces 256 features. We did not use feature higher than 4-mers as the number of feature increases exponentially and for 5-mers the number of feature would be 1024 features. We found out that the 4-mers produces better results than 2-mers and 3-mers. The data used in this work has an average length of 250, 500, 1000, and 2000 base pairs. Experimental results of the proposed algorithms are presented to show the potential value of the proposed methods. The proposed algorithm accuracy is tested on a variety of data sets and the classification/prediction accuracy achieved is between 78% - 99% for various simulated data sets using Random forest classifier and 37% - 95% using Naïve Bayes classifier. Random forest Classifier did better in classification in all the dataset compared to Naïve Bayes.},
+author = {Helal Saghir and D. Megherbi},
+doi = {10.1109/CIVEMSA.2013.6617419},
+}
+
+@article{31910ccbf3edbcfde56b367fcabf1e6803093491,
+title = {Binning sequences using very sparse labels within a metagenome},
+year = {2008},
+url = {https://www.semanticscholar.org/paper/31910ccbf3edbcfde56b367fcabf1e6803093491},
+abstract = {BackgroundIn metagenomic studies, a process called binning is necessary to assign contigs that belong to multiple species to their respective phylogenetic groups. Most of the current methods of binning, such as BLAST, k-mer and PhyloPythia, involve assigning sequence fragments by comparing sequence similarity or sequence composition with already-sequenced genomes that are still far from comprehensive. We propose a semi-supervised seeding method for binning that does not depend on knowledge of completed genomes. Instead, it extracts the flanking sequences of highly conserved 16S rRNA from the metagenome and uses them as seeds (labels) to assign other reads based on their compositional similarity.ResultsThe proposed seeding method is implemented on an unsupervised Growing Self-Organising Map (GSOM), and called Seeded GSOM (S-GSOM). We compared it with four well-known semi-supervised learning methods in a preliminary test, separating random-length prokaryotic sequence fragments sampled from the NCBI genome database. We identified the flanking sequences of the highly conserved 16S rRNA as suitable seeds that could be used to group the sequence fragments according to their species. S-GSOM showed superior performance compared to the semi-supervised methods tested. Additionally, S-GSOM may also be used to visually identify some species that do not have seeds.The proposed method was then applied to simulated metagenomic datasets using two different confidence threshold settings and compared with PhyloPythia, k-mer and BLAST. At the reference taxonomic level Order, S-GSOM outperformed all k-mer and BLAST results and showed comparable results with PhyloPythia for each of the corresponding confidence settings, where S-GSOM performed better than PhyloPythia in the ≥ 10 reads datasets and comparable in the ≥ 8 kb benchmark tests.ConclusionIn the task of binning using semi-supervised learning methods, results indicate S-GSOM to be the best of the methods tested. Most importantly, the proposed method does not require knowledge from known genomes and uses only very few labels (one per species is sufficient in most cases), which are extracted from the metagenome itself. These advantages make it a very attractive binning method. S-GSOM outperformed the binning methods that depend on already-sequenced genomes, and compares well to the current most advanced binning method, PhyloPythia.},
+author = {C. K. Chan and A. Hsu and S. Halgamuge and Sen-Lin Tang},
+doi = {10.1186/1471-2105-9-215},
+pmid = {18442374},
+}
+
+@article{c6780952f7105b0d4bb339b509106594f6f14883,
+title = {Unsupervised statistical clustering of environmental shotgun sequences},
+year = {2009},
+url = {https://www.semanticscholar.org/paper/c6780952f7105b0d4bb339b509106594f6f14883},
+abstract = {BackgroundThe development of effective environmental shotgun sequence binning methods remains an ongoing challenge in algorithmic analysis of metagenomic data. While previous methods have focused primarily on supervised learning involving extrinsic data, a first-principles statistical model combined with a self-training fitting method has not yet been developed.ResultsWe derive an unsupervised, maximum-likelihood formalism for clustering short sequences by their taxonomic origin on the basis of their k-mer distributions. The formalism is implemented using a Markov Chain Monte Carlo approach in a k-mer feature space. We introduce a space transformation that reduces the dimensionality of the feature space and a genomic fragment divergence measure that strongly correlates with the method's performance. Pairwise analysis of over 1000 completely sequenced genomes reveals that the vast majority of genomes have sufficient genomic fragment divergence to be amenable for binning using the present formalism. Using a high-performance implementation, the binner is able to classify fragments as short as 400 nt with accuracy over 90% in simulations of low-complexity communities of 2 to 10 species, given sufficient genomic fragment divergence. The method is available as an open source package called LikelyBin.ConclusionAn unsupervised binning method based on statistical signatures of short environmental sequences is a viable stand-alone binning method for low complexity samples. For medium and high complexity samples, we discuss the possibility of combining the current method with other methods as part of an iterative process to enhance the resolving power of sorting reads into taxonomic and/or functional bins.},
+author = {Andrey Kislyuk and Srijak Bhatnagar and J. Dushoff and J. Weitz},
+doi = {10.1186/1471-2105-10-316},
+pmid = {19799776},
+}
+
+@article{494db48791cd4de7f3b5ce32494b097869912884,
+title = {Gene prediction with Glimmer for metagenomic sequences augmented by classification and clustering},
+year = {2011},
+url = {https://www.semanticscholar.org/paper/494db48791cd4de7f3b5ce32494b097869912884},
+abstract = {Environmental shotgun sequencing (or metagenomics) is widely used to survey the communities of microbial organisms that live in many diverse ecosystems, such as the human body. Finding the protein-coding genes within the sequences is an important step for assessing the functional capacity of a metagenome. In this work, we developed a metagenomics gene prediction system Glimmer-MG that achieves significantly greater accuracy than previous systems via novel approaches to a number of important prediction subtasks. First, we introduce the use of phylogenetic classifications of the sequences to model parameterization. We also cluster the sequences, grouping together those that likely originated from the same organism. Analogous to iterative schemes that are useful for whole genomes, we retrain our models within each cluster on the initial gene predictions before making final predictions. Finally, we model both insertion/deletion and substitution sequencing errors using a different approach than previous software, allowing Glimmer-MG to change coding frame or pass through stop codons by predicting an error. In a comparison among multiple gene finding methods, Glimmer-MG makes the most sensitive and precise predictions on simulated and real metagenomes for all read lengths and error rates tested.},
+author = {David R. Kelley and Bo Liu and A. Delcher and M. Pop and S. Salzberg},
+doi = {10.1093/nar/gkr1067},
+pmid = {22102569},
+}
+
+@article{bccd2dbd9b645ee1167fd92fd06710c2abc8e98b,
+title = {Big data biology-based predictive models Via DNA-metagenomics binning for WMD events applications},
+year = {2015},
+url = {https://www.semanticscholar.org/paper/bccd2dbd9b645ee1167fd92fd06710c2abc8e98b},
+abstract = {In WMD events or natural disasters, identifying bio-chemicals and microorganisms rapidly is crucial. Metagenomics is the study of microorganisms collected directly from natural environments using whole genome shotgun (WGS) sequencing. Metagenomics methods allow sequencing of organism genomes which cannot be cultured in a laboratory. Grouping random fragments obtained from whole shotgun genome data into groups is known as binning. Metagenomics methods allow quick sequencing of microbes obtained from natural disaster sites to identify microbes and provide rapid and timely response, in terms, for examples, for rapid environment cleanup/restoration, rapid quarantine of objects/animals/humans, recovery, etc. In this paper we propose machine learning related predictive DNA sequence feature selection algorithms to solve binning problems in more accurate and efficient ways. Here we use sub-sequences blocks extracted from organism protein domains as features. We analyze and compare binning prediction results obtained by using k-mers, by using codons, and by using sub-sequences blocks derived from conserved protein domains. We show here, that sub-sequences blocks derived from conserved protein domains give better prediction accuracy than k-mers or codons. We also showed comparative analysis of binning predictive models using Naïve Bayes Classifier and Random Forest Classifier with feature set derived from conserved protein domain. Our analysis shows that using the Random Forest classifier, results in better classification accuracy than using the Naïve Bayes classifier.},
+author = {Helal Saghir and D. Megherbi},
+doi = {10.1109/THS.2015.7225313},
+}
+
+@article{f491adc95031e419263edd918a1e0753bac801f3,
+title = {A robust and accurate binning algorithm for metagenomic sequences with arbitrary species abundance ratio},
+year = {2011},
+url = {https://www.semanticscholar.org/paper/f491adc95031e419263edd918a1e0753bac801f3},
+abstract = {MOTIVATION
+With the rapid development of next-generation sequencing techniques, metagenomics, also known as environmental genomics, has emerged as an exciting research area that enables us to analyze the microbial environment in which we live. An important step for metagenomic data analysis is the identification and taxonomic characterization of DNA fragments (reads or contigs) resulting from sequencing a sample of mixed species. This step is referred to as 'binning'. Binning algorithms that are based on sequence similarity and sequence composition markers rely heavily on the reference genomes of known microorganisms or phylogenetic markers. Due to the limited availability of reference genomes and the bias and low availability of markers, these algorithms may not be applicable in all cases. Unsupervised binning algorithms which can handle fragments from unknown species provide an alternative approach. However, existing unsupervised binning algorithms only work on datasets either with balanced species abundance ratios or rather different abundance ratios, but not both.
+
+
+RESULTS
+In this article, we present MetaCluster 3.0, an integrated binning method based on the unsupervised top--down separation and bottom--up merging strategy, which can bin metagenomic fragments of species with very balanced abundance ratios (say 1:1) to very different abundance ratios (e.g. 1:24) with consistently higher accuracy than existing methods.
+
+
+AVAILABILITY
+MetaCluster 3.0 can be downloaded at http://i.cs.hku.hk/~alse/MetaCluster/.},
+author = {Henry C. M. Leung and S. Yiu and Bin Yang and Yu Peng and Yi Wang and Zhihua Liu and Jing-Chi Chen and J. Qin and Ruiqiang Li and Francis Y. L. Chin},
+doi = {10.1093/bioinformatics/btr186},
+pmid = {21493653},
+}
+
+@article{c9af94059f333a34c4efddff22d2ac9680eda664,
+title = {Learning with differential privacy},
+year = {2016},
+url = {https://www.semanticscholar.org/paper/c9af94059f333a34c4efddff22d2ac9680eda664},
+abstract = {While machine learning has proven to be a powerful data-driven solution to many real-life problems, its use in sensitive domains has been limited due to privacy concerns. A popular approach known a...},
+author = {WangYu-Xiang and LeiJing and E. FienbergStephen},
+}
+
+@article{7b41db05e0cc013979d2269db4c3baf710982a44,
+title = {A New Unsupervised Binning Approach for Metagenomic Sequences Based on N-grams and Automatic Feature Weighting},
+year = {2014},
+url = {https://www.semanticscholar.org/paper/7b41db05e0cc013979d2269db4c3baf710982a44},
+abstract = {The rapid development of high-throughput technologies enables researchers to sequence the whole metagenome of a microbial community sampled directly from the environment. The assignment of these sequence reads into different species or taxonomical classes is a crucial step for metagenomic analysis, which is referred to as binning of metagenomic data. Most traditional binning methods rely on known reference genomes for accurate assignment of the sequence reads, therefore cannot classify reads from unknown species without the help of close references. To overcome this drawback, unsupervised learning based approaches have been proposed, which need not any known species' reference genome for help. In this paper, we introduce a novel unsupervised method called MCluster for binning metagenomic sequences. This method uses N-grams to extract sequence features and utilizes automatic feature weighting to improve the performance of the basic K-means clustering algorithm. We evaluate MCluster on a variety of simulated data sets and a real data set, and compare it with three latest binning methods: AbundanceBin, MetaCluster 3.0, and MetaCluster 5.0. Experimental results show that MCluster achieves obviously better overall performance ( F-measure) than AbundanceBin and MetaCluster 3.0 on long metagenomic reads ( ≥800 bp); while compared with MetaCluster 5.0, MCluster obtains a larger sensitivity, and a comparable yet more stable F-measure on short metagenomic reads ( bp). This suggests that MCluster can serve as a promising tool for effectively binning metagenomic sequences.},
+author = {Ruiqi Liao and Ruichang Zhang and J. Guan and Shuigeng Zhou},
+doi = {10.1109/TCBB.2013.137},
+pmid = {26355506},
+}
+
+@article{a365e88b792071ebac135cacce70fa7944a8facf,
+title = {A Novel Abundance-Based Algorithm for Binning Metagenomic Sequences Using l-Tuples},
+year = {2010},
+url = {https://www.semanticscholar.org/paper/a365e88b792071ebac135cacce70fa7944a8facf},
+abstract = {Metagenomics is the study of microbial communities sampled directly from their natural environment, without prior culturing. Among the computational tools recently developed for metagenomic sequence analysis, binning tools attempt to classify the sequences in a metagenomic dataset into different bins (i.e., species), based on various DNA composition patterns (e.g., the tetramer frequencies) of various genomes. Composition-based binning methods, however, cannot be used to classify very short fragments, because of the substantial variation of DNA composition patterns within a single genome. We developed a novel approach (AbundanceBin) for metagenomics binning by utilizing the different abundances of species living in the same environment. AbundanceBin is an application of the Lander-Waterman model to metagenomics, which is based on the l-tuple content of the reads. AbundanceBin achieved accurate, unsupervised, clustering of metagenomic sequences into different bins, such that the reads classified in a bin belong to species of identical or very similar abundances in the sample. In addition, AbundanceBin gave accurate estimations of species abundances, as well as their genome sizes-two important parameters for characterizing a microbial community. We also show that AbundanceBin performed well when the sequence lengths are very short (e.g., 75 bp) or have sequencing errors. By combining AbundanceBin and a composition-based method (MetaCluster), we can achieve even higher binning accuracy. Supplementary Material is available at www.liebertonline.com/cmb .},
+author = {Yu-Wei Wu and Yuzhen Ye},
+doi = {10.1007/978-3-642-12683-3_35},
+pmid = {21385052},
+}
+
+@article{4785a6fa3dc06e9e863ba9b8a0bca114b45031d1,
+title = {SPHINX - an algorithm for taxonomic binning of metagenomic sequences},
+year = {2011},
+url = {https://www.semanticscholar.org/paper/4785a6fa3dc06e9e863ba9b8a0bca114b45031d1},
+abstract = {MOTIVATION
+Compared with composition-based binning algorithms, the binning accuracy and specificity of alignment-based binning algorithms is significantly higher. However, being alignment-based, the latter class of algorithms require enormous amount of time and computing resources for binning huge metagenomic datasets. The motivation was to develop a binning approach that can analyze metagenomic datasets as rapidly as composition-based approaches, but nevertheless has the accuracy and specificity of alignment-based algorithms. This article describes a hybrid binning approach (SPHINX) that achieves high binning efficiency by utilizing the principles of both 'composition'- and 'alignment'-based binning algorithms.
+
+
+RESULTS
+Validation results with simulated sequence datasets indicate that SPHINX is able to analyze metagenomic sequences as rapidly as composition-based algorithms. Furthermore, the binning efficiency (in terms of accuracy and specificity of assignments) of SPHINX is observed to be comparable with results obtained using alignment-based algorithms.
+
+
+AVAILABILITY
+A web server for the SPHINX algorithm is available at http://metagenomics.atc.tcs.com/SPHINX/.},
+author = {M. H. Mohammed and T. Ghosh and Nitin Kumar Singh and S. Mande},
+doi = {10.1093/bioinformatics/btq608},
+pmid = {21030462},
+}
+
+@article{3f0c382d579cf3b1e450ad24416c0074598ea555,
+title = {TACOA – Taxonomic classification of environmental genomic fragments using a kernelized nearest neighbor approach},
+year = {2009},
+url = {https://www.semanticscholar.org/paper/3f0c382d579cf3b1e450ad24416c0074598ea555},
+abstract = {BackgroundMetagenomics, or the sequencing and analysis of collective genomes (metagenomes) of microorganisms isolated from an environment, promises direct access to the "unculturable majority". This emerging field offers the potential to lay solid basis on our understanding of the entire living world. However, the taxonomic classification is an essential task in the analysis of metagenomics data sets that it is still far from being solved. We present a novel strategy to predict the taxonomic origin of environmental genomic fragments. The proposed classifier combines the idea of the k-nearest neighbor with strategies from kernel-based learning.ResultsOur novel strategy was extensively evaluated using the leave-one-out cross validation strategy on fragments of variable length (800 bp – 50 Kbp) from 373 completely sequenced genomes. TACOA is able to classify genomic fragments of length 800 bp and 1 Kbp with high accuracy until rank class. For longer fragments ≥ 3 Kbp accurate predictions are made at even deeper taxonomic ranks (order and genus). Remarkably, TACOA also produces reliable results when the taxonomic origin of a fragment is not represented in the reference set, thus classifying such fragments to its known broader taxonomic class or simply as "unknown". We compared the classification accuracy of TACOA with the latest intrinsic classifier PhyloPythia using 63 recently published complete genomes. For fragments of length 800 bp and 1 Kbp the overall accuracy of TACOA is higher than that obtained by PhyloPythia at all taxonomic ranks. For all fragment lengths, both methods achieved comparable high specificity results up to rank class and low false negative rates are also obtained.ConclusionAn accurate multi-class taxonomic classifier was developed for environmental genomic fragments. TACOA can predict with high reliability the taxonomic origin of genomic fragments as short as 800 bp. The proposed method is transparent, fast, accurate and the reference set can be easily updated as newly sequenced genomes become available. Moreover, the method demonstrated to be competitive when compared to the most current classifier PhyloPythia and has the advantage that it can be locally installed and the reference set can be kept up-to-date.},
+author = {Naryttza N. Diaz and L. Krause and A. Goesmann and K. Niehaus and T. Nattkemper},
+doi = {10.1186/1471-2105-10-56},
+pmid = {19210774},
+}
+
+@article{a20cef47ccfbc28d973ddeb9490a63384c3bcfd3,
+title = {MetaCluster 4.0: A Novel Binning Algorithm for NGS Reads and Huge Number of Species},
+year = {2012},
+url = {https://www.semanticscholar.org/paper/a20cef47ccfbc28d973ddeb9490a63384c3bcfd3},
+abstract = {Next-generation sequencing (NGS) technologies allow the sequencing of microbial communities directly from the environment without prior culturing. The output of environmental DNA sequencing consists of many reads from genomes of different unknown species, making the clustering together reads from the same (or similar) species (also known as binning) a crucial step. The difficulties of the binning problem are due to the following four factors: (1) the lack of reference genomes; (2) uneven abundance ratio of species; (3) short NGS reads; and (4) a large number of species (can be more than a hundred). None of the existing binning tools can handle all four factors. No tools, including both AbundanceBin and MetaCluster 3.0, have demonstrated reasonable performance on a sample with more than 20 species. In this article, we introduce MetaCluster 4.0, an unsupervised binning algorithm that can accurately (with about 80% precision and sensitivity in all cases and at least 90% in some cases) and efficiently bin short reads with varying abundance ratios and is able to handle datasets with 100 species. The novelty of MetaCluster 4.0 stems from solving a few important problems: how to divide reads into groups by a probabilistic approach, how to estimate the 4-mer distribution of each group, how to estimate the number of species, and how to modify MetaCluster 3.0 to handle a large number of species. We show that Meta Cluster 4.0 is effective for both simulated and real datasets. Supplementary Material is available at www.liebertonline.com/cmb.},
+author = {Yi Wang and Henry C. M. Leung and S. Yiu and Francis Y. L. Chin},
+doi = {10.1089/cmb.2011.0276},
+pmid = {22300323},
+}
+
+@article{4d4db40299f0fa10b02829be10e81db21f668e13,
+title = {Phylogenetic Binning of Metagenome Sequence Samples},
+year = {2011},
+url = {https://www.semanticscholar.org/paper/4d4db40299f0fa10b02829be10e81db21f668e13},
+abstract = {},
+author = {A. Mchardy and Kaustubh R. Patil},
+doi = {10.1002/9781118010518.CH40},
+}
+
+@article{da7e2c208bc4fd59e6e99a6d1eff1e9eb93e96b0,
+title = {Relation Characterization Using Ontological Concepts},
+year = {2011},
+url = {https://www.semanticscholar.org/paper/da7e2c208bc4fd59e6e99a6d1eff1e9eb93e96b0},
+abstract = {This paper presents a method using the concept of AND-OR tree to characterize relations, mined from MEDLINE abstracts, using biological ontology concepts. A biological relation is expressed as a binary relation associated to two molecular biology concepts as defined in the GENIA ontology. Since a biological relation may relate different pairs of biological concepts and vice-versa, the strength of a relation which reflects the relative frequency of occurrence of the specific association within the corpus, is calculated and stored in the underlying ontological structure. A biological relation along with the degree of association is termed as fuzzy biological relation.},
+author = {M. Abulaish},
+doi = {10.1109/ITNG.2011.107},
+}

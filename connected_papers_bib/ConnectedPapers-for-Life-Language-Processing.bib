@@ -1,0 +1,384 @@
+@article{5ecf21930e5b302b99c7f7dad6bf80a78ccf17a8,
+title = {Life Language Processing: Deep Learning-based Language-agnostic Processing of Proteomics, Genomics/Metagenomics, and Human Languages},
+year = {2019},
+url = {https://www.semanticscholar.org/paper/5ecf21930e5b302b99c7f7dad6bf80a78ccf17a8},
+abstract = {Author(s): Asgari, Ehsaneddin | Advisor(s): Mofrad, Mohammad R. K. | Abstract: A broad and simple definition of `language' is a set of sequences constructed from a finite set of symbols. By this definition, biological sequences, human languages, and many sequential phenomena that exist in the world can be viewed as languages. Although this definition is simple, it includes languages employing very complicated grammars in the creation of their sequences of symbols. Examples are biophysical principles governing biological sequences (e.g., DNA, RNA, and protein sequences), as well as grammars of human languages determining the structure of clauses and sentences. This dissertation uses a language-agnostic point of view in the processing of both biological sequences and human languages. Two main strategies are adopted toward this purpose, (i) character-level, or more accurately, subsequence-level processing of languages, which allows for simple modeling of the sequence similarities based on local information or, bag-of-subsequences, (ii) language model based representation learning encoding contextual information of sequence elements using the neural network language models. I propose language-agnostic and subsequence-based language processing using the above-mentioned strategies in addressing three main research problems in proteomics, genomics/metagenomics, and natural languages using the same point-of-view.One of the main challenges in proteomics is that there exists a large gap between the number of known protein sequences and known protein structures/functions. The central question here is how to efficiently use large numbers of sequences to achieve a better performance in the structural and functional annotation of protein sequences. Here, we proposed subsequence-based representations of protein sequences and their language model-based embeddings trained over a large dataset of protein sequences, which we called protein vectors (or ProtVec). In addition, we introduced a motif discovery approach, benefiting from probabilistic segmentation of protein sequences to find functional and structural motifs. This segmentation is also inferred from large protein sequence datasets. The ProtVec approach has proved a seminal contribution in protein informatics and now is widely used for machine learning based protein structure and function annotations. We showed in different protein informatics tasks that bag-of-subsequences and protein embeddings are complementary information for language-agnostic prediction of protein structures and functions, which also achieved the state-of-the-art performance in the 2 out of 3 tasks of Critical Assessment of protein Function Annotation (CAFA) in 2018 (CAFA 3.14). Moreover, we systematically investigated the role of representation and deep learning architecture in protein secondary structure prediction from the primary sequence. Publicly available tools are provided for achieving state-of-the-art performance accuracy that can be further expanded by the community.One of the prominent challenges in metagenomics involves the host phenotypic characterization based on the associated microbial samples. Microbial communities exist almost on every accessible surface on earth, supporting, regulating, and even causing unwanted conditions (e.g., diseases) to their hosts and environments. Detection of the host phenotype and the phenotype-specific taxa from the microbial samples is the chief goal here. For instance, identifying distinctive taxa for microbiome-related diseases is considered key to the establishment of diagnosis and therapy options in precision medicine and imposes high demands on the accuracy of microbiome analysis techniques. Here, we propose two distinct language-agnostic subsequence-based processing methods for machine learning on 16S rRNA sequencing, currently the most cost-effective approach for sequencing of microbial communities. We propose alignment- and reference- free methods, called MicroPheno and DiTaxa, designed for microbial phenotype and biomarker detection, respectively. MicroPheno is a k-mer based approach achieving the state-of-the-art performance in the host phenotype prediction from 16S rRNA outperforming conventional OTU features. DiTaxa, substitutes standard OTU-clustering by segmenting 16S rRNA reads into the most frequent variable-length subsequences. We compared the performance of DiTaxa to the state-of-the-art methods in phenotype and biomarker detection, using human-associated 16S rRNA samples for periodontal disease, rheumatoid arthritis, and inflammatory bowel diseases, as well as a synthetic benchmark dataset. DiTaxa performed competitively to MicroPheno (state-of-the-art approach) in phenotype prediction while outperforming the OTU-based state-of-the-art approach in finding biomarkers in both resolution and coverage evaluated over known links from literature and synthetic benchmark datasets.The third central problem we addressed in this dissertation is focused on human languages. Many of 7000 world's natural languages are low-resource and lack digitized linguistic resources. This has put many of these human languages in danger of extinction and has motivated developing methods for automatic creation of linguistic resources and linguistic knowledge for low-resource languages. To address this problem via our language-agnostic point of view (by not treating different languages differently), we develop SuperPivot for subsequence-based linguist marker detection in parallel corpora of 1000 languages, which was the first computational investigation for linguistic resource creation in such a scale. As an example, SuperPivot was used to study the typology of tense in 1000 languages. Next, we utilized SuperPivot for the creation of the largest sentiment lexicon to date in terms of the number of covered languages (1000+ languages) achieving macro-F1 over 0.75 on word sentiment prediction for most evaluated languages, meaning that we enable sentiment analysis in many low resource languages. To ensure the usability of UniSent lexica for any new domain, we propose DomDrift, a method quantifying the semantic changes of words in the sentiment lexicon in the new domain. Next, we extend the DomDrift method to quantifying the semantic changes of all words in the language. We proposed a new metric for language comparisons based on the language word embedding graphs requiring only monolingual embeddings and word mapping between languages obtained through statistical alignment in parallel corpora. We performed language comparison for fifty natural languages and twelve genetic language variations of different organisms. As a result, natural languages of the same family were clustered together. In addition, applying the same method on organisms' genomes confirmed a high-level difference in the genetic language model of humans/animals versus plants. This method called word embedding language divergence is a step toward unsupervised or minimally supervised comparison of languages in their broad definition.},
+author = {Ehsaneddin Asgari},
+}
+
+@article{8244ba5cf236b394e437203cc6605a9e77f0aa8d,
+title = {UniSent: Universal Adaptable Sentiment Lexica for 1000+ Languages},
+year = {2019},
+url = {https://www.semanticscholar.org/paper/8244ba5cf236b394e437203cc6605a9e77f0aa8d},
+abstract = {In this paper, we introduce UniSent universal sentiment lexica for 1000+ languages. Sentiment lexica are vital for sentiment analysis in absence of document-level annotations, a very common scenario for low-resource languages. To the best of our knowledge, UniSent is the largest sentiment resource to date in terms of the number of covered languages, including many low resource ones. In this work, we use a massively parallel Bible corpus to project sentiment information from English to other languages for sentiment analysis on Twitter data. We introduce a method called DomDrift to mitigate the huge domain mismatch between Bible and Twitter by a confidence weighting scheme that uses domain-specific embeddings to compare the nearest neighbors for a candidate sentiment word in the source (Bible) and target (Twitter) domain. We evaluate the quality of UniSent in a subset of languages for which manually created ground truth was available, Macedonian, Czech, German, Spanish, and French. We show that the quality of UniSent is comparable to manually created sentiment resources when it is used as the sentiment seed for the task of word sentiment prediction on top of embedding representations. In addition, we show that emoticon sentiments could be reliably predicted in the Twitter domain using only UniSent and monolingual embeddings in German, Spanish, French, and Italian. With the publication of this paper, we release the UniSent sentiment lexica at http://language-lab.info/unisent.},
+author = {Ehsaneddin Asgari and Fabienne Braune and Christoph Ringlstetter and M. Mofrad},
+arxivid = {1904.09678},
+}
+
+@article{2e4500f936e8f48a9b7ce2f4bb9ff5231eaccc4b,
+title = {DeepPrime2Sec: Deep Learning for Protein Secondary Structure Prediction from the Primary Sequences},
+year = {2019},
+url = {https://www.semanticscholar.org/paper/2e4500f936e8f48a9b7ce2f4bb9ff5231eaccc4b},
+abstract = {Motivation Here we investigate deep learning-based prediction of protein secondary structure from the protein primary sequence. We study the function of different features in this task, including one-hot vectors, biophysical features, protein sequence embedding (ProtVec), deep contextualized embedding (known as ELMo), and the Position Specific Scoring Matrix (PSSM). In addition to the role of features, we evaluate various deep learning architectures including the following models/mechanisms and certain combinations: Bidirectional Long Short-Term Memory (BiLSTM), convolutional neural network (CNN), highway connections, attention mechanism, recurrent neural random fields, and gated multi-scale CNN. Our results suggest that PSSM concatenated to one-hot vectors are the most important features for the task of secondary structure prediction. Results Utilizing the CNN-BiLSTM network, we achieved an accuracy of 69.9% and 70.4% using ensemble top-k models, for 8-class of protein secondary structure on the CB513 dataset, the most challenging dataset for protein secondary structure prediction. Through error analysis on the best performing model, we showed that the misclassification is significantly more common at positions that undergo secondary structure transitions, which is most likely due to the inaccurate assignments of the secondary structure at the boundary regions. Notably, when ignoring amino acids at secondary structure transitions in the evaluation, the accuracy increases to 90.3%. Furthermore, the best performing model mostly mistook similar structures for one another, indicating that the deep learning model inferred high-level information on the secondary structure. Availability The developed software called DeepPrime2Sec and the used datasets are available at http://llp.berkeley.edu/DeepPrime2Sec. Contact mofrad@berkeley.edu},
+author = {Ehsaneddin Asgari and Nina Poerner and A. Mchardy and M. Mofrad},
+doi = {10.1101/705426},
+}
+
+@article{f8c8b9bfce7b6282cca00e02764889a280bf7b40,
+title = {Aligning Very Small Parallel Corpora Using Cross-Lingual Word Embeddings and a Monogamy Objective},
+year = {2018},
+url = {https://www.semanticscholar.org/paper/f8c8b9bfce7b6282cca00e02764889a280bf7b40},
+abstract = {Count-based word alignment methods, such as the IBM models or fast-align, struggle on very small parallel corpora. We therefore present an alternative approach based on cross-lingual word embeddings (CLWEs), which are trained on purely monolingual data. Our main contribution is an unsupervised objective to adapt CLWEs to parallel corpora. In experiments on between 25 and 500 sentences, our method outperforms fast-align. We also show that our fine-tuning objective consistently improves a CLWE-only baseline.},
+author = {Nina Poerner and Masoud Jalili Sabet and Benjamin Roth and Hinrich Schütze},
+doi = {10.5282/UBM/EPUB.61865},
+arxivid = {1811.00066},
+}
+
+@article{73df19c2feb455fb3df7aaec1c6ebde0c85305c6,
+title = {EpiDope: a deep neural network for linear B-cell epitope prediction},
+year = {2021},
+url = {https://www.semanticscholar.org/paper/73df19c2feb455fb3df7aaec1c6ebde0c85305c6},
+abstract = {},
+author = {Maximilian Collatz and Florian Mock and Emanuel Barth and M. Hölzer and K. Sachse and M. Marz},
+doi = {10.1093/bioinformatics/btab390},
+pmid = {34109374},
+}
+
+@article{1612a9aab9d34aa475ce8f668befc335ae35cfb3,
+title = {EmbLexChange at SemEval-2020 Task 1: Unsupervised Embedding-based Detection of Lexical Semantic Changes},
+year = {2020},
+url = {https://www.semanticscholar.org/paper/1612a9aab9d34aa475ce8f668befc335ae35cfb3},
+abstract = {This paper describes EmbLexChange, a system introduced by the “Life-Language” team for SemEval-2020 Task 1, on unsupervised detection of lexical-semantic changes. EmbLexChange is defined as the divergence between the embedding based profiles of word w (calculated with respect to a set of reference words) in the source and the target domains (source and target domains can be simply two time frames t_1 and t_2). The underlying assumption is that the lexical-semantic change of word w would affect its co-occurring words and subsequently alters the neighborhoods in the embedding spaces. We show that using a resampling framework for the selection of reference words (with conserved senses), we can more reliably detect lexical-semantic changes in English, German, Swedish, and Latin. EmbLexChange achieved second place in the binary detection of semantic changes in the SemEval-2020.},
+author = {Ehsaneddin Asgari and Christoph Ringlstetter and Hinrich Schütze},
+doi = {10.18653/v1/2020.semeval-1.24},
+arxivid = {2005.07979},
+}
+
+@article{82ae18dea6258d163774ef8a49ac44031197c9fc,
+title = {Probabilistic variable-length segmentation of protein sequences for discriminative motif discovery (DiMotif) and sequence embedding (ProtVecX)},
+year = {2018},
+url = {https://www.semanticscholar.org/paper/82ae18dea6258d163774ef8a49ac44031197c9fc},
+abstract = {In this paper, we present peptide-pair encoding (PPE), a general-purpose probabilistic segmentation of protein sequences into commonly occurring variable-length sub-sequences. The idea of PPE segmentation is inspired by the byte-pair encoding (BPE) text compression algorithm, which has recently gained popularity in subword neural machine translation. We modify this algorithm by adding a sampling framework allowing for multiple ways of segmenting a sequence. PPE segmentation steps can be learned over a large set of protein sequences (Swiss-Prot) or even a domain-specific dataset and then applied to a set of unseen sequences. This representation can be widely used as the input to any downstream machine learning tasks in protein bioinformatics. In particular, here, we introduce this representation through protein motif discovery and protein sequence embedding. (i) DiMotif: we present DiMotif as an alignment-free discriminative motif discovery method and evaluate the method for finding protein motifs in three different settings: (1) comparison of DiMotif with two existing approaches on 20 distinct motif discovery problems which are experimentally verified, (2) classification-based approach for the motifs extracted for integrins, integrin-binding proteins, and biofilm formation, and (3) in sequence pattern searching for nuclear localization signal. The DiMotif, in general, obtained high recall scores, while having a comparable F1 score with other methods in the discovery of experimentally verified motifs. Having high recall suggests that the DiMotif can be used for short-list creation for further experimental investigations on motifs. In the classification-based evaluation, the extracted motifs could reliably detect the integrins, integrin-binding, and biofilm formation-related proteins on a reserved set of sequences with high F1 scores. (ii) ProtVecX: we extend k-mer based protein vector (ProtVec) embedding to variablelength protein embedding using PPE sub-sequences. We show that the new method of embedding can marginally outperform ProtVec in enzyme prediction as well as toxin prediction tasks. In addition, we conclude that the embeddings are beneficial in protein classification tasks when they are combined with raw amino acids k-mer features.},
+author = {Ehsaneddin Asgari and A. Mchardy and M. Mofrad},
+doi = {10.1038/s41598-019-38746-w},
+pmid = {30837494},
+}
+
+@article{776b4f1d6ed07f1623831eae2849562cf4381394,
+title = {Unsupervised Statistical Machine Translation},
+year = {2018},
+url = {https://www.semanticscholar.org/paper/776b4f1d6ed07f1623831eae2849562cf4381394},
+abstract = {While modern machine translation has relied on large parallel corpora, a recent line of work has managed to train Neural Machine Translation (NMT) systems from monolingual corpora only (Artetxe et al., 2018c; Lample et al., 2018). Despite the potential of this approach for low-resource settings, existing systems are far behind their supervised counterparts, limiting their practical interest. In this paper, we propose an alternative approach based on phrase-based Statistical Machine Translation (SMT) that significantly closes the gap with supervised systems. Our method profits from the modular architecture of SMT: we first induce a phrase table from monolingual corpora through cross-lingual embedding mappings, combine it with an n-gram language model, and fine-tune hyperparameters through an unsupervised MERT variant. In addition, iterative backtranslation improves results further, yielding, for instance, 14.08 and 26.22 BLEU points in WMT 2014 English-German and English-French, respectively, an improvement of more than 7-10 BLEU points over previous unsupervised systems, and closing the gap with supervised SMT (Moses trained on Europarl) down to 2-5 BLEU points. Our implementation is available at https://github.com/artetxem/monoses.},
+author = {Mikel Artetxe and Gorka Labaka and Eneko Agirre},
+doi = {10.18653/v1/D18-1399},
+arxivid = {1809.01272},
+}
+
+@article{a763df05a150bb48c55e7d57f7fdf0243dc14e17,
+title = {CUNI Systems for the Unsupervised News Translation Task in WMT 2019},
+year = {2019},
+url = {https://www.semanticscholar.org/paper/a763df05a150bb48c55e7d57f7fdf0243dc14e17},
+abstract = {In this paper we describe the CUNI translation system used for the unsupervised news shared task of the ACL 2019 Fourth Conference on Machine Translation (WMT19). We follow the strategy of Artetxe ae at. (2018b), creating a seed phrase-based system where the phrase table is initialized from cross-lingual embedding mappings trained on monolingual data, followed by a neural machine translation system trained on synthetic parallel data. The synthetic corpus was produced from a monolingual corpus by a tuned PBMT model refined through iterative back-translation. We further focus on the handling of named entities, i.e. the part of vocabulary where the cross-lingual embedding mapping suffers most. Our system reaches a BLEU score of 15.3 on the German-Czech WMT19 shared task.},
+author = {Ivana Kvapilíková and Dominik Machácek and Ondrej Bojar},
+doi = {10.18653/v1/W19-5323},
+arxivid = {1907.12664},
+}
+
+@article{0012f93019012276fc1dfc7e5b043c0bf7428beb,
+title = {Towards Unsupervised Speech-to-text Translation},
+year = {2018},
+url = {https://www.semanticscholar.org/paper/0012f93019012276fc1dfc7e5b043c0bf7428beb},
+abstract = {We present a framework for building speech-to-text translation (ST) systems using only monolingual speech and text corpora, in other words, speech utterances from a source language and independent text from a target language. As opposed to traditional cascaded systems and end-to-end architectures, our system does not require any labeled data (i.e., transcribed source audio or parallel source and target text corpora) during training, making it especially applicable to language pairs with very few or even zero bilingual resources. The framework initializes the ST system with a cross-modal bilingual dictionary inferred from the monolingual corpora, that maps every source speech segment corresponding to a spoken word to its target text translation. For unseen source speech utterances, the system first performs word-by-word translation on each speech segment in the utterance. The translation is improved by leveraging a language model and a sequence denoising autoencoder to provide prior knowledge about the target language. Experimental results show that our unsupervised system achieves comparable BLEU scores to supervised end-to-end models despite the lack of supervision. We also provide an ablation analysis to examine the utility of each component in our system.},
+author = {Yu-An Chung and W. Weng and S. Tong and James R. Glass},
+doi = {10.1109/ICASSP.2019.8683550},
+arxivid = {1811.01307},
+}
+
+@article{dd4a0149d9994040128fde5a3b923c712fbf54b0,
+title = {DUKweb, diachronic word representations from the UK Web Archive corpus},
+year = {2021},
+url = {https://www.semanticscholar.org/paper/dd4a0149d9994040128fde5a3b923c712fbf54b0},
+abstract = {Lexical semantic change (detecting shifts in the meaning and usage of words) is an important task for social and cultural studies as well as for Natural Language Processing applications. Diachronic word embeddings (time-sensitive vector representations of words that preserve their meaning) have become the standard resource for this task. However, given the significant computational resources needed for their generation, very few resources exist that make diachronic word embeddings available to the scientific community. In this paper we present DUKweb, a set of large-scale resources designed for the diachronic analysis of contemporary English. DUKweb was created from the JISC UK Web Domain Dataset (1996–2013), a very large archive which collects resources from the Internet Archive that were hosted on domains ending in ‘.uk’. DUKweb consists of a series word co-occurrence matrices and two types of word embeddings for each year in the JISC UK Web Domain dataset. We show the reuse potential of DUKweb and its quality standards via a case study on word meaning change detection. Measurement(s) Natural Language • lexical semantic change Technology Type(s) Programming Language • word embeddings • Cosine Distance Method Factor Type(s) time period Machine-accessible metadata file describing the reported data: https://doi.org/10.6084/m9.figshare.16438863},
+author = {A. Tsakalidis and Pierpaolo Basile and Marya Bazzi and Mihai Cucuringu and Barbara McGillivray},
+doi = {10.1038/s41597-021-01047-x},
+pmid = {34654827},
+arxivid = {2107.01076},
+}
+
+@article{01dd0541e9914af5bf784d2650bd3b26e5d3f0b0,
+title = {Towards a Unified End-to-End Approach for Fully Unsupervised Cross-Lingual Sentiment Analysis},
+year = {2019},
+url = {https://www.semanticscholar.org/paper/01dd0541e9914af5bf784d2650bd3b26e5d3f0b0},
+abstract = {Sentiment analysis in low-resource languages suffers from the lack of training data. Cross-lingual sentiment analysis (CLSA) aims to improve the performance on these languages by leveraging annotated data from other languages. Recent studies have shown that CLSA can be performed in a fully unsupervised manner, without exploiting either target language supervision or cross-lingual supervision. However, these methods rely heavily on unsupervised cross-lingual word embeddings (CLWE), which has been shown to have serious drawbacks on distant language pairs (e.g. English - Japanese). In this paper, we propose an end-to-end CLSA model by leveraging unlabeled data in multiple languages and multiple domains and eliminate the need for unsupervised CLWE. Our model applies to two CLSA settings: the traditional cross-lingual in-domain setting and the more challenging cross-lingual cross-domain setting. We empirically evaluate our approach on the multilingual multi-domain Amazon review dataset. Experimental results show that our model outperforms the baselines by a large margin despite its minimal resource requirement.},
+author = {Yanlin Feng and Xiaojun Wan},
+doi = {10.18653/v1/K19-1097},
+}
+
+@article{3cc6fe58289e2e246dda394e3433362ee6775bd7,
+title = {Improving Unsupervised Neural Machine Translation with Dependency Relationships},
+year = {2020},
+url = {https://www.semanticscholar.org/paper/3cc6fe58289e2e246dda394e3433362ee6775bd7},
+abstract = {Nowadays, neural networks have been widely used in the domain of machine translation (MT) and achieved good results. Neural machine translation (NMT) models need large bilingual parallel corpora to perform training. However, in many languages or domains, such corpora are scarce. Therefore, the technology of unsupervised neural machine translation (UNMT) which does not need bilingual parallel corpora attracted wide interest. State-of-the-art UNMT models use Transformer for training and cannot learn the syntactic knowledge from the corpora. In this paper, we propose a method to improve UNMT by using dependency relationships extracted from dependency parsing. The extracted dependency relationships are concatenated with the original training data after Byte Pair Encoding (BPE) to obtain new sentence representations for UNMT training. Models that combine dependency relationships allow for a better understanding of the underlying syntactic structure in sentences and thus affect the quality of UNMT. We leverage linearized parsing trees of the training sentences in order to incorporate syntax into the Transformer architecture without modifying it. Compared with state-of-the-art UNMT method, our method increased the BLEU scores by 5.11 and 9.41 respectively on WMT 2019 English-French and German-English monolingual news corpora with 5 million sentence pairs.},
+author = {Jia Xu and Na Ye and Guiping Zhang},
+doi = {10.1007/978-3-030-60450-9_34},
+}
+
+@article{9504e21924dcc28931de568a1594eb9591ae3b05,
+title = {Rotate $\textit{King}$ to get $\textit{Queen}$: Word Relationships as Orthogonal Transformations in Embedding Space},
+year = {2019},
+url = {https://www.semanticscholar.org/paper/9504e21924dcc28931de568a1594eb9591ae3b05},
+abstract = {A notable property of word embeddings is that word relationships can exist as linear substructures in the embedding space. For example, $\textit{gender}$ corresponds to $\vec{\textit{woman}} - \vec{\textit{man}}$ and $\vec{\textit{queen}} - \vec{\textit{king}}$. This, in turn, allows word analogies to be solved arithmetically: $\vec{\textit{king}} - \vec{\textit{man}} + \vec{\textit{woman}} \approx \vec{\textit{queen}}$. This property is notable because it suggests that models trained on word embeddings can easily learn such relationships as geometric translations. However, there is no evidence that models $\textit{exclusively}$ represent relationships in this manner. We document an alternative way in which downstream models might learn these relationships: orthogonal and linear transformations. For example, given a translation vector for $\textit{gender}$, we can find an orthogonal matrix $R$, representing a rotation and reflection, such that $R(\vec{\textit{king}}) \approx \vec{\textit{queen}}$ and $R(\vec{\textit{man}}) \approx \vec{\textit{woman}}$. Analogical reasoning using orthogonal transformations is almost as accurate as using vector arithmetic; using linear transformations is more accurate than both. Our findings suggest that these transformations can be as good a representation of word relationships as translation vectors.},
+author = {Kawin Ethayarajh},
+}
+
+@article{ef696f2c85ad5844a923dbf0dc40c69059d3e8db,
+title = {Rotate King to get Queen: Word Relationships as Orthogonal Transformations in Embedding Space},
+year = {2019},
+url = {https://www.semanticscholar.org/paper/ef696f2c85ad5844a923dbf0dc40c69059d3e8db},
+abstract = {A notable property of word embeddings is that word relationships can exist as linear substructures in the embedding space. For example, ‘gender’ corresponds to v_woman - v_man and v_queen - v_king. This, in turn, allows word analogies to be solved arithmetically: v_king - v_man + v_woman = v_queen. This property is notable because it suggests that models trained on word embeddings can easily learn such relationships as geometric translations. However, there is no evidence that models exclusively represent relationships in this manner. We document an alternative way in which downstream models might learn these relationships: orthogonal and linear transformations. For example, given a translation vector for ‘gender’, we can find an orthogonal matrix R, representing a rotation and reflection, such that R(v_king) = v_queen and R(v_man) = v_woman. Analogical reasoning using orthogonal transformations is almost as accurate as using vector arithmetic; using linear transformations is more accurate than both. Our findings suggest that these transformations can be as good a representation of word relationships as translation vectors.},
+author = {Kawin Ethayarajh},
+doi = {10.18653/v1/D19-1354},
+arxivid = {1909.00504},
+}
+
+@article{8897df72881ad61f8d8a22bb1e1d78eeddf1ff1c,
+title = {A Multilingual BPE Embedding Space for Universal Sentiment Lexicon Induction},
+year = {2019},
+url = {https://www.semanticscholar.org/paper/8897df72881ad61f8d8a22bb1e1d78eeddf1ff1c},
+abstract = {We present a new method for sentiment lexicon induction that is designed to be applicable to the entire range of typological diversity of the world’s languages. We evaluate our method on Parallel Bible Corpus+ (PBC+), a parallel corpus of 1593 languages. The key idea is to use Byte Pair Encodings (BPEs) as basic units for multilingual embeddings. Through zero-shot transfer from English sentiment, we learn a seed lexicon for each language in the domain of PBC+. Through domain adaptation, we then generalize the domain-specific lexicon to a general one. We show – across typologically diverse languages in PBC+ – good quality of seed and general-domain sentiment lexicons by intrinsic and extrinsic and by automatic and human evaluation. We make freely available our code, seed sentiment lexicons for all 1593 languages and induced general-domain sentiment lexicons for 200 languages.},
+author = {Mengjie Zhao and Hinrich Schütze},
+doi = {10.18653/v1/P19-1341},
+}
+
+@article{f6602ea4135a2d10b7ebf5d4684e7ebae42d4c1a,
+title = {Unsupervised Joint Training of Bilingual Word Embeddings},
+year = {2019},
+url = {https://www.semanticscholar.org/paper/f6602ea4135a2d10b7ebf5d4684e7ebae42d4c1a},
+abstract = {State-of-the-art methods for unsupervised bilingual word embeddings (BWE) train a mapping function that maps pre-trained monolingual word embeddings into a bilingual space. Despite its remarkable results, unsupervised mapping is also well-known to be limited by the original dissimilarity between the word embedding spaces to be mapped. In this work, we propose a new approach that trains unsupervised BWE jointly on synthetic parallel data generated through unsupervised machine translation. We demonstrate that existing algorithms that jointly train BWE are very robust to noisy training data and show that unsupervised BWE jointly trained significantly outperform unsupervised mapped BWE in several cross-lingual NLP tasks.},
+author = {Benjamin Marie and Atsushi Fujita},
+doi = {10.18653/v1/P19-1312},
+}
+
+@article{6c081a3b010c300e90582d2359036f960ca73210,
+title = {The LMU Munich System for the WMT20 Very Low Resource Supervised MT Task},
+year = {2020},
+url = {https://www.semanticscholar.org/paper/6c081a3b010c300e90582d2359036f960ca73210},
+abstract = {We present our systems for the WMT20 Very Low Resource MT Task for translation between German and Upper Sorbian. For training our systems, we generate synthetic data by both back- and forward-translation. Additionally, we enrich the training data with German-Czech translated from Czech to Upper Sorbian by an unsupervised statistical MT system incorporating orthographically similar word pairs and transliterations of OOV words. Our best translation system between German and Sorbian is based on transfer learning from a Czech-German system and scores 12 to 13 BLEU higher than a baseline system built using the available parallel data only.},
+author = {Jindřich Libovický and Viktor Hangya and Helmut Schmid and Alexander M. Fraser},
+}
+
+@article{778c4283106852ff4bd95a5b7c4dc34db3d6ad2b,
+title = {Unsupervised Neural Machine Translation Initialized by Unsupervised Statistical Machine Translation},
+year = {2018},
+url = {https://www.semanticscholar.org/paper/778c4283106852ff4bd95a5b7c4dc34db3d6ad2b},
+abstract = {Recent work achieved remarkable results in training neural machine translation (NMT) systems in a fully unsupervised way, with new and dedicated architectures that rely on monolingual corpora only. In this work, we propose to define unsupervised NMT (UNMT) as NMT trained with the supervision of synthetic bilingual data. Our approach straightforwardly enables the use of state-of-the-art architectures proposed for supervised NMT by replacing human-made bilingual data with synthetic bilingual data for training. We propose to initialize the training of UNMT with synthetic bilingual data generated by unsupervised statistical machine translation (USMT). The UNMT system is then incrementally improved using back-translation. Our preliminary experiments show that our approach achieves a new state-of-the-art for unsupervised machine translation on the WMT16 German--English news translation task, for both translation directions.},
+author = {Benjamin Marie and Atsushi Fujita},
+arxivid = {1810.12703},
+}
+
+@article{cce3ae8c53fc57f45800659586149ced9856a8fe,
+title = {Bilingual Lexicon Induction through Unsupervised Machine Translation},
+year = {2019},
+url = {https://www.semanticscholar.org/paper/cce3ae8c53fc57f45800659586149ced9856a8fe},
+abstract = {A recent research line has obtained strong results on bilingual lexicon induction by aligning independently trained word embeddings in two languages and using the resulting cross-lingual embeddings to induce word translation pairs through nearest neighbor or related retrieval methods. In this paper, we propose an alternative approach to this problem that builds on the recent work on unsupervised machine translation. This way, instead of directly inducing a bilingual lexicon from cross-lingual embeddings, we use them to build a phrase-table, combine it with a language model, and use the resulting machine translation system to generate a synthetic parallel corpus, from which we extract the bilingual lexicon using statistical word alignment techniques. As such, our method can work with any word embedding and cross-lingual mapping technique, and it does not require any additional resource besides the monolingual corpus used to train the embeddings. When evaluated on the exact same cross-lingual embeddings, our proposed method obtains an average improvement of 6 accuracy points over nearest neighbor and 4 points over CSLS retrieval, establishing a new state-of-the-art in the standard MUSE dataset.},
+author = {Mikel Artetxe and Gorka Labaka and Eneko Agirre},
+doi = {10.18653/v1/P19-1494},
+arxivid = {1907.10761},
+}
+
+@article{acf047306f0772651d2a255174fe2beb79eed3bb,
+title = {Supervised and Unsupervised Machine Translation for Myanmar-English and Khmer-English},
+year = {2019},
+url = {https://www.semanticscholar.org/paper/acf047306f0772651d2a255174fe2beb79eed3bb},
+abstract = {This paper presents the NICT’s supervised and unsupervised machine translation systems for the WAT2019 Myanmar-English and Khmer-English translation tasks. For all the translation directions, we built state-of-the-art supervised neural (NMT) and statistical (SMT) machine translation systems, using monolingual data cleaned and normalized. Our combination of NMT and SMT performed among the best systems for the four translation directions. We also investigated the feasibility of unsupervised machine translation for low-resource and distant language pairs and confirmed observations of previous work showing that unsupervised MT is still largely unable to deal with them.},
+author = {Benjamin Marie and Hour Kaing and A. M. Mon and Chenchen Ding and Atsushi Fujita and M. Utiyama and E. Sumita},
+doi = {10.18653/v1/D19-5206},
+}
+
+@article{8b706ebc2f659c71e85714a57a564fdfaf95a0b5,
+title = {Learning Unsupervised Word Mapping via Maximum Mean Discrepancy},
+year = {2019},
+url = {https://www.semanticscholar.org/paper/8b706ebc2f659c71e85714a57a564fdfaf95a0b5},
+abstract = {Cross-lingual word embeddings aim at capturing common linguistic regularities of different languages. Recently, it has been shown that these embeddings can be effectively learned by aligning two disjoint monolingual vector spaces through a simple linear transformation (word mapping). In this work, we focus on learning such a word mapping without any supervision signal. Most previous work of this task adopts adversarial training or parametric metrics to perform distribution-matching, which typically requires a sophisticated alternate optimization process, either in the form of minmax game or intermediate density estimation. This alternate optimization process is relatively hard and unstable. In order to avoid such sophisticated alternate optimization, we propose to learn unsupervised word mapping by directly minimize the maximum mean discrepancy between the distribution of the transferred embedding and target embedding. Extensive experimental results show that our proposed model can substantially outperform several state-of-the-art unsupervised systems, and even achieves competitive performance compared to supervised methods. Further analysis demonstrates the effectiveness of our approach in improving stability.},
+author = {Pengcheng Yang and Fuli Luo and Shuangzhi Wu and Jingjing Xu and Dongdong Zhang},
+doi = {10.1007/978-3-030-32233-5_23},
+}
+
+@article{26dc008b3f013da1a923c390b1cb9f2ab81cf973,
+title = {Explicit Cross-lingual Pre-training for Unsupervised Machine Translation},
+year = {2019},
+url = {https://www.semanticscholar.org/paper/26dc008b3f013da1a923c390b1cb9f2ab81cf973},
+abstract = {Pre-training has proven to be effective in unsupervised machine translation due to its ability to model deep context information in cross-lingual scenarios. However, the cross-lingual information obtained from shared BPE spaces is inexplicit and limited. In this paper, we propose a novel cross-lingual pre-training method for unsupervised machine translation by incorporating explicit cross-lingual training signals. Specifically, we first calculate cross-lingual n-gram embeddings and infer an n-gram translation table from them. With those n-gram translation pairs, we propose a new pre-training model called Cross-lingual Masked Language Model (CMLM), which randomly chooses source n-grams in the input text stream and predicts their translation candidates at each time step. Experiments show that our method can incorporate beneficial cross-lingual information into pre-trained models. Taking pre-trained CMLM models as the encoder and decoder, we significantly improve the performance of unsupervised machine translation.},
+author = {Shuo Ren and Yu Wu and Shujie Liu and M. Zhou and Shuai Ma},
+doi = {10.18653/v1/D19-1071},
+arxivid = {1909.00180},
+}
+
+@article{25391037c39a74e649649d32f63b92a5a377255e,
+title = {Emerging Cross-lingual Structure in Pretrained Language Models},
+year = {2019},
+url = {https://www.semanticscholar.org/paper/25391037c39a74e649649d32f63b92a5a377255e},
+abstract = {We study the problem of multilingual masked language modeling, i.e. the training of a single model on concatenated text from multiple languages, and present a detailed study of several factors that influence why these models are so effective for cross-lingual transfer. We show, contrary to what was previously hypothesized, that transfer is possible even when there is no shared vocabulary across the monolingual corpora and also when the text comes from very different domains. The only requirement is that there are some shared parameters in the top layers of the multi-lingual encoder. To better understand this result, we also show that representations from monolingual BERT models in different languages can be aligned post-hoc quite effectively, strongly suggesting that, much like for non-contextual word embeddings, there are universal latent symmetries in the learned embedding spaces. For multilingual masked language modeling, these symmetries are automatically discovered and aligned during the joint training process.},
+author = {Shijie Wu and Alexis Conneau and Haoran Li and Luke Zettlemoyer and Veselin Stoyanov},
+doi = {10.18653/v1/2020.acl-main.536},
+arxivid = {1911.01464},
+}
+
+@article{faa841fea2213c7be503ce7a5bfb7bf80cf07d5b,
+title = {The LMU Munich Unsupervised Machine Translation System for WMT19},
+year = {2019},
+url = {https://www.semanticscholar.org/paper/faa841fea2213c7be503ce7a5bfb7bf80cf07d5b},
+abstract = {We describe LMU Munich’s machine translation system for German→Czech translation which was used to participate in the WMT19 shared task on unsupervised news translation. We train our model using monolingual data only from both languages. The final model is an unsupervised neural model using established techniques for unsupervised translation such as denoising autoencoding and online back-translation. We bootstrap the model with masked language model pretraining and enhance it with back-translations from an unsupervised phrase-based system which is itself bootstrapped using unsupervised bilingual word embeddings.},
+author = {Dario Stojanovski and Viktor Hangya and Matthias Huck and Alexander M. Fraser},
+doi = {10.18653/v1/W19-5344},
+}
+
+@article{58aff08ffa4db37f0a965b9f0e33c7c24cf34c16,
+title = {Unsupervised Bilingual Word Embedding Agreement for Unsupervised Neural Machine Translation},
+year = {2019},
+url = {https://www.semanticscholar.org/paper/58aff08ffa4db37f0a965b9f0e33c7c24cf34c16},
+abstract = {Unsupervised bilingual word embedding (UBWE), together with other technologies such as back-translation and denoising, has helped unsupervised neural machine translation (UNMT) achieve remarkable results in several language pairs. In previous methods, UBWE is first trained using non-parallel monolingual corpora and then this pre-trained UBWE is used to initialize the word embedding in the encoder and decoder of UNMT. That is, the training of UBWE and UNMT are separate. In this paper, we first empirically investigate the relationship between UBWE and UNMT. The empirical findings show that the performance of UNMT is significantly affected by the performance of UBWE. Thus, we propose two methods that train UNMT with UBWE agreement. Empirical results on several language pairs show that the proposed methods significantly outperform conventional UNMT.},
+author = {Haipeng Sun and Rui Wang and Kehai Chen and M. Utiyama and E. Sumita and T. Zhao},
+doi = {10.18653/v1/P19-1119},
+}
+
+@article{b21b96671cbf85f7cdf1692ac3ddc9a30efce951,
+title = {Unsupervised Cross-Lingual Representation Learning},
+year = {2019},
+url = {https://www.semanticscholar.org/paper/b21b96671cbf85f7cdf1692ac3ddc9a30efce951},
+abstract = {In this tutorial, we provide a comprehensive survey of the exciting recent work on cutting-edge weakly-supervised and unsupervised cross-lingual word representations. After providing a brief history of supervised cross-lingual word representations, we focus on: 1) how to induce weakly-supervised and unsupervised cross-lingual word representations in truly resource-poor settings where bilingual supervision cannot be guaranteed; 2) critical examinations of different training conditions and requirements under which unsupervised algorithms can and cannot work effectively; 3) more robust methods for distant language pairs that can mitigate instability issues and low performance for distant language pairs; 4) how to comprehensively evaluate such representations; and 5) diverse applications that benefit from cross-lingual word representations (e.g., MT, dialogue, cross-lingual sequence labeling and structured prediction applications, cross-lingual IR).},
+author = {Sebastian Ruder and Anders Søgaard and Ivan Vulic},
+doi = {10.18653/v1/P19-4007},
+}
+
+@article{c56dc7c5b42749a63712374cac62ea154d0f9280,
+title = {Unsupervised Neural Machine Translation for Similar and Distant Language Pairs},
+year = {2021},
+url = {https://www.semanticscholar.org/paper/c56dc7c5b42749a63712374cac62ea154d0f9280},
+abstract = {Unsupervised neural machine translation (UNMT) has achieved remarkable results for several language pairs, such as French–English and German–English. Most previous studies have focused on modeling UNMT systems; few studies have investigated the effect of UNMT on specific languages. In this article, we first empirically investigate UNMT for four diverse language pairs (French/German/Chinese/Japanese–English). We confirm that the performance of UNMT in translation tasks for similar language pairs (French/German–English) is dramatically better than for distant language pairs (Chinese/Japanese–English). We empirically show that the lack of shared words and different word orderings are the main reasons that lead UNMT to underperform in Chinese/Japanese–English. Based on these findings, we propose several methods, including artificial shared words and pre-ordering, to improve the performance of UNMT for distant language pairs. Moreover, we propose a simple general method to improve translation performance for all these four language pairs. The existing UNMT model can generate a translation of a reasonable quality after a few training epochs owing to a denoising mechanism and shared latent representations. However, learning shared latent representations restricts the performance of translation in both directions, particularly for distant language pairs, while denoising dramatically delays convergence by continuously modifying the training data. To avoid these problems, we propose a simple, yet effective and efficient, approach that (like UNMT) relies solely on monolingual corpora: pseudo-data-based unsupervised neural machine translation. Experimental results for these four language pairs show that our proposed methods significantly outperform UNMT baselines.},
+author = {Haipeng Sun and Rui Wang and M. Utiyama and Benjamin Marie and Kehai Chen and E. Sumita and T. Zhao},
+doi = {10.1145/3418059},
+}
+
+@article{c98c2b700d59c6a09fa005156d0580369ca313d4,
+title = {Unsupervised Neural Machine Translation With Cross-Lingual Language Representation Agreement},
+year = {2020},
+url = {https://www.semanticscholar.org/paper/c98c2b700d59c6a09fa005156d0580369ca313d4},
+abstract = {Unsupervised cross-lingual language representation initialization methods such as unsupervised bilingual word embedding (UBWE) pre-training and cross-lingual masked language model (CMLM) pre-training, together with mechanisms such as denoising and back-translation, have advanced unsupervised neural machine translation (UNMT), which has achieved impressive results on several language pairs, particularly French-English and German-English. Typically, UBWE focuses on initializing the word embedding layer in the encoder and decoder of UNMT, whereas the CMLM focuses on initializing the entire encoder and decoder of UNMT. However, UBWE/CMLM training and UNMT training are independent, which makes it difficult to assess how the quality of UBWE/CMLM affects the performance of UNMT during UNMT training. In this paper, we first empirically explore relationships between UNMT and UBWE/CMLM. The empirical results demonstrate that the performance of UBWE and CMLM has a significant influence on the performance of UNMT. Motivated by this, we propose a novel UNMT structure with cross-lingual language representation agreement to capture the interaction between UBWE/CMLM and UNMT during UNMT training. Experimental results on several language pairs demonstrate that the proposed UNMT models improve significantly over the corresponding state-of-the-art UNMT baselines.},
+author = {Haipeng Sun and Rui Wang and Kehai Chen and M. Utiyama and E. Sumita and T. Zhao},
+doi = {10.1109/TASLP.2020.2982282},
+}
+
+@article{87f320d4586ecc8bc3882a0c177bba3c08dec0e2,
+title = {Lost in Evaluation: Misleading Benchmarks for Bilingual Dictionary Induction},
+year = {2019},
+url = {https://www.semanticscholar.org/paper/87f320d4586ecc8bc3882a0c177bba3c08dec0e2},
+abstract = {The task of bilingual dictionary induction (BDI) is commonly used for intrinsic evaluation of cross-lingual word embeddings. The largest dataset for BDI was generated automatically, so its quality is dubious. We study the composition and quality of the test sets for five diverse languages from this dataset, with concerning findings: (1) a quarter of the data consists of proper nouns, which can be hardly indicative of BDI performance, and (2) there are pervasive gaps in the gold-standard targets. These issues appear to affect the ranking between cross-lingual embedding systems on individual languages, and the overall degree to which the systems differ in performance. With proper nouns removed from the data, the margin between the top two systems included in the study grows from 3.4% to 17.2%. Manual verification of the predictions, on the other hand, reveals that gaps in the gold standard targets artificially inflate the margin between the two systems on English to Bulgarian BDI from 0.1% to 6.7%. We thus suggest that future research either avoids drawing conclusions from quantitative results on this BDI dataset, or accompanies such evaluation with rigorous error analysis.},
+author = {Yova Kementchedjhieva and Mareike Hartmann and Anders Søgaard},
+doi = {10.18653/v1/D19-1328},
+arxivid = {1909.05708},
+}
+
+@article{a8e44f0488ac573d0c9f5f8ba046f03212b34921,
+title = {Beyond Offline Mapping: Learning Cross-lingual Word Embeddings through Context Anchoring},
+year = {2020},
+url = {https://www.semanticscholar.org/paper/a8e44f0488ac573d0c9f5f8ba046f03212b34921},
+abstract = {Recent research on cross-lingual word embeddings has been dominated by unsupervised mapping approaches that align monolingual embeddings. Such methods critically rely on those embeddings having a similar structure, but it was recently shown that the separate training in different languages causes departures from this assumption. In this paper, we propose an alternative approach that does not have this limitation, while requiring a weak seed dictionary (e.g., a list of identical words) as the only form of supervision. Rather than aligning two fixed embedding spaces, our method works by fixing the target language embeddings, and learning a new set of embeddings for the source language that are aligned with them. To that end, we use an extension of skip-gram that leverages translated context words as anchor points, and incorporates self-learning and iterative restarts to reduce the dependency on the initial dictionary. Our approach outperforms conventional mapping methods on bilingual lexicon induction, and obtains competitive results in the downstream XNLI task.},
+author = {Aitor Ormazabal and Mikel Artetxe and Aitor Soroa Etxabe and Gorka Labaka and Eneko Agirre},
+doi = {10.18653/v1/2021.acl-long.506},
+arxivid = {2012.15715},
+}
+
+@article{49e150e6895124254b0b3d6ce722d0ca09fd9633,
+title = {Incorporating Word and Subword Units in Unsupervised Machine Translation Using Language Model Rescoring},
+year = {2019},
+url = {https://www.semanticscholar.org/paper/49e150e6895124254b0b3d6ce722d0ca09fd9633},
+abstract = {This paper describes CAiRE’s submission to the unsupervised machine translation track of the WMT’19 news shared task from German to Czech. We leverage a phrase-based statistical machine translation (PBSMT) model and a pre-trained language model to combine word-level neural machine translation (NMT) and subword-level NMT models without using any parallel data. We propose to solve the morphological richness problem of languages by training byte-pair encoding (BPE) embeddings for German and Czech separately, and they are aligned using MUSE (Conneau et al., 2018). To ensure the fluency and consistency of translations, a rescoring mechanism is proposed that reuses the pre-trained language model to select the translation candidates generated through beam search. Moreover, a series of pre-processing and post-processing approaches are applied to improve the quality of final translations.},
+author = {Zihan Liu and Yan Xu and Genta Indra Winata and Pascale Fung},
+doi = {10.18653/v1/W19-5327},
+arxivid = {1908.05925},
+}
+
+@article{368ba3d484c93d60408352eef87358790d2cef94,
+title = {Improving the Lexical Ability of Pretrained Language Models for Unsupervised Neural Machine Translation},
+year = {2021},
+url = {https://www.semanticscholar.org/paper/368ba3d484c93d60408352eef87358790d2cef94},
+abstract = {Successful methods for unsupervised neural machine translation (UNMT) employ cross-lingual pretraining via self-supervision, often in the form of a masked language modeling or a sequence generation task, which requires the model to align the lexical- and high-level representations of the two languages. While cross-lingual pretraining works for similar languages with abundant corpora, it performs poorly in low-resource and distant languages. Previous research has shown that this is because the representations are not sufficiently aligned. In this paper, we enhance the bilingual masked language model pretraining with lexical-level information by using type-level cross-lingual subword embeddings. Empirical results demonstrate improved performance both on UNMT (up to 4.5 BLEU) and bilingual lexicon induction using our method compared to a UNMT baseline.},
+author = {Alexandra Chronopoulou and Dario Stojanovski and Alexander M. Fraser},
+doi = {10.18653/V1/2021.NAACL-MAIN.16},
+arxivid = {2103.10531},
+}
+
+@article{7b830dc8f6ff305d1433eb3c659819110bed3f76,
+title = {Unsupervised Word Translation with Adversarial Autoencoder},
+year = {2020},
+url = {https://www.semanticscholar.org/paper/7b830dc8f6ff305d1433eb3c659819110bed3f76},
+abstract = {Crosslingual word embeddings learned from monolingual embeddings have a crucial role in many downstream tasks, ranging from machine translation to transfer learning. Adversarial training has shown impressive success in learning crosslingual embeddings and the associated word translation task without any parallel data by mapping monolingual embeddings to a shared space. However, recent work has shown superior performance for non-adversarial methods in more challenging language pairs. In this article, we investigate adversarial autoencoder for unsupervised word translation and propose two novel extensions to it that yield more stable training and improved results. Our method includes regularization terms to enforce cycle consistency and input reconstruction, and puts the target encoders as an adversary against the corresponding discriminator. We use two types of refinement procedures sequentially after obtaining the trained encoders and mappings from the adversarial training, namely, refinement with Procrustes solution and refinement with symmetric re-weighting. Extensive experimentations with high- and low-resource languages from two different data sets show that our method achieves better performance than existing adversarial and non-adversarial approaches and is also competitive with the supervised system. Along with performing comprehensive ablation studies to understand the contribution of different components of our adversarial model, we also conduct a thorough analysis of the refinement procedures to understand their effects.},
+author = {Tasnim Mohiuddin and Shafiq R. Joty},
+doi = {10.1162/coli_a_00374},
+}
+
+@article{08ab4ba21d675bd95d68a9e91feba63785e25363,
+title = {(Almost) Unsupervised Grammatical Error Correction using Synthetic Comparable Corpus},
+year = {2019},
+url = {https://www.semanticscholar.org/paper/08ab4ba21d675bd95d68a9e91feba63785e25363},
+abstract = {We introduce unsupervised techniques based on phrase-based statistical machine translation for grammatical error correction (GEC) trained on a pseudo learner corpus created by Google Translation. We verified our GEC system through experiments on a low resource track of the shared task at BEA2019. As a result, we achieved an F0.5 score of 28.31 points with the test data.},
+author = {Satoru Katsumata and Mamoru Komachi},
+doi = {10.18653/v1/W19-4413},
+}
+
+@article{a9fc56a2780795a573f4cf6c793e0840daeded58,
+title = {Monolingual and Parallel Corpora for Kangri Low Resource Language},
+year = {2021},
+url = {https://www.semanticscholar.org/paper/a9fc56a2780795a573f4cf6c793e0840daeded58},
+abstract = {In this paper we present the dataset of Himachali low resource endangered language, Kangri (ISO 639-3xnr) listed in the United Nations Educational, Scientific and Cultural Organization (UNESCO). The compilation of kangri corpus has been a challenging task due to the non-availability of the digitalized resources. The corpus contains 1,81,552 Monolingual and 27,362 Hindi-Kangri Parallel corpora. We shared pre-trained kangri word embeddings. We also reported the Bilingual Evaluation Understudy (BLEU) score and Metric for Evaluation of Translation with Explicit ORdering (METEOR) score of Statistical Machine Translation (SMT) and Neural Machine Translation (NMT) results for the corpus. The corpus is freely available for non-commercial usages and research. To the best of our knowledge, this is the first Himachali low resource endangered language corpus. The resources are available at (https://github.com/chauhanshweta/Kangri_corp us)},
+author = {S. Chauhan and Shefali Saxena and Philemon Daniel},
+arxivid = {2103.11596},
+}
+
+@article{c7ee8572a1bdce2978b6ca3f6e28c96ead103de8,
+title = {A Graph-based Coarse-to-fine Method for Unsupervised Bilingual Lexicon Induction},
+year = {2020},
+url = {https://www.semanticscholar.org/paper/c7ee8572a1bdce2978b6ca3f6e28c96ead103de8},
+abstract = {Unsupervised bilingual lexicon induction is the task of inducing word translations from monolingual corpora of two languages. Recent methods are mostly based on unsupervised cross-lingual word embeddings, the key to which is to find initial solutions of word translations, followed by the learning and refinement of mappings between the embedding spaces of two languages. However, previous methods find initial solutions just based on word-level information, which may be (1) limited and inaccurate, and (2) prone to contain some noise introduced by the insufficiently pre-trained embeddings of some words. To deal with those issues, in this paper, we propose a novel graph-based paradigm to induce bilingual lexicons in a coarse-to-fine way. We first build a graph for each language with its vertices representing different words. Then we extract word cliques from the graphs and map the cliques of two languages. Based on that, we induce the initial word translation solution with the central words of the aligned cliques. This coarse-to-fine approach not only leverages clique-level information, which is richer and more accurate, but also effectively reduces the bad effect of the noise in the pre-trained embeddings. Finally, we take the initial solution as the seed to learn cross-lingual embeddings, from which we induce bilingual lexicons. Experiments show that our approach improves the performance of bilingual lexicon induction compared with previous methods.},
+author = {Shuo Ren and Shujie Liu and M. Zhou and Shuai Ma},
+doi = {10.18653/v1/2020.acl-main.318},
+}
+
+@article{b9a4d1fa4bc8db3556bbb341d1caddb5793d5098,
+title = {A Bilingual Adversarial Autoencoder for Unsupervised Bilingual Lexicon Induction},
+year = {2019},
+url = {https://www.semanticscholar.org/paper/b9a4d1fa4bc8db3556bbb341d1caddb5793d5098},
+abstract = {Unsupervised bilingual lexicon induction aims to generate bilingual lexicons without any cross-lingual signals. Successfully solving this problem would benefit many downstream tasks, such as unsupervised machine translation and transfer learning. In this work, we propose an unsupervised framework, named bilingual adversarial autoencoder, which automatically generates bilingual lexicon for a pair of languages from their monolingual word embeddings. In contrast to existing frameworks which learn a direct cross-lingual mapping of word embeddings from the source language to the target language, we train two autoencoders jointly to transform the source and the target monolingual word embeddings into a shared embedding space, where a word and its translation are close to each other. In this way, we capture the cross-lingual features of word embeddings from different languages and use them to induce bilingual lexicons. By conducting extensive experiments across eight language pairs, we demonstrate that the proposed method significantly outperforms the existing adversarial methods and even achieves best-published results across most language pairs.},
+author = {Xuefeng Bai and Hailong Cao and Kehai Chen and T. Zhao},
+doi = {10.1109/TASLP.2019.2925973},
+}
+
+@article{e843ea99e04320f223164387e4a20d1b6d0e8239,
+title = {Word Embedding Transformation for Robust Unsupervised Bilingual Lexicon Induction},
+year = {2021},
+url = {https://www.semanticscholar.org/paper/e843ea99e04320f223164387e4a20d1b6d0e8239},
+abstract = {Great progress has been made in unsupervised bilingual lexicon induction (UBLI) by aligning the source and target word embeddings independently trained on monolingual corpora. The common assumption of most UBLI models is that the embedding spaces of two languages are approximately isomorphic. Therefore the performance is bound by the degree of isomorphism, especially on etymologically and typologically distant languages. To address this problem, we propose a transformation-based method to increase the isomorphism. Embeddings of two languages are made to match with each other by rotating and scaling. The method does not require any form of supervision and can be applied to any language pair. On a benchmark data set of bilingual lexicon induction, our approach can achieve competitive or superior performance compared to state-of-the-art methods, with particularly strong results being found on distant languages.},
+author = {Hailong Cao and T. Zhao},
+arxivid = {2105.12297},
+}
+
+@article{4ab6b50851ef5d106def6c429b516cd688cb9983,
+title = {Revisiting Adversarial Autoencoder for Unsupervised Word Translation with Cycle Consistency and Improved Training},
+year = {2019},
+url = {https://www.semanticscholar.org/paper/4ab6b50851ef5d106def6c429b516cd688cb9983},
+abstract = {Adversarial training has shown impressive success in learning bilingual dictionary without any parallel data by mapping monolingual embeddings to a shared space. However, recent work has shown superior performance for non-adversarial methods in more challenging language pairs. In this work, we revisit adversarial autoencoder for unsupervised word translation and propose two novel extensions to it that yield more stable training and improved results. Our method includes regularization terms to enforce cycle consistency and input reconstruction, and puts the target encoders as an adversary against the corresponding discriminator. Extensive experimentations with European, non-European and low-resource languages show that our method is more robust and achieves better performance than recently proposed adversarial and non-adversarial approaches.},
+author = {Tasnim Mohiuddin and Shafiq R. Joty},
+doi = {10.18653/v1/N19-1386},
+arxivid = {1904.04116},
+}
+
+@article{f26f17ec49f2593bcc926051394871480a80c0c2,
+title = {Density Matching for Bilingual Word Embedding},
+year = {2019},
+url = {https://www.semanticscholar.org/paper/f26f17ec49f2593bcc926051394871480a80c0c2},
+abstract = {Recent approaches to cross-lingual word embedding have generally been based on linear transformations between the sets of embedding vectors in the two languages. In this paper, we propose an approach that instead expresses the two monolingual embedding spaces as probability densities defined by a Gaussian mixture model, and matches the two densities using a method called normalizing flow. The method requires no explicit supervision, and can be learned with only a seed dictionary of words that have identical strings. We argue that this formulation has several intuitively attractive properties, particularly with the respect to improving robustness and generalization to mappings between difficult language pairs or word pairs. On a benchmark data set of bilingual lexicon induction and cross-lingual word similarity, our approach can achieve competitive or superior performance compared to state-of-the-art published results, with particularly strong results being found on etymologically distant and/or morphologically rich languages.},
+author = {Chunting Zhou and Xuezhe Ma and Di Wang and Graham Neubig},
+doi = {10.18653/v1/N19-1161},
+arxivid = {1904.02343},
+}

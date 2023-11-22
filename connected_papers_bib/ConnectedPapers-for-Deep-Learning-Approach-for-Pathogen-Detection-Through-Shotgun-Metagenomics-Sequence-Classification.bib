@@ -1,0 +1,384 @@
+@article{b7753baf8ee0015a558eef34e0f6d7b9fa9a5f5e,
+title = {Deep Learning Approach for Pathogen Detection Through Shotgun Metagenomics Sequence Classification},
+year = {2019},
+url = {https://www.semanticscholar.org/paper/b7753baf8ee0015a558eef34e0f6d7b9fa9a5f5e},
+abstract = {Studies have shown that shotgun metagenomics sequencing facilitates the evaluation of diverse viruses, bacteria, and eukaryotic microbes and assists in exploring their abundances in complex samples. Due to the challenges of processing a substantial amount of sequences and overall computational complexity, it is time-consuming to analyze these data through traditional database sequence comparison approaches. Deep learning has been widely used to solve many classification problems, including those in the bioinformatics field, and has demonstrated its accuracy and efficiency for analyzing large-scale datasets. The purpose of this work is to explore how a long short-term memory (LSTM) network can be used to learn sequential genome patterns through pathogen detection from metagenome data. Our experimental result showed that we can obtain similar accuracy to the conventional BLAST method, but at a speed that is about 36 times faster.},
+author = {Ying-Feng Hsu and Makiko Ito and T. Maruyama and Morito Matsuoka and Nicolas Jung and Y. Matsumoto and D. Motooka and Shota Nakamura},
+doi = {10.1007/978-3-030-21642-9_4},
+}
+
+@article{f2c4c636b5703d149fafd1727928423f87d0dbc3,
+title = {Sequence comparison on a cluster of workstations using the PVM system},
+year = {1995},
+url = {https://www.semanticscholar.org/paper/f2c4c636b5703d149fafd1727928423f87d0dbc3},
+abstract = {Sequence comparison is one of the most important tools in molecular biology research. As the amount of DNA data increases rapidly, efficient sequence comparison algorithms are essential in studying newly discovered sequences. We have implemented a distributed sequence comparison algorithm by T.F. Smith and M. Waterman (1981) on a cluster of workstations using the PVM paradigm. This implementation has achieved similar performance to the Intel iPSC/860 hypercube, a massively parallel computer. The distributed Smith-Waterman algorithm serves as a search tool for two Internet servers GRAIL and GENQUEST. This paper describes the implementation and the performance of the algorithm.<<ETX>>},
+author = {X. Guan and R. Mural and E. Uberbacher},
+doi = {10.1109/IPPS.1995.395931},
+}
+
+@article{0847075911e1864b478a0555545f986c0aee20f5,
+title = {An SVM-based Method for Protein Structure Classification},
+year = {2005},
+url = {https://www.semanticscholar.org/paper/0847075911e1864b478a0555545f986c0aee20f5},
+abstract = {The goal of this project is to classify distantly-homologous proteins by their structure, without access to any information about the protein other than its amino acid sequence (primary structure). Protein folding is not a well-understood phenomenon. It is hard to define explicit sequence-based features for it. SVM is thus very appealing for this application because it only requires a kernel function be defined over the data points. The score of the optimal Smith-Waterman alignment between two sequences is proposed as this kernel. Smith-Waterman does not produce a correct Mercer kernel, however in practice it is close enough being positive definite to serve as one. Performance results were positive—a test error rate of about 1.5% was measured for binary classification problems, increasing to 35% on 16-classes. Attempts to transform the kernel into a positive definite one had no significant effect on performance. Data set: Training sequences were drawn from the SCOP (Structural Classification of Proteins) ontology (http://scop.mrc-lmb.cam.ac.uk/scop/). In contrast to most protein classification systems, SCOP has been manually compiled, with proteins categorized by known information about their structure. Its broadest categories are known as ‘folds’—classes that contain proteins of similar structures but not necessarily any other relation. These classes are adopted as the training categories. Protein sequences in the same fold often bear little resemblance to one another—making it a difficult categorization to learn. To ensure the dissimilarity of the training and test sets, all data points were drawn from a corpus of sequences with less than 40% identity to each other (obtained from ASTRAL: http://astral.berkeley.edu/). In practice though, the identity between sequences in the same class was often not greater than would be expected between two random strings. The Kernel—Protein Sequence Alignment: It is not clear how to take the inner product of two protein sequences. So instead, a rough similarity metric is used: Smith-Waterman alignments scores. Arguably the standard method for determining the similarity between biological sequences is the SmithWaterman (or Needleman-Wunsch) algorithm. In brief, it is a dynamic programming for aligning two strings by introducing gaps, so as to maximize value of the matches between them. These matches are not scored uniformly but rather according to the probability of one amino acid being substituted for another via random mutation (obtained from the Blosum62 matrix). See [1] for full implementation details. A sample alignment is shown below. FYANIQADATVATFFNGIDMPNQTNKTAAFLCAALGGPNAWTGRNLKEVH----ANMGV FY + D + FF +DM Q AFL A GG + + GR ++E H N G+ FYERVLQDDRIKHFFADVDMAKQRAHQKAFLTYAFGGTDKYDGRYMREAHKELVENHGL Each alignment is associated with an overall score—corresponding to how much of the sequences matched—which is used for the kernel function for SVM. Kernel Correctness: Unfortunately, Smith-Waterman alignment does not produce a Mercer kernel. While it is symmetric, it is not a convex function—a fact which can be easily verified. Considered theoretically, the lack of a valid kernel has serious implications: SVM will not converge to the global maximum, nor is it guaranteed to reach a maximum at all. Practically speaking, however, it is not clear how much of an impact it will have on the performance of the classifier. Part of the issue is that Blosum62 is not itself positive semi-definite. In theory, as a matrix of the probability of substitutions, it should be. But all of its entries are rounded to the nearest integer, introducing negative eigenvalues. Under the assumption that classifier performance would be improved if it were positive semi-definite, we deform it to force this property. Three possible spectral transformations are considered: • Eliminate negative eigenvalues by fixing them to zero (‘zeroed’ subsequently) • Replace each eigenvalue with its absolute value (‘abs’) • Subtract the most negative eigenvalue from the diagonal of the matrix (‘shift’) Each of these transforms produces a positive semi-definite matrix, with varying degrees of loss of the original information. Because it is not apparent which approach is preferable, all three were tested. Similarly, we can the compute the kernel matrix for the entire data set, and then apply one of these transforms to it to generate a valid kernel. This approach was tested as well. Multiple Classes: As originally formulated, SVM performs binary classification. Two approaches for extending it to N classes are considered. In each, a classifier is trained for each pair-wise grouping of the N classes; there are 1/2*N*(N-1) total such classifiers. So for instance, given 3 classes, an SVM would be trained for classes 1-vs-2, 1-vs-3, and 2-vs-3. In the first approach, test points are presented to all of the classifiers, and given the label which receives the majority of votes. A slightly more sophisticated approach—termed Directed Acyclic Graph SVM by its creators—is also taken [2]. For DAGSVM to classify a point, it first presents it to the 1-vs-N SVM model. If the model labels it as 1, the 1-vs-(N-1) classifier is subsequently applied to the point; if it labels it N, 2-vs-N is next used. More classifications follow. In general, the i-vs-j SVM is succeeded by the i-vs-(j-1) classifier if it returns i, or by the (i+1)-vs-j classifier if it returns j. The indexes i and j will reach equality after N-1 such classifications; that value is taken as the label of the data point. See the diagram at left for an example (from [2]). Results: To ensure roughly equal representation of data (and rapid training), fold classes were chosen randomly from those containing 25 to 50 such sequences. SVMs were trained with SMO, which in practice was so slow as to necessitate a C-based implementation. Mean 10-fold cross validation errors are reported here, with error bars denoting the standard deviation of the individual cross validation test errors. The first two graphs use DAGSVM. Discussion: DAGSVM clearly outperforms majority voting by a large margin. While according to [2] the two algorithms should be roughly equal, it seems that in this application classifiers will routinely give identical labels to all categories they were not trained on. So for instance, most n-v-m classifiers might label all points except those in class m as n, with the result that nearly all test points are given the labels n or m. This behavior does not adversely affect DAGSVM. Continuing on, it would seem that the kernel being indefinite does not hinder performance; all but one of the attempted corrections had no significant impact on the results. Computing the kernel for the full 486 sequence training set (on which the worst performance was observed) yielded only 1 negative eigenvalue. So the topology of the SVM objective function is still relatively simple (it’s a saddle shape), even if it is not completely concave. The following may also be relevant. It is provable under certain trivial conditions (met here) that any 2x2 kernel matrix (Kij = K(Xi,Xj)) of our kernel is positive definite—a fact which is confirmed by empirical observations. As SMO optimizes the objective over only a pair of coordinates at a time, it will therefore never decrease the value of the objective function. Somewhat surprising is the failure of the diagonal shift when applied to the kernel. This particular approach for fixing indefinite kernels was explicitly recommended by [3]. Adjusting alignment parameters such as gap penalties had little effect as long as the scores were constrained to within reasonable values (e.g. not rewarding gaps). Such results are omitted here, as being too identical to those already included. Overall, the results are positive, given the difficulty of the classification problem. Every data point was fairly unique—a fact which is evidenced by the large variance in the CV error. If nothing else, these results illustrate that string algorithms can successfully be used as kernels for SVM, despite their theoretical shortcomings.},
+author = {M. Verheggen},
+}
+
+@article{aba9bf3fd1a8b480f95b2d5fa6dc111edca3a837,
+title = {POLITECNICO DI TORINO Repository ISTITUZIONALE Dynamic Gap Selector : A Smith Waterman Sequence Alignment Algorithm with Affine Gap Model},
+year = {null},
+url = {https://www.semanticscholar.org/paper/aba9bf3fd1a8b480f95b2d5fa6dc111edca3a837},
+abstract = {SmithWaterman algorithm (S-W) is a widespread method to perform local alignments of biological sequences of proteins, DNA and RNA molecules. Indeed, S-W is able to ensure better accuracy levels with respect to the heuristic alignment algorithms by extensively exploring all the possible alignment configurations between the sequences under examination. It has been proven that the first amino acid (AA) or nucleotide (NT) inserted/deleted (that identify a gap open) found during the alignment operations performed on sequences is more significant, from a biological point of view, than the subsequent ones (called gap extension), making the so called Affine Gap model a viable solution for biomolecules alignment. However, this version of S-W algorithm is expensive both in terms of computation as well as in terms of memory requirements with respect to others less demanding solutions such as the ones using a Linear Gap model. In order to overcome these drawbacks we have developed an optimised version of the S-W algorithm based on Affine Gap model called Dynamic Gap Selector (DGS S-W). Differently from the standard S-W Affine Gap method, the proposed DGS S-W method reduces the memory requirements from 3*N *M to N *M, where N and M represent the size of the compared sequences. In terms of computational costs, the proposed algorithm reduces by a factor of 2 the number of operations required by the standard Affine Gap model. DGS S-W method has been tested on two protein and one RNA sequences datasets, showing mapping scores very similar to those reached thanks to the classical S-W Affine Gap method and, at the same time, reduced computational costs and memory usage.},
+author = {Gianvito Urgese and G. Paciello and A. Acquaviva and E. Ficarra and M. Graziano and M. Zamboni},
+}
+
+@article{db367f27c788f6306c76af5db577c5a301fa80a8,
+title = {FPGA-Based Smith-Waterman Algorithm: Analysis and Novel Design},
+year = {2011},
+url = {https://www.semanticscholar.org/paper/db367f27c788f6306c76af5db577c5a301fa80a8},
+abstract = {This paper analyses two methods of organizing parallelism for the Smith-Waterman algorithm, and show how they perform relative to peak performance when the amount of parallelism varies. A novel systolic design is introduced, with a processing element optimized for computing the affine gap cost function. Our FPGA design is significantly more energy-efficient than GPU designs. For example, our design for the XC5VLX330T FPGA achieves around 16 GCUPS/W, while CPUs and GPUs have a power efficiency of lower than 0.5 GCUPS/W.},
+author = {Y. Yamaguchi and K. H. Tsoi and W. Luk},
+doi = {10.1007/978-3-642-19475-7_20},
+}
+
+@article{48b2f36212c7e6e262252a692776558763d5cef4,
+title = {Prevalence oftheArchetypal Regulatory Region andSequence Polymorphisms inNonpassaged BK VirusVariants},
+year = {1991},
+url = {https://www.semanticscholar.org/paper/48b2f36212c7e6e262252a692776558763d5cef4},
+abstract = {Since thefirst isolation andcharacterization ofBK virus (BKV), anumberofBKV variants whichdiffer in genomic structure orantigenic determinants havebeendescribed. Theregulatory region, inparticular, the enhancer elements, showthemostdivergent sequences amongdifferent isolates. Thestructural organization of aputative ancestral prototype orarchetype, fromwhichallofthevariants areprobably derived, hasbeen proposed. Bysequencing theregulatory regions of13different isolates fromtheurineofbonemarrow transplant recipients, wedetermined thestructures andsequences ofBKV variants diffused inthehuman population. Theenhancer region wasamplified bypolymerase chain reaction toavoid passage inculture, and theproduct wasdirectly sequenced. Thestructure mostfrequently observed isinagreement withthepostulated archetype, containing asingle enhancer element withnorepeats. Bysequence analysis weidentified fourhot spots ofnucleotide variation. These variations areconsistent withtheexistence oftwoconsensus sequences. One sequence motif, observed inabout85%oftheisolates, isreferred toasthearchetypal BKV,while asecond motif, observed intheremaining 15%ofthevariants, ishighly reminiscent oftheASstrain. BK virus (BKV)isahumanpapovavirus originally isolated fromtheurine ofanimmunosuppressed patient (7). Since then, several BKV variants havebeenisolated. The genomesoftheDunlop(DUN),MM, andAS strains have beencloned andcompletely sequenced (22, 26,29), while the origin ofreplication andtranscriptional control elements havebeensequenced inother variants (16, 17,19,23,25, 27). Theseisolates differ inseveral ways,butthestructural organization oftheearly-region transcriptional enhancers is themostvariable. Inthefirst BKV isolate, theGardner strain, theenhancer region iscomposed ofthree tandem repeats. Enhancers werefirst described insimian virus 40 (3), wheretheyconsisted oftwotandemrepeats, suggesting thatenhancers aretypically madeupofanumberoftandemlyrepeated elements. However, BKV strains DIK(27), WW (19), andAS (26)havea linear arrangement ofthe regulatory region, withnorepeats, similar tothearchetype BKV proposed byYoshiike andTakemoto (31). Isolation of different BKV variants mayanswerquestions aboutthe origin ofthevariation andleadtodefinition oftheancestral prototype orarchetype. Itwasspeculated thatBKV strains withtandemly repeated enhancers haveacquired this structureduring passage inculture, withspecific arrangements being selected byplaque purification. Indeed, rearrangement inthetranscriptional control region ofstrain WW occurs during passage incell culture (20). Todetermine themost commonBKV strain inthehumanpopulation andclarify its archetypal structure, weanalyzed theregulatory region of BKV isolates from13bonemarrowtransplant recipients during theposttransplant period. Ofthe13patients, 2(no. 7 and12)hadhemorrhagic cystitis (2). We avoided passage in culture byusing thepolymerase chainreaction (PCR)to amplify theregion directly, followed bysequencing ofthe amplified products.},
+author = {M. Negrini and A. Castagnoli},
+}
+
+@article{de8ecf1101eed97c5eda5791a5c77c9679c8184d,
+title = {Acceleration of Gapped Alignment in BLASTP Using the Mercury System},
+year = {2006},
+url = {https://www.semanticscholar.org/paper/de8ecf1101eed97c5eda5791a5c77c9679c8184d},
+abstract = {Protein databases have grown exponentially over the last decade. This exponential growth has made extracting valuable information from these databases increasingly time consuming. This project presents a new method of accelerating a commonly used program for performing similarity searching on protein databases, BLASTP. This project describes the design and implementation of Mercury BLASTP, a customized hardware accelerated variant of BLASTP. This project focuses on the gapped alignment stage of Mercury BLASTP and provides design details and implementation results. Type of Report: Other Department of Computer Science & Engineering Washington University in St. Louis Campus Box 1045 St. Louis, MO 63130 ph: (314) 935-6160 Acceleration of Gapped Alignment in BLASTP Using the Mercury System Brandon Harris bbh2@wustl.edu Abstract Protein databases have grown exponentially over the last decade. This exponential growth has made extracting valuable information from these databases increasingly time consuming. This project presents a new method of accelerating a commonly used program for performing similarity searching on protein databases, BLASTP. This project describes the design and implementation of Mercury BLASTP, a customized hardware accelerated variant of BLASTP. This project focuses on the gapped alignment stage of Mercury BLASTP and provides design details and implementation results.Protein databases have grown exponentially over the last decade. This exponential growth has made extracting valuable information from these databases increasingly time consuming. This project presents a new method of accelerating a commonly used program for performing similarity searching on protein databases, BLASTP. This project describes the design and implementation of Mercury BLASTP, a customized hardware accelerated variant of BLASTP. This project focuses on the gapped alignment stage of Mercury BLASTP and provides design details and implementation results.},
+author = {Brandon Harris},
+doi = {10.7936/K7V40SD8},
+}
+
+@article{ce39082a41392f1691f62ea1cc505119d6862c84,
+title = {ParAlign: a parallel sequence alignment algorithm for rapid and sensitive database searches.},
+year = {2001},
+url = {https://www.semanticscholar.org/paper/ce39082a41392f1691f62ea1cc505119d6862c84},
+abstract = {There is a need for faster and more sensitive algorithms for sequence similarity searching in view of the rapidly increasing amounts of genomic sequence data available. Parallel processing capabilities in the form of the single instruction, multiple data (SIMD) technology are now available in common microprocessors and enable a single microprocessor to perform many operations in parallel. The ParAlign algorithm has been specifically designed to take advantage of this technology. The new algorithm initially exploits parallelism to perform a very rapid computation of the exact optimal ungapped alignment score for all diagonals in the alignment matrix. Then, a novel heuristic is employed to compute an approximate score of a gapped alignment by combining the scores of several diagonals. This approximate score is used to select the most interesting database sequences for a subsequent Smith-Waterman alignment, which is also parallelised. The resulting method represents a substantial improvement compared to existing heuristics. The sensitivity and specificity of ParAlign was found to be as good as Smith-Waterman implementations when the same method for computing the statistical significance of the matches was used. In terms of speed, only the significantly less sensitive NCBI BLAST 2 program was found to outperform the new approach. Online searches are available at http://dna.uio.no/search/},
+author = {T. Rognes},
+doi = {10.1093/NAR/29.7.1647},
+pmid = {11266569},
+}
+
+@article{743482c22fcb5a573572dac8f115d5aa54f4a9cd,
+title = {Parallel Implementation of the Smith-Waterman Algorithm for Large Scale Database Search},
+year = {2003},
+url = {https://www.semanticscholar.org/paper/743482c22fcb5a573572dac8f115d5aa54f4a9cd},
+abstract = {Database search is the most heavily used operation in computational biology nowadays. It reports local alignments that may reveal homologous groups of sequences thereby helping on determining the function of new sequences. Database search is achieved by applying a basic operation, known as pairwise sequence comparison, repeatedly to the query sequence against each sequence in the database. Given the large, and increasing, number of sequences in current databases, the performance of this basic operation has become critical. The Smith-Waterman algorithm [1] produces optimal results for this basic operation but it is not commonly used due to its quadratic time complexity. Instead, faster methods, providing approximated solutions (e.g. BLAST, FASTA), are preferred for its almost linear time complexity. The use of parallel processing has brought some hope on improving the performance of the pairwise sequence comparison operation when using the Smith-Waterman algorithm. However, the exploitation of parallelism at this intra-sequence level has been showed to produce good speedups only when dealing with long sequences [2]. Parallel processing has also been used in the database search problem [3]. But in this case, each processor is usually responsible for performing a number of comparisons independently from each other instead of cooperating to compare every sequence in the database. Parallel implementations exploiting this inter-sequence level of parallelism have its performance dependent on the length of the sequences. Dynamic load balancing strategies have been proposed to minimize this problem, however, none is able to produce good results when sequence lengths vary greatly [4]. Current genome projects generate a considerable number of DNA data whose processing requires a large scale database search, i.e. multiple database search operations have to be performed frequently. In this work, we propose and implement a strategy to carry out parallel database searches with multiple query sequences using the Smith-Waterman algorithm, optimized according to Gotoh [5]. This is achieved by concatenating both query and database sequences, and processing the resulting similarity matrices and alignments in parallel. Processors cooperate when calculating alignments crossing its boundaries and an efficient scheduling algorithm is used to increase processor utilization. The implementation is based on the Message Passing Interface (MPI) library and has been tested on a cluster of PCs. Preliminary results show more accurate alignments (compared to BLAST), good speedup (approximately 4 on 6 nodes) and better performance than traditional inter-sequence parallel implementations when comparing sequences of varying lengths.},
+author = {Márcia M. Murakami and M. T. Walter},
+}
+
+@article{66c3b23c00cb8d9745641dbc07c7e9ef98698bdf,
+title = {Parallel homologous sequence searching in large databases},
+year = {1995},
+url = {https://www.semanticscholar.org/paper/66c3b23c00cb8d9745641dbc07c7e9ef98698bdf},
+abstract = {We present a parallel computational method for retrieving similar sequences from large genetic and protein databases using a dynamic programming comparison algorithm. Two previously published parallel methods for performing this task are first discussed and evaluated. The advantages of these two parallel methods are combined and incorporated into our new method to obtain better performance than either of the original two. Using the entire GenBank database (release 80.0), we compare the performance of the three methods on an Intel iPSC/860 parallel computer.<<ETX>>},
+author = {T. K. Yap and O. Frieder and R. Martino},
+doi = {10.1109/FMPC.1995.380444},
+}
+
+@article{4b2459018a4730c384b95836b9df0fa83cc84887,
+title = {Multiresolution Analysis of DNA Sequences},
+year = {2010},
+url = {https://www.semanticscholar.org/paper/4b2459018a4730c384b95836b9df0fa83cc84887},
+abstract = {A wavelet based method for transforming DNA sequences is illustrated by using the small subunit of the ribosome. This paper discusses the application of multi resolution analysis on FASTA-formatted DNA sequences using biorthogonal wavelets. Once transformed, the data could be used for pairwise or multiple sequence alignments needed for studies of evolutionary relationships or for gene finding. Further studies of wavelet based methods are also mentioned.},
+author = {E. Linton and Paul B. Albee and P. Kinnicutt and E. Lin},
+doi = {10.1109/ICCRD.2010.32},
+}
+
+@article{1a9b20408091b58d3c37d9de06095dd027edfb44,
+title = {Dedicated Hardware for Biological Sequence Comparison},
+year = {1996},
+url = {https://www.semanticscholar.org/paper/1a9b20408091b58d3c37d9de06095dd027edfb44},
+abstract = {Biological sequence comparison is a time consuming task on a Von Neuman computer. The addition of dedicated hardware for parallelizing the comparison algorithms results in a reduction of several orders of magnitude in the execution time. This paper presents and compares different dedicated approaches, based on the parallelization of the algorithms on linear arrays of processors.},
+author = {D. Lavenier},
+doi = {10.3217/jucs-002-02-0077},
+}
+
+@article{bff51d30103e00554d190bef497c22ac6dae8184,
+title = {Experiments with parallelizing a tribology application},
+year = {2002},
+url = {https://www.semanticscholar.org/paper/bff51d30103e00554d190bef497c22ac6dae8184},
+abstract = {Different parallelization methods vary in their system requirements, programming styles, efficiency of exploring parallelism, and the application characteristics they can handle. Different applications can exhibit totally different performance gains depending on the parallelization method used. The paper compares OpenMP, MPI, and Strings (a distributed shared memory) for parallelizing a complicated tribology problem. The problem size and computing infrastructure are changed and their impacts on the parallelization methods are studied. All of the methods studied exhibit good performance improvements. The paper exhibits the benefits that are the result of applying parallelization techniques to applications in this field.},
+author = {V. Chaudhary and W. Hase and Hai Jiang and L. Sun and Darshan D. Thaker},
+doi = {10.1109/ICPPW.2002.1039750},
+}
+
+@article{3876284bd713e29844663091e3ff42cf1645b6e4,
+title = {Parallel processing in biological sequence comparison using general purpose processors},
+year = {2005},
+url = {https://www.semanticscholar.org/paper/3876284bd713e29844663091e3ff42cf1645b6e4},
+abstract = {The comparison and alignment of DNA and protein sequences are important tasks in molecular biology and bioinformatics. One of the most well known algorithms to perform the string-matching operation present in these tasks is the Smith-Waterman algorithm (SW). However, it is a computation intensive algorithm, and many researchers have developed heuristic strategies to avoid using it, specially when using large databases to perform the search. There are several efficient implementations of the SW algorithm on general purpose processors. These implementations try to extract data-level parallelism taking advantage of single-instruction multiple-data extensions (SIMD), capable of performing several operations in parallel on a set of data. In this paper, we propose a more efficient data parallel implementation of the SW algorithm. Our proposed implementation obtains a 30% reduction in the execution time relative to the previous best data-parallel alternative. In this paper we review different alternative implementation of the SW algorithm, compare them with our proposal, and present preliminary results for some heuristic implementations. Finally, we present a detailed study of the computational complexity of the different alignment algorithms presented and their behavior on the different aspect of the CPU microarchitecture.},
+author = {F. Sánchez and E. Salamí and A. Ramirez and M. Valero},
+doi = {10.1109/IISWC.2005.1526005},
+}
+
+@article{53618b88ce5380c3a5b0c65013ccd1ebab9a90a6,
+title = {Sequence Comparison on a Cluster of Workstations Using the PVM System},
+year = {2002},
+url = {https://www.semanticscholar.org/paper/53618b88ce5380c3a5b0c65013ccd1ebab9a90a6},
+abstract = {Sequence comparison is one of the most important tools in molecular biology research. As the amount of DNA data increases rapidly, efficient sequence comparison algorithms are essential in studying newly discovered sequences. We have implemented a distributed sequece comparison algorithm by Smith and Waterman on a cluster of workstations using the PVM paradigm. This implementation has achieved similar performance to the Intel iPSC/860 Hypercube, a massively parallel computer. The distributed Smith-Waterman algorithm serves as a search tool for two Internet algorithm serves GRAIL and GENQUEST. This paper describes the implementation and the performance of the algorithm.},
+author = {Gui Bing-xiang},
+}
+
+@article{40ad09e23890af02e745978f9ef94df6240aab19,
+title = {IN-SOCKET FPGA IMPLEMENTATION OF BIOINFORMATIC ALGORITHMS USING THE INTEL AAL},
+year = {2009},
+url = {https://www.semanticscholar.org/paper/40ad09e23890af02e745978f9ef94df6240aab19},
+abstract = {We demonstrate the implementation of two important bioinformatic algorithms in the XtremeData XD2000i FSB module using the Intel Accelerator Abstraction Layer (AAL). We have modified SSEARCH35 and NCBI BLAST, industry standard open-source implementations of the Smith-Waterman and BLAST algorithms respectively, to transparently introduce a hardware accelerated option to users.},
+author = {Jeffrey Allred and W. Lynch},
+}
+
+@article{f88a2ca1981e4131253f1143e133b8412e510f1a,
+title = {Estimation of Protein Function Using Optimized Finite State Automaton Based on Accumulated Amino Acid Residue Scores},
+year = {2007},
+url = {https://www.semanticscholar.org/paper/f88a2ca1981e4131253f1143e133b8412e510f1a},
+abstract = {},
+author = {S. Chiba and K. Sugawara},
+doi = {10.20965/jaciii.2007.p1129},
+}
+
+@article{43a1241d1eb827b88c319314bea996b7b1730993,
+title = {Parallel homologous search with Hirschberg algorithm: a hybrid MPI-Pthreads solution},
+year = {2007},
+url = {https://www.semanticscholar.org/paper/43a1241d1eb827b88c319314bea996b7b1730993},
+abstract = {In this paper, we apply two different parallel programming model, the message passing model using Message Passing Interface (MPI) and the multithreaded model using Pthreads, to protein sequence homologous search. The protein sequence homologous search uses Hirschberg algorithm for the pairwise sequence alignment. The performance of the homologous search using the MPI-Pthread is compared to the implementation using pure message passing programming model MPI. The evaluation results show that there is a 50% decrease in computing time when the parallel homologous search is implemented using MPI-Phtreads compared to when using MPI.},
+author = {N. Rashid and R. Abdullah and A. Talib},
+}
+
+@article{0f2586c05687986eaacd1d330473648ff1af7b83,
+title = {A Multithreaded Parallel Implementation of a Dynamic Programming Algorithm for Sequence Comparison},
+year = {2000},
+url = {https://www.semanticscholar.org/paper/0f2586c05687986eaacd1d330473648ff1af7b83},
+abstract = {This paper discusses the issues involved in implementing a dynamic programming algorithm for biological sequence comparison on a general-purpose parallel computing platform based on a fine-grain event-driven multithreaded program execution model. Fine-grain multithreading permits efficient parallelism exploitation in this application both by taking advantage of asynchronous point-to-point synchronizations and communication with low overheads and by effectively tolerating latency through the overlapping of computation and communication. We have implemented our scheme on EARTH, a fine-grain event-driven multithreaded execution and architecture model which has been ported to a number of parallel machines with off-the-shelf processors. Our experimental results show that the dynamic programming algorithm can be efficiently implemented on EARTH systems with high performance (e.g., speedup of 90 on 120 nodes), good programmability and reasonable cost.},
+author = {W. Martins and J. Cuvillo and F. Useche and K. B. Theobald and G. Gao},
+doi = {10.1142/9789814447362_0031},
+pmid = {11262951},
+}
+
+@article{38e282d3933a54c871801fb5933b2025f05e768a,
+title = {Discovering Similar Passages within Large Text Documents},
+year = {2014},
+url = {https://www.semanticscholar.org/paper/38e282d3933a54c871801fb5933b2025f05e768a},
+abstract = {We present a novel general method for discovering similar passages within large text documents based on adapting and extending the well-known Smith-Waterman dynamic programming local sequence alignment algorithm. We extend that algorithm for large document analysis by defining: (a) a recursive procedure for discovering multiple non-overlapping aligned passages within a given document pair; (b) a matrix splicing method for processing long texts; (c) a chaining method for combining sequence strands; and (d) an inexact similarity measure for determining token matches. We show that an implementation of this method is computationally efficient and produces very high precision with good recall for several types of order-based plagiarism and that it achieves higher overall performance than the best reported methods against the PAN 2013 text alignment test corpus.},
+author = {Demetrios G. Glinos},
+doi = {10.1007/978-3-319-11382-1_10},
+}
+
+@article{85bb2a3f3684334ba1e5ad6bc7795a0330cf5421,
+title = {Six-fold speed-up of Smith-Waterman sequence database searches using parallel processing on common microprocessors},
+year = {2000},
+url = {https://www.semanticscholar.org/paper/85bb2a3f3684334ba1e5ad6bc7795a0330cf5421},
+abstract = {MOTIVATION
+Sequence database searching is among the most important and challenging tasks in bioinformatics. The ultimate choice of sequence-search algorithm is that of Smith-Waterman. However, because of the computationally demanding nature of this method, heuristic programs or special-purpose hardware alternatives have been developed. Increased speed has been obtained at the cost of reduced sensitivity or very expensive hardware.
+
+
+RESULTS
+A fast implementation of the Smith-Waterman sequence-alignment algorithm using Single-Instruction, Multiple-Data (SIMD) technology is presented. This implementation is based on the MultiMedia eXtensions (MMX) and Streaming SIMD Extensions (SSE) technology that is embedded in Intel's latest microprocessors. Similar technology exists also in other modern microprocessors. Six-fold speed-up relative to the fastest previously known Smith-Waterman implementation on the same hardware was achieved by an optimized 8-way parallel processing approach. A speed of more than 150 million cell updates per second was obtained on a single Intel Pentium III 500 MHz microprocessor. This is probably the fastest implementation of this algorithm on a single general-purpose microprocessor described to date.},
+author = {T. Rognes and E. Seeberg},
+doi = {10.1093/bioinformatics/16.8.699},
+pmid = {11099256},
+}
+
+@article{405dc0c88aea3bd591d058be80776600079e5ca1,
+title = {An Optimized Distance Function for Comparison of Protein Binding Sites},
+year = {2007},
+url = {https://www.semanticscholar.org/paper/405dc0c88aea3bd591d058be80776600079e5ca1},
+abstract = {An important field of application of string processing algorithms is the comparison of protein or nucleotide sequences. In this paper we present an algorithm capable of determining the dissimilarity (distance) of protein sequences originating from protein binding sites found in the RS-PDB database that is a repaired and cleaned version of the publicly available Protein Data Bank (PDB). The special way of construction of these protein sequences enabled us to optimize the algorithm, achieving runtimes several times faster than the unoptimized approach. One example the algorithm proposed in this paper can be useful for is searching conserved sequences in protein chains.},
+author = {Gábor Iván},
+doi = {10.1007/978-3-540-73731-5_9},
+}
+
+@article{950bca8374bf36421957b416e4f58425e9d43095,
+title = {CUDA compatible GPU cards as efficient hardware accelerators for Smith-Waterman sequence alignment},
+year = {2008},
+url = {https://www.semanticscholar.org/paper/950bca8374bf36421957b416e4f58425e9d43095},
+abstract = {BackgroundSearching for similarities in protein and DNA databases has become a routine procedure in Molecular Biology. The Smith-Waterman algorithm has been available for more than 25 years. It is based on a dynamic programming approach that explores all the possible alignments between two sequences; as a result it returns the optimal local alignment. Unfortunately, the computational cost is very high, requiring a number of operations proportional to the product of the length of two sequences. Furthermore, the exponential growth of protein and DNA databases makes the Smith-Waterman algorithm unrealistic for searching similarities in large sets of sequences. For these reasons heuristic approaches such as those implemented in FASTA and BLAST tend to be preferred, allowing faster execution times at the cost of reduced sensitivity. The main motivation of our work is to exploit the huge computational power of commonly available graphic cards, to develop high performance solutions for sequence alignment.ResultsIn this paper we present what we believe is the fastest solution of the exact Smith-Waterman algorithm running on commodity hardware. It is implemented in the recently released CUDA programming environment by NVidia. CUDA allows direct access to the hardware primitives of the last-generation Graphics Processing Units (GPU) G80. Speeds of more than 3.5 GCUPS (Giga Cell Updates Per Second) are achieved on a workstation running two GeForce 8800 GTX. Exhaustive tests have been done to compare our implementation to SSEARCH and BLAST, running on a 3 GHz Intel Pentium IV processor. Our solution was also compared to a recently published GPU implementation and to a Single Instruction Multiple Data (SIMD) solution. These tests show that our implementation performs from 2 to 30 times faster than any other previous attempt available on commodity hardware.ConclusionsThe results show that graphic cards are now sufficiently advanced to be used as efficient hardware accelerators for sequence alignment. Their performance is better than any alternative available on commodity hardware platforms. The solution presented in this paper allows large scale alignments to be performed at low cost, using the exact Smith-Waterman algorithm instead of the largely adopted heuristic approaches.},
+author = {S. Manavski and G. Valle},
+doi = {10.1186/1471-2105-9-S2-S10},
+pmid = {18387198},
+}
+
+@article{ceead40aafe638f43074971cdc8c780eb469c194,
+title = {Dynamic Gap Selector: A Smith Waterman Sequence Alignment Algorithm with Affine Gap Model Optimization},
+year = {2014},
+url = {https://www.semanticscholar.org/paper/ceead40aafe638f43074971cdc8c780eb469c194},
+abstract = {Smith Waterman algorithm (S-W) is nowadays considered one of the best method to perform local alignments of biological sequences characterizing proteins, DNA and RNA molecules. Indeed, S-W is able to ensure better accuracy levels with respect to the heuristic alignment algorithms by extensively exploring all the possible alignment configurations between the sequences under examination. It has been proven that the first amino acid (AA) or nucleotide (NT) inserted/deleted (that identify a gap open) found during the alignment operations performed on sequences is more significant from a biological point of view than the subsequent ones (called gap extension), making the so called Affine Gap model a viable solution for biomolecules alignment. However, this version of S-W algorithm is expensive both in terms of computation as well as in terms of memory requirements with respect to others less demanding solutions such as the ones using a Linear Gap model. In order to overcome these drawbacks we have developed an optimised version of the S-Walgorithm based on Affine Gap model called Dynamic Gap Selector (DGS S-W). Differently from the standard S-W Affine Gap method, the proposed DGS S-W method reduces the memory requirements from 3*N*M to N*M where N and M represents the size of the compared sequences. In terms of computational costs, the proposed algorithm reduces by a factor of 2 the number of operations required by the standard Affine Gap model. DGS S-W method has been tested on two protein and one RNA sequences datasets, showing mapping scores very similar to those reached thanks to the classical S-W Affine Gap method and, at the same time, reduced computational costs and memory usage},
+author = {Gianvito Urgese and G. Paciello and A. Acquaviva and E. Ficarra and M. Graziano and M. Zamboni},
+}
+
+@article{58f770443c4e9038f04f800cc7bedf7548ddd8b3,
+title = {CUDASW++2.0: enhanced Smith-Waterman protein database search on CUDA-enabled GPUs based on SIMT and virtualized SIMD abstractions},
+year = {2010},
+url = {https://www.semanticscholar.org/paper/58f770443c4e9038f04f800cc7bedf7548ddd8b3},
+abstract = {BackgroundDue to its high sensitivity, the Smith-Waterman algorithm is widely used for biological database searches. Unfortunately, the quadratic time complexity of this algorithm makes it highly time-consuming. The exponential growth of biological databases further deteriorates the situation. To accelerate this algorithm, many efforts have been made to develop techniques in high performance architectures, especially the recently emerging many-core architectures and their associated programming models.FindingsThis paper describes the latest release of the CUDASW++ software, CUDASW++ 2.0, which makes new contributions to Smith-Waterman protein database searches using compute unified device architecture (CUDA). A parallel Smith-Waterman algorithm is proposed to further optimize the performance of CUDASW++ 1.0 based on the single instruction, multiple thread (SIMT) abstraction. For the first time, we have investigated a partitioned vectorized Smith-Waterman algorithm using CUDA based on the virtualized single instruction, multiple data (SIMD) abstraction. The optimized SIMT and the partitioned vectorized algorithms were benchmarked, and remarkably, have similar performance characteristics. CUDASW++ 2.0 achieves performance improvement over CUDASW++ 1.0 as much as 1.74 (1.72) times using the optimized SIMT algorithm and up to 1.77 (1.66) times using the partitioned vectorized algorithm, with a performance of up to 17 (30) billion cells update per second (GCUPS) on a single-GPU GeForce GTX 280 (dual-GPU GeForce GTX 295) graphics card.ConclusionsCUDASW++ 2.0 is publicly available open-source software, written in CUDA and C++ programming languages. It obtains significant performance improvement over CUDASW++ 1.0 using either the optimized SIMT algorithm or the partitioned vectorized algorithm for Smith-Waterman protein database searches by fully exploiting the compute capability of commonly used CUDA-enabled low-cost GPUs.},
+author = {Yongchao Liu and B. Schmidt and D. Maskell},
+doi = {10.1186/1756-0500-3-93},
+pmid = {20370891},
+}
+
+@article{85b8a400ee080c90a6c492e3a4f149098557c6f8,
+title = {Homology search with binary and trinary scoring matrices},
+year = {2006},
+url = {https://www.semanticscholar.org/paper/85b8a400ee080c90a6c492e3a4f149098557c6f8},
+abstract = {Protein homology search can be accelerated with the use of bit-parallel algorithms in conjunction with constraints on the values contained in the scoring matrices. Trinary scoring matrices (containing only the values -1, 0, and 1) allow for significant acceleration without significant reduction in the receiver operating characteristic (ROC) score of a Smith-Waterman search. Binary scoring matrices (containing the values 0 and 1) result in some reduction in ROC score, but result in even more acceleration. Binary scoring matrices and five-bit saturating scores can be used for fast prefilters to the Smith-Waterman algorithm.},
+author = {Scott F. Smith},
+doi = {10.1504/IJBRA.2006.009763},
+pmid = {18048157},
+}
+
+@article{ff56dcb3596c02304c5a55b7530e01fd31b65c12,
+title = {Methods for comparing a DNA sequence with a protein sequence},
+year = {1996},
+url = {https://www.semanticscholar.org/paper/ff56dcb3596c02304c5a55b7530e01fd31b65c12},
+abstract = {We describe two methods for constructing an optimal global alignment of, and an optimal local alignment between, a DNA sequence and a protein sequence. The alignment model of the methods addresses the problems of frameshifts and introns in the DNA sequence. The methods require computer memory proportional to the sequence lengths, so they can rigorously process very huge sequences. The simplified versions of the methods were implemented as computer programs named NAP and LAP. The experimental results demonstrate that the programs are sensitive and powerful tools for finding genes by DNA-protein sequence homology.},
+author = {X. Huang and J. Zhang},
+doi = {10.1093/bioinformatics/12.6.497},
+pmid = {9021268},
+}
+
+@article{3c75faaf19237ae94b3c512c8b7c4fb034d6d329,
+title = {Sequence Similarity and Database Searching},
+year = {2003},
+url = {https://www.semanticscholar.org/paper/3c75faaf19237ae94b3c512c8b7c4fb034d6d329},
+abstract = {Database searching is perhaps the fastest, cheapest, and most powerful experiment a biologist can perform. No other 10-s test allows a biologist to reveal so much about the function, structure, location or origin of a gene, protein, organelle, or organism. A database search does not consume any reagents or require any specific wet-bench laboratory skills; just about anyone can do it, but the key is to do it correctly. The power of database searching comes from not only the size of today’s sequence databases (now containing more than 700,000 annotated gene and protein sequences), but from the ingenuity of certain key algorithms that have been developed to facilitate this very special kind of searching. Given the importance of database searching it is crucial that today’s life scientists try to become as familiar as possible with the details of the process. Indeed, the intent of this chapter to provide the reader with some insight and historical background to the methods and algorithms that form the foundation of a few of the most common database searching techniques. There are many strengths, misconceptions and weaknesses to these simple but incredibly useful computer experiments.},
+author = {D. Wishart},
+doi = {10.1007/978-1-59259-335-4_27},
+}
+
+@article{99ce2979e0ececd776ca31f7c9033cbc4944bc9a,
+title = {Programming Global and Local Sequence Alignment by Using R},
+year = {2014},
+url = {https://www.semanticscholar.org/paper/99ce2979e0ececd776ca31f7c9033cbc4944bc9a},
+abstract = {R [2] is a programming language primarily oriented to statistical and graphical analysis. Since R is an open source language, new functions of very different fields are continuously appearing all around the world. Operations Research is a multidisciplinary science and given the interest that exists between teachers and researchers to develop procedures that can be applied across the board by students, professionals and scientists, the use of R is needed to solve problems related to the optimization of a system. Dynamic Programming algorithms are essential basis for the development of algorithms that solve other problems. One of the main research areas in Bioinformatics is Sequence Alignment of nucleotide or amino acid residues to identify regions of similarity. The Bioconductor project [3] provides R packages for the analysis of genomic data. This work focuses on alignment of pairs. We develop two functions with R code: localAlignment and globalAlignment. These functions solve standard problems of Local and Global Sequence Alignment by using Dynamic Programming.},
+author = {B. González-Pérez and V. López and J. Sampedro},
+doi = {10.1007/978-3-642-37832-4_31},
+}
+
+@article{9948ef2da5efb72d9d1b90450f8911e4e1a8ffd0,
+title = {Comparing algorithms for large-scale sequence analysis},
+year = {2001},
+url = {https://www.semanticscholar.org/paper/9948ef2da5efb72d9d1b90450f8911e4e1a8ffd0},
+abstract = {The first step in homology analysis is usually the comparison of sequences by similarity search. The explosive growth of genomic databases makes it increasingly important to develop more rapid approaches to the comparison of large sequence databases while using the most sensitive methods available. This paper explores the consequences of this trade-off, comparing the results produced by BLAST and Smith-Waterman on genoinic- scale sequence searches. Stich comparisons are now possible thanks to the development of novel distributed computing platforms. This study uses the Parabon Frontier/sup TM/ Internet computing platform, which enables the effective use of the vast supply of idle computer cycles on the Internet for high-performance computing. We have ported both Smith-Waterman and BLAST to the Frontier platform, enabling the efficient use of these algorithms on large sequence databases. In addition, we present a novel visualization tool along with quantitative metrics for comparing the results of alternative sequence alignment algorithms. Our results compare the sensitivity of Smith-Waterman and BLAST for identifying homologies on proteome databases.},
+author = {Hadon Nash and Douglas Blair and J. Grefenstette},
+doi = {10.1109/BIBE.2001.974416},
+}
+
+@article{de76c10c4a5bc2da5a0f4dfc30c4ec07b378c4bc,
+title = {Implementation of the Smith-Waterman algorithm on a reconfigurable supercomputing platform},
+year = {2007},
+url = {https://www.semanticscholar.org/paper/de76c10c4a5bc2da5a0f4dfc30c4ec07b378c4bc},
+abstract = {An innovative reconfigurable supercomputing platform -- XD1000 is developed by XtremeData Inc. to exploit the rapid progress of FPGA technology and the high-performance of Hyper-Transport interconnection. In this paper, we present the implementations of the Smith-Waterman algorithm for both DNA and protein sequences on the platform. The main features include: (1) we bring forward a multistage PE (processing element) design which significantly reduces the FPGA resource usage and hence allows more parallelism to be exploited; (2) our design features a pipelined control mechanism with uneven stage latencies -- a key to minimize the overall PE pipeline cycle time; (3) we also put forward a compressed substitution matrix storage structure, resulting in substantial decrease of the on-chip SRAM usage. Finally, we implement a 384-PE systolic array running at 66.7MHz, which can achieve 25.6GCUPS peak performance. Compared with the 2.2GHz AMD Opteron host processor, the FPGA coprocessor speedups 185X and 250X respectively.},
+author = {Peiheng Zhang and Guangming Tan and G. Gao},
+doi = {10.1145/1328554.1328565},
+}
+
+@article{dbe3aa79bf3b778a980b754f8ce73f0b4bfebb83,
+title = {High Speed Homology Search Using Run-Time Reconfiguration},
+year = {2002},
+url = {https://www.semanticscholar.org/paper/dbe3aa79bf3b778a980b754f8ce73f0b4bfebb83},
+abstract = {In this paper, we show a new approach for homology search based on run-time reconfiguration. In our approach, the search consists of two phases, and different circuits are configured on demand during the search to make up for the limited memory bandwidth of off-theshelf FPGA boards. Experiments with an off-the-shelf FPGA (Xilinx XCV2000E) board showed good results. The time for comparing a query sequence of 2,048elemen ts with a database sequence of 64 million elements by the Smith-Waterman algorithm is about 34 sec, which is about 330 times faster than a desktop computer with a 1GHz Pentium-III.},
+author = {Y. Yamaguchi and Yosuke Miyajima and T. Maruyama and A. Konagaya},
+doi = {10.1007/3-540-46117-5_30},
+}
+
+@article{e7281dc600982fdf543ea334a3a492468ff42a51,
+title = {Combining sensitive database searches with multiple intermediates to detect distant homologues.},
+year = {1999},
+url = {https://www.semanticscholar.org/paper/e7281dc600982fdf543ea334a3a492468ff42a51},
+abstract = {Using data from the CATH structure classification, we have assessed the blastp, fasta, smith-waterman and gapped-blast algorithms, developed a portable normalization scheme and identified safe thresholds for database searching. Of the four methods assessed, fasta, smith-waterman and gapped-blast perform similarly, whereas the sensitivity of blastp was much lower. Introduction of an intermediate sequence search substantially improved the results. When tested on a set of relationships that could not be identified by blastp, intermediate sequences were able to find double the number of relationships identified by the smith-waterman algorithm alone. However, we found that the benefit of using intermediates varied considerably between each family and depended not only on the number of available sequences, but also their diversity. In an attempt to increase sensitivity further, a multiple intermediate sequence search (MISS) procedure was developed. When assessed on 1906 cases from a wide range of homologous families that could not be detected by the previous approaches, MISS was able to identify 241 additional relationships. MISS uses the full extent of sequence diversity to detect additional relationships, but does not consider any structure-specific information. For this reason, it is more generally applicable than fold recognition and threading methods, which require a library of known structures.},
+author = {A. Salamov and M. Suwa and C. Orengo and M. Swindells},
+doi = {10.1093/PROTEIN/12.2.95},
+pmid = {10195280},
+}
+
+@article{dbab18be6e8cd820dbbe666a3feec509cac0cb71,
+title = {CUDASW++: optimizing Smith-Waterman sequence database searches for CUDA-enabled graphics processing units},
+year = {2009},
+url = {https://www.semanticscholar.org/paper/dbab18be6e8cd820dbbe666a3feec509cac0cb71},
+abstract = {BackgroundThe Smith-Waterman algorithm is one of the most widely used tools for searching biological sequence databases due to its high sensitivity. Unfortunately, the Smith-Waterman algorithm is computationally demanding, which is further compounded by the exponential growth of sequence databases. The recent emergence of many-core architectures, and their associated programming interfaces, provides an opportunity to accelerate sequence database searches using commonly available and inexpensive hardware.FindingsOur CUDASW++ implementation (benchmarked on a single-GPU NVIDIA GeForce GTX 280 graphics card and a dual-GPU GeForce GTX 295 graphics card) provides a significant performance improvement compared to other publicly available implementations, such as SWPS3, CBESW, SW-CUDA, and NCBI-BLAST. CUDASW++ supports query sequences of length up to 59K and for query sequences ranging in length from 144 to 5,478 in Swiss-Prot release 56.6, the single-GPU version achieves an average performance of 9.509 GCUPS with a lowest performance of 9.039 GCUPS and a highest performance of 9.660 GCUPS, and the dual-GPU version achieves an average performance of 14.484 GCUPS with a lowest performance of 10.660 GCUPS and a highest performance of 16.087 GCUPS.ConclusionCUDASW++ is publicly available open-source software. It provides a significant performance improvement for Smith-Waterman-based protein sequence database searches by fully exploiting the compute capability of commonly used CUDA-enabled low-cost GPUs.},
+author = {Yongchao Liu and D. Maskell and B. Schmidt},
+doi = {10.1186/1756-0500-2-73},
+pmid = {19416548},
+}
+
+@article{2ab5a63d20cf21277271beb299268afd3005e5df,
+title = {SAMBA: hardware accelerator for biological sequence comparison},
+year = {1997},
+url = {https://www.semanticscholar.org/paper/2ab5a63d20cf21277271beb299268afd3005e5df},
+abstract = {MOTIVATION
+SAMBA (Systolic Accelerator for Molecular Biological Applications) is a 128 processor hardware accelerator for speeding up the sequence comparison process. The short-term objective is to provide a low-cost board to boost PC or workstation performance on this class of applications. This paper places SAMBA amongst other existing systems and highlights the original features.
+
+
+RESULTS
+Real performance obtained from the prototype is demonstrated. For example, a sequence of 300 amino acids is scanned against SWISS-PROT-34 (21 210 389 residues) in 30 s using the Smith and Waterman algorithm. More time-consuming applications, like the bank-to-bank comparison, are computed in a few hours instead of days on standard workstations. Technology allows the prototype to fit onto a single PCI board for plugging into any PC or workstation.
+
+
+AVAILABILITY
+SAMBA can be tested on the WEB server at URL http://www.irisa.fr/SAMBA/.},
+author = {P. Guerdoux-Jamet and D. Lavenier},
+doi = {10.1093/BIOINFORMATICS/13.6.609},
+pmid = {9475989},
+}
+
+@article{68f2f9917f5ae83a48cf935974340417edc32a87,
+title = {A Reconfigurable Accelerator for Smith–Waterman Algorithm},
+year = {2007},
+url = {https://www.semanticscholar.org/paper/68f2f9917f5ae83a48cf935974340417edc32a87},
+abstract = {Scanning bio-sequence database and finding similarities among DNA and protein sequences is basic and important work in bioinformatics field. To solve this problem, Needleman-Wunschh (NW) algorithm is a classical and precise tool, and Smith-Waterman (SW) algorithm is more practical for its capability to find similarities between subsequences. Such algorithms have computational complexity proportional to the length product of both involved sequences, hence processing time becomes insufferable due to exponential growth speed and great amount of bio-sequence database. To alleviate this serious problem, a reconfigurable accelerator for SW algorithm is presented. In the accelerator, a modified equation is proposed to improve mapping efficiency of a processing element (PE), and a special floor plan is applied to a fine-grain parallel PE array and interface components to cut down their routing delay. Basing on the two techniques, the proposed accelerator can reach at 82-MHz frequency in an Altera EP1S30 device. Experiments demonstrate the accelerator provides more than 330 speedup as compared to a standard desktop platform with a 2.8-GHz Xeon processor and 4-GB memory and has 50% improvement on the peak performance of a transferred traditional implementation without using the two special techniques. Our implementation is also about 9% faster than the fastest implementation in a most recent family of SW algorithm accelerators.},
+author = {Xianyang Jiang and Xinchun Liu and Lin Xu and Peiheng Zhang and Ninghui Sun},
+doi = {10.1109/TCSII.2007.909857},
+}
+
+@article{2161b22d96c59a19fb34ebacc9e733cf8ac6f6cc,
+title = {Fundamentals of database searching},
+year = {1998},
+url = {https://www.semanticscholar.org/paper/2161b22d96c59a19fb34ebacc9e733cf8ac6f6cc},
+abstract = {Aligning novel sequences with previously characterized genes or proteins provides important insights into their common attributes and evolutionary origins. The principles underlying the computational tools that can be used to evaluate sequence alignments are discussed.},
+author = {S. Altschul},
+doi = {10.1016/S0167-7799(98)00127-9},
+}
+
+@article{c6e0ae931c1ffd7b5e50590da152df5477c8a787,
+title = {Faster Smith-Waterman database searches with inter-sequence SIMD parallelisation},
+year = {2011},
+url = {https://www.semanticscholar.org/paper/c6e0ae931c1ffd7b5e50590da152df5477c8a787},
+abstract = {BackgroundThe Smith-Waterman algorithm for local sequence alignment is more sensitive than heuristic methods for database searching, but also more time-consuming. The fastest approach to parallelisation with SIMD technology has previously been described by Farrar in 2007. The aim of this study was to explore whether further speed could be gained by other approaches to parallelisation.ResultsA faster approach and implementation is described and benchmarked. In the new tool SWIPE, residues from sixteen different database sequences are compared in parallel to one query residue. Using a 375 residue query sequence a speed of 106 billion cell updates per second (GCUPS) was achieved on a dual Intel Xeon X5650 six-core processor system, which is over six times more rapid than software based on Farrar's 'striped' approach. SWIPE was about 2.5 times faster when the programs used only a single thread. For shorter queries, the increase in speed was larger. SWIPE was about twice as fast as BLAST when using the BLOSUM50 score matrix, while BLAST was about twice as fast as SWIPE for the BLOSUM62 matrix. The software is designed for 64 bit Linux on processors with SSSE3. Source code is available from http://dna.uio.no/swipe/ under the GNU Affero General Public License.ConclusionsEfficient parallelisation using SIMD on standard hardware makes it possible to run Smith-Waterman database searches more than six times faster than before. The approach described here could significantly widen the potential application of Smith-Waterman searches. Other applications that require optimal local alignment scores could also benefit from improved performance.},
+author = {T. Rognes},
+doi = {10.1186/1471-2105-12-221},
+pmid = {21631914},
+}
+
+@article{b0970af216eca404592eb527814544e628fc945b,
+title = {Effective protein sequence comparison.},
+year = {1996},
+url = {https://www.semanticscholar.org/paper/b0970af216eca404592eb527814544e628fc945b},
+abstract = {Although there are several different comparison programs available (e.g., BLASTP, FASTA, SSEARCH, and BLITZ) that can be used with different scoring systems (e.g., PAM120, PAM250, BLOSUM50, BLOSUM62) and different databases (e.g., PIR, SWISS-PROT, GenPept), the following search protocol should identify homologous sequences whenever they can be found. 1. Always compare protein sequences if the genes encode proteins. Protein sequence comparison will typically double the evolutionary lookback time over DNA sequence comparison. 2. Search several sequence databases using a rapid sequence comparison program (e.g., BLASTP or FASTA, ktup = 2). Well-curated databases like PIR or SWISS-PROT tend to have fewer redundant sequences, which improves the statistical significance of a match, but they are less comprehensive and up-to-date than GenPept. 3. If there is good agreement between the distribution of scores and the theoretical distribution, and the alignments do not include "simple sequence" domains, accept sequences with FASTA E() values or BLASTP P() values below 0.02 as homologous. 4. If no library sequences are found with E values below 0.02, perform additional searches with FASTA, ktup = 1, or SSEARCH. If library sequences with E values less than 0.02 are found, the sequences are probably homologous, unless a low-complexity domain is aligned. However, sequences with similarity scores from 0.02 to 10.0 may be homologous as well. To characterize these more distantly related sequences, select "marginal" library sequences and use them to search the databases. Additional family members should have E values less than 0.05. 5. Homologous sequences share a common ancestor, and thus a common protein fold. Depending on the evolutionary distance and divergence path, two or more homologous sequences may have very few absolutely conserved residues. However, if homology has been inferred between A and B, between B and C, and between C and D, A and D must be homologous, even if they share no significant similarity. 6. Sequences with marginal E values should also be tested using the PRSS program. Compare the query and library sequences using at least 200 (and preferably 1000) shuffles. Shuffles using a window (-w) of 10-20 are more stringent than a uniform shuffle. Use the E value after 1000 shuffles to confirm an inference of homology. 7. Homologous sequences are usually similar over an entire sequence or domain, typically sharing 20-25% or greater identity for more than 200 residues. Matches that are more than 50% identical in a 20- to 40-amino acid region occur frequently by chance and do not indicate homology. By following these steps, one will very rarely assert that two sequences are homologous when in fact they are not. However, these criteria are stringent; distantly related homologous sequences may fail to be detected because their similarity is not statistically significant. These tests are biased toward missing some distantly related sequences to avoid the possibility of misidentifying unrelated ones. In most database searches, the ratio of related to unrelated sequences is more than 4000:1 (e.g., 10 related and 40,000 unrelated sequences). Thus, one is more likely to mistakenly identify two sequences as related than to overlook a genuine relationship, and our conservative evaluation criteria reflect that bias.},
+author = {W. Pearson},
+doi = {10.1016/S0076-6879(96)66017-0},
+pmid = {8743688},
+}
+
+@article{7b625494b6193284814c277052a6fb131dfdd614,
+title = {Searching Biological Sequence Databases Using Distributed Adaptive Computing},
+year = {2003},
+url = {https://www.semanticscholar.org/paper/7b625494b6193284814c277052a6fb131dfdd614},
+abstract = {Genetic research projects currently can require enormous computing power to processes the vast quantities of data available. Further, DNA sequencing projects are generating data at an exponential rate greater than that of the development microprocessor technology; thus, new, faster methods and techniques of processing this data are needed. One common type of processing involves searching a sequence database for the most similar sequences. Here we present a distributed database search system that utilizes adaptive computing technologies. The search is performed using the Smith-Waterman algorithm, a common sequence comparison algorithm. To reduce the total search time, an initial search is performed using a version of the algorithm, implemented in adaptive computing hardware, which is designed to efficiently perform the initial search. A final search is performed using a complete version of the algorithm. This two-stage search, employing adaptive and distributed hardware, achieves a performance increase of several orders of magnitude over similar processor based systems.},
+author = {N. Pappas},
+}
+
+@article{c862ebb13286c404235c04147f8a3af3fa2b1058,
+title = {Speeding up genome computation with a systolic accelerator},
+year = {2001},
+url = {https://www.semanticscholar.org/paper/c862ebb13286c404235c04147f8a3af3fa2b1058},
+abstract = {The comparison of dna or protein sequences is a fundamental task in molecular biology that occurs in a variety of ways. The goal is to find similarities, areas which share common subsequences, between sequences. The operation can range from sequencing of dna molecules to database scanning. Similarities are detected by algorithms whose computational complexities are quadratic with respect to the length of the sequences. This is timeconsuming when a large amount of data (a large set of sequences, which is also called a bank) must be processed. Several approaches exist to speed-up the computation. The simplest approach is to wait for technology to improve processor speed. This approach is not very fruitful since biological databases are growing at a exponential rate. Every year the size of the banks are scaled by a factor ranging from 1.5 to 2. This exceeds the growth rate of processor performance. Another solution which has been widely adopted consists of introducing heuristics into the comparison algorithms. This is a very efficient method. Speed-ups between 10 to 100 can be achieved. There are two major drawbacks to heuristics. They cannot be applied to all comparison algorithms, and if they are they may seriously diminish the quality of results. In practice, when a heuristic is efficient at reducing the execution time, its resultant quality is lower. A last alternative to get high quality results in a short time is through parallel computation. Three possibilities exist for this approach. Massively parallel machines, networks of workstations, or dedicated hardware. The first},
+author = {D. Lavenier},
+}

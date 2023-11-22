@@ -1,0 +1,409 @@
+@article{6b50c51ce5070c81615ea584810f2a5ce0ef2de8,
+title = {PlasGUN: gene prediction in plasmid metagenomic short reads using deep learning},
+year = {2020},
+url = {https://www.semanticscholar.org/paper/6b50c51ce5070c81615ea584810f2a5ce0ef2de8},
+abstract = {Abstract Summary We present the first tool of gene prediction, PlasGUN, for plasmid metagenomic short-read data. The tool, developed based on deep learning algorithm of multiple input Convolutional Neural Network, demonstrates much better performance when tested on a benchmark dataset of artificial short reads and presents more reliable results for real plasmid metagenomic data than traditional gene prediction tools designed primarily for chromosome-derived short reads. Availability and implementation The PlasGUN software is available at http://cqb.pku.edu.cn/ZhuLab/PlasGUN/ or https://github.com/zhenchengfang/PlasGUN/. Supplementary information Supplementary data are available at Bioinformatics online.},
+author = {Zhencheng Fang and J. Tan and Shufang Wu and Mo Li and Chunhui Wang and Yongchu Liu and Huaiqiu Zhu},
+doi = {10.1093/bioinformatics/btaa103},
+pmid = {32091572},
+}
+
+@article{404b6d3d2879733e2434a4f47f8ab1574b3d54dc,
+title = {FragGeneScan-plus for scalable high-throughput short-read open reading frame prediction},
+year = {2015},
+url = {https://www.semanticscholar.org/paper/404b6d3d2879733e2434a4f47f8ab1574b3d54dc},
+abstract = {A fundamental step in the analysis of environmental sequence information is the prediction of potential genes or open reading frames (ORFs) encoding the metabolic potential of individual cells and entire microbial communities. FragGeneScan, a software designed to predict intact and incomplete ORFs on short sequencing reads combines codon usage bias, sequencing error models and start/stop codon patterns in a hidden Markov model to find the most likely path of hidden states from a given input sequence, provides a promising route for gene recovery in environmental datasets with incomplete assemblies. However, the current implementation of FragGeneScan does not scale efficiently with increasing input data size. Thus, FragGeneScan cannot be applied to contemporary environmental datasets that can exceed 100s of Gb. Here, we present FragGeneScan-Plus, an improved implementation of the FragGeneScan gene prediction model that leverages algorithmic thread synchronization and efficient in-memory data management to utilize multiple CPU cores without blocking I/O operations. FragGeneScan-Plus can process data approximately 5-times faster than FragGeneScan using a single core and approximately 50-times faster using eight hyper-threaded cores when benchmarked against simulated and real world environmental datasets.},
+author = {Dongjae Kim and A. Hahn and Shang-Ju Wu and Niels W. Hanson and K. Konwar and S. Hallam},
+doi = {10.1109/CIBCB.2015.7300341},
+}
+
+@article{0ad06f4278f342537b7a2e222cfbc6b749ebd972,
+title = {Gene and translation initiation site prediction in metagenomic sequences},
+year = {2012},
+url = {https://www.semanticscholar.org/paper/0ad06f4278f342537b7a2e222cfbc6b749ebd972},
+abstract = {MOTIVATION
+Gene prediction in metagenomic sequences remains a difficult problem. Current sequencing technologies do not achieve sufficient coverage to assemble the individual genomes in a typical sample; consequently, sequencing runs produce a large number of short sequences whose exact origin is unknown. Since these sequences are usually smaller than the average length of a gene, algorithms must make predictions based on very little data.
+
+
+RESULTS
+We present MetaProdigal, a metagenomic version of the gene prediction program Prodigal, that can identify genes in short, anonymous coding sequences with a high degree of accuracy. The novel value of the method consists of enhanced translation initiation site identification, ability to identify sequences that use alternate genetic codes and confidence values for each gene call. We compare the results of MetaProdigal with other methods and conclude with a discussion of future improvements.
+
+
+AVAILABILITY
+The Prodigal software is freely available under the General Public License from http://code.google.com/p/prodigal/.},
+author = {D. Hyatt and P. LoCascio and L. Hauser and E. Uberbacher},
+doi = {10.1093/bioinformatics/bts429},
+pmid = {22796954},
+}
+
+@article{0b0604c1c49c4ffd53bc4924b846db4bb1db618e,
+title = {Strategies for Metagenomic-Guided Whole-Community Proteomics of Complex Microbial Environments},
+year = {2011},
+url = {https://www.semanticscholar.org/paper/0b0604c1c49c4ffd53bc4924b846db4bb1db618e},
+abstract = {Accurate protein identification in large-scale proteomics experiments relies upon a detailed, accurate protein catalogue, which is derived from predictions of open reading frames based on genome sequence data. Integration of mass spectrometry-based proteomics data with computational proteome predictions from environmental metagenomic sequences has been challenging because of the variable overlap between proteomic datasets and corresponding short-read nucleotide sequence data. In this study, we have benchmarked several strategies for increasing microbial peptide spectral matching in metaproteomic datasets using protein predictions generated from matched metagenomic sequences from the same human fecal samples. Additionally, we investigated the impact of mass spectrometry-based filters (high mass accuracy, delta correlation), and de novo peptide sequencing on the number and robustness of peptide-spectrum assignments in these complex datasets. In summary, we find that high mass accuracy peptide measurements searched against non-assembled reads from DNA sequencing of the same samples significantly increased identifiable proteins without sacrificing accuracy.},
+author = {B. Cantarel and Alison R Erickson and N. Verberkmoes and B. Erickson and P. A. Carey and C. Pan and M. Shah and E. Mongodin and J. Jansson and C. Fraser-Liggett and R. Hettich},
+doi = {10.1371/journal.pone.0027173},
+pmid = {22132090},
+}
+
+@article{2f586a4c9a6f5825e33be0b5b24ddbb1bd23670f,
+title = {FragGeneScanRs: better and faster gene prediction for short reads},
+year = {2021},
+url = {https://www.semanticscholar.org/paper/2f586a4c9a6f5825e33be0b5b24ddbb1bd23670f},
+abstract = {FragGeneScanRs is a better and faster Rust implementation of the FragGeneScan gene prediction model for short and error-prone reads. Its command line interface is backward compatible and adds extra features for more flexible usage. Compared to the original C implementation, shotgun metagenomic reads are processed up to 22 times faster using a single thread, with better scaling for multithreaded execution. Availability and implementation The Rust code of FragGeneScanRs is freely available from GitHub under the GPL-3.0 license, with instructions for installation, usage and other documentation.},
+author = {F. Van der Jeugt and P. Dawyndt and B. Mesuere},
+doi = {10.1101/2021.08.11.455929},
+}
+
+@article{e6494c89e74f59a74d4e6e4e3fb73d7ab61c0e18,
+title = {Plasmid detection and assembly in genomic and metagenomic data sets},
+year = {2019},
+url = {https://www.semanticscholar.org/paper/e6494c89e74f59a74d4e6e4e3fb73d7ab61c0e18},
+abstract = {Although plasmids are important for bacterial survival and adaptation, plasmid detection and assembly from genomic, let alone metagenomic, samples remain challenging. The recently developed plasmidSPAdes assembler addressed some of these challenges in the case of isolate genomes but stopped short of detecting plasmids in metagenomic assemblies, an untapped source of yet to be discovered plasmids. We present the metaplasmidSPAdes tool for plasmid assembly in metagenomic data sets that reduced the false positive rate of plasmid detection compared with the state-of-the-art approaches. We assembled plasmids in diverse data sets and have shown that thousands of plasmids remained below the radar in already completed genomic and metagenomic studies. Our analysis revealed the extreme variability of plasmids and has led to the discovery of many novel plasmids (including many plasmids carrying antibiotic-resistance genes) without significant similarities to currently known ones.},
+author = {D. Antipov and Mikhail Raiko and A. Lapidus and P. Pevzner},
+doi = {10.1101/gr.241299.118},
+pmid = {31048319},
+}
+
+@article{9b1468239a5b739c4f9f471342160b7b8ef59cf4,
+title = {No one tool to rule them all: Prokaryotic gene prediction tool performance is highly dependent on the organism of study},
+year = {2021},
+url = {https://www.semanticscholar.org/paper/9b1468239a5b739c4f9f471342160b7b8ef59cf4},
+abstract = {Motivation The biases in Open Reading Frame (ORF) prediction tools, which have been based on historic genomic annotations from model organisms, impact our understanding of novel genomes and metagenomes. This hinders the discovery of new genomic information as it results in predictions being biased towards existing knowledge. To date users have lacked a systematic and replicable approach to identify the strengths and weaknesses of any ORF prediction tool and allow them to choose the right tool for their analysis. Results We present an evaluation framework (ORForise) based on a comprehensive set of 12 primary and 60 secondary metrics that facilitate the assessment of the performance of ORF prediction tools. This makes it possible to identify which performs better for specific use-cases. We use this to assess 15 ab initio and model-based tools representing those most widely used (historically and currently) to generate the knowledge in genomic databases. We find that the performance of any tool is dependent on the genome being analysed, and no individual tool ranked as the most accurate across all genomes or metrics analysed. Even the top-ranked tools produced conflicting gene collections which could not be resolved by aggregation. The ORForise evaluation framework provides users with a replicable, data-led approach to make informed tool choices for novel genome annotations and for refining historical annotations. Availability https://github.com/NickJD/ORForise Contact nicholas@dimonaco.co.uk Supplementary information Supplementary data are available at bioRxiv online.},
+author = {N. Dimonaco and Wayne Aubrey and K. Kenobi and A. Clare and C. Creevey},
+doi = {10.1101/2021.05.21.445150},
+}
+
+@article{d7150d76f94f861eec1785fabc9cb2c001b3ff85,
+title = {UMGAP: the Unipept MetaGenomics Analysis Pipeline},
+year = {2022},
+url = {},
+abstract = {The Unipept MetaGenomics Analysis Pipeline (UMGAP), a highly versatile suite of open source tools that are implemented in Rust and support parallelization to achieve optimal performance, achieves low runtime, manageable memory footprint and high accuracy. 
+ 
+ Shotgun metagenomics yields ever richer and larger data volumes on the complex communities living in diverse environments. Extracting deep insights from the raw reads heavily depends on the availability of fast, accurate and user-friendly biodiversity analysis tools.
+ 
+ 
+ Because environmental samples may contain strains and species that are not covered in reference databases and because protein sequences are more conserved than the genes encoding them, we explore the alternative route of taxonomic profiling based on protein coding regions translated from the shotgun metagenomics reads, instead of directly processing the DNA reads. We therefore developed the Unipept MetaGenomics Analysis Pipeline (UMGAP), a highly versatile suite of open source tools that are implemented in Rust and support parallelization to achieve optimal performance. Six preconfigured pipelines with different performance trade-offs were carefully selected, and benchmarked against a selection of state-of-the-art shotgun metagenomics taxonomic profiling tools.
+ 
+ 
+ UMGAP’s protein space detour for taxonomic profiling makes it competitive with state-of-the-art shotgun metagenomics tools. Despite our design choices of an extra protein translation step, a broad spectrum index that can identify both archaea, bacteria, eukaryotes and viruses, and a highly configurable non-monolithic design, UMGAP achieves low runtime, manageable memory footprint and high accuracy. Its interactive visualizations allow for easy exploration and comparison of complex communities.
+},
+author = {F. Van der Jeugt and Rien Maertens and Aranka Steyaert and Pieter Verschaffelt and C. De Tender and P. Dawyndt and B. Mesuere},
+}
+
+@article{4a9ffc6c60602d05da62c762605b89d302cb4ae6,
+title = {CNN-MGP: Convolutional Neural Networks for Metagenomics Gene Prediction},
+year = {2018},
+url = {https://www.semanticscholar.org/paper/4a9ffc6c60602d05da62c762605b89d302cb4ae6},
+abstract = {Accurate gene prediction in metagenomics fragments is a computationally challenging task due to the short-read length, incomplete, and fragmented nature of the data. Most gene-prediction programs are based on extracting a large number of features and then applying statistical approaches or supervised classification approaches to predict genes. In our study, we introduce a convolutional neural network for metagenomics gene prediction (CNN-MGP) program that predicts genes in metagenomics fragments directly from raw DNA sequences, without the need for manual feature extraction and feature selection stages. CNN-MGP is able to learn the characteristics of coding and non-coding regions and distinguish coding and non-coding open reading frames (ORFs). We train 10 CNN models on 10 mutually exclusive datasets based on pre-defined GC content ranges. We extract ORFs from each fragment; then, the ORFs are encoded numerically and inputted into an appropriate CNN model based on the fragment-GC content. The output from the CNN is the probability that an ORF will encode a gene. Finally, a greedy algorithm is used to select the final gene list. Overall, CNN-MGP is effective and achieves a 91% accuracy on testing dataset. CNN-MGP shows the ability of deep learning to predict genes in metagenomics fragments, and it achieves an accuracy higher than or comparable to state-of-the-art gene-prediction programs that use pre-defined features.},
+author = {Amani A. Al-Ajlan and Achraf El Allali},
+doi = {10.1007/s12539-018-0313-4},
+pmid = {30588558},
+}
+
+@article{781c55dc21070c01c5170eda569f8a2254c91894,
+title = {Identification of the conjugative and mobilizable plasmid fragments in the plasmidome using sequence signatures},
+year = {2020},
+url = {https://www.semanticscholar.org/paper/781c55dc21070c01c5170eda569f8a2254c91894},
+abstract = {Plasmids are the key element in horizontal gene transfer in the microbial community. Recently, a large number of experimental and computational methods have been developed to obtain the plasmidomes of microbial communities. Distinguishing transmissible plasmid sequences, which are derived from conjugative or at least mobilizable plasmids, from non-transmissible plasmid sequences in the plasmidome is essential for understanding the diversity of plasmids and how they regulate the microbial community. Unfortunately, due to the highly fragmented characteristics of DNA sequences in the plasmidome, effective identification methods are lacking. In this work, we used information entropy from information theory to assess the randomness of synonymous codon usage over 4424 plasmid genomes. The results showed that for all amino acids, the choice of a synonymous codon in conjugative and mobilizable plasmids is more random than that in non-transmissible plasmids, indicating that transmissible plasmids have different sequence signatures from non-transmissible plasmids. Inspired by this phenomenon, we further developed a novel algorithm named PlasTrans. PlasTrans takes the triplet code sequences and base sequences of plasmid DNA fragments as input and uses the convolutional neural network of the deep learning technique to further extract the more complex signatures of the plasmid sequences and identify the conjugative and mobilizable DNA fragments. Tests showed that PlasTrans could achieve an AUC of as high as 84–91%, even though the fragments only contained hundreds of base pairs. To the best of our knowledge, this is the first quantitative analysis of the difference in sequence signatures between transmissible and non-transmissible plasmids, and we developed the first tool to perform transferability annotation for DNA fragments in the plasmidome. We expect that PlasTrans will be a useful tool for researchers who analyse the properties of novel plasmids in the microbial community and horizontal gene transfer, especially the spread of resistance genes and virulence factors associated with plasmids. PlasTrans is freely available via https://github.com/zhenchengfang/PlasTrans},
+author = {Zhencheng Fang and Hongwei Zhou},
+doi = {10.1099/mgen.0.000459},
+pmid = {33074084},
+}
+
+@article{49b81b966b262ba827bf42cd5b9bc5c431556e83,
+title = {Metagenomics for Monitoring Environmental Biodiversity: Challenges, Progress, and Opportunities},
+year = {2017},
+url = {https://www.semanticscholar.org/paper/49b81b966b262ba827bf42cd5b9bc5c431556e83},
+abstract = {Metagenomics, as the genomic analysis of DNA materials from environmental samples containing multiple genomic components, is attracting more and more interests due to its wide applications on microbial, cancer, and immunology researches. This chapter provides an overview on the topic covering the major steps involved in data collection, processing, and analysis. We describe and discuss experiment design, sample processing and quality control, sequencing and assembly, annotation, and downstream analyses. For each step, we summarize the current points of views, key issues, and popular tools. A step-by-step tutorial is then given using the popular QIIME pipeline on a bacterial 16S rRNA study case, which would benefit new scientists of the field for the startup of a successful metagenome project.},
+author = {Raghu Chandramohan and Cheng Yang and Yunpeng Cai and May D. Wang},
+doi = {10.1007/978-3-319-44981-4_5},
+}
+
+@article{cfa4c650eb5a54b7fc87ad8efdb38959476e1084,
+title = {DeePhage: distinguishing virulent and temperate phage-derived sequences in metavirome data with a deep learning approach},
+year = {2021},
+url = {https://www.semanticscholar.org/paper/cfa4c650eb5a54b7fc87ad8efdb38959476e1084},
+abstract = {Abstract Background Prokaryotic viruses referred to as phages can be divided into virulent and temperate phages. Distinguishing virulent and temperate phage–derived sequences in metavirome data is important for elucidating their different roles in interactions with bacterial hosts and regulation of microbial communities. However, there is no experimental or computational approach to effectively classify their sequences in culture-independent metavirome. We present a new computational method, DeePhage, which can directly and rapidly judge each read or contig as a virulent or temperate phage–derived fragment. Findings DeePhage uses a “one-hot” encoding form to represent DNA sequences in detail. Sequence signatures are detected via a convolutional neural network to obtain valuable local features. The accuracy of DeePhage on 5-fold cross-validation reaches as high as 89%, nearly 10% and 30% higher than that of 2 similar tools, PhagePred and PHACTS. On real metavirome, DeePhage correctly predicts the highest proportion of contigs when using BLAST as annotation, without apparent preferences. Besides, DeePhage reduces running time vs PhagePred and PHACTS by 245 and 810 times, respectively, under the same computational configuration. By direct detection of the temperate viral fragments from metagenome and metavirome, we furthermore propose a new strategy to explore phage transformations in the microbial community. The ability to detect such transformations provides us a new insight into the potential treatment for human disease. Conclusions DeePhage is a novel tool developed to rapidly and efficiently identify 2 kinds of phage fragments especially for metagenomics analysis. DeePhage is freely available via http://cqb.pku.edu.cn/ZhuLab/DeePhage or https://github.com/shufangwu/DeePhage.},
+author = {Shufang Wu and Zhencheng Fang and J. Tan and Mo Li and Chunhui Wang and Qian Guo and Congmin Xu and Xiaoqing Jiang and Huaiqiu Zhu},
+doi = {10.1093/gigascience/giab056},
+pmid = {34498685},
+}
+
+@article{2c01cc63a13ca94485c146d5c14ad4674fc86723,
+title = {PlasClass improves plasmid sequence classification},
+year = {2019},
+url = {https://www.semanticscholar.org/paper/2c01cc63a13ca94485c146d5c14ad4674fc86723},
+abstract = {Many bacteria contain plasmids, but separating between contigs that originate on the plasmid and those that are part of the bacterial genome can be difficult. This is especially true in metagenomic assembly, which yields many contigs of unknown origin. Existing tools for classifying sequences of plasmid origin give less reliable results for shorter sequences, are trained using only some of the known plasmids, and can be difficult to use in practice. Results We present PlasClass, a new plasmid classifier. It uses a set of standard classifiers trained on the most current set of known plasmid sequences for different sequence lengths. PlasClass outperforms the state-of-the-art plasmid classification tool on shorter sequences, which constitute the majority of assembly contigs, while using significantly less time and memory Availability https://github.com/Shamir-Lab/PlasClass Contact dpellow@tau.ac.il,rshamir@tau.ac.il},
+author = {David Pellow and Itzik Mizrahi and R. Shamir},
+doi = {10.1101/783571},
+pmid = {32243433},
+}
+
+@article{bda6625c37c32916b9793636fdd2b941abfdd93e,
+title = {PPR-Meta: a tool for identifying phages and plasmids from metagenomic fragments using deep learning},
+year = {2019},
+url = {https://www.semanticscholar.org/paper/bda6625c37c32916b9793636fdd2b941abfdd93e},
+abstract = {Abstract Background Phages and plasmids are the major components of mobile genetic elements, and fragments from such elements generally co-exist with chromosome-derived fragments in sequenced metagenomic data. However, there is a lack of efficient methods that can simultaneously identify phages and plasmids in metagenomic data, and the existing tools identifying either phages or plasmids have not yet presented satisfactory performance. Findings We present PPR-Meta, a 3-class classifier that allows simultaneous identification of both phage and plasmid fragments from metagenomic assemblies. PPR-Meta consists of several modules for predicting sequences of different lengths. Using deep learning, a novel network architecture, referred to as the Bi-path Convolutional Neural Network, is designed to improve the performance for short fragments. PPR-Meta demonstrates much better performance than currently available similar tools individually for phage or plasmid identification, while testing on both artificial contigs and real metagenomic data. PPR-Meta is freely available via http://cqb.pku.edu.cn/ZhuLab/PPR_Meta or https://github.com/zhenchengfang/PPR-Meta. Conclusions To the best of our knowledge, PPR-Meta is the first tool that can simultaneously identify phage and plasmid fragments efficiently and reliably. The software is optimized and can be easily run on a local PC by non-computer professionals. We developed PPR-Meta to promote the research on mobile genetic elements and horizontal gene transfer.},
+author = {Zhencheng Fang and J. Tan and Shufang Wu and Mo Li and Congmin Xu and Zhongjie Xie and Huaiqiu Zhu},
+doi = {10.1093/gigascience/giz066},
+pmid = {31220250},
+}
+
+@article{ac7c41d02df429509ac68c6ea0fde3911ff7c2e3,
+title = {The Effect of Machine Learning Algorithms on Metagenomics Gene Prediction},
+year = {2018},
+url = {https://www.semanticscholar.org/paper/ac7c41d02df429509ac68c6ea0fde3911ff7c2e3},
+abstract = {The development of next generation sequencing facilitates the study of metagenomics. Computational gene prediction aims to find the location of genes in a given DNA sequence. Gene prediction in metagenomics is a challenging task because of the short and fragmented nature of the data. Our previous framework minimum redundancy maximum relevance - support vector machines (mRMR-SVM) produced promising results in metagenomics gene prediction. In this paper, we review available metagenomics gene prediction programs and study the effect of the machine learning approach on gene prediction by altering the underlining machine learning algorithm in our previous framework. Overall, SVM produces the highest accuracy based on tests performed on a simulated dataset.},
+author = {Amani A. Al-Ajlan and Achraf El Allali},
+doi = {10.1145/3309129.3309136},
+}
+
+@article{e4700100061324f46000e7c47679790d26380b14,
+title = {Distinguish virulent and temperate phage-derived sequences in metavirome data with a deep learning approach},
+year = {2020},
+url = {https://www.semanticscholar.org/paper/e4700100061324f46000e7c47679790d26380b14},
+abstract = {Background Prokaryotic viruses referred to as phages can be divided into virulent and temperate phages. Distinguishing virulent and temperate phage-derived sequences in metavirome data is important for their role in interactions with bacterial hosts and regulations of microbial communities. However there is no experimental or computational approach to classify sequences of these two in culture-independent metavirome effectively, we present a new computational method DeePhage, which can directly and rapidly judge each read or contig as a virulent or temperate phage-derived fragment. Findings DeePhage utilizes a “one-hot” encoding form to have an overall and detailed representation of DNA sequences. Sequence signatures are detected via a deep learning algorithm, namely a convolutional neural network to extract valuable local features. DeePhage makes better performance than the most related method PHACTS. The accuracy of DeePhage on five-fold validation reach as high as 88%, nearly 30% higher than PHACTS. Evaluation on real metavirome shows DeePhage annotated 54.4% of reliable contigs while PHACTS annotated 44.5%. While running on the same machine, DeePhage reduces computational time than PHACTS by 810 times. Besides, we proposed a new strategy to explore phage transformations in the microbial community by direct detection of the temperate viral fragments from metagenome and metavirome. The detectable transformation of temperate phages provided us a new insight into the potential treatment for human disease. Conclusions DeePhage is the first tool that can rapidly and efficiently identify two kinds of phage fragments especially for metagenomics analysis with satisfactory performance. DeePhage is freely available via http://cqb.pku.edu.cn/ZhuLab/DeePhage or https://github.com/shufangwu/DeePhage.},
+author = {Shufang Wu and Zhencheng Fang and J. Tan and Mo Li and Chunhui Wang and Qian Guo and Congmin Xu and Xiaoqing Jiang and Huaiqiu Zhu},
+doi = {10.1101/2020.12.25.424404},
+}
+
+@article{b78d41d673d2085712ed30cf4b3f53f186fe1b96,
+title = {Introduction to Computational and Bioinformatics Tools in Virology},
+year = {2020},
+url = {https://www.semanticscholar.org/paper/b78d41d673d2085712ed30cf4b3f53f186fe1b96},
+abstract = {Abstract Viruses are a primary factor in the human infectious disease. Viral disease outbreaks and timely epidemics to different parts of the world cause severe clinical manifestations and congenital malformations. Understanding the structure–function correlation in viruses is an essential phenomenon for the identification of a potential target for the inhibitors and vaccine development. In virology research, virus-related databases and bioinformatics tools are essential equipment to distinguish the relationship between different datasets about viruses and host–virus interactions. Bioinformatics analysis includes different tasks such as sequence alignment, homology searching, identification of open reading frames, motif, and gene prediction. It is also essential for the prediction of features such as transmembrane domains, glycosylation sites, and protein secondary and tertiary structure prediction. One of the crucial tasks of bioinformatics is also the analysis of protein–protein interaction network and biochemical pathway, which can help elucidate information at the biological systems level. Microarray analysis provides methods for high throughput screening and gene expression profiling.},
+author = {Pramodkumar P. Gupta and Y. Kasmi and Č. Podlipnik},
+doi = {10.1016/b978-0-12-814966-9.00008-1},
+}
+
+@article{fba84b16c8581ffb830900b079f2e922c16dcd19,
+title = {Gene Prediction in Metagenomic Fragments with Deep Learning},
+year = {2017},
+url = {https://www.semanticscholar.org/paper/fba84b16c8581ffb830900b079f2e922c16dcd19},
+abstract = {Next generation sequencing technologies used in metagenomics yield numerous sequencing fragments which come from thousands of different species. Accurately identifying genes from metagenomics fragments is one of the most fundamental issues in metagenomics. In this article, by fusing multifeatures (i.e., monocodon usage, monoamino acid usage, ORF length coverage, and Z-curve features) and using deep stacking networks learning model, we present a novel method (called Meta-MFDL) to predict the metagenomic genes. The results with 10 CV and independent tests show that Meta-MFDL is a powerful tool for identifying genes from metagenomic fragments.},
+author = {Shaowu Zhang and Xiang-Yang Jin and Teng Zhang},
+doi = {10.1155/2017/4740354},
+pmid = {29250541},
+}
+
+@article{44b4bd4c7a46e714b68fd758cde1f863c524b45d,
+title = {SCAPP: an algorithm for improved plasmid assembly in metagenomes},
+year = {2020},
+url = {https://www.semanticscholar.org/paper/44b4bd4c7a46e714b68fd758cde1f863c524b45d},
+abstract = {Background Metagenomic sequencing has led to the identification and assembly of many new bacterial genome sequences. These bacteria often contain plasmids: usually small, circular double-stranded DNA molecules that may transfer across bacterial species and confer antibiotic resistance. These plasmids are generally less studied and understood than their bacterial hosts. Part of the reason for this is insufficient computational tools enabling the analysis of plasmids in metagenomic samples. Results We developed SCAPP (Sequence Contents-Aware Plasmid Peeler) - an algorithm and tool to assemble plasmid sequences from metagenomic sequencing. SCAPP builds on some key ideas from the Recycler algorithm while improving plasmid assemblies by integrating biological knowledge about plasmids. We compared the performance of SCAPP to Recycler and metaplasmidSPAdes on simulated metagenomes, real human gut microbiome samples, and a human gut plasmidome dataset that we generated. We also created plasmidome and metagenome data from the same cow rumen sample and used the parallel sequencing data to create a novel assessment procedure. Overall, SCAPP outperformed Recycler and metaplasmidSPAdes across this wide range of datasets. Conclusions SCAPP is an easy to use Python package that enables the assembly of full plasmid sequences from metagenomic samples. It outperformed existing metagenomic plasmid assemblers in most cases, and assembled novel and clinically relevant plasmids in samples we generated such as a human gut plasmidome. SCAPP is open-source software available from: https://github.com/Shamir-Lab/SCAPP.},
+author = {David Pellow and Alvah Zorea and M. Probst and Ori Furman and A. Segal and I. Mizrahi and R. Shamir},
+doi = {10.1186/s40168-021-01068-z},
+pmid = {34172093},
+}
+
+@article{3931626a403e814fd37d3eb8081b7f59b2702d98,
+title = {FragGeneScanRs: faster gene prediction for short reads},
+year = {2022},
+url = {https://www.semanticscholar.org/paper/3931626a403e814fd37d3eb8081b7f59b2702d98},
+abstract = {FragGeneScanRs, a faster Rust implementation of the FragGeneScan gene prediction model, is introduced and shotgun metagenomic reads are processed up to 22 times faster using a single thread, with better scaling for multithreaded execution. Background FragGeneScan is currently the most accurate and popular tool for gene prediction in short and error-prone reads, but its execution speed is insufficient for use on larger data sets. The parallelization which should have addressed this is inefficient. Its alternative implementation FragGeneScan+ is faster, but introduced a number of bugs related to memory management, race conditions and even output accuracy. Results This paper introduces FragGeneScanRs, a faster Rust implementation of the FragGeneScan gene prediction model. Its command line interface is backward compatible and adds extra features for more flexible usage. Its output is equivalent to the original FragGeneScan implementation. Conclusions Compared to the current C implementation, shotgun metagenomic reads are processed up to 22 times faster using a single thread, with better scaling for multithreaded execution. The Rust code of FragGeneScanRs is freely available from GitHub under the GPL-3.0 license with instructions for installation, usage and other documentation ( https://github.com/unipept/FragGeneScanRs ).},
+author = {F. Jeugt and P. Dawyndt and B. Mesuere},
+doi = {10.1186/s12859-022-04736-5},
+pmid = {35643462},
+}
+
+@article{3635dd111fbd69f2939becb5542738a8bed485aa,
+title = {Feature selection for gene prediction in metagenomic fragments},
+year = {2018},
+url = {https://www.semanticscholar.org/paper/3635dd111fbd69f2939becb5542738a8bed485aa},
+abstract = {BackgroundComputational approaches, specifically machine-learning techniques, play an important role in many metagenomic analysis algorithms, such as gene prediction. Due to the large feature space, current de novo gene prediction algorithms use different combinations of classification algorithms to distinguish between coding and non-coding sequences.ResultsIn this study, we apply a filter method to select relevant features from a large set of known features instead of combining them using linear classifiers or ignoring their individual coding potential. We use minimum redundancy maximum relevance (mRMR) to select the most relevant features. Support vector machines (SVM) are trained using these features, and the classification score is transformed into the posterior probability of the coding class. A greedy algorithm uses the probability of overlapped candidate genes to select the final genes. Instead of using one model for all sequences, we train an ensemble of SVM models on mutually exclusive datasets based on GC content and use the appropriated model to classify candidate genes based on their read’s GC content.ConclusionOur proposed algorithm achieves an improvement over some existing algorithms. mRMR produces promising results in gene prediction. It improves classification performance and feature interpretation. Our research serves as a basis for future studies on feature selection for gene prediction.},
+author = {Amani A. Al-Ajlan and Achraf El Allali},
+doi = {10.1186/s13040-018-0170-z},
+pmid = {30026811},
+}
+
+@article{3ad8dcb6d3fe38f7e8061bff76dd431c4c4776b8,
+title = {A Random Forest Classifier for Prokaryotes Gene Prediction},
+year = {2019},
+url = {},
+abstract = {Metagenomics is related to the study of microbial genomes, known as metagenomes, describing them through their microorganisms compositions, relationships and activities, thus allowing a greater knowledge about the fundamentals of life and the broad microbial diversity. One way to accomplish such task is by analyzing information from genes contained in metagenomes. The process to identify genes in DNA sequences are usually called gene prediction. This work presents a new gene predictor using the Random Forest classifier. The proposed model obtaining better classification results when compared to state-of-the-art gene prediction tools widely used by the bioinformatics community. Random Forest presented more robust results, being 27% better than Prodigal and 20% better than FragGeneScan w.r.t AUC values while using the independent test set. Feature engineering has been revisited in the gene prediction problem, reinforcing the importance of careful evaluation of assembly a good feature set. K-mer counting features can been seen as the fundamental model building blocks to develop robust gene predictors.},
+author = {Raíssa Lorena Silva da Silva and Kleber Padovani de Souza and Fabiana Rodrigues de Góes and Ronnie Cley de Oliveira Alves},
+}
+
+@article{a1f13ab89447325c28ccf9fefcfed4cdf62d1d29,
+title = {MetaGeneMark-2: Improved Gene Prediction in Metagenomes},
+year = {2022},
+url = {https://www.semanticscholar.org/paper/a1f13ab89447325c28ccf9fefcfed4cdf62d1d29},
+abstract = {Accurate prediction of protein-coding genes in metagenomic contigs presents a well-known challenge. Particularly difficult is to identify short and incomplete genes as well as positions of translation initiation sites. It is frequently assumed that initiation of translation in prokaryotes is controlled by a ribosome binding site (RBS), a sequence with the Shine-Dalgarno (SD) consensus situated in the 5’ UTR. However, ∼30% of the 5,007 genomes, representing the RefSeq collection of prokaryotic genomes, have either non-SD RBS sequences or no RBS site due to physical absence of the 5’ UTR (the case of leaderless transcription). Predictions of the gene 3’ ends are much more accurate; still, errors could occur due to the use of incorrect genetic code. Hence, an effective gene finding algorithm would identify true genetic code in a process of the sequence analysis. In this work prediction of gene starts was improved by inferring the GC content dependent generating functions for RBS sequences as well as for promoter sequences involved in leaderless transcription. An additional feature of the algorithm was the ability to identify alternative genetic code defined by a reassignment of the TGA stop codon (the only stop codon reassignment type known in prokaryotes). It was demonstrated that MetaGeneMark-2 made more accurate gene predictions in metagenomic sequences than several existing state-of-the-art tools.},
+author = {Karl Gemayel and A. Lomsadze and M. Borodovsky},
+doi = {10.1101/2022.07.25.500264},
+}
+
+@article{930f2df231207c094815ba618374feaafe03dd21,
+title = {Introduction to the Analysis of Environmental Sequence Information Using Metapathways},
+year = {2016},
+url = {https://www.semanticscholar.org/paper/930f2df231207c094815ba618374feaafe03dd21},
+abstract = {},
+author = {Niels W. Hanson and K. Konwar and Shang-Ju Wu and S. Hallam},
+doi = {10.1002/9781119272182.CH2},
+}
+
+@article{4429db93f57dfc9c5730306f0a99445ad7d7823c,
+title = {Análise de composição de conjunto de treinamento para avaliação de aprendizagem de máquina aplicada à predição de genes},
+year = {2019},
+url = {https://www.semanticscholar.org/paper/4429db93f57dfc9c5730306f0a99445ad7d7823c},
+abstract = {Metagenomics allows the study of microbial communities, known as metagenomes, describing them through their compositions and the relation and activities of the microorganisms that coexist there, thus allowing a deeper knowledge about the fundamentals of life and about the broad microbiological diversity, which is still poorly known. Such description can be achieved by the analysis of information from genes contained in (meta) genomes, extracted through the process of identifying genes in DNA sequences, called gene prediction. This work presents a study that allows the analysis of the impact of the training set composition when using machine learning in protein-coding genes prediction.},
+author = {Raíssa Da Silva and Kleber Padovani and W. Santos and R. Xavier and Ronnie Alves},
+doi = {10.5753/bsb_estendido.2018.8798},
+}
+
+@article{3cee40494377c0e7d9c7c23a3811b481e55bce39,
+title = {Ab initio gene identification in metagenomic sequences},
+year = {2010},
+url = {https://www.semanticscholar.org/paper/3cee40494377c0e7d9c7c23a3811b481e55bce39},
+abstract = {We describe an algorithm for gene identification in DNA sequences derived from shotgun sequencing of microbial communities. Accurate ab initio gene prediction in a short nucleotide sequence of anonymous origin is hampered by uncertainty in model parameters. While several machine learning approaches could be proposed to bypass this difficulty, one effective method is to estimate parameters from dependencies, formed in evolution, between frequencies of oligonucleotides in protein-coding regions and genome nucleotide composition. Original version of the method was proposed in 1999 and has been used since for (i) reconstructing codon frequency vector needed for gene finding in viral genomes and (ii) initializing parameters of self-training gene finding algorithms. With advent of new prokaryotic genomes en masse it became possible to enhance the original approach by using direct polynomial and logistic approximations of oligonucleotide frequencies, as well as by separating models for bacteria and archaea. These advances have increased the accuracy of model reconstruction and, subsequently, gene prediction. We describe the refined method and assess its accuracy on known prokaryotic genomes split into short sequences. Also, we show that as a result of application of the new method, several thousands of new genes could be added to existing annotations of several human and mouse gut metagenomes.},
+author = {Wenhan Zhu and A. Lomsadze and M. Borodovsky},
+doi = {10.1093/nar/gkq275},
+pmid = {20403810},
+}
+
+@article{896f39e52e33d16e7c99dec4583f023008683527,
+title = {PlasForest: a homology-based random forest classifier for plasmid detection in genomic datasets},
+year = {2021},
+url = {},
+abstract = {Background Plasmids are mobile genetic elements that often carry accessory genes, and are vectors for horizontal transfer between bacterial genomes. Plasmid detection in large genomic datasets is crucial to analyze their spread and quantify their role in bacteria adaptation and particularly in antibiotic resistance propagation. Bioinformatics methods have been developed to detect plasmids. However, they suffer from low sensitivity (i.e . , most plasmids remain undetected) or low precision (i.e., these methods identify chromosomes as plasmids), and are overall not adapted to identify plasmids in whole genomes that are not fully assembled (contigs and scaffolds). Results We developed PlasForest, a homology-based random forest classifier identifying bacterial plasmid sequences in partially assembled genomes. Without knowing the taxonomical origin of the samples, PlasForest identifies contigs as plasmids or chromosomes with a F1 score of 0.950. Notably, it can detect 77.4% of plasmid contigs below 1 kb with 2.8% of false positives and 99.9% of plasmid contigs over 50 kb with 2.2% of false positives. Conclusions PlasForest outperforms other currently available tools on genomic datasets by being both sensitive and precise. The performance of PlasForest on metagenomic assemblies are currently well below those of other k-mer-based methods, and we discuss how homology-based approaches could improve plasmid detection in such datasets.},
+author = {Léa Pradier and T. Tissot and Anna-Sophie Fiston-Lavier and S. Bedhomme},
+}
+
+@article{d4d000726caa36fb133db22b448ff7df30ddbae7,
+title = {Gene prediction in metagenomic fragments based on the SVM algorithm},
+year = {2011},
+url = {https://www.semanticscholar.org/paper/d4d000726caa36fb133db22b448ff7df30ddbae7},
+abstract = {BackgroundMetagenomic sequencing is becoming a powerful technology for exploring micro-ogranisms from various environments, such as human body, without isolation and cultivation. Accurately identifying genes from metagenomic fragments is one of the most fundamental issues.ResultsIn this article, we present a novel gene prediction method named MetaGUN for metagenomic fragments based on a machine learning approach of SVM. It implements in a three-stage strategy to predict genes. Firstly, it classifies input fragments into phylogenetic groups by a k-mer based sequence binning method. Then, protein-coding sequences are identified for each group independently with SVM classifiers that integrate entropy density profiles (EDP) of codon usage, translation initiation site (TIS) scores and open reading frame (ORF) length as input patterns. Finally, the TISs are adjusted by employing a modified version of MetaTISA. To identify protein-coding sequences, MetaGun builds the universal module and the novel module. The former is based on a set of representative species, while the latter is designed to find potential functionary DNA sequences with conserved domains.ConclusionsComparisons on artificial shotgun fragments with multiple current metagenomic gene finders show that MetaGUN predicts better results on both 3' and 5' ends of genes with fragments of various lengths. Especially, it makes the most reliable predictions among these methods. As an application, MetaGUN was used to predict genes for two samples of human gut microbiome. It identifies thousands of additional genes with significant evidences. Further analysis indicates that MetaGUN tends to predict more potential novel genes than other current metagenomic gene finders.},
+author = {Yongchu Liu and Jiangtao Guo and Huaiqiu Zhu},
+doi = {10.1186/1471-2105-14-S5-S12},
+pmid = {23735199},
+}
+
+@article{87ecb2680a1c5484c074f67680ec657a657870ab,
+title = {Comparison of Gene Prediction Programs for Metagenomic Data},
+year = {2010},
+url = {https://www.semanticscholar.org/paper/87ecb2680a1c5484c074f67680ec657a657870ab},
+abstract = {This manuscript presents the most rigorous benchmarking of gene annotation algorithms for metagenomic datasets to date. We compare three different programs: GeneMark, MetaGeneAnnotator (MGA) and Orphelia. The comparisons are based on their performances over simulated fragments from hundred species of diverse lineages. We defined three different types of fragments: one type from the intra-coding region and the other types are from the gene edges. The general observation was that performances of all these programs improve as we increase the length of the fragment. On the other hand, intra-coding fragments of our data show a low annotation error in all of the programs if compared to the genes edges.},
+author = {N. Yok and G. Rosen},
+doi = {10.1109/BIBE.2010.58},
+}
+
+@article{28d39812583fd884fedfbee8d24d1b457dd59d8a,
+title = {Identification of environmental aquatic bacteria by mass spectrometry supported by biochemical differentiation},
+year = {2022},
+url = {https://www.semanticscholar.org/paper/28d39812583fd884fedfbee8d24d1b457dd59d8a},
+abstract = {In this study, the purposefulness of using the API20E biochemical identification system as a supportive tool for enhancing the discrimination of environmental bacteria by MALDI-TOF MS method was evaluated. The identification results of MALDI-TOF MS and API20E for 321 Gram-negative strains isolated from the riverine freshwater and its sediment, and from the tissues of fish from the same water body were compared. Of 190 isolates identified with probable to highly probable species-level identification, and secure genus to probable species identification, 14 isolates (7.37%) had identification score over 2.300, and from the same group 19 isolates (10%) had excellent or very good identification to the genus by API20E system. With regard to agreement at genus level, out of 231 strains with genus designation available by API20E at any level of identification reliability, MALDI-TOF MS genus identification agreed in 163 (70.6%) strains. Of these, 135 (82.8%) were Aeromonas species and the remaining isolates belonged to 7 different genera. Although API20E resulted in frequent misidentification due to a limited profile index, its individual biochemical reactions might contribute to overall characterization of isolates. For example, for all reliable A. hydrophila strain identifications with MALDI-TOF MS, ONPG, GLU and OX reactions were unarguably positive for all fish and water/sediment isolates, whereas only fish isolates yielded additional 100% positive TDA and VP reactions. Thus, after initial identification with MALDI-TOF MS, environmental isolates with lower identification scores should be further analyzed. Before commencing confirmatory testing with nucleic acid-based methods, biochemical API20E tests could be applied as a purposeful and inexpensive identification support in targeting better identification accuracy. In this study, this was particularly evident with A. hydrophila, Chryseobacterium sp. and Pseudomonas sp. This identification strategy could significantly resolve methodological and cost-related shortcomings frequently occurring with large number of environmental isolates.},
+author = {N. Topić Popović and Slavko Kepec and S. Kazazić and I. Strunjak-Perović and K. Bojanić and R. Čož-Rakovac},
+doi = {10.1371/journal.pone.0269423},
+pmid = {35657908},
+}
+
+@article{a0539aac329e16b53d2c58110e9df75e92717934,
+title = {Improved Prokaryotic Gene Prediction Yields Insights into Transcription and Translation Mechanisms on Whole Genome Scale},
+year = {2017},
+url = {https://www.semanticscholar.org/paper/a0539aac329e16b53d2c58110e9df75e92717934},
+abstract = {While computational gene finders for prokaryotic genomes have reached a high level of accuracy, there is room for improvement. GeneMarkS-2, a new ab initio algorithm, aims to improve prediction of species-specific (native) genes, as well as difficult-to-detect genes that differ in composition from the native genes. We introduce an array of pre-computed heuristic models that compete with the iteratively learned native model for the best fit within genomic neighborhoods that deviate in nucleotide composition from the genomic mainstream. Also, in the process of self-training, GeneMarkS-2 identifies distinct sequence patterns controlling transcription and translation. We assessed the accuracy of current state-of-the-art gene prediction tools along with GeneMarkS-2 on test sets of genes validated by proteomics experiments, by COG annotation, as well as by protein N-terminal sequencing. We observed that, on average, GeneMarkS-2 shows a higher precision in all accuracy measures. Screening of ∼5,000 representative prokaryotic genomes reveals frequent leaderless transcription, not only in archaea where it was originally discovered, but in bacteria as well. Furthermore, species with prevalent leadered transcription do not necessarily use RBS sites with the Shine-Dalgarno consensus. The effort to distinguish leaderless and leadered transcription, depending on prevalence of one or the other, leads to classifying prokaryotic genomes into five groups with distinct sequence patterns around gene starts. Some of the observed patterns are apparently related to poorly characterized mechanisms of translation initiation.},
+author = {A. Lomsadze and Karl Gemayel and Shiyuyun Tang and M. Borodovsky},
+doi = {10.1101/193490},
+}
+
+@article{70a7674ecbf447702262bdefb21ae9e1187db224,
+title = {Assembly independent functional annotation of short-read data using SOFA: Short-ORF functional annotation},
+year = {2015},
+url = {https://www.semanticscholar.org/paper/70a7674ecbf447702262bdefb21ae9e1187db224},
+abstract = {Accurate description of the microbial communities driving matter and energy transformations in complex ecosystems such as soils cannot yet be effectively accomplished using assembly-based approaches despite the rise of next generation sequencing technologies. Here we present SOFA, an open source pipeline enabling comparative functional annotation of unassembled short-read data. The pipeline attempts to merge mate pairs in fastq files, predicts open reading frames (ORFs) on merged and unmerged reads as small as 70 bps, and completes an additional step, we term `deduplication'. Deduplication prevents the double counting of ORFs predicted from unmerged paired-end reads by checking for homologous annotations that span the same ORF, allowing for quantitatively accurate predictions. The effectiveness of SOFA is validated with both simulated and bone fide soil metagenomes, and empirical results are compared to existing strategies for obtaining accurate ORF counts, and an analytical model of read duplication. SOFA enables downstream processing stages within the existing MetaPathways pipeline, and is available for download as a stand alone application at https://github.com under the MIT license.},
+author = {A. Hahn and Niels W. Hanson and Dongjae Kim and K. Konwar and S. Hallam},
+doi = {10.1109/CIBCB.2015.7300324},
+}
+
+@article{845069bdcb62a7a4fe23875a0fee63dafd04047c,
+title = {GeneMark-HM: improving gene prediction in DNA sequences of human microbiome},
+year = {2021},
+url = {https://www.semanticscholar.org/paper/845069bdcb62a7a4fe23875a0fee63dafd04047c},
+abstract = {Abstract Computational reconstruction of nearly complete genomes from metagenomic reads may identify thousands of new uncultured candidate bacterial species. We have shown that reconstructed prokaryotic genomes along with genomes of sequenced microbial isolates can be used to support more accurate gene prediction in novel metagenomic sequences. We have proposed an approach that used three types of gene prediction algorithms and found for all contigs in a metagenome nearly optimal models of protein-coding regions either in libraries of pre-computed models or constructed de novo. The model selection process and gene annotation were done by the new GeneMark-HM pipeline. We have created a database of the species level pan-genomes for the human microbiome. To create a library of models representing each pan-genome we used a self-training algorithm GeneMarkS-2. Genes initially predicted in each contig served as queries for a fast similarity search through the pan-genome database. The best matches led to selection of the model for gene prediction. Contigs not assigned to pan-genomes were analyzed by crude, but still accurate models designed for sequences with particular GC compositions. Tests of GeneMark-HM on simulated metagenomes demonstrated improvement in gene annotation of human metagenomic sequences in comparison with the current state-of-the-art gene prediction tools.},
+author = {A. Lomsadze and C. Bonny and F. Strozzi and M. Borodovsky},
+doi = {10.1093/nargab/lqab047},
+pmid = {34056597},
+}
+
+@article{13dd0a93ba4106143331e1e27994f3eb57869189,
+title = {geneRFinder: gene finding in distinct metagenomic data complexities},
+year = {2019},
+url = {https://www.semanticscholar.org/paper/13dd0a93ba4106143331e1e27994f3eb57869189},
+abstract = {Background Microbes perform a fundamental economic, social, and environmental role in our society. Metagenomics makes it possible to investigate microbes in their natural environments (the complex communities) and their interactions. The way they act is usually estimated by looking at the functions they play in those environments and their responsibility is measured by their genes. The advances of next-generation sequencing technology have facilitated metagenomics research however it also creates a heavy computational burden. Large and complex biological datasets are available as never before. There are many gene predictors available that can aid the gene annotation process though they lack handling appropriately metagenomic data complexities. There is no standard metagenomic benchmark data for gene prediction. Thus, gene predictors may inflate their results by obfuscating low false discovery rates. Results We introduce geneRFinder, an ML-based gene predictor able to outperform state-of-the-art gene prediction tools across this benchmark by using only one pre-trained Random Forest model. Average prediction rates of geneRFinder differed in percentage terms by 54% and 64%, respectively, against Prodigal and FragGeneScan while handling high complexity metagenomes. The specificity rate of geneRFinder had the largest distance against FragGeneScan, 79 percentage points, and 66 more than Prodigal. According to McNemar’s test, all percentual differences between predictors performances are statistically significant for all datasets with a 99% confidence interval. Conclusions We provide geneRFinder, an approach for gene prediction in distinct metagenomic complexities, available at gitlab.com/r.lorenna/generfinder and https://osf.io/w2yd6/ , and also we provide a novel, comprehensive benchmark data for gene prediction—which is based on The Critical Assessment of Metagenome Interpretation (CAMI) challenge, and contains labeled data from gene regions—available at https://sourceforge.net/p/generfinder-benchmark .},
+author = {Raíssa Silva and Kleber Padovani and F. Góes and Ronnie Alves},
+doi = {10.1101/2020.08.21.262147},
+pmid = {33632132},
+}
+
+@article{084d2921514c7ef40c97f295c7a2d4bbd52b0033,
+title = {Modeling leaderless transcription and atypical genes results in more accurate gene prediction in prokaryotes},
+year = {2018},
+url = {https://www.semanticscholar.org/paper/084d2921514c7ef40c97f295c7a2d4bbd52b0033},
+abstract = {In a conventional view of the prokaryotic genome organization, promoters precede operons and ribosome binding sites (RBSs) with Shine-Dalgarno consensus precede genes. However, recent experimental research suggesting a more diverse view motivated us to develop an algorithm with improved gene-finding accuracy. We describe GeneMarkS-2, an ab initio algorithm that uses a model derived by self-training for finding species-specific (native) genes, along with an array of precomputed “heuristic” models designed to identify harder-to-detect genes (likely horizontally transferred). Importantly, we designed GeneMarkS-2 to identify several types of distinct sequence patterns (signals) involved in gene expression control, among them the patterns characteristic for leaderless transcription as well as noncanonical RBS patterns. To assess the accuracy of GeneMarkS-2, we used genes validated by COG (Clusters of Orthologous Groups) annotation, proteomics experiments, and N-terminal protein sequencing. We observed that GeneMarkS-2 performed better on average in all accuracy measures when compared with the current state-of-the-art gene prediction tools. Furthermore, the screening of ∼5000 representative prokaryotic genomes made by GeneMarkS-2 predicted frequent leaderless transcription in both archaea and bacteria. We also observed that the RBS sites in some species with leadered transcription did not necessarily exhibit the Shine-Dalgarno consensus. The modeling of different types of sequence motifs regulating gene expression prompted a division of prokaryotic genomes into five categories with distinct sequence patterns around the gene starts.},
+author = {A. Lomsadze and Karl Gemayel and Shiyuyun Tang and M. Borodovsky},
+doi = {10.1101/gr.230615.117},
+pmid = {29773659},
+}
+
+@article{0db677bfb2d2a2977ca049fd7e7ddfa3f4d81b2f,
+title = {No one tool to rule them all: prokaryotic gene prediction tool annotations are highly dependent on the organism of study},
+year = {2021},
+url = {https://www.semanticscholar.org/paper/0db677bfb2d2a2977ca049fd7e7ddfa3f4d81b2f},
+abstract = {Abstract Motivation The biases in CoDing Sequence (CDS) prediction tools, which have been based on historic genomic annotations from model organisms, impact our understanding of novel genomes and metagenomes. This hinders the discovery of new genomic information as it results in predictions being biased towards existing knowledge. To date, users have lacked a systematic and replicable approach to identify the strengths and weaknesses of any CDS prediction tool and allow them to choose the right tool for their analysis. Results We present an evaluation framework (ORForise) based on a comprehensive set of 12 primary and 60 secondary metrics that facilitate the assessment of the performance of CDS prediction tools. This makes it possible to identify which performs better for specific use-cases. We use this to assess 15 ab initio- and model-based tools representing those most widely used (historically and currently) to generate the knowledge in genomic databases. We find that the performance of any tool is dependent on the genome being analysed, and no individual tool ranked as the most accurate across all genomes or metrics analysed. Even the top-ranked tools produced conflicting gene collections, which could not be resolved by aggregation. The ORForise evaluation framework provides users with a replicable, data-led approach to make informed tool choices for novel genome annotations and for refining historical annotations. Availability and implementation Code and datasets for reproduction and customisation are available at https://github.com/NickJD/ORForise. Supplementary information Supplementary data are available at Bioinformatics online.},
+author = {N. Dimonaco and Wayne Aubrey and K. Kenobi and A. Clare and C. Creevey},
+doi = {10.1093/bioinformatics/btab827},
+pmid = {34875010},
+}
+
+@article{1efb613f7557ac941726fca64b3c1b416dcf8f95,
+title = {GeneMarkS-2 : Raising Standards of Accuracy in Gene Recognition},
+year = {2017},
+url = {https://www.semanticscholar.org/paper/1efb613f7557ac941726fca64b3c1b416dcf8f95},
+abstract = {Motivation: Ab initio gene prediction in prokaryotic genomes is supposed to be so accurate that RNASeq data are rarely produced to bring in an additional layer of evidence. In 2016 more than 60,000 prokaryotic genomes were re-annotated by the NCBI pipeline. Given the sheer volume of prokaryotic DNA data flowing from next generation sequencing facilities into genome databases, the annotation accuracy should be at the highest level possible. Still, the prevalence of horizontal gene transfer as well as ubiquitous leaderless transcription observed in prokaryotic species call for introducing more complex models of genes and regulatory regions than it was thought to be sufficient earlier. Results: We describe a new algorithm and software tool GeneMarkS-2. The new multi-model tool has an option to select parameters best matching local genomic GC content that may vary widely due to horizontal gene transfer. Genomes are automatically classified by the inferred types of organization of gene starts neighborhoods which evolution is directed by species specific transcription and translation mechanisms. A new motif search algorithm, LFinder, introduced to reach higher accuracy in detecting conserved motifs in regulatory regions upstream to predicted gene starts uses objective function depending on motif localization. In performance assessments made on test sets validated by proteomics experiments and other sources of evidence we have demonstrated superior accuracy of GeneMarkS-2 in comparison with other state-of-the-art gene prediction tools including GeneMarkS which “plus” version is currently used by the NCBI prokaryotic genome annotation pipeline. Availability: http://topaz.gatech.edu/GeneMark/genemarks2.cgi Contact: borodovsky@gatech.edu},
+author = {A. Lomsadze and Shiyuyun Tang and Karl Gemayel and M. Borodovsky},
+}
+
+@article{3d50dce521dfeab1067519635b473392873709fd,
+title = {StartLink+: Prediction of Gene Starts in Prokaryotic Genomes by an Algorithm Integrating Independent Sources of Evidence},
+year = {2020},
+url = {https://www.semanticscholar.org/paper/3d50dce521dfeab1067519635b473392873709fd},
+abstract = {Algorithms of ab initio gene finding were shown to make sufficiently accurate predictions in prokaryotic genomes. Nonetheless, for up to 15-25% of genes per genome the gene start predictions might differ even when made by the supposedly most accurate tools. To address this discrepancy, we have introduced StartLink+, an approach combining ab initio and multiple sequence alignment based methods. StartLink+ makes predictions for a majority of genes per genome (73% on average); in tests on sets of genes with experimentally verified starts the StartLink+ accuracy was shown to be 98-99%. When StartLink+ predictions made for a large set of prokaryotic genomes were compared with the database annotations we observed that on average the gene start annotations deviated from the predictions for ~5% of genes in AT-rich genomes and for 10-15% of genes in GC-rich genomes.},
+author = {Karl Gemayel and A. Lomsadze and M. Borodovsky},
+doi = {10.1101/2020.10.25.352625},
+}
+
+@article{ec62692ce1c767ee7d4163e36a54bda2ce54d898,
+title = {StartLink and StartLink+: Prediction of Gene Starts in Prokaryotic Genomes},
+year = {2021},
+url = {https://www.semanticscholar.org/paper/ec62692ce1c767ee7d4163e36a54bda2ce54d898},
+abstract = {State-of-the-art algorithms of ab initio gene prediction for prokaryotic genomes were shown to be sufficiently accurate. A pair of algorithms would agree on predictions of gene 3′ends. Nonetheless, predictions of gene starts would not match for 15–25% of genes in a genome. This discrepancy is a serious issue that is difficult to be resolved due to the absence of sufficiently large sets of genes with experimentally verified starts. We have introduced StartLink that infers gene starts from conservation patterns revealed by multiple alignments of homologous nucleotide sequences. We also have introduced StartLink+ combining both ab initio and alignment-based methods. The ability of StartLink to predict the start of a given gene is restricted by the availability of homologs in a database. We observed that StartLink made predictions for 85% of genes per genome on average. The StartLink+ accuracy was shown to be 98–99% on the sets of genes with experimentally verified starts. In comparison with database annotations, we observed that the annotated gene starts deviated from the StartLink+ predictions for ∼5% of genes in AT-rich genomes and for 10–15% of genes in GC-rich genomes on average. The use of StartLink+ has a potential to significantly improve gene start annotation in genomic databases.},
+author = {Karl Gemayel and A. Lomsadze and M. Borodovsky},
+doi = {10.3389/fbinf.2021.704157},
+}
+
+@article{3f867efddd5f87c934b9d5a95a50656a1c50e461,
+title = {MetaTISA: Metagenomic Translation Initiation Site Annotator for improving gene start prediction},
+year = {2009},
+url = {https://www.semanticscholar.org/paper/3f867efddd5f87c934b9d5a95a50656a1c50e461},
+abstract = {SUMMARY
+We proposed a tool named MetaTISA with an aim to improve TIS prediction of current gene-finders for metagenomes. The method employs a two-step strategy to predict translation initiation sites (TISs) by first clustering metagenomic fragments into phylogenetic groups and then predicting TISs independently for each group in an unsupervised manner. As evaluated on experimentally verified TISs, MetaTISA greatly improves the accuracies of TIS prediction of current gene-finders.
+
+
+AVAILABILITY
+The C++ source code is freely available under the GNU GPL license via http://mech.ctb.pku.edu.cn/MetaTISA/.},
+author = {Gang-Qing Hu and Jiangtao Guo and Yongchu Liu and Huaiqiu Zhu},
+doi = {10.1093/bioinformatics/btp272},
+pmid = {19389734},
+}
+
+@article{a3101fe44805e435eddd073f03ddcfb31a09ef36,
+title = {Incorporating the plasmidome into antibiotic resistance surveillance in animal agriculture.},
+year = {2020},
+url = {https://www.semanticscholar.org/paper/a3101fe44805e435eddd073f03ddcfb31a09ef36},
+abstract = {Mobile genetic elements (MGE) carrying resistance genes represent a unique challenge to risk assessment and surveillance of antimicrobial resistance (AMR). Yet determining the mobility of resistance genes within animal microbiomes is essential to evaluating the potential dissemination from livestock to potential human pathogens, as well as evaluating co-selection mechanisms that may impact persistence of resistance genes with changing antibiotic use patterns. Current surveillance efforts utilize phenotypic testing and sequencing of individual isolates for tracking of AMR in livestock. In this work, we investigated the utility of using long-read sequencing of the plasmids from mixed Enterobacterales enrichments of swine fecal samples as a surveillance strategy for AMR plasmids. Enrichments were performed in either MacConkey broth without selection or with selection by addition of tetracycline or ceftriaxone, and plasmids were extracted and sequenced in order to evaluate the diversity of plasmids enriched by each method. Intact resistance plasmids were successfully assembled, as well as complex resistance transposons carrying multiple repeated elements that would interfere with assembly by short read sequencing technologies. Comparison of the assembled plasmids with representatives from public databases confirmed the quality of the assemblies and also revealed the occurrence of IncI2 plasmids carrying blaCMY-2 in Ontario swine samples, which have not been found in previous studies.},
+author = {N. Ricker and B. S. Spoja and N. May and G. Chalmers},
+doi = {10.1016/j.plasmid.2020.102529},
+pmid = {32771502},
+}

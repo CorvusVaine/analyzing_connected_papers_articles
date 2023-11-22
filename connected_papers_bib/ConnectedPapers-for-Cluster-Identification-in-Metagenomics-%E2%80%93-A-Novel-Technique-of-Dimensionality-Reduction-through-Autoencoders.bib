@@ -1,0 +1,364 @@
+@article{a170cb44823b6cba96ef11b4b9fcbfa6b8037d82,
+title = {Cluster Identification in Metagenomics – A Novel Technique of Dimensionality Reduction through Autoencoders},
+year = {2021},
+url = {https://www.semanticscholar.org/paper/a170cb44823b6cba96ef11b4b9fcbfa6b8037d82},
+abstract = {Analysis of metagenomic data is not only challenging because they are acquired from a sample in their natural habitats but also because of the high volume and high dimensionality. The fact that no prior lab based cultivation is carried out in metagenomics makes the inference on the presence of numerous microorganisms all the more challenging, accentuating the need for an informative visualization of this data. In a successful visualization, the congruent reads of the sequences should appear in clusters depending on the diversity and taxonomy of the microorganisms in the sequenced sample. The metagenomic data represented by their oligonucleotide frequency vectors is inherently high dimensional and therefore impossible to visualize as is. This raises the need for a dimensionality reduction technique to convert these higher dimensional sequence data into lower dimensional data for visualization purposes. In this process, preservation of the genomic characteristics must be given highest priority. Currently, for dimensionality reduction purposes in metagenomics, Principal Component Analysis (PCA) which is a linear technique and t-distributed Stochastic Neighbor Embedding (t-SNE), a non-linear technique, are widely used. Albeit their wide use, these techniques are not exceptionally suited to the domain of metagenomics with certain shortcomings and weaknesses. Our research explores the possibility of using autoencoders, a deep learning technique, that has the potential to overcome the prevailing impediments of the existing dimensionality reduction techniques eventually leading to richer visualizations.},
+author = {K. Wijegunarathna and U. Maduranga and Sadeep Weerasinghe and I. Perera and Anuradha Wickaramarachchi},
+doi = {10.4038/ICTER.V14I2.7224},
+}
+
+@article{eb08252a38f9a0008303f9c70f61ae0016e3c2ea,
+title = {Species complex delimitations in the genus Hedychium: A machine learning approach for cluster discovery},
+year = {2020},
+url = {https://www.semanticscholar.org/paper/eb08252a38f9a0008303f9c70f61ae0016e3c2ea},
+abstract = {Premise Statistical methods used by most morphologists to validate species boundaries (such as principal component analysis [PCA] and non‐metric multidimensional scaling [nMDS]) are limiting because these methods are mostly used as visualization methods, and because the groups are identified by taxonomists (i.e., supervised), adding human bias. Here, we use a spectral clustering algorithm for the unsupervised discovery of species boundaries followed by the analysis of the cluster‐defining characters. Methods We used spectral clustering, nMDS, and PCA on 16 morphological characters within the genus Hedychium to group 93 individuals from 10 taxa. A radial basis function kernel was used for the spectral clustering with user‐specified tuning values (gamma). The goodness of the discovered clusters using each gamma value was quantified using eigengap, a normalized mutual information score, and the Rand index. Finally, mutual information–based character selection and a t‐test were used to identify cluster‐defining characters. Results Spectral clustering revealed five, nine, and 12 clusters of taxa in the species complexes examined here. Character selection identified at least four characters that defined these clusters. Discussion Together with our proposed character analysis methods, spectral clustering enabled the unsupervised discovery of species boundaries along with an explanation of their biological significance. Our results suggest that spectral clustering combined with a character selection analysis can enhance morphometric analyses and is superior to current clustering methods for species delimitation.},
+author = {P. Saryan and Shubham Gupta and V. Gowda},
+doi = {10.1002/aps3.11377},
+pmid = {32765976},
+}
+
+@article{eca48d48b9fcc5417d945f30b791d716a09d4d6d,
+title = {Unsupervised dimensionality reduction: Overview and recent advances},
+year = {2010},
+url = {https://www.semanticscholar.org/paper/eca48d48b9fcc5417d945f30b791d716a09d4d6d},
+abstract = {Unsupervised dimensionality reduction aims at representing high-dimensional data in lower-dimensional spaces in a faithful way. Dimensionality reduction can be used for compression or denoising purposes, but data visualization remains one its most prominent applications. This paper attempts to give a broad overview of the domain. Past develoments are briefly introduced and pinned up on the time line of the last eleven decades. Next, the principles and techniques involved in the major methods are described. A taxonomy of the methods is suggested, taking into account various properties. Finally, the issue of quality assessment is briefly dealt with.},
+author = {J. Lee and M. Verleysen},
+doi = {10.1109/IJCNN.2010.5596721},
+}
+
+@article{d020b9f7fbc14471ee95cfb772d287b00f9b1c3c,
+title = {A Comparison for Dimensionality Reduction Methods of Single-Cell RNA-seq Data},
+year = {2021},
+url = {https://www.semanticscholar.org/paper/d020b9f7fbc14471ee95cfb772d287b00f9b1c3c},
+abstract = {Single-cell RNA sequencing (scRNA-seq) is a high-throughput sequencing technology performed at the level of an individual cell, which can have a potential to understand cellular heterogeneity. However, scRNA-seq data are high-dimensional, noisy, and sparse data. Dimension reduction is an important step in downstream analysis of scRNA-seq. Therefore, several dimension reduction methods have been developed. We developed a strategy to evaluate the stability, accuracy, and computing cost of 10 dimensionality reduction methods using 30 simulation datasets and five real datasets. Additionally, we investigated the sensitivity of all the methods to hyperparameter tuning and gave users appropriate suggestions. We found that t-distributed stochastic neighbor embedding (t-SNE) yielded the best overall performance with the highest accuracy and computing cost. Meanwhile, uniform manifold approximation and projection (UMAP) exhibited the highest stability, as well as moderate accuracy and the second highest computing cost. UMAP well preserves the original cohesion and separation of cell populations. In addition, it is worth noting that users need to set the hyperparameters according to the specific situation before using the dimensionality reduction methods based on non-linear model and neural network.},
+author = {Ruizhi Xiang and Wencan Wang and Lei Yang and Shiyuan Wang and Chaohan Xu and Xiaowen Chen},
+doi = {10.3389/fgene.2021.646936},
+pmid = {33833778},
+}
+
+@article{6a85062fba1fd3f8a602d27f82e8a3f87b4ccd34,
+title = {Model-Based Autoencoders for Imputing Discrete single-cell RNA-seq Data.},
+year = {2020},
+url = {https://www.semanticscholar.org/paper/6a85062fba1fd3f8a602d27f82e8a3f87b4ccd34},
+abstract = {Deep neural networks have been widely applied for missing data imputation. However, most existing studies have been focused on imputing continuous data, while discrete data imputation is under-explored. Discrete data is common in real world, especially in research areas of bioinformatics, genetics, and biochemistry. In particular, large amounts of recent genomic data are discrete count data generated from single-cell RNA sequencing (scRNA-seq) technology. Most scRNA-seq studies produce a discrete matrix with prevailing 'false' zero count observations (missing values). To make downstream analyses more effective, imputation, which recovers the missing values, is often conducted as the first step in pre-processing scRNA-seq data. In this paper, we propose a novel Zero-Inflated Negative Binomial (ZINB) model-based autoencoder for imputing discrete scRNA-seq data. The novelties of our method are twofold. First, in addition to optimizing the ZINB likelihood, we propose to explicitly model the dropout events that cause missing values by using the Gumbel-Softmax distribution. Second, the zero-inflated reconstruction is further optimized with respect to the raw count matrix. Extensive experiments on simulation datasets demonstrate that the zero-inflated reconstruction significantly improves imputation accuracy. Real data experiments show that the proposed imputation can enhance separating different cell types and improve the accuracy of differential expression analysis.},
+author = {Tian Tian and Martin Renqiang Min and Zhi Wei},
+doi = {10.1016/j.ymeth.2020.09.010},
+pmid = {32971193},
+}
+
+@article{fa92c9dc6d9fdebeb6e06786b0fb9c4784d18dc0,
+title = {Bioinformatics strategies for taxonomy independent binning and visualization of sequences in shotgun metagenomics},
+year = {2016},
+url = {https://www.semanticscholar.org/paper/fa92c9dc6d9fdebeb6e06786b0fb9c4784d18dc0},
+abstract = {One of main steps in a study of microbial communities is resolving their composition, diversity and function. In the past, these issues were mostly addressed by the use of amplicon sequencing of a target gene because of reasonable price and easier computational postprocessing of the bioinformatic data. With the advancement of sequencing techniques, the main focus shifted to the whole metagenome shotgun sequencing, which allows much more detailed analysis of the metagenomic data, including reconstruction of novel microbial genomes and to gain knowledge about genetic potential and metabolic capacities of whole environments. On the other hand, the output of whole metagenomic shotgun sequencing is mixture of short DNA fragments belonging to various genomes, therefore this approach requires more sophisticated computational algorithms for clustering of related sequences, commonly referred to as sequence binning. There are currently two types of binning methods: taxonomy dependent and taxonomy independent. The first type classifies the DNA fragments by performing a standard homology inference against a reference database, while the latter performs the reference-free binning by applying clustering techniques on features extracted from the sequences. In this review, we describe the strategies within the second approach. Although these strategies do not require prior knowledge, they have higher demands on the length of sequences. Besides their basic principle, an overview of particular methods and tools is provided. Furthermore, the review covers the utilization of the methods in context with the length of sequences and discusses the needs for metagenomic data preprocessing in form of initial assembly prior to binning.},
+author = {K. Sedlář and K. Kupkova and I. Provazník},
+doi = {10.1016/j.csbj.2016.11.005},
+pmid = {27980708},
+}
+
+@article{d9da48920e647328463623643afd40678d3ca0d1,
+title = {Multi-scale similarities in stochastic neighbour embedding: Reducing dimensionality while preserving both local and global structure},
+year = {2015},
+url = {https://www.semanticscholar.org/paper/d9da48920e647328463623643afd40678d3ca0d1},
+abstract = {Abstract Stochastic neighbour embedding (SNE) and its variants are methods of nonlinear dimensionality reduction that involve soft Gaussian neighbourhoods to measure similarities for all pairs of data. In order to build a suitable embedding, these methods try to reproduce in a low-dimensional space the neighbourhoods that are observed in the high-dimensional data space. Previous works have investigated the immunity of such similarities to norm concentration, as well as enhanced cost functions, like sums of Jensen–Shannon divergences. This paper proposes an additional refinement, namely multi-scale similarities, which are averages of soft Gaussian neighbourhoods with exponentially growing bandwidths. Such multi-scale similarities can replace the regular, single-scale neighbourhoods in SNE-like methods. Their objective is then to maximise the embedding quality on all scales, with the best preservation of both local and global neighbourhoods, and also to exempt the user from having to fix a scale arbitrarily. Experiments with several data sets show that the proposed multi-scale approach captures better the structure of data and improves significantly the quality of dimensionality reduction.},
+author = {J. Lee and Diego Hernán Peluffo-Ordóñez and M. Verleysen},
+doi = {10.1016/j.neucom.2014.12.095},
+}
+
+@article{f41d5e6a7338f47f1f271b11c6080f33b9b8fdc6,
+title = {Dimensionality Reduction for Cluster Identification in Metagenomics using Autoencoders},
+year = {2020},
+url = {https://www.semanticscholar.org/paper/f41d5e6a7338f47f1f271b11c6080f33b9b8fdc6},
+abstract = {Metagenomics is the study of the genomic content of the microbial organisms extracted from a sample in their natural habitats. These unknown collections of genomic data are analyzed without any prior lab-based cultivation to avoid amplification bias. One of the vital aspects of metagenomics analysis is the visualization of the information that is derived from the genomic sequences of a microbiome sample. In a successful visualization, the congruent reads of the sequences should appear in clusters depending on the diversity and taxonomy of the microorganisms in the sequenced sample. In converting higher dimensional sequence data into lower dimensional data for visualization purposes, preserving the genomic characteristics is given the highest priority. In this process, the demand for precise and efficient methods of dimensionality reduction is crucial. Currently, Principle Component Analysis (PCA) and t-distributed Stochastic Neighbor Embedding (t-SNE) are used for dimensionality reduction purposes in metagenomics, which are linear and nonlinear techniques respectively. Although the above-mentioned techniques are widely used, there are shortcomings in accuracy and efficiency in terms of visualizations. In this paper, we explore the possibility of using autoencoders, a deep learning technique, to get a rich dimensionality reduction, overcoming the prevailing impediments of PCA and t-SNE and outperforming them to achieve better metagenomic visualizations.},
+author = {U. Maduranga and K. Wijegunarathna and Sadeep Weerasinghe and I. Perera and A. Wickramarachchi},
+doi = {10.1109/ICTer51097.2020.9325447},
+}
+
+@article{28c303de856320152f746b0f5bbeba818932c04b,
+title = {MetaG: a comprehensive visualization tool to explore metagenomes},
+year = {2020},
+url = {https://www.semanticscholar.org/paper/28c303de856320152f746b0f5bbeba818932c04b},
+abstract = {Sequencing in metagenomes opens new ways of analyzing genomics in microbial communities in their habitats. Analyzing metagenomes has been a challenge not only because they are acquired from unknown collections without any prior lab-based cultivation, but also the volume. The value of these metagenomic data can be greatly enhanced by integrating with an informative and interactive visualization tool. Need for such tools is growing but still insufficient in number. MetaG, a standalone metagenomic analysis tool which converts higher dimensional sequence data into lower dimensional visualizations through deep learning techniques, is uniquely designed to produce rich lower dimensional representations of oligonucleotide frequency vectors of the population-level genomic diversity of the microbial organisms. Users can opt their preference in dimensionality reduction, between Principal Component Analysis (PCA), t- distributed Stochastic Neighbor Embedding (t-SNE) and autoencoders. Additionally, MetaG provides information on the presence, diversity and abundance of organisms by analyzing alignments against a database that contains taxonomy information. It caters more flexibility with number of visualizations, providing insights of complex microbial communities. MetaG, written in Python is free and open-source with the code publicly accessible.},
+author = {K. Wijegunarathna and U. Maduranga and Sadeep Weerasinghe and I. Perera and A. Wickramarachchi},
+doi = {10.1109/BIBM49941.2020.9313166},
+}
+
+@article{bfd6f4a7bd7cb88ecdc8d414892d9827bdd6dc3b,
+title = {Standardized Approaches for Assessing Metagenomic Contig Binning Performance from Barnes-Hut t-Stochastic Neighbor Embeddings},
+year = {2019},
+url = {https://www.semanticscholar.org/paper/bfd6f4a7bd7cb88ecdc8d414892d9827bdd6dc3b},
+abstract = {The performance of unsupervised methods for metagenomic binning is often assessed using simulated microbial communities. The lack of well-characterized evaluation protocols and approaches to community construction cognizant of biological realities impedes the rigorous assessment and standardization of the binning process. This work attempted to standardize performance evaluation using benchmark communities constructed according to the genome similarity metric Average Amino Acid identity. This approach allowed us to extend and deepen our previous research on the unsupervised binning of metagenomic sequence fragments based on low-dimensional embeddings of pentamer frequency profiles. Experimental results evidenced our method’s potential for the binning of metagenomic contigs to become an alternative to state-of-the-art methods such as MetaCluster 3.0.},
+author = {Julián Ceballos and L. Ariza-Jiménez and N. Pinel},
+doi = {10.1007/978-3-030-30648-9_101},
+}
+
+@article{e99549886039616431a1d0f856016f37852aa514,
+title = {Type 1 and 2 mixtures of Kullback-Leibler divergences as cost functions in dimensionality reduction based on similarity preservation},
+year = {2013},
+url = {https://www.semanticscholar.org/paper/e99549886039616431a1d0f856016f37852aa514},
+abstract = {Stochastic neighbor embedding (SNE) and its variants are methods of dimensionality reduction (DR) that involve normalized softmax similarities derived from pairwise distances. These methods try to reproduce in the low-dimensional embedding space the similarities observed in the high-dimensional data space. Their outstanding experimental results, compared to previous state-of-the-art methods, originate from their capability to foil the curse of dimensionality. Previous work has shown that this immunity stems partly from a property of shift invariance that allows appropriately normalized softmax similarities to mitigate the phenomenon of norm concentration. This paper investigates a complementary aspect, namely, the cost function that quantifies the mismatch between similarities computed in the high- and low-dimensional spaces. Stochastic neighbor embedding and its variant t-SNE rely on a single Kullback-Leibler divergence, whereas a weighted mixture of two dual KL divergences is used in neighborhood retrieval and visualization (NeRV). We propose in this paper a different mixture of KL divergences, which is a scaled version of the generalized Jensen-Shannon divergence. We show experimentally that this divergence produces embeddings that better preserve small K-ary neighborhoods, as compared to both the single KL divergence used in SNE and t-SNE and the mixture used in NeRV. These results allow us to conclude that future improvements in similarity-based DR will likely emerge from better definitions of the cost function.},
+author = {J. Lee and Emilie Renard and G. Bernard and P. Dupont and M. Verleysen},
+doi = {10.1016/j.neucom.2012.12.036},
+}
+
+@article{598dac19d3cd53fa302100ac1c85caa1472fb693,
+title = {Unsupervised fuzzy binning of metagenomic sequence fragments on three-dimensional Barnes-Hut t-Stochastic Neighbor Embeddings},
+year = {2018},
+url = {https://www.semanticscholar.org/paper/598dac19d3cd53fa302100ac1c85caa1472fb693},
+abstract = {Shotgun metagenomic studies attempt to reconstruct population genome sequences from complex microbial communities. In some traditional genome demarcation approaches, high-dimensional sequence data are embedded into two-dimensional spaces and subsequently binned into candidate genomic populations. One such approach uses a combination of the Barnes-Hut approximation and the $t -$Stochastic Neighbor Embedding (BH-SNE) algorithm for dimensionality reduction of DNA sequence data pentamer profiles; and demarcation of groups based on Gaussian mixture models within humanimposed boundaries. We found that genome demarcation from three-dimensional BH-SNE embeddings consistently results in more accurate binnings than 2-D embeddings. We further addressed the lack of a priori population number information by developing an unsupervised binning approach based on the Subtractive and Fuzzy c-means (FCM) clustering algorithms combined with internal clustering validity indices. Lastly, we addressed the subject of shared membership of individual data objects in a mixed community by assigning a degree of membership to individual objects using the FCM algorithm, and discriminated between confidently binned and uncertain sequence data objects from the community for subsequent biological interpretation. The binning of metagenome sequence fragments according to thresholds in the degree of membership opens the door for the identification of horizontally transferred elements and other genomic regions of uncertain assignment in which biologically meaningful information resides. The reported approach improves the unsupervised genome demarcation of populations within complex communities, increases the confidence in the coherence of the binned elements, and enables the identification of evolutionary processes ignored in hard-binning approaches in shotgun metagenomic studies.},
+author = {L. Ariza-Jiménez and O. Quintero and N. Pinel},
+doi = {10.1109/EMBC.2018.8512529},
+pmid = {30440633},
+}
+
+@article{7da7c81d23d2afa554df5c7ec5e4b82c85f46004,
+title = {Data visualization by nonlinear dimensionality reduction},
+year = {2015},
+url = {https://www.semanticscholar.org/paper/7da7c81d23d2afa554df5c7ec5e4b82c85f46004},
+abstract = {In this overview, commonly used dimensionality reduction techniques for data visualization and their properties are reviewed. Thereby, the focus lies on an intuitive understanding of the underlying mathematical principles rather than detailed algorithmic pipelines. Important mathematical properties of the technologies are summarized in the tabular form. The behavior of representative techniques is demonstrated for three benchmarks, followed by a short discussion on how to quantitatively evaluate these mappings. In addition, three currently active research topics are addressed: how to devise dimensionality reduction techniques for complex non‐vectorial data sets, how to easily shape dimensionality reduction techniques according to the users preferences, and how to device models that are suited for big data sets. WIREs Data Mining Knowl Discov 2015, 5:51–73. doi: 10.1002/widm.1147},
+author = {A. Gisbrecht and B. Hammer},
+doi = {10.1002/widm.1147},
+}
+
+@article{a52bbc5bc1372c0943cd04f65e224b51444879b3,
+title = {Perplexity-free t-SNE and twice Student tt-SNE},
+year = {2018},
+url = {https://www.semanticscholar.org/paper/a52bbc5bc1372c0943cd04f65e224b51444879b3},
+abstract = {In dimensionality reduction and data visualisation, t-SNE has become a popular method. In this paper, we propose two variants to the Gaussian similarities used to characterise the neighbourhoods around each high-dimensional datum in t-SNE. A first alternative is to use t distributions like already used in the low-dimensional embedding space; a variable degree of freedom accounts for the intrinsic dimensionality of data. The second variant relies on compounds of Gaussian neighbourhoods with growing widths, thereby suppressing the need for the user to adjust a single size or perplexity. In both cases, heavy-tailed distributions thus characterise the neighbourhood relationships in the data space. Experiments show that both variants are competitive with t-SNE, at no extra cost.},
+author = {Cyril de Bodt and D. Mulders and M. Verleysen and J. Lee},
+}
+
+@article{a580d0de2438b9be6fa3e8b8f3081a986192c413,
+title = {Monet: An open-source Python package for analyzing and integrating scRNA-Seq data using PCA-based latent spaces},
+year = {2020},
+url = {https://www.semanticscholar.org/paper/a580d0de2438b9be6fa3e8b8f3081a986192c413},
+abstract = {Single-cell RNA-Seq is a powerful technology that enables the transcriptomic profiling of the different cell populations that make up complex tissues. However, the noisy and high-dimensional nature of the generated data poses significant challenges for its analysis and integration. Here, I describe Monet, an open-source Python package designed to provide effective and computationally efficient solutions to some of the most common challenges encountered in scRNA-Seq data analysis, and to serve as a toolkit for scRNA-Seq method development. At its core, Monet implements algorithms to infer the dimensionality and construct a PCA-based latent space from a given dataset. This latent space, represented by a MonetModel object, then forms the basis for data analysis and integration. In addition to validating these core algorithms, I provide demonstrations of some more advanced analysis tasks currently supported, such as batch correction and label transfer, which are useful for analyzing multiple datasets from the same tissue. Monet is available at https://github.com/flo-compbio/monet. Ongoing work is focused on providing electronic notebooks with tutorials for individual analysis tasks, and on developing interoperability with other Python scRNA-Seq software. The author welcomes suggestions for future improvements.},
+author = {F. Wagner},
+doi = {10.1101/2020.06.08.140673},
+}
+
+@article{4081a0fa7b9ddad4058c962fc7068fea1f8669bd,
+title = {A General Framework for Dimensionality-Reducing Data Visualization Mapping},
+year = {2012},
+url = {https://www.semanticscholar.org/paper/4081a0fa7b9ddad4058c962fc7068fea1f8669bd},
+abstract = {In recent years, a wealth of dimension-reduction techniques for data visualization and preprocessing has been established. Nonparametric methods require additional effort for out-of-sample extensions, because they provide only a mapping of a given finite set of points. In this letter, we propose a general view on nonparametric dimension reduction based on the concept of cost functions and properties of the data. Based on this general principle, we transfer nonparametric dimension reduction to explicit mappings of the data manifold such that direct out-of-sample extensions become possible. Furthermore, this concept offers the possibility of investigating the generalization ability of data visualization to new data points. We demonstrate the approach based on a simple global linear mapping, as well as prototype-based local linear mappings. In addition, we can bias the functional form according to given auxiliary information. This leads to explicit supervised visualization mappings with discriminative properties comparable to state-of-the-art approaches.},
+author = {K. Bunte and Michael Biehl and B. Hammer},
+doi = {10.1162/NECO_a_00250},
+}
+
+@article{ccfcf5ff254c14e3dfc19b4478e1724d53387de7,
+title = {Microstructure Cluster Analysis with Transfer Learning and Unsupervised Learning},
+year = {2018},
+url = {https://www.semanticscholar.org/paper/ccfcf5ff254c14e3dfc19b4478e1724d53387de7},
+abstract = {We apply computer vision and machine learning methods to analyze two datasets of microstructural images. A transfer learning pipeline utilizes the fully connected layer of a pre-trained convolutional neural network as the image representation. An unsupervised learning method uses the image representations to discover visually distinct clusters of images within two datasets. A minimally supervised clustering approach classifies micrographs into visually similar groups. This approach successfully classifies images both in a dataset of surface defects in steel, where the image classes are visually distinct and in a dataset of fracture surfaces that humans have difficulty classifying. We find that the unsupervised, transfer learning method gives results comparable to fully supervised, custom-built approaches.},
+author = {Andrew R. Kitahara and E. Holm},
+doi = {10.1007/s40192-018-0116-9},
+}
+
+@article{b2a8217313313b995d5d6a8ef009728e5701c3f1,
+title = {Faithful visualisation of similarities in high dimensional data},
+year = {2016},
+url = {https://www.semanticscholar.org/paper/b2a8217313313b995d5d6a8ef009728e5701c3f1},
+abstract = {In the last fifteen years, new methods of dimension reduction have been invented that enable much improved visualisation of high-dimensional data-sets. Conventionally, the data-sets are visualised as two-dimensional scatterplots, and similarity relationships between data-cases are revealed by grouping and proximity of points in the plane. But the arrangement of points in a 2D scatterplot cannot faithfully represent complex high-dimensional structure: more expressive 2D visualisations are needed. This thesis develops new types of diagram that can represent data-similarities more expressively than a mere scatterplot. The approach is to automatically select a graph to overlay on the scatterplot, in order to enable a richer visualisation of similarities than is possible by the arrangement of points alone, and to correct distortions inherent in scatterplot visualisation. Methods and software are developed for selecting and graphically representing the overlay graph as a diagram that humans can read. These diagrams enable correct and informative human interpretation of scatterplots that would otherwise be hard to interpret or misleading.},
+author = {Jiaxin Kou},
+}
+
+@article{cc187464dd5e044a11a0d8eebb448bd5a1501af5,
+title = {Analysis of Electricity Consumption Profiles by Means of Dimensionality Reduction Techniques},
+year = {2012},
+url = {https://www.semanticscholar.org/paper/cc187464dd5e044a11a0d8eebb448bd5a1501af5},
+abstract = {The analysis of the daily electricity consumption profile of a building and its correlation with environmental factors make it possible to estimate its electricity demand. As an alternative to the traditional correlation analysis, a new approach is proposed to provide a detailed and visual analysis of the correlations between consumption and environmental variables. Since consumption profiles are normally characterized by many electrical variables, i.e., a high dimensional space, it is necessary to apply dimensionality reduction techniques that enable a projection of these data onto an easily interpretable 2D space. In this paper, several dimensionality reduction techniques are compared in order to determine the most appropriate one for the stated purpose. Later, the proposed approach uses the chosen algorithm to analyze the profiles of two public buildings located at the University of Leon.},
+author = {Antonio Morán Álvarez and Juan J. Fuertes-Martínez and Miguel A. Prada and Serafín Alonso Castro and Pablo Barrientos and Ignacio Díaz Blanco},
+doi = {10.1007/978-3-642-32909-8_16},
+}
+
+@article{a95bf1efb0b8ecf29fde9bf417d58a7456fd8d00,
+title = {On the Role and Impact of the Metaparameters in t-distributed Stochastic Neighbor Embedding},
+year = {2010},
+url = {https://www.semanticscholar.org/paper/a95bf1efb0b8ecf29fde9bf417d58a7456fd8d00},
+abstract = {Similarity-based embedding is a paradigm that recently gained interest in the field of nonlinear dimensionality reduction. It provides an elegant framework that naturally emphasizes the preservation of the local structure of the data set. An emblematic method in this trend is t-distributed stochastic neighbor embedding (t-SNE), which is acknowledged to be an efficient method in the recent literature. This paper aims at analyzing the reasons of this success, together with the impact of the two metaparameters embedded in the method. Moreover, the paper shows that t-SNE can be interpreted as a distance-preserving method with a specific distance transformation, making the link with existing methods. Experiments on artificial data support the theoretical discussion.},
+author = {J. Lee and M. Verleysen},
+doi = {10.1007/978-3-7908-2604-3_31},
+}
+
+@article{3a24c276368fa63473078723ce4bc99c9ea36019,
+title = {Stability Comparison of Dimensionality Reduction Techniques Attending to Data and Parameter Variations},
+year = {2013},
+url = {https://www.semanticscholar.org/paper/3a24c276368fa63473078723ce4bc99c9ea36019},
+abstract = {The analysis of the big volumes of data requires efficient and robust dimension reduction techniques to represent data into lower-dimensional spaces, which ease human understanding. This paper presents a study of the stability, robustness and performance of some of these dimension reduction algorithms with respect to algorithm and data parameters, which usually have a major influence in the resulting embeddings. This analysis includes the performance of a large panel of techniques on both artificial and real datasets, focusing on the geometrical variations experimented when changing different parameters. The results are presented by identifying the visual weaknesses of each technique, providing some suitable data-processing tasks to enhance the stability.},
+author = {Francisco J. García-Fernández and M. Verleysen and J. Lee and Ignacio Díaz Blanco},
+doi = {10.2312/PE.VAMP.VAMP2013.005-009},
+}
+
+@article{f1fffa10219d91aa107184981a669b18e733b6cf,
+title = {Type 1 and 2 symmetric divergences for stochastic neighbor embedding},
+year = {2012},
+url = {https://www.semanticscholar.org/paper/f1fffa10219d91aa107184981a669b18e733b6cf},
+abstract = {Stochastic neighbor embedding (SNE) is a method of dimensionality reduction (DR) that involves softmax similarities measured between all pairs of data points. In order to build a low-dimensional embedding, SNE tries to reproduce the similarities observed in the highdimensional data space. The capability of softmax similarities to fight the phenomenon of norm concentration has been studied in previous work. This paper investigates a complementary aspect, namely, the cost function that quantifies the mismatch between the highand low-dimensional similarities. We show experimentally that switching from a simple KullbackLeibler divergences to mixtures of dual divergences increases the quality of DR. This modification brings SNE to the performance level of its Student t-distributed variant, without the need to resort to non-identical similarity definitions in the highand low-dimensional spaces. These results allow us to conclude that future improvements in similarity-based DR will likely emerge from better definitions of the cost function.},
+author = {J. Lee},
+}
+
+@article{84010c93b04633572ed55c3851662c360d24d6e4,
+title = {Graph-Based Dimensionality Reduction},
+year = {2012},
+url = {https://www.semanticscholar.org/paper/84010c93b04633572ed55c3851662c360d24d6e4},
+abstract = {12.1 Summary . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 352 12.2 Introduction . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 352 12.3 Classical methods . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 353 12.3.1 Principal component analysis . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 354 12.3.2 Multidimensional scaling . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 355 12.3.3 Nonlinear MDS and Distance Preservation . . . . . . . . . . . . . . . . . . . . . . . . . . 356 12.4 Nonlinearity through Graphs . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 357 12.5 Graph-Based Distances . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 358 12.6 Graph-Based Similarities . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 361 12.6.1 Laplacian Eigenmaps . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 361 12.6.2 Locally linear embedding . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 364 12.7 Graph embedding . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 365 12.7.1 From LD to HD: Self-Organizing Maps . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 366 12.7.2 From HD to LD: Isotop . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 367 12.8 Examples and comparisons . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 368 12.8.1 Quality Assessment . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 369 12.8.2 Data Sets . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 370 12.8.3 Methods . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 371 12.8.4 Results . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 372 12.9 Conclusions . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 373 Bibliography . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 374},
+author = {J. Lee and M. Verleysen},
+doi = {10.1201/B12281-12},
+}
+
+@article{dd5102a849dd1b5c58675b00dc0bd65d21c79109,
+title = {Two key properties of dimensionality reduction methods},
+year = {2014},
+url = {https://www.semanticscholar.org/paper/dd5102a849dd1b5c58675b00dc0bd65d21c79109},
+abstract = {Dimensionality reduction aims at providing faithful low-dimensional representations of high-dimensional data. Its general principle is to attempt to reproduce in a low-dimensional space the salient characteristics of data, such as proximities. A large variety of methods exist in the literature, ranging from principal component analysis to deep neural networks with a bottleneck layer. In this cornucopia, it is rather difficult to find out why a few methods clearly outperform others. This paper identifies two important properties that enable some recent methods like stochastic neighborhood embedding and its variants to produce improved visualizations of high-dimensional data. The first property is a low sensitivity to the phenomenon of distance concentration. The second one is plasticity, that is, the capability to forget about some data characteristics to better reproduce the other ones. In a manifold learning perspective, breaking some proximities typically allow for a better unfolding of data. Theoretical developments as well as experiments support our claim that both properties have a strong impact. In particular, we show that equipping classical methods with the missing properties significantly improves their results.},
+author = {J. Lee and M. Verleysen},
+doi = {10.1109/CIDM.2014.7008663},
+}
+
+@article{b374077ad4913fa7da66538fd7f87392c596d7fc,
+title = {Scale-independent quality criteria for dimensionality reduction},
+year = {2010},
+url = {https://www.semanticscholar.org/paper/b374077ad4913fa7da66538fd7f87392c596d7fc},
+abstract = {Dimensionality reduction aims at representing high-dimensional data in low-dimensional spaces, in order to facilitate their visual interpretation. Many techniques exist, ranging from simple linear projections to more complex nonlinear transformations. The large variety of methods emphasizes the need of quality criteria that allow for fair comparisons between them. This paper extends previous work about rank-based quality criteria and proposes to circumvent their scale dependency. Most dimensionality reduction techniques indeed rely on a scale parameter that distinguish between local and global data properties. Such a scale dependency can be similarly found in usual quality criteria: they assess the embedding quality on a certain scale. Experiments with various dimensionality reduction techniques eventually show the strengths and weaknesses of the proposed scale-independent criteria.},
+author = {J. Lee and M. Verleysen},
+doi = {10.1016/j.patrec.2010.04.013},
+}
+
+@article{ac5102b1ab1ec129c37b0e282a5405055c379d97,
+title = {An Experimental Study of Dimensionality Reduction Methods},
+year = {2017},
+url = {https://www.semanticscholar.org/paper/ac5102b1ab1ec129c37b0e282a5405055c379d97},
+abstract = {Dimensionality reduction (DR) lowers the dimensionality of a high-dimensional data set by reducing the number of features for each pattern. The importance of DR techniques for data analysis and visualization led to the development of a large diversity of DR methods. The lack of comprehensive comparative studies makes it difficult to choose the best DR methods for a particular task based on known strengths and weaknesses. To close the gap, this paper presents an extensive experimental study comparing 29 DR methods on 13 artificial and real-world data sets. The performance assessment of the study is based on six quantitative metrics. According to our benchmark and evaluation scheme, the methods mMDS, GPLVM, and PCA turn out to outperform their competitors, although exceptions are revealed for special cases.},
+author = {Almuth Meier and Oliver Kramer},
+doi = {10.1007/978-3-319-67190-1_14},
+}
+
+@article{d64daa7e69d534e66ec0d39941083bf5566582f3,
+title = {Some steps towards a general principle for dimensionality reduction mappings},
+year = {2010},
+url = {https://www.semanticscholar.org/paper/d64daa7e69d534e66ec0d39941083bf5566582f3},
+abstract = {In the past years, many dimensionality reduction methods have been established which allow to visualize high dimensional data sets. Recently, also formal evaluation schemes have been proposed for data visualization, which allow a quantitative evaluation along general principles. Most techniques provide a mapping of a priorly given finite set of points only, requiring additional steps for out-of-sample extensions. We propose a general view on dimensionality reduction based on the concept of cost functions, and, based on this general principle, extend dimensionality reduction to explicit mappings of the data manifold. This offers the possibility of simple out-of-sample extensions. Further, it opens a way towards a theory of data visualization taking the perspective of its generalization ability to new data points. We demonstrate the approach based in a simple example.},
+author = {B. Hammer and K. Bunte and Michael Biehl},
+}
+
+@article{66c33452b5b41375a0865ba45a2c237ae1371d3c,
+title = {Type 1 and 2 mixtures of divergences for stoc hastic neighbor embedding},
+year = {2012},
+url = {https://www.semanticscholar.org/paper/66c33452b5b41375a0865ba45a2c237ae1371d3c},
+abstract = {Stochastic neighbor embedding (SNE) is a method of di- mensionality reduction (DR) that involves softmax similarities measured between all pairs of data points. In order to build a low-dimensional embedding, SNE tries to reproduce the similarities observed in the high- dimensional data space. The capability of softmax similarities to fight the phenomenon of norm concentration has been studied in previous work. This paper investigates a complementary aspect, namely, the cost function that quantifies the mismatch between the high- and low-dimensional sim- ilarities. We show experimentally that switching from a simple Kullback- Leibler divergences to mixtures of dual divergences increases the quality of DR. This modification brings SNE to the performance level of its Student t-distributed variant, without the need to resort to non-identical similarity definitions in the high- and low-dimensional spaces. These results allow us to conclude that future improvements in similarity-based DR will likely emerge from better definitions of the cost function.},
+author = {J. Lee},
+}
+
+@article{443da7f542d8641da1d1ba920da6691c0ed24197,
+title = {Quality assessment of nonlinear dimensionality reduction based on K-ary neighborhoods},
+year = {2008},
+url = {https://www.semanticscholar.org/paper/443da7f542d8641da1d1ba920da6691c0ed24197},
+abstract = {Nonlinear dimensionality reduction aims at providing low-dimensional representions of high-dimensional data sets. Many new methods have been recently proposed, but the question of their assessment and comparison remains open. This paper reviews some of the existing quality measures that are based on distance ranking and K-ary neighborhoods. In this context, the comparison of the ranks in the high- and low-dimensional spaces leads to the definition of the co-ranking matrix. Rank errors and concepts such as neighborhood intrusions and extrusions can be associated with different blocks of the co-ranking matrix. The considered quality criteria are then cast within this unifying framework and the blocks they involve are identified. The same framework allows us to propose simpler criteria, which quantify two aspects of the embedding, namely its overall quality and its tendency to favor either intrusions or extrusions. Eventually, a simple experiment illustrates the soundness of the approach.},
+author = {J. Lee and M. Verleysen},
+}
+
+@article{9ae57932c6a02f8de40a966123beb2e8d390b9ab,
+title = {Quality assessment of dimensionality reduction: Rank-based criteria},
+year = {2009},
+url = {https://www.semanticscholar.org/paper/9ae57932c6a02f8de40a966123beb2e8d390b9ab},
+abstract = {Dimensionality reduction aims at providing low-dimensional representations of high-dimensional data sets. Many new nonlinear methods have been proposed for the last years, yet the question of their assessment and comparison remains open. This paper first reviews some of the existing quality measures that are based on distance ranking and K-ary neighborhoods. Next, the definition of the co-ranking matrix provides a tool for comparing the ranks in the initial data set and some low-dimensional embedding. Rank errors and concepts such as neighborhood intrusions and extrusions can then be associated with different blocks of the co-ranking matrix. Several quality criteria can be cast within this unifying framework; they are shown to involve one or several of these characteristic blocks. Following this line, simple criteria are proposed, which quantify two aspects of the embedding quality, namely its overall quality and its tendency to favor intrusions or extrusions. They are applied to several recent dimensionality reduction methods in two experiments, with both artificial and real data.},
+author = {J. Lee and M. Verleysen},
+doi = {10.1016/J.NEUCOM.2008.12.017},
+}
+
+@article{441a62f2c2c0e7c57b13b8a9b69368c2bbd673a0,
+title = {Improving projection-based data analysis by feature space transformations},
+year = {2013},
+url = {https://www.semanticscholar.org/paper/441a62f2c2c0e7c57b13b8a9b69368c2bbd673a0},
+abstract = {Generating effective visual embedding of high-dimensional data is difficult - the analyst expects to see the structure of the data in the visualization, as well as patterns and relations. Given the high dimensionality, noise and imperfect embedding techniques, it is hard to come up with a satisfactory embedding that preserves the data structure well, whilst highlighting patterns and avoiding visual clutters at the same time. In this paper, we introduce a generic framework for improving the quality of an existing embedding in terms of both structural preservation and class separation by feature space transformations. A compound quality measure based on structural preservation and visual clutter avoidance is proposed to access the quality of embeddings. We evaluate the effectiveness of our approach by applying it to several widely used embedding techniques using a set of benchmark data sets and the result looks promising.},
+author = {M. Schäfer and Leishi Zhang and T. Schreck and A. Tatu and J. Lee and M. Verleysen and D. Keim},
+doi = {10.1117/12.2000701},
+}
+
+@article{119b8135bf631f1d66680d1893e04ef63e694c63,
+title = {Supervised Probability Preserving Projection (SPPP)},
+year = {2014},
+url = {https://www.semanticscholar.org/paper/119b8135bf631f1d66680d1893e04ef63e694c63},
+abstract = {Dimensionality Reduction (DR) is the process of finding a reduced representation of a data set according to some defined criteria. DR may be performed in both unsupervised and supervised settings. Several techniques have been proposed in the literature for unsupervised DR, where the aim is usually to preserve some intrinsic characteristics of the data without using the output information. In most cases they are preferred as a preprocessing step while some may end up with clustering or visualizations. While much focus has been on unsupervised methods, supervised techniques are preferred when every sample has its output information. Even though obtaining this information may be expensive for some tasks, this supports supervised methods in trying to avoid the curse of dimensionality where the space may be sparse. The output information allows the methods to focus on each points' real neighbors unlike unsupervised methods. In this thesis we aim to develop a supervised DR technique called Supervised Probability Preserving Projection (SPPP) that operates on probabilistic relations between points. More specifically we learn a linear transformation matrix that maps the input samples on to a projection space where the differences between the probabilistic similarities of the input covariates and their responses are minimized, given a neighborhood function. This thesis begins by suggesting three probabilistic neighborhood functions for a recently proposed method called Supervised Distance Preserving Projections (SDPP). Motivations from the experimental results on synthetic examples leads to the development and introduction of a novel technique called Supervised Probability Preserving Projection (SPPP). The formulation of SPPP and optimizations for three versions namely Gaussian, Heavy-tail and Linear are presented. The experiments indicate competitive performance of SPPP compared to recent state-of-the-art methods suggesting its use for both regression and classification tasks alike. Acknowledgements I thank my decorated supervisor Prof. Juha Karhunen for allowing me to do my thesis under his guidance. I am grateful to my advisor Dr. Francesco Corona for his untiring efforts throughout this thesis. He was always available and motivating including his meticulous approach to reviewing the drafts. I thank the Department of ICS for providing me a place in the lab and the IT administration team for their continuous support. Over the period of my stay in Finland, I had the luxury of making some friends who will always remain treasured in my heart. The long technical and trivial discussions including sports strengthened our friendship. Their varied academic background always provided some …},
+author = {Srikrishna Raamadhurai},
+}
+
+@article{8fa964d55aa8c15d0f3055849c91d4c7293fdba1,
+title = {Information Retrieval Perspective to Nonlinear Dimensionality Reduction for Data Visualization},
+year = {2010},
+url = {https://www.semanticscholar.org/paper/8fa964d55aa8c15d0f3055849c91d4c7293fdba1},
+abstract = {Nonlinear dimensionality reduction methods are often used to visualize high-dimensional data, although the existing methods have been designed for other related tasks such as manifold learning. It has been difficult to assess the quality of visualizations since the task has not been well-defined. We give a rigorous definition for a specific visualization task, resulting in quantifiable goodness measures and new visualization methods. The task is information retrieval given the visualization: to find similar data based on the similarities shown on the display. The fundamental tradeoff between precision and recall of information retrieval can then be quantified in visualizations as well. The user needs to give the relative cost of missing similar points vs. retrieving dissimilar points, after which the total cost can be measured. We then introduce a new method NeRV (neighbor retrieval visualizer) which produces an optimal visualization by minimizing the cost. We further derive a variant for supervised visualization; class information is taken rigorously into account when computing the similarity relationships. We show empirically that the unsupervised version outperforms existing unsupervised dimensionality reduction methods in the visualization task, and the supervised version outperforms existing supervised methods.},
+author = {Jarkko Venna and J. Peltonen and K. Nybo and Helena Aidos and Samuel Kaski},
+doi = {10.5555/1756006.1756019},
+}
+
+@article{72a2b17e6b3a741f69f069542dac4d5027b4dd7b,
+title = {Shift-invariant similarities circumvent distance concentration in stochastic neighbor embedding and variants},
+year = {2011},
+url = {https://www.semanticscholar.org/paper/72a2b17e6b3a741f69f069542dac4d5027b4dd7b},
+abstract = {Dimensionality reduction aims at representing high-dimensional data in low-dimensional spaces, mainly for visualization and exploratory purposes. As an alternative to projections on linear subspaces, nonlinear dimensionality reduction, also known as manifold learning, can provide data representations that preserve structural properties such as pairwise distances or local neighborhoods. Very recently, similarity preservation emerged as a new paradigm for dimensionality reduction, with methods such as stochastic neighbor embedding and its variants. Experimentally, these methods significantly outperform the more classical methods based on distance or transformed distance preservation. This paper explains both theoretically and experimentally the reasons for these performances. In particular, it details why the phenonomenon of distance concentration is an impediment towards effcient dimensionality reduction and how SNE and its variants circumvent this diffculty by using similarities that are invariant to shifts with respect to squared distances. The paper also proposes a generalized definition of shift-invariant similarities that extend the applicability of SNE to noisy data.},
+author = {J. Lee and M. Verleysen},
+doi = {10.1016/j.procs.2011.04.056},
+}
+
+@article{eda320b83373acce9bd9d2548401fe6781908d12,
+title = {Generative Modeling for Maximizing Precision and Recall in Information Visualization},
+year = {2011},
+url = {https://www.semanticscholar.org/paper/eda320b83373acce9bd9d2548401fe6781908d12},
+abstract = {Information visualization has recently been formulated as an information retrieval problem, where the goal is to find similar data points based on the visualized nonlinear projection, and the visualization is optimized to maximize a compromise between (smoothed) precision and recall. We turn the visualization into a generative modeling task where a simple user model parameterized by the data coordinates is optimized, neighborhood relations are the observed data, and straightforward maximum likelihood estimation corresponds to Stochastic Neighbor Embedding (SNE). While SNE maximizes pure recall, adding a mixture component that “explains away” misses allows our generative model to focus on maximizing precision as well. The resulting model is a generative solution to maximizing tradeoffs between precision and recall. The model outperforms earlier models in terms of precision and recall and in external validation by unsupervised classification.},
+author = {J. Peltonen and Samuel Kaski},
+}
+
+@article{e3f89fd339facf4000cc26b67ee7c09dfa1a4a4c,
+title = {Visualizing the quality of dimensionality reduction},
+year = {2013},
+url = {https://www.semanticscholar.org/paper/e3f89fd339facf4000cc26b67ee7c09dfa1a4a4c},
+abstract = {The growing number of dimensionality reduction methods available for data visualization has recently inspired the development of formal measures to evaluate the resulting low-dimensional representation independently from the methods' inherent criteria. Many evaluation measures can be summarized based on the co-ranking matrix. In this work, we analyze the characteristics of the co-ranking framework, focusing on interpretability and controllability in evaluation scenarios where a fine-grained assessment of a given visualization is desired. We extend the framework in two ways: (i) we propose how to link the evaluation to point-wise quality measures which can be used directly to augment the evaluated visualization and highlight erroneous regions; (ii) we improve the parameterization of the quality measure to offer more direct control over the evaluation's focus, and thus help the user to investigate more specific characteristics of the visualization.},
+author = {B. Mokbel and W. Lueks and A. Gisbrecht and B. Hammer},
+doi = {10.1016/j.neucom.2012.11.046},
+}
+
+@article{479e4d1a4820b49bfe5fb6d28f81aed57aa8963c,
+title = {Chapter 1 Graph-based dimensionality reduction},
+year = {2011},
+url = {https://www.semanticscholar.org/paper/479e4d1a4820b49bfe5fb6d28f81aed57aa8963c},
+abstract = {},
+author = {J. Lee},
+}
+
+@article{b016193587df9e9bf3c33f93be00589ed7fbc3db,
+title = {Unsupervised dimensionality reduction: the challenge of big data visualization},
+year = {2015},
+url = {https://www.semanticscholar.org/paper/b016193587df9e9bf3c33f93be00589ed7fbc3db},
+abstract = {Dimensionality reduction is an unsupervised task that allows high-dimensional data to be processed or visualised in lower-dimensional spaces. This tutorial reviews the basic principles of dimensionality reduc- tion and discusses some of the approaches that were published over the past years from the perspective of their application to big data. The tu- torial ends with a short review of papers about dimensionality reduction in these proceedings, as well as some perspectives for the near future.},
+author = {K. Bunte and J. Lee},
+}
+
+@article{f62a8c59de7bb20da5030ed09a8892dd353f3a50,
+title = {Local multidimensional scaling},
+year = {2006},
+url = {https://www.semanticscholar.org/paper/f62a8c59de7bb20da5030ed09a8892dd353f3a50},
+abstract = {In a visualization task, every nonlinear projection method needs to make a compromise between trustworthiness and continuity. In a trustworthy projection the visualized proximities hold in the original data as well, whereas a continuous projection visualizes all proximities of the original data. We show experimentally that one of the multidimensional scaling methods, curvilinear components analysis, is good at maximizing trustworthiness. We then extend it to focus on local proximities both in the input and output space, and to explicitly make a user-tunable parameterized compromise between trustworthiness and continuity. The new method compares favorably to alternative nonlinear projection methods.},
+author = {Jarkko Venna and Samuel Kaski},
+doi = {10.1016/j.neunet.2006.05.014},
+pmid = {16787737},
+}
+
+@article{b07c2f8b749b5adbe60f16ca160ce1d7e52aeb03,
+title = {Nonlinear Dimensionality Reduction for Visualization},
+year = {2013},
+url = {https://www.semanticscholar.org/paper/b07c2f8b749b5adbe60f16ca160ce1d7e52aeb03},
+abstract = {The visual interpretation of data is an essential step to guide any further processing or decision making. Dimensionality reduction (or manifold learning) tools may be used for visualization if the resulting dimension is constrained to be 2 or 3. The field of machine learning has developed numerous nonlinear dimensionality reduction tools in the last decades. However, the diversity of methods reflects the diversity of quality criteria used both for optimizing the algorithms, and for assessing their performances. In addition, these criteria are not always compatible with subjective visual quality. Finally, the dimensionality reduction methods themselves do not always possess computational properties that are compatible with interactive data visualization. This paper presents current and future developments to use dimensionality reduction methods for data visualization.},
+author = {M. Verleysen and J. Lee},
+doi = {10.1007/978-3-642-42054-2_77},
+}
+
+@article{853ff12baceb069f3849b26b70743eb51e640bc6,
+title = {Simbed: Similarity-Based Embedding},
+year = {2009},
+url = {https://www.semanticscholar.org/paper/853ff12baceb069f3849b26b70743eb51e640bc6},
+abstract = {Simbed, standing for similarity-based embedding, is a new method of embedding high-dimensional data. It relies on the preservation of pairwise similarities rather than distances. In this respect, Simbed can be related to other techniques such as stochastic neighbor embedding and its variants. A connection with curvilinear component analysis is also pointed out. Simbed differs from these methods by the way similarities are defined and compared in both the data and embedding spaces. In particular, similarities in Simbed can account for the phenomenon of norm concentration that occurs in high-dimensional spaces. This feature is shown to reinforce the advantage of Simbed over other embedding techniques in experiments with a face database.},
+author = {J. Lee and M. Verleysen},
+doi = {10.1007/978-3-642-04277-5_10},
+}

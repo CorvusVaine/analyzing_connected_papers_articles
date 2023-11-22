@@ -1,0 +1,411 @@
+@article{fba84b16c8581ffb830900b079f2e922c16dcd19,
+title = {Gene Prediction in Metagenomic Fragments with Deep Learning},
+year = {2017},
+url = {https://www.semanticscholar.org/paper/fba84b16c8581ffb830900b079f2e922c16dcd19},
+abstract = {Next generation sequencing technologies used in metagenomics yield numerous sequencing fragments which come from thousands of different species. Accurately identifying genes from metagenomics fragments is one of the most fundamental issues in metagenomics. In this article, by fusing multifeatures (i.e., monocodon usage, monoamino acid usage, ORF length coverage, and Z-curve features) and using deep stacking networks learning model, we present a novel method (called Meta-MFDL) to predict the metagenomic genes. The results with 10 CV and independent tests show that Meta-MFDL is a powerful tool for identifying genes from metagenomic fragments.},
+author = {Shaowu Zhang and Xiang-Yang Jin and Teng Zhang},
+doi = {10.1155/2017/4740354},
+pmid = {29250541},
+}
+
+@article{a064c09a8bc1d68f59f75a4827a8f60e6cb2d665,
+title = {MetaVelvet-SL: an extension of the Velvet assembler to a de novo metagenomic assembler utilizing supervised learning},
+year = {2014},
+url = {https://www.semanticscholar.org/paper/a064c09a8bc1d68f59f75a4827a8f60e6cb2d665},
+abstract = {The assembly of multiple genomes from mixed sequence reads is a bottleneck in metagenomic analysis. A single-genome assembly program (assembler) is not capable of resolving metagenome sequences, so assemblers designed specifically for metagenomics have been developed. MetaVelvet is an extension of the single-genome assembler Velvet. It has been proved to generate assemblies with higher N50 scores and higher quality than single-genome assemblers such as Velvet and SOAPdenovo when applied to metagenomic sequence reads and is frequently used in this research community. One important open problem for MetaVelvet is its low accuracy and sensitivity in detecting chimeric nodes in the assembly (de Bruijn) graph, which prevents the generation of longer contigs and scaffolds. We have tackled this problem of classifying chimeric nodes using supervised machine learning to significantly improve the performance of MetaVelvet and developed a new tool, called MetaVelvet-SL. A Support Vector Machine is used for learning the classification model based on 94 features extracted from candidate nodes. In extensive experiments, MetaVelvet-SL outperformed the original MetaVelvet and other state-of-the-art metagenomic assemblers, IDBA-UD, Ray Meta and Omega, to reconstruct accurate longer assemblies with higher N50 scores for both simulated data sets and real data sets of human gut microbial sequences.},
+author = {Afiahayati and Kengo Sato and Y. Sakakibara},
+doi = {10.1093/dnares/dsu041},
+pmid = {25431440},
+}
+
+@article{c48aca6a070df18ccc928f7e8c5dfd72ebebd577,
+title = {Short-read reading-frame predictors are not created equal: sequence error causes loss of signal},
+year = {2012},
+url = {https://www.semanticscholar.org/paper/c48aca6a070df18ccc928f7e8c5dfd72ebebd577},
+abstract = {BackgroundGene prediction algorithms (or gene callers) are an essential tool for analyzing shotgun nucleic acid sequence data. Gene prediction is a ubiquitous step in sequence analysis pipelines; it reduces the volume of data by identifying the most likely reading frame for a fragment, permitting the out-of-frame translations to be ignored. In this study we evaluate five widely used ab initio gene-calling algorithms—FragGeneScan, MetaGeneAnnotator, MetaGeneMark, Orphelia, and Prodigal—for accuracy on short (75–1000 bp) fragments containing sequence error from previously published artificial data and “real” metagenomic datasets.ResultsWhile gene prediction tools have similar accuracies predicting genes on error-free fragments, in the presence of sequencing errors considerable differences between tools become evident. For error-containing short reads, FragGeneScan finds more prokaryotic coding regions than does MetaGeneAnnotator, MetaGeneMark, Orphelia, or Prodigal. This improved detection of genes in error-containing fragments, however, comes at the cost of much lower (50%) specificity and overprediction of genes in noncoding regions.ConclusionsAb initio gene callers offer a significant reduction in the computational burden of annotating individual nucleic acid reads and are used in many metagenomic annotation systems. For predicting reading frames on raw reads, we find the hidden Markov model approach in FragGeneScan is more sensitive than other gene prediction tools, while Prodigal, MGA, and MGM are better suited for higher-quality sequences such as assembled contigs.},
+author = {W. Trimble and Kevin P. Keegan and M. D'Souza and Andreas Wilke and J. Wilkening and J. Gilbert and Folker Meyer},
+doi = {10.1186/1471-2105-13-183},
+pmid = {22839106},
+}
+
+@article{455867a6652d993fa4e69fda5b156cd8f852878a,
+title = {Construction of Protein-Protein Interactions Model by Deep Neural Networks},
+year = {2018},
+url = {https://www.semanticscholar.org/paper/455867a6652d993fa4e69fda5b156cd8f852878a},
+abstract = {In order to improve the effectiveness of the network prediction result of protein-protein interaction, the network prediction model of protein-protein interaction based on deep neural network has been proposed. Here, we present here a novel DPPI model with deep neural network and conjoint triad (CT) descriptors to predict protein-protein interactions only using the information of protein sequences. The best DPPI model achieved an accuracy of 97.65%, recall of 98.96% and area under the curve (AUC) of 98.51% with 10-fold cross-validation, respectively, which means that the model of predicting the interaction of protein-protein by deep neural network algorithm is accurate and effective.},
+author = {Yuanmiao Gui and Rujing Wang and Yuanyuan Wei and Xue Wang},
+doi = {10.2991/bbbs-18.2018.47},
+}
+
+@article{9b14a0ea5973d0de02911401215a76b780c1e2ef,
+title = {Orphelia: predicting genes in metagenomic sequencing reads},
+year = {2009},
+url = {https://www.semanticscholar.org/paper/9b14a0ea5973d0de02911401215a76b780c1e2ef},
+abstract = {Metagenomic sequencing projects yield numerous sequencing reads of a diverse range of uncultivated and mostly yet unknown microorganisms. In many cases, these sequencing reads cannot be assembled into longer contigs. Thus, gene prediction tools that were originally developed for whole-genome analysis are not suitable for processing metagenomes. Orphelia is a program for predicting genes in short DNA sequences that is available through a web server application (http://orphelia.gobics.de). Orphelia utilizes prediction models that were created with machine learning techniques on the basis of a wide range of annotated genomes. In contrast to other methods for metagenomic gene prediction, Orphelia has fragment length-specific prediction models for the two most popular sequencing techniques in metagenomics, chain termination sequencing and pyrosequencing. These models ensure highly specific gene predictions.},
+author = {K. Hoff and T. Lingner and P. Meinicke and M. Tech},
+doi = {10.1093/nar/gkp327},
+pmid = {19429689},
+}
+
+@article{bc17ab5e409a01532c4a0a876c732b60a55f2425,
+title = {The effect of sequencing errors on metagenomic gene prediction},
+year = {2009},
+url = {https://www.semanticscholar.org/paper/bc17ab5e409a01532c4a0a876c732b60a55f2425},
+abstract = {BackgroundGene prediction is an essential step in the annotation of metagenomic sequencing reads. Since most metagenomic reads cannot be assembled into long contigs, specialized statistical gene prediction tools have been developed for short and anonymous DNA fragments, e.g. MetaGeneAnnotator and Orphelia. While conventional gene prediction methods have been subject to a benchmark study on real sequencing reads with typical errors, such a comparison has not been conducted for specialized tools, yet. Their gene prediction accuracy was mostly measured on error free DNA fragments.ResultsIn this study, Sanger and pyrosequencing reads were simulated on the basis of models that take all types of sequencing errors into account. All metagenomic gene prediction tools showed decreasing accuracy with increasing sequencing error rates. Performance results on an established metagenomic benchmark dataset are also reported. In addition, we demonstrate that ESTScan, a tool for sequencing error compensation in eukaryotic expressed sequence tags, outperforms some metagenomic gene prediction tools on reads with high error rates although it was not designed for the task at hand.ConclusionThis study fills an important gap in metagenomic gene prediction research. Specialized methods are evaluated and compared with respect to sequencing error robustness. Results indicate that the integration of error-compensating methods into metagenomic gene prediction tools would be beneficial to improve metagenome annotation quality.},
+author = {K. Hoff},
+doi = {10.1186/1471-2164-10-520},
+pmid = {19909532},
+}
+
+@article{98ff87311a83ee8f9a28f2ec889362ef65f45087,
+title = {MGC: a metagenomic gene caller},
+year = {2013},
+url = {https://www.semanticscholar.org/paper/98ff87311a83ee8f9a28f2ec889362ef65f45087},
+abstract = {BackgroundComputational gene finding algorithms have proven their robustness in identifying genes in complete genomes. However, metagenomic sequencing has presented new challenges due to the incomplete and fragmented nature of the data. During the last few years, attempts have been made to extract complete and incomplete open reading frames (ORFs) directly from short reads and identify the coding ORFs, bypassing other challenging tasks such as the assembly of the metagenome.ResultsIn this paper we introduce a metagenomics gene caller (MGC) which is an improvement over the state-of-the-art prediction algorithm Orphelia. Orphelia uses a two-stage machine learning approach and computes a model that classifies extracted ORFs from fragmented sequences. We hypothesise and demonstrate evidence that sequences need separate models based on their local GC-content in order to avoid the noise introduced to a single model computed with sequences from the entire GC spectrum. We have also added two amino-acid features based on the benefit of amino-acid usage shown in our previous research. Our algorithm is able to predict genes and translation initiation sites (TIS) more accurately than Orphelia which uses a single model.ConclusionsLearning separate models for several pre-defined GC-content regions as opposed to a single model approach improves the performance of the neural network as demonstrated by the experimental results presented in this paper. The inclusion of amino-acid usage features also helps improve the overall accuracy of our algorithm. MGC's improvement sets the ground for further investigation into the use of GC-content to separate data for training models in machine learning based gene finders.},
+author = {Achraf El Allali and John R. Rose},
+doi = {10.1186/1471-2105-14-S9-S6},
+pmid = {23901840},
+}
+
+@article{1a89b05deb24ecf5dd736d752caf9b0da92df7e9,
+title = {Finding genes in genome sequence.},
+year = {2008},
+url = {https://www.semanticscholar.org/paper/1a89b05deb24ecf5dd736d752caf9b0da92df7e9},
+abstract = {Gene-finding is concerned with the identification of stretches of DNA in a genomic sequence that encode biologically active products, such as proteins or functional non-coding RNAs. This is usually the first step in the analysis of any novel piece of genomic sequence, which makes it a very important issue, as all downstream analyses depend on the results. This chapter focuses on the biological basis, computational approaches, and corresponding programs that are available for the automated identification of protein-coding genes. for prokaryotic and eukaryotic genomes, as well as the novel, multi-species sequence data originating from environmental community studies, the state of the art in automated gene finding is described.},
+author = {A. Mchardy},
+doi = {10.1007/978-1-60327-159-2_8},
+pmid = {18566764},
+}
+
+@article{0ad06f4278f342537b7a2e222cfbc6b749ebd972,
+title = {Gene and translation initiation site prediction in metagenomic sequences},
+year = {2012},
+url = {https://www.semanticscholar.org/paper/0ad06f4278f342537b7a2e222cfbc6b749ebd972},
+abstract = {MOTIVATION
+Gene prediction in metagenomic sequences remains a difficult problem. Current sequencing technologies do not achieve sufficient coverage to assemble the individual genomes in a typical sample; consequently, sequencing runs produce a large number of short sequences whose exact origin is unknown. Since these sequences are usually smaller than the average length of a gene, algorithms must make predictions based on very little data.
+
+
+RESULTS
+We present MetaProdigal, a metagenomic version of the gene prediction program Prodigal, that can identify genes in short, anonymous coding sequences with a high degree of accuracy. The novel value of the method consists of enhanced translation initiation site identification, ability to identify sequences that use alternate genetic codes and confidence values for each gene call. We compare the results of MetaProdigal with other methods and conclude with a discussion of future improvements.
+
+
+AVAILABILITY
+The Prodigal software is freely available under the General Public License from http://code.google.com/p/prodigal/.},
+author = {D. Hyatt and P. LoCascio and L. Hauser and E. Uberbacher},
+doi = {10.1093/bioinformatics/bts429},
+pmid = {22796954},
+}
+
+@article{5679d3bd98482fbaf161295a2c302db5edc7495e,
+title = {Integrated de novo Gene Prediction and Peptide Assembly of Metagenomic Sequencing Data},
+year = {2021},
+url = {https://www.semanticscholar.org/paper/5679d3bd98482fbaf161295a2c302db5edc7495e},
+abstract = {Metagenomics is the study of all genomic content presented in given microbial communities. Metagenomic functional analysis aims to quantify protein families and reconstruct metabolic pathways from the metagenome. It plays a central role in understanding the interaction between the microbial community and its host or environment. De novo functional analysis, which allows the discovery of novel protein families, remains challenging for high-complexity communities. There are currently three main approaches for recovering novel genes or proteins: de novo nucleotide assembly, gene calling, and peptide assembly. Unfortunately, their informational connection and dependency have been overlooked, and each has been formulated as an independent problem. In this work, we develop a sophisticated workflow called integrated Metagenomic Protein Predictor (iMPP), which leverages the informational dependencies for better de novo functional analysis. iMPP contains three novel modules: a hybrid assembly graph generation module, a graph-based gene calling module, and a peptide assembly-based refinement module. iMPP significantly improved the existing gene calling sensitivity on unassembled fragmented reads, achieving a 92% - 97% recall rate at a high precision level (>90%). iMPP further allowed for more sensitive and accurate peptide assembly, recovering more reference proteins and delivering more hypothetical protein sequences. The high performance of iMPP can provide a more comprehensive and unbiased view of the microbial communities under investigation. iMPP is freely available from https://github.com/Sirisha-t/iMPP.},
+author = {Sirisha Thippabhotla and Ben Liu and S. Yooseph and Youngik Yang and Jun Zhang and Cuncong Zhong},
+doi = {10.1101/2021.09.20.461079},
+}
+
+@article{696c7c86a82ee07a8f34b622b74323e5df08abd5,
+title = {A Review of Deep Learning Architectures and Their Application},
+year = {2017},
+url = {https://www.semanticscholar.org/paper/696c7c86a82ee07a8f34b622b74323e5df08abd5},
+abstract = {Deep Learning is a new era of machine learning research that are making major advances in solving problem with powerful computational models. Currently, this new machine learning method is widely used in object detection, visual object and speech recognition and also for making prediction of regulatory genomic and cellular imaging. Here, we review the methodology and applications of deep learning architectures including deep neural network, convolutional neural network and recurrent neural network. Next, we review several existing prediction tools in genomic sequences analysis that use deep learning architectures. In addition, we discuss the future research directions of deep learning.},
+author = {Jalilah Arijah Mohd Kamarudin and A. Abdullah and R. Sallehuddin},
+doi = {10.1007/978-981-10-6502-6_7},
+}
+
+@article{6da1b530661b8908a825deaa667619470e2608e2,
+title = {InteMAP: Integrated metagenomic assembly pipeline for NGS short reads},
+year = {2015},
+url = {https://www.semanticscholar.org/paper/6da1b530661b8908a825deaa667619470e2608e2},
+abstract = {BackgroundNext-generation sequencing (NGS) has greatly facilitated metagenomic analysis but also raised new challenges for metagenomic DNA sequence assembly, owing to its high-throughput nature and extremely short reads generated by sequencers such as Illumina. To date, how to generate a high-quality draft assembly for metagenomic sequencing projects has not been fully addressed.ResultsWe conducted a comprehensive assessment on state-of-the-art de novo assemblers and revealed that the performance of each assembler depends critically on the sequencing depth. To address this problem, we developed a pipeline named InteMAP to integrate three assemblers, ABySS, IDBA-UD and CABOG, which were found to complement each other in assembling metagenomic sequences. Making a decision of which assembling approaches to use according to the sequencing coverage estimation algorithm for each short read, the pipeline presents an automatic platform suitable to assemble real metagenomic NGS data with uneven coverage distribution of sequencing depth. By comparing the performance of InteMAP with current assemblers on both synthetic and real NGS metagenomic data, we demonstrated that InteMAP achieves better performance with a longer total contig length and higher contiguity, and contains more genes than others.ConclusionsWe developed a de novo pipeline, named InteMAP, that integrates existing tools for metagenomics assembly. The pipeline outperforms previous assembly methods on metagenomic assembly by providing a longer total contig length, a higher contiguity and covering more genes. InteMAP, therefore, could potentially be a useful tool for the research community of metagenomics.},
+author = {Binbin Lai and Fumeng Wang and Xiaoqi Wang and L. Duan and Huaiqiu Zhu},
+doi = {10.1186/s12859-015-0686-x},
+pmid = {26250558},
+}
+
+@article{b6e4f024da771be793178b754aeebe553a98a7f6,
+title = {MetaGene: prokaryotic gene finding from environmental genome shotgun sequences},
+year = {2006},
+url = {https://www.semanticscholar.org/paper/b6e4f024da771be793178b754aeebe553a98a7f6},
+abstract = {Exhaustive gene identification is a fundamental goal in all metagenomics projects. However, most metagenomic sequences are unassembled anonymous fragments, and conventional gene-finding methods cannot be applied. We have developed a prokaryotic gene-finding program, MetaGene, which utilizes di-codon frequencies estimated by the GC content of a given sequence with other various measures. MetaGene can predict a whole range of prokaryotic genes based on the anonymous genomic sequences of a few hundred bases, with a sensitivity of 95% and a specificity of 90% for artificial shotgun sequences (700 bp fragments from 12 species). MetaGene has two sets of codon frequency interpolations, one for bacteria and one for archaea, and automatically selects the proper set for a given sequence using the domain classification method we propose. The domain classification works properly, correctly assigning domain information to more than 90% of the artificial shotgun sequences. Applied to the Sargasso Sea dataset, MetaGene predicted almost all of the annotated genes and a notable number of novel genes. MetaGene can be applied to wide variety of metagenomic projects and expands the utility of metagenomics.},
+author = {H. Noguchi and J. Park and T. Takagi},
+doi = {10.1093/nar/gkl723},
+pmid = {17028096},
+}
+
+@article{d4d000726caa36fb133db22b448ff7df30ddbae7,
+title = {Gene prediction in metagenomic fragments based on the SVM algorithm},
+year = {2011},
+url = {https://www.semanticscholar.org/paper/d4d000726caa36fb133db22b448ff7df30ddbae7},
+abstract = {BackgroundMetagenomic sequencing is becoming a powerful technology for exploring micro-ogranisms from various environments, such as human body, without isolation and cultivation. Accurately identifying genes from metagenomic fragments is one of the most fundamental issues.ResultsIn this article, we present a novel gene prediction method named MetaGUN for metagenomic fragments based on a machine learning approach of SVM. It implements in a three-stage strategy to predict genes. Firstly, it classifies input fragments into phylogenetic groups by a k-mer based sequence binning method. Then, protein-coding sequences are identified for each group independently with SVM classifiers that integrate entropy density profiles (EDP) of codon usage, translation initiation site (TIS) scores and open reading frame (ORF) length as input patterns. Finally, the TISs are adjusted by employing a modified version of MetaTISA. To identify protein-coding sequences, MetaGun builds the universal module and the novel module. The former is based on a set of representative species, while the latter is designed to find potential functionary DNA sequences with conserved domains.ConclusionsComparisons on artificial shotgun fragments with multiple current metagenomic gene finders show that MetaGUN predicts better results on both 3' and 5' ends of genes with fragments of various lengths. Especially, it makes the most reliable predictions among these methods. As an application, MetaGUN was used to predict genes for two samples of human gut microbiome. It identifies thousands of additional genes with significant evidences. Further analysis indicates that MetaGUN tends to predict more potential novel genes than other current metagenomic gene finders.},
+author = {Yongchu Liu and Jiangtao Guo and Huaiqiu Zhu},
+doi = {10.1186/1471-2105-14-S5-S12},
+pmid = {23735199},
+}
+
+@article{3f867efddd5f87c934b9d5a95a50656a1c50e461,
+title = {MetaTISA: Metagenomic Translation Initiation Site Annotator for improving gene start prediction},
+year = {2009},
+url = {https://www.semanticscholar.org/paper/3f867efddd5f87c934b9d5a95a50656a1c50e461},
+abstract = {SUMMARY
+We proposed a tool named MetaTISA with an aim to improve TIS prediction of current gene-finders for metagenomes. The method employs a two-step strategy to predict translation initiation sites (TISs) by first clustering metagenomic fragments into phylogenetic groups and then predicting TISs independently for each group in an unsupervised manner. As evaluated on experimentally verified TISs, MetaTISA greatly improves the accuracies of TIS prediction of current gene-finders.
+
+
+AVAILABILITY
+The C++ source code is freely available under the GNU GPL license via http://mech.ctb.pku.edu.cn/MetaTISA/.},
+author = {Gang-Qing Hu and Jiangtao Guo and Yongchu Liu and Huaiqiu Zhu},
+doi = {10.1093/bioinformatics/btp272},
+pmid = {19389734},
+}
+
+@article{5425d647bb83e28d92fca1db8039dd71cb1ef460,
+title = {Explorer Meta 4 a web application for sharing and annotating metagenomic gene predictions using web services},
+year = {2017},
+url = {https://www.semanticscholar.org/paper/5425d647bb83e28d92fca1db8039dd71cb1ef460},
+abstract = {Publisher Rights Statement: Copyright © Richardson, Escalettes, Fotheringham,Wallace andWatson. This is an open-access article distributed under the terms of the Creative Commons Attribution License (CC BY). The use, distribution or reproduction in other forums is permitted, provided the original author(s) or licensor are credited and that the original publication in this journal is cited, in accordance with accepted academic practice. No use, distribution or reproduction is permitted which does not comply with these terms.},
+author = {Emily J. Richardson and F. Escalettes and I. Fotheringham and R. Wallace},
+}
+
+@article{6c9684ddc83e19ad09791e797694e956063ec412,
+title = {FragGeneScan: predicting genes in short and error-prone reads},
+year = {2010},
+url = {https://www.semanticscholar.org/paper/6c9684ddc83e19ad09791e797694e956063ec412},
+abstract = {The advances of next-generation sequencing technology have facilitated metagenomics research that attempts to determine directly the whole collection of genetic material within an environmental sample (i.e. the metagenome). Identification of genes directly from short reads has become an important yet challenging problem in annotating metagenomes, since the assembly of metagenomes is often not available. Gene predictors developed for whole genomes (e.g. Glimmer) and recently developed for metagenomic sequences (e.g. MetaGene) show a significant decrease in performance as the sequencing error rates increase, or as reads get shorter. We have developed a novel gene prediction method FragGeneScan, which combines sequencing error models and codon usages in a hidden Markov model to improve the prediction of protein-coding region in short reads. The performance of FragGeneScan was comparable to Glimmer and MetaGene for complete genomes. But for short reads, FragGeneScan consistently outperformed MetaGene (accuracy improved ∼62% for reads of 400 bases with 1% sequencing errors, and ∼18% for short reads of 100 bases that are error free). When applied to metagenomes, FragGeneScan recovered substantially more genes than MetaGene predicted (>90% of the genes identified by homology search), and many novel genes with no homologs in current protein sequence database.},
+author = {Mina Rho and Haixu Tang and Yuzhen Ye},
+doi = {10.1093/nar/gkq747},
+pmid = {20805240},
+}
+
+@article{f43a7a84e4f4e6e91f62ed553d5d48bfb9598480,
+title = {DNN-PPI: A LARGE-SCALE PREDICTION OF PROTEIN–PROTEIN INTERACTIONS BASED ON DEEP NEURAL NETWORKS},
+year = {2019},
+url = {https://www.semanticscholar.org/paper/f43a7a84e4f4e6e91f62ed553d5d48bfb9598480},
+abstract = {Protein–protein interaction (PPI) is very important for various biological processes and has given rise to a series of prediction-computing methods. In spite of different computing methods in relation to PPI prediction, PPI network projects fail to perform on a large scale. Aiming at ensuring that PPI can be predicted effectively, we used a deep neural network (DNN) for the study of PPI prediction that is based on an amino acid sequence. We present a novel DNN-PPI model with an auto covariance (AC) descriptor and a conjoint triad (CT) descriptor for the prediction of PPI that is based only on the protein sequence information. The 10-fold cross-validation indicated that the best DNN-PPI model with CT achieved 97.65% accuracy, 98.96% recall and a 98.51% area under the curve (AUC). The model exhibits a prediction accuracy of 94.20–97.10% for other external datasets. All of these suggest the high validity of the proposed algorithm in relation to various species.},
+author = {Yuanmiao Gui and Rujing Wang and Yuanyuan Wei and Xue Wang},
+doi = {10.1142/S0218339019500013},
+}
+
+@article{4a9ffc6c60602d05da62c762605b89d302cb4ae6,
+title = {CNN-MGP: Convolutional Neural Networks for Metagenomics Gene Prediction},
+year = {2018},
+url = {https://www.semanticscholar.org/paper/4a9ffc6c60602d05da62c762605b89d302cb4ae6},
+abstract = {Accurate gene prediction in metagenomics fragments is a computationally challenging task due to the short-read length, incomplete, and fragmented nature of the data. Most gene-prediction programs are based on extracting a large number of features and then applying statistical approaches or supervised classification approaches to predict genes. In our study, we introduce a convolutional neural network for metagenomics gene prediction (CNN-MGP) program that predicts genes in metagenomics fragments directly from raw DNA sequences, without the need for manual feature extraction and feature selection stages. CNN-MGP is able to learn the characteristics of coding and non-coding regions and distinguish coding and non-coding open reading frames (ORFs). We train 10 CNN models on 10 mutually exclusive datasets based on pre-defined GC content ranges. We extract ORFs from each fragment; then, the ORFs are encoded numerically and inputted into an appropriate CNN model based on the fragment-GC content. The output from the CNN is the probability that an ORF will encode a gene. Finally, a greedy algorithm is used to select the final gene list. Overall, CNN-MGP is effective and achieves a 91% accuracy on testing dataset. CNN-MGP shows the ability of deep learning to predict genes in metagenomics fragments, and it achieves an accuracy higher than or comparable to state-of-the-art gene-prediction programs that use pre-defined features.},
+author = {Amani A. Al-Ajlan and Achraf El Allali},
+doi = {10.1007/s12539-018-0313-4},
+pmid = {30588558},
+}
+
+@article{3b2de53966f1cbc0d184bbfcdbc57dfeef1ceb07,
+title = {Gene prediction in metagenomic fragments: A large scale machine learning approach},
+year = {2008},
+url = {https://www.semanticscholar.org/paper/3b2de53966f1cbc0d184bbfcdbc57dfeef1ceb07},
+abstract = {BackgroundMetagenomics is an approach to the characterization of microbial genomes via the direct isolation of genomic sequences from the environment without prior cultivation. The amount of metagenomic sequence data is growing fast while computational methods for metagenome analysis are still in their infancy. In contrast to genomic sequences of single species, which can usually be assembled and analyzed by many available methods, a large proportion of metagenome data remains as unassembled anonymous sequencing reads. One of the aims of all metagenomic sequencing projects is the identification of novel genes. Short length, for example, Sanger sequencing yields on average 700 bp fragments, and unknown phylogenetic origin of most fragments require approaches to gene prediction that are different from the currently available methods for genomes of single species. In particular, the large size of metagenomic samples requires fast and accurate methods with small numbers of false positive predictions.ResultsWe introduce a novel gene prediction algorithm for metagenomic fragments based on a two-stage machine learning approach. In the first stage, we use linear discriminants for monocodon usage, dicodon usage and translation initiation sites to extract features from DNA sequences. In the second stage, an artificial neural network combines these features with open reading frame length and fragment GC-content to compute the probability that this open reading frame encodes a protein. This probability is used for the classification and scoring of gene candidates. With large scale training, our method provides fast single fragment predictions with good sensitivity and specificity on artificially fragmented genomic DNA. Additionally, this method is able to predict translation initiation sites accurately and distinguishes complete from incomplete genes with high reliability.ConclusionLarge scale machine learning methods are well-suited for gene prediction in metagenomic DNA fragments. In particular, the combination of linear discriminants and neural networks is promising and should be considered for integration into metagenomic analysis pipelines. The data sets can be downloaded from the URL provided (see Availability and requirements section).},
+author = {K. Hoff and M. Tech and T. Lingner and R. Daniel and B. Morgenstern and P. Meinicke},
+doi = {10.1186/1471-2105-9-217},
+pmid = {18442389},
+}
+
+@article{be1e60b65603b59ad666e47f105f39d88756e226,
+title = {Why Deep Learning Is Changing the Way to Approach NGS Data Processing: A Review},
+year = {2018},
+url = {https://www.semanticscholar.org/paper/be1e60b65603b59ad666e47f105f39d88756e226},
+abstract = {Nowadays, big data analytics in genomics is an emerging research topic. In fact, the large amount of genomics data originated by emerging next-generation sequencing (NGS) techniques requires more and more fast and sophisticated algorithms. In this context, deep learning is re-emerging as a possible approach to speed up the DNA sequencing process. In this review, we specifically discuss such a trend. In particular, starting from an analysis of the interest of the Internet community in both NGS and deep learning, we present a taxonomic analysis highlighting the major software solutions based on deep learning algorithms available for each specific NGS application field. We discuss future challenges in the perspective of cloud computing services aimed at deep learning based solutions for NGS.},
+author = {Fabrizio Celesti and A. Celesti and J. Wan and M. Villari},
+doi = {10.1109/RBME.2018.2825987},
+pmid = {29993643},
+}
+
+@article{ac7c41d02df429509ac68c6ea0fde3911ff7c2e3,
+title = {The Effect of Machine Learning Algorithms on Metagenomics Gene Prediction},
+year = {2018},
+url = {https://www.semanticscholar.org/paper/ac7c41d02df429509ac68c6ea0fde3911ff7c2e3},
+abstract = {The development of next generation sequencing facilitates the study of metagenomics. Computational gene prediction aims to find the location of genes in a given DNA sequence. Gene prediction in metagenomics is a challenging task because of the short and fragmented nature of the data. Our previous framework minimum redundancy maximum relevance - support vector machines (mRMR-SVM) produced promising results in metagenomics gene prediction. In this paper, we review available metagenomics gene prediction programs and study the effect of the machine learning approach on gene prediction by altering the underlining machine learning algorithm in our previous framework. Overall, SVM produces the highest accuracy based on tests performed on a simulated dataset.},
+author = {Amani A. Al-Ajlan and Achraf El Allali},
+doi = {10.1145/3309129.3309136},
+}
+
+@article{b78d41d673d2085712ed30cf4b3f53f186fe1b96,
+title = {Introduction to Computational and Bioinformatics Tools in Virology},
+year = {2020},
+url = {https://www.semanticscholar.org/paper/b78d41d673d2085712ed30cf4b3f53f186fe1b96},
+abstract = {Abstract Viruses are a primary factor in the human infectious disease. Viral disease outbreaks and timely epidemics to different parts of the world cause severe clinical manifestations and congenital malformations. Understanding the structure–function correlation in viruses is an essential phenomenon for the identification of a potential target for the inhibitors and vaccine development. In virology research, virus-related databases and bioinformatics tools are essential equipment to distinguish the relationship between different datasets about viruses and host–virus interactions. Bioinformatics analysis includes different tasks such as sequence alignment, homology searching, identification of open reading frames, motif, and gene prediction. It is also essential for the prediction of features such as transmembrane domains, glycosylation sites, and protein secondary and tertiary structure prediction. One of the crucial tasks of bioinformatics is also the analysis of protein–protein interaction network and biochemical pathway, which can help elucidate information at the biological systems level. Microarray analysis provides methods for high throughput screening and gene expression profiling.},
+author = {Pramodkumar P. Gupta and Y. Kasmi and Č. Podlipnik},
+doi = {10.1016/b978-0-12-814966-9.00008-1},
+}
+
+@article{0ea4ccbd610bd2dd2bff8a69d1a4c23414b79c6f,
+title = {Prediction of protein‐protein interactions using stacked auto‐encoder},
+year = {2021},
+url = {https://www.semanticscholar.org/paper/0ea4ccbd610bd2dd2bff8a69d1a4c23414b79c6f},
+abstract = {},
+author = {Kanchan Jha and S. Saha and M. Tanveer},
+doi = {10.1002/ETT.4256},
+}
+
+@article{3635dd111fbd69f2939becb5542738a8bed485aa,
+title = {Feature selection for gene prediction in metagenomic fragments},
+year = {2018},
+url = {https://www.semanticscholar.org/paper/3635dd111fbd69f2939becb5542738a8bed485aa},
+abstract = {BackgroundComputational approaches, specifically machine-learning techniques, play an important role in many metagenomic analysis algorithms, such as gene prediction. Due to the large feature space, current de novo gene prediction algorithms use different combinations of classification algorithms to distinguish between coding and non-coding sequences.ResultsIn this study, we apply a filter method to select relevant features from a large set of known features instead of combining them using linear classifiers or ignoring their individual coding potential. We use minimum redundancy maximum relevance (mRMR) to select the most relevant features. Support vector machines (SVM) are trained using these features, and the classification score is transformed into the posterior probability of the coding class. A greedy algorithm uses the probability of overlapped candidate genes to select the final genes. Instead of using one model for all sequences, we train an ensemble of SVM models on mutually exclusive datasets based on GC content and use the appropriated model to classify candidate genes based on their read’s GC content.ConclusionOur proposed algorithm achieves an improvement over some existing algorithms. mRMR produces promising results in gene prediction. It improves classification performance and feature interpretation. Our research serves as a basis for future studies on feature selection for gene prediction.},
+author = {Amani A. Al-Ajlan and Achraf El Allali},
+doi = {10.1186/s13040-018-0170-z},
+pmid = {30026811},
+}
+
+@article{0db4c15424b8fd47e6ca51eeba3b67adc4290171,
+title = {Gene Prediction in Metagenomic Fragments with Orphelia: A Large‐Scale Machine Learning Approach},
+year = {2011},
+url = {https://www.semanticscholar.org/paper/0db4c15424b8fd47e6ca51eeba3b67adc4290171},
+abstract = {},
+author = {Katharina Hoff and M. Tech and T. Lingner and R. Daniel and B. Morgenstern and P. Meinicke},
+doi = {10.1002/9781118010518.CH41},
+}
+
+@article{a1f13ab89447325c28ccf9fefcfed4cdf62d1d29,
+title = {MetaGeneMark-2: Improved Gene Prediction in Metagenomes},
+year = {2022},
+url = {https://www.semanticscholar.org/paper/a1f13ab89447325c28ccf9fefcfed4cdf62d1d29},
+abstract = {Accurate prediction of protein-coding genes in metagenomic contigs presents a well-known challenge. Particularly difficult is to identify short and incomplete genes as well as positions of translation initiation sites. It is frequently assumed that initiation of translation in prokaryotes is controlled by a ribosome binding site (RBS), a sequence with the Shine-Dalgarno (SD) consensus situated in the 5’ UTR. However, ∼30% of the 5,007 genomes, representing the RefSeq collection of prokaryotic genomes, have either non-SD RBS sequences or no RBS site due to physical absence of the 5’ UTR (the case of leaderless transcription). Predictions of the gene 3’ ends are much more accurate; still, errors could occur due to the use of incorrect genetic code. Hence, an effective gene finding algorithm would identify true genetic code in a process of the sequence analysis. In this work prediction of gene starts was improved by inferring the GC content dependent generating functions for RBS sequences as well as for promoter sequences involved in leaderless transcription. An additional feature of the algorithm was the ability to identify alternative genetic code defined by a reassignment of the TGA stop codon (the only stop codon reassignment type known in prokaryotes). It was demonstrated that MetaGeneMark-2 made more accurate gene predictions in metagenomic sequences than several existing state-of-the-art tools.},
+author = {Karl Gemayel and A. Lomsadze and M. Borodovsky},
+doi = {10.1101/2022.07.25.500264},
+}
+
+@article{3cee40494377c0e7d9c7c23a3811b481e55bce39,
+title = {Ab initio gene identification in metagenomic sequences},
+year = {2010},
+url = {https://www.semanticscholar.org/paper/3cee40494377c0e7d9c7c23a3811b481e55bce39},
+abstract = {We describe an algorithm for gene identification in DNA sequences derived from shotgun sequencing of microbial communities. Accurate ab initio gene prediction in a short nucleotide sequence of anonymous origin is hampered by uncertainty in model parameters. While several machine learning approaches could be proposed to bypass this difficulty, one effective method is to estimate parameters from dependencies, formed in evolution, between frequencies of oligonucleotides in protein-coding regions and genome nucleotide composition. Original version of the method was proposed in 1999 and has been used since for (i) reconstructing codon frequency vector needed for gene finding in viral genomes and (ii) initializing parameters of self-training gene finding algorithms. With advent of new prokaryotic genomes en masse it became possible to enhance the original approach by using direct polynomial and logistic approximations of oligonucleotide frequencies, as well as by separating models for bacteria and archaea. These advances have increased the accuracy of model reconstruction and, subsequently, gene prediction. We describe the refined method and assess its accuracy on known prokaryotic genomes split into short sequences. Also, we show that as a result of application of the new method, several thousands of new genes could be added to existing annotations of several human and mouse gut metagenomes.},
+author = {Wenhan Zhu and A. Lomsadze and M. Borodovsky},
+doi = {10.1093/nar/gkq275},
+pmid = {20403810},
+}
+
+@article{43821eb7f0d837ed6e840377c2d85fae2f4ce206,
+title = {Development of de novo assemblers for metagenomic sequencing data(本文)},
+year = {2014},
+url = {https://www.semanticscholar.org/paper/43821eb7f0d837ed6e840377c2d85fae2f4ce206},
+abstract = {},
+author = {Afiahayati},
+}
+
+@article{d7e1225452deed203a2f92d7cca29bcde27866e5,
+title = {A Review of Bioinformatics Tools for Bio-Prospecting from Metagenomic Sequence Data},
+year = {2017},
+url = {https://www.semanticscholar.org/paper/d7e1225452deed203a2f92d7cca29bcde27866e5},
+abstract = {The microbiome can be defined as the community of microorganisms that live in a particular environment. Metagenomics is the practice of sequencing DNA from the genomes of all organisms present in a particular sample, and has become a common method for the study of microbiome population structure and function. Increasingly, researchers are finding novel genes encoded within metagenomes, many of which may be of interest to the biotechnology and pharmaceutical industries. However, such “bioprospecting” requires a suite of sophisticated bioinformatics tools to make sense of the data. This review summarizes the most commonly used bioinformatics tools for the assembly and annotation of metagenomic sequence data with the aim of discovering novel genes.},
+author = {Despoina D. Roumpeka and R. Wallace and Frank Escalettes and I. Fotheringham and M. Watson},
+doi = {10.3389/fgene.2017.00023},
+pmid = {28321234},
+}
+
+@article{94a840b85f5f3645dedfb309da772c21d985fc84,
+title = {Encyclopedia of Metagenomics},
+year = {2015},
+url = {https://www.semanticscholar.org/paper/94a840b85f5f3645dedfb309da772c21d985fc84},
+abstract = {},
+author = {K. Nelson},
+doi = {10.1007/978-1-4899-7478-5},
+}
+
+@article{494db48791cd4de7f3b5ce32494b097869912884,
+title = {Gene prediction with Glimmer for metagenomic sequences augmented by classification and clustering},
+year = {2011},
+url = {https://www.semanticscholar.org/paper/494db48791cd4de7f3b5ce32494b097869912884},
+abstract = {Environmental shotgun sequencing (or metagenomics) is widely used to survey the communities of microbial organisms that live in many diverse ecosystems, such as the human body. Finding the protein-coding genes within the sequences is an important step for assessing the functional capacity of a metagenome. In this work, we developed a metagenomics gene prediction system Glimmer-MG that achieves significantly greater accuracy than previous systems via novel approaches to a number of important prediction subtasks. First, we introduce the use of phylogenetic classifications of the sequences to model parameterization. We also cluster the sequences, grouping together those that likely originated from the same organism. Analogous to iterative schemes that are useful for whole genomes, we retrain our models within each cluster on the initial gene predictions before making final predictions. Finally, we model both insertion/deletion and substitution sequencing errors using a different approach than previous software, allowing Glimmer-MG to change coding frame or pass through stop codons by predicting an error. In a comparison among multiple gene finding methods, Glimmer-MG makes the most sensitive and precise predictions on simulated and real metagenomes for all read lengths and error rates tested.},
+author = {David R. Kelley and Bo Liu and A. Delcher and M. Pop and S. Salzberg},
+doi = {10.1093/nar/gkr1067},
+pmid = {22102569},
+}
+
+@article{a71110d802bdf85a2a9307ea6104e0f6fc7ffcfc,
+title = {Improvement of ab initio methods of gene prediction in genomic and metagenomic sequences},
+year = {2010},
+url = {https://www.semanticscholar.org/paper/a71110d802bdf85a2a9307ea6104e0f6fc7ffcfc},
+abstract = {We describe an algorithm for gene identification in DNA sequences derived from shotgun sequencing of microbial communities. Accurate ab initio gene prediction in a short nucleotide sequence of anonymous origin is hampered by uncertainty in model parameters. While several machine learning approaches could be proposed to bypass this difficulty one effective method is to estimate parameters from dependencies, formed in evolution, between frequencies of oligonucleotide in protein-coding regions and genome nucleotide composition. Original version of the method was proposed in 1999 and has been used since for i/ reconstructing codon frequency vector needed for gene finding in viral genomes and ii/ initializing parameters of self-training gene finding algorithms. With advent of new prokaryotic genomes en masse it became possible to enhance the original approach by using direct polynomial and logistic approximations of oligonucleotide frequencies as well as by separating models for bacteria and archaea. These advances have increased the accuracy of models reconstruction and, subsequently, gene prediction. We describe the refined method and assess its accuracy on known prokaryotic genomes split into short sequences. Also, we show that as a result of application of the new method, several thousands of new genes could be added to existing annotations of several human and mouse gut metagenomes.},
+author = {Wenhan Zhu},
+}
+
+@article{98b23c6f1dca5ee2bc45449309044f32599b508b,
+title = {Sequence-based prediction of protein protein interaction using a deep-learning algorithm},
+year = {2017},
+url = {https://www.semanticscholar.org/paper/98b23c6f1dca5ee2bc45449309044f32599b508b},
+abstract = {BackgroundProtein-protein interactions (PPIs) are critical for many biological processes. It is therefore important to develop accurate high-throughput methods for identifying PPI to better understand protein function, disease occurrence, and therapy design. Though various computational methods for predicting PPI have been developed, their robustness for prediction with external datasets is unknown. Deep-learning algorithms have achieved successful results in diverse areas, but their effectiveness for PPI prediction has not been tested.ResultsWe used a stacked autoencoder, a type of deep-learning algorithm, to study the sequence-based PPI prediction. The best model achieved an average accuracy of 97.19% with 10-fold cross-validation. The prediction accuracies for various external datasets ranged from 87.99% to 99.21%, which are superior to those achieved with previous methods.ConclusionsTo our knowledge, this research is the first to apply a deep-learning algorithm to sequence-based PPI prediction, and the results demonstrate its potential in this field.},
+author = {Tanlin Sun and Bo Zhou and L. Lai and Jianfeng Pei},
+doi = {10.1186/s12859-017-1700-2},
+pmid = {28545462},
+}
+
+@article{8c7e36060cf46ab7e4e81b8d5b2a1f379ec3ca09,
+title = {Prediction of protein-protein interactions from amino acid sequences using a novel multi-scale continuous and discontinuous feature set},
+year = {2014},
+url = {https://www.semanticscholar.org/paper/8c7e36060cf46ab7e4e81b8d5b2a1f379ec3ca09},
+abstract = {BackgroundIdentifying protein-protein interactions (PPIs) is essential for elucidating protein functions and understanding the molecular mechanisms inside the cell. However, the experimental methods for detecting PPIs are both time-consuming and expensive. Therefore, computational prediction of protein interactions are becoming increasingly popular, which can provide an inexpensive way of predicting the most likely set of interactions at the entire proteome scale, and can be used to complement experimental approaches. Although much progress has already been achieved in this direction, the problem is still far from being solved and new approaches are still required to overcome the limitations of the current prediction models.ResultsIn this work, a sequence-based approach is developed by combining a novel Multi-scale Continuous and Discontinuous (MCD) feature representation and Support Vector Machine (SVM). The MCD representation gives adequate consideration to the interactions between sequentially distant but spatially close amino acid residues, thus it can sufficiently capture multiple overlapping continuous and discontinuous binding patterns within a protein sequence. An effective feature selection method mRMR was employed to construct an optimized and more discriminative feature set by excluding redundant features. Finally, a prediction model is trained and tested based on SVM algorithm to predict the interaction probability of protein pairs.ConclusionsWhen performed on the yeast PPIs data set, the proposed approach achieved 91.36% prediction accuracy with 91.94% precision at the sensitivity of 90.67%. Extensive experiments are conducted to compare our method with the existing sequence-based method. Experimental results show that the performance of our predictor is better than several other state-of-the-art predictors, whose average prediction accuracy is 84.91%, sensitivity is 83.24%, and precision is 86.12%. Achieved results show that the proposed approach is very promising for predicting PPI, so it can be a useful supplementary tool for future proteomics studies. The source code and the datasets are freely available at http://csse.szu.edu.cn/staff/youzh/MCDPPI.zip for academic use.},
+author = {Zhuhong You and Lin Zhu and C. Zheng and Hongjie Yu and Suping Deng and Zhen Ji},
+doi = {10.1186/1471-2105-15-S15-S9},
+pmid = {25474679},
+}
+
+@article{e82cf78ea4deaf8b99af62ef8d97d99a359ec30d,
+title = {Prediction of Translation Initiation Site in Bacterial and Archaeal Genomes},
+year = {2014},
+url = {https://www.semanticscholar.org/paper/e82cf78ea4deaf8b99af62ef8d97d99a359ec30d},
+abstract = {Abstract: Driven by the rapid growth of the complete genome sequences, it is accepted that genome annotation has been resorted mostly to automatic methodology. For computational annotation to bacterial and archaeal genomes, accurate prediction of translation initiation sites (TISs) is essential to locate protein coding regions of genes. Therefore, TIS prediction has been a challenge to a number of gene finders and TIS processors, leading to recent studies of TIS prediction or correction in prokaryotic genome annotation as well as of the mechanism of translation initiation. It is time for the research community to review the available mathematical models of TIS of prokaryotic gene, and the resultant algorithms for a series of current TIS processors and TIS prediction modules in gene finders. In fact, the TIS models have been improved along with the knowledge of the mechanism of translation initiation. Several studies of the mechanism of translation initiation in prokaryotic genomes have been summarized. With a few of published data sets widely-used in evaluation of TIS identification, the performances of the existing methods are assessed and discussed in this article. It is also interesting to discuss the relation between the algorithms and the understanding of prokaryotic translation initiation mechanism, which can enlighten us on the state-of-the-art studies of TIS prediction in bacterial and archaeal genomes.},
+author = {Huaiqiu Zhu and Qi Wang},
+doi = {10.2174/1574893608999140109120345},
+}
+
+@article{4e4d760824e0bcc77ca3ca1131779730869e0a7c,
+title = {Prediction of translation initiation site for microbial genomes with TriTISA},
+year = {2009},
+url = {https://www.semanticscholar.org/paper/4e4d760824e0bcc77ca3ca1131779730869e0a7c},
+abstract = {UNLABELLED
+We report a new and simple method, TriTISA, for accurate prediction of translation initiation site (TIS) of microbial genomes. TriTISA classifies all candidate TISs into three categories based on evolutionary properties, and characterizes them in terms of Markov models. Then, it employs a Bayesian methodology for the selection of true TIS with a non-supervised, iterative procedure. Assessment on experimentally verified TIS data shows that TriTISA is overall better than all other methods of the state-of-the-art for microbial genome TIS prediction. In particular, TriTISA is shown to have a robust accuracy independent of the quality of initial annotation.
+
+
+AVAILABILITY
+The C++ source code is freely available under the GNU GPL license via http://mech.ctb.pku.edu.cn/protisa/TriTISA.},
+author = {Gang-Qing Hu and Xiaobin Zheng and Huaiqiu Zhu and Z. She},
+doi = {10.1093/bioinformatics/btn576},
+pmid = {19015130},
+}
+
+@article{c06af1ebd8dacacd125413e8b59f320706d69178,
+title = {Deep Neural Network Based Predictions of Protein Interactions Using Primary Sequences},
+year = {2018},
+url = {https://www.semanticscholar.org/paper/c06af1ebd8dacacd125413e8b59f320706d69178},
+abstract = {Machine learning based predictions of protein–protein interactions (PPIs) could provide valuable insights into protein functions, disease occurrence, and therapy design on a large scale. The intensive feature engineering in most of these methods makes the prediction task more tedious and trivial. The emerging deep learning technology enabling automatic feature engineering is gaining great success in various fields. However, the over-fitting and generalization of its models are not yet well investigated in most scenarios. Here, we present a deep neural network framework (DNN-PPI) for predicting PPIs using features learned automatically only from protein primary sequences. Within the framework, the sequences of two interacting proteins are sequentially fed into the encoding, embedding, convolution neural network (CNN), and long short-term memory (LSTM) neural network layers. Then, a concatenated vector of the two outputs from the previous layer is wired as the input of the fully connected neural network. Finally, the Adam optimizer is applied to learn the network weights in a back-propagation fashion. The different types of features, including semantic associations between amino acids, position-related sequence segments (motif), and their long- and short-term dependencies, are captured in the embedding, CNN and LSTM layers, respectively. When the model was trained on Pan’s human PPI dataset, it achieved a prediction accuracy of 98.78% at the Matthew’s correlation coefficient (MCC) of 97.57%. The prediction accuracies for six external datasets ranged from 92.80% to 97.89%, making them superior to those achieved with previous methods. When performed on Escherichia coli, Drosophila, and Caenorhabditis elegans datasets, DNN-PPI obtained prediction accuracies of 95.949%, 98.389%, and 98.669%, respectively. The performances in cross-species testing among the four species above coincided in their evolutionary distances. However, when testing Mus Musculus using the models from those species, they all obtained prediction accuracies of over 92.43%, which is difficult to achieve and worthy of note for further study. These results suggest that DNN-PPI has remarkable generalization and is a promising tool for identifying protein interactions.},
+author = {Hang Li and X. Gong and Hua Yu and Chang Zhou},
+doi = {10.3390/molecules23081923},
+pmid = {30071670},
+}
+
+@article{d6731948cf30a9bced489bb4c4289c4ff4689570,
+title = {Multifaceted protein–protein interaction prediction based on Siamese residual RCNN},
+year = {2019},
+url = {https://www.semanticscholar.org/paper/d6731948cf30a9bced489bb4c4289c4ff4689570},
+abstract = {Abstract Motivation Sequence-based protein–protein interaction (PPI) prediction represents a fundamental computational biology problem. To address this problem, extensive research efforts have been made to extract predefined features from the sequences. Based on these features, statistical algorithms are learned to classify the PPIs. However, such explicit features are usually costly to extract, and typically have limited coverage on the PPI information. Results We present an end-to-end framework, PIPR (Protein–Protein Interaction Prediction Based on Siamese Residual RCNN), for PPI predictions using only the protein sequences. PIPR incorporates a deep residual recurrent convolutional neural network in the Siamese architecture, which leverages both robust local features and contextualized information, which are significant for capturing the mutual influence of proteins sequences. PIPR relieves the data pre-processing efforts that are required by other systems, and generalizes well to different application scenarios. Experimental evaluations show that PIPR outperforms various state-of-the-art systems on the binary PPI prediction problem. Moreover, it shows a promising performance on more challenging problems of interaction type prediction and binding affinity estimation, where existing approaches fall short. Availability and implementation The implementation is available at https://github.com/muhaochen/seq_ppi.git. Supplementary information Supplementary data are available at Bioinformatics online.},
+author = {Muhao Chen and C. Ju and Guangyu Zhou and X. Chen and Tianran Zhang and Kai-Wei Chang and C. Zaniolo and Wei Wang},
+doi = {10.1093/bioinformatics/btz328},
+pmid = {31510705},
+}
+
+@article{34be334edd89328644a9babb168ba912e06165d5,
+title = {DeepPPI: Boosting Prediction of Protein-Protein Interactions with Deep Neural Networks.},
+year = {2017},
+url = {https://www.semanticscholar.org/paper/34be334edd89328644a9babb168ba912e06165d5},
+abstract = {The complex language of eukaryotic gene expression remains incompletely understood. Despite the importance suggested by many proteins variants statistically associated with human disease, nearly all such variants have unknown mechanisms, for example, protein-protein interactions (PPIs). In this study, we address this challenge using a recent machine learning advance-deep neural networks (DNNs). We aim at improving the performance of PPIs prediction and propose a method called DeepPPI (Deep neural networks for Protein-Protein Interactions prediction), which employs deep neural networks to learn effectively the representations of proteins from common protein descriptors. The experimental results indicate that DeepPPI achieves superior performance on the test data set with an Accuracy of 92.50%, Precision of 94.38%, Recall of 90.56%, Specificity of 94.49%, Matthews Correlation Coefficient of 85.08% and Area Under the Curve of 97.43%, respectively. Extensive experiments show that DeepPPI can learn useful features of proteins pairs by a layer-wise abstraction, and thus achieves better prediction performance than existing methods. The source code of our approach can be available via http://ailab.ahu.edu.cn:8087/DeepPPI/index.html .},
+author = {Xiuquan Du and Shiwei Sun and Changlin Hu and Yu Yao and Yuan-ting Yan and Yanping Zhang},
+doi = {10.1021/acs.jcim.7b00028},
+pmid = {28514151},
+}
+
+@article{fb19f276d1ce35705108f157e746d74f60282101,
+title = {Predicting protein‐protein interactions through sequence‐based deep learning},
+year = {2018},
+url = {https://www.semanticscholar.org/paper/fb19f276d1ce35705108f157e746d74f60282101},
+abstract = {Motivation High‐throughput experimental techniques have produced a large amount of protein‐protein interaction (PPI) data, but their coverage is still low and the PPI data is also very noisy. Computational prediction of PPIs can be used to discover new PPIs and identify errors in the experimental PPI data. Results We present a novel deep learning framework, DPPI, to model and predict PPIs from sequence information alone. Our model efficiently applies a deep, Siamese‐like convolutional neural network combined with random projection and data augmentation to predict PPIs, leveraging existing high‐quality experimental PPI data and evolutionary information of a protein pair under prediction. Our experimental results show that DPPI outperforms the state‐of‐the‐art methods on several benchmarks in terms of area under precision‐recall curve (auPR), and computationally is more efficient. We also show that DPPI is able to predict homodimeric interactions where other methods fail to work accurately, and the effectiveness of DPPI in specific applications such as predicting cytokine‐receptor binding affinities. Availability and implementation Predicting protein‐protein interactions through sequence‐based deep learning): https://github.com/hashemifar/DPPI/. Supplementary information Supplementary data are available at Bioinformatics online.},
+author = {Somaye Hashemifar and Behnam Neyshabur and Aly A. Khan and Jinbo Xu},
+doi = {10.1093/bioinformatics/bty573},
+pmid = {30423091},
+}

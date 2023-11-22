@@ -1,0 +1,408 @@
+@article{bc471bf1b1b05349826a809c24ca46ed423f297b,
+title = {Machine Learning and Deep Learning Applications in Metagenomic Taxonomy and Functional Annotation},
+year = {2022},
+url = {https://www.semanticscholar.org/paper/bc471bf1b1b05349826a809c24ca46ed423f297b},
+abstract = {Shotgun sequencing of environmental DNA (i.e., metagenomics) has revolutionized the field of environmental microbiology, allowing the characterization of all microorganisms in a sequencing experiment. To identify the microbes in terms of taxonomy and biological activity, the sequenced reads must necessarily be aligned on known microbial genomes/genes. However, current alignment methods are limited in terms of speed and can produce a significant number of false positives when detecting bacterial species or false negatives in specific cases (virus, plasmids, and gene detection). Moreover, recent advances in metagenomics have enabled the reconstruction of new genomes using de novo binning strategies, but these genomes, not yet fully characterized, are not used in classic approaches, whereas machine and deep learning methods can use them as models. In this article, we attempted to review the different methods and their efficiency to improve the annotation of metagenomic sequences. Deep learning models have reached the performance of the widely used k-mer alignment-based tools, with better accuracy in certain cases; however, they still must demonstrate their robustness across the variety of environmental samples and across the rapid expansion of accessible genomes in databases.},
+author = {Alban Mathieu and Mickael Leclercq and Melissa Sanabria and Olivier Périn and A. Droit},
+doi = {10.3389/fmicb.2022.811495},
+pmid = {35359727},
+}
+
+@article{1c8692a8506873f754312c7d066a700c3f9c40f7,
+title = {LSHvec: a vector representation of DNA sequences using locality sensitive hashing and FastText word embeddings},
+year = {2021},
+url = {https://www.semanticscholar.org/paper/1c8692a8506873f754312c7d066a700c3f9c40f7},
+abstract = {Drawing from the analogy between natural language and "genomic sequence language", we explored the applicability of word embeddings in natural language processing (NLP) to represent DNA reads in Metagenomics studies. Here, k-mer is the equivalent concept of word in NLP and it has been widely used in analyzing sequence data. However, directly replacing word embedding with k-mer embedding is problematic due to two reasons: First, the number of distinct k-mers is far more than the number of different words in our vocabulary, making the model too huge to be stored in memory. Second, sequencing errors create lots of novel k-mers (noise), which significantly degrade model performance. In this work, we introduce LSHvec, a model that leverages Locality Sensitive Hashing (LSH) for k-mer encoding to overcome these challenges. After k-mers are LSH encoded, we adopt the skip-gram with negative sampling to learn k-mer embeddings. Experiments on metagenomic datasets with labels demonstrate that k-mer encoding using LSH can not only accelerate training time and reduce the memory requirements to store the model, but also achieve higher accuracy than using alternative encoding methods. We validate that LSHvec is robust on reads with high sequencing error rates and works well with any sequencing technologies. In addition, the trained low-dimensional k-mer embeddings can be potentially used for accurate metagenomic read clustering and taxonomic classification. Finally, We demonstrate the unprecedented capability of LSHvec by participating in the second round of CAMI challenges and show that LSHvec is able to handle metagenome datasets that exceed Terabytes in size through distributed training across multiple nodes.},
+author = {Lizhen Shi and Bo Chen},
+doi = {10.1145/3459930.3469521},
+}
+
+@article{16d07586552264f43aff24af2de01886a6f1b8e6,
+title = {A comparative evaluation of sequence classification programs},
+year = {2012},
+url = {https://www.semanticscholar.org/paper/16d07586552264f43aff24af2de01886a6f1b8e6},
+abstract = {There is significant variability in classification accuracy, precision, and resource consumption of sequence classification programs when used to analyze various metagenomics data sets. BackgroundA fundamental problem in modern genomics is to taxonomically or functionally classify DNA sequence fragments derived from environmental sampling (i.e., metagenomics). Several different methods have been proposed for doing this effectively and efficiently, and many have been implemented in software. In addition to varying their basic algorithmic approach to classification, some methods screen sequence reads for ’barcoding genes’ like 16S rRNA, or various types of protein-coding genes. Due to the sheer number and complexity of methods, it can be difficult for a researcher to choose one that is well-suited for a particular analysis.ResultsWe divided the very large number of programs that have been released in recent years for solving the sequence classification problem into three main categories based on the general algorithm they use to compare a query sequence against a database of sequences. We also evaluated the performance of the leading programs in each category on data sets whose taxonomic and functional composition is known.ConclusionsWe found significant variability in classification accuracy, precision, and resource consumption of sequence classification programs when used to analyze various metagenomics data sets. However, we observe some general trends and patterns that will be useful to researchers who use sequence classification programs.},
+author = {A. Bazinet and M. P. Cummings},
+doi = {10.1186/1471-2105-13-92},
+pmid = {22574964},
+}
+
+@article{ae010710c476375ad344137f44849c15e58d43fe,
+title = {Metagenomic binning through low-density hashing},
+year = {2017},
+url = {https://www.semanticscholar.org/paper/9de375f8ac55041a6878d650062ba9a216a0e085},
+abstract = {Bacterial microbiomes of incredible complexity are found throughout the world, from exotic marine locations to the soil in our yards to within our very guts. With recent advances in Next-Generation Sequencing (NGS) technologies, we have vastly greater quantities of microbial genome data, but the nature of environmental samples is such that DNA from different species are mixed together. Here, we present Opal for metagenomic binning, the task of identifying the origin species of DNA sequencing reads. Our Opal method introduces low-density, even-coverage hashing to bioinformatics applications, enabling quick and accurate metagenomic binning. Our tool is up to two orders of magnitude faster than leading alignment-based methods at similar or improved accuracy, allowing computational tractability on large metagenomic datasets. Moreover, on public benchmarks, Opal is substantially more accurate than both alignment-based and alignment-free methods (e.g. on SimHC20.500, Opal achieves 95% F1-score while Kraken and CLARK achieve just 91% and 88%, respectively); this improvement is likely due to the fact that the latter methods cannot handle computationally-costly long-range dependencies, which our even-coverage, low-density fingerprints resolve. Notably, capturing these long-range dependencies drastically improves Opal’s ability to detect unknown species that share a genus or phylum with known bacteria. Additionally, the family of hash functions Opal uses can be generalized to other sequence analysis tasks that rely on k-mer based methods to encode long-range dependencies.},
+author = {Yunan Luo and Y. Yu and Jianyang Zeng and B. Berger and Jian Peng},
+doi = {10.1093/bioinformatics/bty611},
+pmid = {30010790},
+}
+
+@article{7172b8b4431c5129a17569458c1debfa98a91ef2,
+title = {KrakenUniq: confident and fast metagenomics classification using unique k-mer counts},
+year = {2018},
+url = {https://www.semanticscholar.org/paper/7172b8b4431c5129a17569458c1debfa98a91ef2},
+abstract = {False-positive identifications are a significant problem in metagenomics classification. We present KrakenUniq, a novel metagenomics classifier that combines the fast k-mer-based classification of Kraken with an efficient algorithm for assessing the coverage of unique k-mers found in each species in a dataset. On various test datasets, KrakenUniq gives better recall and precision than other methods and effectively classifies and distinguishes pathogens with low abundance from false positives in infectious disease samples. By using the probabilistic cardinality estimator HyperLogLog, KrakenUniq runs as fast as Kraken and requires little additional memory. KrakenUniq is freely available at https://github.com/fbreitwieser/krakenuniq.},
+author = {F. Breitwieser and D. Baker and S. Salzberg},
+doi = {10.1186/s13059-018-1568-0},
+pmid = {30445993},
+}
+
+@article{0b6ef0db81a6f9198a1ae4c4f70816a4373e5ed7,
+title = {Taxonomic classification of metagenomic sequences from Relative Abundance Index profiles using deep learning},
+year = {2021},
+url = {https://www.semanticscholar.org/paper/0b6ef0db81a6f9198a1ae4c4f70816a4373e5ed7},
+abstract = {Abstract We propose a Convolutional Neural Network approach based on k-mer representation for metagenomic fragment classification problem. The proposed model consists of two steps; the first step is representation of DNA based on k-mer frequency with Relative Abundance Index (RAI) and the second step is classification metagenomic fragments with CNN. RAI scores, as DNA fragment representations are fed to CNN classifiers (CNN-RAI). RAI consist of the over- and under abundance statistics gathered from the taxon for each k-mer. In order to compare the performances of CNN-RAI and RAIphy, which classifies metagenomic fragments using the same input attributes with an expectation-maximization based approach, databases of different metagenomic scenarios were tested. Metagenomics data that were generated (or simulated) by different Next-Generation Sequencing platforms, respectively Illumina technology and Oxford Nanopore MinION were compiled into shotgun metagenomics or 16S rRNA datasets. RAI based method and CNN models were trained on represented data with read lengths ranging between 200 and 10,000 bp, also with distinct k-mer size ( 3 ≤ k ≤ 7 ) at genus level. RAI score was used for the first time in the deep learning algorithm as a spectral representation with improved performance thanks to the ability of deep learning on each dataset for a range of parameters. The proposed representation was compared to the current spectral methods and shown to be competitive for all datasets used in this study.},
+author = {Meryem Altın Karagöz and Ö. U. Nalbantoglu},
+doi = {10.1016/J.BSPC.2021.102539},
+}
+
+@article{8155054821338f9d845fc4f5de98f234ae274cfe,
+title = {PaPrBaG: A random forest approach for the detection of novel pathogens from NGS data},
+year = {2016},
+url = {https://www.semanticscholar.org/paper/8155054821338f9d845fc4f5de98f234ae274cfe},
+abstract = {The reliable detection of novel bacterial pathogens from next generation sequencing data is a key challenge for microbial diagnostics. Current computational tools usually rely on sequence similarity and often fail to detect novel species when closely related genomes are unavailable or missing from the reference database used. Here, we present the machine learning based approach PaPrBaG (Pathogenicity Prediction for Bacterial Genomes). PaPrBaG overcomes genetic divergence by training on a wide range of species with known pathogenicity phenotype. To that end we compiled a comprehensive list of pathogenic and non-pathogenic bacteria, using a rule-based protocol to annotate pathogenicity based on genome metadata. A detailed comparative study reveals that PaPrBaG has several advantages over sequence similarity approaches. Most importantly, it always provides a prediction whereas other approaches discard a large number of sequencing reads that are far away from currently known reference genomes. Furthermore, PaPrBaG remains reliable even at very low genomic coverages. Combining PaPrBaG with existing approaches further improves prediction results.},
+author = {C. Deneke and R. Rentzsch and B. Renard},
+doi = {10.7287/PEERJ.PREPRINTS.2379V1},
+}
+
+@article{c39678125b21974477bb712aaf5754ca30819efc,
+title = {taxMaps - Ultra-comprehensive and highly accurate taxonomic classification of short-read data in reasonable time},
+year = {2017},
+url = {https://www.semanticscholar.org/paper/c39678125b21974477bb712aaf5754ca30819efc},
+abstract = {High-throughput sequencing is a revolutionary technology for the analysis of metagenomic samples. However, querying large volumes of reads against comprehensive DNA/RNA databases in a sensitive manner can be compute-intensive. Here, we present taxMaps, a highly efficient, sensitive and fully scalable taxonomic classification tool, capable of delivering classification accuracy comparable to that of BLASTn, but at up to 3 orders of magnitude less computational cost. taxMaps is freely available for academic and non-commercial research purposes at https://github.com/nygenome/taxmaps.},
+author = {A. Corvelo and Wayne E. Clarke and N. Robine and M. Zody},
+doi = {10.1101/134023},
+pmid = {29588360},
+}
+
+@article{a066cdaff2ffa00b4ca16e5816b67e1ee3d75fb6,
+title = {BASTA – Taxonomic classification of sequences and sequence bins using last common ancestor estimations},
+year = {2018},
+url = {https://www.semanticscholar.org/paper/a066cdaff2ffa00b4ca16e5816b67e1ee3d75fb6},
+abstract = {Identification of the taxonomic origin of a DNA sequence is crucial for many sequencing projects, e.g. metagenomics studies, identification of contaminations in whole genome sequencing projects and filtering of organisms of interest in marker‐gene based community analyses. Last common ancestor algorithms are powerful approaches to estimate the taxonomy of a given sequence and have been widely used for classification of next‐generation sequencing (NGS) reads, also known as 2nd generation sequencing reads. Here, we present BASTA (https://github.com/timkahlke/BASTA), a basic sequence taxonomy annotator, which extends last common ancestor estimations from sequencing reads to any kind of nucleotide or amino acid sequence utilizing NCBI taxonomies of user‐defined best hits. BASTA can be configured to use the output of many common sequence comparison tools, e.g. BLAST and Diamond, in conjunction with either provided or user‐defined target sequence databases.},
+author = {T. Kahlke and P. Ralph},
+doi = {10.1111/2041-210X.13095},
+}
+
+@article{4a91367a5aeaaace91b0f8d4b2266df98baf8f74,
+title = {Testing the advantages and disadvantages of short- and long- read eukaryotic metagenomics using simulated reads},
+year = {2019},
+url = {https://www.semanticscholar.org/paper/4a91367a5aeaaace91b0f8d4b2266df98baf8f74},
+abstract = {
+ Background
+
+The first step in understanding ecological community diversity and dynamics is quantifying community membership. An increasingly common method for doing so is through metagenomics. Because of the rapidly increasing popularity of this approach, a large number of computational tools and pipelines are available for analysing metagenomic data. However, the majority of these tools have been designed and benchmarked using highly accurate short read data (i.e. Illumina), with few studies benchmarking classification accuracy for long error-prone reads (PacBio or Oxford Nanopore). In addition, few tools have been benchmarked for non-microbial communities.Results
+
+Here we compare simulated long reads from Oxford Nanopore and Pacific Biosciences with high accuracy Illumina read sets to systematically investigate the effects of sequence length and taxon type on classification accuracy for metagenomic data from both microbial and non-microbial communities. We show that very generally, classification accuracy is far lower for non-microbial communities, even at low taxonomic resolution (e.g. family rather than genus). We then show that for two popular taxonomic classifiers, long reads can significantly increase classification accuracy, and this is most pronounced for non-microbial communities.Conclusions
+
+This work provides insight on the expected accuracy for metagenomic analyses for different taxonomic groups, and establishes the point at which read length becomes more important than error rate for assigning the correct taxon.},
+author = {William S. Pearman and N. Freed and O. Silander},
+doi = {10.1186/s12859-020-3528-4},
+pmid = {32471343},
+}
+
+@article{c566d97ab5fb8738c3e5fc69b71189049ed708c2,
+title = {LVQ-KNN: Composition-based DNA/RNA binning of short nucleotide sequences utilizing a prototype-based k-nearest neighbor approach.},
+year = {2018},
+url = {https://www.semanticscholar.org/paper/c566d97ab5fb8738c3e5fc69b71189049ed708c2},
+abstract = {Unbiased sequencing is an upcoming method to gain information of the microbiome in a sample and for the detection of unrecognized pathogens. There are many software tools for a taxonomic classification of such metagenomics datasets available. Numerous of them have a satisfactory sensitivity and specificity for known organisms, but they fail if the sample contains unknown organisms, which cannot be detected by similarity-based classification employing available databases. However, recognition of unknowns is especially important for the detection of newly emerging pathogens, which are often RNA viruses. Here we present the composition-based analysis tool LVQ-KNN for binning unclassified nucleotide sequence reads into their provenance classes DNA or RNA. With a 5-fold cross-validation, LVQ-KNN reached correct classification rates (CCR) of up to 99.9% for the classification into DNA/RNA. Real datasets gained CCRs of up to 94.5%. Comparing the method to another composition-based analysis tool, similar or better classification results were reached. LVQ-KNN is a new tool for DNA/RNA classification of sequence reads from unbiased sequencing approaches that could be applicable for the detection of yet unknown RNA viruses in metagenomic samples. The source-code, training and test data for LVQ-KNN is available at Github (https://github.com/ab1989/LVQ-KNN).},
+author = {Ariane Belka and Mareike Fischer and A. Pohlmann and M. Beer and D. Höper},
+doi = {10.1016/j.virusres.2018.10.002},
+pmid = {30291874},
+}
+
+@article{7303282bef732e56bb700874b51e2ba30f50d550,
+title = {Evaluation of taxonomic profiling methods for long-read shotgun metagenomic sequencing datasets},
+year = {2022},
+url = {https://www.semanticscholar.org/paper/7303282bef732e56bb700874b51e2ba30f50d550},
+abstract = {Long-read shotgun metagenomic sequencing is gaining in popularity and offers many advantages over short-read sequencing. The higher information content in long reads is useful for a variety of metagenomics analyses, including taxonomic profiling. The development of long-read specific tools for taxonomic profiling is accelerating, yet there is a lack of consensus regarding their relative performance. Here, we perform a critical benchmarking study using five long-read methods and four popular short-read methods. We applied these tools to several mock community datasets generated using Pacific Biosciences (PacBio) HiFi or Oxford Nanopore Technology (ONT) sequencing, and evaluated their performance based on read utilization, detection metrics, and relative abundance estimates. Our results show that long-read methods generally outperformed short-read methods. Short-read methods (including Kraken2, Bracken, Centrifuge, and MetaPhlAn3) produced many false positives (particularly at lower abundances), required heavy filtering to achieve acceptable precision (at the cost of reduced recall), and produced inaccurate abundance estimates. By contrast, several long-read methods displayed very high precision and acceptable recall without any filtering required, including BugSeq, MEGAN-LR using translation alignments (DIAMOND to NCBI nr) or nucleotide alignments (minimap2 to NCBI nt). Furthermore, in the PacBio HiFi datasets these long-read methods detected all species down to the 0.1% abundance level with high precision. Other long-read methods, such as MetaMaps and MMseqs2, required moderate filtering to reduce false positives to achieve a suitable balance between precision and recall. We found read quality affected performance for methods relying on protein prediction or exact kmer matching, and these methods performed better with PacBio HiFi datasets. We also found that long-read datasets with a large proportion of shorter reads (<2kb length) resulted in lower precision and worse abundance estimates, relative to length-filtered datasets. Finally, for a given mock community we found that the long-read datasets produced significantly better results than short-read datasets, demonstrating clear advantages for long-read metagenomic sequencing. Our critical assessment of available methods provides recommendations for current research using long reads and establishes a baseline for future benchmarking studies.},
+author = {D. Portik and C. T. Brown and N. T. Pierce-Ward},
+doi = {10.1101/2022.01.31.478527},
+}
+
+@article{cdb104fae4fa7f4fbaaf45edb9f5b337c478553d,
+title = {From defaults to databases: parameter and database choice dramatically impact the performance of metagenomic taxonomic classification tools},
+year = {2022},
+url = {https://www.semanticscholar.org/paper/cdb104fae4fa7f4fbaaf45edb9f5b337c478553d},
+abstract = {In metagenomic analyses of microbiomes, one of the first steps is usually the taxonomic classification of reads by comparison to a database of previously taxonomically classified genomes. While different studies comparing metagenomic taxonomic classification methods have determined that different tools are “best”, there are two tools that have been used the most to-date: Kraken (k-mer based classification against a user-constructed database) and MetaPhlAn (classification by alignment to clade-specific marker genes), the latest versions of which are Kraken2 and MetaPhlAn 3, respectively. We found large discrepancies in both the proportion of reads that were classified as well as the number of species that were identified when we used both Kraken2 and MetaPhlAn 3 to classify reads within metagenomes from human-associated or environmental datasets. We then investigated which of these tools would give classifications closest to the real composition of metagenomic samples using a range of simulated and mock samples and examined the combined impact of tool-parameter-database choice on the taxonomic classifications given. This revealed that there may not be a one-size-fits-all “best” choice. While Kraken2 can achieve better overall performance, with higher precision, recall and F1 scores, as well as alpha- and beta-diversity measures closer to the known composition than MetaPhlAn 3, the computational resources required for this may be prohibitive for many researchers, and the default database and parameters should not be used. We therefore conclude that the best tool-parameter-database choice for a particular application depends on the scientific question of interest, which performance metric is most important for this question and the limit of available computational resources.},
+author = {Robyn J. Wright and A. Comeau and M. Langille},
+doi = {10.1101/2022.04.27.489753},
+}
+
+@article{b655cbc090f05f7dcc3cf16619ea8c212c37179e,
+title = {Performance of Five Metagenomic Classifiers for Virus Pathogen Detection Using Respiratory Samples from a Clinical Cohort},
+year = {2022},
+url = {https://www.semanticscholar.org/paper/b655cbc090f05f7dcc3cf16619ea8c212c37179e},
+abstract = {Viral metagenomics is increasingly being applied in clinical diagnostic settings for detection of pathogenic viruses. While a number of benchmarking studies have been published on the use of metagenomic classifiers for abundance and diversity profiling of bacterial populations, studies on the comparative performance of the classifiers for virus pathogen detection are scarce. In this study, metagenomic data sets (N=88) from a clinical cohort of patients with respiratory complaints were used for comparison of the performance of five taxonomic classifiers: Centrifuge, Clark, Kaiju, Kraken2, and Genome Detective. A total of 1,144 positive and negative PCR results for a total of 13 respiratory viruses were used as gold standard. Sensitivity and specificity of these classifiers ranged from 83-100% and 90-99% respectively, and was dependent on the classification level and data pre-processing. Exclusion of human reads generally resulted in increased specificity. Normalization of read counts for genome length resulted in minor overall performance, however negatively affected the detection of targets with read counts around detection level. Correlation of sequence read counts with PCR Ct-values varied per classifier, data pre-processing (R2 range 15.1-63.4%), and per virus, with outliers up to 3 log10 reads magnitude beyond the predicted read count for viruses with high sequence diversity. In this benchmarking study, sensitivity and specificity were within the ranges of use for diagnostic practice when the cut-off for defining a positive result was considered per classifier.},
+author = {E. Carbo and I. Sidorov and Anneloes L. van Rijn-Klink and N. Pappas and S. van Boheemen and H. Mei and P. Hiemstra and T. Eagan and E. Claas and A. Kroes and J. D. de Vries},
+doi = {10.3390/pathogens11030340},
+pmid = {35335664},
+}
+
+@article{9b4548ffc9cdcc23f1f941054266422bbcf889c7,
+title = {Systematic classification error profoundly impacts inference in high-depth Whole Genome Shotgun Sequencing datasets},
+year = {2022},
+url = {https://www.semanticscholar.org/paper/9b4548ffc9cdcc23f1f941054266422bbcf889c7},
+abstract = {There is little consensus in the literature as to which approach for classification of Whole Genome Shotgun (WGS) sequences is best. In this paper, we examine two of the most popular algorithms, Kraken2 and Metaphlan2 utilizing four publicly available datasets. As expected from previous literature, we found that Kraken2 reports more overall taxa while Metaphlan2 reports fewer taxa while classifying fewer overall reads. To our surprise, however, Kraken 2 reported not only more taxa but many more taxa that were significantly associated with metadata. This implies that either Kraken2 is more sensitive to taxa that are biologically relevant and are simply missed by Metaphlan2, or that Kraken2’s classification errors are generated in such a way to impact inference. To discriminate between these two possibilities, we compared Spearman correlations coefficients of each taxa against each taxa with higher abundance from the same dataset. We found that Kraken2, but not Metaphlan2, showed a consistent pattern of classifying low abundance taxa that generated high correlation coefficients with higher abundance taxa. Neither Metaphlan2, nor 16S sequences that were available for two of our four datasets, showed this pattern. Simple simulations based on a variable Poisson error rate sampled from the uniform distribution with an average error rate of 0.0005 showed strikingly strong concordance with the observed correlation patterns from Kraken2. Our results suggest that Kraken2 consistently misclassifies high abundance taxa into the same erroneous low abundance taxa creating “phantom” taxa have a similar pattern of inference as the high abundance source. Because of the large sequencing depths of modern WGS cohorts, these “phantom” taxa will appear statistically significant in statistical models even with a low overall rate of classification error from Kraken. Our simulations suggest that this can occur with average error rates as low as 1 in 2,000 reads. These data suggest a novel metric for evaluating classifier accuracy and suggest that the pattern of classification errors should be considered in addition to overall classification error rate since consistent classification errors have a more profound impact on inference compared to classification errors that do not always result in assignment to the same erroneous taxa. This work highlights fundamental questions on how classifiers function and interact with large sequencing depth and statistical models that still need to be resolved for WGS, especially if correlation coefficients between taxa are to be used to build covariance networks. Our work also suggests that despite its limitations, 16S rRNA sequencing may still be useful as neither of the two most popular 16S classifiers showed these patterns of inflated correlation coefficients between taxa.},
+author = {James Johnson and Shan Sun and A. Fodor},
+doi = {10.1101/2022.04.04.487034},
+}
+
+@article{79bdecb5011a5d9a286d58ab0c29a071790f3d47,
+title = {CSMD: a computational subtraction-based microbiome discovery pipeline for species-level characterization of clinical metagenomic samples},
+year = {2019},
+url = {https://www.semanticscholar.org/paper/79bdecb5011a5d9a286d58ab0c29a071790f3d47},
+abstract = {MOTIVATION
+Microbiome analyses of clinical samples with low microbial biomass are challenging because of the very small quantities of microbial DNA relative to the human host, ubiquitous contaminating DNA in sequencing experiments, and the large and rapidly growing microbial reference databases.
+
+
+RESULTS
+We present CSMD, a bioinformatics pipeline specifically developed to generate accurate species-level microbiome profiles for clinical samples with low microbial loads. CSMD applies strategies for the maximal elimination of host sequences with minimal loss of microbial signal and effectively detects microorganisms present in the sample with minimal false positives using a stepwise convergent solution. CSMD was benchmarked in a comparative evaluation with other classic tools on previously published well-characterized datasets. It showed higher sensitivity and specificity in host sequence removal and higher specificity in microbial identification, which led to more accurate abundance estimation. All these features are integrated into a free and easy-to-use tool. Additionally, CSMD applied to cell-free plasma DNA showed that microbial diversity within these samples is substantially broader than previously believed.
+
+
+AVAILABILITY
+CSMD is freely available at https://github.com/liuyu8721/csmd.
+
+
+SUPPLEMENTARY INFORMATION
+Supplementary data are available at Bioinformatics online.},
+author = {Yu Liu and P. Bible and B. Zou and Qiaoxing Liang and Cong Dong and Xiaofeng Wen and Yan Li and Xiaofei Ge and Xifang Li and Xiuli Deng and Rong Ma and Shixin Guo and Juanran Liang and Tingting Chen and Wenliang Pan and Lixin Liu and Wei Chen and Xueqin Wang and Lai Wei},
+doi = {10.1093/bioinformatics/btz790},
+pmid = {31626280},
+}
+
+@article{d30a79f61621cd077822d3e3b42fded3da38421d,
+title = {Selection of an Ideal Machine Learning Framework for Predicting Perturbation Effects on Network Topology of Bacterial KEGG Pathways},
+year = {2022},
+url = {https://www.semanticscholar.org/paper/d30a79f61621cd077822d3e3b42fded3da38421d},
+abstract = {Biological networks for bacterial species are used to assign functional information to newly sequenced organisms but network quality can be largely affected by poor gene annotations. Current methods of gene annotation use homologous alignment to determine orthology, and have been shown to degrade network accuracy in non-model bacterial species. To address these issues in the KEGG pathway database, we investigated the ability for machine learning (ML) algorithms to re-annotate bacterial genes based on motif or homology information. The majority of the ensemble, clustering, and deep learning algorithms that we explored showed higher prediction accuracy than CD-hit in predicting EC ID, Map ID, and partial Map ID. Motif-based, machine-learning methods of annotation in new species were more accurate, faster, and had higher precisionrecall than methods of homologous alignment or orthologous gene clustering. Gradient boosted ensemble methods and neural networks also predicted higher connectivity of networks, finding twice as many new pathway interactions than blast alignment. The use of motif-based, machine-learning algorithms in annotation software will allow researchers to develop powerful network tools to interact with bacterial microbiomes in ways previously unachievable through homologous sequence alignment. CCS CONCEPTS • Applied computing → Computational biology; Life and medical sciences; Bioinformatics; • Computing methodologies → Machine learning algorithms; Machine learning approaches. ACM Reference Format Michael Robben, Mohammad Sadegh Nasr, Avishek Das, Manfred Huber, Justyn Jaworski, Jon Weidanz, and Jacob Luber. 2022. Selection of an Ideal Machine Learning Framework for Predicting Perturbation Effects on Network Topology of Bacterial KEGG Pathways. In The 13th ACM Conference on Bioinformatics, Computational Biology, and Health Informatics, August 07–10, 2022, Chicago, IL. ACM, New York, NY, USA, 11 pages. https://doi.org/XXXXXXX.XXXXXXX},
+author = {Michael Robben and M. Nasr and Avishek Das and Manfred Huber and J. Jaworski and Jon Weidanz and Jacob Luber},
+doi = {10.1101/2022.07.21.501034},
+}
+
+@article{b0f5bad2d1f31b4c439a77f385cae2769bbc99f0,
+title = {PanGIA: A Metagenomics Analytical Framework for Routine Biosurveillance and Clinical Pathogen Detection},
+year = {2020},
+url = {https://www.semanticscholar.org/paper/b0f5bad2d1f31b4c439a77f385cae2769bbc99f0},
+abstract = {Metagenomics is emerging as an important tool in biosurveillance, public health, and clinical applications. However, ease-of-use for execution and data analysis remains a barrier-of-entry to the adoption of metagenomics in applied health and forensics settings. In addition, these venues often have more stringent requirements for reporting, accuracy, and precision than the traditional ecological research role of the technology. Here, we present PanGIA (Pan-Genomics for Infectious Agents), a novel bioinformatics analysis platform for hosting, processing, analyzing, and reporting shotgun metagenomics data of complex samples suspected of containing one or more pathogens. PanGIA was developed to address gaps that often preclude clinicians, medical technicians, forensics personnel, or other non-expert end-users from the routine application of metagenomics for pathogen identification. Though primarily designed to detect pathogenic microorganisms within clinical and environmental metagenomics data, PanGIA also serves as an analytical framework for microbial community profiling and comparative metagenomics. To provide statistical confidence in PanGIA’s taxonomic assignments, the system provides two independent estimations of probability for species and strain level detection. First, PanGIA integrates coverage data with ‘uniqueness’ information mapped across each reference genome for a stand-alone determination of confidence for each query sequence at each taxonomy level. Second, if a negative-control sample is provided, PanGIA compares this sample with a corresponding experimental unknown sample and determines a measure of confidence associated with ‘detection above background’. An integrated graphical user interface allows interactive interrogation and enables users to summarize multiple sample results by confidence score, normalized read abundance, reference genome linear coverage, depth-of-coverage, RPKM, and other metrics to detect specific organisms-of-interest. Comparison testing of the PanGIA algorithm against a number of recent k-mer, read-mapping, and marker-gene based taxonomy classifiers across various real-world datasets with spiked targets shows superior mean positive predictive value, sensitivity, and specificity. PanGIA can process a five million paired-end read dataset in under 1 hour on commodity computational hardware. The source code and documentation are publicly available at https://github.com/LANL-Bioinformatics/PanGIA or https://github.com/mriglobal/PanGIA. The database for PanGIA can be downloaded from ftp://bioinformatics.mriglobal.org/. The full GUI-based PanGIA analysis environment is available in a Docker container and can be installed from https://hub.docker.com/r/poeli/pangia/.},
+author = {Po-E Li and J. A. Russell and David A. Yarmosh and Alan Shteyman and K. Parker and Hillary Wood and J.R. Aspinwall and R. Winegar and K. Davenport and C. Lo and John Bagnoli and P. Davis and J. Jacobs and P. Chain},
+doi = {10.1101/2020.04.20.051813},
+}
+
+@article{92349549f2154f157d54d3b07380eb5b242e0f0a,
+title = {EnSVMB: Metagenomics Fragments Classification using Ensemble SVM and BLAST},
+year = {2017},
+url = {https://www.semanticscholar.org/paper/92349549f2154f157d54d3b07380eb5b242e0f0a},
+abstract = {Metagenomics brings in new discoveries and insights into the uncultured microbial world. One fundamental task in metagenomics analysis is to determine the taxonomy of raw sequence fragments. Modern sequencing technologies produce relatively short fragments and greatly increase the number of fragments, and thus make the taxonomic classification considerably more difficult than before. Therefore, fast and accurate techniques are called to classify large-scale fragments. We propose EnSVM (Ensemble Support Vector Machine) and its advanced method called EnSVMB (EnSVM with BLAST) to accurately classify fragments. EnSVM divides fragments into a large confident (or small diffident) set, based on whether the fragments get consistent (or inconsistent) predictions from linear SVMs trained with different k-mers. Empirical study shows that sensitivity and specificity of EnSVM on confident set are higher than 90% and 97%, but on diffident set are lower than 60% and 75%. To further improve the performance on diffident set, EnSVMB takes advantage of best hits of BLAST to reclassify fragments in that set. Experimental results show EnSVM can efficiently and effectively divide fragments into confident and diffident sets, and EnSVMB achieves higher accuracy, sensitivity and more true positives than related state-of-the-art methods and holds comparable specificity with the best of them.},
+author = {Yuan Jiang and Jun Wang and Dawen Xia and Guoxian Yu},
+doi = {10.1038/s41598-017-09947-y},
+pmid = {28842700},
+}
+
+@article{3dc46d3a5c8bd9fc98b76b027e2ab348633db685,
+title = {Low-Density Locality-Sensitive Hashing Boosts Metagenomic Binning},
+year = {2016},
+url = {https://www.semanticscholar.org/paper/3dc46d3a5c8bd9fc98b76b027e2ab348633db685},
+abstract = {Metagenomic binning is an essential task in analyzing metagenomic sequence datasets. To analyze structure or function of microbial communities from environmental samples, metagenomic sequence fragments are assigned to their taxonomic origins. Although sequence alignment algorithms can readily be used and usually provide high-resolution alignments and accurate binning results, the computational cost of such alignment-based methods becomes prohibitive as metagenomic datasets continue to grow. Alternative compositional-based methods, which exploit sequence composition by profiling local short k-mers in fragments, are often faster but less accurate than alignment-based methods. Inspired by the success of linear error correcting codes in noisy channel communication, we introduce Opal, a fast and accurate novel compositional-based binning method. It incorporates ideas from Gallager's low-density parity-check code to design a family of compact and discriminative locality-sensitive hashing functions that encode long-range compositional dependencies in long fragments. By incorporating the Gallager LSH functions as features in a simple linear SVM, Opal provides fast, accurate and robust binning for datasets consisting of a large number of species, even with mutations and sequencing errors. Opal not only performs up to two orders of magnitude faster than BWA, an alignment-based binning method, but also achieves improved binning accuracy and robustness to sequencing errors. Opal also outperforms models built on traditional k-mer profiles in terms of robustness and accuracy. Finally, we demonstrate that we can effectively use Opal in the "coarse search" stage of a compressive genomics pipeline to identify a much smaller candidate set of taxonomic origins for a subsequent alignment-based method to analyze, thus providing metagenomic binning with high scalability, high accuracy and high resolution.},
+author = {Yunan Luo and Jianyang Zeng and B. Berger and Jian Peng},
+pmid = {28127592},
+arxivid = {1604.02699},
+}
+
+@article{434fe268c8f56eb8c0822c04b1062ebf2d24a58e,
+title = {Classification of metagenomic sequences: methods and challenges},
+year = {2012},
+url = {https://www.semanticscholar.org/paper/434fe268c8f56eb8c0822c04b1062ebf2d24a58e},
+abstract = {Characterizing the taxonomic diversity of microbial communities is one of the primary objectives of metagenomic studies. Taxonomic analysis of microbial communities, a process referred to as binning, is challenging for the following reasons. Primarily, query sequences originating from the genomes of most microbes in an environmental sample lack taxonomically related sequences in existing reference databases. This absence of a taxonomic context makes binning a very challenging task. Limitations of current sequencing platforms, with respect to short read lengths and sequencing errors/artifacts, are also key factors that determine the overall binning efficiency. Furthermore, the sheer volume of metagenomic datasets also demands highly efficient algorithms that can operate within reasonable requirements of compute power. This review discusses the premise, methodologies, advantages, limitations and challenges of various methods available for binning of metagenomic datasets obtained using the shotgun sequencing approach. Various parameters as well as strategies used for evaluating binning efficiency are then reviewed.},
+author = {S. Mande and M. H. Mohammed and T. Ghosh},
+doi = {10.1093/bib/bbs054},
+pmid = {22962338},
+}
+
+@article{c9d86c56de0d0b9e814fdd0d0d1bc4e97b857882,
+title = {Keeping up with the genomes: efficient learning of our increasing knowledge of the tree of life},
+year = {2019},
+url = {https://www.semanticscholar.org/paper/c9d86c56de0d0b9e814fdd0d0d1bc4e97b857882},
+abstract = {Background It is a computational challenge for current metagenomic classifiers to keep up with the pace of training data generated from genome sequencing projects, such as the exponentially-growing NCBI RefSeq bacterial genome database. When new reference sequences are added to training data, statically trained classifiers must be rerun on all data, resulting in a highly inefficient process. The rich literature of “incremental learning” addresses the need to update an existing classifier to accommodate new data without sacrificing much accuracy compared to retraining the classifier with all data. Results We demonstrate how classification improves over time by incrementally training a classifier on progressive RefSeq snapshots and testing it on: (a) all known current genomes (as a ground truth set) and (b) a real experimental metagenomic gut sample. We demonstrate that as a classifier model’s knowledge of genomes grows, classification accuracy increases. The proof-of-concept naïve Bayes implementation, when updated yearly, now runs in 1/4 t h of the non-incremental time with no accuracy loss. Conclusions It is evident that classification improves by having the most current knowledge at its disposal. Therefore, it is of utmost importance to make classifiers computationally tractable to keep up with the data deluge. The incremental learning classifier can be efficiently updated without the cost of reprocessing nor the access to the existing database and therefore save storage as well as computation resources.},
+author = {Zhengqiao Zhao and A. Cristian and G. Rosen},
+doi = {10.1101/758755},
+pmid = {32957925},
+}
+
+@article{3e678aeccec0ee0305d01e1dd34057d383bfd50a,
+title = {KrakenHLL: Confident and fast metagenomics classification using unique k-mer counts},
+year = {2018},
+url = {https://www.semanticscholar.org/paper/3e678aeccec0ee0305d01e1dd34057d383bfd50a},
+abstract = {False positive identifications are a significant problem in metagenomic classification. We present KrakenHLL, a novel metagenomic classifier that combines the fast k-mer based classification of Kraken with an efficient algorithm for assessing the coverage of unique k-mers found in each species in a dataset. On various test datasets, KrakenHLL gives better recall and F1-scores than other methods, and effectively classifies and distinguishes pathogens with low abundance from false positives in infectious disease samples. By using the probabilistic cardinality estimator HyperLogLog (HLL), KrakenHLL is as fast as Kraken and requires little additional memory.},
+author = {FP Breitwieser and SL Salzberg},
+doi = {10.1101/262956},
+}
+
+@article{9de375f8ac55041a6878d650062ba9a216a0e085,
+title = {Metagenomic binning through low-density hashing},
+year = {2017},
+url = {https://www.semanticscholar.org/paper/9de375f8ac55041a6878d650062ba9a216a0e085},
+abstract = {Bacterial microbiomes of incredible complexity are found throughout the world, from exotic marine locations to the soil in our yards to within our very guts. With recent advances in Next-Generation Sequencing (NGS) technologies, we have vastly greater quantities of microbial genome data, but the nature of environmental samples is such that DNA from different species are mixed together. Here, we present Opal for metagenomic binning, the task of identifying the origin species of DNA sequencing reads. Our Opal method introduces low-density, even-coverage hashing to bioinformatics applications, enabling quick and accurate metagenomic binning. Our tool is up to two orders of magnitude faster than leading alignment-based methods at similar or improved accuracy, allowing computational tractability on large metagenomic datasets. Moreover, on public benchmarks, Opal is substantially more accurate than both alignment-based and alignment-free methods (e.g. on SimHC20.500, Opal achieves 95% F1-score while Kraken and CLARK achieve just 91% and 88%, respectively); this improvement is likely due to the fact that the latter methods cannot handle computationally-costly long-range dependencies, which our even-coverage, low-density fingerprints resolve. Notably, capturing these long-range dependencies drastically improves Opal’s ability to detect unknown species that share a genus or phylum with known bacteria. Additionally, the family of hash functions Opal uses can be generalized to other sequence analysis tasks that rely on k-mer based methods to encode long-range dependencies.},
+author = {Yunan Luo and Y. Yu and Jianyang Zeng and B. Berger and Jian Peng},
+doi = {10.1093/bioinformatics/bty611},
+pmid = {30010790},
+}
+
+@article{36df880f95cf6445aad336306f282400471b0268,
+title = {TWARIT: an extremely rapid and efficient approach for phylogenetic classification of metagenomic sequences.},
+year = {2012},
+url = {https://www.semanticscholar.org/paper/36df880f95cf6445aad336306f282400471b0268},
+abstract = {Phylogenetic assignment of individual sequence reads to their respective taxa, referred to as 'taxonomic binning', constitutes a key step of metagenomic analysis. Existing binning methods have limitations either with respect to time or accuracy/specificity of binning. Given these limitations, development of a method that can bin vast amounts of metagenomic sequence data in a rapid, efficient and computationally inexpensive manner can profoundly influence metagenomic analysis in computational resource poor settings. We introduce TWARIT, a hybrid binning algorithm, that employs a combination of short-read alignment and composition-based signature sorting approaches to achieve rapid binning rates without compromising on binning accuracy and specificity. TWARIT is validated with simulated and real-world metagenomes and the results demonstrate significantly lower overall binning times compared to that of existing methods. Furthermore, the binning accuracy and specificity of TWARIT are observed to be comparable/superior to them. A web server implementing TWARIT algorithm is available at http://metagenomics.atc.tcs.com/Twarit/},
+author = {Rachamalla Maheedhar Reddy and M. H. Mohammed and S. Mande},
+doi = {10.1016/j.gene.2012.06.014},
+pmid = {22710135},
+}
+
+@article{ebe2c9d3be6c40106b505f37af2b35b8da64f2cc,
+title = {Challenges in Benchmarking Metagenomic Profilers},
+year = {2020},
+url = {https://www.semanticscholar.org/paper/ebe2c9d3be6c40106b505f37af2b35b8da64f2cc},
+abstract = {Accurate microbial identification and abundance estimation are crucial for metagenomics analysis. Various methods for classifying metagenomic data and estimating taxonomic profiles, broadly referred to as metagenomic profilers, have been developed. Yet, benchmarking metagenomic profilers remains challenging because some tools are designed to report relative sequence abundance while others report relative taxonomic abundance. Here, we show how misleading conclusions can be drawn by neglecting this distinction between relative abundance types when benchmarking metagenomic profilers. Moreover, we show compelling evidence that interchanging sequence abundance and taxonomic abundance will influence both per-sample summary statistics and cross-sample comparisons. We suggest that the microbiome research community should pay attention to potentially misleading biological conclusions arising from this issue when benchmarking metagenomic profilers, by carefully considering the type of abundance data that was analyzed and interpreted, and clearly stating the strategy used for metagenomic profiling.},
+author = {Zheng Sun and Shi Huang and Meng Zhang and Qiyun Zhu and N. Haiminen and A. Carrieri and Y. Vázquez-Baeza and L. Parida and Ho-Cheol Kim and R. Knight and Yang-Yu Liu},
+doi = {10.1101/2020.11.14.382994},
+pmid = {33986544},
+}
+
+@article{c1844bdb3c766f29cd5b63c02f25481187ca4504,
+title = {Continuous Embeddings of DNA Sequencing Reads and Application to Metagenomics},
+year = {2019},
+url = {},
+abstract = {We propose a new model for fast classification of DNA sequences output by next-generation sequencing machines. The model, which we call fastDNA, embeds DNA sequences in a vector space by learning continuous low-dimensional representations of the k-mers it contains. We show on metagenomics benchmarks that it outperforms the state-of-the-art methods in terms of accuracy and scalability.},
+author = {Romain Menegaux and Jean-Philippe Vert},
+}
+
+@article{a9b5aa4afc507a26303562f817b3544f2f7f102b,
+title = {LEMMI: A continuous benchmarking platform for metagenomics classifiers.},
+year = {2020},
+url = {https://www.semanticscholar.org/paper/a9b5aa4afc507a26303562f817b3544f2f7f102b},
+abstract = {Studies of microbiomes are booming, along with the diversity of computational approaches to make sense out of the sequencing data and the volumes of accumulated microbial genotypes. A swift evaluation of newly published methods and their improvements against established tools is necessary to reduce the time between the method's release and its adoption in microbiome analyses. The LEMMI platform offers a novel approach for benchmarking software dedicated to metagenome composition assessments based on read classification. It enables the integration of newly published methods in an independent and centralized benchmark designed to be continuously open to new submissions. This allows developers to be proactive regarding comparative evaluations and guarantees that any promising methods can be assessed side-by-side with established tools quickly after their release. Moreover, LEMMI enforces an effective distribution through software containers to ensure long term availability of all methods. Here, we detail the LEMMI workflow and discuss the performances of some previously unevaluated tools. We see this platform eventually as a community-driven effort where method developers can showcase novel approaches and get unbiased benchmarks for publications, while users can make informed choices and obtain standardized and easy-to-use tools.},
+author = {Mathieu Seppey and M. Manni and E. Zdobnov},
+doi = {10.1101/gr.260398.119},
+pmid = {32616517},
+}
+
+@article{f674069122fc9cbf8f909199fb18e6dd412668c4,
+title = {The advantages and disadvantages of short- and long-read metagenomics to infer bacterial and eukaryotic community composition},
+year = {2019},
+url = {https://www.semanticscholar.org/paper/f674069122fc9cbf8f909199fb18e6dd412668c4},
+abstract = {The first step in understanding ecological community diversity and dynamics is quantifying community membership. An increasingly common method for doing so is through metagenomics. Because of the rapidly increasing popularity of this approach, a large number of computational tools and pipelines are available for analysing metagenomic data. However, the majority of these tools have been designed and benchmarked using highly accurate short read data (i.e. illumina), with few studies benchmarking classification accuracy for long error-prone reads (PacBio or Oxford Nanopore). In addition, few tools have been benchmarked for non-microbial communities. Here we use simulated error prone Oxford Nanopore and high accuracy Illumina read sets to systematically investigate the effects of sequence length and taxon type on classification accuracy for metagenomic data from both microbial and non-microbial communities. We show that very generally, classification accuracy is far lower for non-microbial communities, even at low taxonomic resolution (e.g. family rather than genus). We then show that for two popular taxonomic classifiers, long error-prone reads can significantly increase classification accuracy, and this is most pronounced for non-microbial communities. This work provides insight on the expected accuracy for metagenomic analyses for different taxonomic groups, and establishes the point at which read length becomes more important than error rate for assigning the correct taxon.},
+author = {William S. Pearman and N. Freed and O. Silander},
+doi = {10.1101/650788},
+}
+
+@article{03b956a4b970d4dc4c08ad7ed7803a3fc5108713,
+title = {An optimized FM-index library for nucleotide and amino acid search},
+year = {2021},
+url = {https://www.semanticscholar.org/paper/03b956a4b970d4dc4c08ad7ed7803a3fc5108713},
+abstract = {Pattern matching is a key step in a variety of biological sequence analysis pipelines. The FM-index is a compressed data structure for pattern matching, with search run time that is independent of the length of the database text. We present AvxWindowedFMindex (AWFM-index), an open-source, thread-parallel FM-index library written in C that is optimized for indexing nucleotide and amino acid sequences. AWFM-index is easy to incorporate into bioinformatics software and is able to perform exact match count and locate queries ~2-4x faster than SeqAn3’s FM-index implementation for nucleotide search, and ~2-6x faster for amino acid search in a single-threaded context. This performance is due to (i) a new approach to storing FM-index data in a strided bit-vector format that enables extremely efficient computation of the FM-index occurrence function via AVX2 bitwise instructions, and (ii) inclusion of a cache-efficient lookup table for partial k-mer searches. AWFM-index also trivially parallelizes to multiple threads with good scaling, and enables efficient on-disk storage of the memory-intensive suffix array. The open-source library is available for download at https://github.com/TravisWheelerLab/AvxWindowFmIndex.},
+author = {T. Anderson and Travis J. Wheeler},
+doi = {10.1186/s13015-021-00204-6},
+pmid = {34972525},
+}
+
+@article{903ea55eb66dc24e0164c0634f533b7cacea1ebd,
+title = {Evaluation of shotgun metagenomics sequence classification methods using in silico and in vitro simulated communities},
+year = {2015},
+url = {https://www.semanticscholar.org/paper/903ea55eb66dc24e0164c0634f533b7cacea1ebd},
+abstract = {BackgroundThe field of metagenomics (study of genetic material recovered directly from an environment) has grown rapidly, with many bioinformatics analysis methods being developed. To ensure appropriate use of such methods, robust comparative evaluation of their accuracy and features is needed. For taxonomic classification of sequence reads, such evaluation should include use of clade exclusion, which better evaluates a method’s accuracy when identical sequences are not present in any reference database, as is common in metagenomic analysis. To date, relatively small evaluations have been performed, with evaluation approaches like clade exclusion limited to assessment of new methods by the authors of the given method. What is needed is a rigorous, independent comparison between multiple major methods, using the same in silico and in vitro test datasets, with and without approaches like clade exclusion, to better characterize accuracy under different conditions.ResultsAn overview of the features of 38 bioinformatics methods is provided, evaluating accuracy with a focus on 11 programs that have reference databases that can be modified and therefore most robustly evaluated with clade exclusion. Taxonomic classification of sequence reads was evaluated using both in silico and in vitro mock bacterial communities. Clade exclusion was used at taxonomic levels from species to class—identifying how well methods perform in progressively more difficult scenarios. A wide range of variability was found in the sensitivity, precision, overall accuracy, and computational demand for the programs evaluated. In experiments where distilled water was spiked with only 11 bacterial species, frequently dozens to hundreds of species were falsely predicted by the most popular programs. The different features of each method (forces predictions or not, etc.) are summarized, and additional analysis considerations discussed.ConclusionsThe accuracy of shotgun metagenomics classification methods varies widely. No one program clearly outperformed others in all evaluation scenarios; rather, the results illustrate the strengths of different methods for different purposes. Researchers must appreciate method differences, choosing the program best suited for their particular analysis to avoid very misleading results. Use of standardized datasets for method comparisons is encouraged, as is use of mock microbial community controls suitable for a particular metagenomic analysis.},
+author = {Michael A. Peabody and T. Rossum and Raymond Lo and F. Brinkman},
+doi = {10.1186/s12859-015-0788-5},
+pmid = {26537885},
+}
+
+@article{e15238a7f9ff4a8680a62bd55d4d1b173d990a1d,
+title = {CoreProbe: A Novel Algorithm for Estimating Relative Abundance Based on Metagenomic Reads},
+year = {2018},
+url = {https://www.semanticscholar.org/paper/e15238a7f9ff4a8680a62bd55d4d1b173d990a1d},
+abstract = {With the rapid development of high-throughput sequencing technology, the analysis of metagenomic sequencing data and the accurate and efficient estimation of relative microbial abundance have become important ways to explore the microbial composition and function of microbes. In addition, the accuracy and efficiency of the relative microbial abundance estimation are closely related to the algorithm and the selection of the reference sequence for sequence alignment. We introduced the microbial core genome as the reference sequence for potential microbes in a metagenomic sample, and we constructed a finite mixture and latent Dirichlet models and used the Gibbs sampling algorithm to estimate the relative abundance of microorganisms. The simulation results showed that our approach can improve the efficiency while maintaining high accuracy and is more suitable for high-throughput metagenomic data. The new approach was implemented in our CoreProbe package which provides a pipeline for an accurate and efficient estimation of the relative abundance of microbes in a community. This tool is available free of charge from the CoreProbe’s website: Access the Docker image with the following instruction: sudo docker pull panhongfei/coreprobe:1.0.},
+author = {Dongmei Ai and Hongfei Pan and Ruocheng Huang and L. C. Xia},
+doi = {10.3390/genes9060313},
+pmid = {29925824},
+}
+
+@article{29ee8bd156b92f069f82fc50de3541f788aead23,
+title = {IDseq—An open source cloud-based pipeline and analysis service for metagenomic pathogen detection and monitoring},
+year = {2020},
+url = {https://www.semanticscholar.org/paper/29ee8bd156b92f069f82fc50de3541f788aead23},
+abstract = {Background Metagenomic next generation sequencing (mNGS) has enabled the rapid, unbiased detection and identification of microbes without pathogen-specific reagents, culturing, or a priori knowledge of the microbial landscape. mNGS data analysis requires a series of computationally intensive processing steps to accurately determine the microbial composition of a sample. Existing mNGS data analysis tools typically require bioinformatics expertise and access to local server-class hardware resources. For many research laboratories, this presents an obstacle, especially in resource limited environments. Findings We present IDseq, an open source cloud-based metagenomics pipeline and service for global pathogen detection and monitoring (https://idseq.net). The IDseq Portal accepts raw mNGS data, performs host and quality filtration steps, then executes an assembly-based alignment pipeline which results in the assignment of reads and contigs to taxonomic categories. The taxonomic relative abundances are reported and visualized in an easy-to-use web application to facilitate data interpretation and hypothesis generation. Furthermore, IDseq supports environmental background model generation and automatic internal spike-in control recognition, providing statistics which are critical for data interpretation. IDseq was designed with the specific intent of detecting novel pathogens. Here, we benchmark novel virus detection capability using both synthetically evolved viral sequences, and real-world samples, including IDseq analysis of a nasopharyngeal swab sample acquired and processed locally in Cambodia from a tourist from Wuhan, China, infected with the recently emergent SARS-CoV-2. Conclusion The IDseq Portal reduces the barrier to entry for mNGS data analysis and enables bench scientists, clinicians, and bioinformaticians to gain insight from mNGS datasets for both known and novel pathogens.},
+author = {K. Kalantar and T. Carvalho and Charles F A de Bourcy and B. Dimitrov and G. Dingle and Rebecca Egger and Julie Han and Olivia B. Holmes and Yun-Fang Juan and R. King and Andrey Kislyuk and Michael F. Lin and Maria Mariano and Todd Morse and Lucia V. Reynoso and David Rissato Cruz and Jonathan Sheu and Jennifer Tang and James Wang and Mark A. Zhang and Emily Zhong and V. Ahyong and S. Lay and S. Chea and J. Bohl and J. Manning and C. Tato and J. Derisi},
+doi = {10.1101/2020.04.07.030551},
+pmid = {33057676},
+}
+
+@article{be9e8487ede5ab25339c49d8c67cd2442e122447,
+title = {CHEER: HierarCHical taxonomic classification for viral mEtagEnomic data via deep leaRning},
+year = {2020},
+url = {https://www.semanticscholar.org/paper/be9e8487ede5ab25339c49d8c67cd2442e122447},
+abstract = {The fast accumulation of viral metagenomic data has contributed significantly to new RNA virus discovery. However, the short read size, complex composition, and large data size can all make taxonomic analysis difficult. In particular, commonly used alignment-based methods are not ideal choices for detecting new viral species. In this work, we present a novel hierarchical classification model named CHEER, which can conduct read-level taxonomic classification from order to genus for new species. By combining k-mer embedding-based encoding, hierarchically organized CNNs, and carefully trained rejection layer, CHEER is able to assign correct taxonomic labels for reads from new species. We tested CHEER on both simulated and real sequencing data. The results show that CHEER can achieve higher accuracy than popular alignment-based and alignment-free taxonomic assignment tools. The source code, scripts, and pre-trained parameters for CHEER are available via GitHub: https://github.com/KennthShang/CHEER.},
+author = {Jiayu Shang and Yanni Sun},
+doi = {10.1016/j.ymeth.2020.05.018},
+pmid = {32454212},
+}
+
+@article{0f8d9cf8e7fd4f9ce5326d0d58dad293bbe1932f,
+title = {Metagenome Assembly and Functional Annotation},
+year = {2017},
+url = {https://www.semanticscholar.org/paper/0f8d9cf8e7fd4f9ce5326d0d58dad293bbe1932f},
+abstract = {This chapter reviews metagenome de novo assembly and currently available assembly algorithms and tools. Challenges and opportunities from metagenomic assembly are presented, with a summary of a typical metagenomic assembly workflow. Finally, approaches to reduce large datasets and identify the functions of assembled genes are also discussed.},
+author = {A. Howe and Fan Yang and Qingpeng Zhang},
+doi = {10.1007/978-3-319-61510-3_9},
+}
+
+@article{4359d12dc4f8bb4ba787fd1c215375bee82928f8,
+title = {Gist – an ensemble approach to the taxonomic classification of metatranscriptomic sequence data},
+year = {2016},
+url = {https://www.semanticscholar.org/paper/4359d12dc4f8bb4ba787fd1c215375bee82928f8},
+abstract = {The study of whole microbial communities through RNA-seq, or metatranscriptomics, offers a unique view of the relative levels of activity for different genes across a large number of species simultaneously. To make sense of these sequencing data, it is necessary to be able to assign both taxonomic and functional identities to each sequenced read. High-quality identifications are important not only for community profiling, but to also ensure that functional assignments of sequence reads are correctly attributed to their source taxa. Such assignments allow biochemical pathways to be appropriately allocated to discrete species, enabling the capture of cross-species interactions. Typically read annotation is performed by a single alignment-based search tool such as BLAST. However, due to the vast extent of bacterial diversity, these approaches tend to be highly error prone, particularly for taxonomic assignments. Here we introduce a novel program for generating taxonomic assignments, called Gist, which integrates information from a number of machine learning methods and the Burrows-Wheeler Aligner. Uniquely Gist establishes the most appropriate weightings of methods for individual genomes, facilitating high classification accuracy on next-generation sequencing reads. We validate our approach using a synthetic metatranscriptome generator based on Flux Simulator, termed Genepuddle. Further, unlike previous taxonomic classifiers, we demonstrate the capacity of composition-based techniques to accurately inform on taxonomic origin without resorting to longer scanning windows that mimic alignment-based methods. Gist is made freely available under the terms of the GNU General Public License at compsysbio.org/gist.},
+author = {S. Halliday and J. Parkinson},
+doi = {10.1101/081026},
+}
+
+@article{435b54006451fb6abfb471f9c7e43982e523a6fc,
+title = {Benchmarking taxonomic classifiers with Illumina and Nanopore sequence data for clinical metagenomic diagnostic applications},
+year = {2022},
+url = {https://www.semanticscholar.org/paper/435b54006451fb6abfb471f9c7e43982e523a6fc},
+abstract = {Culture-independent metagenomic detection of microbial species has the potential to provide rapid and precise real-time diagnostic results. However, it is potentially limited by sequencing and classification errors. We use simulated and real-world data to benchmark rates of species misclassification using 100 reference genomes for each of ten common bloodstream pathogens and six frequent blood culture contaminants (n=1600). Simulating both with and without sequencing error for both the Illumina and Oxford Nanopore platforms, we evaluated commonly used classification tools including Kraken2, Bracken, and Centrifuge, utilising mini (8GB) and standard (30-50GB) databases. Bracken with the standard database performed best, the median percentage of reads across both sequencing platforms identified correctly to the species level was 98.46% (IQR 93.0:99.3) [range 57.1:100]. For Kraken2 with a mini database, a commonly used combination, median species-level identification was 79.3% (IQR 39.1:88.8) [range 11.2:100]. Classification performance varied by species, with E. coli being more challenging to classify correctly (59.4% to 96.4% reads with correct species, varying by tool used). By filtering out shorter Nanopore reads (<3500bp) we found performance similar or superior to Illumina sequencing, despite higher sequencing error rates. Misclassification was more common when the misclassified species had a higher average nucleotide identity to the true species. Our findings highlight taxonomic misclassification of sequencing data occurs and varies by sequencing and analysis workflow. This “bioinformatic contamination” should be accounted for in metagenomic pipelines to ensure accurate results that can support clinical decision making. Importance Metagenomics may transform clinical microbiology by enabling more rapid species detection in a potentially unbiased manner and reducing reliance on culture-based approaches. However, it is still limited by ongoing challenges such as sequencing and classification software errors. In this study, we use simulated and real-world data to define the intrinsic rates of species misclassification that occur using Illumina and Oxford Nanopore sequencing platforms with commonly used taxonomic classification tools and databases. We quantify the extent of “bioinformatic contamination” arising from the classification process. This enables us to identify the best performing tools that maximize classification accuracy, and to suggest how taxonomic misclassification can be formally accounted for in clinical diagnostic workflows. Specifically, we specify thresholds for identifying or excluding polymicrobial infections in metagenomic samples, based on rates of misclassification of similar species, which might have clinical implications when treating infection.},
+author = {K. Govender and D. Eyre},
+doi = {10.1101/2022.01.11.475979},
+}
+
+@article{0c95561a8fd43e53fe7b778a772edc7528da9685,
+title = {PaPrBaG: A machine learning approach for the detection of novel pathogens from NGS data},
+year = {2017},
+url = {https://www.semanticscholar.org/paper/0c95561a8fd43e53fe7b778a772edc7528da9685},
+abstract = {The reliable detection of novel bacterial pathogens from next-generation sequencing data is a key challenge for microbial diagnostics. Current computational tools usually rely on sequence similarity and often fail to detect novel species when closely related genomes are unavailable or missing from the reference database. Here we present the machine learning based approach PaPrBaG (Pathogenicity Prediction for Bacterial Genomes). PaPrBaG overcomes genetic divergence by training on a wide range of species with known pathogenicity phenotype. To that end we compiled a comprehensive list of pathogenic and non-pathogenic bacteria with human host, using various genome metadata in conjunction with a rule-based protocol. A detailed comparative study reveals that PaPrBaG has several advantages over sequence similarity approaches. Most importantly, it always provides a prediction whereas other approaches discard a large number of sequencing reads with low similarity to currently known reference genomes. Furthermore, PaPrBaG remains reliable even at very low genomic coverages. CombiningPaPrBaG with existing approaches further improves prediction results.},
+author = {C. Deneke and R. Rentzsch and B. Renard},
+doi = {10.1038/srep39194},
+pmid = {28051068},
+}
+
+@article{dca5bb849fc5373c87df128508daa75a1ec6e768,
+title = {Benchmarking metagenomic classification tools for long-read sequencing data},
+year = {2020},
+url = {https://www.semanticscholar.org/paper/dca5bb849fc5373c87df128508daa75a1ec6e768},
+abstract = {In recent years, both long-read sequencing and metagenomic analysis have been significantly advanced. Although long-read sequencing technologies have been primarily used for de novo genome assembly, they are rapidly maturing for widespread use in other applications. In particular, long reads could potentially lead to more precise taxonomic identification, which has sparked an interest in using them for metagenomic analysis. Here we present a benchmark of several state-of-the-art tools for metagenomic taxonomic classification, tested on in-silico datasets constructed using real long reads from isolate sequencing. We compare tools that were either newly developed or modified to work with long reads, including k-mer based tools Kraken2, Centrifuge and CLARK, and mapping-based tools MetaMaps and MEGAN-LR. The test datasets were constructed with varying numbers of bacterial and eukaryotic genomes to simulate different real-life metagenomic applications. The tools were tested to detect species accurately and precisely estimate species abundances in the samples. Our analysis shows that all tested classifiers provide useful results, and the composition of the used database strongly influences the performance. Using the same database, tested tools achieve comparable results except for MetaMaps, which slightly outperform others in most metrics, but it is significantly slower than k-mer based tools. We deem there is significant room for improvement for all tested tools, especially in lowering the number of false-positive detections.},
+author = {J. Marić and K. Križanović and Sylvain Riondet and N. Nagarajan and M. Šikić},
+doi = {10.1101/2020.11.25.397729},
+}
+
+@article{78ccedbfccc58ee51be38b7d25b4a11c38c255c2,
+title = {Applying Metagenomic Methods to Quantify Community Composition},
+year = {2020},
+url = {https://www.semanticscholar.org/paper/78ccedbfccc58ee51be38b7d25b4a11c38c255c2},
+abstract = {},
+author = {William S. Pearman and Massey and N. Freed and O. Silander},
+}
+
+@article{5b080c8a7d67fd23c3230dc420452ac2ee34967a,
+title = {Classification of DNA Sequences Using Convolutional Neural Network Approach},
+year = {2018},
+url = {https://www.semanticscholar.org/paper/5b080c8a7d67fd23c3230dc420452ac2ee34967a},
+abstract = {Extraction of meaningful information from the DNA is a key elements in bioinformatics research and DNA sequence classification has a wide range of presentations such as genomic analysis, and biomedical data analysis. Nowadays, deep learning approach has become an attention to many researcher. This models contains multiple of non-linear transforming layers which practice to represent a data at successively high-level abstractions. With many hidden layer, this innovative model are expected to be able to elucidate any complex problems. Thus, Convolutional Neural Network approach is proposed to classify the whole genomic sequences of an organisms. As the purpose of this research is to evaluate the performance of the proposed model by implementing convolutional neural network approach, the research framework is focused to identify genetic marker for liver cancer from Hepatitis B Virus DNA sequences using deep learning principle. The results show that convolutional neural network have more than 90 percent accuracy in training the data sets. Moreover, this research also analysed different size of sequence length to observe the performance of the proposed model. The overall outcome in this research achieve within the expected results.},
+author = {Nurulhuda Kassim and Dr Afnizanfaizal Abdullah},
+}

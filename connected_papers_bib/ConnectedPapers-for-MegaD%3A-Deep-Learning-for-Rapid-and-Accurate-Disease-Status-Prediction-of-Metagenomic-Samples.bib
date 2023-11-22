@@ -1,0 +1,397 @@
+@article{2adafc348d43223e2f325f8e333b14361cd25c0f,
+title = {MegaD: Deep Learning for Rapid and Accurate Disease Status Prediction of Metagenomic Samples},
+year = {2022},
+url = {https://www.semanticscholar.org/paper/2adafc348d43223e2f325f8e333b14361cd25c0f},
+abstract = {The diversity within different microbiome communities that drive biogeochemical processes influences many different phenotypes. Analyses of these communities and their diversity by countless microbiome projects have revealed an important role of metagenomics in understanding the complex relation between microbes and their environments. This relationship can be understood in the context of microbiome composition of specific known environments. These compositions can then be used as a template for predicting the status of similar environments. Machine learning has been applied as a key component to this predictive task. Several analysis tools have already been published utilizing machine learning methods for metagenomic analysis. Despite the previously proposed machine learning models, the performance of deep neural networks is still under-researched. Given the nature of metagenomic data, deep neural networks could provide a strong boost to growth in the prediction accuracy in metagenomic analysis applications. To meet this urgent demand, we present a deep learning based tool that utilizes a deep neural network implementation for phenotypic prediction of unknown metagenomic samples. (1) First, our tool takes as input taxonomic profiles from 16S or WGS sequencing data. (2) Second, given the samples, our tool builds a model based on a deep neural network by computing multi-level classification. (3) Lastly, given the model, our tool classifies an unknown sample with its unlabeled taxonomic profile. In the benchmark experiments, we deduced that an analysis method facilitating a deep neural network such as our tool can show promising results in increasing the prediction accuracy on several samples compared to other machine learning models.},
+author = {Yassin Mreyoud and Myoungkyu Song and Jihun Lim and Tae-Hyuk Ahn},
+doi = {10.3390/life12050669},
+pmid = {35629336},
+}
+
+@article{e15d314b14e5866c44cb89a2a71ca51db09616ab,
+title = {Microbiome-based disease prediction with multimodal variational information bottlenecks},
+year = {2021},
+url = {https://www.semanticscholar.org/paper/e15d314b14e5866c44cb89a2a71ca51db09616ab},
+abstract = {Scientific research is shedding more and more light on the interaction of the gut microbiome with the human body and its role in human health. Empirical evidence shows that the microbiome is strongly interconnected with the host immune system and can contribute to carcinogenesis. Furthermore, studies show that it can be used as a predictor for various diseases. In this work, we propose the Multimodal Variational Information Bottleneck (MVIB), a novel machine learning model capable of learning a joint representation of multiple heterogeneous data modalities. Adopting an information theoretic interpretation of deep neural networks, MVIB allows to compute a joint stochastic encoding of the input data modalities, which acts as a minimal sufficient statistics of the inputs for the prediction of a target label. We use the MVIB to predict whether patients are affected by a certain disease by jointly analysing the species-relative abundance and strain-level marker profiles extracted from shotgun metagenomic sequencing of microbial DNA. Additionally, we perform transfer learning experiments by fine-tuning the model on the target disease dataset after a pre-training on all other source diseases, as well as cross-study generalisation experiments. Furthermore, we adopt a saliency technique to interpret the outcome of the model classification and identify which microbial species and strain-level markers mostly contribute to a certain prediction. The combination of metabolomic data to the species-relative abundance and strain-level marker profiles is also investigated. We show that MVIB achieves competitive results on the microbiome-based disease prediction task and is very fast to train. Author summary The gut microbiome is strongly correlated with human health and can be used to predict various diseases. Here, we propose the Multimodal Variational Information Bottleneck (MVIB), a novel machine learning method which allows to efficiently combine heterogeneous data modalities by computing a joint stochastic encoding. We use the MVIB to predict whether patients are affected by a certain disease and we shed light on which microbial species and gene markers contribute significantly to the prediction outcome. Specifically, we analyse species-relative abundance and strain-level marker profiles extracted from shotgun metagenomic sequencing of microbial DNA from ten different cohorts and obtain competitive classification performance on disease prediction. Furthermore, we adopt a method based on saliency to discover which microbial species and gene markers mostly contribute to the model prediction. Additionally, we perform experiments combining abundance and marker profiles with metabolomic data extracted from mass spectrometry. We show that MVIB can operate accurate microbiome-based disease prediction and is also very fast to train.},
+author = {Filippo Grazioli and Raman Siarheyeu and G. Pileggi and A. Meiser},
+doi = {10.1101/2021.06.08.447505},
+pmid = {35404958},
+}
+
+@article{b067701cf2a2d54ecde7b4e9c25b843d787b66c2,
+title = {Machine Learning Meta-analysis of Large Metagenomic Datasets: Tools and Biological Insights},
+year = {2016},
+url = {https://www.semanticscholar.org/paper/b067701cf2a2d54ecde7b4e9c25b843d787b66c2},
+abstract = {Shotgun metagenomic analysis of the human associated microbiome provides a rich set of microbial features for prediction and biomarker discovery in the context of human diseases and health conditions. However, the use of such high-resolution microbial features presents new challenges, and validated computational tools for learning tasks are lacking. Moreover, classification rules have scarcely been validated in independent studies, posing questions about the generality and generalization of disease-predictive models across cohorts. In this paper, we comprehensively assess approaches to metagenomics-based prediction tasks and for quantitative assessment of the strength of potential microbiome-phenotype associations. We develop a computational framework for prediction tasks using quantitative microbiome profiles, including species-level relative abundances and presence of strain-specific markers. A comprehensive meta-analysis, with particular emphasis on generalization across cohorts, was performed in a collection of 2424 publicly available metagenomic samples from eight large-scale studies. Cross-validation revealed good disease-prediction capabilities, which were in general improved by feature selection and use of strain-specific markers instead of species-level taxonomic abundance. In cross-study analysis, models transferred between studies were in some cases less accurate than models tested by within-study cross-validation. Interestingly, the addition of healthy (control) samples from other studies to training sets improved disease prediction capabilities. Some microbial species (most notably Streptococcus anginosus) seem to characterize general dysbiotic states of the microbiome rather than connections with a specific disease. Our results in modelling features of the “healthy” microbiome can be considered a first step toward defining general microbial dysbiosis. The software framework, microbiome profiles, and metadata for thousands of samples are publicly available at http://segatalab.cibio.unitn.it/tools/metaml.},
+author = {Edoardo Pasolli and D. Truong and Fa Malik and L. Waldron and N. Segata},
+doi = {10.1371/journal.pcbi.1004977},
+pmid = {27400279},
+}
+
+@article{6bd3a44e70c62195170928ea15385b17ba645deb,
+title = {CLARK: fast and accurate classification of metagenomic and genomic sequences using discriminative k-mers},
+year = {2015},
+url = {https://www.semanticscholar.org/paper/6bd3a44e70c62195170928ea15385b17ba645deb},
+abstract = {BackgroundThe problem of supervised DNA sequence classification arises in several fields of computational molecular biology. Although this problem has been extensively studied, it is still computationally challenging due to size of the datasets that modern sequencing technologies can produce.ResultsWe introduce Clark a novel approach to classify metagenomic reads at the species or genus level with high accuracy and high speed. Extensive experimental results on various metagenomic samples show that the classification accuracy of Clark is better or comparable to the best state-of-the-art tools and it is significantly faster than any of its competitors. In its fastest single-threaded mode Clark classifies, with high accuracy, about 32 million metagenomic short reads per minute. Clark can also classify BAC clones or transcripts to chromosome arms and centromeric regions.ConclusionsClark is a versatile, fast and accurate sequence classification method, especially useful for metagenomics and genomics applications. It is freely available at http://clark.cs.ucr.edu/.},
+author = {R. Ounit and S. Wanamaker and T. Close and S. Lonardi},
+doi = {10.1186/s12864-015-1419-2},
+pmid = {25879410},
+}
+
+@article{24be754eb25c7042d038d48ed09fc8d1634df402,
+title = {Scalable metagenomic taxonomy classification using a reference genome database},
+year = {2013},
+url = {https://www.semanticscholar.org/paper/24be754eb25c7042d038d48ed09fc8d1634df402},
+abstract = {Motivation: Deep metagenomic sequencing of biological samples has the potential to recover otherwise difficult-to-detect microorganisms and accurately characterize biological samples with limited prior knowledge of sample contents. Existing metagenomic taxonomic classification algorithms, however, do not scale well to analyze large metagenomic datasets, and balancing classification accuracy with computational efficiency presents a fundamental challenge. Results: A method is presented to shift computational costs to an off-line computation by creating a taxonomy/genome index that supports scalable metagenomic classification. Scalable performance is demonstrated on real and simulated data to show accurate classification in the presence of novel organisms on samples that include viruses, prokaryotes, fungi and protists. Taxonomic classification of the previously published 150 giga-base Tyrolean Iceman dataset was found to take <20 h on a single node 40 core large memory machine and provide new insights on the metagenomic contents of the sample. Availability: Software was implemented in C++ and is freely available at http://sourceforge.net/projects/lmat Contact: allen99@llnl.gov Supplementary information: Supplementary data are available at Bioinformatics online.},
+author = {S. Ames and D. Hysom and S. Gardner and G. S. Lloyd and M. Gokhale and Jonathan E. Allen},
+doi = {10.1093/bioinformatics/btt389},
+pmid = {23828782},
+}
+
+@article{753fa3fbe919ff7ba99171abd2dc70b8c4a4c52f,
+title = {Protein signature-based estimation of metagenomic abundances including all domains of life and viruses},
+year = {2013},
+url = {https://www.semanticscholar.org/paper/753fa3fbe919ff7ba99171abd2dc70b8c4a4c52f},
+abstract = {Motivation: Metagenome analysis requires tools that can estimate the taxonomic abundances in anonymous sequence data over the whole range of biological entities. Because there is usually no prior knowledge about the data composition, not only all domains of life but also viruses have to be included in taxonomic profiling. Such a full-range approach, however, is difficult to realize owing to the limited coverage of available reference data. In particular, archaea and viruses are generally not well represented by current genome databases. Results: We introduce a novel approach to taxonomic profiling of metagenomes that is based on mixture model analysis of protein signatures. Our results on simulated and real data reveal the difficulties of the existing methods when measuring achaeal or viral abundances and show the overall good profiling performance of the protein-based mixture model. As an application example, we provide a large-scale analysis of data from the Human Microbiome Project. This demonstrates the utility of our method as a first instance profiling tool for a fast estimate of the community structure. Availability: http://gobics.de/TaxyPro. Contact: pmeinic@gwdg.de Supplementary information: Supplementary Material is available at Bioinformatics online.},
+author = {Heiner Klingenberg and K. Aßhauer and T. Lingner and P. Meinicke},
+doi = {10.1093/bioinformatics/btt077},
+pmid = {23418187},
+}
+
+@article{7fc84c707af0b028a263a3effa869b44ddb8340c,
+title = {Metagenome-Based Disease Classification with Deep Learning and Visualizations Based on Self-organizing Maps},
+year = {2019},
+url = {https://www.semanticscholar.org/paper/7fc84c707af0b028a263a3effa869b44ddb8340c},
+abstract = {Machine learning algorithms have recently revealed impressive results across a variety of biology and medicine domains. The applications of machine learning in bioinformatics include predicting of biological processes (for example, prediction tasks on gene function), prevention of diseases and personalized treatment. In the last decade, deep learning has gained an impressive success on a variety of problems such as speech recognition, image classification, and natural language processing. Among various methodological variants of deep learning networks, the Convolutional Neural Networks (CNN) have been extensively studied, especially in the field of image processing. Moreover, Data visualization is considered as an indispensable technique for the exploratory data analysis and becomes a key for discoveries. In this paper, a novel approach based on visualization capabilities of Self-Organizing Maps and deep learning is proposed to not only visualize metagenomic data but also leverage advances in deep learning to improve the disease prediction. Several solutions are also introduced to reduce negative affects of overlapped points to enhance the performance. The proposed approach is evaluated on six metagenomic datasets using species abundance. The results reveal that the proposed visualization not only shows improvements in the performance but also allows to visualize biomedical signatures.},
+author = {T. Nguyen},
+doi = {10.1007/978-3-030-35653-8_20},
+}
+
+@article{77f383ff5453d3beb26527980fc50772105efecc,
+title = {MegaR: an interactive R package for rapid sample classification and phenotype prediction using metagenome profiles and machine learning},
+year = {2021},
+url = {https://www.semanticscholar.org/paper/77f383ff5453d3beb26527980fc50772105efecc},
+abstract = {Background Diverse microbiome communities drive biogeochemical processes and evolution of animals in their ecosystems. Many microbiome projects have demonstrated the power of using metagenomics to understand the structures and factors influencing the function of the microbiomes in their environments. In order to characterize the effects from microbiome composition for human health, diseases, and even ecosystems, one must first understand the relationship of microbes and their environment in different samples. Running machine learning model with metagenomic sequencing data is encouraged for this purpose, but it is not an easy task to make an appropriate machine learning model for all diverse metagenomic datasets. Results We introduce MegaR, an R Shiny package and web application, to build an unbiased machine learning model effortlessly with interactive visual analysis. The MegaR employs taxonomic profiles from either whole metagenome sequencing or 16S rRNA sequencing data to develop machine learning models and classify the samples into two or more categories. It provides various options for model fine tuning throughout the analysis pipeline such as data processing, multiple machine learning techniques, model validation, and unknown sample prediction that can be used to achieve the highest prediction accuracy possible for any given dataset while still maintaining a user-friendly experience. Conclusions Metagenomic sample classification and phenotype prediction is important particularly when it applies to a diagnostic method for identifying and predicting microbe-related human diseases. MegaR provides various interactive visualizations for user to build an accurate machine-learning model without difficulty. Unknown sample prediction with a properly trained model using MegaR will enhance researchers to identify the sample property in a fast turnaround time.},
+author = {E. Dhungel and Yassin Mreyoud and Ho-Jin Gwak and A. Rajeh and Mina Rho and Tae-Hyuk Ahn},
+doi = {10.1186/s12859-020-03933-4},
+pmid = {33461494},
+}
+
+@article{6a524d59eb5c6cf62aa2f430e64628d02874869e,
+title = {RegMIL},
+year = {2018},
+url = {https://www.semanticscholar.org/paper/6a524d59eb5c6cf62aa2f430e64628d02874869e},
+abstract = {},
+author = {Mohammad Arifur Rahman and H. Rangwala},
+doi = {10.1145/3233547.3233585},
+}
+
+@article{91ddde9bff55dce6b9623b5f47b0eb598b1d4f56,
+title = {Massive metagenomic data analysis using abundance-based machine learning},
+year = {2019},
+url = {https://www.semanticscholar.org/paper/91ddde9bff55dce6b9623b5f47b0eb598b1d4f56},
+abstract = {BackgroundMetagenomics is the application of modern genomic techniques to investigate the members of a microbial community directly in their natural environments and is widely used in many studies to survey the communities of microbial organisms that live in diverse ecosystems. In order to understand the metagenomic profile of one of the densest interaction spaces for millions of people, the public transit system, the MetaSUB international Consortium has collected and sequenced metagenomes from subways of different cities across the world. In collaboration with CAMDA, MetaSUB has made the metagenomic samples from these cities available for an open challenge of data analysis including, but not limited in scope to, the identification of unknown samples.ResultsTo distinguish the metagenomic profiling among different cities and also predict unknown samples precisely based on the profiling, two different approaches are proposed using machine learning techniques; one is a read-based taxonomy profiling of each sample and prediction method, and the other is a reduced representation assembly-based method. Among various machine learning techniques tested, the random forest technique showed promising results as a suitable classifier for both approaches. Random forest models developed from read-based taxonomic profiling could achieve an accuracy of 91% with 95% confidence interval between 80 and 93%. The assembly-based random forest model prediction also reached 90% accuracy. However, both models achieved roughly the same accuracy on the testing test, whereby they both failed to predict the most abundant label.ConclusionOur results suggest that both read-based and assembly-based approaches are powerful tools for the analysis of metagenomics data. Moreover, our results suggest that reduced representation assembly-based methods are able to simultaneous provide high-accuracy prediction on available data. Overall, we show that metagenomic samples can be traced back to their location with careful generation of features from the composition of microbes and utilizing existing machine learning algorithms. Proposed approaches show high accuracy of prediction, but require careful inspection before making any decisions due to sample noise or complexity.ReviewersThis article was reviewed by Eugene V. Koonin, Jing Zhou and Serghei Mangul.},
+author = {Zachary N. Harris and E. Dhungel and Matthew Mosior and Tae-Hyuk Ahn},
+doi = {10.1186/s13062-019-0242-0},
+pmid = {31370905},
+}
+
+@article{c9ec4af229c67dc5f7e42501a5b884f4f055323d,
+title = {Sigma: Strain-level inference of genomes from metagenomic analysis for biosurveillance},
+year = {2014},
+url = {https://www.semanticscholar.org/paper/c9ec4af229c67dc5f7e42501a5b884f4f055323d},
+abstract = {Motivation: Metagenomic sequencing of clinical samples provides a promising technique for direct pathogen detection and characterization in biosurveillance. Taxonomic analysis at the strain level can be used to resolve serotypes of a pathogen in biosurveillance. Sigma was developed for strain-level identification and quantification of pathogens using their reference genomes based on metagenomic analysis. Results: Sigma provides not only accurate strain-level inferences, but also three unique capabilities: (i) Sigma quantifies the statistical uncertainty of its inferences, which includes hypothesis testing of identified genomes and confidence interval estimation of their relative abundances; (ii) Sigma enables strain variant calling by assigning metagenomic reads to their most likely reference genomes; and (iii) Sigma supports parallel computing for fast analysis of large datasets. The algorithm performance was evaluated using simulated mock communities and fecal samples with spike-in pathogen strains. Availability and Implementation: Sigma was implemented in C++ with source codes and binaries freely available at http://sigma.omicsbio.org. Contact: panc@ornl.gov Supplementary information: Supplementary data are available at Bioinformatics online.},
+author = {Tae-Hyuk Ahn and Juanjuan Chai and C. Pan},
+doi = {10.1093/bioinformatics/btu641},
+pmid = {25266224},
+}
+
+@article{5af199786d8e954185e0bf691c12e17e1e1cb7c5,
+title = {DeepMicro: deep representation learning for disease prediction based on microbiome data},
+year = {2019},
+url = {https://www.semanticscholar.org/paper/5af199786d8e954185e0bf691c12e17e1e1cb7c5},
+abstract = {Human microbiota plays a key role in human health and growing evidence supports the potential use of microbiome as a predictor of various diseases. However, the high-dimensionality of microbiome data, often in the order of hundreds of thousands, yet low sample sizes, poses great challenge for machine learning-based prediction algorithms. This imbalance induces the data to be highly sparse, preventing from learning a better prediction model. Also, there has been little work on deep learning applications to microbiome data with a rigorous evaluation scheme. To address these challenges, we propose DeepMicro, a deep representation learning framework allowing for an effective representation of microbiome profiles. DeepMicro successfully transforms high-dimensional microbiome data into a robust low-dimensional representation using various autoencoders and applies machine learning classification algorithms on the learned representation. In disease prediction, DeepMicro outperforms the current best approaches based on the strain-level marker profile in five different datasets. In addition, by significantly reducing the dimensionality of the marker profile, DeepMicro accelerates the model training and hyperparameter optimization procedure with 8X-30X speedup over the basic approach. DeepMicro is freely available at https://github.com/minoh0201/DeepMicro.},
+author = {Min Oh and Liqing Zhang},
+doi = {10.1038/s41598-020-63159-5},
+pmid = {32265477},
+}
+
+@article{708321ed7e3ff576c0de916c3bf70e73dedca205,
+title = {Accurate read-based metagenome characterization using a hierarchical suite of unique signatures},
+year = {2015},
+url = {https://www.semanticscholar.org/paper/708321ed7e3ff576c0de916c3bf70e73dedca205},
+abstract = {A major challenge in the field of shotgun metagenomics is the accurate identification of organisms present within a microbial community, based on classification of short sequence reads. Though existing microbial community profiling methods have attempted to rapidly classify the millions of reads output from modern sequencers, the combination of incomplete databases, similarity among otherwise divergent genomes, errors and biases in sequencing technologies, and the large volumes of sequencing data required for metagenome sequencing has led to unacceptably high false discovery rates (FDR). Here, we present the application of a novel, gene-independent and signature-based metagenomic taxonomic profiling method with significantly and consistently smaller FDR than any other available method. Our algorithm circumvents false positives using a series of non-redundant signature databases and examines Genomic Origins Through Taxonomic CHAllenge (GOTTCHA). GOTTCHA was tested and validated on 20 synthetic and mock datasets ranging in community composition and complexity, was applied successfully to data generated from spiked environmental and clinical samples, and robustly demonstrates superior performance compared with other available tools.},
+author = {Tracey Freitas and Po-E Li and M. Scholz and P. Chain},
+doi = {10.1093/nar/gkv180},
+pmid = {25765641},
+}
+
+@article{ddf2ae7f81a361c8bf93f28309062d1f02c97e08,
+title = {ĐÁNH GIÁ CÁC CÔNG CỤ HỖ TRỢ CHẨN ĐOÁN BỆNH VỚI CÁCH TIẾP CẬN Y HỌC CÁ THỂ HÓA TRÊN DỮ LIỆU METAGENOMIC},
+year = {2020},
+url = {https://www.semanticscholar.org/paper/ddf2ae7f81a361c8bf93f28309062d1f02c97e08},
+abstract = {Trong những năm gần đây, dữ liệu Metagenomic hay còn gọi là dữ liệu “hệ đa gen” được sử dụng ngày càng nhiều cho các nghiên cứu trong các tiếp cận “Y học cá thể hóa” với mục tiêu cải thiện và nâng cao tính hiệu quả trong việc chăm sóc bảo vệ sức khỏe con người. Nhiều nghiên cứu đã thực nghiệm phân tích trên bộ dữ liệu này và đề xuất nhiều phương pháp để cải thiện độ chính xác trong phân tích. Việc ứng dụng công nghệ thông tin để xử lý và hỗ trợ phân tích dữ liệu này phục vụ cho Y học cá thể là không thể thiếu bởi khối lượng công việc xử lý và độ phức tạp là rất lớn. Với những lợi ích đầy tiềm năng của dữ liệu Metagenomic đã được chứng minh qua nhiều nghiên cứu. Trong phạm vi bài báo này, nhóm nghiên cứu giới thiệu và đánh giá những công cụ rất hữu ích phục vụ cho việc nghiên cứu dữ liệu Metagenomic trong hỗ trợ chẩn đoán bệnh cho con người. Từ các nghiên cứu này, chúng ta có thể phát triển những nghiên cứu mở rộng và sâu hơn để khám phá những ảnh hưởng quan trọng của hệ sinh thái vi sinh vật trong cơ thể con người ảnh hưởng đến sức khỏe và từ đó đề xuất những xu hướng chẩn đoán và điều trị phù hợp để nâng cao và cải thiện sức khỏe con người.},
+author = {P. Tài and T. Phúc and Phan Nguyễn Minh Thảo and Nguyễn Thị Ngọc Chăm and Đào Công Tính and Phạm Huỳnh Ngọc and Nguyễn Thị Thanh Hải},
+doi = {10.37569/dalatuniversity.10.2.646(2020)},
+}
+
+@article{4d61146863fbf3ace0c002a9e205c21505e7f302,
+title = {PopPhy-CNN: A Phylogenetic Tree Embedded Architecture for Convolutional Neural Networks to Predict Host Phenotype From Metagenomic Data},
+year = {2020},
+url = {https://www.semanticscholar.org/paper/4d61146863fbf3ace0c002a9e205c21505e7f302},
+abstract = {Accurate prediction of the host phenotype from a metagenomic sample and identification of the associated microbial markers are important in understanding potential host-microbiome interactions related to disease initiation and progression. We introduce PopPhy-CNN, a novel convolutional neural network (CNN) learning framework that effectively exploits phylogenetic structure in microbial taxa for host phenotype prediction. Our approach takes an input format of a 2D matrix representing the phylogenetic tree populated with the relative abundance of microbial taxa in a metagenomic sample. This conversion empowers CNNs to explore the spatial relationship of the taxonomic annotations on the tree and their quantitative characteristics in metagenomic data. We show the competitiveness of our model compared to other available methods using nine metagenomic datasets of moderate size for binary classification. With synthetic and biological datasets, we show the superior and robust performance of our model for multi-class classification. Furthermore, we design a novel scheme for feature extraction from the learned CNN models and demonstrate improved performance when the extracted features. PopPhy-CNN is a practical deep learning framework for the prediction of host phenotype with the ability of facilitating the retrieval of predictive microbial taxa.},
+author = {Derek Reiman and Ahmed A. Metwally and Jun Sun and Yang Dai},
+doi = {10.1109/JBHI.2020.2993761},
+pmid = {32396115},
+}
+
+@article{fdaf6537833af3ff3428512f3fed82580b9ca7eb,
+title = {Higher Classification Accuracy of Short Metagenomic Reads by Discriminative Spaced k-mers},
+year = {2015},
+url = {https://www.semanticscholar.org/paper/fdaf6537833af3ff3428512f3fed82580b9ca7eb},
+abstract = {The growing number of metagenomic studies in medicine and environmental sciences is creating new computational demands in the analysis of these very large datasets. We have recently proposed a time-efficient algorithm called Clark that can accurately classify metagenomic sequences against a set of reference genomes. The competitive advantage of Clark depends on the use of discriminative contiguous k-mers. In default mode, Clark’s speed is currently unmatched and its precision is comparable to the state-of-the-art, however, its sensitivity still does not match the level of the most sensitive (but slowest) metagenomic classifier. In this paper, we introduce an algorithmic improvement that allows Clark’s classification sensitivity to match the best metagenomic classifier, without a significant loss of speed or precision compared to the original version. Finally, on real metagenomes, Clark can assign with high accuracy a much higher proportion of short reads than its closest competitor. The improved version of Clark, based on discriminative spaced k-mers, is freely available at http://clark.cs.ucr.edu/Spaced/.},
+author = {R. Ounit and S. Lonardi},
+doi = {10.1007/978-3-662-48221-6_21},
+}
+
+@article{1040374b9f1b3e9809aa1b0a8ac5fdb38c9c29a6,
+title = {Mother-to-Infant Microbial Transmission from Different Body Sites Shapes the Developing Infant Gut Microbiome},
+year = {2018},
+url = {https://www.semanticscholar.org/paper/1040374b9f1b3e9809aa1b0a8ac5fdb38c9c29a6},
+abstract = {Summary The acquisition and development of the infant microbiome are key to establishing a healthy host-microbiome symbiosis. The maternal microbial reservoir is thought to play a crucial role in this process. However, the source and transmission routes of the infant pioneering microbes are poorly understood. To address this, we longitudinally sampled the microbiome of 25 mother-infant pairs across multiple body sites from birth up to 4 months postpartum. Strain-level metagenomic profiling showed a rapid influx of microbes at birth followed by strong selection during the first few days of life. Maternal skin and vaginal strains colonize only transiently, and the infant continues to acquire microbes from distinct maternal sources after birth. Maternal gut strains proved more persistent in the infant gut and ecologically better adapted than those acquired from other sources. Together, these data describe the mother-to-infant microbiome transmission routes that are integral in the development of the infant microbiome.},
+author = {Pamela Ferretti and Edoardo Pasolli and Adrian Tett and F. Asnicar and Valentina Gorfer and S. Fedi and F. Armanini and D. Truong and S. Manara and Moreno Zolfo and F. Beghini and R. Bertorelli and V. De Sanctis and Ilaria Bariletti and Rosarita Canto and R. Clementi and M. Cologna and T. Crifò and G. Cusumano and S. Gottardi and Claudia Innamorati and Caterina Masè and Daniela Postai and Daniela Savoi and S. Duranti and G. Lugli and Leonardo Mancabelli and F. Turroni and C. Ferrario and C. Milani and M. Mangifesta and R. Anzalone and Alice Viappiani and M. Yassour and H. Vlamakis and R. Xavier and Carmen Collado and O. Koren and S. Tateo and M. Soffiati and A. Pedrotti and M. Ventura and C. Huttenhower and P. Bork and N. Segata},
+doi = {10.1016/j.chom.2018.06.005},
+pmid = {30001516},
+}
+
+@article{682c1057e258c54945579fe93c4a91fc174bd0de,
+title = {Comparison of 16S and whole genome dog microbiomes using machine learning},
+year = {2021},
+url = {https://www.semanticscholar.org/paper/682c1057e258c54945579fe93c4a91fc174bd0de},
+abstract = {Background Recent advances in sequencing technologies have driven studies identifying the microbiome as a key regulator of overall health and disease in the host. Both 16S amplicon and whole genome shotgun sequencing technologies are currently being used to investigate this relationship, however, the choice of sequencing technology often depends on the nature and experimental design of the study. In principle, the outputs rendered by analysis pipelines are heavily influenced by the data used as input; it is then important to consider that the genomic features produced by different sequencing technologies may emphasize different results. Results In this work, we use public 16S amplicon and whole genome shotgun sequencing (WGS) data from the same dogs to investigate the relationship between sequencing technology and the captured gut metagenomic landscape in dogs. In our analyses, we compare the taxonomic resolution at the species and phyla levels and benchmark 12 classification algorithms in their ability to accurately identify host phenotype using only taxonomic relative abundance information from 16S and WGS datasets with identical study designs. Our best performing model, a random forest trained by the WGS dataset, identified a species ( Bacteroides coprocola) that predominantly contributes to the abundance of leuB , a gene involved in branched chain amino acid biosynthesis; a risk factor for glucose intolerance, insulin resistance, and type 2 diabetes. This trend was not conserved when we trained the model using 16S sequencing profiles from the same dogs. Conclusions Our results indicate that WGS sequencing of dog microbiomes detects a greater taxonomic diversity than 16S sequencing of the same dogs at the species level and with respect to four gut-enriched phyla levels. This difference in detection does not significantly impact the performance metrics of machine learning algorithms after down-sampling. Although the important features extracted from our best performing model are not conserved between the two technologies, the important features extracted from either instance indicate the utility of machine learning algorithms in identifying biologically meaningful relationships between the host and microbiome community members. In conclusion, this work provides the first systematic machine learning comparison of dog 16S and WGS microbiomes derived from identical study designs.},
+author = {Scott A. Lewis and Andrea Nash and Qinghong Li and Tae-Hyuk Ahn},
+doi = {10.1186/s13040-021-00270-x},
+pmid = {34419136},
+}
+
+@article{8c44b2d76922e570b855b870da0a97f11e1a287c,
+title = {Towards end-to-end disease prediction from raw metagenomic data},
+year = {2020},
+url = {https://www.semanticscholar.org/paper/8c44b2d76922e570b855b870da0a97f11e1a287c},
+abstract = {Analysis of the human microbiome using metagenomic sequencing data has demonstrated high ability in discriminating various human diseases. Raw metagenomic sequencing data require multiple complex and computationally heavy bioinformatics steps prior to data analysis. Such data contain millions of short sequences read from the fragmented DNA sequences and are stored as fastq files. Conventional processing pipelines consist multiple steps including quality control, filtering, alignment of sequences against genomic catalogs (genes, species, taxonomic levels, functional pathways, etc.). These pipelines are complex to use, time consuming and rely on a large number of parameters that often provide variability and impact the estimation of the microbiome elements. Recent studies have demonstrated that training Deep Neural Networks directly from raw sequencing data is a promising approach to bypass some of the challenges associated with mainstream bioinformatics pipelines. Most of these methods use the concept of word and sentence embeddings that create a meaningful and numerical representation of DNA sequences, while extracting features and reducing the dimentionality of the data. In this paper we present an end-to-end approach that classifies patients into disease groups directly from raw metagenomic reads: metagenome2vec. This approach is composed of four steps (i) generating a vocabulary of k-mers and learning their numerical embeddings; (ii) learning DNA sequence (read) embeddings; (iii) identifying the genome from which the sequence is most likely to come and (iv) training a multiple instance learning classifier which predicts the phenotype based on the vector representation of the raw data. An attention mechanism is applied in the network so that the model can be interpreted, assigning a weight to the influence of the prediction for each genome. Using two public real-life datasets as well a simulated one, we demonstrated that this original approach reached very high performances, comparable with the state-of-the-art methods applied directly on processed data though mainstream bioinformatics workflows. These results are encouraging for this proof of concept work. We believe that with further dedication, the DNN models have the potential to surpass mainstream bioinformatics workflows in disease classification tasks.},
+author = {Maxence Queyrel and E. Prifti and Jean-Daniel Zucker},
+doi = {10.1101/2020.10.29.360297},
+}
+
+@article{b973c5c6bbdec7ebb79254f3b49188b5e837a3d1,
+title = {The Human Gut Microbiota in all its States: From Disturbance to Resilience},
+year = {2021},
+url = {https://www.semanticscholar.org/paper/b973c5c6bbdec7ebb79254f3b49188b5e837a3d1},
+abstract = {},
+author = {J. Tap and E. Ruppé and M. Derrien},
+doi = {10.1016/B978-0-12-819265-8.00039-5},
+}
+
+@article{7bbac7f7916567616d933d4b2fc8b8acbbb51bdc,
+title = {Kraken: ultrafast metagenomic sequence classification using exact alignments},
+year = {2014},
+url = {https://www.semanticscholar.org/paper/7bbac7f7916567616d933d4b2fc8b8acbbb51bdc},
+abstract = {Kraken is an ultrafast and highly accurate program for assigning taxonomic labels to metagenomic DNA sequences. Previous programs designed for this task have been relatively slow and computationally expensive, forcing researchers to use faster abundance estimation programs, which only classify small subsets of metagenomic data. Using exact alignment of k-mers, Kraken achieves classification accuracy comparable to the fastest BLAST program. In its fastest mode, Kraken classifies 100 base pair reads at a rate of over 4.1 million reads per minute, 909 times faster than Megablast and 11 times faster than the abundance estimation program MetaPhlAn. Kraken is available at http://ccb.jhu.edu/software/kraken/.},
+author = {Derrick E. Wood and S. Salzberg},
+doi = {10.1186/gb-2014-15-3-r46},
+pmid = {24580807},
+}
+
+@article{f1ce6c88b35f03de25efaacc12d928a5725c1cdd,
+title = {Host phenotype classification from human microbiome data is mainly driven by the presence of microbial taxa},
+year = {2022},
+url = {https://www.semanticscholar.org/paper/f1ce6c88b35f03de25efaacc12d928a5725c1cdd},
+abstract = {Machine learning-based classification approaches are widely used to predict host phenotypes from microbiome data. Classifiers are typically employed by considering operational taxonomic units or relative abundance profiles as input features. Such types of data are intrinsically sparse, which opens the opportunity to make predictions from the presence/absence rather than the relative abundance of microbial taxa. This also poses the question whether it is the presence rather than the abundance of particular taxa to be relevant for discrimination purposes, an aspect that has been so far overlooked in the literature. In this paper, we aim at filling this gap by performing a meta-analysis on 4,128 publicly available metagenomes associated with multiple case-control studies. At species-level taxonomic resolution, we show that it is the presence rather than the relative abundance of specific microbial taxa to be important when building classification models. Such findings are robust to the choice of the classifier and confirmed by statistical tests applied to identifying differentially abundant/present taxa. Results are further confirmed at coarser taxonomic resolutions and validated on 4,026 additional 16S rRNA samples coming from 30 public case-control studies.},
+author = {Renato Giliberti and Sara Cavaliere and I. E. Mauriello and D. Ercolini and Edoardo Pasolli},
+doi = {10.1371/journal.pcbi.1010066},
+pmid = {35446845},
+}
+
+@article{e4251b451cc89ab1ef46d7bb199346f275f5b4a8,
+title = {Metagenomic Data Utilization and Analysis (MEDUSA) and Construction of a Global Gut Microbial Gene Catalogue},
+year = {2014},
+url = {https://www.semanticscholar.org/paper/e4251b451cc89ab1ef46d7bb199346f275f5b4a8},
+abstract = {Metagenomic sequencing has contributed important new knowledge about the microbes that live in a symbiotic relationship with humans. With modern sequencing technology it is possible to generate large numbers of sequencing reads from a metagenome but analysis of the data is challenging. Here we present the bioinformatics pipeline MEDUSA that facilitates analysis of metagenomic reads at the gene and taxonomic level. We also constructed a global human gut microbial gene catalogue by combining data from 4 studies spanning 3 continents. Using MEDUSA we mapped 782 gut metagenomes to the global gene catalogue and a catalogue of sequenced microbial species. Hereby we find that all studies share about half a million genes and that on average 300 000 genes are shared by half the studied subjects. The gene richness is higher in the European studies compared to Chinese and American and this is also reflected in the species richness. Even though it is possible to identify common species and a core set of genes, we find that there are large variations in abundance of species and genes.},
+author = {Fredrik H. Karlsson and I. Nookaew and J. Nielsen},
+doi = {10.1371/journal.pcbi.1003706},
+pmid = {25010449},
+}
+
+@article{4d014a948b7c0d7c422b6654b64d88d25d4cce6d,
+title = {Large-scale differences in microbial biodiversity discovery between 16S amplicon and shotgun sequencing},
+year = {2017},
+url = {https://www.semanticscholar.org/paper/4d014a948b7c0d7c422b6654b64d88d25d4cce6d},
+abstract = {Modern metagenomic environmental DNA studies are almost completely reliant on next-generation sequencing, making evaluations of these methods critical. We compare two next-generation sequencing techniques – amplicon and shotgun – on water samples across four of Brazil’s major river floodplain systems (Amazon, Araguaia, Paraná, and Pantanal). Less than 50% of phyla identified via amplicon sequencing were recovered from shotgun sequencing, clearly challenging the dogma that mid-depth shotgun recovers more diversity than amplicon-based approaches. Amplicon sequencing also revealed ~27% more families. Overall the amplicon data were more robust across both biodiversity and community ecology analyses at different taxonomic scales. Our work doubles the sampling size in similar environmental studies, and novelly integrates environmental data (e.g., pH, temperature, nutrients) from each site, revealing divergent correlations depending on which data are used. While myriad variants on NGS techniques and bioinformatic pipelines are available, our results point to core differences that have not been highlighted in any studies to date. Given the low number of taxa identified when coupling shotgun data with clade-based taxonomic algorithms, previous studies that quantified biodiversity using such bioinformatic tools should be viewed cautiously or re-analyzed. Nonetheless, shotgun has complementary advantages that should be weighed when designing projects.},
+author = {M. Tessler and Johannes S Neumann and Ebrahim Afshinnekoo and Michael Pineda and Rebecca Hersch and L. Velho and B. T. Segovia and F. Lansac-Tôha and M. Lemke and R. DeSalle and C. Mason and M. Brugler},
+doi = {10.1038/s41598-017-06665-3},
+pmid = {28761145},
+}
+
+@article{91f7a058124baf5abc1f18cd74f5cf2f2becb029,
+title = {ConStrains identifies microbial strains in metagenomic datasets},
+year = {2015},
+url = {https://www.semanticscholar.org/paper/91f7a058124baf5abc1f18cd74f5cf2f2becb029},
+abstract = {An important fraction of microbial diversity is harbored in strain individuality, so identification of conspecific bacterial strains is imperative for improved understanding of microbial community functions. Limitations in bioinformatics and sequencing technologies have to date precluded strain identification owing to difficulties in phasing short reads to faithfully recover the original strain-level genotypes, which have highly similar sequences. We present ConStrains, an open-source algorithm that identifies conspecific strains from metagenomic sequence data and reconstructs the phylogeny of these strains in microbial communities. The algorithm uses single-nucleotide polymorphism (SNP) patterns in a set of universal genes to infer within-species structures that represent strains. Applying ConStrains to simulated and host-derived datasets provides insights into microbial community dynamics.},
+author = {C. Luo and R. Knight and H. Siljander and M. Knip and R. Xavier and D. Gevers},
+doi = {10.1038/nbt.3319},
+pmid = {26344404},
+}
+
+@article{65525a65d1f803a2d9073e500f2326659dc3f13c,
+title = {The Landscape of Type VI Secretion across Human Gut Microbiomes Reveals Its Role in Community Composition.},
+year = {2017},
+url = {https://www.semanticscholar.org/paper/65525a65d1f803a2d9073e500f2326659dc3f13c},
+abstract = {Although gut microbiome composition is well defined, the mechanisms underlying community assembly remain poorly understood. Bacteroidales possess three genetic architectures (GA1-3) of the type VI secretion system (T6SS), an effector delivery pathway that mediates interbacterial competition. Here we define the distribution and role of GA1-3 in the human gut using metagenomic analysis. We find that adult microbiomes harbor limited effector and cognate immunity genes, suggesting selection for compatibility at the species (GA1 and GA2) and strain (GA3) levels. Bacteroides fragilis GA3 is known to mediate potent inter-strain competition, and we observe GA3 enrichment among strains colonizing infant microbiomes, suggesting competition early in life. Additionally, GA3 is associated with increased Bacteroides abundance, indicating that this system confers an advantage in Bacteroides-rich ecosystems. Collectively, these analyses uncover the prevalence of T6SS-dependent competition and reveal its potential role in shaping human gut microbial composition.},
+author = {A. Verster and B. Ross and M. Radey and Yiqiao Bao and A. Goodman and J. Mougous and E. Borenstein},
+doi = {10.1016/j.chom.2017.08.010},
+pmid = {28910638},
+}
+
+@article{9f6605be54369447090b311587f14e958d09d77d,
+title = {Abundance-based reconstitution of microbial pan-genomes from whole-metagenome shotgun sequencing data},
+year = {2017},
+url = {https://www.semanticscholar.org/paper/9f6605be54369447090b311587f14e958d09d77d},
+abstract = {Analysis toolkits for whole-metagenome shotgun sequencing data achieved strain-level characterization of complex microbial communities by capturing intra-species gene content variation. Yet, these tools are hampered by the extent of reference genomes that are far from covering all microbial variability, as many species are still not sequenced or have only few strains available. Binning co-abundant genes obtained from de novo assembly is a powerful reference-free technique for discovering and reconstituting gene repertoire of microbial species. While current methods accurately identify species core genes, they miss many accessory genes or split them in small separated clusters. We introduce MSPminer, a computationally efficient software tool that reconstitutes Metagenomic Species Pan-genomes (MSPs) by binning co-abundant genes across large-scale metagenomic datasets. MSPminer relies on a new robust measure for grouping not only species core genes but accessory genes also. In MSPs, an empirical classifier distinguishes core from accessory and shared genes. We applied MSPminer to the largest publicly available gene abundance table which is composed of 9.9M genes quantified in 1 267 stool samples. We show that MSPminer successfully reconstitutes in a matter of several hours gene repertoire of > 1600 microbial species (some hitherto unknown) and detects many more accessory genes than existing tools. By compiling the information from thousands of samples, species gene content variability is better accounted for and their quantification is subsequently more precise.},
+author = {F. Oñate and A. Cervino and F. Magoulès and S. Ehrlich and M. Pichaud},
+doi = {10.1101/173203},
+}
+
+@article{92dd26f66c9630f760d150b7f98e541bb0aac0bc,
+title = {MetaPheno: A critical evaluation of deep learning and machine learning in metagenome-based disease prediction.},
+year = {2019},
+url = {https://www.semanticscholar.org/paper/92dd26f66c9630f760d150b7f98e541bb0aac0bc},
+abstract = {The human microbiome plays a number of critical roles, impacting almost every aspect of human health and well-being. Conditions in the microbiome have been linked to a number of significant diseases. Additionally, revolutions in sequencing technology have led to a rapid increase in publicly-available sequencing data. Consequently, there have been growing efforts to predict disease status from metagenomic sequencing data, with a proliferation of new approaches in the last few years. Some of these efforts have explored utilizing a powerful form of machine learning called deep learning, which has been applied successfully in several biological domains. Here, we review some of these methods and the algorithms that they are based on, with a particular focus on deep learning methods. We also perform a deeper analysis of Type 2 Diabetes and obesity datasets that have eluded improved results, using a variety of machine learning and feature extraction methods. We conclude by offering perspectives on study design considerations that may impact results and future directions the field can take to improve results and offer more valuable conclusions. The scripts and extracted features for the analyses conducted in this paper are available via GitHub:https://github.com/nlapier2/metapheno.},
+author = {N. Lapierre and C. Ju and Guangyu Zhou and Wei Wang},
+doi = {10.1016/j.ymeth.2019.03.003},
+pmid = {30885720},
+}
+
+@article{cb3f96bc631e233015aaf52e465d9b3a61738e74,
+title = {Microbial strain-level population structure and genetic diversity from metagenomes.},
+year = {2017},
+url = {https://www.semanticscholar.org/paper/cb3f96bc631e233015aaf52e465d9b3a61738e74},
+abstract = {Among the human health conditions linked to microbial communities, phenotypes are often associated with only a subset of strains within causal microbial groups. Although it has been critical for decades in microbial physiology to characterize individual strains, this has been challenging when using culture-independent high-throughput metagenomics. We introduce StrainPhlAn, a novel metagenomic strain identification approach, and apply it to characterize the genetic structure of thousands of strains from more than 125 species in more than 1500 gut metagenomes drawn from populations spanning North and South American, European, Asian, and African countries. The method relies on per-sample dominant sequence variant reconstruction within species-specific marker genes. It identified primarily subject-specific strain variants (<5% inter-subject strain sharing), and we determined that a single strain typically dominated each species and was retained over time (for >70% of species). Microbial population structure was correlated in several distinct ways with the geographic structure of the host population. In some cases, discrete subspecies (e.g., for Eubacterium rectale and Prevotella copri) or continuous microbial genetic variations (e.g., for Faecalibacterium prausnitzii) were associated with geographically distinct human populations, whereas few strains occurred in multiple unrelated cohorts. We further estimated the genetic variability of gut microbes, with Bacteroides species appearing remarkably consistent (0.45% median number of nucleotide variants between strains), whereas P. copri was among the most plastic gut colonizers. We thus characterize here the population genetics of previously inaccessible intestinal microbes, providing a comprehensive strain-level genetic overview of the gut microbial diversity.},
+author = {D. Truong and Adrian Tett and Edoardo Pasolli and C. Huttenhower and N. Segata},
+doi = {10.1101/gr.216242.116},
+pmid = {28167665},
+}
+
+@article{9526214b21a2acee1af70ed6a62e386306a98989,
+title = {Accessible, curated metagenomic data through ExperimentHub},
+year = {2017},
+url = {https://www.semanticscholar.org/paper/9526214b21a2acee1af70ed6a62e386306a98989},
+abstract = {We present curatedMetagenomicData, a Bioconductor and command-line resource providing thousands of metagenomic profiles from the Human Microbiome Project and other publicly available datasets, and ExperimentHub, for convenient cloud-based distribution of data to the R desktop. curatedMetagenomicData provides standardized per-participant metadata linked to bacterial, fungal, archaeal, and viral taxonomic abundances, as well as quantitative metabolic functional profiles, generated by the HUMAnN2 and MetaPhlAn2 pipelines. The resulting datasets can be immediately analyzed with a wide range of statistical methods, requiring a minimum of bioinformatic expertise and no preprocessing of data. We demonstrate exploratory data analysis, an investigation of gut "enterotypes", and a comparison of the accuracy of disease classification from different data types. These documented analyses can be reproduced efficiently on a laptop, without the barriers of working with large-scale, raw sequencing data. The development of curatedMetagenomicData will continue with the addition, curation, and analysis of further microbiome datasets.},
+author = {Edoardo Pasolli and Lucas Schiffer and P. Manghi and Audrey Renson and Valerie Obenchain and D. Truong and F. Beghini and Fa Malik and Marcel Ramos and J. Dowd and C. Huttenhower and Martin T. Morgan and N. Segata and L. Waldron},
+doi = {10.1101/103085},
+pmid = {29088129},
+}
+
+@article{166f887d93992858440b29b01951bb00910ca2fa,
+title = {Meta-Signer: Metagenomic Signature Identifier based on Rank Aggregation of Features},
+year = {2020},
+url = {https://www.semanticscholar.org/paper/166f887d93992858440b29b01951bb00910ca2fa},
+abstract = {Background The advance of metagenomic studies provides the opportunity to identify microbial taxa that are associated to human diseases. Multiple methods exist for the association analysis. However, the results could be inconsistent, presenting challenges in interpreting the host-microbiome interactions. To address this issue, we introduce Meta-Signer, a novel Metagenomic Signature Identifier tool based on rank aggregation of features identified from multiple machine learning models including Random Forest, Support Vector Machines, LASSO, Multi-Layer Perceptron Neural Networks, and our recently developed Convolutional Neural Network framework (PopPhy-CNN). Meta-Signer generates ranked taxa lists by training individual machine learning models over multiple training partitions and aggregates them into a single ranked list by an optimization procedure to represent the most informative and robust microbial features. Meta-Signer can rank taxa using two input forms of the data: the relative abundances of the original taxa and taxa from the populated taxonomic trees generated from the original taxa. The latter form allows the evaluation of the association of microbial features at different taxonomic levels to the disease, which is attributed to our novel model of PopPhy-CNN. Results We evaluate Mega-Signer on five different human gut-microbiome datasets. We demonstrate that the features derived from Meta-Signer were more informative compared to those obtained from other available feature ranking methods. The highly ranked features are strongly supported by published literature. Conclusion Meta-Signer is capable of deriving a robust set of microbial features at multiple taxonomic levels for the prediction of host phenotype. Meta-Signer is user-friendly and customizable, allowing users to explore their datasets quickly and efficiently.},
+author = {Derek Reiman and A. Metwally and Jun Sun and Yang Dai},
+doi = {10.1101/2020.05.09.085993},
+}
+
+@article{ab4494bc17f0d608b38818113f5607835c5553a6,
+title = {Impact of Host DNA and Sequencing Depth on the Taxonomic Resolution of Whole Metagenome Sequencing for Microbiome Analysis},
+year = {2019},
+url = {https://www.semanticscholar.org/paper/ab4494bc17f0d608b38818113f5607835c5553a6},
+abstract = {The amount of host DNA poses a major challenge to metagenome analysis. However, there is no guidance on the levels of host DNA, nor on the depth of sequencing needed to acquire meaningful information from whole metagenome sequencing (WMS). Here, we evaluated the impact of a wide range of amounts of host DNA and sequencing depths on microbiome taxonomic profiling using WMS. Synthetic samples with increasing levels of host DNA were created by spiking DNA of a mock bacterial community, with DNA from a mouse-derived cell line. Taxonomic analysis revealed that increasing proportions of host DNA led to decreased sensitivity in detecting very low and low abundant species. Reduction of sequencing depth had major impact on the sensitivity of WMS for profiling samples with 90% host DNA, increasing the number of undetected species. Finally, analysis of simulated datasets with fixed depth of 10 million reads confirmed that microbiome profiling becomes more inaccurate as the level of host DNA increases in a sample. In conclusion, samples with high amounts of host DNA coupled with reduced sequencing depths, decrease WMS coverage for characterization of the microbiome. This study highlights the importance of carefully considering these aspects in the design of WMS experiments to maximize microbiome analyses.},
+author = {Joana Pereira-Marques and A. Hout and R. Ferreira and Michiel Weber and Inês Pinto-Ribeiro and L. van Doorn and C. Knetsch and C. Figueiredo},
+doi = {10.3389/fmicb.2019.01277},
+pmid = {31244801},
+}
+
+@article{87741f81d8145eafae0b06ce34a12f071bd5ab1e,
+title = {Microbial abundance, activity and population genomic profiling with mOTUs2},
+year = {2019},
+url = {https://www.semanticscholar.org/paper/87741f81d8145eafae0b06ce34a12f071bd5ab1e},
+abstract = {Metagenomic sequencing has greatly improved our ability to profile the composition of environmental and host-associated microbial communities. However, the dependency of most methods on reference genomes, which are currently unavailable for a substantial fraction of microbial species, introduces estimation biases. We present an updated and functionally extended tool based on universal (i.e., reference-independent), phylogenetic marker gene (MG)-based operational taxonomic units (mOTUs) enabling the profiling of >7700 microbial species. As more than 30% of them could not previously be quantified at this taxonomic resolution, relative abundance estimates based on mOTUs are more accurate compared to other methods. As a new feature, we show that mOTUs, which are based on essential housekeeping genes, are demonstrably well-suited for quantification of basal transcriptional activity of community members. Furthermore, single nucleotide variation profiles estimated using mOTUs reflect those from whole genomes, which allows for comparing microbial strain populations (e.g., across different human body sites).Metagenomic analysis based on universal phylogenetic marker gene (MG)-based operational taxonomic units (mOTUs) is a useful strategy, especially for microbial species without reference genomes. Here, the authors develop mOTUs2, an updated and functionally extended profiling tool for microbial abundance, activity and population profiling.},
+author = {A. Milanese and D. Mende and L. Paoli and G. Salazar and Hans-Joachim Ruscheweyh and Miguelangel Cuenca and P. Hingamp and Renato J Alves and P. Costea and Luis Pedro Coelho and T. S. Schmidt and Alexandre Almeida and A. Mitchell and R. Finn and J. Huerta-Cepas and P. Bork and G. Zeller and S. Sunagawa},
+doi = {10.1038/s41467-019-08844-4},
+pmid = {30833550},
+}
+
+@article{d65b84bbf6b76dc22a92bf8baa5ec3aa1baa9f65,
+title = {TaxoNN: ensemble of neural networks on stratified microbiome data for disease prediction},
+year = {2020},
+url = {https://www.semanticscholar.org/paper/d65b84bbf6b76dc22a92bf8baa5ec3aa1baa9f65},
+abstract = {Abstract Motivation Research supports the potential use of microbiome as a predictor of some diseases. Motivated by the findings that microbiome data is complex in nature, and there is an inherent correlation due to hierarchical taxonomy of microbial Operational Taxonomic Units (OTUs), we propose a novel machine learning method incorporating a stratified approach to group OTUs into phylum clusters. Convolutional Neural Networks (CNNs) were used to train within each of the clusters individually. Further, through an ensemble learning approach, features obtained from each cluster were then concatenated to improve prediction accuracy. Our two-step approach comprising stratification prior to combining multiple CNNs, aided in capturing the relationships between OTUs sharing a phylum efficiently, as compared to using a single CNN ignoring OTU correlations. Results We used simulated datasets containing 168 OTUs in 200 cases and 200 controls for model testing. Thirty-two OTUs, potentially associated with risk of disease were randomly selected and interactions between three OTUs were used to introduce non-linearity. We also implemented this novel method in two human microbiome studies: (i) Cirrhosis with 118 cases, 114 controls; (ii) type 2 diabetes (T2D) with 170 cases, 174 controls; to demonstrate the model’s effectiveness. Extensive experimentation and comparison against conventional machine learning techniques yielded encouraging results. We obtained mean AUC values of 0.88, 0.92, 0.75, showing a consistent increment (5%, 3%, 7%) in simulations, Cirrhosis and T2D data, respectively, against the next best performing method, Random Forest. Availability and implementation https://github.com/divya031090/TaxoNN_OTU. Supplementary information Supplementary data are available at Bioinformatics online.},
+author = {Divya Sharma and A. Paterson and Wei Xu},
+doi = {10.1093/bioinformatics/btaa542},
+pmid = {32449747},
+}
+
+@article{15b9075627a604f5c6e8936a423f0219c0c04e89,
+title = {IDMIL: an alignment-free Interpretable Deep Multiple Instance Learning (MIL) for predicting disease from whole-metagenomic data},
+year = {2020},
+url = {https://www.semanticscholar.org/paper/15b9075627a604f5c6e8936a423f0219c0c04e89},
+abstract = {Abstract Motivation The human body hosts more microbial organisms than human cells. Analysis of this microbial diversity provides key insight into the role played by these microorganisms on human health. Metagenomics is the collective DNA sequencing of coexisting microbial organisms in an environmental sample or a host. This has several applications in precision medicine, agriculture, environmental science and forensics. State-of-the-art predictive models for phenotype predictions from metagenomic data rely on alignments, assembly, extensive pruning, taxonomic profiling and reference sequence databases. These processes are time consuming and they do not consider novel microbial sequences when aligned with the reference genome, limiting the potential of whole metagenomics. We formulate the problem of predicting human disease from whole-metagenomic data using Multiple Instance Learning (MIL), a popular supervised learning paradigm. Our proposed alignment-free approach provides higher accuracy in prediction by harnessing the capability of deep convolutional neural network (CNN) within a MIL framework and provides interpretability via neural attention mechanism. Results The MIL formulation combined with the hierarchical feature extraction capability of deep-CNN provides significantly better predictive performance compared to popular existing approaches. The attention mechanism allows for the identification of groups of sequences that are likely to be correlated to diseases providing the much-needed interpretation. Our proposed approach does not rely on alignment, assembly and reference sequence databases; making it fast and scalable for large-scale metagenomic data. We evaluate our method on well-known large-scale metagenomic studies and show that our proposed approach outperforms comparative state-of-the-art methods for disease prediction. Availability and implementation https://github.com/mrahma23/IDMIL.},
+author = {Mohammad Arifur Rahman and H. Rangwala},
+doi = {10.1093/bioinformatics/btaa477},
+pmid = {32657370},
+}
+
+@article{5b96fb9ea943c921e3db47303c99ddec8a4f74ed,
+title = {KOMB: Taxonomy-oblivious Characterization of Metagenome Dynamics via K-core Decomposition},
+year = {2020},
+url = {https://www.semanticscholar.org/paper/5b96fb9ea943c921e3db47303c99ddec8a4f74ed},
+abstract = {Background: Taxonomic classification of microbiomes has provided tremendous insight into the underlying genome dynamics of microbial communities but has relied on known microbial genomes contained in curated reference databases. Methods: We propose K-core graph decomposition as a novel approach for tracking metagenome dynamics that is taxonomy-oblivious. K-core performs hierarchical decomposition which partitions the graph into shells containing nodes having degree at least K called K-shells, yielding O(E + V) complexity. Results: The results of the paper are two-fold: (1) KOMB can identify homologous regions efficiently in metagenomes, (2) KOMB reveals community profiles that capture intra- and inter-genome dynamics, as supported by our results on simulated, synthetic, and real data. Software Availability: KOMB is available for use on Linux systems at https://gitlab.com/treangenlab/komb.git},
+author = {Advait Balaji and N. Sapoval and R. Elworth and Santiago Segarra and T. Treangen},
+doi = {10.1101/2020.05.21.109587},
+}
+
+@article{bdd964958b9bcd2f619bd94bde5dfc63b32fded6,
+title = {RegMIL: Phenotype Classification from Metagenomic Data},
+year = {2018},
+url = {https://www.semanticscholar.org/paper/bdd964958b9bcd2f619bd94bde5dfc63b32fded6},
+abstract = {Advances in DNA sequencing technologies have paved the way for Metagenomics; defined as the collective sequencing of co-existing microbial communities in a host environment. Several researchers and clinicians have embarked on studying the role of these microbes with respect to human health and diseases, whereas others are using metagenomics to monitor the impact of external factors (e.g., Gulf oil spill) on ecosystems. Lack of accurate and efficient analytical methods is an impediment for the identification of the function and presence of microbial organism within different clinical samples, reducing our ability to elucidate the microbial-host interactions and discover novel therapeutics. In this paper, we present a Multiple Instance Learning (MIL) based computational pipeline to predict clinical phenotype from metagenomic data. We use data from well-known metagenomic studies of Liver Cirrhosis and Inflammatory Bowel Disease (IBD) to evaluate our approach. We show that our proposed pipeline outperforms comparative MIL as well as non-MIL methods.},
+author = {Mohammad Arifur Rahman and H. Rangwala},
+doi = {10.1145/3233547.3233585},
+}
+
+@article{36dd56a56bd679050812e6ac2b402e6f0c1729ab,
+title = {An integrated catalog of reference genes in the human gut microbiome},
+year = {2014},
+url = {https://www.semanticscholar.org/paper/36dd56a56bd679050812e6ac2b402e6f0c1729ab},
+abstract = {Many analyses of the human gut microbiome depend on a catalog of reference genes. Existing catalogs for the human gut microbiome are based on samples from single cohorts or on reference genomes or protein sequences, which limits coverage of global microbiome diversity. Here we combined 249 newly sequenced samples of the Metagenomics of the Human Intestinal Tract (MetaHit) project with 1,018 previously sequenced samples to create a cohort from three continents that is at least threefold larger than cohorts used for previous gene catalogs. From this we established the integrated gene catalog (IGC) comprising 9,879,896 genes. The catalog includes close-to-complete sets of genes for most gut microbes, which are also of considerably higher quality than in previous catalogs. Analyses of a group of samples from Chinese and Danish individuals using the catalog revealed country-specific gut microbial signatures. This expanded catalog should facilitate quantitative characterization of metagenomic, metatranscriptomic and metaproteomic data from the gut microbiome to understand its variation across populations in human health and disease.},
+author = {Junhua Li and Huijue Jia and Xianghang Cai and Huanzi Zhong and Q. Feng and S. Sunagawa and M. Arumugam and Jens Roat Kultima and E. Prifti and T. Nielsen and A. S. Juncker and C. Manichanh and Bing Chen and Wenwei Zhang and F. Levenez and Juan Wang and Xun Xu and L. Xiao and Suisha Liang and Dongya Zhang and Zhaoxi Zhang and Weineng Chen and Hailong Zhao and J. Al-Aama and Sherif Edris and Huanming Yang and Jian Wang and T. Hansen and H. Nielsen and S. Brunak and K. Kristiansen and F. Guarner and O. Pedersen and J. Doré and S. Ehrlich and P. Bork and Jun Wang},
+doi = {10.1038/nbt.2942},
+pmid = {24997786},
+}
+
+@article{3a4d4fbabe2c1febfda2ebb4f79d0f7de44f7756,
+title = {Strain-level microbial epidemiology and population genomics from shotgun metagenomics},
+year = {2016},
+url = {https://www.semanticscholar.org/paper/3a4d4fbabe2c1febfda2ebb4f79d0f7de44f7756},
+abstract = {Identifying microbial strains and characterizing their functional potential is essential for pathogen discovery, epidemiology and population genomics. We present pangenome-based phylogenomic analysis (PanPhlAn; http://segatalab.cibio.unitn.it/tools/panphlan), a tool that uses metagenomic data to achieve strain-level microbial profiling resolution. PanPhlAn recognized outbreak strains, produced the largest strain-level population genomic study of human-associated bacteria and, in combination with metatranscriptomics, profiled the transcriptional activity of strains in complex communities.},
+author = {Matthias Scholz and D. Ward and Edoardo Pasolli and T. Tolio and Moreno Zolfo and F. Asnicar and D. Truong and Adrian Tett and A. Morrow and N. Segata},
+doi = {10.1038/nmeth.3802},
+pmid = {26999001},
+}
+
+@article{47d0222f27549d6322a444ccc388ee1d499fbab0,
+title = {PathoScope 2.0: a complete computational framework for strain identification in environmental or clinical sequencing samples},
+year = {2014},
+url = {https://www.semanticscholar.org/paper/47d0222f27549d6322a444ccc388ee1d499fbab0},
+abstract = {BackgroundRecent innovations in sequencing technologies have provided researchers with the ability to rapidly characterize the microbial content of an environmental or clinical sample with unprecedented resolution. These approaches are producing a wealth of information that is providing novel insights into the microbial ecology of the environment and human health. However, these sequencing-based approaches produce large and complex datasets that require efficient and sensitive computational analysis workflows. Many recent tools for analyzing metagenomic-sequencing data have emerged, however, these approaches often suffer from issues of specificity, efficiency, and typically do not include a complete metagenomic analysis framework.ResultsWe present PathoScope 2.0, a complete bioinformatics framework for rapidly and accurately quantifying the proportions of reads from individual microbial strains present in metagenomic sequencing data from environmental or clinical samples. The pipeline performs all necessary computational analysis steps; including reference genome library extraction and indexing, read quality control and alignment, strain identification, and summarization and annotation of results. We rigorously evaluated PathoScope 2.0 using simulated data and data from the 2011 outbreak of Shiga-toxigenic Escherichia coli O104:H4.ConclusionsThe results show that PathoScope 2.0 is a complete, highly sensitive, and efficient approach for metagenomic analysis that outperforms alternative approaches in scope, speed, and accuracy. The PathoScope 2.0 pipeline software is freely available for download at: http://sourceforge.net/projects/pathoscope/.},
+author = {Changjin Hong and S. Manimaran and Ying Shen and Joseph F. Perez-Rogers and Allyson L. Byrd and E. Castro-Nallar and K. Crandall and W. Johnson},
+doi = {10.1186/2049-2618-2-33},
+pmid = {25225611},
+}
+
+@article{8ac4588254e7345e8a8501d59915193a3a80071b,
+title = {Determining the Longitudinal Compositional and Functional Changes to the Microbiota After RYGB Surgery},
+year = {2017},
+url = {https://www.semanticscholar.org/paper/8ac4588254e7345e8a8501d59915193a3a80071b},
+abstract = {Obesity has become an epidemic with more deaths attributed to being overweight and obese than underweight. Bariatric surgery is an effective means to achieve sustained weight loss and metabolic improvements when performed on morbidly obese individuals. Other studies have suggested that metabolic improvements are associated with gut microbial changes therefore we investigated the longer duration (9 year) effects of bariatric surgery on the microbiome of Rouxen-Y gastric bypass (RYGB) patients or vertical banded gastroplasty patients compared to weight matched subjects. Additionally, we investigated the effects of RYGB surgery on the microbiome of individual morbidly obese patients within a one year timeframe. RYGB and VBG surgery led to altered relative phylogenic abundances and differential abundancies in functional potential found at the gene and metabolic pathway level. These functional potential differences included the ability to transfer and use multiple carbohydrate based energy sources, an additional ability to metabolize protein and fatty acids and an increased ability to perform aerobic respiration.},
+author = {A. Tavakkoli},
+}

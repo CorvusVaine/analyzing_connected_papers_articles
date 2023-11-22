@@ -1,0 +1,400 @@
+@article{4a9ffc6c60602d05da62c762605b89d302cb4ae6,
+title = {CNN-MGP: Convolutional Neural Networks for Metagenomics Gene Prediction},
+year = {2018},
+url = {https://www.semanticscholar.org/paper/4a9ffc6c60602d05da62c762605b89d302cb4ae6},
+abstract = {Accurate gene prediction in metagenomics fragments is a computationally challenging task due to the short-read length, incomplete, and fragmented nature of the data. Most gene-prediction programs are based on extracting a large number of features and then applying statistical approaches or supervised classification approaches to predict genes. In our study, we introduce a convolutional neural network for metagenomics gene prediction (CNN-MGP) program that predicts genes in metagenomics fragments directly from raw DNA sequences, without the need for manual feature extraction and feature selection stages. CNN-MGP is able to learn the characteristics of coding and non-coding regions and distinguish coding and non-coding open reading frames (ORFs). We train 10 CNN models on 10 mutually exclusive datasets based on pre-defined GC content ranges. We extract ORFs from each fragment; then, the ORFs are encoded numerically and inputted into an appropriate CNN model based on the fragment-GC content. The output from the CNN is the probability that an ORF will encode a gene. Finally, a greedy algorithm is used to select the final gene list. Overall, CNN-MGP is effective and achieves a 91% accuracy on testing dataset. CNN-MGP shows the ability of deep learning to predict genes in metagenomics fragments, and it achieves an accuracy higher than or comparable to state-of-the-art gene-prediction programs that use pre-defined features.},
+author = {Amani A. Al-Ajlan and Achraf El Allali},
+doi = {10.1007/s12539-018-0313-4},
+pmid = {30588558},
+}
+
+@article{f10d57a72a004575328d7d378b1eb97590f1075c,
+title = {Predicting in-vitro Transcription Factor Binding Sites Using DNA Sequence + Shape},
+year = {2019},
+url = {https://www.semanticscholar.org/paper/f10d57a72a004575328d7d378b1eb97590f1075c},
+abstract = {Discovery of transcription factor binding sites (TFBSs) is essential for understanding the underlying binding mechanisms and cellular functions. Recently, Convolutional neural network (CNN) has succeeded in predicting TFBSs from the primary DNA sequences. In addition to DNA sequences, several evidences suggest that protein-DNA binding is partly mediated by properties of DNA shape. Although many methods have been proposed to jointly account for DNA sequences and shape properties in predicting TFBSs, they ignore the power of the combination of deep learning and DNA sequence + shape. Therefore we develop a deep-learning-based sequence + shape framework (DLBSS) in this paper, which appropriately integrates DNA sequences and shape properties, to better understand protein-DNA binding preference. This method uses a shared CNN to find their common patterns from DNA sequences and their corresponding shape features, which are then concatenated to compute a predicted value. Using 66 in-vitro datasets derived from universal protein binding microarrays (uPBMs), we show that our proposed method DLBSS significantly improves the performance of predicting TFBSs. In addition, we explain the reason why we should use the shared CNN, and explore the performance of DLBSS when using a deeper CNN, through a series of experiments.},
+author = {Qinhu Zhang and Zhen Shen and De-shuang Huang},
+doi = {10.1109/TCBB.2019.2947461},
+pmid = {31634140},
+}
+
+@article{99482908fefbcad8bfaeb03ce0493c3d0702bab3,
+title = {HiCPlus: Resolution Enhancement of Hi-C interaction heatmap},
+year = {2017},
+url = {https://www.semanticscholar.org/paper/99482908fefbcad8bfaeb03ce0493c3d0702bab3},
+abstract = {Motivation The Hi-C technology has become an efficient tool to measure the spatial organization of the genome. With the recent advance of 1Kb resolution Hi-C experiment, some of the essential regulatory features have been uncovered. However, most available Hi-C datasets are in coarse-resolution due to the extremely high cost for generating high-resolution data. Therefore, a computational method to maximum the usage of the current available Hi-C data is urgently desired. Results Inspired by the super-resolution image technique, we develop a computational approach to impute the high-resolution Hi-C data from low-resolution Hi-C data using the deep convolutional neural network. We hypothesize that the Hi-C interaction heatmap contains the repeating features, and develop an end-to-end framework to map these features from low-resolution Hi-C heatmap to high-resolution Hi-C heatmap at the feature level. Our approach successfully reconstructs the high-resolution Hi-C interaction map from the low-resolution counterpart, which also proves that the Hi-C interaction matrix is a combination of the regional features. Besides, our approach is highly expandable, and we can also increase prediction accuracy by incorporating ChIA-PET data. Availability Source code is publicly available at https://github.com/zhangyan32/HiCPlus Contact jtang@cse.sc.edu, fyue@hmc.psu.edu},
+author = {Yan Zhang and Lin An and Ming Hu and Jijun Tang and Feng Yue},
+doi = {10.1101/112631},
+}
+
+@article{d3ae61c0a6f4c2d729cec772526248171fb3deba,
+title = {A primer on deep learning in genomics},
+year = {2018},
+url = {https://www.semanticscholar.org/paper/d3ae61c0a6f4c2d729cec772526248171fb3deba},
+abstract = {Deep learning methods are a class of machine learning techniques capable of identifying highly complex patterns in large datasets. Here, we provide a perspective and primer on deep learning applications for genome analysis. We discuss successful applications in the fields of regulatory genomics, variant calling and pathogenicity scores. We include general guidance for how to effectively use deep learning methods as well as a practical guide to tools and resources. This primer is accompanied by an interactive online tutorial.This perspective presents a primer on deep learning applications for the genomics field. It includes a general guide for how to use deep learning and describes the current tools and resources that are available to the community.},
+author = {James Zou and M. Huss and Abubakar Abid and P. Mohammadi and A. Torkamani and A. Telenti},
+doi = {10.1038/s41588-018-0295-5},
+pmid = {30478442},
+}
+
+@article{c5c4e49f03f2dc63403537bd6f1a62d164409462,
+title = {Predicting RNA‐protein binding sites and motifs through combining local and global deep convolutional neural networks},
+year = {2018},
+url = {https://www.semanticscholar.org/paper/c5c4e49f03f2dc63403537bd6f1a62d164409462},
+abstract = {Motivation: RNA‐binding proteins (RBPs) take over 5‐10% of the eukaryotic proteome and play key roles in many biological processes, e.g. gene regulation. Experimental detection of RBP binding sites is still time‐intensive and high‐costly. Instead, computational prediction of the RBP binding sites using patterns learned from existing annotation knowledge is a fast approach. From the biological point of view, the local structure context derived from local sequences will be recognized by specific RBPs. However, in computational modeling using deep learning, to our best knowledge, only global representations of entire RNA sequences are employed. So far, the local sequence information is ignored in the deep model construction process. Results: In this study, we present a computational method iDeepE to predict RNA‐protein binding sites from RNA sequences by combining global and local convolutional neural networks (CNNs). For the global CNN, we pad the RNA sequences into the same length. For the local CNN, we split a RNA sequence into multiple overlapping fixed‐length subsequences, where each subsequence is a signal channel of the whole sequence. Next, we train deep CNNs for multiple subsequences and the padded sequences to learn high‐level features, respectively. Finally, the outputs from local and global CNNs are combined to improve the prediction. iDeepE demonstrates a better performance over state‐of‐the‐art methods on two large‐scale datasets derived from CLIP‐seq. We also find that the local CNN runs 1.8 times faster than the global CNN with comparable performance when using GPUs. Our results show that iDeepE has captured experimentally verified binding motifs. Availability and implementation: https://github.com/xypan1232/iDeepE Supplementary information: Supplementary data are available at Bioinformatics online.},
+author = {Xiaoyong Pan and Hongbin Shen},
+doi = {10.1093/bioinformatics/bty364},
+pmid = {29722865},
+}
+
+@article{ea23236a47ab54b3099753a4cdad1ed55678e24c,
+title = {Enhancing Hi-C data resolution with deep convolutional neural network HiCPlus},
+year = {2018},
+url = {https://www.semanticscholar.org/paper/ea23236a47ab54b3099753a4cdad1ed55678e24c},
+abstract = {Although Hi-C technology is one of the most popular tools for studying 3D genome organization, due to sequencing cost, the resolution of most Hi-C datasets are coarse and cannot be used to link distal regulatory elements to their target genes. Here we develop HiCPlus, a computational approach based on deep convolutional neural network, to infer high-resolution Hi-C interaction matrices from low-resolution Hi-C data. We demonstrate that HiCPlus can impute interaction matrices highly similar to the original ones, while only using 1/16 of the original sequencing reads. We show that the models learned from one cell type can be applied to make predictions in other cell or tissue types. Our work not only provides a computational framework to enhance Hi-C data resolution but also reveals features underlying the formation of 3D chromatin interactions.Despite its popularity for measuring the spatial organization of mammalian genomes, the resolution of most Hi-C datasets is coarse due to sequencing cost. Here, Zhang et al. develop HiCPlus, a computational approach based on deep convolutional neural network, to infer high-resolution Hi-C interaction matrices from low-resolution Hi-C data.},
+author = {Yan Zhang and Lin An and Jie Xu and B. Zhang and W. J. Zheng and Ming Hu and Jijun Tang and Feng Yue},
+doi = {10.1038/s41467-018-03113-2},
+pmid = {29467363},
+}
+
+@article{6237ddd69eaa8401c60d340523130102d9a29c9e,
+title = {Exploring variable-length features (motifs) for predicting binding sites through interpretable deep neural networks},
+year = {2021},
+url = {https://www.semanticscholar.org/paper/6237ddd69eaa8401c60d340523130102d9a29c9e},
+abstract = {},
+author = {Chandra Mohan Dasari and Santhosh Amilpur and Raju Bhukya},
+doi = {10.1016/j.engappai.2021.104485},
+}
+
+@article{a1379b953cd1a573b0eb162730cb954e6976d30f,
+title = {Prediction of RNA-protein sequence and structure binding preferences using deep convolutional and recurrent neural networks},
+year = {2017},
+url = {https://www.semanticscholar.org/paper/a1379b953cd1a573b0eb162730cb954e6976d30f},
+abstract = {BackgroundRNA regulation is significantly dependent on its binding protein partner, known as the RNA-binding proteins (RBPs). Unfortunately, the binding preferences for most RBPs are still not well characterized. Interdependencies between sequence and secondary structure specificities is challenging for both predicting RBP binding sites and accurate sequence and structure motifs detection.ResultsIn this study, we propose a deep learning-based method, iDeepS, to simultaneously identify the binding sequence and structure motifs from RNA sequences using convolutional neural networks (CNNs) and a bidirectional long short term memory network (BLSTM). We first perform one-hot encoding for both the sequence and predicted secondary structure, to enable subsequent convolution operations. To reveal the hidden binding knowledge from the observed sequences, the CNNs are applied to learn the abstract features. Considering the close relationship between sequence and predicted structures, we use the BLSTM to capture possible long range dependencies between binding sequence and structure motifs identified by the CNNs. Finally, the learned weighted representations are fed into a classification layer to predict the RBP binding sites. We evaluated iDeepS on verified RBP binding sites derived from large-scale representative CLIP-seq datasets. The results demonstrate that iDeepS can reliably predict the RBP binding sites on RNAs, and outperforms the state-of-the-art methods. An important advantage compared to other methods is that iDeepS can automatically extract both binding sequence and structure motifs, which will improve our understanding of the mechanisms of binding specificities of RBPs.ConclusionOur study shows that the iDeepS method identifies the sequence and structure motifs to accurately predict RBP binding sites. iDeepS is available at https://github.com/xypan1232/iDeepS.},
+author = {Xiaoyong Pan and P. Rijnbeek and Junchi Yan and Hongbin Shen},
+doi = {10.1186/s12864-018-4889-1},
+pmid = {29970003},
+}
+
+@article{3ad8dcb6d3fe38f7e8061bff76dd431c4c4776b8,
+title = {A Random Forest Classifier for Prokaryotes Gene Prediction},
+year = {2019},
+url = {},
+abstract = {Metagenomics is related to the study of microbial genomes, known as metagenomes, describing them through their microorganisms compositions, relationships and activities, thus allowing a greater knowledge about the fundamentals of life and the broad microbial diversity. One way to accomplish such task is by analyzing information from genes contained in metagenomes. The process to identify genes in DNA sequences are usually called gene prediction. This work presents a new gene predictor using the Random Forest classifier. The proposed model obtaining better classification results when compared to state-of-the-art gene prediction tools widely used by the bioinformatics community. Random Forest presented more robust results, being 27% better than Prodigal and 20% better than FragGeneScan w.r.t AUC values while using the independent test set. Feature engineering has been revisited in the gene prediction problem, reinforcing the importance of careful evaluation of assembly a good feature set. K-mer counting features can been seen as the fundamental model building blocks to develop robust gene predictors.},
+author = {Raíssa Lorena Silva da Silva and Kleber Padovani de Souza and Fabiana Rodrigues de Góes and Ronnie Cley de Oliveira Alves},
+}
+
+@article{0ad06f4278f342537b7a2e222cfbc6b749ebd972,
+title = {Gene and translation initiation site prediction in metagenomic sequences},
+year = {2012},
+url = {https://www.semanticscholar.org/paper/0ad06f4278f342537b7a2e222cfbc6b749ebd972},
+abstract = {MOTIVATION
+Gene prediction in metagenomic sequences remains a difficult problem. Current sequencing technologies do not achieve sufficient coverage to assemble the individual genomes in a typical sample; consequently, sequencing runs produce a large number of short sequences whose exact origin is unknown. Since these sequences are usually smaller than the average length of a gene, algorithms must make predictions based on very little data.
+
+
+RESULTS
+We present MetaProdigal, a metagenomic version of the gene prediction program Prodigal, that can identify genes in short, anonymous coding sequences with a high degree of accuracy. The novel value of the method consists of enhanced translation initiation site identification, ability to identify sequences that use alternate genetic codes and confidence values for each gene call. We compare the results of MetaProdigal with other methods and conclude with a discussion of future improvements.
+
+
+AVAILABILITY
+The Prodigal software is freely available under the General Public License from http://code.google.com/p/prodigal/.},
+author = {D. Hyatt and P. LoCascio and L. Hauser and E. Uberbacher},
+doi = {10.1093/bioinformatics/bts429},
+pmid = {22796954},
+}
+
+@article{4fff606f711061f3599a8950feff97b4e7859e90,
+title = {Weakly-Supervised Convolutional Neural Network Architecture for Predicting Protein-DNA Binding},
+year = {2020},
+url = {https://www.semanticscholar.org/paper/4fff606f711061f3599a8950feff97b4e7859e90},
+abstract = {Although convolutional neural networks (CNN) have outperformed conventional methods in predicting the sequence specificities of protein-DNA binding in recent years, they do not take full advantage of the intrinsic weakly-supervised information of DNA sequences that a bound sequence may contain multiple TFBS(s). Here, we propose a weakly-supervised convolutional neural network architecture (WSCNN), combining multiple-instance learning (MIL) with CNN, to further boost the performance of predicting protein-DNA binding. WSCNN first divides each DNA sequence into multiple overlapping subsequences (instances) with a sliding window, and then separately models each instance using CNN, and finally fuses the predicted scores of all instances in the same bag using four fusion methods, including <italic>Max</italic>, <italic>Average</italic>, <italic>Linear Regression</italic>, and <italic>Top-Bottom Instances</italic>. The experimental results on <italic>in vivo</italic> and <italic>in vitro</italic> datasets illustrate the performance of the proposed approach. Moreover, models built on <italic>in vitro</italic> data using WSCNN can predict <italic>in vivo</italic> protein-DNA binding with good accuracy. In addition, we give a quantitative analysis of the importance of the reverse-complement mode in predicting <italic>in vivo</italic> protein-DNA binding, and explain why not directly use advanced pooling layers to combine MIL with CNN, through a series of experiments.},
+author = {Qinhu Zhang and Lin Zhu and Wenzheng Bao and De-shuang Huang},
+doi = {10.1109/TCBB.2018.2864203},
+pmid = {30106688},
+}
+
+@article{6a884372e87d80541d29eb176e6f56c6a1f4586c,
+title = {Comprehensive evaluation of deep learning architectures for prediction of DNA/RNA sequence binding specificities},
+year = {2019},
+url = {https://www.semanticscholar.org/paper/6a884372e87d80541d29eb176e6f56c6a1f4586c},
+abstract = {Abstract Motivation Deep learning architectures have recently demonstrated their power in predicting DNA- and RNA-binding specificity. Existing methods fall into three classes: Some are based on convolutional neural networks (CNNs), others use recurrent neural networks (RNNs) and others rely on hybrid architectures combining CNNs and RNNs. However, based on existing studies the relative merit of the various architectures remains unclear. Results In this study we present a systematic exploration of deep learning architectures for predicting DNA- and RNA-binding specificity. For this purpose, we present deepRAM, an end-to-end deep learning tool that provides an implementation of a wide selection of architectures; its fully automatic model selection procedure allows us to perform a fair and unbiased comparison of deep learning architectures. We find that deeper more complex architectures provide a clear advantage with sufficient training data, and that hybrid CNN/RNN architectures outperform other methods in terms of accuracy. Our work provides guidelines that can assist the practitioner in choosing an appropriate network architecture, and provides insight on the difference between the models learned by convolutional and recurrent networks. In particular, we find that although recurrent networks improve model accuracy, this comes at the expense of a loss in the interpretability of the features learned by the model. Availability and implementation The source code for deepRAM is available at https://github.com/MedChaabane/deepRAM. Supplementary information Supplementary data are available at Bioinformatics online.},
+author = {A. Trabelsi and Mohamed Chaabane and A. Ben-Hur},
+doi = {10.1093/bioinformatics/btz339},
+pmid = {31510640},
+arxivid = {1901.10526},
+}
+
+@article{7d5d2492edbad301787d926d5dd0c95a56da8dd9,
+title = {Janggu - Deep learning for genomics},
+year = {2019},
+url = {https://www.semanticscholar.org/paper/7d5d2492edbad301787d926d5dd0c95a56da8dd9},
+abstract = {Motivation In recent years, numerous applications have demonstrated the potential of deep learning for an improved understanding of biological processes. However, most deep learning tools developed so far are designed to address a specific question on a fixed dataset and/or by a fixed model architecture. Adapting these models to integrate new datasets or to address different hypotheses can lead to considerable software engineering effort. To address this aspect we have built Janggu, a python library that facilitates deep learning for genomics applications. Results Janggu aims to ease data acquisition and model evaluation in multiple ways. Among its key features are special dataset objects, which form a unified and flexible data acquisition and pre-processing framework for genomics data that enables streamlining of future research applications through reusable components. Through a numpy-like interface, the dataset objects are directly compatible with popular deep learning libraries, including keras. Furthermore, Janggu offers the possibility to visualize predictions as genomic tracks or by exporting them to the BIGWIG format. We illustrate the functionality of Janggu on several deep learning genomics applications. First, we evaluate different model topologies for the task of predicting binding sites for the transcription factor JunD. Second, we demonstrate the framework on published models for predicting chromatin effects. Third, we show that promoter usage measured by CAGE can be predicted using DNase hyper-sensitivity, histone modifications and DNA sequence features. We improve the performance of these models due to a novel feature in Janggu that allows us to include high-order sequence features. We believe that Janggu will help to significantly reduce repetitive programming overhead for deep learning applications in genomics, while at the same time enabling computational biologists to assess biological hypotheses more rapidly. Availability Janggu is freely available under a GPL-v3 license on https://github.com/BIMSBbioinfo/janggu or via https://pypi.org/project/janggu},
+author = {W. Kopp and Remo Monti and Annalaura Tamburrini and U. Ohler and A. Akalin},
+doi = {10.1101/700450},
+}
+
+@article{c2382c00985d2054d1becb0aaad191c326d85bcf,
+title = {High-Order Convolutional Neural Network Architecture for Predicting DNA-Protein Binding Sites},
+year = {2019},
+url = {https://www.semanticscholar.org/paper/c2382c00985d2054d1becb0aaad191c326d85bcf},
+abstract = {Although Deep learning algorithms have outperformed conventional methods in predicting the sequence specificities of DNA-protein binding, they lack to consider the dependencies among nucleotides and the diverse binding lengths for different transcription factors (TFs). To address the above two limitations simultaneously, in this paper, we propose a high-order convolutional neural network architecture (HOCNN), which employs a high-order encoding method to build high-order dependencies among nucleotides, and a multi-scale convolutional layer to capture the motif features of different length. The experimental results on real ChIP-seq datasets show that the proposed method outperforms the state-of-the-art deep learning method (DeepBind) in the motif discovery task. In addition, we provide further insights about the importance of introducing additional convolutional kernels and the degeneration problem of importing high-order in the motif discovery task.},
+author = {Qinhu Zhang and Lin Zhu and De-shuang Huang},
+doi = {10.1109/TCBB.2018.2819660},
+pmid = {29993783},
+}
+
+@article{6a5d4e8a5214e60b4fdd4f346844e450c6c1acc4,
+title = {Improving the Quantification of DNA Sequences Using Evolutionary Information Based on Deep Learning},
+year = {2019},
+url = {https://www.semanticscholar.org/paper/6a5d4e8a5214e60b4fdd4f346844e450c6c1acc4},
+abstract = {It is known that over 98% of the human genome is non-coding, and 93% of disease associated variants are located in these regions. Therefore, understanding the function of these regions is important. However, this task is challenging as most of these regions are not well understood in terms of their functions. In this paper, we introduce a novel computational model based on deep neural networks, called DQDNN, for quantifying the function of non-coding DNA regions. This model combines convolution layers for capturing regularity motifs at multiple scales and recurrent layers for capturing long term dependencies between the captured motifs. In addition, we show that integrating evolutionary information with raw genomic sequences improves the performance of the predictor significantly. The proposed model outperforms the state-of-the-art ones using raw genomics sequences only and also by integrating evolutionary information with raw genomics sequences. More specifically, the proposed model improves 96.9% and 98% of the targets in terms of area under the receiver operating characteristic curve and the precision-recall curve, respectively. In addition, the proposed model improved the prioritization of functional variants of expression quantitative trait loci (eQTLs) compared with the state-of-the-art models.},
+author = {Hilal Tayara and K. Chong},
+doi = {10.3390/cells8121635},
+pmid = {31847308},
+}
+
+@article{6b76c8fb0e26e7cd18c88e1be968dcf6bcf54d0b,
+title = {Genome annotation across species using deep convolutional neural networks},
+year = {2020},
+url = {https://www.semanticscholar.org/paper/6b76c8fb0e26e7cd18c88e1be968dcf6bcf54d0b},
+abstract = {Application of deep neural network is a rapidly expanding field now reaching many disciplines including genomics. In particular, convolutional neural networks have been exploited for identifying the functional role of short genomic sequences. These approaches rely on gathering large sets of sequences with known functional role, extracting those sequences from whole-genome-annotations. These sets are then split into learning, test and validation sets in order to train the networks. While the obtained networks perform well on validation sets, they often perform poorly when applied on whole genomes in which the ratio of positive over negative examples can be very different than in the training set. We here address this issue by assessing the genome-wide performance of networks trained with sets exhibiting different ratios of positive to negative examples. As a case study, we use sequences encompassing gene starts from the RefGene database as positive examples and random genomic sequences as negative examples. We then demonstrate that models trained using data from one organism can be used to predict gene-start sites in a related species, when using training sets providing good genome-wide performance. This cross-species application of convolutional neural networks provides a new way to annotate any genome from existing high-quality annotations in a related reference species. It also provides a way to determine whether the sequence motifs recognised by chromatin-associated proteins in different species are conserved or not.},
+author = {G. Khodabandelou and Etienne Routhier and J. Mozziconacci},
+doi = {10.7717/peerj-cs.278},
+pmid = {33816929},
+}
+
+@article{fba84b16c8581ffb830900b079f2e922c16dcd19,
+title = {Gene Prediction in Metagenomic Fragments with Deep Learning},
+year = {2017},
+url = {https://www.semanticscholar.org/paper/fba84b16c8581ffb830900b079f2e922c16dcd19},
+abstract = {Next generation sequencing technologies used in metagenomics yield numerous sequencing fragments which come from thousands of different species. Accurately identifying genes from metagenomics fragments is one of the most fundamental issues in metagenomics. In this article, by fusing multifeatures (i.e., monocodon usage, monoamino acid usage, ORF length coverage, and Z-curve features) and using deep stacking networks learning model, we present a novel method (called Meta-MFDL) to predict the metagenomic genes. The results with 10 CV and independent tests show that Meta-MFDL is a powerful tool for identifying genes from metagenomic fragments.},
+author = {Shaowu Zhang and Xiang-Yang Jin and Teng Zhang},
+doi = {10.1155/2017/4740354},
+pmid = {29250541},
+}
+
+@article{dd86f2af6b9a32979a62c316797ca4b4876b69b2,
+title = {A Hybrid Deep Neural Network for the Prediction of In-Vivo Protein-DNA Binding by Combining Multiple-Instance Learning},
+year = {2021},
+url = {https://www.semanticscholar.org/paper/dd86f2af6b9a32979a62c316797ca4b4876b69b2},
+abstract = {},
+author = {Yue Zhang and Yuehui Chen and Wenzheng Bao and Yi Cao},
+doi = {10.1007/978-3-030-84532-2_34},
+}
+
+@article{d4d000726caa36fb133db22b448ff7df30ddbae7,
+title = {Gene prediction in metagenomic fragments based on the SVM algorithm},
+year = {2011},
+url = {https://www.semanticscholar.org/paper/d4d000726caa36fb133db22b448ff7df30ddbae7},
+abstract = {BackgroundMetagenomic sequencing is becoming a powerful technology for exploring micro-ogranisms from various environments, such as human body, without isolation and cultivation. Accurately identifying genes from metagenomic fragments is one of the most fundamental issues.ResultsIn this article, we present a novel gene prediction method named MetaGUN for metagenomic fragments based on a machine learning approach of SVM. It implements in a three-stage strategy to predict genes. Firstly, it classifies input fragments into phylogenetic groups by a k-mer based sequence binning method. Then, protein-coding sequences are identified for each group independently with SVM classifiers that integrate entropy density profiles (EDP) of codon usage, translation initiation site (TIS) scores and open reading frame (ORF) length as input patterns. Finally, the TISs are adjusted by employing a modified version of MetaTISA. To identify protein-coding sequences, MetaGun builds the universal module and the novel module. The former is based on a set of representative species, while the latter is designed to find potential functionary DNA sequences with conserved domains.ConclusionsComparisons on artificial shotgun fragments with multiple current metagenomic gene finders show that MetaGUN predicts better results on both 3' and 5' ends of genes with fragments of various lengths. Especially, it makes the most reliable predictions among these methods. As an application, MetaGUN was used to predict genes for two samples of human gut microbiome. It identifies thousands of additional genes with significant evidences. Further analysis indicates that MetaGUN tends to predict more potential novel genes than other current metagenomic gene finders.},
+author = {Yongchu Liu and Jiangtao Guo and Huaiqiu Zhu},
+doi = {10.1186/1471-2105-14-S5-S12},
+pmid = {23735199},
+}
+
+@article{db43befa3caa1107e4c55f300a85f5ff9b1fe445,
+title = {Identifying Core Operons in Metagenomic Data},
+year = {2019},
+url = {https://www.semanticscholar.org/paper/db43befa3caa1107e4c55f300a85f5ff9b1fe445},
+abstract = {An operon is a functional unit of DNA whose genes are co-transcribed on polycistronic mRNA, in a co-regulated fashion. Operons are a powerful mechanism of introducing functional complexity in bacteria, and are therefore of interest in microbial genetics, physiology, biochemistry, and evolution. Here we present a Pipeline for Operon Exploration in Metagenomes or POEM. At the heart of POEM lies the concept of a core operon, a functional unit enabled by a predicted operon in a metagenome. Using a series of benchmarks, we show the high accuracy of POEM, and demonstrate its use on a human gut metagenome sample. We conclude that POEM is a useful tool for analyzing metagenomes beyond the genomic level, and for identifying multi-gene functionalities and possible neofunctionalization in metagenomes. Availability: https://github.com/Rinoahu/POEM_py3k},
+author = {Xiao Hu and I. Friedberg},
+doi = {10.1101/2019.12.20.885269},
+}
+
+@article{ac7c41d02df429509ac68c6ea0fde3911ff7c2e3,
+title = {The Effect of Machine Learning Algorithms on Metagenomics Gene Prediction},
+year = {2018},
+url = {https://www.semanticscholar.org/paper/ac7c41d02df429509ac68c6ea0fde3911ff7c2e3},
+abstract = {The development of next generation sequencing facilitates the study of metagenomics. Computational gene prediction aims to find the location of genes in a given DNA sequence. Gene prediction in metagenomics is a challenging task because of the short and fragmented nature of the data. Our previous framework minimum redundancy maximum relevance - support vector machines (mRMR-SVM) produced promising results in metagenomics gene prediction. In this paper, we review available metagenomics gene prediction programs and study the effect of the machine learning approach on gene prediction by altering the underlining machine learning algorithm in our previous framework. Overall, SVM produces the highest accuracy based on tests performed on a simulated dataset.},
+author = {Amani A. Al-Ajlan and Achraf El Allali},
+doi = {10.1145/3309129.3309136},
+}
+
+@article{1cf5445bee284c0c6fb834f524f082f4af256856,
+title = {Deep learning models for bacteria taxonomic classification of metagenomic data},
+year = {2018},
+url = {https://www.semanticscholar.org/paper/1cf5445bee284c0c6fb834f524f082f4af256856},
+abstract = {BackgroundAn open challenge in translational bioinformatics is the analysis of sequenced metagenomes from various environmental samples. Of course, several studies demonstrated the 16S ribosomal RNA could be considered as a barcode for bacteria classification at the genus level, but till now it is hard to identify the correct composition of metagenomic data from RNA-seq short-read data. 16S short-read data are generated using two next generation sequencing technologies, i.e. whole genome shotgun (WGS) and amplicon (AMP); typically, the former is filtered to obtain short-reads belonging to a 16S shotgun (SG), whereas the latter take into account only some specific 16S hypervariable regions. The above mentioned two sequencing technologies, SG and AMP, are used alternatively, for this reason in this work we propose a deep learning approach for taxonomic classification of metagenomic data, that can be employed for both of them.ResultsTo test the proposed pipeline, we simulated both SG and AMP short-reads, from 1000 16S full-length sequences. Then, we adopted a k-mer representation to map sequences as vectors into a numerical space. Finally, we trained two different deep learning architecture, i.e., convolutional neural network (CNN) and deep belief network (DBN), obtaining a trained model for each taxon. We tested our proposed methodology to find the best parameters configuration, and we compared our results against the classification performances provided by a reference classifier for bacteria identification, known as RDP classifier. We outperformed the RDP classifier at each taxonomic level with both architectures. For instance, at the genus level, both CNN and DBN reached 91.3% of accuracy with AMP short-reads, whereas RDP classifier obtained 83.8% with the same data.ConclusionsIn this work, we proposed a 16S short-read sequences classification technique based on k-mer representation and deep learning architecture, in which each taxon (from phylum to genus) generates a classification model. Experimental results confirm the proposed pipeline as a valid approach for classifying bacteria sequences; for this reason, our approach could be integrated into the most common tools for metagenomic analysis. According to obtained results, it can be successfully used for classifying both SG and AMP data.},
+author = {A. Fiannaca and L. Paglia and M. L. Rosa and Giosuè Lo Bosco and G. Renda and R. Rizzo and S. Gaglio and A. Urso},
+doi = {10.1186/s12859-018-2182-6},
+pmid = {30066629},
+}
+
+@article{3635dd111fbd69f2939becb5542738a8bed485aa,
+title = {Feature selection for gene prediction in metagenomic fragments},
+year = {2018},
+url = {https://www.semanticscholar.org/paper/3635dd111fbd69f2939becb5542738a8bed485aa},
+abstract = {BackgroundComputational approaches, specifically machine-learning techniques, play an important role in many metagenomic analysis algorithms, such as gene prediction. Due to the large feature space, current de novo gene prediction algorithms use different combinations of classification algorithms to distinguish between coding and non-coding sequences.ResultsIn this study, we apply a filter method to select relevant features from a large set of known features instead of combining them using linear classifiers or ignoring their individual coding potential. We use minimum redundancy maximum relevance (mRMR) to select the most relevant features. Support vector machines (SVM) are trained using these features, and the classification score is transformed into the posterior probability of the coding class. A greedy algorithm uses the probability of overlapped candidate genes to select the final genes. Instead of using one model for all sequences, we train an ensemble of SVM models on mutually exclusive datasets based on GC content and use the appropriated model to classify candidate genes based on their read’s GC content.ConclusionOur proposed algorithm achieves an improvement over some existing algorithms. mRMR produces promising results in gene prediction. It improves classification performance and feature interpretation. Our research serves as a basis for future studies on feature selection for gene prediction.},
+author = {Amani A. Al-Ajlan and Achraf El Allali},
+doi = {10.1186/s13040-018-0170-z},
+pmid = {30026811},
+}
+
+@article{0db4c15424b8fd47e6ca51eeba3b67adc4290171,
+title = {Gene Prediction in Metagenomic Fragments with Orphelia: A Large‐Scale Machine Learning Approach},
+year = {2011},
+url = {https://www.semanticscholar.org/paper/0db4c15424b8fd47e6ca51eeba3b67adc4290171},
+abstract = {},
+author = {Katharina Hoff and M. Tech and T. Lingner and R. Daniel and B. Morgenstern and P. Meinicke},
+doi = {10.1002/9781118010518.CH41},
+}
+
+@article{a1f13ab89447325c28ccf9fefcfed4cdf62d1d29,
+title = {MetaGeneMark-2: Improved Gene Prediction in Metagenomes},
+year = {2022},
+url = {https://www.semanticscholar.org/paper/a1f13ab89447325c28ccf9fefcfed4cdf62d1d29},
+abstract = {Accurate prediction of protein-coding genes in metagenomic contigs presents a well-known challenge. Particularly difficult is to identify short and incomplete genes as well as positions of translation initiation sites. It is frequently assumed that initiation of translation in prokaryotes is controlled by a ribosome binding site (RBS), a sequence with the Shine-Dalgarno (SD) consensus situated in the 5’ UTR. However, ∼30% of the 5,007 genomes, representing the RefSeq collection of prokaryotic genomes, have either non-SD RBS sequences or no RBS site due to physical absence of the 5’ UTR (the case of leaderless transcription). Predictions of the gene 3’ ends are much more accurate; still, errors could occur due to the use of incorrect genetic code. Hence, an effective gene finding algorithm would identify true genetic code in a process of the sequence analysis. In this work prediction of gene starts was improved by inferring the GC content dependent generating functions for RBS sequences as well as for promoter sequences involved in leaderless transcription. An additional feature of the algorithm was the ability to identify alternative genetic code defined by a reassignment of the TGA stop codon (the only stop codon reassignment type known in prokaryotes). It was demonstrated that MetaGeneMark-2 made more accurate gene predictions in metagenomic sequences than several existing state-of-the-art tools.},
+author = {Karl Gemayel and A. Lomsadze and M. Borodovsky},
+doi = {10.1101/2022.07.25.500264},
+}
+
+@article{db06bbc650544686fbcfbcf6404034ef0a9c8901,
+title = {Motif Discovery via Convolutional Networks with K-mer Embedding},
+year = {2019},
+url = {https://www.semanticscholar.org/paper/db06bbc650544686fbcfbcf6404034ef0a9c8901},
+abstract = {With the rapid development of deep learning, some discriminative motif discovery methods based on deep neural network are gradually becoming the mainstream, which also bringing huge improvement of prediction accuracy. In this paper, we propose a convolutional neural network based architecture (eCNN), combining embedding layer with GloVe. Firstly, eCNN divides each single sequence of ChIP-seq datasets into multiple subsequences called k-mers by a sliding window, and then encoding k-mers into a relatively low dimension vectors by GloVe, and finally scores each vector using multiple convolutional networks. The experiment shows that our architecture can get good results on the task of motif discovery.},
+author = {Dailun Wang and Qinhu Zhang and Chang-an Yuan and Xiao Qin and Zhi-Kai Huang and L. Shang},
+doi = {10.1007/978-3-030-26969-2_36},
+}
+
+@article{11fba309ece1033bad74ee47d39037499fab6abb,
+title = {Representation learning of genomic sequence motifs with convolutional neural networks},
+year = {2018},
+url = {https://www.semanticscholar.org/paper/11fba309ece1033bad74ee47d39037499fab6abb},
+abstract = {Although convolutional neural networks (CNNs) have been applied to a variety of computational genomics problems, there remains a large gap in our understanding of how they build representations of regulatory genomic sequences. Here we perform systematic experiments on synthetic sequences to reveal how CNN architecture, specifically convolutional filter size and max-pooling, influences the extent that sequence motif representations are learned by first layer filters. We find that CNNs designed to foster hierarchical representation learning of sequence motifs - assembling partial features into whole features in deeper layers - tend to learn distributed representations, i.e. partial motifs. On the other hand, CNNs that are designed to limit the ability to hierarchically build sequence motif representations in deeper layers tend to learn more interpretable localist representations, i.e. whole motifs. We then validate that this representation learning principle established from synthetic sequences generalizes to in vivo sequences.},
+author = {Peter K. Koo and S. Eddy},
+doi = {10.1101/362756},
+pmid = {31856220},
+}
+
+@article{cf3196a8405e2a0c1359523e6597fbbfbbab0d40,
+title = {A deep convolutional neural network approach for predicting phenotypes from genotypes},
+year = {2018},
+url = {https://www.semanticscholar.org/paper/cf3196a8405e2a0c1359523e6597fbbfbbab0d40},
+abstract = {Main conclusionDeep learning is a promising technology to accurately select individuals with high phenotypic values based on genotypic data.AbstractGenomic selection (GS) is a promising breeding strategy by which the phenotypes of plant individuals are usually predicted based on genome-wide markers of genotypes. In this study, we present a deep learning method, named DeepGS, to predict phenotypes from genotypes. Using a deep convolutional neural network, DeepGS uses hidden variables that jointly represent features in genotypes when making predictions; it also employs convolution, sampling and dropout strategies to reduce the complexity of high-dimensional genotypic data. We used a large GS dataset to train DeepGS and compared its performance with other methods. The experimental results indicate that DeepGS can be used as a complement to the commonly used RR-BLUP in the prediction of phenotypes from genotypes. The complementarity between DeepGS and RR-BLUP can be utilized using an ensemble learning approach for more accurately selecting individuals with high phenotypic values, even for the absence of outlier individuals and subsets of genotypic markers. The source codes of DeepGS and the ensemble learning approach have been packaged into Docker images for facilitating their applications in different GS programs.},
+author = {Wenlong Ma and Zhixu Qiu and Jie Song and Jiajia Li and Qian Cheng and Jingjing Zhai and Chuang Ma},
+doi = {10.1007/s00425-018-2976-9},
+pmid = {30101399},
+}
+
+@article{d5a27da66bfa93806d21d01752b1bcd9d2f60e5a,
+title = {A comparison of classification methods for gene prediction in metagenomics},
+year = {2014},
+url = {https://www.semanticscholar.org/paper/d5a27da66bfa93806d21d01752b1bcd9d2f60e5a},
+abstract = {Metagenomics is an emerging field in which the power of genome analysis is applied to entire communities of microbes. It is focused on the understanding of the mixture of genes (genomes) in a community as whole. The gene prediction task is a well-known problem in genomics, and it remains an interesting computational challenge in metagenomics too. A large variety of classifiers has been developed for gene prediction though there is lack of an empirical evaluation regarding the core machine learning techniques implemented in these tools. In this work we present an empirical performance comparison of different classification strategies for gene prediction in metagenomic data. This comparison takes into account distinct supervised learning strategies: one lazy learner, two eager-learners and one ensemble learner. The ensemble-based strategy has achieved the overall best result and it is competitive with the prediction baselines of well-known metagenomics tools.},
+author = {F. Góes and Ronnie Alves and Leandro Corrêa and C. Chaparro and L. Thom},
+}
+
+@article{aa6f9497bddf4506f7177130dd3f4ab43b1ef963,
+title = {Modeling in-vivo protein-DNA binding by combining multiple-instance learning with a hybrid deep neural network},
+year = {2019},
+url = {https://www.semanticscholar.org/paper/aa6f9497bddf4506f7177130dd3f4ab43b1ef963},
+abstract = {Modeling in-vivo protein-DNA binding is not only fundamental for further understanding of the regulatory mechanisms, but also a challenging task in computational biology. Deep-learning based methods have succeed in modeling in-vivo protein-DNA binding, but they often (1) follow the fully supervised learning framework and overlook the weakly supervised information of genomic sequences that a bound DNA sequence may has multiple TFBS(s), and, (2) use one-hot encoding to encode DNA sequences and ignore the dependencies among nucleotides. In this paper, we propose a weakly supervised framework, which combines multiple-instance learning with a hybrid deep neural network and uses k-mer encoding to transform DNA sequences, for modeling in-vivo protein-DNA binding. Firstly, this framework segments sequences into multiple overlapping instances using a sliding window, and then encodes all instances into image-like inputs of high-order dependencies using k-mer encoding. Secondly, it separately computes a score for all instances in the same bag using a hybrid deep neural network that integrates convolutional and recurrent neural networks. Finally, it integrates the predicted values of all instances as the final prediction of this bag using the Noisy-and method. The experimental results on in-vivo datasets demonstrate the superior performance of the proposed framework. In addition, we also explore the performance of the proposed framework when using k-mer encoding, and demonstrate the performance of the Noisy-and method by comparing it with other fusion methods, and find that adding recurrent layers can improve the performance of the proposed framework.},
+author = {Qinhu Zhang and Zhen Shen and De-shuang Huang},
+doi = {10.1038/s41598-019-44966-x},
+pmid = {31186519},
+}
+
+@article{49df3686e85243b94108f76e8fb35bb101961c89,
+title = {A New Method Combining DNA Shape Features to Improve the Prediction Accuracy of Transcription Factor Binding Sites},
+year = {2020},
+url = {https://www.semanticscholar.org/paper/49df3686e85243b94108f76e8fb35bb101961c89},
+abstract = {},
+author = {Siguo Wang and Zhen Shen and Ying He and Qinhu Zhang and Chang-an Yuan and Xiao Qin and Hongjie Wu and Xingming Zhao},
+doi = {10.1007/978-3-030-60802-6_8},
+}
+
+@article{5ff7bd78a85fbdd277b35c690547ecc7afaf909c,
+title = {DeepGS: Predicting phenotypes from genotypes using Deep Learning},
+year = {2017},
+url = {https://www.semanticscholar.org/paper/5ff7bd78a85fbdd277b35c690547ecc7afaf909c},
+abstract = {Motivation Genomic selection (GS) is a new breeding strategy by which the phenotypes of quantitative traits are usually predicted based on genome-wide markers of genotypes using conventional statistical models. However, the GS prediction models typically make strong assumptions and perform linear regression analysis, limiting their accuracies since they do not capture the complex, non-linear relationships within genotypes, and between genotypes and phenotypes. Results We present a deep learning method, named DeepGS, to predict phenotypes from genotypes. Using a deep convolutional neural network, DeepGS uses hidden variables that jointly represent features in genotypic markers when making predictions; it also employs convolution, sampling and dropout strategies to reduce the complexity of high-dimensional marker data. We used a large GS dataset to train DeepGS and compare its performance with other methods. In terms of mean normalized discounted cumulative gain value, DeepGS achieves an increase of 27.70%~246.34% over a conventional neural network in selecting top-ranked 1% individuals with high phenotypic values for the eight tested traits. Additionally, compared with the widely used method RR-BLUP, DeepGS still yields a relative improvement ranging from 1.44% to 65.24%. Through extensive simulation experiments, we also demonstrated the effectiveness and robustness of DeepGS for the absent of outlier individuals and subsets of genotypic markers. Finally, we illustrated the complementarity of DeepGS and RR-BLUP with an ensemble learning approach for further improving prediction performance. Availability DeepGS is provided as an open source R package available at https://github.com/cma2015/DeepGS.},
+author = {Wenlong Ma and Zhixu Qiu and Jie Song and Qian Cheng and Chuang Ma},
+doi = {10.1101/241414},
+}
+
+@article{df58a26c6d26f001bbfd472a68d0a25947a7d7db,
+title = {Approximate Bayesian neural networks in genomic prediction},
+year = {2018},
+url = {https://www.semanticscholar.org/paper/df58a26c6d26f001bbfd472a68d0a25947a7d7db},
+abstract = {BackgroundGenome-wide marker data are used both in phenotypic genome-wide association studies (GWAS) and genome-wide prediction (GWP). Typically, such studies include high-dimensional data with thousands to millions of single nucleotide polymorphisms (SNPs) recorded in hundreds to a few thousands individuals. Different machine-learning approaches have been used in GWAS and GWP effectively, but the use of neural networks (NN) and deep-learning is still scarce. This study presents a NN model for genomic SNP data.ResultsWe show, using both simulated and real pig data, that regularization is obtained using weight decay and dropout, and results in an approximate Bayesian (ABNN) model that can be used to obtain model averaged posterior predictions. The ABNN model is implemented in mxnet and shown to yield better prediction accuracy than genomic best linear unbiased prediction and Bayesian LASSO. The mean squared error was reduced by at least 6.5% in the simulated data and by at least 1% in the real data. Moreover, by comparing NN of different complexities, our results confirm that a shallow model with one layer, one neuron, one-hot encoding and a linear activation function performs better than more complex models.ConclusionsThe ABNN model provides a computationally efficient approach with good prediction performance and in which the weight components can also provide information on the importance of the SNPs. Hence, ABNN is suitable for both GWP and GWAS.},
+author = {P. Waldmann},
+doi = {10.1186/s12711-018-0439-1},
+pmid = {30577737},
+}
+
+@article{fd5d142bac5c4d6443d0dbb8a8457f146501cedb,
+title = {Capsule Network for Predicting RNA-Protein Binding Preferences Using Hybrid Feature},
+year = {2020},
+url = {https://www.semanticscholar.org/paper/fd5d142bac5c4d6443d0dbb8a8457f146501cedb},
+abstract = {RNA-Protein binding is involved in many different biological processes. With the progress of technology, more and more data are available for research. Based on these data, many prediction methods have been proposed to predict RNA-Protein binding preference. Some of these methods use only RNA sequence features for prediction, and some methods use multiple features for prediction. But, the performance of these methods is not satisfactory. In this study, we propose an improved capsule network to predict RNA-protein binding preferences, which can use both RNA sequence features and structure features. Experimental results show that our proposed method iCapsule performs better than three baseline methods in this field. We used both RNA sequence features and structure features in the model, so we tested the effect of primary capsule layer changes on model performance. In addition, we also studied the impact of model structure on model performance by performing our proposed method with different number of convolution layers and different kernel sizes.},
+author = {Zhen Shen and S. Deng and De-shuang Huang},
+doi = {10.1109/TCBB.2019.2943465},
+pmid = {31562101},
+}
+
+@article{94e0f8ec8e20a20f8f88e82b8f7667aca5cbcc17,
+title = {Deep learning for sequence pattern recognition},
+year = {2018},
+url = {https://www.semanticscholar.org/paper/94e0f8ec8e20a20f8f88e82b8f7667aca5cbcc17},
+abstract = {Deep Learning is a superb way to solve remote sensing related problems, which mainly cover four perspectives: image processing, pixel-based classification, target recognition and scene understanding. In this paper, we focus on target recognition by building deep learning models, and our target is sequence pattern. Accurate prediction of sequence pattern would help identify significant characters from text sequence. Despite considerable advances in using machine learning techniques for sequence pattern recognition problem, its efficiency is still limited because of its involving extensive manual feature engineering in the process of features extraction from raw sequences. Thus, we apply a deep learning approach in sequence pattern recognition problem. The sequences of the datasets we used are self-generated genomic format sequences, and each dataset is generated based on a kind of pattern. We then investigate and construct various deep neural network models (such as convolutional networks, recurrent networks and a hybrid of convolutional and recurrent networks). The one-hot encoding method that preserves the vital position information of each character is presented to represent sequences as inputs to the models. The sequence patterns are then extracted from the input and output the probabilities of the existence of sequence patterns. Experimental results demonstrate that the deep learning approaches can achieve high accuracy and high precision in sequence pattern recognition. In addition, a saliency-map-based method is applied to visualize the learned sequence patterns. In view of the simulation results, we believe that we can find an appropriate deep learning model for a certain sequence sensing problem.},
+author = {Xin Gao and Jie Zhang and Zhi Wei},
+doi = {10.1109/ICNSC.2018.8361281},
+}
+
+@article{3c3c07ad709ef7f9f017e53004239a54e8983f48,
+title = {Predicting transcription factor binding sites using DNA shape features based on shared hybrid deep learning architecture},
+year = {2021},
+url = {https://www.semanticscholar.org/paper/3c3c07ad709ef7f9f017e53004239a54e8983f48},
+abstract = {The study of transcriptional regulation is still difficult yet fundamental in molecular biology research. Recent research has shown that the double helix structure of nucleotides plays an important role in improving the accuracy and interpretability of transcription factor binding sites (TFBSs). Although several computational methods have been designed to take both DNA sequence and DNA shape features into consideration simultaneously, how to design an efficient model is still an intractable topic. In this paper, we proposed a hybrid convolutional recurrent neural network (CNN/RNN) architecture, CRPTS, to predict TFBSs by combining DNA sequence and DNA shape features. The novelty of our proposed method relies on three critical aspects: (1) the application of a shared hybrid CNN and RNN has the ability to efficiently extract features from large-scale genomic sequences obtained by high-throughput technology; (2) the common patterns were found from DNA sequences and their corresponding DNA shape features; (3) our proposed CRPTS can capture local structural information of DNA sequences without completely relying on DNA shape data. A series of comprehensive experiments on 66 in vitro datasets derived from universal protein binding microarrays (uPBMs) shows that our proposed method CRPTS obviously outperforms the state-of-the-art methods.},
+author = {Siguo Wang and Qinhu Zhang and Zhen Shen and Ying He and Zhen-Heng Chen and Jianqiang Li and De-shuang Huang},
+doi = {10.1016/j.omtn.2021.02.014},
+pmid = {33767912},
+}
+
+@article{60b05c7dfc155084d5e43b0ba1ec6b4649e4e64b,
+title = {Evaluation of Convolutionary Neural Networks Modeling of DNA Sequences using Ordinal versus one-hot Encoding Method},
+year = {2017},
+url = {https://www.semanticscholar.org/paper/60b05c7dfc155084d5e43b0ba1ec6b4649e4e64b},
+abstract = {Convolutionary neural network (CNN) is a popular choice for supervised DNA motif prediction due to its excellent performances. To employ CNN, the input DNA sequences are required to be encoded as numerical values and represented as either vectors or multi-dimensional matrices. This paper evaluates a simple and more compact ordinal encoding method versus the popular one-hot encoding for DNA sequences. We compare the performances of both encoding methods using three sets of datasets enriched with DNA motifs. We found that the ordinal encoding performs comparable to the one-hot method but with significant reduction in training time. In addition, the one-hot encoding performances are rather consistent across various datasets but would require suitable CNN configuration to perform well. The ordinal encoding with matrix representation performs best in some of the evaluated datasets. This study implies that the performances of CNN for DNA motif discovery depends on the suitable design of the sequence encoding and representation. The good performances of the ordinal encoding method demonstrates that there are still rooms for improvement for the one-hot encoding method.},
+author = {Allen Chieng Hoon Choong and N. K. Lee},
+doi = {10.1101/186965},
+}
+
+@article{f4dbf4c2163459dc65d342f6c3c5656f05ba0209,
+title = {DeepD2V: A Novel Deep Learning-Based Framework for Predicting Transcription Factor Binding Sites from Combined DNA Sequence},
+year = {2021},
+url = {https://www.semanticscholar.org/paper/f4dbf4c2163459dc65d342f6c3c5656f05ba0209},
+abstract = {Predicting in vivo protein–DNA binding sites is a challenging but pressing task in a variety of fields like drug design and development. Most promoters contain a number of transcription factor (TF) binding sites, but only a small minority has been identified by biochemical experiments that are time-consuming and laborious. To tackle this challenge, many computational methods have been proposed to predict TF binding sites from DNA sequence. Although previous methods have achieved remarkable performance in the prediction of protein–DNA interactions, there is still considerable room for improvement. In this paper, we present a hybrid deep learning framework, termed DeepD2V, for transcription factor binding sites prediction. First, we construct the input matrix with an original DNA sequence and its three kinds of variant sequences, including its inverse, complementary, and complementary inverse sequence. A sliding window of size k with a specific stride is used to obtain its k-mer representation of input sequences. Next, we use word2vec to obtain a pre-trained k-mer word distributed representation model. Finally, the probability of protein–DNA binding is predicted by using the recurrent and convolutional neural network. The experiment results on 50 public ChIP-seq benchmark datasets demonstrate the superior performance and robustness of DeepD2V. Moreover, we verify that the performance of DeepD2V using word2vec-based k-mer distributed representation is better than one-hot encoding, and the integrated framework of both convolutional neural network (CNN) and bidirectional LSTM (bi-LSTM) outperforms CNN or the bi-LSTM model when used alone. The source code of DeepD2V is available at the github repository.},
+author = {L. Deng and Hui Wu and Xuejun Liu and Hui Liu},
+doi = {10.3390/ijms22115521},
+pmid = {34073774},
+}
+
+@article{24a404d4585382324e05fa7e21e3775998d7d998,
+title = {Using Deep Learning to Predict Transcription Factor Binding Sites Combining Raw DNA Sequence, Evolutionary Information and Epigenomic Data},
+year = {2021},
+url = {https://www.semanticscholar.org/paper/24a404d4585382324e05fa7e21e3775998d7d998},
+abstract = {},
+author = {Youhong Xu and Qinghu Zhang and Zhanheng Chen and Chang-an Yuan and Xiao Qin and Hongjie Wu},
+doi = {10.1007/978-3-030-84532-2_35},
+}
+
+@article{2290e5ec88bfada7e9b02788019fabd72e39f432,
+title = {Predicting in-Vitro Transcription Factor Binding Sites with Deep Embedding Convolution Network},
+year = {2020},
+url = {https://www.semanticscholar.org/paper/2290e5ec88bfada7e9b02788019fabd72e39f432},
+abstract = {},
+author = {Yindong Zhang and Qinhu Zhang and Chang-an Yuan and Xiao Qin and Hongjie Wu and Xingming Zhao},
+doi = {10.1007/978-3-030-60802-6_9},
+}
+
+@article{f08fd9d1c3c1e2390b0cb094571b28d77b3e1b83,
+title = {Phenotype Prediction and Genome-Wide Association Study Using Deep Convolutional Neural Network of Soybean},
+year = {2019},
+url = {https://www.semanticscholar.org/paper/f08fd9d1c3c1e2390b0cb094571b28d77b3e1b83},
+abstract = {Genomic selection uses single-nucleotide polymorphisms (SNPs) to predict quantitative phenotypes for enhancing traits in breeding populations and has been widely used to increase breeding efficiency for plants and animals. Existing statistical methods rely on a prior distribution assumption of imputed genotype effects, which may not fit experimental datasets. Emerging deep learning technology could serve as a powerful machine learning tool to predict quantitative phenotypes without imputation and also to discover potential associated genotype markers efficiently. We propose a deep-learning framework using convolutional neural networks (CNNs) to predict the quantitative traits from SNPs and also to investigate genotype contributions to the trait using saliency maps. The missing values of SNPs are treated as a new genotype for the input of the deep learning model. We tested our framework on both simulation data and experimental datasets of soybean. The results show that the deep learning model can bypass the imputation of missing values and achieve more accurate results for predicting quantitative phenotypes than currently available other well-known statistical methods. It can also effectively and efficiently identify significant markers of SNPs and SNP combinations associated in genome-wide association study.},
+author = {Yang Liu and Duolin Wang and Fei He and Juexin Wang and T. Joshi and Dong Xu},
+doi = {10.3389/fgene.2019.01091},
+pmid = {31824557},
+}

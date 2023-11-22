@@ -1,0 +1,423 @@
+@article{0b6ef0db81a6f9198a1ae4c4f70816a4373e5ed7,
+title = {Taxonomic classification of metagenomic sequences from Relative Abundance Index profiles using deep learning},
+year = {2021},
+url = {https://www.semanticscholar.org/paper/0b6ef0db81a6f9198a1ae4c4f70816a4373e5ed7},
+abstract = {Abstract We propose a Convolutional Neural Network approach based on k-mer representation for metagenomic fragment classification problem. The proposed model consists of two steps; the first step is representation of DNA based on k-mer frequency with Relative Abundance Index (RAI) and the second step is classification metagenomic fragments with CNN. RAI scores, as DNA fragment representations are fed to CNN classifiers (CNN-RAI). RAI consist of the over- and under abundance statistics gathered from the taxon for each k-mer. In order to compare the performances of CNN-RAI and RAIphy, which classifies metagenomic fragments using the same input attributes with an expectation-maximization based approach, databases of different metagenomic scenarios were tested. Metagenomics data that were generated (or simulated) by different Next-Generation Sequencing platforms, respectively Illumina technology and Oxford Nanopore MinION were compiled into shotgun metagenomics or 16S rRNA datasets. RAI based method and CNN models were trained on represented data with read lengths ranging between 200 and 10,000 bp, also with distinct k-mer size ( 3 ≤ k ≤ 7 ) at genus level. RAI score was used for the first time in the deep learning algorithm as a spectral representation with improved performance thanks to the ability of deep learning on each dataset for a range of parameters. The proposed representation was compared to the current spectral methods and shown to be competitive for all datasets used in this study.},
+author = {Meryem Altın Karagöz and O. Nalbantoglu},
+doi = {10.1016/J.BSPC.2021.102539},
+}
+
+@article{c82128bce35b306990960f2961389fd606225905,
+title = {MBMC: An Effective Markov Chain Approach for Binning Metagenomic Reads from Environmental Shotgun Sequencing Projects.},
+year = {2016},
+url = {https://www.semanticscholar.org/paper/c82128bce35b306990960f2961389fd606225905},
+abstract = {Metagenomics is a next-generation omics field currently impacting postgenomic life sciences and medicine. Binning metagenomic reads is essential for the understanding of microbial function, compositions, and interactions in given environments. Despite the existence of dozens of computational methods for metagenomic read binning, it is still very challenging to bin reads. This is especially true for reads from unknown species, from species with similar abundance, and/or from low-abundance species in environmental samples. In this study, we developed a novel taxonomy-dependent and alignment-free approach called MBMC (Metagenomic Binning by Markov Chains). Different from all existing methods, MBMC bins reads by measuring the similarity of reads to the trained Markov chains for different taxa instead of directly comparing reads with known genomic sequences. By testing on more than 24 simulated and experimental datasets with species of similar abundance, species of low abundance, and/or unknown species, we report here that MBMC reliably grouped reads from different species into separate bins. Compared with four existing approaches, we demonstrated that the performance of MBMC was comparable with existing approaches when binning reads from sequenced species, and superior to existing approaches when binning reads from unknown species. MBMC is a pivotal tool for binning metagenomic reads in the current era of Big Data and postgenomic integrative biology. The MBMC software can be freely downloaded at http://hulab.ucf.edu/research/projects/metagenomics/MBMC.html .},
+author = {Ying Wang and Haiyan Hu and X. Li},
+doi = {10.1089/omi.2016.0081},
+pmid = {27447888},
+}
+
+@article{a76c4307dc46a35a4ddf47f65372d3ceec4e5f32,
+title = {Système de classification taxinomique},
+year = {2011},
+url = {https://www.semanticscholar.org/paper/a76c4307dc46a35a4ddf47f65372d3ceec4e5f32},
+abstract = {},
+author = {S. Mande and Maheedhar Reddy Rachamalla and M. H. Mohammed},
+}
+
+@article{c226879739de4b72fcfcfdcc4a650c76739c86d6,
+title = {Embedding the de Bruijn graph, and applications to metagenomics},
+year = {2020},
+url = {https://www.semanticscholar.org/paper/c226879739de4b72fcfcfdcc4a650c76739c86d6},
+abstract = {Fast mapping of sequencing reads to taxonomic clades is a crucial step in metagenomics, which however raises computational challenges as the numbers of reads and of taxonomic clades increases. Besides alignment-based methods, which are accurate but computational costly, faster compositional approaches have recently been proposed to predict the taxonomic clade of a read based on the set of k-mers it contains. Machine learning-based compositional approaches, in particular, have recently reached accuracies similar to alignment-based models, while being considerably faster. It has been observed that the accuracy of these models increases with the length k of the k-mers they use, however existing methods are limited to handle k-mers of lengths up to k = 12 or 13 because of their large memory footprint needed to store the model coefficients for each possible k-mer. In order to explore the performance of machine learning-based compositional approaches for longer k-mers than currently possible, we propose to reduce the memory footprint of these methods by binning together k-mers that appear together in the sequencing reads used to train the models. We achieve this binning by learning a vector embedding for the vertices of a compacted de Bruijn graph, allowing us to embed any DNA sequence in a low-dimensional vector space where a machine learning system can be trained. The resulting method, which we call Brume, allows us to train compositional machine learning-based models with k-mers of length up to k = 31. We show on two metagenomics benchmark that Brume reaches better performance than previously achieved, thanks to the use of longer k-mers.},
+author = {Romain Menegaux and Jean-Philippe Vert},
+doi = {10.1101/2020.03.06.980979},
+}
+
+@article{16d07586552264f43aff24af2de01886a6f1b8e6,
+title = {A comparative evaluation of sequence classification programs},
+year = {2012},
+url = {https://www.semanticscholar.org/paper/16d07586552264f43aff24af2de01886a6f1b8e6},
+abstract = {There is significant variability in classification accuracy, precision, and resource consumption of sequence classification programs when used to analyze various metagenomics data sets. BackgroundA fundamental problem in modern genomics is to taxonomically or functionally classify DNA sequence fragments derived from environmental sampling (i.e., metagenomics). Several different methods have been proposed for doing this effectively and efficiently, and many have been implemented in software. In addition to varying their basic algorithmic approach to classification, some methods screen sequence reads for ’barcoding genes’ like 16S rRNA, or various types of protein-coding genes. Due to the sheer number and complexity of methods, it can be difficult for a researcher to choose one that is well-suited for a particular analysis.ResultsWe divided the very large number of programs that have been released in recent years for solving the sequence classification problem into three main categories based on the general algorithm they use to compare a query sequence against a database of sequences. We also evaluated the performance of the leading programs in each category on data sets whose taxonomic and functional composition is known.ConclusionsWe found significant variability in classification accuracy, precision, and resource consumption of sequence classification programs when used to analyze various metagenomics data sets. However, we observe some general trends and patterns that will be useful to researchers who use sequence classification programs.},
+author = {A. Bazinet and M. P. Cummings},
+doi = {10.1186/1471-2105-13-92},
+pmid = {22574964},
+}
+
+@article{4ea98ebfbffdff58a13aa6d90a54c487300914fc,
+title = {Computational Approaches for Binning Metagenomic Reads},
+year = {2016},
+url = {https://www.semanticscholar.org/paper/4ea98ebfbffdff58a13aa6d90a54c487300914fc},
+abstract = {},
+author = {Ying Wang},
+}
+
+@article{37ccce8ae7e88c57b8e47bcb169847608493f23f,
+title = {Challenges of the Unknown: Clinical Application of Microbial Metagenomics},
+year = {2015},
+url = {https://www.semanticscholar.org/paper/37ccce8ae7e88c57b8e47bcb169847608493f23f},
+abstract = {Availability of fast, high throughput and low cost whole genome sequencing holds great promise within public health microbiology, with applications ranging from outbreak detection and tracking transmission events to understanding the role played by microbial communities in health and disease. Within clinical metagenomics, identifying microorganisms from a complex and host enriched background remains a central computational challenge. As proof of principle, we sequenced two metagenomic samples, a known viral mixture of 25 human pathogens and an unknown complex biological model using benchtop technology. The datasets were then analysed using a bioinformatic pipeline developed around recent fast classification methods. A targeted approach was able to detect 20 of the viruses against a background of host contamination from multiple sources and bacterial contamination. An alternative untargeted identification method was highly correlated with these classifications, and over 1,600 species were identified when applied to the complex biological model, including several species captured at over 50% genome coverage. In summary, this study demonstrates the great potential of applying metagenomics within the clinical laboratory setting and that this can be achieved using infrastructure available to nondedicated sequencing centres.},
+author = {G. Rose and D. Wooldridge and C. Anscombe and E. Mee and Raju V. Misra and S. Gharbia},
+doi = {10.1155/2015/292950},
+pmid = {26451363},
+}
+
+@article{ae010710c476375ad344137f44849c15e58d43fe,
+title = {Metagenomic binning through low-density hashing},
+year = {2017},
+url = {https://www.semanticscholar.org/paper/9de375f8ac55041a6878d650062ba9a216a0e085},
+abstract = {Bacterial microbiomes of incredible complexity are found throughout the world, from exotic marine locations to the soil in our yards to within our very guts. With recent advances in Next-Generation Sequencing (NGS) technologies, we have vastly greater quantities of microbial genome data, but the nature of environmental samples is such that DNA from different species are mixed together. Here, we present Opal for metagenomic binning, the task of identifying the origin species of DNA sequencing reads. Our Opal method introduces low-density, even-coverage hashing to bioinformatics applications, enabling quick and accurate metagenomic binning. Our tool is up to two orders of magnitude faster than leading alignment-based methods at similar or improved accuracy, allowing computational tractability on large metagenomic datasets. Moreover, on public benchmarks, Opal is substantially more accurate than both alignment-based and alignment-free methods (e.g. on SimHC20.500, Opal achieves 95% F1-score while Kraken and CLARK achieve just 91% and 88%, respectively); this improvement is likely due to the fact that the latter methods cannot handle computationally-costly long-range dependencies, which our even-coverage, low-density fingerprints resolve. Notably, capturing these long-range dependencies drastically improves Opal’s ability to detect unknown species that share a genus or phylum with known bacteria. Additionally, the family of hash functions Opal uses can be generalized to other sequence analysis tasks that rely on k-mer based methods to encode long-range dependencies.},
+author = {Yunan Luo and Y. Yu and Jianyang Zeng and B. Berger and Jian Peng},
+doi = {10.1093/bioinformatics/bty611},
+pmid = {30010790},
+}
+
+@article{a2716bf7ef337c38ea08b3193c4954e1854bcf17,
+title = {The PhyloPythiaS Web Server for Taxonomic Assignment of Metagenome Sequences},
+year = {2012},
+url = {https://www.semanticscholar.org/paper/a2716bf7ef337c38ea08b3193c4954e1854bcf17},
+abstract = {Metagenome sequencing is becoming common and there is an increasing need for easily accessible tools for data analysis. An essential step is the taxonomic classification of sequence fragments. We describe a web server for the taxonomic assignment of metagenome sequences with PhyloPythiaS. PhyloPythiaS is a fast and accurate sequence composition-based classifier that utilizes the hierarchical relationships between clades. Taxonomic assignments with the web server can be made with a generic model, or with sample-specific models that users can specify and create. Several interactive visualization modes and multiple download formats allow quick and convenient analysis and downstream processing of taxonomic assignments. Here, we demonstrate usage of our web server by taxonomic assignment of metagenome samples from an acidophilic biofilm community of an acid mine and of a microbial community from cow rumen.},
+author = {Kaustubh R. Patil and Linus Roune and A. Mchardy},
+doi = {10.1371/journal.pone.0038581},
+pmid = {22745671},
+}
+
+@article{809ef780c71739d3e56208b411657861d7844c69,
+title = {Applying metagenomics analysis towards a better understanding of freshwater microbial communities},
+year = {2017},
+url = {https://www.semanticscholar.org/paper/809ef780c71739d3e56208b411657861d7844c69},
+abstract = {},
+author = {Michael A. Peabody},
+}
+
+@article{d31f51e95528b05d3375bfef4ffb442331b2011e,
+title = {Identify pathogen organisms from a stream of RNA sequences},
+year = {2014},
+url = {https://www.semanticscholar.org/paper/d31f51e95528b05d3375bfef4ffb442331b2011e},
+abstract = {Metagenomics is an interesting new field of science focused on characterization of microbial communities from environmental samples. It is especially important as many organisms cannot be cultivated in a laboratory and therefore can reveal previously unknown species. This thesis presents a taxonomy-dependent alignment-based method for determining species present in a given metagenomic sample. Main premise is identification and analysis of ribosomal coding sequences which are considered to be indicators of presence of organisms. The solution works with RNA-seq data and is tested on a real dataset from an environmental sample.},
+author = {M. Sosic},
+}
+
+@article{c566d97ab5fb8738c3e5fc69b71189049ed708c2,
+title = {LVQ-KNN: Composition-based DNA/RNA binning of short nucleotide sequences utilizing a prototype-based k-nearest neighbor approach.},
+year = {2018},
+url = {https://www.semanticscholar.org/paper/c566d97ab5fb8738c3e5fc69b71189049ed708c2},
+abstract = {Unbiased sequencing is an upcoming method to gain information of the microbiome in a sample and for the detection of unrecognized pathogens. There are many software tools for a taxonomic classification of such metagenomics datasets available. Numerous of them have a satisfactory sensitivity and specificity for known organisms, but they fail if the sample contains unknown organisms, which cannot be detected by similarity-based classification employing available databases. However, recognition of unknowns is especially important for the detection of newly emerging pathogens, which are often RNA viruses. Here we present the composition-based analysis tool LVQ-KNN for binning unclassified nucleotide sequence reads into their provenance classes DNA or RNA. With a 5-fold cross-validation, LVQ-KNN reached correct classification rates (CCR) of up to 99.9% for the classification into DNA/RNA. Real datasets gained CCRs of up to 94.5%. Comparing the method to another composition-based analysis tool, similar or better classification results were reached. LVQ-KNN is a new tool for DNA/RNA classification of sequence reads from unbiased sequencing approaches that could be applicable for the detection of yet unknown RNA viruses in metagenomic samples. The source-code, training and test data for LVQ-KNN is available at Github (https://github.com/ab1989/LVQ-KNN).},
+author = {Ariane Belka and Mareike Fischer and A. Pohlmann and M. Beer and D. Höper},
+doi = {10.1016/j.virusres.2018.10.002},
+pmid = {30291874},
+}
+
+@article{f75f6793a88e159b6526457d6e5156845295bc1e,
+title = {Deep Multiple Instance Learning for Taxonomic Classification of Metagenomic read sets},
+year = {2019},
+url = {https://www.semanticscholar.org/paper/f75f6793a88e159b6526457d6e5156845295bc1e},
+abstract = {Metagenomic studies have increasingly utilized sequencing technologies in order to analyze DNA fragments found in environmental samples. It can provide useful insights for studying the interactions between hosts and microbes, infectious disease proliferation, and novel species discovery. One important step in this analysis is the taxonomic classification of those DNA fragments. Of particular interest is the determination of the distribution of the taxa of microbes in metagenomic samples. Recent attempts using deep learning focus on architectures that classify single DNA reads independently from each other. In this work, we attempt to solve the task of directly predicting the distribution over the taxa of whole metagenomic read sets. We formulate this task as a Multiple Instance Learning (MIL) problem. We extend architectures used in single-read taxonomic classification with two different types of permutation-invariant MIL pooling layers: a) deepsets and b) attention-based pooling. We illustrate that our architecture can exploit the co-occurrence of species in metagenomic read sets and outperforms the single-read architectures in predicting the distribution over the taxa at higher taxonomic ranks.},
+author = {Andreas Georgiou and Vincent Fortuin and Harun Mustafa and G. Rätsch},
+}
+
+@article{4785a6fa3dc06e9e863ba9b8a0bca114b45031d1,
+title = {SPHINX - an algorithm for taxonomic binning of metagenomic sequences},
+year = {2011},
+url = {https://www.semanticscholar.org/paper/4785a6fa3dc06e9e863ba9b8a0bca114b45031d1},
+abstract = {MOTIVATION
+Compared with composition-based binning algorithms, the binning accuracy and specificity of alignment-based binning algorithms is significantly higher. However, being alignment-based, the latter class of algorithms require enormous amount of time and computing resources for binning huge metagenomic datasets. The motivation was to develop a binning approach that can analyze metagenomic datasets as rapidly as composition-based approaches, but nevertheless has the accuracy and specificity of alignment-based algorithms. This article describes a hybrid binning approach (SPHINX) that achieves high binning efficiency by utilizing the principles of both 'composition'- and 'alignment'-based binning algorithms.
+
+
+RESULTS
+Validation results with simulated sequence datasets indicate that SPHINX is able to analyze metagenomic sequences as rapidly as composition-based algorithms. Furthermore, the binning efficiency (in terms of accuracy and specificity of assignments) of SPHINX is observed to be comparable with results obtained using alignment-based algorithms.
+
+
+AVAILABILITY
+A web server for the SPHINX algorithm is available at http://metagenomics.atc.tcs.com/SPHINX/.},
+author = {M. H. Mohammed and T. Ghosh and Nitin Kumar Singh and S. Mande},
+doi = {10.1093/bioinformatics/btq608},
+pmid = {21030462},
+}
+
+@article{d94cde6139b581d2d5a4a82efaa61c323afc3432,
+title = {HabiSign: a novel approach for comparison of metagenomes and rapid identification of habitat-specific sequences},
+year = {2011},
+url = {https://www.semanticscholar.org/paper/d94cde6139b581d2d5a4a82efaa61c323afc3432},
+abstract = {BackgroundOne of the primary goals of comparative metagenomic projects is to study the differences in the microbial communities residing in diverse environments. Besides providing valuable insights into the inherent structure of the microbial populations, these studies have potential applications in several important areas of medical research like disease diagnostics, detection of pathogenic contamination and identification of hitherto unknown pathogens. Here we present a novel and rapid, alignment-free method called HabiSign, which utilizes patterns of tetra-nucleotide usage in microbial genomes to bring out the differences in the composition of both diverse and related microbial communities.ResultsValidation results show that the metagenomic signatures obtained using the HabiSign method are able to accurately cluster metagenomes at biome, phenotypic and species levels, as compared to an average tetranucleotide frequency based approach and the recently published dinucleotide relative abundance based approach. More importantly, the method is able to identify subsets of sequences that are specific to a particular habitat. Apart from this, being alignment-free, the method can rapidly compare and group multiple metagenomic data sets in a short span of time.ConclusionsThe proposed method is expected to have immense applicability in diverse areas of metagenomic research ranging from disease diagnostics and pathogen detection to bio-prospecting. A web-server for the HabiSign algorithm is available at http://metagenomics.atc.tcs.com/HabiSign/.},
+author = {T. Ghosh and M. H. Mohammed and H. Rajasingh and Sudha Chadaram and S. Mande},
+doi = {10.1186/1471-2105-12-S13-S9},
+pmid = {22373355},
+}
+
+@article{f86d3ca0c84212e97cb771414d605bc181ef2070,
+title = {The reduction and classification research on DNA fragment species attributes in meta genome},
+year = {2015},
+url = {https://www.semanticscholar.org/paper/f86d3ca0c84212e97cb771414d605bc181ef2070},
+abstract = {With the rapid development of meta genomics, sequenced meta genome number shot up as well as the DNA sequences expand. But the genera and species of most DNA sequences are unknown, so an important subject bioinformatics faced is how to research an attributes reduction and classification method for those huge meta genome DNA information. In this paper, we process attributes reduction and classification for those meta genome DNA fragments in different genera and the same genera but different species conditions respectively with the help of Rosetta experiment platform, which can get higher experimental resolution accuracy.},
+author = {Xue Jian and L. Fu and H. Tao},
+doi = {10.1109/CCDC.2015.7162768},
+}
+
+@article{63b51c417ebf59bd896aabfa1c47cadee3ab12f1,
+title = {Deep Ensemble Models for 16S Ribosomal Gene Classification},
+year = {2020},
+url = {https://www.semanticscholar.org/paper/63b51c417ebf59bd896aabfa1c47cadee3ab12f1},
+abstract = {In bioinformatics analysis, the correct identification of an unknown sequence by subsequent matching with a known sequence is a crucial and critical initial step. One of the constantly evolving open and challenging areas of research is understanding the adaptation of microbiome communities derived from different environment as well as human gut. The critical component of such studies is to analyze 16s rRNA gene sequence and classify it to a corresponding taxonomy. Thus far recent literature discusses such sequence classification tasks being solved using many algorithms such as early methods of k-mer frequency matching, and assembly-based clustering or advanced methods of machine learning algorithms– for instance, random forests, naive Bayesian techniques, and recently deep learning architectures. Our previous work focused on a comprehensive study of 16s rRNA gene classification by implementing simplistic singular neural models of Recurrent Neural Networks (RNNs) and Convolutional Neural Networks (CNNs). The outcome of this study demonstrated very promising classification results for family, genus and species taxonomic levels, prompting an immediate investigation into deep ensemble models for problem at hand. In this study, we attempt to classify 16s rRNA gene using deep ensemble models along with a hybrid model that emulates an ensemble in its early convolutional layers followed by a recurrent layer.},
+author = {Heta P. Desai and Anuja P. Parameshwaran and R. Sunderraman and M. Weeks},
+doi = {10.1007/978-3-030-57821-3_25},
+}
+
+@article{b6a00d6432220144c4e4fcf7ef8ba39f394091da,
+title = {Taxonomic classification DNA fragment of metagenome with a novel model},
+year = {2016},
+url = {https://www.semanticscholar.org/paper/b6a00d6432220144c4e4fcf7ef8ba39f394091da},
+abstract = {Currently metagenomics has been rapid developed, but some problems in the study are still far from being solved. One of these problems is how to group the DNA fragments from a sequenced metagenome, because most of metagenomes are complex mixtures of DNA fragments from multiple unknown organisms. Some classifiers have been developed to class the unknown DNA fragments of metagenomes. However, these classifiers usually suffer from the lower classification accuracy at higher taxonomic levels (family, genus). One of the reasons is the classifiers cannot discriminate the data from different organism accurately, especially the training data contains some outliers such as lateral gene transfer. Here, we presented a novel model, which consists of training and classification phases. In training phase, each taxonomic class can be divided into three cases: accept, uncertain and reject by two approximation concentric hyperspheres based on support vector data description (SVDD) model. By doing so, the discriminating ability of the classifier is enhanced. In classification phase, we designed a score strategy to deduce their optimal taxonomic group for the unknown DNA fragments at correspond taxonomic level. Experiments were performanced on four simulated metagenomes with sequence lengths ranging from 500 bp to 3,000 bp, our classifier has classification accuracy from 63.17 % to 85.6 %, the result is better than most of existing classifiers.},
+author = {Tao Hou and Yun Liu and Jian Xue and Mingming Li and Fu Liu},
+doi = {10.1109/CHICC.2016.7554840},
+}
+
+@article{088997a2265650ffaa9a90b2e6fccbe62485782c,
+title = {Author Correction: An evaluation of the accuracy and speed of metagenome analysis tools},
+year = {2020},
+url = {https://www.semanticscholar.org/paper/088997a2265650ffaa9a90b2e6fccbe62485782c},
+abstract = {An amendment to this paper has been published and can be accessed via a link at the top of the paper. An amendment to this paper has been published and can be accessed via a link at the top of the paper.},
+author = {Stinus Lindgreen and Karen L Adair and P. Gardner},
+doi = {10.1038/s41598-020-63176-4},
+pmid = {32313073},
+}
+
+@article{3dc46d3a5c8bd9fc98b76b027e2ab348633db685,
+title = {Low-Density Locality-Sensitive Hashing Boosts Metagenomic Binning},
+year = {2016},
+url = {https://www.semanticscholar.org/paper/3dc46d3a5c8bd9fc98b76b027e2ab348633db685},
+abstract = {Metagenomic binning is an essential task in analyzing metagenomic sequence datasets. To analyze structure or function of microbial communities from environmental samples, metagenomic sequence fragments are assigned to their taxonomic origins. Although sequence alignment algorithms can readily be used and usually provide high-resolution alignments and accurate binning results, the computational cost of such alignment-based methods becomes prohibitive as metagenomic datasets continue to grow. Alternative compositional-based methods, which exploit sequence composition by profiling local short k-mers in fragments, are often faster but less accurate than alignment-based methods. Inspired by the success of linear error correcting codes in noisy channel communication, we introduce Opal, a fast and accurate novel compositional-based binning method. It incorporates ideas from Gallager's low-density parity-check code to design a family of compact and discriminative locality-sensitive hashing functions that encode long-range compositional dependencies in long fragments. By incorporating the Gallager LSH functions as features in a simple linear SVM, Opal provides fast, accurate and robust binning for datasets consisting of a large number of species, even with mutations and sequencing errors. Opal not only performs up to two orders of magnitude faster than BWA, an alignment-based binning method, but also achieves improved binning accuracy and robustness to sequencing errors. Opal also outperforms models built on traditional k-mer profiles in terms of robustness and accuracy. Finally, we demonstrate that we can effectively use Opal in the "coarse search" stage of a compressive genomics pipeline to identify a much smaller candidate set of taxonomic origins for a subsequent alignment-based method to analyze, thus providing metagenomic binning with high scalability, high accuracy and high resolution.},
+author = {Yunan Luo and Jianyang Zeng and B. Berger and Jian Peng},
+pmid = {28127592},
+arxivid = {1604.02699},
+}
+
+@article{f29b3beb5c6c7de3202652fa39086920b41a843c,
+title = {A novel data structure to support ultra-fast taxonomic classification of metagenomic sequences with k-mer signatures},
+year = {2017},
+url = {https://www.semanticscholar.org/paper/f29b3beb5c6c7de3202652fa39086920b41a843c},
+abstract = {Motivation
+Metagenomic read classification is a critical step in the identification and quantification of microbial species sampled by high-throughput sequencing. Although many algorithms have been developed to date, they suffer significant memory and/or computational costs. Due to the growing popularity of metagenomic data in both basic science and clinical applications, as well as the increasing volume of data being generated, efficient and accurate algorithms are in high demand.
+
+
+Results
+We introduce MetaOthello, a probabilistic hashing classifier for metagenomic sequencing reads. The algorithm employs a novel data structure, called l-Othello, to support efficient querying of a taxon using its k-mer signatures. MetaOthello is an order-of-magnitude faster than the current state-of-the-art algorithms Kraken and Clark, and requires only one-third of the RAM. In comparison to Kaiju, a metagenomic classification tool using protein sequences instead of genomic sequences, MetaOthello is three times faster and exhibits 20-30% higher classification sensitivity. We report comparative analyses of both scalability and accuracy using a number of simulated and empirical datasets.
+
+
+Availability and implementation
+MetaOthello is a stand-alone program implemented in C ++. The current version (1.0) is accessible via https://doi.org/10.5281/zenodo.808941.
+
+
+Contact
+liuj@cs.uky.edu.
+
+
+Supplementary information
+Supplementary data are available at Bioinformatics online.},
+author = {Xinan Liu and Ye Yu and Jinpeng Liu and Corrine F. Elliott and Chen Qian and Jinze Liu},
+doi = {10.1093/bioinformatics/btx432},
+pmid = {29036588},
+}
+
+@article{434fe268c8f56eb8c0822c04b1062ebf2d24a58e,
+title = {Classification of metagenomic sequences: methods and challenges},
+year = {2012},
+url = {https://www.semanticscholar.org/paper/434fe268c8f56eb8c0822c04b1062ebf2d24a58e},
+abstract = {Characterizing the taxonomic diversity of microbial communities is one of the primary objectives of metagenomic studies. Taxonomic analysis of microbial communities, a process referred to as binning, is challenging for the following reasons. Primarily, query sequences originating from the genomes of most microbes in an environmental sample lack taxonomically related sequences in existing reference databases. This absence of a taxonomic context makes binning a very challenging task. Limitations of current sequencing platforms, with respect to short read lengths and sequencing errors/artifacts, are also key factors that determine the overall binning efficiency. Furthermore, the sheer volume of metagenomic datasets also demands highly efficient algorithms that can operate within reasonable requirements of compute power. This review discusses the premise, methodologies, advantages, limitations and challenges of various methods available for binning of metagenomic datasets obtained using the shotgun sequencing approach. Various parameters as well as strategies used for evaluating binning efficiency are then reviewed.},
+author = {S. Mande and M. H. Mohammed and T. Ghosh},
+doi = {10.1093/bib/bbs054},
+pmid = {22962338},
+}
+
+@article{9de375f8ac55041a6878d650062ba9a216a0e085,
+title = {Metagenomic binning through low-density hashing},
+year = {2017},
+url = {https://www.semanticscholar.org/paper/9de375f8ac55041a6878d650062ba9a216a0e085},
+abstract = {Bacterial microbiomes of incredible complexity are found throughout the world, from exotic marine locations to the soil in our yards to within our very guts. With recent advances in Next-Generation Sequencing (NGS) technologies, we have vastly greater quantities of microbial genome data, but the nature of environmental samples is such that DNA from different species are mixed together. Here, we present Opal for metagenomic binning, the task of identifying the origin species of DNA sequencing reads. Our Opal method introduces low-density, even-coverage hashing to bioinformatics applications, enabling quick and accurate metagenomic binning. Our tool is up to two orders of magnitude faster than leading alignment-based methods at similar or improved accuracy, allowing computational tractability on large metagenomic datasets. Moreover, on public benchmarks, Opal is substantially more accurate than both alignment-based and alignment-free methods (e.g. on SimHC20.500, Opal achieves 95% F1-score while Kraken and CLARK achieve just 91% and 88%, respectively); this improvement is likely due to the fact that the latter methods cannot handle computationally-costly long-range dependencies, which our even-coverage, low-density fingerprints resolve. Notably, capturing these long-range dependencies drastically improves Opal’s ability to detect unknown species that share a genus or phylum with known bacteria. Additionally, the family of hash functions Opal uses can be generalized to other sequence analysis tasks that rely on k-mer based methods to encode long-range dependencies.},
+author = {Yunan Luo and Y. Yu and Jianyang Zeng and B. Berger and Jian Peng},
+doi = {10.1093/bioinformatics/bty611},
+pmid = {30010790},
+}
+
+@article{91d9cb6c047ca02821140a5ea150da96da5cb3ba,
+title = {INDUS - a composition-based approach for rapid and accurate taxonomic classification of metagenomic sequences},
+year = {2011},
+url = {https://www.semanticscholar.org/paper/91d9cb6c047ca02821140a5ea150da96da5cb3ba},
+abstract = {BackgroundTaxonomic classification of metagenomic sequences is the first step in metagenomic analysis. Existing taxonomic classification approaches are of two types, similarity-based and composition-based. Similarity-based approaches, though accurate and specific, are extremely slow. Since, metagenomic projects generate millions of sequences, adopting similarity-based approaches becomes virtually infeasible for research groups having modest computational resources. In this study, we present INDUS - a composition-based approach that incorporates the following novel features. First, INDUS discards the 'one genome-one composition' model adopted by existing compositional approaches. Second, INDUS uses 'compositional distance' information for identifying appropriate assignment levels. Third, INDUS incorporates steps that attempt to reduce biases due to database representation.ResultsINDUS is able to rapidly classify sequences in both simulated and real metagenomic sequence data sets with classification efficiency significantly higher than existing composition-based approaches. Although the classification efficiency of INDUS is observed to be comparable to those by similarity-based approaches, the binning time (as compared to alignment based approaches) is 23-33 times lower.ConclusionGiven it's rapid execution time, and high levels of classification efficiency, INDUS is expected to be of immense interest to researchers working in metagenomics and microbial ecology.AvailabilityA web-server for the INDUS algorithm is available at http://metagenomics.atc.tcs.com/INDUS/},
+author = {M. H. Mohammed and T. Ghosh and Rachamalla Maheedhar Reddy and Ch. V. Siva K. Reddy and Nitin Kumar Singh and S. Mande},
+doi = {10.1186/1471-2164-12-S3-S4},
+pmid = {22369237},
+}
+
+@article{36df880f95cf6445aad336306f282400471b0268,
+title = {TWARIT: an extremely rapid and efficient approach for phylogenetic classification of metagenomic sequences.},
+year = {2012},
+url = {https://www.semanticscholar.org/paper/36df880f95cf6445aad336306f282400471b0268},
+abstract = {Phylogenetic assignment of individual sequence reads to their respective taxa, referred to as 'taxonomic binning', constitutes a key step of metagenomic analysis. Existing binning methods have limitations either with respect to time or accuracy/specificity of binning. Given these limitations, development of a method that can bin vast amounts of metagenomic sequence data in a rapid, efficient and computationally inexpensive manner can profoundly influence metagenomic analysis in computational resource poor settings. We introduce TWARIT, a hybrid binning algorithm, that employs a combination of short-read alignment and composition-based signature sorting approaches to achieve rapid binning rates without compromising on binning accuracy and specificity. TWARIT is validated with simulated and real-world metagenomes and the results demonstrate significantly lower overall binning times compared to that of existing methods. Furthermore, the binning accuracy and specificity of TWARIT are observed to be comparable/superior to them. A web server implementing TWARIT algorithm is available at http://metagenomics.atc.tcs.com/Twarit/},
+author = {Rachamalla Maheedhar Reddy and M. H. Mohammed and S. Mande},
+doi = {10.1016/j.gene.2012.06.014},
+pmid = {22710135},
+}
+
+@article{bd459daf1d3f9f3857181c292103e8cf0b99fdc9,
+title = {Accurate Genome Relative Abundance Estimation Based on Shotgun Metagenomic Reads},
+year = {2011},
+url = {https://www.semanticscholar.org/paper/bd459daf1d3f9f3857181c292103e8cf0b99fdc9},
+abstract = {Accurate estimation of microbial community composition based on metagenomic sequencing data is fundamental for subsequent metagenomics analysis. Prevalent estimation methods are mainly based on directly summarizing alignment results or its variants; often result in biased and/or unstable estimates. We have developed a unified probabilistic framework (named GRAMMy) by explicitly modeling read assignment ambiguities, genome size biases and read distributions along the genomes. Maximum likelihood method is employed to compute Genome Relative Abundance of microbial communities using the Mixture Model theory (GRAMMy). GRAMMy has been demonstrated to give estimates that are accurate and robust across both simulated and real read benchmark datasets. We applied GRAMMy to a collection of 34 metagenomic read sets from four metagenomics projects and identified 99 frequent species (minimally 0.5% abundant in at least 50% of the data- sets) in the human gut samples. Our results show substantial improvements over previous studies, such as adjusting the over-estimated abundance for Bacteroides species for human gut samples, by providing a new reference-based strategy for metagenomic sample comparisons. GRAMMy can be used flexibly with many read assignment tools (mapping, alignment or composition-based) even with low-sensitivity mapping results from huge short-read datasets. It will be increasingly useful as an accurate and robust tool for abundance estimation with the growing size of read sets and the expanding database of reference genomes.},
+author = {L. C. Xia and Jacob A. Cram and Ting Chen and J. Fuhrman and Fengzhu Sun},
+doi = {10.1371/journal.pone.0027992},
+pmid = {22162995},
+}
+
+@article{339a58ced7975b22b73a6d9691a440cb6ea3ea25,
+title = {A Probabilistic Approach to Accurate Abundance-Based Binning of Metagenomic Reads},
+year = {2012},
+url = {https://www.semanticscholar.org/paper/339a58ced7975b22b73a6d9691a440cb6ea3ea25},
+abstract = {An important problem in metagenomic analysis is to determine and quantify species (or genomes) in a metagenomic sample. The identification of phylogenetically related groups of sequence reads in a metagenomic dataset is often referred to as binning. Similarity-based binning methods rely on reference databases, and are unable to classify reads from unknown organisms. Composition-based methods exploit compositional patterns that are preserved in sufficiently long fragments, but are not suitable for binning very short next-generation sequencing (NGS) reads. Recently, several new metagenomic binning algorithms that can deal with NGS reads and do not rely on reference databases have been developed. However, all of them have difficulty with handling samples containing low-abundance species. We propose a new method to accurately estimate the abundance levels of species based on a novel probabilistic model for counting l-mer frequencies in a metagenomic dataset that takes into account frequencies of erroneous l-mers and repeated l-mers. An expectation maximization (EM) algorithm is used to learn the parameters of the model. Our algorithm automatically determines the number of abundance groups in a dataset and bins the reads into these groups. We show that our method outperforms the most recent abundance-based binning method, AbundanceBin, on both simulated and real datasets. We also show that the improved abundance-based binning method can be incorporated into a recent tool TOSS, which separates genomes with similar abundance levels and employs AbundanceBin as a preprocessing step to handle different abundance levels, to enhance its performance. We test the improved TOSS on simulated datasets and show that it significantly outperforms TOSS on datasets containing low-abundance genomes. Finally, we compare this approach against very recent metagenomic binning tools MetaCluster 4.0 and MetaCluster 5.0 on simulated data and demonstrate that it usually achieves a better sensitivity and breaks fewer genomes.},
+author = {Olga Tanaseichuk and J. Borneman and Tao Jiang},
+doi = {10.1007/978-3-642-33122-0_32},
+}
+
+@article{5b080c8a7d67fd23c3230dc420452ac2ee34967a,
+title = {Classification of DNA Sequences Using Convolutional Neural Network Approach},
+year = {2018},
+url = {https://www.semanticscholar.org/paper/5b080c8a7d67fd23c3230dc420452ac2ee34967a},
+abstract = {Extraction of meaningful information from the DNA is a key elements in bioinformatics research and DNA sequence classification has a wide range of presentations such as genomic analysis, and biomedical data analysis. Nowadays, deep learning approach has become an attention to many researcher. This models contains multiple of non-linear transforming layers which practice to represent a data at successively high-level abstractions. With many hidden layer, this innovative model are expected to be able to elucidate any complex problems. Thus, Convolutional Neural Network approach is proposed to classify the whole genomic sequences of an organisms. As the purpose of this research is to evaluate the performance of the proposed model by implementing convolutional neural network approach, the research framework is focused to identify genetic marker for liver cancer from Hepatitis B Virus DNA sequences using deep learning principle. The results show that convolutional neural network have more than 90 percent accuracy in training the data sets. Moreover, this research also analysed different size of sequence length to observe the performance of the proposed model. The overall outcome in this research achieve within the expected results.},
+author = {Nurulhuda Kassim and Dr Afnizanfaizal Abdullah},
+}
+
+@article{d2b5619f95937a2428b0cf8ec9110eb72fe8d887,
+title = {CDKAM: a taxonomic classification tool using discriminative k-mers and approximate matching strategies},
+year = {2020},
+url = {https://www.semanticscholar.org/paper/d2b5619f95937a2428b0cf8ec9110eb72fe8d887},
+abstract = {Background Current taxonomic classification tools use exact string matching algorithms that are effective to tackle the data from the next generation sequencing technology. However, the unique error patterns in the third generation sequencing (TGS) technologies could reduce the accuracy of these programs. Results We developed a Classification tool using Discriminative K-mers and Approximate Matching algorithm (CDKAM). This approximate matching method was used for searching k-mers, which included two phases, a quick mapping phase and a dynamic programming phase. Simulated datasets as well as real TGS datasets have been tested to compare the performance of CDKAM with existing methods. We showed that CDKAM performed better in many aspects, especially when classifying TGS data with average length 1000–1500 bases. Conclusions CDKAM is an effective program with higher accuracy and lower memory requirement for TGS metagenome sequence classification. It produces a high species-level accuracy.},
+author = {Van ‐ Kien Bui and Chaochun Wei},
+doi = {10.1186/s12859-020-03777-y},
+pmid = {33081690},
+}
+
+@article{9d51c67332eeabefd9b278946dfcac0b529f72f0,
+title = {MBBC: an efficient approach for metagenomic binning based on clustering},
+year = {2015},
+url = {https://www.semanticscholar.org/paper/9d51c67332eeabefd9b278946dfcac0b529f72f0},
+abstract = {BackgroundBinning environmental shotgun reads is one of the most fundamental tasks in metagenomic studies, in which mixed reads from different species or operational taxonomical units (OTUs) are separated into different groups. While dozens of binning methods are available, there is still room for improvement.ResultsWe developed a novel taxonomy-independent approach called MBBC (Metagenomic Binning Based on Clustering) to cluster environmental shotgun reads, by considering k-mer frequency in reads and Markov properties of the inferred OTUs. Tested on twelve simulated datasets, MBBC reliably estimated the species number, the genome size, and the relative abundance of each species, independent of whether there are errors in reads. Tested on multiple experimental datasets, MBBC outperformed two state-of-the-art taxonomy-independent methods, in terms of the accuracy of the estimated species number, genome sizes, and percentages of correctly assigned reads, among other metrics.ConclusionsWe have developed a novel method for binning metagenomic reads based on clustering. This method is demonstrated to reliably predict species numbers, genome sizes, relative species abundances, and k-mer coverage in simple datasets. Our method also has a high accuracy in read binning. The MBBC software is freely available at http://eecs.ucf.edu/~xiaoman/MBBC/MBBC.html.},
+author = {Y. Wang and Haiyan Hu and X. Li},
+doi = {10.1186/s12859-015-0473-8},
+pmid = {25652152},
+}
+
+@article{903ea55eb66dc24e0164c0634f533b7cacea1ebd,
+title = {Evaluation of shotgun metagenomics sequence classification methods using in silico and in vitro simulated communities},
+year = {2015},
+url = {https://www.semanticscholar.org/paper/903ea55eb66dc24e0164c0634f533b7cacea1ebd},
+abstract = {BackgroundThe field of metagenomics (study of genetic material recovered directly from an environment) has grown rapidly, with many bioinformatics analysis methods being developed. To ensure appropriate use of such methods, robust comparative evaluation of their accuracy and features is needed. For taxonomic classification of sequence reads, such evaluation should include use of clade exclusion, which better evaluates a method’s accuracy when identical sequences are not present in any reference database, as is common in metagenomic analysis. To date, relatively small evaluations have been performed, with evaluation approaches like clade exclusion limited to assessment of new methods by the authors of the given method. What is needed is a rigorous, independent comparison between multiple major methods, using the same in silico and in vitro test datasets, with and without approaches like clade exclusion, to better characterize accuracy under different conditions.ResultsAn overview of the features of 38 bioinformatics methods is provided, evaluating accuracy with a focus on 11 programs that have reference databases that can be modified and therefore most robustly evaluated with clade exclusion. Taxonomic classification of sequence reads was evaluated using both in silico and in vitro mock bacterial communities. Clade exclusion was used at taxonomic levels from species to class—identifying how well methods perform in progressively more difficult scenarios. A wide range of variability was found in the sensitivity, precision, overall accuracy, and computational demand for the programs evaluated. In experiments where distilled water was spiked with only 11 bacterial species, frequently dozens to hundreds of species were falsely predicted by the most popular programs. The different features of each method (forces predictions or not, etc.) are summarized, and additional analysis considerations discussed.ConclusionsThe accuracy of shotgun metagenomics classification methods varies widely. No one program clearly outperformed others in all evaluation scenarios; rather, the results illustrate the strengths of different methods for different purposes. Researchers must appreciate method differences, choosing the program best suited for their particular analysis to avoid very misleading results. Use of standardized datasets for method comparisons is encouraged, as is use of mock microbial community controls suitable for a particular metagenomic analysis.},
+author = {Michael A. Peabody and T. Rossum and Raymond Lo and F. Brinkman},
+doi = {10.1186/s12859-015-0788-5},
+pmid = {26537885},
+}
+
+@article{e15238a7f9ff4a8680a62bd55d4d1b173d990a1d,
+title = {CoreProbe: A Novel Algorithm for Estimating Relative Abundance Based on Metagenomic Reads},
+year = {2018},
+url = {https://www.semanticscholar.org/paper/e15238a7f9ff4a8680a62bd55d4d1b173d990a1d},
+abstract = {With the rapid development of high-throughput sequencing technology, the analysis of metagenomic sequencing data and the accurate and efficient estimation of relative microbial abundance have become important ways to explore the microbial composition and function of microbes. In addition, the accuracy and efficiency of the relative microbial abundance estimation are closely related to the algorithm and the selection of the reference sequence for sequence alignment. We introduced the microbial core genome as the reference sequence for potential microbes in a metagenomic sample, and we constructed a finite mixture and latent Dirichlet models and used the Gibbs sampling algorithm to estimate the relative abundance of microorganisms. The simulation results showed that our approach can improve the efficiency while maintaining high accuracy and is more suitable for high-throughput metagenomic data. The new approach was implemented in our CoreProbe package which provides a pipeline for an accurate and efficient estimation of the relative abundance of microbes in a community. This tool is available free of charge from the CoreProbe’s website: Access the Docker image with the following instruction: sudo docker pull panhongfei/coreprobe:1.0.},
+author = {Dongmei Ai and Hongfei Pan and Ruocheng Huang and L. C. Xia},
+doi = {10.3390/genes9060313},
+pmid = {29925824},
+}
+
+@article{be9e8487ede5ab25339c49d8c67cd2442e122447,
+title = {CHEER: HierarCHical taxonomic classification for viral mEtagEnomic data via deep leaRning},
+year = {2020},
+url = {https://www.semanticscholar.org/paper/be9e8487ede5ab25339c49d8c67cd2442e122447},
+abstract = {The fast accumulation of viral metagenomic data has contributed significantly to new RNA virus discovery. However, the short read size, complex composition, and large data size can all make taxonomic analysis difficult. In particular, commonly used alignment-based methods are not ideal choices for detecting new viral species. In this work, we present a novel hierarchical classification model named CHEER, which can conduct read-level taxonomic classification from order to genus for new species. By combining k-mer embedding-based encoding, hierarchically organized CNNs, and carefully trained rejection layer, CHEER is able to assign correct taxonomic labels for reads from new species. We tested CHEER on both simulated and real sequencing data. The results show that CHEER can achieve higher accuracy than popular alignment-based and alignment-free taxonomic assignment tools. The source code, scripts, and pre-trained parameters for CHEER are available via GitHub: https://github.com/KennthShang/CHEER.},
+author = {Jiayu Shang and Yanni Sun},
+doi = {10.1016/j.ymeth.2020.05.018},
+pmid = {32454212},
+}
+
+@article{bc471bf1b1b05349826a809c24ca46ed423f297b,
+title = {Machine Learning and Deep Learning Applications in Metagenomic Taxonomy and Functional Annotation},
+year = {2022},
+url = {https://www.semanticscholar.org/paper/bc471bf1b1b05349826a809c24ca46ed423f297b},
+abstract = {Shotgun sequencing of environmental DNA (i.e., metagenomics) has revolutionized the field of environmental microbiology, allowing the characterization of all microorganisms in a sequencing experiment. To identify the microbes in terms of taxonomy and biological activity, the sequenced reads must necessarily be aligned on known microbial genomes/genes. However, current alignment methods are limited in terms of speed and can produce a significant number of false positives when detecting bacterial species or false negatives in specific cases (virus, plasmids, and gene detection). Moreover, recent advances in metagenomics have enabled the reconstruction of new genomes using de novo binning strategies, but these genomes, not yet fully characterized, are not used in classic approaches, whereas machine and deep learning methods can use them as models. In this article, we attempted to review the different methods and their efficiency to improve the annotation of metagenomic sequences. Deep learning models have reached the performance of the widely used k-mer alignment-based tools, with better accuracy in certain cases; however, they still must demonstrate their robustness across the variety of environmental samples and across the rapid expansion of accessible genomes in databases.},
+author = {Alban Mathieu and Mickael Leclercq and Melissa Sanabria and Olivier Périn and A. Droit},
+doi = {10.3389/fmicb.2022.811495},
+pmid = {35359727},
+}
+
+@article{3d701ca3ac424f6b1bb4424f641ed914bb6889cb,
+title = {A probabilistic model to recover individual genomes from metagenomes},
+year = {2017},
+url = {https://www.semanticscholar.org/paper/3d701ca3ac424f6b1bb4424f641ed914bb6889cb},
+abstract = {Shotgun metagenomics of microbial communities reveal information about strains of relevance for applications in medicine, biotechnology and ecology. Recovering their genomes is a crucial but very challenging step due to the complexity of the underlying biological system and technical factors. Microbial communities are heterogeneous, with oftentimes hundreds of present genomes deriving from different species or strains, all at varying abundances and with different degrees of similarity to each other and reference data. We present a versatile probabilistic model for genome recovery and analysis, which aggregates three types of information that are commonly used for genome recovery from metagenomes. As potential applications we showcase metagenome contig classification, genome sample enrichment and genome bin comparisons. The open source implementation MGLEX is available via the Python Package Index and on GitHub and can be embedded into metagenome analysis workflows and programs.},
+author = {J. Dröge and A. Schönhuth and A. Mchardy},
+doi = {10.7287/peerj-cs.117v0.2/reviews/3},
+}
+
+@article{56a2898f89537fa8252681896dcdb7fb08d48907,
+title = {Computational Tools for Taxonomic Microbiome Profiling of Shotgun Metagenomes},
+year = {2015},
+url = {https://www.semanticscholar.org/paper/56a2898f89537fa8252681896dcdb7fb08d48907},
+abstract = {Abstract Microbial communities are complex biological entities that are crucial in virtually all natural and human-associated ecosystems. Whole-metagenome shotgun (WMS) sequencing provides the opportunity to explore the entire genomic content of microbiomes in specific environments, but several computational challenges are encountered in the data analysis. Here we discuss the software tools available to taxonomically profile a microbiome from WMS data to obtain the list of organisms present in the community and their respective proportions. Current approaches based on sequence assembly or alignment, compositional features, and marker genes are presented, along with a case study on the largest WMS dataset generated to date to guide the user in similar investigations. We also discuss the outstanding challenges and the required features new computational methods should provide for metagenomic profiling.},
+author = {Matthias Scholz and Adrian Tett and N. Segata},
+doi = {10.1016/B978-0-12-410472-3.00005-1},
+}
+
+@article{4359d12dc4f8bb4ba787fd1c215375bee82928f8,
+title = {Gist – an ensemble approach to the taxonomic classification of metatranscriptomic sequence data},
+year = {2016},
+url = {https://www.semanticscholar.org/paper/4359d12dc4f8bb4ba787fd1c215375bee82928f8},
+abstract = {The study of whole microbial communities through RNA-seq, or metatranscriptomics, offers a unique view of the relative levels of activity for different genes across a large number of species simultaneously. To make sense of these sequencing data, it is necessary to be able to assign both taxonomic and functional identities to each sequenced read. High-quality identifications are important not only for community profiling, but to also ensure that functional assignments of sequence reads are correctly attributed to their source taxa. Such assignments allow biochemical pathways to be appropriately allocated to discrete species, enabling the capture of cross-species interactions. Typically read annotation is performed by a single alignment-based search tool such as BLAST. However, due to the vast extent of bacterial diversity, these approaches tend to be highly error prone, particularly for taxonomic assignments. Here we introduce a novel program for generating taxonomic assignments, called Gist, which integrates information from a number of machine learning methods and the Burrows-Wheeler Aligner. Uniquely Gist establishes the most appropriate weightings of methods for individual genomes, facilitating high classification accuracy on next-generation sequencing reads. We validate our approach using a synthetic metatranscriptome generator based on Flux Simulator, termed Genepuddle. Further, unlike previous taxonomic classifiers, we demonstrate the capacity of composition-based techniques to accurately inform on taxonomic origin without resorting to longer scanning windows that mimic alignment-based methods. Gist is made freely available under the terms of the GNU General Public License at compsysbio.org/gist.},
+author = {S. Halliday and J. Parkinson},
+doi = {10.1101/081026},
+}
+
+@article{4f1b1be28f254cc012117f72045eb1f4ad4d65a3,
+title = {Classification of Metagenomics Data at Lower Taxonomic Level Using a Robust Supervised Classifier},
+year = {2015},
+url = {https://www.semanticscholar.org/paper/4f1b1be28f254cc012117f72045eb1f4ad4d65a3},
+abstract = {As more and more completely sequenced genomes become available, the taxonomic classification of metagenomic data will benefit greatly from supervised classifiers that can be updated instantaneously in response to new genomes. Currently, some supervised classifiers have been developed to assess the organism of metagenomic sequences. We have found that the existing supervised classifiers usually cannot discriminate the training data from different classes accurately when the data contain some outliers. However, the training genomic data (bacterial and archaeal genomes) usually contain a portion of outliers, which come from sequencing errors, phage invasions, and some highly expressed genes, etc. The outliers, treated as noises, prohibit the development of classifiers with better prediction accuracy. To solve the problem, we present a robust supervised classifier, weighted support vector domain description (WSVDD), which can eliminate the interference from some outliers for training genomic data and then generate more accurate data domain descriptions for each taxonomic class. The experimental results demonstrate WSVDD is more robust than other classifiers for simulated Sanger and 454 reads with different outlier rates. In addition, in experiments performed on simulated metagenomes and real gut metagenomes, WSVDD also achieved better prediction accuracy than other classifiers.},
+author = {Tao Hou and Fu Liu and Yun Liu and Qingyu Zou and Xiao Zhang and Ke Wang},
+doi = {10.4137/EBO.S20523},
+pmid = {25673967},
+}
+
+@article{039f02cc985dfb205916aa76d762cdb392143442,
+title = {An evaluation of the accuracy and speed of metagenome analysis tools},
+year = {2015},
+url = {https://www.semanticscholar.org/paper/039f02cc985dfb205916aa76d762cdb392143442},
+abstract = {Metagenome studies are becoming increasingly widespread, yielding important insights into microbial communities covering diverse environments from terrestrial and aquatic ecosystems to human skin and gut. With the advent of high-throughput sequencing platforms, the use of large scale shotgun sequencing approaches is now commonplace. However, a thorough independent benchmark comparing state-of-the-art metagenome analysis tools is lacking. Here we present a benchmark where the most widely used tools are tested on complex, realistic data sets. Our results clearly show that the most widely used tools are not necessarily the most accurate, that the most accurate tool is not necessarily the most time consuming, and that there is a high degree of variability between available tools. These findings are important as the conclusions of any metagenomics study are affected by errors in the predicted community composition and functional capacity. Data sets and results are freely available from http://www.ucbioinformatics.org/metabenchmark.html},
+author = {Stinus Lindgreen and Karen L Adair and P. Gardner},
+doi = {10.1101/017830},
+pmid = {26778510},
+}
+
+@article{c6a515e14af4fc4f18be4a1cee8db8f789d029ad,
+title = {DiScRIBinATE: a rapid method for accurate taxonomic classification of metagenomic sequences},
+year = {2010},
+url = {https://www.semanticscholar.org/paper/c6a515e14af4fc4f18be4a1cee8db8f789d029ad},
+abstract = {BackgroundIn metagenomic sequence data, majority of sequences/reads originate from new or partially characterized genomes, the corresponding sequences of which are absent in existing reference databases. Since taxonomic assignment of reads is based on their similarity to sequences from known organisms, the presence of reads originating from new organisms poses a major challenge to taxonomic binning methods. The recently published SOrt-ITEMS algorithm uses an elaborate work-flow to assign reads originating from hitherto unknown genomes with significant accuracy and specificity. Nevertheless, a significant proportion of reads still get misclassified. Besides, the use of an alignment-based orthology step (for improving the specificity of assignments) increases the total binning time of SOrt-ITEMS.ResultsIn this paper, we introduce a rapid binning approach called DiScRIBinATE (Di stance Sc ore R atio for I mproved Bin ning A nd T axonomic E stimation). DiScRIBinATE replaces the orthology approach of SOrt-ITEMS with a quicker 'alignment-free' approach. We demonstrate that incorporating this approach reduces binning time by half without any loss in the specificity and accuracy of assignments. Besides, a novel reclassification strategy incorporated in DiScRIBinATE results in reducing the overall misclassification rate to around 3 - 7%. This misclassification rate is 1.5 - 3 times lower as compared to that by SOrt-ITEMS, and 3 - 30 times lower as compared to that by MEGAN.ConclusionsA significant reduction in binning time, coupled with a superior assignment accuracy (as compared to existing binning methods), indicates the immense applicability of the proposed algorithm in rapidly mapping the taxonomic diversity of large metagenomic samples with high accuracy and specificity.AvailabilityThe program is available on request from the authors.},
+author = {T. Ghosh and M. H. Mohammed and S. Mande},
+doi = {10.1186/1471-2105-11-S7-S14},
+pmid = {21106121},
+}
+
+@article{b2c52c5365ca3ade809fe7ab3dee162593e3f59e,
+title = {SOrt-ITEMS: Sequence orthology based approach for improved taxonomic estimation of metagenomic sequences},
+year = {2009},
+url = {https://www.semanticscholar.org/paper/b2c52c5365ca3ade809fe7ab3dee162593e3f59e},
+abstract = {MOTIVATION
+One of the first steps in metagenomic analysis is the assignment of reads/contigs obtained from various sequencing technologies to their correct taxonomic bins. Similarity-based binning methods assign a read to a taxon/clade, based on the pattern of significant BLAST hits generated against sequence databases. Existing methods, which use bit-score as the sole parameter to ascertain the significance of BLAST hits, have limited specificity and accuracy of binning. A new binning algorithm, called SOrt-ITEMS is introduced, which addresses these limitations. The method uses alignment parameters besides the bit score to first identify an appropriate taxonomic level where the read can be assigned. An orthology-based approach is subsequently used by the method for the final assignment.
+
+
+RESULTS
+The performance of SOrt-ITEMS has been validated with reads simulating sequences from 454 and Sanger sequencing technologies. In addition, the taxonomic composition of the Sargasso Sea data set has been analyzed using SOrt-ITEMS. SOrt-ITEMS shows improved specificity and accuracy of assignments especially in simulated scenarios, wherein sequences corresponding to the source organism of the reads are absent in the reference database.
+
+
+AVAILABILITY
+SOrt-ITEMS software is available for download from: http://metagenomics.atc.tcs.com/binning/SOrt-ITEMS. No license is needed for academic and nonprofit use.},
+author = {M. H. Mohammed and T. Ghosh and Dinakar Komanduri and S. Mande},
+doi = {10.1093/bioinformatics/btp317},
+pmid = {19439565},
+}

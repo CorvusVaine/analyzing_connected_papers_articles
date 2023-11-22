@@ -1,0 +1,356 @@
+@article{e53c9b5a98c5d15eb96300affb8a74b2876d8327,
+title = {MetaMLP: A fast word embedding based classifier to profile target gene databases in metagenomic samples},
+year = {2019},
+url = {https://www.semanticscholar.org/paper/e53c9b5a98c5d15eb96300affb8a74b2876d8327},
+abstract = {The functional profile of metagenomic samples allows the understanding of the role of the microbes in their environment. Such analysis consists of assigning short sequencing reads to a particular functional category. Normally, manually curated databases are used for functional assignment where genes are arranged into different classes. Sequence alignment has been widely used to profile metagenomic samples against curated databases. However, this method is time consuming and requires high computing resources. Although several alignment free methods based on k-mer composition have been developed in the recent years, they still require a large amount of memory. In this paper, MetaMLP (Metagenomics Machine Learning Profiler) a machine learning method that represents sequences into numerical vectors (embeddings) and uses a simple one hidden layer neural network to profile functional categories is proposed. Unlike other methods, MetaMLP enables partial matching by using a reduced alphabet to build sequence embeddings from full and partial kmers. MetaMLP is able to identify a slightly larger number of reads compared to Diamond (one of the fastest sequence alignment method) as well as to perform accurate predictions with 0.99 precision and 0.99 recall. MetaMLP can process 100M reads in around 10 minutes in a laptop computer which is 50x faster than Diamond. MetaMLP is free for use, available at https://bitbucket.org/gaarangoa/metamlp/src/master/.},
+author = {G. Arango-Argoty and L. Heath and A. Pruden and P. Vikesland and Liqing Zhang},
+doi = {10.1101/569970},
+pmid = {34665648},
+}
+
+@article{2c4bce195cc5e15bd90b58c4d0cd4f7cee2c4429,
+title = {DeTangle: A Framework for Interactive Prediction and Visualization of Gene Regulatory Networks},
+year = {2017},
+url = {https://www.semanticscholar.org/paper/2c4bce195cc5e15bd90b58c4d0cd4f7cee2c4429},
+abstract = {},
+author = {D. Altarawy},
+}
+
+@article{a7bc029fb3cf4084a235c57726475a8b238c26fb,
+title = {Correlation between computed equilibrium secondary structure free energy and siRNA efficiency},
+year = {2009},
+url = {https://www.semanticscholar.org/paper/a7bc029fb3cf4084a235c57726475a8b238c26fb},
+abstract = {We have explored correlations between the measured efficiency of the RNAi process and several computed signatures that characterize equilibrium secondary structure of the participating mRNA, siRNA, and their complexes. A previously published data set of 609 experimental points (with efficiency represented as percentage of remaining mRNA) was used for the analysis. While virtually no correlation with the computed structural signatures are observed for individual data points, several clear trends emerge when the “noise” is reduced by averaging over 10 bins of N ~ 60 data points per bin. The strongest of the trends is a positive linear (r2 = 0.87) correlation between ln(remaining mRNA) and ΔGms, the combined free energy cost of unraveling the siRNA and creating the break in the mRNA secondary structure at the complementary target strand region. At the same time, the free energy change ΔGtotal of the entire process mRNA + siRNA → (mRNA-siRNA) Complex is not correlated with RNAi efficiency, even after the averaging. These general findings appear to be robust to details of the computational protocols, suggesting that, while straightforward analysis based on equilibrium secondary structure thermodynamics may not be directly applicable to the entire RNAi process, it is applicable to at least one of its key stages. The correlation between computed ΔGms and experimentally observed RNAi efficiency can be used to enhance the ability of a machine learning algorithm based on a support vector machine (SVM) to predict effective siRNA sequences for a given target mRNA. Specifically, we observe modest, 3 to 7%, but consistent improvement in the positive predictive value (PPV) when the SVM training set is pre- or post-filtered to half the original size according to a ΔGms threshold.},
+author = {Puranjoy Bhattacharjee and Naren Ramakrishnan and Lenwood S. Heath and A. Onufriev},
+doi = {10.1109/BIBMW.2009.5332077},
+}
+
+@article{113362791db092978de78e220296725b36e092e4,
+title = {A Theoretical Model for Whole Genome Alignment},
+year = {2011},
+url = {https://www.semanticscholar.org/paper/113362791db092978de78e220296725b36e092e4},
+abstract = {We present a graph-based model for representing two aligned genomic sequences. An alignment graph is a mixed graph consisting of two sets of vertices, each representing one of the input sequences, and three sets of edges. These edges allow the model to represent a number of evolutionary events. This model is used to perform sequence alignment at the level of nucleotides. We define a scoring function for alignment graphs. We show that minimizing the score is NP-complete. However, we present a dynamic programming algorithm that solves the minimization problem optimally for a certain class of alignments, called breakable arrangements. Algorithms for analyzing breakable arrangements are presented. We also present a greedy algorithm that is capable of representing reversals. We present a dynamic programming algorithm that optimally aligns two genomic sequences, when one of the input sequences is a breakable arrangement of the other. Comparing what we define as breakable arrangements to alignments generated by other algorithms, it is seen that many already aligned genomes fall into the category of being breakable. Moreover, the greedy algorithm is shown to represent reversals, besides rearrangements, mutations, and other evolutionary events.},
+author = {Nahla A. Belal and Lenwood S. Heath},
+doi = {10.1089/cmb.2010.0101},
+pmid = {21210739},
+}
+
+@article{c61d40d9e2f5b6f1d14817f72ab766b20a87cdb9,
+title = {A Machine Learning Approach to Predict Gene Regulatory Networks in Seed Development in Arabidopsis},
+year = {2016},
+url = {https://www.semanticscholar.org/paper/c61d40d9e2f5b6f1d14817f72ab766b20a87cdb9},
+abstract = {Gene regulatory networks (GRNs) provide a representation of relationships between regulators and their target genes. Several methods for GRN inference, both unsupervised and supervised, have been developed to date. Because regulatory relationships consistently reprogram in diverse tissues or under different conditions, GRNs inferred without specific biological contexts are of limited applicability. In this report, a machine learning approach is presented to predict GRNs specific to developing Arabidopsis thaliana embryos. We developed the Beacon GRN inference tool to predict GRNs occurring during seed development in Arabidopsis based on a support vector machine (SVM) model. We developed both global and local inference models and compared their performance, demonstrating that local models are generally superior for our application. Using both the expression levels of the genes expressed in developing embryos and prior known regulatory relationships, GRNs were predicted for specific embryonic developmental stages. The targets that are strongly positively correlated with their regulators are mostly expressed at the beginning of seed development. Potential direct targets were identified based on a match between the promoter regions of these inferred targets and the cis elements recognized by specific regulators. Our analysis also provides evidence for previously unknown inhibitory effects of three positive regulators of gene expression. The Beacon GRN inference tool provides a valuable model system for context-specific GRN inference and is freely available at https://github.com/BeaconProjectAtVirginiaTech/beacon_network_inference.git.},
+author = {Ying Ni and Delasa Aghamirzaie and Haitham A. Elmarakeby and E. Collakova and Song Li and R. Grene and L. Heath},
+doi = {10.3389/fpls.2016.01936},
+pmid = {28066488},
+}
+
+@article{98af4b3a3d4dc2c97d72153a0d7891b113636d8a,
+title = {LEND and Faster Algorithms for Constructing Minimal Perfect Hash Functions},
+year = {1992},
+url = {https://www.semanticscholar.org/paper/98af4b3a3d4dc2c97d72153a0d7891b113636d8a},
+abstract = {The Large External object-oriented Network Database (LEND) system has been developed to provide efficient access to large collections of primitive or multimedia objects, semantic networks, thesauri, hypertexts, and information retrieval collections. An overview of LEND is given, emphasizing aspects that yield efficient operation. In particular, a new algorithm is described for quickly finding minimal perfect hash functions whose specification space is very close to the theoretical lower bound, i.e., around 2 bits per key. The various stages of processing are detailed, along with analytical and empirical results, including timing for a set of over 3.8 million keys that was processed on a NeXTstation in about 6 hours.},
+author = {E. Fox and Q. Chen and Lenwood S. Heath},
+}
+
+@article{ba905b41ef9c6da40db19120cc0ca6618066aac2,
+title = {Entropy Measurements and Ball Cover Construction for Biological Sequences},
+year = {2018},
+url = {https://www.semanticscholar.org/paper/ba905b41ef9c6da40db19120cc0ca6618066aac2},
+abstract = {},
+author = {J. Robertson},
+}
+
+@article{1f3e8e51ce3040e5e06bc3e1ed10d8cbe136eb0a,
+title = {Using relative importance methods to model high-throughput gene perturbation screens.},
+year = {2008},
+url = {https://www.semanticscholar.org/paper/1f3e8e51ce3040e5e06bc3e1ed10d8cbe136eb0a},
+abstract = {With the advent of high-throughput gene perturbation screens (e.g., RNAi assays, genome-wide deletion mutants), modeling the complex relationship between genes and phenotypes has become a paramount problem. One broad class of methods uses 'guilt by association' methods to impute phenotypes to genes based on the interactions between the given gene and other genes with known phenotypes. But these methods are inadequate for genes that have no cataloged interactions but which nevertheless are known to result in important phenotypes. In this paper, we present an approach to first model relationships between phenotypes using the notion of 'relative importance' and subsequently use these derived relationships to make phenotype predictions. Besides improved accuracy on S. cerevisiae deletion mutants and C. elegans knock-down datasets, we show how our approach sheds insight into relations between phenotypes.},
+author = {Ying Jin and Naren Ramakrishnan and L. Heath and R. Helm},
+doi = {10.1142/9781848162648_0020},
+pmid = {19642283},
+}
+
+@article{6a3da2d9ba8505366e23f89400eea659c7446f05,
+title = {Methods for Analysis of Prokaryotic Genome Architecture},
+year = {2017},
+url = {https://www.semanticscholar.org/paper/6a3da2d9ba8505366e23f89400eea659c7446f05},
+abstract = {},
+author = {A. Warren},
+}
+
+@article{6d2b6d84aa4dc55c1476d7301f335746de1f9359,
+title = {PEAK: Integrating Curated and Noisy Prior Knowledge in Gene Regulatory Network Inference},
+year = {2017},
+url = {https://www.semanticscholar.org/paper/6d2b6d84aa4dc55c1476d7301f335746de1f9359},
+abstract = {With abundance of biological data, computational prediction of gene regulatory networks (GRNs) from gene expression data has become more feasible. Although incorporating other prior knowledge (PK), along with gene expression data, greatly improves prediction accuracy, the overall accuracy is still low. PK in GRN inference can be categorized into noisy and curated. In noisy PK, relations between genes do not necessarily correspond to regulatory relations and are thus considered inaccurate by inference algorithms such as transcription factor binding and protein-protein interactions. In contrast, curated PK is experimentally verified regulatory interactions in pathway databases. An issue in real data is that gene expression can poorly support the curated PK and thus most existing prediction algorithms cannot use these curated PK. Although several algorithms were proposed to incorporate noisy PK, none address curated PK with poor gene expression support. We present PEAK, a system to integrate both curated and noisy PK in GRN inference, especially with poor gene expression support. We introduce a novel method for GRN inference, CurInf, to effectively integrate curated PK, even when the gene expression data poorly support the PK. PEAK also uses the previously proposed method Modified Elastic Net to incorporate noisy PK, and we call it NoisInf. In our experiment, CurInf significantly incorporates curated PK, which was regarded as noise by previous methods. Using 100% curated PK, CurInf improves the area under precision-recall curve accuracy score over NoisInf by 27.3% in synthetic data, 86.5% in Escherichia coli data, and 31.1% in Saccharomyces cerevisiae data. Moreover, even when the noise in PK is 10 times more than true PK, PEAK performs better than inference without any PK. Better integration of curated PK helps biologists benefit from verified experimental data to predict more reliable GRN.},
+author = {D. Altarawy and Fatma-Elzahraa Eid and Lenwood S. Heath},
+doi = {10.1089/cmb.2016.0199},
+pmid = {28294630},
+}
+
+@article{dccb7e619e9a24ecfe350815a817cb5493106e13,
+title = {Derandomized Vector Sorting},
+year = {1998},
+url = {https://www.semanticscholar.org/paper/dccb7e619e9a24ecfe350815a817cb5493106e13},
+abstract = {An instance of the vector sorting problem is a sequence of k-dimensional vectors of length n. A solution to the problem is a permutation of the vectors such that in each dimension the length of the longest decreasing subsequence is O(sqrt(n)). A random permutation solves the problem. Here we derandomize the obvious probabilistic algorithm and obtain a deterministic O(kn^3.5) time algorithm that solves the vector sorting problem. We also apply the algorithm to a book embedding problem.},
+author = {S. Lenwood and Mateescu Gabriel},
+}
+
+@article{2fa3d56f013bb22d9443930e847ae348509f6f1b,
+title = {Investigating the Role of the VAL1 Transcription Factor in Arabidopsis thaliana Embryo Development},
+year = {2015},
+url = {https://www.semanticscholar.org/paper/2fa3d56f013bb22d9443930e847ae348509f6f1b},
+abstract = {.......................................................................................................................................... ii Dedication ...................................................................................................................................... iii Acknowledgements ........................................................................................................................ iv Attributions .................................................................................................................................. viii List of Tables ................................................................................................................................ xii List of Figures .............................................................................................................................. xiii Chapter 1: Literature Review Oilseed embryo development and potential regulatory functions of the transcription factor VAL1 .............................................................................................................................................. 1 1.},
+author = {Andrew Schneider},
+}
+
+@article{3f26276ad9dc0036934981aa4e5cd5a2c68a2cb1,
+title = {Local Search for the Retrieval Layout Problem},
+year = {1993},
+url = {https://www.semanticscholar.org/paper/3f26276ad9dc0036934981aa4e5cd5a2c68a2cb1},
+abstract = {An information graph is a data representation for object-oriented databases in which each object is a vertex and each relationship between objects is an edge. The retrieval layout problem is to arrange the storage of an information graph on a physical medium so as to use storage efficiently and to allow rapid navigation along paths in the graph. This paper describes an empirical study of the performance of various local search heuristics for the retrieval layout problem, including local optimization, simulated annealing, tabu search, and genetic algorithms. In addition, the hierarchical hybrid approach is introduced.},
+author = {Lenwood S. Heath and J. Lavinus},
+}
+
+@article{d8333d864af258c94d7970ed2f63f593f332c8c1,
+title = {Graph-based genomic signatures},
+year = {2008},
+url = {https://www.semanticscholar.org/paper/d8333d864af258c94d7970ed2f63f593f332c8c1},
+abstract = {},
+author = {Amrita Pati},
+}
+
+@article{55407dd75bddb00acf4942a5a6ac7bcdefda9de4,
+title = {Modeling and Analysis of Regulatory Elements in Arabidopsis thaliana from Annotated Genomes and Gene Expression Data},
+year = {2005},
+url = {https://www.semanticscholar.org/paper/55407dd75bddb00acf4942a5a6ac7bcdefda9de4},
+abstract = {},
+author = {Amrita Pati},
+}
+
+@article{0c321e90a29974b3629a9c67b23ff4d5e4f951cd,
+title = {Transcriptome-wide functional characterization reveals novel relationships among differentially expressed transcripts in developing soybean embryos},
+year = {2015},
+url = {https://www.semanticscholar.org/paper/0c321e90a29974b3629a9c67b23ff4d5e4f951cd},
+abstract = {BackgroundTranscriptomics reveals the existence of transcripts of different coding potential and strand orientation. Alternative splicing (AS) can yield proteins with altered number and types of functional domains, suggesting the global occurrence of transcriptional and post-transcriptional events. Many biological processes, including seed maturation and desiccation, are regulated post-transcriptionally (e.g., by AS), leading to the production of more than one coding or noncoding sense transcript from a single locus.ResultsWe present an integrated computational framework to predict isoform-specific functions of plant transcripts. This framework includes a novel plant-specific weighted support vector machine classifier called CodeWise, which predicts the coding potential of transcripts with over 96 % accuracy, and several other tools enabling global sequence similarity, functional domain, and co-expression network analyses. First, this framework was applied to all detected transcripts (103,106), out of which 13 % was predicted by CodeWise to be noncoding RNAs in developing soybean embryos. Second, to investigate the role of AS during soybean embryo development, a population of 2,938 alternatively spliced and differentially expressed splice variants was analyzed and mined with respect to timing of expression. Conserved domain analyses revealed that AS resulted in global changes in the number, types, and extent of truncation of functional domains in protein variants. Isoform-specific co-expression network analysis using ArrayMining and clustering analyses revealed specific sub-networks and potential interactions among the components of selected signaling pathways related to seed maturation and the acquisition of desiccation tolerance. These signaling pathways involved abscisic acid- and FUSCA3-related transcripts, several of which were classified as noncoding and/or antisense transcripts and were co-expressed with corresponding coding transcripts. Noncoding and antisense transcripts likely play important regulatory roles in seed maturation- and desiccation-related signaling in soybean.ConclusionsThis work demonstrates how our integrated framework can be implemented to make experimentally testable predictions regarding the coding potential, co-expression, co-regulation, and function of transcripts and proteins related to a biological process of interest.},
+author = {Delasa Aghamirzaie and Dhruv Batra and L. Heath and Andrew Schneider and R. Grene and E. Collakova},
+doi = {10.1186/s12864-015-2108-x},
+pmid = {26572793},
+}
+
+@article{fb93adce3da011c4040180b12b273a37596f649b,
+title = {Two Problems in Computational Genomics},
+year = {2011},
+url = {https://www.semanticscholar.org/paper/fb93adce3da011c4040180b12b273a37596f649b},
+abstract = {},
+author = {Nahla A. Belal},
+}
+
+@article{ee6a1f26475ac9631434a676fa15bc45d78e0909,
+title = {XcisClique : Analyzing regulatory bicliques in Arabidopsis thaliana},
+year = {null},
+url = {https://www.semanticscholar.org/paper/ee6a1f26475ac9631434a676fa15bc45d78e0909},
+abstract = {Modeling of cis-elements in the upstream regions of genes is a challenging computational problem. Computational models have been created for cis-elements and their arrangements in genes promoters. A set of regulatory motifs present in the promoters of a set of genes can be modeled by a biclique. Combinations of cis-elements play a vital role in ascertaining that the correct co-action of transcription factors binding to the gene promoter, results in appropriate gene expression in response to various stimuli. Geometrical and spatial constraints in transcription factor binding also impose restrictions on order and separation of cis-elements. Not all regulatory elements that coexist are biologically significant. If the set of genes in which a set of regulatory elements co-occur, are tightly correlated with respect to gene expression data over a set of treatments, the regulatory element combination can be biologically meaningful. The system developed in this work, XcisClique, consists of a comprehensive infrastructure for annotated genome and gene expression data for Arabidopsis thaliana. XcisClique models cis-regulatory elements as regular expressions and detects maximal bicliques of genes and motifs, called itemsets. XcisClique differs from existing tools of the same kind in that, it offers a common platform for the integration of sequence and gene expression data. Cis-element combinations identified by XcisClique are not only statistically over-represented in sequence data, but also are evaluated with respect to the expression patterns of the genes they occur in, thereby, producing results that are biologically directed. XcisClique is also the only tool of its kind for Arabidopsis thaliana, and can also be used for other organisms in the presence of appropriate sequence, expression, and regulatory element data. The web-interface to a subset of functionalities, source code and supplemental material are available online at http://bioinformatics.cs.vt.edu/~XcisClique. Department of Computer Science Department of Plant Pathology, Physiology, and Weed Science Corresponding Author. EMAIL: heath@vt.edu},
+author = {Amrita Pati and Cecilia Vasquez-Robinet and L. Heath and R. Grene and T. Murali},
+}
+
+@article{2e3dff394909f162e17644ff516f0d212f9292a3,
+title = {Inferring Signal Transduction Pathways from Gene Expression Data using Prior Knowledge},
+year = {2015},
+url = {https://www.semanticscholar.org/paper/2e3dff394909f162e17644ff516f0d212f9292a3},
+abstract = {Plants have developed specific responses to external stimuli such as drought, cold, high salinity in soil, and precipitation in addition to internal developmental stimuli. These stimuli trigger signal transduction pathways in plants, leading to cellular adaptation. A signal transduction pathway is a network of entities that interact with one another in response to given stimulus. Such participating entities control and affect gene expression in response to stimulus . For computational purposes, a signal transduction pathway is represented as a network where nodes are biological molecules. The interaction of two nodes is a directed edge. A plethora of research has been conducted to understand signal transduction pathways. However, there are a limited number of approaches to explore and integrate signal transduction pathways. Therefore, we need a platform to integrate together and to expand the information of each signal transduction pathway. One of the major computational challenges in inferring signal transduction pathways is that the addition of new nodes and edges can affect the information flow between existing ones in an unknown manner. Here, I develop the Beacon inference engine to address these computational challenges. This software engine employs a network inference approach to predict new edges. First, it uses mutual information and context likelihood relatedness to predict edges from gene expression time-series data. Subsequently, it incorporates prior knowledge to limit false-positive predictions. Finally, a naive Bayes classifier is used to predict new edges. The Beacon inference engine predicts new edges with a recall rate 77.6% and precision 81.4%. 24% of the total predicted edges are new i.e., they are not present in the prior knowledge.},
+author = {Deepti Aggarwal},
+}
+
+@article{957a04ca30851b91fa08e2104e36e532e35ee814,
+title = {Potential targets of VIVIPAROUS1/ABI3-LIKE1 (VAL1) repression in developing Arabidopsis thaliana embryos.},
+year = {2016},
+url = {https://www.semanticscholar.org/paper/957a04ca30851b91fa08e2104e36e532e35ee814},
+abstract = {Developing Arabidopsis seeds accumulate oils and seed storage proteins synthesized by the pathways of primary metabolism. Seed development and metabolism are positively regulated by transcription factors belonging to the LAFL (LEC1, AB13, FUSCA3 and LEC2) regulatory network. The VAL gene family encodes repressors of the seed maturation program in germinating seeds, although they are also expressed during seed maturation. The possible regulatory role of VAL1 in seed development has not been studied to date. Reverse genetics revealed that val1 mutant seeds accumulated elevated levels of proteins compared with the wild type, suggesting that VAL1 functions as a repressor of seed metabolism; however, in the absence of VAL1, the levels of metabolites, ABA, auxin and jasmonate derivatives did not change significantly in developing embryos. Two VAL1 splice variants were identified through RNA sequencing analysis: a full-length form and a truncated form lacking the plant homeodomain-like domain associated with epigenetic repression. None of the transcripts encoding the core LAFL network transcription factors were affected in val1 embryos. Instead, activation of VAL1 by FUSCA3 appears to result in the repression of a subset of seed maturation genes downstream of core LAFL regulators, as 39% of transcripts in the FUSCA3 regulon were derepressed in the val1 mutant. The LEC1 and LEC2 regulons also responded, but to a lesser extent. Additional 832 transcripts that were not LAFL targets were derepressed in val1 mutant embryos. These transcripts are candidate targets of VAL1, acting through epigenetic and/or transcriptional repression.},
+author = {Andrew Schneider and Delasa Aghamirzaie and Haitham A. Elmarakeby and Arati N Poudel and A. J. Koo and L. Heath and R. Grene and E. Collakova},
+doi = {10.1111/tpj.13106},
+pmid = {26678037},
+}
+
+@article{86595befe8b975bdfe499b063176bf561f4e91bc,
+title = {Next generation sequencing approaches to evaluate water and wastewater quality.},
+year = {2021},
+url = {https://www.semanticscholar.org/paper/86595befe8b975bdfe499b063176bf561f4e91bc},
+abstract = {The emergence of next generation sequencing (NGS) is revolutionizing the potential to address complex microbiological challenges in the water industry. NGS technologies can provide holistic insight into microbial communities and their functional capacities in water and wastewater systems, thus eliminating the need to develop a new assay for each target organism or gene. However, several barriers have hampered wide-scale adoption of NGS by the water industry, including cost, need for specialized expertise and equipment, challenges with data analysis and interpretation, lack of standardized methods, and the rapid pace of development of new technologies. In this critical review, we provide an overview of the current state of the science of NGS technologies as they apply to water, wastewater, and recycled water. In addition, a systematic literature review was conducted in which we identified over 600 peer-reviewed journal articles on this topic and summarized their contributions to six key areas relevant to the water and wastewater fields: taxonomic classification and pathogen detection, functional and catabolic gene characterization, antimicrobial resistance (AMR) profiling, bacterial toxicity characterization, Cyanobacteria and harmful algal bloom identification, and virus characterization. For each application, we have presented key trends, noteworthy advancements, and proposed future directions. Finally, key needs to advance NGS technologies for broader application in water and wastewater fields are assessed.},
+author = {E. Garner and Benjamin C. Davis and Erin Milligan and M. Blair and Ishi Keenum and A. Maile-Moskowitz and Jin Pan and M. Gnegy and Krista Liguori and Suraj Gupta and A. Prussin and L. Marr and L. Heath and P. Vikesland and Liqing Zhang and A. Pruden},
+doi = {10.1016/j.watres.2021.116907},
+pmid = {33610927},
+}
+
+@article{06bde8ee369a50b0884bec98dddde90dba72a685,
+title = {GeneSieve: A Probe Selection Strategy for cDNA Microarrays},
+year = {2004},
+url = {https://www.semanticscholar.org/paper/06bde8ee369a50b0884bec98dddde90dba72a685},
+abstract = {(ABSTRACT) The DNA microarray is a powerful tool to study expression levels of thousands of genes simultaneously. Often, cDNA libraries representing expressed genes of an organism are available, along with expressed sequence tags (ESTs). ESTs are widely used as the probes for microarrays. Designing custom microarrays, rich in genes relevant to the experimental objectives, requires selection of probes based on their sequence. We have designed a probe selection method, called GeneSieve, to select EST probes for custom microarrays. To assign annotations to the ESTs, we cluster them into contigs using phrap. The larger contig sequences are then used for similarity search against known proteins in model organism such as Arabidopsis thaliana. We have designed three different methods to assign annotations to the contigs: bidirectional hits (BH), bidirectional best hits (BBH), and unidirectional best hits (UBH). We apply these methods to pine and potato EST sets. Results show that the UBH method assigns unambiguous annotations to a large fraction of contigs in an organism. Hence, we use UBH to assign annotations to ESTs in GeneSieve. To select a single EST from a contig, GeneSieve assigns a quality score to each EST based on its protein homology (PH), cross hybridization (CH), and relative length (RL). We use this quality score to rank ESTs according to seven different measures: length, 3 proximity, 5 proximity, protein homology, cross hybridization, relative length, and overall quality score. Results for pine and potato EST sets indicate that EST probes selected by quality score are relatively long and give better values for protein homology and cross hybridization. Results of the GeneSieve protocol are stored in a database and linked with sequence databases and known functional category schemes such as MIPS and GO. The database is made available via a web interface. A biologist is able to select large number of EST probes based on annotations or functional categories in a quick and easy way. ACKNOWLEDGMENTS I would like to thank my adviser Dr.Lenwood Heath for being a constant source of inspiration and encouragement. I thank him for being patient enough to listen to and solve the smallest and most trivial problems I came up with and for providing me all the resources I needed for my research. I would like to thank Dr.Ruth Grene for introducing me to the world of biology and for helping me understand the biological concepts essential for this research.ating GeneSieve web interface and …},
+author = {M. Shukla},
+}
+
+@article{9d516f570dd8bd0c9ed068be7de6bfc9fc0f4edd,
+title = {A system for document analysis, translation, and automatic hypertext linking},
+year = {1995},
+url = {https://www.semanticscholar.org/paper/9d516f570dd8bd0c9ed068be7de6bfc9fc0f4edd},
+abstract = {},
+author = {Guillermo A. Averboch},
+}
+
+@article{c2eee406637078d95c19b8883181eb5e778bba8e,
+title = {Could a Focus on the “Why” of Taxonomy Help Taxonomy Better Respond to the Needs of Science and Society?},
+year = {2022},
+url = {https://www.semanticscholar.org/paper/c2eee406637078d95c19b8883181eb5e778bba8e},
+abstract = {Genomics has put prokaryotic rank-based taxonomy on a solid phylogenetic foundation. However, most taxonomic ranks were set long before the advent of DNA sequencing and genomics. In this concept paper, we thus ask the following question: should prokaryotic classification schemes besides the current phylum-to-species ranks be explored, developed, and incorporated into scientific discourse? Could such alternative schemes provide better solutions to the basic need of science and society for which taxonomy was developed, namely, precise and meaningful identification? A neutral genome-similarity based framework is then described that could allow alternative classification schemes to be explored, compared, and translated into each other without having to choose only one as the gold standard. Classification schemes could thus continue to evolve and be selected according to their benefits and based on how well they fulfill the need for prokaryotic identification.},
+author = {L. Pritchard and C. Brown and Bailey Harrington and L. Heath and N. T. Pierce-Ward and B. Vinatzer},
+doi = {10.3389/fmicb.2022.887310},
+pmid = {35663905},
+}
+
+@article{f575554f6bf58dd80c9c87511c996e42a53855db,
+title = {Deep Learning for Biological Problems},
+year = {2017},
+url = {https://www.semanticscholar.org/paper/f575554f6bf58dd80c9c87511c996e42a53855db},
+abstract = {},
+author = {Haitham A. Elmarakeby},
+}
+
+@article{792c819de91a90f8ac6007b1c00b715541c60074,
+title = {The Expresso Microarray Experiment Management System: The Functional Genomics of Stress Responses in Loblolly Pine},
+year = {2001},
+url = {https://www.semanticscholar.org/paper/792c819de91a90f8ac6007b1c00b715541c60074},
+abstract = {Conception, design, and implementation of cDNA microarray experiments present a variety of bioinformatics challenges for biologists and computational scientists. The multiple stages of data acquisition and analysis have motivated the design of Expresso, a system for microarray experiment management. Salient aspects of Expresso include support for clone replication and randomized placement; automatic gridding, extraction of expression data from each spot, and quality monitoring; flexible methods of combining data from individual spots into information about clones and functional categories; and the use of inductive logic programming for higher-level data analysis and mining. The development of Expresso is occurring in parallel with several generations of microarray experiments aimed at elucidating genomic responses to drought stress in loblolly pine seedlings. The current experimental design incorporates 384 pine cDNAs replicated and randomly placed in two specific microarray layouts. We describe the design of Expresso as well as results of analysis with Expresso that suggest the importance of molecular chaperones and membrane transport proteins in mechanisms conferring successful adaptation to long-term drought stress.},
+author = {Lenwood S. Heath and Naren Ramakrishnan and R. Sederoff and R. Whetten and B. Chevone and C. Struble and V. Jouenne and Dawei Chen and Leonel van Zyl and R. Alscher},
+arxivid = {cs/0110047},
+}
+
+@article{939ce1f55bc1581aa89d9222d26fbf7d936a1776,
+title = {Heuristics for laying out information graphs},
+year = {1994},
+url = {https://www.semanticscholar.org/paper/939ce1f55bc1581aa89d9222d26fbf7d936a1776},
+abstract = {The concept of an information graph is introduced as a representation for object-oriented databases. The retrieval layout problem is an optimization problem defined over the class of information graphs. The layout abstracts the space efficiency of representing the database as well as the time efficiency of information retrieval. Heuristics for the retrieval layout problem are identified and evaluated experimentally. A new heuristic, connectivity traversal, is found to be fast and to produce high quality layouts.ZusammenfassungDer Begriff eines Informationsgraphen wird als eine Repräsentation für objektorientierte Datenbanken vorgestellt. Das Wiederauffinden von Informationen ergibt sich als Optimierungsproblem bezüglich der so entstandenen Informationsgraphen. Das Layout stellt nicht nur den Raumbedarf der Datenbank sondern auch den Zeitbedarf des Wiederauffindens der Informationen dar. Heuristiken für das Wiederauffindungsproblem werden identifiziert und experimentell ausgewertet. Eine neue Heuristik-connectivity traversal-ergibt sowohl ein schnelles Wiederauffindungsverfahren wie auch qualitativ hochwertige Layouts.},
+author = {J. L. Ganley and Lenwood S. Heath},
+doi = {10.1007/BF02276884},
+}
+
+@article{de7f4c4359f05a472cd0f983d71c517195821a75,
+title = {Machine Learning Approaches for Identifying microRNA Targets and Conserved Protein Complexes.},
+year = {2017},
+url = {https://www.semanticscholar.org/paper/de7f4c4359f05a472cd0f983d71c517195821a75},
+abstract = {},
+author = {Hanaa Torkey},
+}
+
+@article{6b268afaf2730cb5b81e3e4772075710264198ee,
+title = {A Network of Hidden Markov Models and Its Analysis},
+year = {2011},
+url = {https://www.semanticscholar.org/paper/6b268afaf2730cb5b81e3e4772075710264198ee},
+abstract = {The Structural Classification of Proteins (SCOP) database uses a large number of hidden Markov models (HMMs) to represent families and superfamilies composed of proteins that presumably share the same evolutionary origi n. However, how the HMMs are related to one another has not been examined before. In this work, taking into account the processes used to build the HMMs, we propose a working hypothesis to examine the relationships between HMMs and the families and superfamilies that they represent. Specifi cally, we perform an all-against-all HMM comparison using the HHsearch program and construct a network where the nodes are HMMs and the edges connect similar HMMs. We hypothesize that the HMMs in a connected component belong to the same family or superfamily more often than expected under a random network connection model. Results show a pattern consistent with this working hypothesis. Moreover, the HMM network possesses features distinctly different from previously documented biological networks , exemplified by the exceptionally high clustering coefficien t and the large number of connected components. The current finding may provide guidance in devising computational methods to reduce the degree of overlaps between the HMMs representing the same superfamilies, which may in turn enable more efficient large-scale sequence searches agains t the database of HMMs.},
+author = {Liqing Zhang and L. Watson and Lenwood S. Heath},
+}
+
+@article{0f34fe2ed7511c62491538979c41f636f0cff8b9,
+title = {LINbase: A Web service for genome-based identification of microbes as members of crowdsourced taxa},
+year = {2019},
+url = {https://www.semanticscholar.org/paper/0f34fe2ed7511c62491538979c41f636f0cff8b9},
+abstract = {The development of next generation and third generation DNA sequencing technologies in combination with new efficient algorithms allows scientists to economically, quickly, and precisely identify microbes at all taxonomic levels and even attribute pathogen isolates to specific disease outbreaks. However, current taxonomic practice has not kept up with the sequencing revolution and continues to rely on cumbersome journal publications to describe new species. Here we introduce a Web service that allows any user to genomically circumscribe any monophyletic group of bacteria as a taxon and associate with each taxon a name and short description. Any other user can immediately identify their unknown microbe as a member of any of these crowdsourced taxa using gene or genome sequences. The Web service is called LINbase. It leverages the previously described concept of Life Identification Numbers (LINs), which are codes assigned to individual organisms based on genome similarity. Most genomes currently in LINbase were imported from GenBank, but users have the option to upload their own genome sequences as well. Importantly, LINbase allows users to share the precise identity of their sequenced genomes without sharing the actual genome sequences, making not yet published or private genome sequences discoverable by the scientific community stimulating collaboration between academia and industry. LINbase is available at http://www.LINbase.org.},
+author = {L. Tian and Chengjie Huang and L. Heath and B. Vinatzer},
+doi = {10.1101/752212},
+}
+
+@article{39e96d7a971e6b729731ffb8d37fd3bdd2d9d76a,
+title = {Predicting the Interactions of Viral and Human Proteins},
+year = {2017},
+url = {https://www.semanticscholar.org/paper/39e96d7a971e6b729731ffb8d37fd3bdd2d9d76a},
+abstract = {},
+author = {Fatma-Elzahraa Eid},
+}
+
+@article{e72f769c1ea505c56e5eae9d63c1c68db86444fe,
+title = {Queue Layouts and Staircase Covers of Matrices},
+year = {1994},
+url = {https://www.semanticscholar.org/paper/e72f769c1ea505c56e5eae9d63c1c68db86444fe},
+abstract = {A connection between a queue layout of an undirected graph and a staircase cover of its adjacency matrix is established. The connection is exploited to establish a number of combinatorial results relating the number of vertices, the number of edges, and the queue number of a queue layout. The staircase notion is generalized to that of an (h,w)- staircase, and an efficient algorithm to optimally cover a matrix with (h,w)- staircases is presented. The algorithm is applied to problems of monotonic subsequences and to the maxdominance problem of Atallah and Kosaraju.},
+author = {M. Abrams and Alan L. Batongbacal and Randy L. Ribler and Devendra Vazirani and Lenwood S. Heath and S. Pemmaraju},
+}
+
+@article{7ac9e781c3312d6c794aa5bc901195ea76459943,
+title = {MicroTarget: MicroRNA target gene prediction approach with application to breast cancer},
+year = {2017},
+url = {https://www.semanticscholar.org/paper/7ac9e781c3312d6c794aa5bc901195ea76459943},
+abstract = {MicroRNAs are known to play an essential role in gene regulation in plants and animals. The standard method for understanding microRNA-gene interactions is randomized controlled perturbation experiments. These experiments are costly and time consuming. Therefore, use of computational methods is essential. Currently, several computational methods have been developed to discover microRNA target genes. However, these methods have limitations based on the features that are used for prediction. The commonly used features are complementarity to the seed region of the microRNA, site accessibility, and evolutionary conservation. Unfortunately, not all microRNA target sites are conserved or adhere to exact seed complementary, and relying on site accessibility does not guarantee that the interaction exists. Moreover, the study of regulatory interactions composed of the same tissue expression data for microRNAs and mRNAs is necessary to understand the specificity of regulation and function. We developed MicroTarget to predict a microRNA-gene regulatory network using heterogeneous data sources, especially gene and microRNA expression data. First, MicroTarget employs expression data to learn a candidate target set for each microRNA. Then, it uses sequence data to provide evidence of direct interactions. MicroTarget scores and ranks the predicted targets based on a set of features. The predicted targets overlap with many of the experimentally validated ones. Our results indicate that using expression data in target prediction is more accurate in terms of specificity and sensitivity. Available at: https://bioinformatics.cs.vt.edu/~htorkey/microTarget .},
+author = {Hanaa Torkey and Lenwood S. Heath and M. Elhefnawi},
+doi = {10.1142/S0219720017500135},
+pmid = {28552033},
+}
+
+@article{5013bb3947b0fee28c4a916e59d8e3d965c46970,
+title = {Seeing the Forest for the Trees: New approaches to Characterizing and Forecasting Cascades},
+year = {2018},
+url = {https://www.semanticscholar.org/paper/5013bb3947b0fee28c4a916e59d8e3d965c46970},
+abstract = {},
+author = {S. Krishnan},
+}
+
+@article{6db512cc8df884dc4228f62b6da3cb0dfde4ba1c,
+title = {IDLE: A Novel Approach to Improving Overlapping Community Detection in Complex Networks},
+year = {2016},
+url = {https://www.semanticscholar.org/paper/6db512cc8df884dc4228f62b6da3cb0dfde4ba1c},
+abstract = {},
+author = {Rathna Senthil},
+}
+
+@article{fe172d19204919847efafd0f2b58047b18b4573b,
+title = {Development of New Heuristics for the Euclidean Traveling SalesmanProblem},
+year = {1989},
+url = {https://www.semanticscholar.org/paper/fe172d19204919847efafd0f2b58047b18b4573b},
+abstract = {Many heuristics have been developed to approximate optimal tours for the Euclidean Traveling Salesman Problem (ETSP). While much progress has been made, there are few quick heuristics which consistently produce tours within 4 percent of the optimal solution. This project examines a few of the well known heuristics and introduces two improvements, Maxdiff and Checks. Most algorithms, during tour constrution, add a city to the subtour because the city best satisfies some criterion. Maxdiff, applied to an algorithm, ranks a city according to its effect (based on the algorithm's criterion) if it is not added to the subtour.},
+author = {Thurman W. Tunnell and Lenwood S. Heath},
+}
+
+@article{d6c12bbe05b2e3228af967b923f9bc21476aaa01,
+title = {A Machine Learning Approach to Predict Gene Regulatory Networks in Seed Development in Arabidopsis Using Time Series Gene Expression Data},
+year = {2016},
+url = {https://www.semanticscholar.org/paper/d6c12bbe05b2e3228af967b923f9bc21476aaa01},
+abstract = {},
+author = {Ying Ni},
+}
+
+@article{1dad60e57ae2c3cf9e23402872f5421628aa6def,
+title = {A Network of SCOP Hidden Markov Models and Its Analysis},
+year = {2011},
+url = {https://www.semanticscholar.org/paper/1dad60e57ae2c3cf9e23402872f5421628aa6def},
+abstract = {BackgroundThe Structural Classification of Proteins (SCOP) database uses a large number of hidden Markov models (HMMs) to represent families and superfamilies composed of proteins that presumably share the same evolutionary origin. However, how the HMMs are related to one another has not been examined before.ResultsIn this work, taking into account the processes used to build the HMMs, we propose a working hypothesis to examine the relationships between HMMs and the families and superfamilies that they represent. Specifically, we perform an all-against-all HMM comparison using the HHsearch program (similar to BLAST) and construct a network where the nodes are HMMs and the edges connect similar HMMs. We hypothesize that the HMMs in a connected component belong to the same family or superfamily more often than expected under a random network connection model. Results show a pattern consistent with this working hypothesis. Moreover, the HMM network possesses features distinctly different from the previously documented biological networks, exemplified by the exceptionally high clustering coefficient and the large number of connected components.ConclusionsThe current finding may provide guidance in devising computational methods to reduce the degree of overlaps between the HMMs representing the same superfamilies, which may in turn enable more efficient large-scale sequence searches against the database of HMMs.},
+author = {Liqing Zhang and L. Watson and Lenwood S. Heath},
+doi = {10.1186/1471-2105-12-191},
+pmid = {21635719},
+}
+
+@article{587542087cdb38e342ac253aa24d4c3aae9432fb,
+title = {Isoform-Specific Expression During Embryo Development in Arabidopsis and Soybean},
+year = {2016},
+url = {https://www.semanticscholar.org/paper/587542087cdb38e342ac253aa24d4c3aae9432fb},
+abstract = {Almost every precursor mRNA (pre-mRNA) in a eukaryotic organism undergoes splicing, in some cases resulting in the formation of more than one splice variant, a process called alternative splicing. RNA-Seq provides a major opportunity to capture the state of the transcriptome, which includes the detection of alternative spicing events. Alternative splicing is a highly regulated process occurring in a complex machinery called the spliceosome. In this dissertation, I focus on identification of different splice variants and splicing factors that are produced during Arabidopsis and soybean embryo development. I developed several data analysis pipelines for the detection and the functional characterization of active splice variants and splicing factors that arise during embryo development. The main goal of this dissertation was to identify transcriptional changes associated with specific stages of embryo development and infer possible associations between known regulatory genes and their targets. We identified several instances of exon skipping and intron retention as products of alternative splicing. The coding potential of the splice variants were evaluated using CodeWise. I developed CodeWise, a weighted support vector machine classifier to assess the coding potential of novel transcripts with respect to RNA secondary structure free energy, conserved domains, and sequence properties. We also examined the effect of alternative splicing on the domain composition of resulting protein isoforms. The majority of splice variants pairs encode proteins with identical domains or similar domains with truncation and in less than 10% of the cases alternative splicing results in gain or loss of a conserved domain. I constructed several possible regulatory networks that occur at specific stages of embryo development. In addition, in order to gain a better understanding of splicing regulation, we developed the concept of co-splicing networks, as a group of transcripts containing common RNA-binding motifs, which are co-expressed with a specific splicing factor. For this purpose, I developed a multi-stage analysis pipeline to integrate the co-expression networks with de novo RNA binding motif discovery at inferred splice sites, resulting in the identification of specific splicing factors and the corresponding cis-regulatory sequences that cause the production of splice variants. This approach resulted in the development of several novel hypotheses about the regulation of minor and major splicing in developing Arabidopsis embryos. In summary, this dissertation provides a comprehensive view of splicing regulation in Arabidopsis and soybean embryo development using computational analysis. Isoform-Specific Expression During Embryo Development in Arabidopsis and Soybean},
+author = {Delasa Aghamirzaie},
+}
+
+@article{b4ed6b30ce4c51825faf27bdfba215eb3e8ff873,
+title = {EnTrance: Exploration of Entropy Scaling Ball Cover Search in Protein Sequences},
+year = {2021},
+url = {https://www.semanticscholar.org/paper/b4ed6b30ce4c51825faf27bdfba215eb3e8ff873},
+abstract = {Biological sequence alignment using computational power has received increasing attention as technology develops. It is important to predict if a novel DNA sequence is potentially dangerous by determining its taxonomic identity and functional characteristics through sequence identification. This task can be facilitated by the rapidly increasing amounts of biological data in DNA and protein databases thanks to the corresponding increase in computational and storage costs. Unfortunately, the growth in biological databases has caused difficulty in exploiting this information. EnTrance presents an approach that can expedite the analysis of this large database by employing entropy scaling. This allows scaling with the amount of entropy in the database instead of scaling with the absolute size of the database. Since DNA and protein sequences are biologically meaningful, the space of biological sequences demonstrates the structure exploited by entropy scaling. As biological sequence databases grow, taking advantage of this structure can be extremely beneficial for reducing query times. EnTrance, the entropy scaling search algorithm introduced here, accelerates the biological sequence search exemplified by tools such as BLAST. EnTrance does this by utilizing a two step search approach. In this fashion, EnTrance quickly reduces the number of potential matches before more exhaustively searching the remaining sequences. Tests of EnTrance show that this approach can lead to improved query times. However, constructing the required entropy scaling indices beforehand can be challenging. To improve performance, EnTrance investigates several ideas for accelerating index build time that supports entropy scaling searches. In particular, EnTrance makes full use of the concurrency features of Go language greatly reducing the index build time. Our results identify key tradeoffs and demonstrate that there is potential in using these techniques for sequence similarity searches. Finally, EnTrance returns more matches and higher percentage identity matches when compared with existing tools.},
+author = {Yoonjin Kim and Zhen Guo and J. Robertson and Benjamin Reidys and Ziyan Zhang and L. Heath},
+doi = {10.1101/2021.05.31.446458},
+}
+
+@article{3df9efc55b133aa850db6da11efb0d2ad0404bb4,
+title = {HSI2/VAL1 Silences AGL15 to Regulate the Developmental Transition from Seed Maturation to Vegetative Growth in Arabidopsis[OPEN]},
+year = {2018},
+url = {https://www.semanticscholar.org/paper/3df9efc55b133aa850db6da11efb0d2ad0404bb4},
+abstract = {AGL15 is a direct regulatory target of the transcriptional silencing factor HSI2/VAL1, which is involved in the developmental transition from seed maturation to germination and growth. Gene expression during seed development in Arabidopsis thaliana is controlled by transcription factors including LEAFY COTYLEDON1 (LEC1) and LEC2, ABA INSENSITIVE3 (ABI3), FUSCA3 (FUS3), known as LAFL proteins, and AGAMOUS-LIKE15 (AGL15). The transition from seed maturation to germination and seedling growth requires the transcriptional silencing of these seed maturation-specific factors leading to downregulation of structural genes including those that encode seed storage proteins, oleosins, and dehydrins. During seed germination and vegetative growth, B3-domain protein HSI2/VAL1 is required for the transcriptional silencing of LAFL genes. Here, we report chromatin immunoprecipitation analysis indicating that HSI2/VAL1 binds to the upstream sequences of the AGL15 gene but not at LEC1, ABI3, FUS3, or LEC2 loci. Functional analysis indicates that the HSI2/VAL1 B3 domain interacts with two RY elements upstream of the AGL15 coding region and at least one of them is required for HSI2/VAL1-dependent AGL15 repression. Expression analysis of the major seed maturation regulatory genes LEC1, ABI3, FUS3, and LEC2 in different genetic backgrounds demonstrates that HSI2/VAL1 is epistatic to AGL15 and represses the seed maturation regulatory program through downregulation of AGL15 by deposition of H3K27me3 at this locus. This hypothesis is further supported by results that show that HSI2/VAL1 physically interacts with the Polycomb Repressive Complex 2 component protein MSI1, which is also enriched at the AGL15 locus.},
+author = {Naichong Chen and V. Veerappan and H. Abdelmageed and Miyoung Kang and R. Allen},
+doi = {10.1105/tpc.17.00655},
+pmid = {29475938},
+}

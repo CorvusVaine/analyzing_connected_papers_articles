@@ -1,0 +1,389 @@
+@article{f129fe41a392f07026a7405204fa05ae547d068e,
+title = {Disease Classification in Metagenomics with 2D Embeddings and Deep Learning},
+year = {2018},
+url = {https://www.semanticscholar.org/paper/f129fe41a392f07026a7405204fa05ae547d068e},
+abstract = {Deep learning (DL) techniques have shown unprecedented success when applied to images, waveforms, and text. Generally, when the sample size (N) is much bigger than the number of features (d), DL often out-performs other machine learning (ML) techniques, often through the use of Convolutional Neural Networks (CNNs). However, in many bioinformatics fields (including metagenomics), we encounter the opposite situation where d is significantly greater than N. In these situations, applying DL techniques would lead to severe over-fitting. Here we aim to improve classification of various diseases with metagenomic data through the use of CNNs. For this we proposed to represent metagenomic data as images. The proposed Met2Img approach relies on taxonomic and t-SNE embeddings to transform abundance data into " synthetic images ". We applied our approach to twelve benchmark data sets including more than 1400 metagenomic samples. Our results show significant improvements over the state-of-the-art algorithms (Random Forest (RF), Support Vector Machine (SVM)). We observe that the integration of phylogenetic information alongside abundance data improves classification. The proposed approach is not only important in classification setting but also allows to visualize complex metagenomic data. The Met2Img is implemented in Python.},
+author = {T. Nguyen and E. Prifti and Y. Chevaleyre and Nataliya Sokolovska and Jean-Daniel Zucker},
+arxivid = {1806.09046},
+}
+
+@article{e15d314b14e5866c44cb89a2a71ca51db09616ab,
+title = {Microbiome-based disease prediction with multimodal variational information bottlenecks},
+year = {2021},
+url = {https://www.semanticscholar.org/paper/e15d314b14e5866c44cb89a2a71ca51db09616ab},
+abstract = {Scientific research is shedding more and more light on the interaction of the gut microbiome with the human body and its role in human health. Empirical evidence shows that the microbiome is strongly interconnected with the host immune system and can contribute to carcinogenesis. Furthermore, studies show that it can be used as a predictor for various diseases. In this work, we propose the Multimodal Variational Information Bottleneck (MVIB), a novel machine learning model capable of learning a joint representation of multiple heterogeneous data modalities. Adopting an information theoretic interpretation of deep neural networks, MVIB allows to compute a joint stochastic encoding of the input data modalities, which acts as a minimal sufficient statistics of the inputs for the prediction of a target label. We use the MVIB to predict whether patients are affected by a certain disease by jointly analysing the species-relative abundance and strain-level marker profiles extracted from shotgun metagenomic sequencing of microbial DNA. Additionally, we perform transfer learning experiments by fine-tuning the model on the target disease dataset after a pre-training on all other source diseases, as well as cross-study generalisation experiments. Furthermore, we adopt a saliency technique to interpret the outcome of the model classification and identify which microbial species and strain-level markers mostly contribute to a certain prediction. The combination of metabolomic data to the species-relative abundance and strain-level marker profiles is also investigated. We show that MVIB achieves competitive results on the microbiome-based disease prediction task and is very fast to train. Author summary The gut microbiome is strongly correlated with human health and can be used to predict various diseases. Here, we propose the Multimodal Variational Information Bottleneck (MVIB), a novel machine learning method which allows to efficiently combine heterogeneous data modalities by computing a joint stochastic encoding. We use the MVIB to predict whether patients are affected by a certain disease and we shed light on which microbial species and gene markers contribute significantly to the prediction outcome. Specifically, we analyse species-relative abundance and strain-level marker profiles extracted from shotgun metagenomic sequencing of microbial DNA from ten different cohorts and obtain competitive classification performance on disease prediction. Furthermore, we adopt a method based on saliency to discover which microbial species and gene markers mostly contribute to the model prediction. Additionally, we perform experiments combining abundance and marker profiles with metabolomic data extracted from mass spectrometry. We show that MVIB can operate accurate microbiome-based disease prediction and is also very fast to train.},
+author = {Filippo Grazioli and Raman Siarheyeu and G. Pileggi and A. Meiser},
+doi = {10.1101/2021.06.08.447505},
+pmid = {35404958},
+}
+
+@article{a43cd3771726770f231d13fdc59493b0853eab45,
+title = {Manifold learning reveals nonlinear structure in metagenomic profiles},
+year = {2012},
+url = {https://www.semanticscholar.org/paper/a43cd3771726770f231d13fdc59493b0853eab45},
+abstract = {Using metagenomics to detect the global structure of microbial community remains a significant challenge. The structure of a microbial community and its functions are complicated not only because of the complex interactions among microbes but also their complicate interacting with confounding environmental factors. Recently dimension reduction methods such as Principle component analysis, Non-negative matrix factorization and Canonical correlation analysis have been employed extensively to investigate the complex structure embedded in metagenomic profiles which summarize the abundance of functional or taxonomic categorizations in metagenomic studies. However, metagenomic profiles are not necessary to meet the "Assumption of Linearity" behind these methods. Therefore it is worth to investigate how nonlinear methods can be utilized in metagenomic studies. In this paper, a nonlinear manifold learning method- Isomap is used to visualize and analyze large-scale metagenomic profiles. Isomap was applied on a large-scale Pfam profile which are derived from 45 metagenomes in Global Ocean Sampling expedition. In our result, a novel nonlinear structure of protein families is identified and the relationships among the identified nonlinear components and environmental factors of global ocean are explored. The results indicate the strength of nonlinear methods in learning the complex microbial structure. With the coming of the huge number of new sequenced metagenomes, nonlinear methods like Isomap could be necessary complementary tools to current widely used methods.},
+author = {Xingpeng Jiang and Xiaohua Hu and Huiyu Shen and Tingting He},
+doi = {10.1109/BIBM.2012.6392684},
+}
+
+@article{0b7906bc16e88f245141dd1c74af6f5a8fac23db,
+title = {Meta-Signer: Metagenomic Signature Identifier based onrank aggregation of features},
+year = {2021},
+url = {https://www.semanticscholar.org/paper/0b7906bc16e88f245141dd1c74af6f5a8fac23db},
+abstract = {The advance of metagenomic studies provides the opportunity to identify microbial taxa that are associated with human diseases. Multiple methods exist for the association analysis. However, the results could be inconsistent, presenting challenges in interpreting the host-microbiome interactions. To address this issue, we develop Meta-Signer, a novel Meta genomic Sign ature Identifi er tool based on rank aggregation of features identified from multiple machine learning models including Random Forest, Support Vector Machines, Logistic Regression, and Multi-Layer Perceptron Neural Networks. Meta-Signer generates ranked taxa lists by training individual machine learning models over multiple training partitions and aggregates the ranked lists into a single list by an optimization procedure to represent the most informative and robust microbial features. A User will receive speedy assessment on the predictive performance of each ma-chine learning model using different numbers of the ranked features and determine the final models to be used for evaluation on external datasets. Meta-Signer is user-friendly and customizable, allowing users to explore their datasets quickly and efficiently.},
+author = {Derek Reiman and Ahmed A. Metwally and Jun Sun and Yang Dai},
+doi = {10.12688/F1000RESEARCH.27384.1},
+}
+
+@article{38c8cd82eebd0f6eddb96f2b73a74c2d05682e14,
+title = {Deep Learning for Metagenomic Data: using 2D Embeddings and Convolutional Neural Networks},
+year = {2017},
+url = {https://www.semanticscholar.org/paper/38c8cd82eebd0f6eddb96f2b73a74c2d05682e14},
+abstract = {Deep learning (DL) techniques have had unprecedented success when applied to images, waveforms, and texts to cite a few. In general, when the sample size (N) is much greater than the number of features (d), DL outperforms previous machine learning (ML) techniques, often through the use of convolution neural networks (CNNs). However, in many bioinformatics ML tasks, we encounter the opposite situation where d is greater than N. In these situations, applying DL techniques (such as feed-forward networks) would lead to severe overfitting. Thus, sparse ML techniques (such as LASSO e.g.) usually yield the best results on these tasks. In this paper, we show how to apply CNNs on data which do not have originally an image structure (in particular on metagenomic data). Our first contribution is to show how to map metagenomic data in a meaningful way to 1D or 2D images. Based on this representation, we then apply a CNN, with the aim of predicting various diseases. The proposed approach is applied on six different datasets including in total over 1000 samples from various diseases. This approach could be a promising one for prediction tasks in the bioinformatics field.},
+author = {T. Nguyen and Y. Chevaleyre and E. Prifti and Nataliya Sokolovska and Jean-Daniel Zucker},
+arxivid = {1712.00244},
+}
+
+@article{48c764dcb2b9cf78bc924cea3a792dd8ec456d7d,
+title = {Enhancing Metagenome-based Disease Prediction by Unsupervised Binning Approaches},
+year = {2019},
+url = {https://www.semanticscholar.org/paper/48c764dcb2b9cf78bc924cea3a792dd8ec456d7d},
+abstract = {Metagenomic data from human microbiome is a novel data source to improve diagnosis and prognosis for human diseases. Nevertheless, since the number of considered features is much higher than the number of samples, we meet numerous challenges to perform a prediction task based on individual bacteria data. In addition, we face difficulties related to the very high complexity of different diseases. Deep Learning (DL) has been obtaining great success on major metagenomics problems related to Operational Taxonomic Unit (OTU)- clustering, and gene prediction, comparative metagenomics, assignment and binning of taxonomic. In this study, we introduce one-dimensional (1D) representations based on the unsupervised binning approaches and scaling algorithms to enhance the prediction performance for metagenome-based diseases using artificial neural networks. The proposed method is evaluated on seven microbial datasets related to six different diseases including Liver Cirrhosis, Colorectal Cancer, Inflammatory Bowel Disease (IBD), Type 2 Diabetes, Obesity and HIV with 2 types of data consisting of species abundance and read counts at the genus level. As shown from the results, the proposed method can improve the performance of Metagenome-based Disease Prediction.},
+author = {T. Nguyen and Jean-Daniel Zucker},
+doi = {10.1109/KSE.2019.8919295},
+}
+
+@article{568524056a91d974e2479e5097346ea8ee257d76,
+title = {Disease Prediction Using Synthetic Image Representations of Metagenomic Data and Convolutional Neural Networks},
+year = {2019},
+url = {https://www.semanticscholar.org/paper/568524056a91d974e2479e5097346ea8ee257d76},
+abstract = {Information from metagenomic data from human microbiome may improve diagnosis and prognosis for multiple human diseases. However, to achieve a prediction based on bacterial abundance information remains a challenge. Indeed, the number of features being much higher than the number of samples, we face difficulties related to high dimensional data processing, as well as overfitting. In this study, we investigate several convolutional neural network architectures for synthetic images and some experimental techniques to generate and train these synthetic images. We also explore supervised learning for visualizing high dimensional data that use data on genus, species and higher taxonomic level information. In addition, some dimensionality reduction approaches are examined on very high dimensional data such as gene families abundance. We evaluated our approach on six different metagenomic datasets including five types of diseases with more than 1000 samples. Our method displays promising results and can be used in different omics data settings, including integrative ones.},
+author = {T. Nguyen and E. Prifti and Nataliya Sokolovska and Jean-Daniel Zucker},
+doi = {10.1109/RIVF.2019.8713670},
+}
+
+@article{b067701cf2a2d54ecde7b4e9c25b843d787b66c2,
+title = {Machine Learning Meta-analysis of Large Metagenomic Datasets: Tools and Biological Insights},
+year = {2016},
+url = {https://www.semanticscholar.org/paper/b067701cf2a2d54ecde7b4e9c25b843d787b66c2},
+abstract = {Shotgun metagenomic analysis of the human associated microbiome provides a rich set of microbial features for prediction and biomarker discovery in the context of human diseases and health conditions. However, the use of such high-resolution microbial features presents new challenges, and validated computational tools for learning tasks are lacking. Moreover, classification rules have scarcely been validated in independent studies, posing questions about the generality and generalization of disease-predictive models across cohorts. In this paper, we comprehensively assess approaches to metagenomics-based prediction tasks and for quantitative assessment of the strength of potential microbiome-phenotype associations. We develop a computational framework for prediction tasks using quantitative microbiome profiles, including species-level relative abundances and presence of strain-specific markers. A comprehensive meta-analysis, with particular emphasis on generalization across cohorts, was performed in a collection of 2424 publicly available metagenomic samples from eight large-scale studies. Cross-validation revealed good disease-prediction capabilities, which were in general improved by feature selection and use of strain-specific markers instead of species-level taxonomic abundance. In cross-study analysis, models transferred between studies were in some cases less accurate than models tested by within-study cross-validation. Interestingly, the addition of healthy (control) samples from other studies to training sets improved disease prediction capabilities. Some microbial species (most notably Streptococcus anginosus) seem to characterize general dysbiotic states of the microbiome rather than connections with a specific disease. Our results in modelling features of the “healthy” microbiome can be considered a first step toward defining general microbial dysbiosis. The software framework, microbiome profiles, and metadata for thousands of samples are publicly available at http://segatalab.cibio.unitn.it/tools/metaml.},
+author = {Edoardo Pasolli and D. Truong and Fa Malik and L. Waldron and N. Segata},
+doi = {10.1371/journal.pcbi.1004977},
+pmid = {27400279},
+}
+
+@article{bedefd2d2a052e6760e61e5119667400f3228e97,
+title = {Effective Disease Prediction on Gene Family Abundance Using Feature Selection and Binning Approach},
+year = {2020},
+url = {https://www.semanticscholar.org/paper/bedefd2d2a052e6760e61e5119667400f3228e97},
+abstract = {},
+author = {Thanh-Hai Nguyen and T. Phan and Cong-Tinh Dao and Dang-Vinh-Phuc Ta and Thi-Ngoc-Cham Nguyen and Nguyen-Minh-Thao Phan and Huynh-Ngoc Pham},
+doi = {10.1007/978-981-15-9354-3_2},
+}
+
+@article{a70e7540204ddf4a89718b1213847ed8fda63d30,
+title = {Using machine learning to identify major shifts in human gut microbiome protein family abundance in disease},
+year = {2016},
+url = {https://www.semanticscholar.org/paper/a70e7540204ddf4a89718b1213847ed8fda63d30},
+abstract = {Inflammatory Bowel Disease (IBD) is an autoimmune condition that is observed to be associated with major alterations in the gut microbiome taxonomic composition. Here we classify major changes in microbiome protein family abundances between healthy subjects and IBD patients. We use machine learning to analyze results obtained previously from computing relative abundance of ∼10,000 KEGG orthologous protein families in the gut microbiome of a set of healthy individuals and IBD patients. We develop a machine learning pipeline, involving the Kolomogorv-Smirnov test, to identify the 100 most statistically significant entries in the KEGG database. Then we use these 100 as a training set for a Random Forest classifier to determine ∼5% the KEGGs which are best at separating disease and healthy states. Lastly, we developed a Natural Language Processing classifier of the KEGG description files to predict KEGG relative over-or under-abundance. As we expand our analysis from 10,000 KEGG protein families to one million proteins identified in the gut microbiome, scalable methods for quickly identifying such anomalies between health and disease states will be increasingly valuable for biological interpretation of sequence data.},
+author = {M. Yazdani and Bryn C. Taylor and Justine W. Debelius and Weizhong Li and R. Knight and L. Smarr},
+doi = {10.1109/BIGDATA.2016.7840731},
+}
+
+@article{92dd26f66c9630f760d150b7f98e541bb0aac0bc,
+title = {MetaPheno: A critical evaluation of deep learning and machine learning in metagenome-based disease prediction.},
+year = {2019},
+url = {https://www.semanticscholar.org/paper/92dd26f66c9630f760d150b7f98e541bb0aac0bc},
+abstract = {The human microbiome plays a number of critical roles, impacting almost every aspect of human health and well-being. Conditions in the microbiome have been linked to a number of significant diseases. Additionally, revolutions in sequencing technology have led to a rapid increase in publicly-available sequencing data. Consequently, there have been growing efforts to predict disease status from metagenomic sequencing data, with a proliferation of new approaches in the last few years. Some of these efforts have explored utilizing a powerful form of machine learning called deep learning, which has been applied successfully in several biological domains. Here, we review some of these methods and the algorithms that they are based on, with a particular focus on deep learning methods. We also perform a deeper analysis of Type 2 Diabetes and obesity datasets that have eluded improved results, using a variety of machine learning and feature extraction methods. We conclude by offering perspectives on study design considerations that may impact results and future directions the field can take to improve results and offer more valuable conclusions. The scripts and extracted features for the analyses conducted in this paper are available via GitHub:https://github.com/nlapier2/metapheno.},
+author = {N. Lapierre and C. Ju and Guangyu Zhou and Wei Wang},
+doi = {10.1016/j.ymeth.2019.03.003},
+pmid = {30885720},
+}
+
+@article{bdea534b52c83070e2765a3bba26cf052ba9fab4,
+title = {Using convolutional neural networks to explore the microbiome},
+year = {2017},
+url = {https://www.semanticscholar.org/paper/bdea534b52c83070e2765a3bba26cf052ba9fab4},
+abstract = {The microbiome has been shown to have an impact on the development of various diseases in the host. Being able to make an accurate prediction of the phenotype of a genomic sample based on its microbial taxonomic abundance profile is an important problem for personalized medicine. In this paper, we examine the potential of using a deep learning framework, a convolutional neural network (CNN), for such a prediction. To facilitate the CNN learning, we explore the structure of abundance profiles by creating the phylogenetic tree and by designing a scheme to embed the tree to a matrix that retains the spatial relationship of nodes in the tree and their quantitative characteristics. The proposed CNN framework is highly accurate, achieving a 99.47% of accuracy based on the evaluation on a dataset 1967 samples of three phenotypes. Our result demonstrated the feasibility and promising aspect of CNN in the classification of sample phenotype.},
+author = {Derek Reiman and Ahmed A. Metwally and Yang Dai},
+doi = {10.1109/EMBC.2017.8037799},
+pmid = {29060840},
+}
+
+@article{4d42a0321889291fee25f6cac547e53bb2ac8d8a,
+title = {An Ensemble Feature Selection Method Based on Deep Forest for Microbiome-Wide Association Studies},
+year = {2018},
+url = {https://www.semanticscholar.org/paper/4d42a0321889291fee25f6cac547e53bb2ac8d8a},
+abstract = {With the rapid advancement of DNA sequencing, metagenomics and metatranscriptomics have made great progress, which deepen our understanding on the human microbiome and its impact on human health and diseases. The microbiome, which is characterized by small samples, high dimensions and complicated relationships with hosts, refers to the species, genes and genomes of the microbiota, as well as the products of the microbiota and the host environment. In fact, many machine learning methods have been used to conduct Microbiome-Wide Association Studies which can link the microbiome with the phenotypes, such as the status of human health and diseases. However, existing methods such as Support Vector Machines (SVMs) have some limitations on deep representation learning with deep architectures which can promote the reuse of features and potentially lead to progressively more abstract features at higher layers of representations. Recently, Deep Neural Networks (DNNs), a kind of deep learning models, are widely used for metagenomic data analysis and can perform well on representation learning. But they are considered as a black box and sufferring from criticisms due to theirs lacking of interpretability. Thus, it is interesting to explore other deep learning models for metagenomic data analysis. In this work, we introduce a deep learning model called Deep Forest to study the microbiome associations and we also present an ensemble method for feature selection. Experimental results show that Deep Forest outperforms the traditional machine learning methods. In addition, compared to DNNs, Deep Forest has better interpretability and less hyperparameters.},
+author = {Qiang Zhu and Min Pan and Lei Liu and Bojing Li and Tingting He and Xingpeng Jiang and Xiaohua Hu},
+doi = {10.1109/BIBM.2018.8621461},
+}
+
+@article{b4430add151cdc51f36a53130fcd623517392819,
+title = {Efficient Discretization Approaches for Machine Learning Techniques to Improve Disease Classification on Gut Microbiome Composition Data},
+year = {2020},
+url = {https://www.semanticscholar.org/paper/b4430add151cdc51f36a53130fcd623517392819},
+abstract = {Article history: Received: 10 May, 2020 Accepted: 18 June, 2020 Online: 28 June, 2020},
+author = {H. Nguyen and Nhi Yen Kim Phan and Huong Hoang Luong and T. P. Le and Nghi C. Tran},
+doi = {10.25046/aj050368},
+}
+
+@article{0f058711e26885d3b61542625a9bd40029cd5537,
+title = {It takes guts to learn: machine learning techniques for disease detection from the gut microbiome},
+year = {2021},
+url = {https://www.semanticscholar.org/paper/0f058711e26885d3b61542625a9bd40029cd5537},
+abstract = {Associations between the human gut microbiome and expression of host illness have been noted in a variety of conditions ranging from gastrointestinal dysfunctions to neurological deficits. Machine learning (ML) methods have generated promising results for disease prediction from gut metagenomic information for diseases including liver cirrhosis and irritable bowel disease, but have lacked efficacy when predicting other illnesses. Here, we review current ML methods designed for disease classification from microbiome data. We highlight the computational challenges these methods have effectively overcome and discuss the biological components that have been overlooked to offer perspectives on future work in this area.},
+author = {Kristen D Curry and Michael G. Nute and T. Treangen},
+doi = {10.1042/ETLS20210213},
+pmid = {34779841},
+}
+
+@article{5eb1c93893d36044577e1a3852b0d333177b3044,
+title = {Graph Embedding Deep Learning Guides Microbial Biomarkers' Identification},
+year = {2019},
+url = {https://www.semanticscholar.org/paper/5eb1c93893d36044577e1a3852b0d333177b3044},
+abstract = {The microbiome-wide association studies are to figure out the relationship between microorganisms and humans, with the goal of discovering relevant biomarkers to guide disease diagnosis. However, the microbiome data is complex, with high noise and dimensions. Traditional machine learning methods are limited by the models' representation ability and cannot learn complex patterns from the data. Recently, deep learning has been widely applied to fields ranging from text processing to image recognition due to its efficient flexibility and high capacity. But the deep learning models must be trained with enough data in order to achieve good performance, which is impractical in reality. In addition, deep learning is considered as black box and hard to interpret. These factors make deep learning not widely used in microbiome-wide association studies. In this work, we construct a sparse microbial interaction network and embed this graph into deep model to alleviate the risk of overfitting and improve the performance. Further, we explore a Graph Embedding Deep Feedforward Network (GEDFN) to conduct feature selection and guide meaningful microbial markers' identification. Based on the experimental results, we verify the feasibility of combining the microbial graph model with the deep learning model, and demonstrate the feasibility of applying deep learning and feature selection on microbial data. Our main contributions are: firstly, we utilize different methods to construct a variety of microbial interaction networks and combine the network via graph embedding deep learning. Secondly, we introduce a feature selection method based on graph embedding and validate the biological meaning of microbial markers. The code is available at https://github.com/MicroAVA/GEDFN.git.},
+author = {Qiang Zhu and Xingpeng Jiang and Qing Zhu and Min Pan and Tingting He},
+doi = {10.3389/fgene.2019.01182},
+pmid = {31824573},
+}
+
+@article{00d542f098b19a05645efe15e44eb901ec42b3a4,
+title = {Microbiome Learning Repo (ML Repo): A public repository of microbiome regression and classification tasks},
+year = {2019},
+url = {https://www.semanticscholar.org/paper/00d542f098b19a05645efe15e44eb901ec42b3a4},
+abstract = {Abstract The use of machine learning in high-dimensional biological applications, such as the human microbiome, has grown exponentially in recent years, but algorithm developers often lack the domain expertise required for interpretation and curation of the heterogeneous microbiome datasets. We present Microbiome Learning Repo (ML Repo, available at https://knights-lab.github.io/MLRepo/), a public, web-based repository of 33 curated classification and regression tasks from 15 published human microbiome datasets. We highlight the use of ML Repo in several use cases to demonstrate its wide application, and we expect it to be an important resource for algorithm developers.},
+author = {P. Vangay and Benjamin M Hillmann and D. Knights},
+doi = {10.1093/gigascience/giz042},
+pmid = {31042284},
+}
+
+@article{15b9075627a604f5c6e8936a423f0219c0c04e89,
+title = {IDMIL: an alignment-free Interpretable Deep Multiple Instance Learning (MIL) for predicting disease from whole-metagenomic data},
+year = {2020},
+url = {https://www.semanticscholar.org/paper/15b9075627a604f5c6e8936a423f0219c0c04e89},
+abstract = {Abstract Motivation The human body hosts more microbial organisms than human cells. Analysis of this microbial diversity provides key insight into the role played by these microorganisms on human health. Metagenomics is the collective DNA sequencing of coexisting microbial organisms in an environmental sample or a host. This has several applications in precision medicine, agriculture, environmental science and forensics. State-of-the-art predictive models for phenotype predictions from metagenomic data rely on alignments, assembly, extensive pruning, taxonomic profiling and reference sequence databases. These processes are time consuming and they do not consider novel microbial sequences when aligned with the reference genome, limiting the potential of whole metagenomics. We formulate the problem of predicting human disease from whole-metagenomic data using Multiple Instance Learning (MIL), a popular supervised learning paradigm. Our proposed alignment-free approach provides higher accuracy in prediction by harnessing the capability of deep convolutional neural network (CNN) within a MIL framework and provides interpretability via neural attention mechanism. Results The MIL formulation combined with the hierarchical feature extraction capability of deep-CNN provides significantly better predictive performance compared to popular existing approaches. The attention mechanism allows for the identification of groups of sequences that are likely to be correlated to diseases providing the much-needed interpretation. Our proposed approach does not rely on alignment, assembly and reference sequence databases; making it fast and scalable for large-scale metagenomic data. We evaluate our method on well-known large-scale metagenomic studies and show that our proposed approach outperforms comparative state-of-the-art methods for disease prediction. Availability and implementation https://github.com/mrahma23/IDMIL.},
+author = {Mohammad Arifur Rahman and H. Rangwala},
+doi = {10.1093/bioinformatics/btaa477},
+pmid = {32657370},
+}
+
+@article{7fc84c707af0b028a263a3effa869b44ddb8340c,
+title = {Metagenome-Based Disease Classification with Deep Learning and Visualizations Based on Self-organizing Maps},
+year = {2019},
+url = {https://www.semanticscholar.org/paper/7fc84c707af0b028a263a3effa869b44ddb8340c},
+abstract = {Machine learning algorithms have recently revealed impressive results across a variety of biology and medicine domains. The applications of machine learning in bioinformatics include predicting of biological processes (for example, prediction tasks on gene function), prevention of diseases and personalized treatment. In the last decade, deep learning has gained an impressive success on a variety of problems such as speech recognition, image classification, and natural language processing. Among various methodological variants of deep learning networks, the Convolutional Neural Networks (CNN) have been extensively studied, especially in the field of image processing. Moreover, Data visualization is considered as an indispensable technique for the exploratory data analysis and becomes a key for discoveries. In this paper, a novel approach based on visualization capabilities of Self-Organizing Maps and deep learning is proposed to not only visualize metagenomic data but also leverage advances in deep learning to improve the disease prediction. Several solutions are also introduced to reduce negative affects of overlapped points to enhance the performance. The proposed approach is evaluated on six metagenomic datasets using species abundance. The results reveal that the proposed visualization not only shows improvements in the performance but also allows to visualize biomedical signatures.},
+author = {T. Nguyen},
+doi = {10.1007/978-3-030-35653-8_20},
+}
+
+@article{166f887d93992858440b29b01951bb00910ca2fa,
+title = {Meta-Signer: Metagenomic Signature Identifier based on Rank Aggregation of Features},
+year = {2020},
+url = {https://www.semanticscholar.org/paper/166f887d93992858440b29b01951bb00910ca2fa},
+abstract = {Background The advance of metagenomic studies provides the opportunity to identify microbial taxa that are associated to human diseases. Multiple methods exist for the association analysis. However, the results could be inconsistent, presenting challenges in interpreting the host-microbiome interactions. To address this issue, we introduce Meta-Signer, a novel Metagenomic Signature Identifier tool based on rank aggregation of features identified from multiple machine learning models including Random Forest, Support Vector Machines, LASSO, Multi-Layer Perceptron Neural Networks, and our recently developed Convolutional Neural Network framework (PopPhy-CNN). Meta-Signer generates ranked taxa lists by training individual machine learning models over multiple training partitions and aggregates them into a single ranked list by an optimization procedure to represent the most informative and robust microbial features. Meta-Signer can rank taxa using two input forms of the data: the relative abundances of the original taxa and taxa from the populated taxonomic trees generated from the original taxa. The latter form allows the evaluation of the association of microbial features at different taxonomic levels to the disease, which is attributed to our novel model of PopPhy-CNN. Results We evaluate Mega-Signer on five different human gut-microbiome datasets. We demonstrate that the features derived from Meta-Signer were more informative compared to those obtained from other available feature ranking methods. The highly ranked features are strongly supported by published literature. Conclusion Meta-Signer is capable of deriving a robust set of microbial features at multiple taxonomic levels for the prediction of host phenotype. Meta-Signer is user-friendly and customizable, allowing users to explore their datasets quickly and efficiently.},
+author = {Derek Reiman and A. Metwally and Jun Sun and Yang Dai},
+doi = {10.1101/2020.05.09.085993},
+}
+
+@article{ad8fb68dc7c99c249e62cb5c425dc0ee4f7c9749,
+title = {Disease Prediction Using Metagenomic Data Visualizations Based on Manifold Learning and Convolutional Neural Network},
+year = {2019},
+url = {https://www.semanticscholar.org/paper/ad8fb68dc7c99c249e62cb5c425dc0ee4f7c9749},
+abstract = {Deep learning algorithms have obtained numerous achievements in image classification, speed recognition, video processing. Visualizing metagenomic data is a challenge because of its complexity and high-dimensional. In this paper, we introduce several approaches based on dimensionality reduction algorithms and data density to visualize features which reflect the species abundance. The sophisticated methods used in this study, that are unsupervised approaches, carry out dimensionality reduction and map the data into a 2-dimensional space. From the visualizations obtained, deep learning techniques are leveraged to enhance the prediction performance for colorectal cancer. We show by experiments on five Metagenome-based colorectal cancer datasets from different regions such as Chinese, Austrian, American, German and French cohorts that the proposed visualizations allow to visualize bio-medical signatures and improve the prediction performance compared to classical machine learning.},
+author = {T. Nguyen and Nguyen Thai-Nghe},
+doi = {10.1007/978-3-030-35653-8_9},
+}
+
+@article{be813b90620b2627226864eaf5e0f3eec9d50e85,
+title = {A Review and Tutorial of Machine Learning Methods for Microbiome Host Trait Prediction},
+year = {2019},
+url = {https://www.semanticscholar.org/paper/be813b90620b2627226864eaf5e0f3eec9d50e85},
+abstract = {With the growing importance of microbiome research, there is increasing evidence that host variation in microbial communities is associated with overall host health. Advancement in genetic sequencing methods for microbiomes has coincided with improvements in machine learning, with important implications for disease risk prediction in humans. One aspect specific to microbiome prediction is the use of taxonomy-informed feature selection. In this review for non-experts, we explore the most commonly used machine learning methods, and evaluate their prediction accuracy as applied to microbiome host trait prediction. Methods are described at an introductory level, and R/Python code for the analyses is provided.},
+author = {Yi‐Hui Zhou and P. Gallins},
+doi = {10.3389/fgene.2019.00579},
+pmid = {31293616},
+}
+
+@article{5af199786d8e954185e0bf691c12e17e1e1cb7c5,
+title = {DeepMicro: deep representation learning for disease prediction based on microbiome data},
+year = {2019},
+url = {https://www.semanticscholar.org/paper/5af199786d8e954185e0bf691c12e17e1e1cb7c5},
+abstract = {Human microbiota plays a key role in human health and growing evidence supports the potential use of microbiome as a predictor of various diseases. However, the high-dimensionality of microbiome data, often in the order of hundreds of thousands, yet low sample sizes, poses great challenge for machine learning-based prediction algorithms. This imbalance induces the data to be highly sparse, preventing from learning a better prediction model. Also, there has been little work on deep learning applications to microbiome data with a rigorous evaluation scheme. To address these challenges, we propose DeepMicro, a deep representation learning framework allowing for an effective representation of microbiome profiles. DeepMicro successfully transforms high-dimensional microbiome data into a robust low-dimensional representation using various autoencoders and applies machine learning classification algorithms on the learned representation. In disease prediction, DeepMicro outperforms the current best approaches based on the strain-level marker profile in five different datasets. In addition, by significantly reducing the dimensionality of the marker profile, DeepMicro accelerates the model training and hyperparameter optimization procedure with 8X-30X speedup over the basic approach. DeepMicro is freely available at https://github.com/minoh0201/DeepMicro.},
+author = {Min Oh and Liqing Zhang},
+doi = {10.1038/s41598-020-63159-5},
+pmid = {32265477},
+}
+
+@article{ddf2ae7f81a361c8bf93f28309062d1f02c97e08,
+title = {ĐÁNH GIÁ CÁC CÔNG CỤ HỖ TRỢ CHẨN ĐOÁN BỆNH VỚI CÁCH TIẾP CẬN Y HỌC CÁ THỂ HÓA TRÊN DỮ LIỆU METAGENOMIC},
+year = {2020},
+url = {https://www.semanticscholar.org/paper/ddf2ae7f81a361c8bf93f28309062d1f02c97e08},
+abstract = {Trong những năm gần đây, dữ liệu Metagenomic hay còn gọi là dữ liệu “hệ đa gen” được sử dụng ngày càng nhiều cho các nghiên cứu trong các tiếp cận “Y học cá thể hóa” với mục tiêu cải thiện và nâng cao tính hiệu quả trong việc chăm sóc bảo vệ sức khỏe con người. Nhiều nghiên cứu đã thực nghiệm phân tích trên bộ dữ liệu này và đề xuất nhiều phương pháp để cải thiện độ chính xác trong phân tích. Việc ứng dụng công nghệ thông tin để xử lý và hỗ trợ phân tích dữ liệu này phục vụ cho Y học cá thể là không thể thiếu bởi khối lượng công việc xử lý và độ phức tạp là rất lớn. Với những lợi ích đầy tiềm năng của dữ liệu Metagenomic đã được chứng minh qua nhiều nghiên cứu. Trong phạm vi bài báo này, nhóm nghiên cứu giới thiệu và đánh giá những công cụ rất hữu ích phục vụ cho việc nghiên cứu dữ liệu Metagenomic trong hỗ trợ chẩn đoán bệnh cho con người. Từ các nghiên cứu này, chúng ta có thể phát triển những nghiên cứu mở rộng và sâu hơn để khám phá những ảnh hưởng quan trọng của hệ sinh thái vi sinh vật trong cơ thể con người ảnh hưởng đến sức khỏe và từ đó đề xuất những xu hướng chẩn đoán và điều trị phù hợp để nâng cao và cải thiện sức khỏe con người.},
+author = {P. Tài and T. Phúc and Phan Nguyễn Minh Thảo and Nguyễn Thị Ngọc Chăm and Đào Công Tính and Phạm Huỳnh Ngọc and Nguyễn Thị Thanh Hải},
+doi = {10.37569/dalatuniversity.10.2.646(2020)},
+}
+
+@article{4d61146863fbf3ace0c002a9e205c21505e7f302,
+title = {PopPhy-CNN: A Phylogenetic Tree Embedded Architecture for Convolutional Neural Networks to Predict Host Phenotype From Metagenomic Data},
+year = {2020},
+url = {https://www.semanticscholar.org/paper/4d61146863fbf3ace0c002a9e205c21505e7f302},
+abstract = {Accurate prediction of the host phenotype from a metagenomic sample and identification of the associated microbial markers are important in understanding potential host-microbiome interactions related to disease initiation and progression. We introduce PopPhy-CNN, a novel convolutional neural network (CNN) learning framework that effectively exploits phylogenetic structure in microbial taxa for host phenotype prediction. Our approach takes an input format of a 2D matrix representing the phylogenetic tree populated with the relative abundance of microbial taxa in a metagenomic sample. This conversion empowers CNNs to explore the spatial relationship of the taxonomic annotations on the tree and their quantitative characteristics in metagenomic data. We show the competitiveness of our model compared to other available methods using nine metagenomic datasets of moderate size for binary classification. With synthetic and biological datasets, we show the superior and robust performance of our model for multi-class classification. Furthermore, we design a novel scheme for feature extraction from the learned CNN models and demonstrate improved performance when the extracted features. PopPhy-CNN is a practical deep learning framework for the prediction of host phenotype with the ability of facilitating the retrieval of predictive microbial taxa.},
+author = {Derek Reiman and Ahmed A. Metwally and Jun Sun and Yang Dai},
+doi = {10.1109/JBHI.2020.2993761},
+pmid = {32396115},
+}
+
+@article{23c35c8f05727d78c19f0b59c476e845b04e2b6f,
+title = {Utilizing longitudinal microbiome taxonomic profiles to predict food allergy via Long Short-Term Memory networks},
+year = {2019},
+url = {https://www.semanticscholar.org/paper/23c35c8f05727d78c19f0b59c476e845b04e2b6f},
+abstract = {Food allergy is usually difficult to diagnose in early life, and the inability to diagnose patients with atopic diseases at an early age may lead to severe complications. Numerous studies have suggested an association between the infant gut microbiome and development of allergy. In this work, we investigated the capacity of Long Short-Term Memory (LSTM) networks to predict food allergies in early life (0-3 years) from subjects’ longitudinal gut microbiome profiles. Using the DIABIMMUNE dataset, we show an increase in predictive power using our model compared to Hidden Markov Model, Multi-Layer Perceptron Neural Network, Support Vector Machine, Random Forest, and LASSO regression. We further evaluated whether the training of LSTM networks benefits from reduced representations of microbial features. We considered sparse autoencoder for extraction of potential latent representations in addition to standard feature selection procedures based on Minimum Redundancy Maximum Relevance (mRMR) and variance prior to the training of LSTM networks. The comprehensive evaluation reveals that LSTM networks with the mRMR selected features achieve significantly better performance compared to the other tested machine learning models.},
+author = {Ahmed A. Metwally and Philip S. Yu and Derek Reiman and Yang Dai and P. Finn and D. Perkins},
+doi = {10.1371/journal.pcbi.1006693},
+pmid = {30716085},
+}
+
+@article{2f39673cce3ecd1bd2860771967d5dbcccfcc4a4,
+title = {Phylogenetic convolutional neural networks in metagenomics},
+year = {2017},
+url = {https://www.semanticscholar.org/paper/2f39673cce3ecd1bd2860771967d5dbcccfcc4a4},
+abstract = {BackgroundConvolutional Neural Networks can be effectively used only when data are endowed with an intrinsic concept of neighbourhood in the input space, as is the case of pixels in images. We introduce here Ph-CNN, a novel deep learning architecture for the classification of metagenomics data based on the Convolutional Neural Networks, with the patristic distance defined on the phylogenetic tree being used as the proximity measure. The patristic distance between variables is used together with a sparsified version of MultiDimensional Scaling to embed the phylogenetic tree in a Euclidean space.ResultsPh-CNN is tested with a domain adaptation approach on synthetic data and on a metagenomics collection of gut microbiota of 38 healthy subjects and 222 Inflammatory Bowel Disease patients, divided in 6 subclasses. Classification performance is promising when compared to classical algorithms like Support Vector Machines and Random Forest and a baseline fully connected neural network, e.g. the Multi-Layer Perceptron.ConclusionPh-CNN represents a novel deep learning approach for the classification of metagenomics data. Operatively, the algorithm has been implemented as a custom Keras layer taking care of passing to the following convolutional layer not only the data but also the ranked list of neighbourhood of each sample, thus mimicking the case of image data, transparently to the user.},
+author = {Diego Fioravanti and Ylenia Giarratano and V. Maggio and C. Agostinelli and M. Chierici and Giuseppe Jurman and C. Furlanello},
+doi = {10.1186/s12859-018-2033-5},
+pmid = {29536822},
+arxivid = {1709.02268},
+}
+
+@article{f833e4723ada230bdbf52c793274e6173887ccf8,
+title = {MicroPheno: predicting environments and host phenotypes from 16S rRNA gene sequencing using a k-mer based representation of shallow sub-samples},
+year = {2018},
+url = {https://www.semanticscholar.org/paper/f833e4723ada230bdbf52c793274e6173887ccf8},
+abstract = {Motivation Microbial communities play important roles in the function and maintenance of various biosystems, ranging from the human body to the environment. A major challenge in microbiome research is the classification of microbial communities of different environments or host phenotypes. The most common and cost-effective approach for such studies to date is 16S rRNA gene sequencing. Recent falls in sequencing costs have increased the demand for simple, efficient, and accurate methods for rapid detection or diagnosis with proved applications in medicine, agriculture, and forensic science. We describe a reference- and alignment-free approach for predicting environments and host phenotypes from 16S rRNA gene sequencing based on k-mer representations that benefits from a bootstrapping framework for investigating the sufficiency of shallow sub-samples. Deep learning methods as well as classical approaches were explored for predicting environments and host phenotypes. Results k-mer distribution of shallow sub-samples outperformed the computationally costly Operational Taxonomic Unit (OTU) features in the tasks of body-site identification and Crohn's disease prediction. Aside from being more accurate, using k-mer features in shallow sub-samples allows (i) skipping computationally costly sequence alignments required in OTU-picking, and (ii) provided a proof of concept for the sufficiency of shallow and short-length 16S rRNA sequencing for phenotype prediction. In addition, k-mer features predicted representative 16S rRNA gene sequences of 18 ecological environments, and 5 organismal environments with high macro-F1 scores of 0.88 and 0.87. For large datasets, deep learning outperformed classical methods such as Random Forest and SVM. Availability The software and datasets are available at https://llp.berkeley.edu/micropheno.},
+author = {Ehsaneddin Asgari and Kiavash Garakani and A. Mchardy and M. Mofrad},
+doi = {10.1093/bioinformatics/bty296},
+pmid = {29950008},
+}
+
+@article{352cacba2b94f8928b5dc3bee5f9be2f6838033d,
+title = {PopPhy-CNN: A Phylogenetic Tree Embedded Architecture for Convolution Neural Networks for Metagenomic Data},
+year = {2018},
+url = {https://www.semanticscholar.org/paper/352cacba2b94f8928b5dc3bee5f9be2f6838033d},
+abstract = {Motivation Accurate prediction of the host phenotype from a metgenomic sample and identification of the associated bacterial markers are important in metagenomic studies. We introduce PopPhy-CNN, a novel convolutional neural networks (CNN) learning architecture that effectively exploits phylogentic structure in microbial taxa. PopPhy-CNN provides an input format of 2D matrix created by embedding the phylogenetic tree that is populated with the relative abundance of microbial taxa in a metagenomic sample. This conversion empowers CNNs to explore the spatial relationship of the taxonomic annotations on the tree and their quantitative characteristics in metagenomic data. Results PopPhy-CNN is evaluated using three metagenomic datasets of moderate size. We show the superior performance of PopPhy-CNN compared to random forest, support vector machines, LASSO and a baseline 1D-CNN model constructed with relative abundance microbial feature vectors. In addition, we design a novel scheme of feature extraction from the learned CNN models and demonstrate the improved performance when the extracted features are used to train support vector machines. Conclusion PopPhy-CNN is a novel deep learning framework for the prediction of host phenotype from metagenomic samples. PopPhy-CNN can efficiently train models and does not require excessive amount of data. PopPhy-CNN facilities not only retrieval of informative microbial taxa from the trained CNN models but also visualization of the taxa on the phynogenetic tree. Contact yagndai@uic.edu Availability Source code is publicly available at https://github.com/derekreiman/PopPhy-CNN Supplementary information Supplementary data are available at Bioinformatics online.},
+author = {Derek Reiman and Ahmed A. Metwally and Yang Dai},
+doi = {10.1101/257931},
+}
+
+@article{ded50bc01b9ce57b63cbe16506a49dcdc31b29ec,
+title = {Diagnosis Approaches for Colorectal Cancer Using Manifold Learning and Deep Learning},
+year = {2020},
+url = {https://www.semanticscholar.org/paper/ded50bc01b9ce57b63cbe16506a49dcdc31b29ec},
+abstract = {Data visualization is still a challenge for numerous fields. For metagenomic data, datasets are usually characterized by very high-dimensional data which are hard to interpret to humans. Among diseases using metagenomic data for prediction, deep learning usually yields a lower performance comparing to classical machine learning for colorectal cancer prediction. In this paper, we present an approach using manifold learning with t-distributed stochastic neighbor embedding (t-SNE) and spectral embedding to visualize numerical data into images and leverage deep learning algorithms to improve the performance in colorectal cancer diseases prediction. The work also provides promising potentials to improve the visualization quality and performance in prediction tasks on dense data. The analytical results of samples coming from five various regions including America, China, Austria, Germany, and France show promising in use of combination between these visualization approaches and deep learning to enhance the performance in colorectal cancer disease diagnosis.},
+author = {T. Nguyen and Nguyen Thai-Nghe},
+doi = {10.1007/s42979-020-00297-7},
+}
+
+@article{dc4c5f518de29d52a943e40dc8fd5da44539e14d,
+title = {Multi-Layer and Recursive Neural Networks for Metagenomic Classification},
+year = {2015},
+url = {https://www.semanticscholar.org/paper/dc4c5f518de29d52a943e40dc8fd5da44539e14d},
+abstract = {Recent advances in machine learning, specifically in deep learning with neural networks, has made a profound impact on fields such as natural language processing, image classification, and language modeling; however, feasibility and potential benefits of the approaches to metagenomic data analysis has been largely under-explored. Deep learning exploits many layers of learning nonlinear feature representations, typically in an unsupervised fashion, and recent results have shown outstanding generalization performance on previously unseen data. Furthermore, some deep learning methods can also represent the structure in a data set. Consequently, deep learning and neural networks may prove to be an appropriate approach for metagenomic data. To determine whether such approaches are indeed appropriate for metagenomics, we experiment with two deep learning methods: i) a deep belief network, and ii) a recursive neural network, the latter of which provides a tree representing the structure of the data. We compare these approaches to the standard multi-layer perceptron, which has been well-established in the machine learning community as a powerful prediction algorithm, though its presence is largely missing in metagenomics literature. We find that traditional neural networks can be quite powerful classifiers on metagenomic data compared to baseline methods, such as random forests. On the other hand, while the deep learning approaches did not result in improvements to the classification accuracy, they do provide the ability to learn hierarchical representations of a data set that standard classification methods do not allow. Our goal in this effort is not to determine the best algorithm in terms accuracy-as that depends on the specific application-but rather to highlight the benefits and drawbacks of each of the approach we discuss and provide insight on how they can be improved for predictive metagenomic analysis.},
+author = {G. Ditzler and R. Polikar and G. Rosen},
+doi = {10.1109/TNB.2015.2461219},
+pmid = {26316190},
+}
+
+@article{a79df8f28644f4b4875acba2357894ba738ef8d2,
+title = {Predicting Host Phenotype Based on Gut Microbiome Using a Convolutional Neural Network Approach},
+year = {2021},
+url = {https://www.semanticscholar.org/paper/a79df8f28644f4b4875acba2357894ba738ef8d2},
+abstract = {Accurate prediction of the host phenotypes from a microbial sample and identification of the associated microbial markers are important in understanding the impact of the microbiome on the pathogenesis and progression of various diseases within the host. A deep learning tool, PopPhy-CNN, has been developed for the task of predicting host phenotypes using a convolutional neural network (CNN). By representing samples as annotated taxonomic trees and further representing these trees as matrices, PopPhy-CNN utilizes the CNN's innate ability to explore locally similar microbes on the taxonomic tree. Furthermore, PopPhy-CNN can be used to evaluate the importance of each taxon in the prediction of host status. Here, we describe the underlying methodology, architecture, and core utility of PopPhy-CNN. We also demonstrate the use of PopPhy-CNN on a microbial dataset.},
+author = {Derek Reiman and Ali M. Farhat and Yang Dai},
+doi = {10.1007/978-1-0716-0826-5_12},
+pmid = {32804370},
+}
+
+@article{61da61a6b8f81057727e589e19bdcb26f08f9a28,
+title = {Gene Family Abundance Visualization based on Feature Selection Combined Deep Learning to Improve Disease Diagnosis},
+year = {2021},
+url = {https://www.semanticscholar.org/paper/61da61a6b8f81057727e589e19bdcb26f08f9a28},
+abstract = {Advancements in machine learning in general and in deep learning in particular have achieved great success in numerous fields. For personalized medicine approaches, frameworks derived from learning algorithms play an important role in supporting scientists to investigate and explore novel data sources such as metagenomic data to develop and examine methodologies to improve human healthcare. Some challenges when processing this data type include its very high dimensionality and the complexity of diseases. Metagenomic data that include gene families often have millions of features. This leads to a further increase of complexity in processing and requires a huge amount of time for computation. In this study, we propose a method combining feature selection using perceptron weight-based filters and synthetic image generation to leverage deep-learning advancements in order to predict various diseases based on gene family abundance data. An experiment was conducted using gene family datasets of five diseases, i.e. liver cirrhosis, obesity, inflammatory bowel diseases, type 2 diabetes, and colorectal cancer. The proposed method provides not only visualization for gene family abundance data but also achieved a promising performance level.},
+author = {H. Nguyen and Tai Tan Phan and Tinh Cong Dao and Phuc Vinh Dang Ta and C. Nguyen and N. Pham and Hiep Xuan Huynh},
+doi = {10.5614/J.ENG.TECHNOL.SCI.2021.53.1.9},
+}
+
+@article{6a524d59eb5c6cf62aa2f430e64628d02874869e,
+title = {RegMIL},
+year = {2018},
+url = {https://www.semanticscholar.org/paper/6a524d59eb5c6cf62aa2f430e64628d02874869e},
+abstract = {},
+author = {Mohammad Arifur Rahman and H. Rangwala},
+doi = {10.1145/3233547.3233585},
+}
+
+@article{d371840ae1e5e3db210aa38a0888522b7da60dce,
+title = {Handwritten Chinese character recognition with spatial transformer and deep residual networks},
+year = {2016},
+url = {https://www.semanticscholar.org/paper/d371840ae1e5e3db210aa38a0888522b7da60dce},
+abstract = {This paper considers using deep neural networks for handwritten Chinese character recognition (HCCR) with arbitrary position, scale, and orientations. To solve this problem, we combine the recently proposed spatial transformer network (STN) with the deep residual network (DRN). The STN acts like a character shape normalization procedure. Different from the traditional heuristic shape normalization methods, STN is learned directly from the data. Furthermore, the DRN makes the training of very deep network to be both efficient and effective. With the combination of STN and DRN, the whole model can be trained jointly in an end-to-end manner. In this paper, new state-of-the-art performance has been achieved by our proposed model on the offline ICDAR-2013 Chinese handwriting competition database. Moreover, the experiment on randomly distorted samples shows that the STN is very effective for robust HCCR in rectifying the shape of distorted characters.},
+author = {Zhaobai Zhong and Xu-Yao Zhang and Fei Yin and Cheng-Lin Liu},
+doi = {10.1109/ICPR.2016.7900166},
+}
+
+@article{bdd964958b9bcd2f619bd94bde5dfc63b32fded6,
+title = {RegMIL: Phenotype Classification from Metagenomic Data},
+year = {2018},
+url = {https://www.semanticscholar.org/paper/bdd964958b9bcd2f619bd94bde5dfc63b32fded6},
+abstract = {Advances in DNA sequencing technologies have paved the way for Metagenomics; defined as the collective sequencing of co-existing microbial communities in a host environment. Several researchers and clinicians have embarked on studying the role of these microbes with respect to human health and diseases, whereas others are using metagenomics to monitor the impact of external factors (e.g., Gulf oil spill) on ecosystems. Lack of accurate and efficient analytical methods is an impediment for the identification of the function and presence of microbial organism within different clinical samples, reducing our ability to elucidate the microbial-host interactions and discover novel therapeutics. In this paper, we present a Multiple Instance Learning (MIL) based computational pipeline to predict clinical phenotype from metagenomic data. We use data from well-known metagenomic studies of Liver Cirrhosis and Inflammatory Bowel Disease (IBD) to evaluate our approach. We show that our proposed pipeline outperforms comparative MIL as well as non-MIL methods.},
+author = {Mohammad Arifur Rahman and H. Rangwala},
+doi = {10.1145/3233547.3233585},
+}
+
+@article{86d89ab87533fd8f580236144ed14be20eeaba74,
+title = {Taxonomy-aware feature engineering for microbiome classification},
+year = {2018},
+url = {https://www.semanticscholar.org/paper/86d89ab87533fd8f580236144ed14be20eeaba74},
+abstract = {BackgroundWhat is a healthy microbiome? The pursuit of this and many related questions, especially in light of the recently recognized microbial component in a wide range of diseases has sparked a surge in metagenomic studies. They are often not simply attributable to a single pathogen but rather are the result of complex ecological processes. Relatedly, the increasing DNA sequencing depth and number of samples in metagenomic case-control studies enabled the applicability of powerful statistical methods, e.g. Machine Learning approaches. For the latter, the feature space is typically shaped by the relative abundances of operational taxonomic units, as determined by cost-effective phylogenetic marker gene profiles. While a substantial body of microbiome/microbiota research involves unsupervised and supervised Machine Learning, very little attention has been put on feature selection and engineering.ResultsWe here propose the first algorithm to exploit phylogenetic hierarchy (i.e. an all-encompassing taxonomy) in feature engineering for microbiota classification. The rationale is to exploit the often mono- or oligophyletic distribution of relevant (but hidden) traits by virtue of taxonomic abstraction. The algorithm is embedded in a comprehensive microbiota classification pipeline, which we applied to a diverse range of datasets, distinguishing healthy from diseased microbiota samples.ConclusionWe demonstrate substantial improvements over the state-of-the-art microbiota classification tools in terms of classification accuracy, regardless of the actual Machine Learning technique while using drastically reduced feature spaces. Moreover, generalized features bear great explanatory value: they provide a concise description of conditions and thus help to provide pathophysiological insights. Indeed, the automatically and reproducibly derived features are consistent with previously published domain expert analyses.},
+author = {Mai Oudah and Andreas Henschel},
+doi = {10.1186/s12859-018-2205-3},
+pmid = {29907097},
+}
+
+@article{d65b84bbf6b76dc22a92bf8baa5ec3aa1baa9f65,
+title = {TaxoNN: ensemble of neural networks on stratified microbiome data for disease prediction},
+year = {2020},
+url = {https://www.semanticscholar.org/paper/d65b84bbf6b76dc22a92bf8baa5ec3aa1baa9f65},
+abstract = {Abstract Motivation Research supports the potential use of microbiome as a predictor of some diseases. Motivated by the findings that microbiome data is complex in nature, and there is an inherent correlation due to hierarchical taxonomy of microbial Operational Taxonomic Units (OTUs), we propose a novel machine learning method incorporating a stratified approach to group OTUs into phylum clusters. Convolutional Neural Networks (CNNs) were used to train within each of the clusters individually. Further, through an ensemble learning approach, features obtained from each cluster were then concatenated to improve prediction accuracy. Our two-step approach comprising stratification prior to combining multiple CNNs, aided in capturing the relationships between OTUs sharing a phylum efficiently, as compared to using a single CNN ignoring OTU correlations. Results We used simulated datasets containing 168 OTUs in 200 cases and 200 controls for model testing. Thirty-two OTUs, potentially associated with risk of disease were randomly selected and interactions between three OTUs were used to introduce non-linearity. We also implemented this novel method in two human microbiome studies: (i) Cirrhosis with 118 cases, 114 controls; (ii) type 2 diabetes (T2D) with 170 cases, 174 controls; to demonstrate the model’s effectiveness. Extensive experimentation and comparison against conventional machine learning techniques yielded encouraging results. We obtained mean AUC values of 0.88, 0.92, 0.75, showing a consistent increment (5%, 3%, 7%) in simulations, Cirrhosis and T2D data, respectively, against the next best performing method, Random Forest. Availability and implementation https://github.com/divya031090/TaxoNN_OTU. Supplementary information Supplementary data are available at Bioinformatics online.},
+author = {Divya Sharma and A. Paterson and Wei Xu},
+doi = {10.1093/bioinformatics/btaa542},
+pmid = {32449747},
+}
+
+@article{4cf712b0c9cff9c529de0f9db69d5fae6b527013,
+title = {Metagenomics Biomarkers Selected for Prediction of Three Different Diseases in Chinese Population},
+year = {2018},
+url = {https://www.semanticscholar.org/paper/4cf712b0c9cff9c529de0f9db69d5fae6b527013},
+abstract = {The dysbiosis of human microbiome has been proven to be associated with the development of many human diseases. Metagenome sequencing emerges as a powerful tool to investigate the effects of microbiome on diseases. Identification of human gut microbiome markers associated with abnormal phenotypes may facilitate feature selection for multiclass classification. Compared with binary classifiers, multiclass classification models deploy more complex discriminative patterns. Here, we developed a pipeline to address the challenging characterization of multilabel samples. In this study, a total of 300 biomarkers were selected from the microbiome of 806 Chinese individuals (383 controls, 170 with type 2 diabetes, 130 with rheumatoid arthritis, and 123 with liver cirrhosis), and then logistic regression prediction algorithm was applied to those markers as the model intrinsic features. The estimated model produced an F1 score of 0.9142, which was better than other popular classification methods, and an average receiver operating characteristic (ROC) of 0.9475 showed a significant correlation between these selected biomarkers from microbiome and corresponding phenotypes. The results from this study indicate that machine learning is a vital tool in data mining from microbiome in order to identify disease-related biomarkers, which may contribute to the application of microbiome-based precision medicine in the future.},
+author = {Honglong Wu and Lihua Cai and Dongfang Li and Xinying Wang and Shancen Zhao and F. Zou and Ke Zhou},
+doi = {10.1155/2018/2936257},
+pmid = {29568746},
+}
+
+@article{8f14e00fe3583a3a241fe6dbf359883dc2b0d1c7,
+title = {Using Conditional Generative Adversarial Networks to Boost the Performance of Machine Learning in Microbiome Datasets},
+year = {2020},
+url = {https://www.semanticscholar.org/paper/8f14e00fe3583a3a241fe6dbf359883dc2b0d1c7},
+abstract = {The microbiome of the human body has been shown to have profound effects on physiological regulation and disease pathogenesis. However, association analysis based on statistical modeling of microbiome data has continued to be a challenge due to inherent noise, complexity of the data, and high cost of collecting large number of samples. To address this challenge, we employed a deep learning framework to construct a data-driven simulation of microbiome data using a conditional generative adversarial network. Conditional generative adversarial networks train two models against each other while leveraging side information learn from a given dataset to compute larger simulated datasets that are representative of the original dataset. In our study, we used a cohorts of patients with inflammatory bowel disease to show that not only can the generative adversarial network generate samples representative of the original data based on multiple diversity metrics, but also that training machine learning models on the synthetic samples can improve disease prediction through data augmentation. In addition, we also show that the synthetic samples generated by this cohort can boost disease prediction of a different external cohort.},
+author = {Derek Reiman and Yang Dai},
+doi = {10.1101/2020.05.18.102814},
+}
+
+@article{77f383ff5453d3beb26527980fc50772105efecc,
+title = {MegaR: an interactive R package for rapid sample classification and phenotype prediction using metagenome profiles and machine learning},
+year = {2021},
+url = {https://www.semanticscholar.org/paper/77f383ff5453d3beb26527980fc50772105efecc},
+abstract = {Background Diverse microbiome communities drive biogeochemical processes and evolution of animals in their ecosystems. Many microbiome projects have demonstrated the power of using metagenomics to understand the structures and factors influencing the function of the microbiomes in their environments. In order to characterize the effects from microbiome composition for human health, diseases, and even ecosystems, one must first understand the relationship of microbes and their environment in different samples. Running machine learning model with metagenomic sequencing data is encouraged for this purpose, but it is not an easy task to make an appropriate machine learning model for all diverse metagenomic datasets. Results We introduce MegaR, an R Shiny package and web application, to build an unbiased machine learning model effortlessly with interactive visual analysis. The MegaR employs taxonomic profiles from either whole metagenome sequencing or 16S rRNA sequencing data to develop machine learning models and classify the samples into two or more categories. It provides various options for model fine tuning throughout the analysis pipeline such as data processing, multiple machine learning techniques, model validation, and unknown sample prediction that can be used to achieve the highest prediction accuracy possible for any given dataset while still maintaining a user-friendly experience. Conclusions Metagenomic sample classification and phenotype prediction is important particularly when it applies to a diagnostic method for identifying and predicting microbe-related human diseases. MegaR provides various interactive visualizations for user to build an accurate machine-learning model without difficulty. Unknown sample prediction with a properly trained model using MegaR will enhance researchers to identify the sample property in a fast turnaround time.},
+author = {E. Dhungel and Yassin Mreyoud and Ho-Jin Gwak and A. Rajeh and Mina Rho and Tae-Hyuk Ahn},
+doi = {10.1186/s12859-020-03933-4},
+pmid = {33461494},
+}

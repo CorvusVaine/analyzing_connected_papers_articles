@@ -1,0 +1,405 @@
+@article{d1c6fdd9b16fae2dd747ed305e749e7e967979ce,
+title = {Accurate identification of bacteriophages from metagenomic data using Transformer},
+year = {2022},
+url = {https://www.semanticscholar.org/paper/d1c6fdd9b16fae2dd747ed305e749e7e967979ce},
+abstract = {Abstract Motivation Bacteriophages are viruses infecting bacteria. Being key players in microbial communities, they can regulate the composition/function of microbiome by infecting their bacterial hosts and mediating gene transfer. Recently, metagenomic sequencing, which can sequence all genetic materials from various microbiome, has become a popular means for new phage discovery. However, accurate and comprehensive detection of phages from the metagenomic data remains difficult. High diversity/abundance, and limited reference genomes pose major challenges for recruiting phage fragments from metagenomic data. Existing alignment-based or learning-based models have either low recall or precision on metagenomic data. Results In this work, we adopt the state-of-the-art language model, Transformer, to conduct contextual embedding for phage contigs. By constructing a protein-cluster vocabulary, we can feed both the protein composition and the proteins’ positions from each contig into the Transformer. The Transformer can learn the protein organization and associations using the self-attention mechanism and predicts the label for test contigs. We rigorously tested our developed tool named PhaMer on multiple datasets with increasing difficulty, including quality RefSeq genomes, short contigs, simulated metagenomic data, mock metagenomic data and the public IMG/VR dataset. All the experimental results show that PhaMer outperforms the state-of-the-art tools. In the real metagenomic data experiment, PhaMer improves the F1-score of phage detection by 27%.},
+author = {Jiayu Shang and X. Tang and Ruocheng Guo and Yanni Sun},
+doi = {10.1093/bib/bbac258},
+pmid = {35769000},
+arxivid = {2201.04778},
+}
+
+@article{fa9a42c8b041955aa8a8e7d8e8f4b43506c79a2d,
+title = {Simulation study and comparative evaluation of viral contiguous sequence identification tools},
+year = {2021},
+url = {https://www.semanticscholar.org/paper/fa9a42c8b041955aa8a8e7d8e8f4b43506c79a2d},
+abstract = {S2 TL;DR: The ability of the tools to identify integrated prophage elements traditionally excluded from targeted sequencing approaches is explored and comprehensive analysis of viral identification tools to assess their performance in a variety of situations provides valuable insights to viral researchers looking to mine viral elements from publicly available metagenomic data.},
+author = {Cody Glickman and Jo Hendrix and M. Strong},
+doi = {10.1186/s12859-021-04242-0},
+pmid = {34130621},
+}
+
+@article{5c4f628566d2d72a7655eabdd76a987921844091,
+title = {Identification of Bacteriophages Using Deep Representation Model with Pre-training},
+year = {2021},
+url = {https://www.semanticscholar.org/paper/5c4f628566d2d72a7655eabdd76a987921844091},
+abstract = {Bacteriophages/Phages are viruses that infect and replicate within bacteria and archaea. Antibiotic resistance is one of the biggest threats to global health. The therapeutic use of bacteriophages provides another potential solution for solving antibiotic resistance. To develop phage therapies, the identification of phages from metagenome sequences is the fundamental step. Currently, several methods have been developed for identifying phages. These methods can be categorized into two types: database-based methods and alignment-free methods. The database-based approach, such as VIBRANT, utilizes existing databases and compares sequence similarity between candidates and those in the databases. The alignment-free method, such as Seeker and DeepVirFinder, uses deep learning models to directly predict phages based on nucleotide sequences. Both approaches have their advantages and disadvantages.In this work, we propose using a deep representation learning model with pre-training to integrate the database-based and non-alignment-based methods (we call it INHERIT). The pre-training is used as an alternative way for acquiring knowledge representations from existing databases, while the BERT-style deep learning framework retains the advantage of alignment-free methods. We compared the proposed method with VIBRANT and Seeker on a third-party benchmark dataset. Our experiments show that INHERIT achieves better performance than the database-based approach and the alignment-free method, with the best F1-score of 0.9868. Meanwhile, we demonstrated that using pre-trained models helps to improve the non-alignment deep learning model further.},
+author = {Zeheng Bai and Yao-zhong Zhang and S. Miyano and R. Yamaguchi and S. Uematsu and S. Imoto},
+doi = {10.1101/2021.09.25.461359},
+}
+
+@article{4ca1b3f6ab47f7e442f6003bd28633028056d5da,
+title = {SpacePHARER: sensitive identification of phages from CRISPR spacers in prokaryotic hosts},
+year = {2020},
+url = {https://www.semanticscholar.org/paper/4ca1b3f6ab47f7e442f6003bd28633028056d5da},
+abstract = {SpacePHARER (CRISPR Spacer Phage-Host Pair Finder) is a sensitive and fast tool for de novo prediction of phage-host relationships via identifying phage genomes that match CRISPR spacers in genomic or metagenomic data. SpacePHARER gains sensitivity by comparing spacers and phages at the protein-level, optimizing its scores for matching very short sequences, and combining evidences from multiple matches, while controlling for false positives. We demonstrate SpacePHARER by searching a comprehensive spacer list against all complete phage genomes. Availability and implementation SpacePHARER is available as an open-source (GPLv3), user-friendly command-line software for Linux and macOS at spacepharer.soedinglab.org.},
+author = {R. Zhang and M. Mirdita and E. Levy Karin and C. Norroy and C. Galiez and J. Söding},
+doi = {10.1093/bioinformatics/btab222},
+pmid = {33792634},
+}
+
+@article{9e2759d86d29186cb0da71d6526abc63921a902e,
+title = {PhaTYP: Predicting the lifestyle for bacteriophages using BERT},
+year = {2022},
+url = {https://www.semanticscholar.org/paper/9e2759d86d29186cb0da71d6526abc63921a902e},
+abstract = {Bacteriophages (or phages), which infect bacteria, have two distinct lifestyles: virulent and temperate. Predicting the lifestyle of phages helps decipher their interactions with their bacterial hosts, aiding phages’ applications in fields such as phage therapy. Because experimental methods for annotating the lifestyle of phages cannot keep pace with the fast accumulation of sequenced phages, computational method for predicting phages’ lifestyles has become an attractive alternative. Despite some promising results, computational lifestyle prediction remains difficult because of the limited known annotations and the sheer amount of sequenced phage contigs assembled from metagenomic data. In particular, most of the existing tools cannot precisely predict phages’ lifestyles for short contigs. In this work, we develop PhaTYP (Phage TYPe prediction tool) to improve the accuracy of lifestyle prediction on short contigs. We design two different training tasks, self-supervised and fine-tuning tasks, to overcome lifestyle prediction difficulties. We rigorously tested and compared PhaTYP with four state-of-the-art methods: DeePhage, PHACTS, PhagePred, and BACPHLIP. The experimental results show that PhaTYP outperforms all these methods and achieves more stable performance on short contigs. In addition, we demonstrated the utility of PhaTYP for analyzing the phage lifestyle on human neonates’ gut data. This application shows that PhaTYP is a useful means for studying phages in metagenomic data and helps extend our understanding of microbial communities.},
+author = {Jiayu Shang and X. Tang and Yanni Sun},
+arxivid = {2206.09693},
+}
+
+@article{239ff6cb4b63b2602cf2dafbe9c9f182b4bb18f6,
+title = {SecProCT: In Silico Prediction of Human Secretory Proteins Based on Capsule Network and Transformer},
+year = {2021},
+url = {https://www.semanticscholar.org/paper/239ff6cb4b63b2602cf2dafbe9c9f182b4bb18f6},
+abstract = {Identifying secretory proteins from blood, saliva or other body fluids has become an effective method of diagnosing diseases. Existing secretory protein prediction methods are mainly based on conventional machine learning algorithms and are highly dependent on the feature set from the protein. In this article, we propose a deep learning model based on the capsule network and transformer architecture, SecProCT, to predict secretory proteins using only amino acid sequences. The proposed model was validated using cross-validation and achieved 0.921 and 0.892 accuracy for predicting blood-secretory proteins and saliva-secretory proteins, respectively. Meanwhile, the proposed model was validated on an independent test set and achieved 0.917 and 0.905 accuracy for predicting blood-secretory proteins and saliva-secretory proteins, respectively, which are better than conventional machine learning methods and other deep learning methods for biological sequence analysis. The main contributions of this article are as follows: (1) a deep learning model based on a capsule network and transformer architecture is proposed for predicting secretory proteins. The results of this model are better than the those of existing conventional machine learning methods and deep learning methods for biological sequence analysis; (2) only amino acid sequences are used in the proposed model, which overcomes the high dependence of existing methods on the annotated protein features; (3) the proposed model can accurately predict most experimentally verified secretory proteins and cancer protein biomarkers in blood and saliva.},
+author = {W. Du and Xuan Zhao and Yu Sun and Lei Zheng and Ying. Li and Yu Zhang},
+doi = {10.3390/ijms22169054},
+pmid = {34445760},
+}
+
+@article{6ea15fc14b8e7d2c2fe409fc9d987d353bfcbdd8,
+title = {Global overview and major challenges of host prediction methods for uncultivated phages.},
+year = {2021},
+url = {https://www.semanticscholar.org/paper/6ea15fc14b8e7d2c2fe409fc9d987d353bfcbdd8},
+abstract = {S2 TL;DR: Several methods and tools have been proposed to bioinformatically predict the potential host(s) of uncultivated phages based only on genome sequence information and their distinct strengths and limitations are reviewed.},
+author = {Clément Coclet and S. Roux},
+doi = {10.1016/j.coviro.2021.05.003},
+pmid = {34126465},
+}
+
+@article{34022c72da6d992fed5932e1d226a9ee3d8bb1a6,
+title = {Predicting the hosts of prokaryotic viruses using GCN-based semi-supervised learning},
+year = {2021},
+url = {https://www.semanticscholar.org/paper/34022c72da6d992fed5932e1d226a9ee3d8bb1a6},
+abstract = {S2 TL;DR: A semi-supervised learning model, named HostG, to conduct host prediction for novel viruses, which outperforms other popular methods, demonstrating the efficacy of using a GCN-based semi- supervised learning approach.},
+author = {Jiayu Shang and Yanni Sun},
+doi = {10.1186/s12915-021-01180-4},
+pmid = {34819064},
+arxivid = {2105.13570},
+}
+
+@article{bec5179c56edd8576b5f1b46f70280bcc0e594aa,
+title = {RaFAH: A superior method for virus-host prediction},
+year = {2020},
+url = {https://www.semanticscholar.org/paper/bec5179c56edd8576b5f1b46f70280bcc0e594aa},
+abstract = {Viruses of prokaryotes are extremely abundant and diverse. Culture-independent approaches have recently shed light on the biodiversity these biological entities1,2. One fundamental question when trying to understand their ecological roles is: which host do they infect? To tackle this issue we developed a machine-learning approach named Random Forest Assignment of Hosts (RaFAH), based on the analysis of nearly 200,000 viral genomes. RaFAH outperformed other methods for virus-host prediction (F1-score = 0.97 at the level of phylum). RaFAH was applied to diverse datasets encompassing genomes of uncultured viruses derived from eight different biomes of medical, biotechnological, and environmental relevance, and was capable of accurately describing these viromes. This led to the discovery of 537 genomic sequences of archaeal viruses. These viruses represent previously unknown lineages and their genomes encode novel auxiliary metabolic genes, which shed light on how these viruses interfere with the host molecular machinery. RaFAH is available at https://sourceforge.net/projects/rafah/.},
+author = {F. Coutinho and A. Zaragoza-Solas and M. López-Pérez and J. Barylski and A. Zielezinski and B. Dutilh and R. Edwards and F. Rodríguez-Valera},
+doi = {10.1101/2020.09.25.313155},
+}
+
+@article{cfa4c650eb5a54b7fc87ad8efdb38959476e1084,
+title = {DeePhage: distinguishing virulent and temperate phage-derived sequences in metavirome data with a deep learning approach},
+year = {2021},
+url = {https://www.semanticscholar.org/paper/cfa4c650eb5a54b7fc87ad8efdb38959476e1084},
+abstract = {Abstract Background Prokaryotic viruses referred to as phages can be divided into virulent and temperate phages. Distinguishing virulent and temperate phage–derived sequences in metavirome data is important for elucidating their different roles in interactions with bacterial hosts and regulation of microbial communities. However, there is no experimental or computational approach to effectively classify their sequences in culture-independent metavirome. We present a new computational method, DeePhage, which can directly and rapidly judge each read or contig as a virulent or temperate phage–derived fragment. Findings DeePhage uses a “one-hot” encoding form to represent DNA sequences in detail. Sequence signatures are detected via a convolutional neural network to obtain valuable local features. The accuracy of DeePhage on 5-fold cross-validation reaches as high as 89%, nearly 10% and 30% higher than that of 2 similar tools, PhagePred and PHACTS. On real metavirome, DeePhage correctly predicts the highest proportion of contigs when using BLAST as annotation, without apparent preferences. Besides, DeePhage reduces running time vs PhagePred and PHACTS by 245 and 810 times, respectively, under the same computational configuration. By direct detection of the temperate viral fragments from metagenome and metavirome, we furthermore propose a new strategy to explore phage transformations in the microbial community. The ability to detect such transformations provides us a new insight into the potential treatment for human disease. Conclusions DeePhage is a novel tool developed to rapidly and efficiently identify 2 kinds of phage fragments especially for metagenomics analysis. DeePhage is freely available via http://cqb.pku.edu.cn/ZhuLab/DeePhage or https://github.com/shufangwu/DeePhage.},
+author = {Shufang Wu and Zhencheng Fang and J. Tan and Mo Li and Chunhui Wang and Qian Guo and Congmin Xu and Xiaoqing Jiang and Huaiqiu Zhu},
+doi = {10.1093/gigascience/giab056},
+pmid = {34498685},
+}
+
+@article{04d631e27635d13ef23b3ec464b5cba0af3f24c0,
+title = {Phage–bacterial contig association prediction with a convolutional neural network},
+year = {2022},
+url = {https://www.semanticscholar.org/paper/04d631e27635d13ef23b3ec464b5cba0af3f24c0},
+abstract = {Abstract Motivation Phage–host associations play important roles in microbial communities. But in natural communities, as opposed to culture-based lab studies where phages are discovered and characterized metagenomically, their hosts are generally not known. Several programs have been developed for predicting which phage infects which host based on various sequence similarity measures or machine learning approaches. These are often based on whole viral and host genomes, but in metagenomics-based studies, we rarely have whole genomes but rather must rely on contigs that are sometimes as short as hundreds of bp long. Therefore, we need programs that predict hosts of phage contigs on the basis of these short contigs. Although most existing programs can be applied to metagenomic datasets for these predictions, their accuracies are generally low. Here, we develop ContigNet, a convolutional neural network-based model capable of predicting phage–host matches based on relatively short contigs, and compare it to previously published VirHostMatcher (VHM) and WIsH. Results On the validation set, ContigNet achieves 72–85% area under the receiver operating characteristic curve (AUROC) scores, compared to the maximum of 68% by VHM or WIsH for contigs of lengths between 200 bps to 50 kbps. We also apply the model to the Metagenomic Gut Virus (MGV) catalogue, a dataset containing a wide range of draft genomes from metagenomic samples and achieve 60–70% AUROC scores compared to that of VHM and WIsH of 52%. Surprisingly, ContigNet can also be used to predict plasmid-host contig associations with high accuracy, indicating a similar genetic exchange between mobile genetic elements and their hosts. Availability and implementation The source code of ContigNet and related datasets can be downloaded from https://github.com/tianqitang1/ContigNet.},
+author = {Tianqi Tang and Shengwei Hou and J. Fuhrman and Fengzhu Sun},
+doi = {10.1093/bioinformatics/btac239},
+pmid = {35758806},
+}
+
+@article{0198e1cf123d75b0815608679fb4e7d11276b953,
+title = {HoPhage: an ab initio tool for identifying hosts of phage fragments from metaviromes},
+year = {2021},
+url = {https://www.semanticscholar.org/paper/0198e1cf123d75b0815608679fb4e7d11276b953},
+abstract = {Abstract Summary We present HoPhage (Host of Phage) to identify the host of a given phage fragment from metavirome data at the genus level. HoPhage integrates two modules using a deep learning algorithm and a Markov chain model, respectively. HoPhage achieves 47.90% and 82.47% mean accuracy at the genus and phylum levels for ∼1-kb long artificial phage fragments when predicting host among 50 genera, representing 7.54–20.22% and 13.55–24.31% improvement, respectively. By testing on three real virome samples, HoPhage yields 81.11% mean accuracy at the genus level within a much broader candidate host range. Availability and implementation HoPhage is available at http://cqb.pku.edu.cn/ZhuLab/HoPhage/data/ Supplementary information Supplementary data are available at Bioinformatics online.},
+author = {J. Tan and Zhencheng Fang and Shufang Wu and Qian Guo and Xiaoqing Jiang and Huaiqiu Zhu},
+doi = {10.1093/bioinformatics/btab585},
+pmid = {34383025},
+}
+
+@article{52946fe89cb5a563423cb67ad44472a14ada05b4,
+title = {Prokaryotic virus host predictor: a Gaussian model for host prediction of prokaryotic viruses in metagenomics},
+year = {2020},
+url = {https://www.semanticscholar.org/paper/52946fe89cb5a563423cb67ad44472a14ada05b4},
+abstract = {S2 TL;DR: The Prokaryotic virus Host Predictor software tool provides an intuitive and user-friendly API for the Gaussian model described herein, which will facilitate the rapid identification of hosts for newly identified proKaryotic viruses in metagenomic studies.},
+author = {Congyu Lu and Zheng Zhang and Zena Cai and Zhaozhong Zhu and Ye Qiu and Aiping Wu and T. Jiang and Heping Zheng and Yousong Peng},
+doi = {10.1186/s12915-020-00938-6},
+pmid = {33441133},
+}
+
+@article{2393f5f5a38c71eb5317b392c2d19dfe9054dd27,
+title = {Taxonomy-aware, sequence similarity ranking reliably predicts phage-host relationships},
+year = {2021},
+url = {},
+abstract = {S2 TL;DR: An extension to BLAST is created, named Phirbo, that improves host prediction quality beyond what is obtainable from standard BLAST searches and harnesses information concerning sequence similarity and bacteria relatedness to predict phage-host interactions.},
+author = {A. Zielezinski and J. Barylski and W. Karłowski},
+}
+
+@article{96abca7475bdadc928c4b15f028bf73a04915d5c,
+title = {What the Phage: A scalable workflow for the identification and analysis of phage sequences},
+year = {2020},
+url = {https://www.semanticscholar.org/paper/96abca7475bdadc928c4b15f028bf73a04915d5c},
+abstract = {Phages are among the most abundant and diverse biological entities on earth. Identification from sequence data is a crucial first step to understand their impact on the environment. A variety of bacteriophage identification tools have been developed over the years. They differ in algorithmic approach, results and ease of use. We, therefore, developed “What the Phage” (WtP), an easy-to-use and parallel multitool approach for phage identification combined with an annotation and classification downstream strategy, thus, supporting the user’s decision-making process when the phage identification tools are not in agreement to each other. WtP is reproducible and scales to thousands of datasets through the use of a workflow manager (Nextflow). WtP is freely available under a GPL-3.0 license (https://github.com/replikation/What_the_Phage).},
+author = {M. Marquet and M. Hölzer and Mathias W Pletz and A. Viehweger and O. Makarewicz and R. Ehricht and C. Brandt},
+doi = {10.1101/2020.07.24.219899},
+}
+
+@article{c832272a2f4290c2809011b16db68cb312286a85,
+title = {Seeker: Alignment-free identification of bacteriophage genomes by deep learning},
+year = {2020},
+url = {},
+abstract = {S2 TL;DR: Seeker is presented, a deep-learning tool for reference-free identification of phage sequences and its ability to identify unknown phages is comprehensively validated and researchers can easily apply Seeker in metagenomic studies, for the detection of diverse unknown bacteriophages.},
+author = {Noam Auslander and Ayal B. Gussow and Sean Benler and Y. Wolf and E. Koonin},
+}
+
+@article{99ab5ce616472b82eba5ea2baf261bc5a9634c51,
+title = {Comprehensive benchmarking of tools to identify phages in metagenomic shotgun sequencing data},
+year = {2021},
+url = {https://www.semanticscholar.org/paper/99ab5ce616472b82eba5ea2baf261bc5a9634c51},
+abstract = {As the relevance of bacteriophages in shaping diversity in microbial ecosystems is becoming increasingly clear, the prediction of phage sequences in metagenomic datasets has become a topic of considerable interest, which has led to the development of many novel bioinformatic tools. A comprehensive comparative analysis of these tools has so far not been performed.We benchmarked ten state-of-the-art phage identification tools. We used artificial contigs generated from complete RefSeq genomes representing phages, plasmids, and chromosomes, and a previously sequenced mock community containing four phage strains to evaluate the precision, recall and F1-scores of the tools. In addition, a set of previously simulated viromes was used to assess diversity bias in each tool’s output.DeepVirFinder performed best across the datasets of artificial contigs and the mock community, with the highest F1-scores (0.98 and 0.61 respectively). Generally, machine learning-based tools performed better on the artificial contigs, while reference and machine learning based tool performed comparably on the mock community. Most tools produced a viral genome set that had similar alpha and beta diversity patterns to the original population with the notable exception of Seeker, whose metrics differed significantly from the diversity of the underlying data.This study provides key metrics used to assess performance of phage detection tools, offers a framework for further comparison of additional viral discovery tools, and discusses optimal strategies for using these tools.},
+author = {S. Ho and A. Millard and W. van Schaik},
+doi = {10.1101/2021.04.12.438782},
+}
+
+@article{450093ce69743a87e46893088d68cbd80c976948,
+title = {A network-based integrated framework for predicting virus-host interactions},
+year = {2018},
+url = {https://www.semanticscholar.org/paper/450093ce69743a87e46893088d68cbd80c976948},
+abstract = {Metagenomic sequencing has greatly enhanced the discovery of viral genomic sequences; however it remains challenging to identify the host(s) of these new viruses. We developed VirHostMatcher-Net, a flexible, network-based, Markov random field framework for predicting virus-host interactions using multiple, integrated features: CRISPR sequences, sequence homology, and alignment-free similarity measures ( and WIsH). Evaluation of this method on a benchmark set of 1,075 known viruses-host pairs yielded host prediction accuracy of 62% and 85% at the genus and phylum levels, representing 12-27% and 10-18% improvement respectively over previous single-feature prediction approaches. We applied our host-prediction tool to three metagenomic virus datasets: human gut crAss-like phages, marine viruses, and viruses recovered from globally-distributed, diverse habitats. Host predictions were frequently consistent with those of previous studies, but more importantly, this new tool made many more confident predictions than previous tools, up to 6-fold more (n>60,000), greatly expanding the diversity of known virus-host interactions.},
+author = {Weili Wang and J. Ren and N. Ahlgren and J. Fuhrman and J. Braun and Fengzhu Sun},
+doi = {10.1101/505768},
+}
+
+@article{e596f2e5c46582420e37b5773aa4d87ae795751c,
+title = {PHISDetector: a tool to detect diverse in silico phage-host interaction signals for virome studies},
+year = {2019},
+url = {https://www.semanticscholar.org/paper/e596f2e5c46582420e37b5773aa4d87ae795751c},
+abstract = {Phage-microbe interactions not only are appealing systems to study coevolution but also have been increasingly emphasized due to their roles in human health, diseases, and novel therapeutic development. Meanwhile, their interactions leave diverse signals in bacterial and phage genomic sequences, defined as phage-host interaction signals (PHISs), such as sequence composition, CRISPR targeting, prophage, and protein-protein interaction signals. We infer that proper detection and integration of these diverse PHISs will allow us to predict phage-host interactions. Here, we developed PHISDetector, a novel tool to predict phage-host interactions by detecting and integrating diverse in silico PHISs and scoring the probability of phage-host interactions using machine-learning models based on PHIS features. PHISDetector is available as a one-stop web service version for general users to study individual inputs. A stand-alone software version is also provided to process massive phage contigs from virome studies. PHISDetector is freely available at http://www.microbiome-bigdata.com/PHISDetector/ and https://github.com/HIT-ImmunologyLab/PHISDector.},
+author = {Fan Zhang and Fengxia Zhou and R. Gan and C. Ren and Y. Jia and Ling Yu and Zhiwei Huang},
+doi = {10.1101/661074},
+pmid = {35272051},
+}
+
+@article{b484a956226a01753e2c24170c35739f37c47aec,
+title = {iPHoP: an integrated machine-learning framework to maximize host prediction for metagenome-assembled virus genomes},
+year = {2022},
+url = {https://www.semanticscholar.org/paper/b484a956226a01753e2c24170c35739f37c47aec},
+abstract = {The extraordinary diversity of viruses infecting bacteria and archaea is now primarily studied through metagenomics. While metagenomes enable high-throughput exploration of the viral sequence space, metagenome-derived genomes lack key information compared to isolated viruses, in particular host association. Different computational approaches are available to predict the host(s) of uncultivated viruses based on their genome sequences, but thus far individual approaches are limited either in precision or in recall, i.e. for a number of viruses they yield erroneous predictions or no prediction at all. Here we describe iPHoP, a two-step framework that integrates multiple methods to provide host predictions for a broad range of viruses while retaining a low (<10%) false-discovery rate. Based on a large database of metagenome-derived virus genomes, we illustrate how iPHoP can provide extensive host prediction and guide further characterization of uncultivated viruses. iPHoP is available at https://bitbucket.org/srouxjgi/iphop, through a Bioconda recipe, and a Docker container.},
+author = {S. Roux and A. P. Camargo and F. Coutinho and S. Dabdoub and B. Dutilh and Stephen Nayfach and A. Tritt},
+doi = {10.1101/2022.07.28.501908},
+}
+
+@article{6f75dbeec58ab129bcda07c66ddc639343866680,
+title = {Computational Tools for the Analysis of Uncultivated Phage Genomes},
+year = {2022},
+url = {https://www.semanticscholar.org/paper/6f75dbeec58ab129bcda07c66ddc639343866680},
+abstract = {Over a century of bacteriophage research has uncovered a plethora of fundamental aspects of their biology, ecology, and evolution. Furthermore, the introduction of community-level studies through metagenomics has revealed unprecedented insights on the impact that phages have on a range of ecological and physiological processes. SUMMARY Over a century of bacteriophage research has uncovered a plethora of fundamental aspects of their biology, ecology, and evolution. Furthermore, the introduction of community-level studies through metagenomics has revealed unprecedented insights on the impact that phages have on a range of ecological and physiological processes. It was not until the introduction of viral metagenomics that we began to grasp the astonishing breadth of genetic diversity encompassed by phage genomes. Novel phage genomes have been reported from a diverse range of biomes at an increasing rate, which has prompted the development of computational tools that support the multilevel characterization of these novel phages based solely on their genome sequences. The impact of these technologies has been so large that, together with MAGs (Metagenomic Assembled Genomes), we now have UViGs (Uncultivated Viral Genomes), which are now officially recognized by the International Committee for the Taxonomy of Viruses (ICTV), and new taxonomic groups can now be created based exclusively on genomic sequence information. Even though the available tools have immensely contributed to our knowledge of phage diversity and ecology, the ongoing surge in software programs makes it challenging to keep up with them and the purpose each one is designed for. Therefore, in this review, we describe a comprehensive set of currently available computational tools designed for the characterization of phage genome sequences, focusing on five specific analyses: (i) assembly and identification of phage and prophage sequences, (ii) phage genome annotation, (iii) phage taxonomic classification, (iv) phage-host interaction analysis, and (v) phage microdiversity.},
+author = {J. Andrade-Martínez and Laura Carolina Camelo Valera and Luis Alberto Chica Cárdenas and L. Forero-Junco and G. López-Leal and J. L. Moreno-Gallego and Guillermo Rangel-Pineros and Alejandro Reyes},
+doi = {10.1128/mmbr.00004-21},
+pmid = {35311574},
+}
+
+@article{ac454a0f79f36a060324adc46e1e066db2975364,
+title = {A network-based integrated framework for predicting virus–prokaryote interactions},
+year = {2020},
+url = {https://www.semanticscholar.org/paper/ac454a0f79f36a060324adc46e1e066db2975364},
+abstract = {Abstract Metagenomic sequencing has greatly enhanced the discovery of viral genomic sequences; however, it remains challenging to identify the host(s) of these new viruses. We developed VirHostMatcher-Net, a flexible, network-based, Markov random field framework for predicting virus–prokaryote interactions using multiple, integrated features: CRISPR sequences and alignment-free similarity measures (\documentclass[12pt]{minimal} \usepackage{amsmath} \usepackage{wasysym} \usepackage{amsfonts} \usepackage{amssymb} \usepackage{amsbsy} \usepackage{upgreek} \usepackage{mathrsfs} \setlength{\oddsidemargin}{-69pt} \begin{document} }{}$s_2^*$\end{document} and WIsH). Evaluation of this method on a benchmark set of 1462 known virus–prokaryote pairs yielded host prediction accuracy of 59% and 86% at the genus and phylum levels, representing 16–27% and 6–10% improvement, respectively, over previous single-feature prediction approaches. We applied our host prediction tool to crAssphage, a human gut phage, and two metagenomic virus datasets: marine viruses and viral contigs recovered from globally distributed, diverse habitats. Host predictions were frequently consistent with those of previous studies, but more importantly, this new tool made many more confident predictions than previous tools, up to nearly 3-fold more (n > 27 000), greatly expanding the diversity of known virus–host interactions.},
+author = {Weili Wang and Jie Ren and Kujin Tang and Emily Dart and J. C. Ignacio-Espinoza and J. Fuhrman and J. Braun and Fengzhu Sun and N. Ahlgren},
+doi = {10.1093/nargab/lqaa044},
+pmid = {32626849},
+}
+
+@article{b676358355847ebfe2ce65f9c563956e3f285b61,
+title = {Identify phage hosts from metaviromic short reads based on deep learning and Markov chain model},
+year = {2021},
+url = {https://www.semanticscholar.org/paper/b676358355847ebfe2ce65f9c563956e3f285b61},
+abstract = {Phages - viruses that infect bacteria and archaea - are dominant in the virosphere and play an important role in the microbial community. It is very important to identify the host of a given phage fragment from metavriome data for understanding the ecological impact of phage in a microbial community. State-of-the-art tools for host identification only present reliable results on long sequences within a narrow candidate host range, while there are a large number of short fragments in real metagenomic data and the taxonomic composition of a microbial community is often complicated. Here, we present a method, named HoPhage, to identify the host of a given phage fragment from metavirome data at the genus level. HoPhage integrates two modules using the deep learning algorithms and the Markov chain model, respectively. By testing on both the artificial benchmark dataset of phage contigs and the real virome data, HoPhage demonstrates a satisfactory performance on short fragments within a wide candidate host range at every taxonomic level. HoPhage is freely available at http://cqb.pku.edu.cn/ZhuLab/HoPhage/.},
+author = {J. Tan and Zhencheng Fang and Shufang Wu and Qian Guo and Xiaoqing Jiang and Huaiqiu Zhu},
+doi = {10.1101/2021.03.01.433351},
+}
+
+@article{811d35c4650a62319ca4e0ed7d0e2def48963d6f,
+title = {Metaviral SPAdes: assembly of viruses from metagenomic data},
+year = {2020},
+url = {https://www.semanticscholar.org/paper/811d35c4650a62319ca4e0ed7d0e2def48963d6f},
+abstract = {MOTIVATION
+Although the set of currently known viruses has been steadily expanding, only a tiny fraction of the Earth's virome has been sequenced so far. Shotgun metagenomic sequencing provides an opportunity to reveal novel viruses but faces the computational challenge of identifying viral genomes that are often difficult to detect in metagenomic assemblies.
+
+
+RESULTS
+We describe a metaviralSPAdes tool for identifying viral genomes in metagenomic assembly graphs that is based on analyzing variations in the coverage depth between viruses and bacterial chromosomes. We benchmarked metaviralSPAdes on diverse metagenomic datasets, verified our predictions using a set of virus-specific Hidden Markov Models, and demonstrated that it improves on the state-of-the-art viral identification pipelines.
+
+
+AVAILABILITY
+metaviralSPAdes includes viralAssembly, viralVerify, and viralComplete modules that are available as standalone packages: https://github.com/ablab/spades/tree/metaviral_publication, https://github.com/ablab/viralVerify/ and https://github.com/ablab/viralComplete/.
+
+
+SUPPLEMENTARY INFORMATION
+Supplementary data are available at Bioinformatics online.},
+author = {D. Antipov and Mikhail Raiko and A. Lapidus and P. Pevzner},
+doi = {10.1093/bioinformatics/btaa490},
+pmid = {32413137},
+}
+
+@article{afadb78c97ef97a9981af49639cc18347a80d7dd,
+title = {Bacteriophage classification for assembled contigs using graph convolutional network},
+year = {2021},
+url = {https://www.semanticscholar.org/paper/afadb78c97ef97a9981af49639cc18347a80d7dd},
+abstract = {Abstract Motivation Bacteriophages (aka phages), which mainly infect bacteria, play key roles in the biology of microbes. As the most abundant biological entities on the planet, the number of discovered phages is only the tip of the iceberg. Recently, many new phages have been revealed using high-throughput sequencing, particularly metagenomic sequencing. Compared to the fast accumulation of phage-like sequences, there is a serious lag in taxonomic classification of phages. High diversity, abundance and limited known phages pose great challenges for taxonomic analysis. In particular, alignment-based tools have difficulty in classifying fast accumulating contigs assembled from metagenomic data. Results In this work, we present a novel semi-supervised learning model, named PhaGCN, to conduct taxonomic classification for phage contigs. In this learning model, we construct a knowledge graph by combining the DNA sequence features learned by convolutional neural network and protein sequence similarity gained from gene-sharing network. Then we apply graph convolutional network to utilize both the labeled and unlabeled samples in training to enhance the learning ability. We tested PhaGCN on both simulated and real sequencing data. The results clearly show that our method competes favorably against available phage classification tools. Availability and implementation The source code of PhaGCN is available via: https://github.com/KennthShang/PhaGCN.},
+author = {Jiayu Shang and Jin-qin Jiang and Yanni Sun},
+doi = {10.1093/bioinformatics/btab293},
+pmid = {34252923},
+arxivid = {2102.03746},
+}
+
+@article{e741b34e9bd5cb1c4850f69046809a30845b71ae,
+title = {Identification of bacteriophage genome sequences with representation learning},
+year = {2022},
+url = {https://www.semanticscholar.org/paper/07c72a83bbc51c30316751d2997c1080360102de},
+abstract = {Motivation Bacteriophages/Phages are the viruses that infect and replicate within bacteria and archaea, and rich in human body. To investigate the relationship between phages and microbial communities, the identification of phages from metagenome sequences is the first step. Currently, there are two main methods for identifying phages: database-based (alignment-based) methods and alignment-free methods. Database-based methods typically use a large number of sequences as references; alignment-free methods usually learn the features of the sequences with machine learning and deep learning models. Results We propose INHERIT which uses a deep representation learning model to integrate both database-based and alignment-free methods, combining the strengths of both. Pre-training is used as an alternative way of acquiring knowledge representations from existing databases, while the BERT-style deep learning framework retains the advantage of alignment-free methods. We compare INHERIT with four existing methods on a third-party benchmark dataset. Our experiments show that INHERIT achieves a better performance with the F1-score of 0.9932. In addition, we find that pre-training two species separately helps the non-alignment deep learning model make more accurate predictions. Availability The codes of INHERIT are now available in: https://github.com/Celestial-Bai/INHERIT. Contact yaozhong@ims.u-tokyo.ac.jp and imoto@hgc.jp Supplementary information Supplementary data are available at BioRxiv online.},
+author = {Zeheng Bai and Yao-zhong Zhang and S. Miyano and R. Yamaguchi and K. Fujimoto and S. Uematsu and S. Imoto},
+doi = {10.1101/2021.09.25.461359},
+pmid = {35920769},
+}
+
+@article{3f336438d14eb2a89fc0d28514ad2cdee6929979,
+title = {3CAC: improving the classification of phages and plasmids in metagenomic assemblies using assembly graphs},
+year = {2021},
+url = {https://www.semanticscholar.org/paper/3f336438d14eb2a89fc0d28514ad2cdee6929979},
+abstract = {Motivation Bacteriophages and plasmids usually coexist with their host bacteria in microbial communities and play important roles in microbial evolution. Accurately identifying sequence contigs as phages, plasmids, and bacterial chromosomes in mixed metagenomic assemblies is critical for further unravelling their functions. Many classification tools have been developed for identifying either phages or plasmids in metagenomic assemblies. However, only two classifiers, PPR-Meta and viralVerify, were proposed to simultaneously identify phages and plasmids in mixed metagenomic assemblies. Due to the very high fraction of chromosome contigs in the assemblies, both tools achieve high precision in the classification of chromosomes but perform poorly in classifying phages and plasmids. Short contigs in these assemblies are often wrongly classified or classified as uncertain. Results Here we present 3CAC, a new three-class classifier that improves the precision of phage and plasmid classification. 3CAC starts with an initial three-class classification generated by existing classifiers and improves the classification of short contigs and contigs with low confidence classification by using proximity in the assembly graph. Evaluation on simulated metagenomes and on real human gut microbiome samples showed that 3CAC outperformed PPR-Meta and viralVerify in both precision and recall, and increased F1-score by 10-60 percentage points. Availability The 3CAC software is available on https://github.com/Shamir-Lab/3CAC. Contact rshamir@tau.ac.il Supplementary information Supplementary data are available at Bioinformatics online.},
+author = {Lianrong Pu and R. Shamir},
+doi = {10.1101/2021.11.05.467408},
+}
+
+@article{877134c2b413efb83a1f65beeee446e8315777c7,
+title = {Accurate viral genome reconstruction and host assignment with proximity-ligation sequencing},
+year = {2021},
+url = {https://www.semanticscholar.org/paper/877134c2b413efb83a1f65beeee446e8315777c7},
+abstract = {Viruses play crucial roles in the ecology of microbial communities, yet they remain relatively understudied in their native environments. Despite many advancements in high-throughput whole-genome sequencing (WGS), sequence assembly, and annotation of viruses, the reconstruction of full-length viral genomes directly from metagenomic sequencing is possible only for the most abundant phages and requires long-read sequencing technologies. Additionally, the prediction of their cellular hosts remains difficult from conventional metagenomic sequencing alone. To address these gaps in the field and to accelerate the study of viruses directly in their native microbiomes, we developed an end-to-end bioinformatics platform for viral genome reconstruction and host attribution from metagenomic data using proximity-ligation sequencing (i.e., Hi-C). We demonstrate the capabilities of the platform by recovering and characterizing the metavirome of a variety of metagenomes, including a fecal microbiome that has also been sequenced with accurate long reads, allowing for the assessment and benchmarking of the new methods. The platform can accurately extract numerous near-complete viral genomes even from highly fragmented short-read assemblies and can reliably predict their cellular hosts with minimal false positives. To our knowledge, this is the first software for performing these tasks. Being significantly cheaper than long-read sequencing of comparable depth, the incorporation of proximity-ligation sequencing in microbiome research shows promise to greatly accelerate future advancements in the field.},
+author = {G. Uritskiy and Maximillian Press and Christine L. Sun and G. Huerta and A. A. Zayed and Andrew H. Wiser and Jonas R. Grove and Benjamin Auch and S. Eacker and Shawn Sullivan and D. Bickhart and Timothy P. L. Smith and M. Sullivan and Ivan Liachko},
+doi = {10.1101/2021.06.14.448389},
+}
+
+@article{b7eeaa761e9e06b3d20c33d1be9183d875dee675,
+title = {Gauge your phage: Benchmarking of bacteriophage identification tools in metagenomic sequencing data},
+year = {2022},
+url = {https://www.semanticscholar.org/paper/b7eeaa761e9e06b3d20c33d1be9183d875dee675},
+abstract = {Background The prediction of bacteriophage sequences in metagenomic datasets has become a topic of considerable interest, leading to the development of many novel bioinformatic tools. A comparative analysis of ten state-of-the-art phage identification tools was performed to inform their usage in microbiome research. Methods Artificial contigs generated from complete RefSeq genomes representing phages, plasmids, and chromosomes, and a previously sequenced mock community containing four phage species, were used to evaluate the precision, recall and F1-scores of the tools. We also generated a dataset of randomly shuffled sequences to quantify false positive calls. In addition, a set of previously simulated viromes was used to assess diversity bias in each tool’s output. Results VirSorter2 achieved the highest F1 score (0.92) in the RefSeq artificial contigs dataset, with several other tools also performing well. Kraken2 had the highest F1 score (0.86) in the mock community benchmark by a large margin (0.3 higher than DeepVirFinder in second place), mainly due to its high precision (0.96). Generally, k-mer based tools performed better than reference similarity tools and gene-based methods. Several tools, most notably PPR Meta, called a high number of false positives in the randomly shuffled sequences. When analysing the diversity of the genomes that each tool predicted from a virome set, most tools produced a viral genome set that had similar alpha and beta diversity patterns to the original population, with Seeker being a notable exception. Conclusions This study provides key metrics used to assess performance of phage detection tools, offers a framework for further comparison of additional viral discovery tools, and discusses optimal strategies for using these tools. We highlight that the choice of tool for identification of phages in metagenomic datasets, as well as their parameters, can bias the results and provide pointers for different use case scenarios. We have also made our benchmarking dataset available for download in order to facilitate future comparisons of phage identification tools.},
+author = {S. Ho and N. Wheeler and Andrew Millard and W. van Schaik},
+doi = {10.1101/2021.04.12.438782},
+}
+
+@article{5b160da1f3c69c7472e0df50b9ebd705560e9681,
+title = {Genome binning of viral entities from bulk metagenomics data},
+year = {2021},
+url = {https://www.semanticscholar.org/paper/5b160da1f3c69c7472e0df50b9ebd705560e9681},
+abstract = {Despite the accelerating number of uncultivated virus sequences discovered in metagenomics and their apparent importance for health and disease, the human gut virome and its interactions with bacteria in the gastrointestinal tract are not well understood. This is partly due to a paucity of whole-virome datasets and limitations in current approaches for identifying viral sequences in metagenomics data. Here, combining a deep-learning based metagenomics binning algorithm with paired metagenome and metavirome datasets, we develop Phages from Metagenomics Binning (PHAMB), an approach that allows the binning of thousands of viral genomes directly from bulk metagenomics data, while simultaneously enabling clustering of viral genomes into accurate taxonomic viral populations. When applied on the Human Microbiome Project 2 (HMP2) dataset, PHAMB recovered 6,077 high-quality genomes from 1,024 viral populations, and identified viral-microbial host interactions. PHAMB can be advantageously applied to existing and future metagenomes to illuminate viral ecological dynamics with other microbiome constituents. Here, Johansen et al . develop an approach, Phages from Metagenomics Binning (PHAMB), that allows the binning of thousands of viral genomes directly from bulk metagenomics data, while simultaneously enabling clustering of viral genomes into accurate taxonomic viral populations, unveiling viral-microbial host interactions in the gut.},
+author = {Joachim Johansen and D. Plichta and J. Nissen and M. Jespersen and Shiraz A. Shah and Ling Deng and J. Stokholm and H. Bisgaard and D. Nielsen and S. Sørensen and S. Rasmussen},
+doi = {10.1101/2021.07.07.451412},
+pmid = {35181661},
+}
+
+@article{b914ba6abb69072274cff1b91b9d0137016b9d11,
+title = {Detecting the hosts of bacteriophages using GCN-based semi-supervised learning},
+year = {2021},
+url = {https://www.semanticscholar.org/paper/b914ba6abb69072274cff1b91b9d0137016b9d11},
+abstract = {Motivation: Bacteriophages (aka phages) are viruses that infect bacteria and archaea. Thus, they play important regulatory roles in natural and host-associated ecosystems. As the most abundant and diverse biological entities in the biosphere, phages have received increased attention in their research and applications. In particular, identifying their hosts provides key knowledge for their usages as antibiotics. High-throughput sequencing and its application to the microbiome have offered new opportunities for phage host detection. However, there are two main challenges for computational host prediction. First, the known phage-host relationships are very limited compared to sequenced phages. Second, although the sequence similarity between phages and bacteria has been used as a major feature for host prediction, the alignment is either missing or ambiguous for accurate host prediction. Thus, there is still a need to improve the accuracy of host prediction. Results: In this work, we present a semi-supervised learning model, named HostG, to conduct host prediction for novel phages. We construct a knowledge graph by utilizing both phage-phage protein similarity and phage-host DNA sequence similarity. Then graph convolutional network (GCN) is adopted to exploit phages with or without known hosts in training to enhance the learning ability. During the GCN training, we minimize the expected calibrated error (ECE) to ensure the confidence of the predictions. We tested HostG on both simulated and real sequencing data and the results demonstrated that it competes favorably against the state-of-the-art pipelines. Availability: The source code of HostG is available via: https://github.com/KennthShang/HostG Contact: yannisun@cityu.edu.hk},
+author = {Jiayu Shang and Yanni Sun},
+}
+
+@article{fd137c563fe0374538fc36678baee48ae0627a7e,
+title = {Novel Viral Communities Potentially Assisting in Carbon, Nitrogen, and Sulfur Metabolism in the Upper Slope Sediments of Mariana Trench},
+year = {2022},
+url = {https://www.semanticscholar.org/paper/fd137c563fe0374538fc36678baee48ae0627a7e},
+abstract = {The Mariana Trench harbors a substantial number of infective viral particles. However, very little is known about the identity, survival strategy, and potential functions of viruses in the trench sediments. ABSTRACT Viruses are ubiquitous in the oceans. Even in the deep sediments of the Mariana Trench, viruses have high productivity. However, little is known about their species composition and survival strategies in that environment. Here, we uncovered novel viral communities (3,206 viral scaffolds) in the upper slope sediments of the Mariana Trench via metagenomic analysis of 15 sediment samples. Most (99%) of the viral scaffolds lack known viral homologs, and ca. 59% of the high-quality viral genomes (total of 111 with completeness of >90%) represent novel genera, including some Phycodnaviridae and jumbo phages. These viruses contain various auxiliary metabolic genes (AMGs) potentially involved in organic carbon degradation, inorganic carbon fixation, denitrification, and assimilatory sulfate reduction, etc. This study provides novel insight into the almost unknown benthic viral communities in the Mariana Trench. IMPORTANCE The Mariana Trench harbors a substantial number of infective viral particles. However, very little is known about the identity, survival strategy, and potential functions of viruses in the trench sediments. Here, through metagenomic analysis, unusual benthic viral communities with high diversity and novelty were discovered. Among them, 59% of the viruses with a genome completeness of >90% represent novel genera. Various auxiliary metabolic genes carried by these viruses reflect the potential adaptive characteristics of viruses in this extreme environment and the biogeochemical cycles that they may participate in. This study gives us a deeper understanding of the peculiarities of viral communities in deep-sea/hadal sediments.},
+author = {Jiulong Zhao and H. Jing and Zengmeng Wang and Long Wang and Huahua Jian and Rui Zhang and Xiang Xiao and F. Chen and N. Jiao and Yongyu Zhang},
+doi = {10.1128/msystems.01358-21},
+pmid = {35089086},
+}
+
+@article{e34901fc2bfdeb0a8f9dc3911bed35b82a637424,
+title = {Machine learning prediction in genomic sequences of prokaryotic viruses from metagenomic datasets},
+year = {2022},
+url = {https://www.semanticscholar.org/paper/e34901fc2bfdeb0a8f9dc3911bed35b82a637424},
+abstract = {AMGARTEN, D. Machine Learning Prediction in Genomic Sequences of Prokaryotic Viruses from Metagenomic Datasets. 2021. 79 pages. Ph.D. Thesis. Bioinformatics Graduate Program, Universidade de São Paulo, São Paulo. Environmental viruses are extremely diverse and abundant in the biosphere. Several studies have shown prokaryotic viruses (or simply phages) as major players in determining biogeochemical cycles in oceans as well as driving microbial diversification. Besides this ecological role, phages may also be used for clinical purposes since they can kill bacterial cells and terminate infections. A crucial step in this process is the isolation of new phages, which can target a specific bacterial pathogen. Thus, researchers employ screening techniques to find and isolate pathogen-specific phages from environmental samples, which are a rich source of new phages. However, this task remains mostly exploratory and laborious if the researcher has no detailed information about the sample and its potential viral diversity. Having this problem in mind, we propose the development of a bioinformatic workflow to identify genomic sequences belonging to phages in environmental datasets, as well as for host prediction of the identified phages based on their genomic sequences. To achieve this goal, we implemented a random forest classifier and created the tool named MARVEL (Metagenomic Analyses and Retrieval of Viral Elements), which is able to efficiently predict phage genomic sequences in bins generated from whole community metagenomic short reads. We also developed a toolkit, name vHULK (Viral Host Unveiling Kit), which can predict phage’s host given only their genome as input. vHULK presents higher accuracy than available tools and it can predict both host species and genus in a multiclass prediction setting. Data generated by the application of both tools in public and private composting metagenomic datasets is used for recovery, annotation, and characterization of phage diversity in composting environments. Both tools are publicly available through a GitHub repository: https://github.com/LaboratorioBioinformatica/.},
+author = {Deyvid Amgarten},
+doi = {10.11606/t.95.2022.tde-17022022-091454},
+}
+
+@article{0d540793966dd96500deaf6ce291cbc3e7d49f3b,
+title = {DETIRE: A Hybrid Deep Learning Model for identifying Viral Sequences from Metagenomes},
+year = {2021},
+url = {https://www.semanticscholar.org/paper/0d540793966dd96500deaf6ce291cbc3e7d49f3b},
+abstract = {A metagenome contains all DNA sequences from an environmental sample, including viruses, bacteria, fungi, actinomycetes and so on. Since viruses are of huge abundance and have caused vast mortality and morbidity to human society in history as a kind of major pathogens, detecting viruses from metagenomes plays a crucial role in analysing the viral component of samples and is the very first step for clinical diagnosis. However, detecting viral fragments directly from the metagenomes is still a tough issue because of the existence of huge number of short sequences. In this paper, a hybrid Deep lEarning model for idenTifying vIral sequences fRom mEtagenomes (DETIRE), is proposed to solve the problem. Firstly, the graph-based nucleotide sequence embedding strategy is utilized to enrich the expression of DNA sequences by training an embedding matrix. Then the spatial and sequential features are extracted by trained CNN and BiLSTM networks respectively to improve the feature expression of short sequences. Finally, the two set of features are weighted combined for the final decision. Trained by 220,000 sequences of 500bp subsampled from the Virus and Host RefSeq genomes, DETIRE identifies more short viral sequences (<1,000bp) than three latest methods, DeepVirFinder, PPR-Meta and CHEER. DETIRE is freely available at https://github.com/crazyinter/DETIRE.},
+author = {Yan Miao and Fu Liu and Tao Hou and Qiaoliang Liu and Tian Dong and Yun Liu},
+doi = {10.1101/2021.11.19.469211},
+}
+
+@article{91b94cc9671d8e14a190e3e1753146b43d99c095,
+title = {CHERRY: a Computational metHod for accuratE pRediction of virus-pRokarYotic interactions using a graph encoder-decoder model},
+year = {2022},
+url = {https://www.semanticscholar.org/paper/91b94cc9671d8e14a190e3e1753146b43d99c095},
+abstract = {Prokaryotic viruses, which infect bacteria and archaea, are key players in microbial communities. Predicting the hosts of prokaryotic viruses helps decipher the dynamic relationship between microbes. Experimental methods for host prediction cannot keep pace with the fast accumulation of sequenced phages. Thus, there is a need for computational host prediction. Despite some promising results, computational host prediction remains a challenge because of the limited known interactions and the sheer amount of sequenced phages by high-throughput sequencing technologies. The state-of-the-art methods can only achieve 43% accuracy at the species level. In this work, we formulate host prediction as link prediction in a knowledge graph that integrates multiple protein and DNA-based sequence features. Our implementation named CHERRY can be applied to predict hosts for newly discovered viruses and to identify viruses infecting targeted bacteria. We demonstrated the utility of CHERRY for both applications and compared its performance with 11 popular host prediction methods. To our best knowledge, CHERRY has the highest accuracy in identifying virus-prokaryote interactions. It outperforms all the existing methods at the species level with an accuracy increase of 37%. In addition, CHERRY’s performance on short contigs is more stable than other tools. Contact},
+author = {Jiayu Shang and Yanni Sun},
+doi = {10.1093/bib/bbac182 10.1093/bib/bbac182 10.1093/bib/bbac182 10.1093/bib/bbac182},
+arxivid = {2201.01018},
+}
+
+@article{3da41fb4e3b6b5180913e561f0cec0eee21988e8,
+title = {vHULK, a new tool for bacteriophage host prediction based on annotated genomic features and deep neural networks},
+year = {2020},
+url = {https://www.semanticscholar.org/paper/3da41fb4e3b6b5180913e561f0cec0eee21988e8},
+abstract = {The experimental determination of a bacteriophage host is a laborious procedure. For this reason, there is a pressing need for reliable computational predictions of bacteriophage hosts in phage research in general and in phage therapy in particular. Here, we present a new program called vHULK for phage host prediction based on 9,504 phage genome features. These features take into account alignment significance scores between predicted-protein sequences in the phage genomes and a curated database of viral protein families. The features were fed to a deep neural network, and four distinct models were trained to predict 61 different host genera and 52 host species. In random controlled test sets, the program obtained 99% and 98% accuracy values at the genus and species levels, respectively. On a validation dataset with 2,178 phage genomes, mean accuracies were 82% and 52% at the genus and species levels, respectively. When compared against other phage host prediction programs on the same validation dataset, vHULK achieved substantially better performance, therefore demonstrating that the program is an advance on the state-of-art in phage host prediction. vHULK is freely available at https://github.com/LaboratorioBioinformatica/vHULK.},
+author = {Deyvid Amgarten and Bruno Koshin Vázquez Iha and Carlos Morais Piroupo and A. D. da Silva and J. Setubal},
+doi = {10.1101/2020.12.06.413476},
+}
+
+@article{0d337f0dff6ba3155dc8e8c3f14ef5f0a515461b,
+title = {VPF-Class: taxonomic assignment and host prediction of uncultivated viruses based on viral protein families},
+year = {2021},
+url = {https://www.semanticscholar.org/paper/0d337f0dff6ba3155dc8e8c3f14ef5f0a515461b},
+abstract = {Abstract Motivation Two key steps in the analysis of uncultured viruses recovered from metagenomes are the taxonomic classification of the viral sequences and the identification of putative host(s). Both steps rely mainly on the assignment of viral proteins to orthologs in cultivated viruses. Viral Protein Families (VPFs) can be used for the robust identification of new viral sequences in large metagenomics datasets. Despite the importance of VPF information for viral discovery, VPFs have not yet been explored for determining viral taxonomy and host targets. Results In this work, we classified the set of VPFs from the IMG/VR database and developed VPF-Class. VPF-Class is a tool that automates the taxonomic classification and host prediction of viral contigs based on the assignment of their proteins to a set of classified VPFs. Applying VPF-Class on 731K uncultivated virus contigs from the IMG/VR database, we were able to classify 363K contigs at the genus level and predict the host of over 461K contigs. In the RefSeq database, VPF-class reported an accuracy of nearly 100% to classify dsDNA, ssDNA and retroviruses, at the genus level, considering a membership ratio and a confidence score of 0.2. The accuracy in host prediction was 86.4%, also at the genus level, considering a membership ratio of 0.3 and a confidence score of 0.5. And, in the prophages dataset, the accuracy in host prediction was 86% considering a membership ratio of 0.6 and a confidence score of 0.8. Moreover, from the Global Ocean Virome dataset, over 817K viral contigs out of 1 million were classified. Availability and implementation The implementation of VPF-Class can be downloaded from https://github.com/biocom-uib/vpf-tools. Supplementary information Supplementary data are available at Bioinformatics online.},
+author = {Joan Carles Pons and David Páez-Espino and G. Riera and Natalia N. Ivanova and N. Kyrpides and M. Llabrés},
+doi = {10.1093/bioinformatics/btab026},
+pmid = {33471063},
+}
+
+@article{a0c49302428bc382c26ef180ef2a96de45d21d20,
+title = {High-throughput identification of viral termini and packaging mechanisms in virome datasets using PhageTermVirome},
+year = {2021},
+url = {https://www.semanticscholar.org/paper/a0c49302428bc382c26ef180ef2a96de45d21d20},
+abstract = {S2 TL;DR: PhageTermVirome (PTV) is a novel and unique tool for high-throughput characterization of phage genomes, including phage termini identification and characterization of genome packaging mechanisms, which should help researchers better visualize, map and study the virosphere.},
+author = {Julian R. Garneau and Véronique Legrand and M. Marbouty and M. Press and D. Vik and L. Fortier and M. Sullivan and D. Bikard and M. Monot},
+doi = {10.1038/s41598-021-97867-3},
+pmid = {34526611},
+}
+
+@article{6a44bbec3ed16ad074dc9901f15b35ed6d9241bd,
+title = {RaFAH: Host prediction for viruses of Bacteria and Archaea based on protein content},
+year = {2021},
+url = {https://www.semanticscholar.org/paper/6a44bbec3ed16ad074dc9901f15b35ed6d9241bd},
+abstract = {S2 TL;DR: This work developed a machine-learning approach named Random Forest Assignment of Hosts (RaFAH), that uses scores to 43,644 protein clusters to assign hosts to complete or fragmented genomes of viruses of Archaea and Bacteria, which led to the identification of 537 sequences of archaeal viruses representing unknown lineages.},
+author = {F. Coutinho and A. Zaragoza-Solas and M. López-Pérez and J. Barylski and A. Zielezinski and B. Dutilh and R. Edwards and F. Rodríguez-Valera},
+doi = {10.1016/j.patter.2021.100274},
+pmid = {34286299},
+}
+
+@article{63bcfa38087b6235358418ea69d67b712af20fda,
+title = {DeepHost: phage host prediction with convolutional neural network.},
+year = {2021},
+url = {https://www.semanticscholar.org/paper/63bcfa38087b6235358418ea69d67b712af20fda},
+abstract = {Next-generation sequencing expands the known phage genomes rapidly. Unlike culture-based methods, the hosts of phages discovered from next-generation sequencing data remain uncharacterized. The high diversity of the phage genomes makes the host assignment task challenging. To solve the issue, we proposed a phage host prediction tool-DeepHost. To encode the phage genomes into matrices, we design a genome encoding method that applied various spaced $k$-mer pairs to tolerate sequence variations, including insertion, deletions, and mutations. DeepHost applies a convolutional neural network to predict host taxonomies. DeepHost achieves the prediction accuracy of 96.05% at the genus level (72 taxonomies) and 90.78% at the species level (118 taxonomies), which outperforms the existing phage host prediction tools by 10.16-30.48% and achieves comparable results to BLAST. For the genomes without hits in BLAST, DeepHost obtains the accuracy of 38.00% at the genus level and 26.47% at the species level, making it suitable for genomes of less homologous sequences with the existing datasets. DeepHost is alignment-free, and it is faster than BLAST, especially for large datasets. DeepHost is available at https://github.com/deepomicslab/DeepHost.},
+author = {Wang Ruohan and Zhang Xianglilan and W. Jianping and L. S. Shuai Cheng},
+doi = {10.1093/bib/bbab385},
+pmid = {34553750},
+}
+
+@article{879f0a9c82d11ebc688d6bfa8a97892055c82a47,
+title = {PHIST: fast and accurate prediction of prokaryotic hosts from metagenomic viral sequences},
+year = {2021},
+url = {https://www.semanticscholar.org/paper/879f0a9c82d11ebc688d6bfa8a97892055c82a47},
+abstract = {Summary PHIST (Phage-Host Interaction Search Tool) predicts prokaryotic hosts of viruses from their genomic sequences. It improves host prediction accuracy at species level over current alignment-based tools (on average by 3 percentage points) as well as alignment-free and CRISPR-based tools (by 14–20 percentage points). PHIST is also two orders of magnitude faster than alignment-based tools making it suitable for metagenomics studies. Availability and implementation GNU-licensed C++ code wrapped in Python API available at: https://github.com/refresh-bio/phist Contact andrzej.zielezinski@amu.edu.pl, adam.gudys@polsl.pl Supplementary information Supplementary data are available at publisher Web site.},
+author = {A. Zielezinski and S. Deorowicz and Adam Gudyś},
+doi = {10.1093/bioinformatics/btab837},
+pmid = {34904625},
+}

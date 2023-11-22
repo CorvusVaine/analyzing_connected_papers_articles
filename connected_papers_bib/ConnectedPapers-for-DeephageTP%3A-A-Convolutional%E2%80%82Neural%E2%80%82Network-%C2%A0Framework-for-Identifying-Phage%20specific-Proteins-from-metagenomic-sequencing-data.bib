@@ -1,0 +1,409 @@
+@article{9e386f6b3bab5b715672efe00003d64ab60f808f,
+title = {DeephageTP: A Convolutional Neural Network  Framework for Identifying Phage-specific Proteins from metagenomic sequencing data},
+year = {2020},
+url = {https://www.semanticscholar.org/paper/9e386f6b3bab5b715672efe00003d64ab60f808f},
+abstract = {
+ Background: Bacteriophage (phage) is the most abundant and diverse biological entity on the Earth. This makes it a challenge to identify and annotate phage genomes efficiently on a large scale. Portal (portal protein), TerL (large terminase subunit protein) and TerS (small terminase subunit protein) are the three specific proteins of the tailed phage. Here, we develop a CNN (convolutional neural network)-based framework, DeephageTP, to identify these three proteins from metagenome data. The framework takes one-hot encoding data of the original protein sequences as the input and extracts the predictive features in the process of modeling. The cutoff loss value for each protein category was determined by exploiting the distributions of the loss values of the sequences within the same category. Finally, we tested the efficacy of the framework using three real metagenomic datasets. Result: The proposed multiclass classification CNN-based model was trained by the training datasets and shows relatively high prediction performance ( A ccuracy : Portal, 98.8%; TerL, 98.6%; TerS, 97.8%) for the three protein categories, respectively. The experiments using the independent mimic dataset demonstrate that the performance of the model could become worse along with the increase of the data size. To address this issue, we determined and set the cutoff loss values (i.e., TerL: -5.2, Portal: -4.2, TerS: -2.9) for each of the three categories, respectively. With these values, the model obtains high performance in terms of Precision in identifying the TerL and Portal sequences (i.e, ~ 94% and ~ 90%, respectively) from the mimic dataset that is 20 times larger than the training dataset. More interestingly, the framework identified from the three real metagenomic datasets many novel phage sequences that are not detectable by the two alignment-based methods (i.e., DIAMOND and HMMER). Conclusion: Compared to the conventional alignment-based methods, our proposed framework shows high performance in identifying phage-specific protein sequences with a particular advantage in identifying the novel protein sequences with remote homology to their known counterparts in public databases. Indeed, our method could also be applied for identifying the other protein sequences with the characteristic of high complexity and low conservation. The DeephageTP is available at https://github.com/chuym726/DeephageTP .},
+author = {Yunmeng Chu and Shun Guo and Dachao Cui and Haoran Zhang and Xiongfei Fu and Yingfei Ma},
+doi = {10.21203/rs.3.rs-21641/v1},
+}
+
+@article{32349629ccdf35bb93ceb60099f7819eb87fe1ba,
+title = {DeephageTP: a convolutional neural network framework for identifying phage-specific proteins from metagenomic sequencing data},
+year = {2022},
+url = {https://www.semanticscholar.org/paper/32349629ccdf35bb93ceb60099f7819eb87fe1ba},
+abstract = {Bacteriophages (phages) are the most abundant and diverse biological entity on Earth. Due to the lack of universal gene markers and database representatives, there about 50–90% of genes of phages are unable to assign functions. This makes it a challenge to identify phage genomes and annotate functions of phage genes efficiently by homology search on a large scale, especially for newly phages. Portal (portal protein), TerL (large terminase subunit protein), and TerS (small terminase subunit protein) are three specific proteins of Caudovirales phage. Here, we developed a CNN (convolutional neural network)-based framework, DeephageTP, to identify the three specific proteins from metagenomic data. The framework takes one-hot encoding data of original protein sequences as the input and automatically extracts predictive features in the process of modeling. To overcome the false positive problem, a cutoff-loss-value strategy is introduced based on the distributions of the loss values of protein sequences within the same category. The proposed model with a set of cutoff-loss-values demonstrates high performance in terms of Precision in identifying TerL and Portal sequences (94% and 90%, respectively) from the mimic metagenomic dataset. Finally, we tested the efficacy of the framework using three real metagenomic datasets, and the results shown that compared to the conventional alignment-based methods, our proposed framework had a particular advantage in identifying the novel phage-specific protein sequences of portal and TerL with remote homology to their counterparts in the training datasets. In summary, our study for the first time develops a CNN-based framework for identifying the phage-specific protein sequences with high complexity and low conservation, and this framework will help us find novel phages in metagenomic sequencing data. The DeephageTP is available at https://github.com/chuym726/DeephageTP.},
+author = {Yunmeng Chu and Shun Guo and Dachao Cui and Xiongfei Fu and Yingfei Ma},
+doi = {10.7717/peerj.13404},
+pmid = {35698617},
+}
+
+@article{b989b7731f3d0d8c6e339ab77876cc954fd23721,
+title = {An Ensemble Method to Distinguish Bacteriophage Virion from Non-Virion Proteins Based on Protein Sequence Characteristics},
+year = {2015},
+url = {https://www.semanticscholar.org/paper/b989b7731f3d0d8c6e339ab77876cc954fd23721},
+abstract = {Bacteriophage virion proteins and non-virion proteins have distinct functions in biological processes, such as specificity determination for host bacteria, bacteriophage replication and transcription. Accurate identification of bacteriophage virion proteins from bacteriophage protein sequences is significant to understand the complex virulence mechanism in host bacteria and the influence of bacteriophages on the development of antibacterial drugs. In this study, an ensemble method for bacteriophage virion protein prediction from bacteriophage protein sequences is put forward with hybrid feature spaces incorporating CTD (composition, transition and distribution), bi-profile Bayes, PseAAC (pseudo-amino acid composition) and PSSM (position-specific scoring matrix). When performing on the training dataset 10-fold cross-validation, the presented method achieves a satisfactory prediction result with a sensitivity of 0.870, a specificity of 0.830, an accuracy of 0.850 and Matthew’s correlation coefficient (MCC) of 0.701, respectively. To evaluate the prediction performance objectively, an independent testing dataset is used to evaluate the proposed method. Encouragingly, our proposed method performs better than previous studies with a sensitivity of 0.853, a specificity of 0.815, an accuracy of 0.831 and MCC of 0.662 on the independent testing dataset. These results suggest that the proposed method can be a potential candidate for bacteriophage virion protein prediction, which may provide a useful tool to find novel antibacterial drugs and to understand the relationship between bacteriophage and host bacteria. For the convenience of the vast majority of experimental scientists, a user-friendly and publicly-accessible web-server for the proposed ensemble method is established.},
+author = {Lina Zhang and Chengjin Zhang and Rui Gao and Runtao Yang},
+doi = {10.3390/ijms160921734},
+pmid = {26370987},
+}
+
+@article{8fee85ef5caf2173e3bef1f2908c833919b60986,
+title = {Review and comparative analysis of machine learning-based phage virion protein identification methods.},
+year = {2020},
+url = {https://www.semanticscholar.org/paper/8fee85ef5caf2173e3bef1f2908c833919b60986},
+abstract = {Phage virion protein (PVP) identification plays key role in elucidating relationships between phages and hosts. Moreover, PVP identification can facilitate the design of related biochemical entities. Recently, several machine learning approaches have emerged for this purpose and have shown their potential capacities. In this study, the proposed PVP identifiers are systemically reviewed, and the related algorithms and tools are comprehensively analyzed. We summarized the common framework of these PVP identifiers and constructed our own novel identifiers based upon the framework. Furthermore, we focus on a performance comparison of all PVP identifiers by using a training dataset and an independent dataset. Highlighting the pros and cons of these identifiers demonstrates that g-gap DPC (dipeptide composition) features are capable of representing characteristics of PVPs. Moreover, SVM (support vector machine) is proven to be the more effective classifier to distinguish PVPs and non-PVPs.},
+author = {Chaolu Meng and Jun Zhang and Xiucai Ye and Fei Guo and Q. Zou},
+doi = {10.1016/j.bbapap.2020.140406},
+pmid = {32135196},
+}
+
+@article{87bfa66d04837ed144ff024ba4dba2d8ca3eeede,
+title = {iUmami-SCM: A Novel Sequence-Based Predictor for Prediction and Analysis of Umami Peptides Using a Scoring Card Method with Propensity Scores of Dipeptides},
+year = {2020},
+url = {https://www.semanticscholar.org/paper/87bfa66d04837ed144ff024ba4dba2d8ca3eeede},
+abstract = {Umami or the taste of monosodium glutamate represents one of the major attractive taste modalities in humans. Therefore, knowledge about biophysical and biochemical properties of the umami taste is important for both scientific research and the food industry. Experimental approaches for predicting umami peptides are labor intensive, time consuming, and expensive. To date, computational models for the prediction and analysis of umami peptides as a function of sequence information have not been developed yet. In this study, we have proposed the first sequence-based predictor named iUmami-SCM using primary sequence information for the identification and characterization of umami peptides. iUmami-SCM utilized a newly developed scoring card method (SCM) in conjunction with the propensity scores of amino acids and dipeptide. Our predictor demonstrated excellent prediction performance ability for predicting umami peptides as well as outperforming other commonly used machine learning classifiers. Particularly, iUmami-SCM afforded the highest accuracy and Matthews correlation coefficient of 0.865 and 0.679, respectively, on an independent data set. Furthermore, the analysis of SCM-derived propensity scores was performed so as to provide a more in-depth understanding and knowledge of biophysical and biochemical properties of umami intensities of peptides. To develop a convenient bioinformatics tool, the best model is deployed as a web server that is made publicly available at http://camt.pythonanywhere.com/iUmami-SCM. The iUmami-SCM, as presented herein, serves as a powerful computational technique for large-scale umami peptide identification as well as facilitating the interpretation of umami peptides.},
+author = {Phasit Charoenkwan and Janchai Yana and C. Nantasenamat and M. Hasan and W. Shoombuatong},
+doi = {10.1021/acs.jcim.0c00707},
+pmid = {33094610},
+}
+
+@article{bec5179c56edd8576b5f1b46f70280bcc0e594aa,
+title = {RaFAH: A superior method for virus-host prediction},
+year = {2020},
+url = {https://www.semanticscholar.org/paper/bec5179c56edd8576b5f1b46f70280bcc0e594aa},
+abstract = {Viruses of prokaryotes are extremely abundant and diverse. Culture-independent approaches have recently shed light on the biodiversity these biological entities1,2. One fundamental question when trying to understand their ecological roles is: which host do they infect? To tackle this issue we developed a machine-learning approach named Random Forest Assignment of Hosts (RaFAH), based on the analysis of nearly 200,000 viral genomes. RaFAH outperformed other methods for virus-host prediction (F1-score = 0.97 at the level of phylum). RaFAH was applied to diverse datasets encompassing genomes of uncultured viruses derived from eight different biomes of medical, biotechnological, and environmental relevance, and was capable of accurately describing these viromes. This led to the discovery of 537 genomic sequences of archaeal viruses. These viruses represent previously unknown lineages and their genomes encode novel auxiliary metabolic genes, which shed light on how these viruses interfere with the host molecular machinery. RaFAH is available at https://sourceforge.net/projects/rafah/.},
+author = {F. Coutinho and A. Zaragoza-Solas and M. López-Pérez and J. Barylski and A. Zielezinski and B. Dutilh and R. Edwards and F. Rodríguez-Valera},
+doi = {10.1101/2020.09.25.313155},
+}
+
+@article{d4b62737902885b338aa4b4d48a3bcb541466ff3,
+title = {Rephine.r: a pipeline for correcting gene calls and clusters to improve phage pangenomes and phylogenies},
+year = {2021},
+url = {https://www.semanticscholar.org/paper/d4b62737902885b338aa4b4d48a3bcb541466ff3},
+abstract = {Background A pangenome is the collection of all genes found in a set of related genomes. For microbes, these genomes are often different strains of the same species, and the pangenome offers a means to compare gene content variation with differences in phenotypes, ecology, and phylogenetic relatedness. Though most frequently applied to bacteria, there is growing interest in adapting pangenome analysis to bacteriophages. However, working with phage genomes presents new challenges. First, most phage families are under-sampled, and homologous genes in related viruses can be difficult to identify. Second, homing endonucleases and intron-like sequences may be present, resulting in fragmented gene calls. Each of these issues can reduce the accuracy of standard pangenome analysis tools. Methods We developed an R pipeline called Rephine.r that takes as input the gene clusters produced by an initial pangenomics workflow. Rephine.r then proceeds in two primary steps. First, it identifies three common causes of fragmented gene calls: 1) indels creating early stop codons and new start codons; 2) interruption by a selfish genetic element; and 3) splitting at the ends of the reported genome. Fragmented genes are then fused to create new sequence alignments. In tandem, Rephine.r searches for distant homologs separated into different gene families using Hidden Markov Models. Significant hits are used to merge families into larger clusters. A final round of fragment identification is then run, and results may be used to infer single-copy core genomes and phylogenetic trees. Results We applied Rephine.r to three well-studied phage groups: the Tevenvirinae (e.g. T4), the Studiervirinae (e.g. T7), and the Pbunaviruses (e.g. PB1). In each case, Rephine.r recovered additional members of the single-copy core genome and increased the overall bootstrap support of the phylogeny. The Rephine.r pipeline is provided through GitHub (https://www.github.com/coevoeco/Rephine.r) as a single script for automated analysis and with utility functions and a walkthrough for researchers with specific use cases for each type of correction.},
+author = {Jason W. Shapiro and C. Putonti},
+doi = {10.1101/2021.04.26.441508},
+pmid = {34434663},
+}
+
+@article{9e468b7bb3ecd43ba785636284c9e47bf97b68f6,
+title = {Using deep learning to annotate the protein universe.},
+year = {2022},
+url = {},
+abstract = {Understanding the relationship between amino acid sequence and protein function is a long-standing challenge with far-reaching scientific and translational implications. State-of-the-art alignment-based techniques cannot predict function for one-third of microbial protein sequences, hampering our ability to exploit data from diverse organisms. Here, we train deep learning models to accurately predict functional annotations for unaligned amino acid sequences across rigorous benchmark assessments built from the 17,929 families of the protein families database Pfam. The models infer known patterns of evolutionary substitutions and learn representations that accurately cluster sequences from unseen families. Combining deep models with existing methods significantly improves remote homology detection, suggesting that the deep models learn complementary information. This approach extends the coverage of Pfam by >9.5%, exceeding additions made over the last decade, and predicts function for 360 human reference proteome proteins with no previous Pfam annotation. These results suggest that deep learning models will be a core component of future protein annotation tools.},
+author = {Maxwell L. Bileschi and David Belanger and D. Bryant and T. Sanderson and Brandon Carter and D. Sculley and A. Bateman and M. DePristo and Lucy J. Colwell},
+}
+
+@article{0d934b872aae6924e1ab73f4009bab6a0f4ca307,
+title = {PVPred-SCM: Improved Prediction and Analysis of Phage Virion Proteins Using a Scoring Card Method},
+year = {2020},
+url = {https://www.semanticscholar.org/paper/0d934b872aae6924e1ab73f4009bab6a0f4ca307},
+abstract = {Although, existing methods have been successful in predicting phage (or bacteriophage) virion proteins (PVPs) using various types of protein features and complex classifiers, such as support vector machine and naïve Bayes, these two methods do not allow interpretability. However, the characterization and analysis of PVPs might be of great significance to understanding the molecular mechanisms of bacteriophage genetics and the development of antibacterial drugs. Hence, we herein proposed a novel method (PVPred-SCM) based on the scoring card method (SCM) in conjunction with dipeptide composition to identify and characterize PVPs. In PVPred-SCM, the propensity scores of 400 dipeptides were calculated using the statistical discrimination approach. Rigorous independent validation test showed that PVPred-SCM utilizing only dipeptide composition yielded an accuracy of 77.56%, indicating that PVPred-SCM performed well relative to the state-of-the-art method utilizing a number of protein features. Furthermore, the propensity scores of dipeptides were used to provide insights into the biochemical and biophysical properties of PVPs. Upon comparison, it was found that PVPred-SCM was superior to the existing methods considering its simplicity, interpretability, and implementation. Finally, in an effort to facilitate high-throughput prediction of PVPs, we provided a user-friendly web-server for identifying the likelihood of whether or not these sequences are PVPs. It is anticipated that PVPred-SCM will become a useful tool or at least a complementary existing method for predicting and analyzing PVPs.},
+author = {Phasit Charoenkwan and Sakawrat Kanthawong and N. Schaduangrat and Janchai Yana and W. Shoombuatong},
+doi = {10.3390/cells9020353},
+pmid = {32028709},
+}
+
+@article{1681e9d3eb2e820eb3ee3f9f99dee404068ca333,
+title = {Mining of thousands of prokaryotic genomes reveals high abundance of prophage signals},
+year = {2021},
+url = {https://www.semanticscholar.org/paper/1681e9d3eb2e820eb3ee3f9f99dee404068ca333},
+abstract = {Phages and prophages are one of the principal modulators of microbial populations. However, much of their diversity is still poorly understood. Here, we extracted 33,624 prophages from 13,713 complete prokaryotic genomes in order to explore the prophage diversity and their relationships with their host. Our results reveal that prophages were present in 75% of the genomes studied. In addition, Enterobacterales were significantly enriched in prophages. We also found that pathogens are a significant reservoir of prophages. Finally, we determined that the prophage relatedness and the range of genomic hosts were delimited by the evolutionary relationships of their hosts. On a broader level, we got insights into the prophage population, identified in thousands of publicly available prokaryotic genomes, by comparing the prophage distribution and relatedness between them and their hosts.},
+author = {G. López-Leal and Laura Carolina Camelo-Valera and Juan Manuel Hurtado-Ramírez and Jerome Verleyen and S. Castillo-Ramírez and Alejandro Reyes-Muñoz},
+doi = {10.1101/2021.10.20.465230},
+}
+
+@article{1c5a985b73b191a3d0784c959946eb17d285b0e2,
+title = {PhANNs, a fast and accurate tool and web server to classify phage structural proteins},
+year = {2020},
+url = {https://www.semanticscholar.org/paper/1c5a985b73b191a3d0784c959946eb17d285b0e2},
+abstract = {For any given bacteriophage genome or phage sequences in metagenomic data sets, we are unable to assign a function to 50-90% of genes. Structural protein-encoding genes constitute a large fraction of the average phage genome and are among the most divergent and difficult-to-identify genes using homology-based methods. To understand the functions encoded by phages, their contributions to their environments, and to help gauge their utility as potential phage therapy agents, we have developed a new approach to classify phage ORFs into ten major classes of structural proteins or into an “other” category. The resulting tool is named PhANNs (Phage Artificial Neural Networks). We built a database of 538,213 manually curated phage protein sequences that we split into eleven subsets (10 for cross-validation, one for testing) using a novel clustering method that ensures there are no homologous proteins between sets yet maintains the maximum sequence diversity for training. An Artificial Neural Network ensemble trained on features extracted from those sets reached a test F1-score of 0.875 and test accuracy of 86.2%. PhANNs can rapidly classify proteins into one of the ten classes, and non-phage proteins are classified as “other”, providing a new approach for functional annotation of phage proteins. PhANNs is open source and can be run from our web server or installed locally. Author Summary Bacteriophages (phages, viruses that infect bacteria) are the most abundant biological entity on Earth. They outnumber bacteria by a factor of ten. As phages are very different within them and from bacteria, and we have comparatively few phage genes in our database, we are unable to assign function to 50%-90% of phage genes. In this work, we developed PhANNs, a machine learning tool that can classify a phage gene as one of ten structural roles, or “other”. This approach does not require a similar gene to be known.},
+author = {V. A. Cantu and P. Salamon and V. Seguritan and Jackson Redfield and David Salamon and R. Edwards and A. Segall},
+doi = {10.1371/journal.pcbi.1007845},
+pmid = {33137102},
+}
+
+@article{0696569bb3333397c1bc8f7fe1eaa42947ed9fd7,
+title = {Identification of Phage Viral Proteins With Hybrid Sequence Features},
+year = {2019},
+url = {https://www.semanticscholar.org/paper/0696569bb3333397c1bc8f7fe1eaa42947ed9fd7},
+abstract = {The uniqueness of bacteriophages plays an important role in bioinformatics research. In real applications, the function of the bacteriophage virion proteins is the main area of interest. Therefore, it is very important to classify bacteriophage virion proteins and non-phage virion proteins accurately. Extracting comprehensive and effective sequence features from proteins plays a vital role in protein classification. In order to more fully represent protein information, this paper is more comprehensive and effective by combining the features extracted by the feature information representation algorithm based on sequence information (CCPA) and the feature representation algorithm based on sequence and structure information. After extracting features, the Max-Relevance-Max-Distance (MRMD) algorithm is used to select the optimal feature set with the strongest correlation between class labels and low redundancy between features. Given the randomness of the samples selected by the random forest classification algorithm and the randomness features for producing each node variable, a random forest method is employed to perform 10-fold cross-validation on the bacteriophage protein classification. The accuracy of this model is as high as 93.5% in the classification of phage proteins in this study. This study also found that, among the eight physicochemical properties considered, the charge property has the greatest impact on the classification of bacteriophage proteins These results indicate that the model discussed in this paper is an important tool in bacteriophage protein research.},
+author = {Xiaoqing Ru and Lihong Li and Chun-yu Wang},
+doi = {10.3389/fmicb.2019.00507},
+pmid = {30972038},
+}
+
+@article{e22d6451590853dfa876fe2d514c3d78237e3301,
+title = {Phage Commander, a software tool for rapid annotation of bacteriophage genomes using multiple programs},
+year = {2020},
+url = {https://www.semanticscholar.org/paper/e22d6451590853dfa876fe2d514c3d78237e3301},
+abstract = {The number of sequenced phage genomes is growing at an exponential rate. The majority of newly sequenced phage genomes are annotated by one or more of several freely-available auto-annotation programs. No program has been shown to consistently outperform the others; thus the choice of which program to use is not obvious. We present the software Phage Commander for rapid annotation of phage genomes using multiple auto-annotation programs. Phage Commander runs a phage genome sequence through nine auto-annotation programs and integrates the results within a single output. Phage Commander generates properly formatted output files for direct export to NCBI GenBank. Users can select the threshold for determining which genes should be exported. Phage Commander was benchmarked using eight high-quality phage genomes whose genes have been identified through experiments. Results show that the best results are obtained by exporting genes identified by at least two or three of the nine auto-annotation programs.},
+author = {Matt Lazeroff and Sarah L. Harris and Philippos K. Tsourkas},
+doi = {10.1101/2020.11.11.378802},
+}
+
+@article{3888c849fcdd36846e8e8b0ea9e5b083174d8097,
+title = {ClassiPhages 2.0: Sequence-based classification of phages using Artificial Neural Networks},
+year = {2019},
+url = {https://www.semanticscholar.org/paper/3888c849fcdd36846e8e8b0ea9e5b083174d8097},
+abstract = {Background/ Motivation In the era of affordable next generation sequencing technologies we are facing an exploding amount of new phage genome sequences. This requests high throughput phage classification tools that meet the standards of the International Committee on Taxonomy of Viruses (ICTV). However, an accurate prediction of phage taxonomic classification derived from phage sequences still poses a challenge due to the lack of performant taxonomic markers. Since machine learning methods have proved to be efficient for the classification of biological data we investigated how artificial neural networks perform on the task of phage taxonomy. Results In this work, 5,920 constructed and refined profile Hidden Markov Models (HMMs), derived from 8,721 phage sequences classified into 12 well known phage families, were used to scan phage proteome datasets. The resulting Phage Family-proteome to Phage-derived-HMMs scoring matrix was used to develop and train an Artificial Neural Network (ANN) to find patterns for phage classification into one of the phage families. Results show that using the 100 fold cross-validation test, the proposed method achieved an overall accuracy of 84.18 %. The ANN was tested on a set of unclassified phages and resulted in a taxonomic prediction. The ANN prediction was benchmarked against the prediction resulting of multi-HMM hits, and showed that the ANN performance is dependent on the quality of the input matrix. Conclusions We believe that, as long as some phage families on public databases are underrepresented, multi-HMM hits can be used as a classification method to populate those phage families, which in turn will improve the performance and accuracy of the ANN. We believe that the proposed method is an effective and promising method for phage classification. The good performance of the ANN and HMM based predictor indicates the efficiency of the method for phage classification, where we foresee its improvement with an increasing number of sequenced viral genomes.},
+author = {C. Chibani and Florentin Meinecke and A. Farr and Sascha Dietrich and H. Liesegang},
+doi = {10.1101/558171},
+}
+
+@article{9a5c16883df6d298dd4949c8ee40c00cb48d7913,
+title = {VirionFinder: Identification of Complete and Partial Prokaryote Virus Virion Protein From Virome Data Using the Sequence and Biochemical Properties of Amino Acids},
+year = {2021},
+url = {https://www.semanticscholar.org/paper/9a5c16883df6d298dd4949c8ee40c00cb48d7913},
+abstract = {Viruses are some of the most abundant biological entities on Earth, and prokaryote virus are the dominant members of the viral community. Because of the diversity of prokaryote virus, functional annotation cannot be performed on a large number of genes from newly discovered prokaryote virus by searching the current database; therefore, the development of an alignment-free algorithm for functional annotation of prokaryote virus proteins is important to understand the viral community. The identification of prokaryote virus proteins (PVVPs) is a critical step for many viral analyses, such as species classification, phylogenetic analysis and the exploration of how prokaryote virus interact with their hosts. Although a series of PVVP prediction tools have been developed, the performance of these tools is still not satisfactory. Moreover, viral metagenomic data contains fragmented sequences, leading to the existence of some incomplete genes. Therefore, a tool that can identify partial prokaryote virus proteins is also needed. In this work, we present a novel algorithm, called VirionFinder, to identify the complete and partial PVVPs from non-prokaryote virus virion proteins (non-PVVPs). VirionFinder uses the sequence and biochemical properties of 20 amino acids as the mathematical model to encode the protein sequences and uses a deep learning technique to identify whether a given protein is a PVVP. Compared with the state-of-the-art tools using artificial benchmark datasets, the results show that under the same specificity (Sp), the sensitivity (Sn) of VirionFinder is approximately 10–34% much higher than the Sn of these tools on both complete and partial proteins. When evaluating related tools using real virome data, the recognition rate of PVVP-like sequences of VirionFinder is also much higher than that of the other tools. We expect that VirionFinder will be a powerful tool for identifying novel virion proteins from both complete prokaryote virus genomes and viral metagenomic data. VirionFinder is freely available at https://github.com/zhenchengfang/VirionFinder.},
+author = {Zhencheng Fang and Hongwei Zhou},
+doi = {10.3389/fmicb.2021.615711},
+pmid = {33613485},
+}
+
+@article{ad1c7ce71e571c7a806bad7d4924ae8a2cdd213f,
+title = {MultiPhATE2: code for functional annotation and comparison of phage genomes},
+year = {2021},
+url = {https://www.semanticscholar.org/paper/ad1c7ce71e571c7a806bad7d4924ae8a2cdd213f},
+abstract = {Abstract To address a need for improved tools for annotation and comparative genomics of bacteriophage genomes, we developed multiPhATE2. As an extension of multiPhATE, a functional annotation code released previously, multiPhATE2 performs gene finding using multiple algorithms, compares the results of the algorithms, performs functional annotation of coding sequences, and incorporates additional search algorithms and databases to extend the search space of the original code. MultiPhATE2 performs gene matching among sets of closely related bacteriophage genomes, and uses multiprocessing to speed computations. MultiPhATE2 can be re-started at multiple points within the workflow to allow the user to examine intermediate results and adjust the subsequent computations accordingly. In addition, multiPhATE2 accommodates custom gene calls and sequence databases, again adding flexibility. MultiPhATE2 was implemented in Python 3.7 and runs as a command-line code under Linux or MAC operating systems. Full documentation is provided as a README file and a Wiki website.},
+author = {Carol L. Ecale Zhou and Jeffrey A. Kimbrel and R. Edwards and Katelyn McNair and B. Souza and S. Malfatti},
+doi = {10.1093/g3journal/jkab074},
+pmid = {33734357},
+}
+
+@article{4396f1162777b555df0d5ba147fa01e499ea1e3e,
+title = {Meta-iPVP: a sequence-based meta-predictor for improving the prediction of phage virion proteins using effective feature representation},
+year = {2020},
+url = {https://www.semanticscholar.org/paper/4396f1162777b555df0d5ba147fa01e499ea1e3e},
+abstract = {Phage virion protein (PVP) perforate the host cell membrane and eventually culminates in cell rupture thereby releasing replicated phages. The accurate identification of PVP is thus a crucial step towards improving our understanding of the biological function and mechanisms of PVPs. Therefore, it is desirable to develop a computational method that is capable of fast and accurate identification of PVPs. To address this, we propose a novel sequence-based meta-predictor employing probabilistic information (referred herein as the Meta-iPVP) for the accurate identification of PVPs. Particularly, efficient feature representation approach was used to generate discriminative probabilistic features from four machine learning (ML) algorithms making use of seven feature encodings. To the best of our knowledge, the Meta-iPVP is the first meta-based approach that has been developed for PVP prediction. Independent test results indicated that the Meta-iPVP could discern important characteristics between PVPs and non-PVPs as well as achieving the best accuracy and MCC of 0.817 and 0.642, respectively, which corresponds to 6–10% and 14–21% improvements over existing PVP predictors. As such, this demonstrates that the proposed Meta-iPVP is a more efficient, robust and promising for the identification of PVPs. The predictive model is deployed as a publicly accessible Meta-iPVP webserver freely available online at http://camt.pythonanywhere.com/Meta-iPVP.},
+author = {Phasit Charoenkwan and C. Nantasenamat and M. Hasan and W. Shoombuatong},
+doi = {10.1007/s10822-020-00323-z},
+pmid = {32557165},
+}
+
+@article{ffce3bcbc9398bdca3a65f6d442a296ab31cc891,
+title = {Informative Regions In Viral Genomes},
+year = {2021},
+url = {https://www.semanticscholar.org/paper/ffce3bcbc9398bdca3a65f6d442a296ab31cc891},
+abstract = {Viruses, far from being just parasites affecting hosts’ fitness are major players in any microbial ecosystem. In spite of their broad abundance, viruses, in particular bacteriophages remain largely unknown since only about 20% of sequences obtained from viral community DNA surveys could be annotated by comparison to public databases. In order to shed some light into this genetic dark matter we expanded the search of orthologous groups as potential markers to viral taxonomy from bacteriophages and included eukaryotic viruses, establishing a set of 31,150 ViPhOGs. To this, we examine the non-redundant viral diversity stored in public databases, predict proteins in genomes lacking such information and all annotated and predicted proteins were used to identify potential protein domains. Clustering of domains and unannotated regions into orthologous groups was done using cogSoft. Finally, we employed a supervised classification method by using a Random Forest implementation to classify genomes into their taxonomy and found that the presence/absence of ViPhOGs is significantly associated with their taxonomy. Furthermore, we established a set of 1,457 ViPhOGs that given their importance for the classification could be considered as markers/signatures for the different taxonomic groups defined by the ICTV at the Order, Family, and Genus levels. Both, the ViPhOGs and informative ViPhOGs sets are available at the Open Science Framwork (OSF) under the ViPhOGs project (https://osf.io/2zd9r/).},
+author = {J. L. Moreno-Gallego and A. Reyes},
+doi = {10.1101/2021.02.28.433233},
+pmid = {34207030},
+}
+
+@article{536a39671c07a9be0cbc27a1dafbe6910323fe00,
+title = {Pred-BVP-Unb: Fast prediction of bacteriophage Virion proteins using un-biased multi-perspective properties with recursive feature elimination.},
+year = {2020},
+url = {https://www.semanticscholar.org/paper/536a39671c07a9be0cbc27a1dafbe6910323fe00},
+abstract = {Bacteriophage virion proteins (BVPs) are bacterial viruses that have a great impact on different biological functions of bacteria. They are significantly used in genetic engineering and phage therapy applications. Correct identification of BVP through conventional pathogen methods are slow and expensive. Thus, designing a Bioinformatics predictor is urgently desirable to accelerate correct identification of BVPs within a huge volume of proteins. However, available prediction tools performance is inadequate due to the lack of useful feature representation and severe imbalance issue. In the present study, we propose an intelligent model, called Pred-BVP-Unb for discrimination of BVPs that employed three nominal sequences-driven descriptors, i.e. Bi-PSSM evolutionary information, composition & translation, and split amino acid composition. The imbalance phenomena between classes were coped with the help of a synthetic minority oversampling technique. The essential attributes are selected by a robust algorithm called recursive feature elimination. Finally, the optimal feature space is provided to support vector machine classifier using a radial base kernel in order to train the model. Our predictor remarkably outperforms than existing approaches in the literature by achieving the highest accuracy of 92.54% and 83.06% respectively on the benchmark and independent datasets. We expect that Pred-BVP-Unb tool can provide useful hints for designing antibacterial drugs and also helpful to expedite large scale discovery of new bacteriophage virion proteins. The source code and all datasets are publicaly available at https://github.com/Muhammad-Arif-NUST/BVP_Pred_Unb.},
+author = {Muhammad Arif and Farman Ali and Saeed Ahmad and Muhammad Kabir and Zakir Ali and Maqsood Hayat},
+doi = {10.1016/j.ygeno.2019.09.006},
+pmid = {31526842},
+}
+
+@article{d38702ffac9a348ea0d360d145cdfc3e31f97016,
+title = {CoCoNet: an efficient deep learning tool for viral metagenome binning},
+year = {2021},
+url = {https://www.semanticscholar.org/paper/d38702ffac9a348ea0d360d145cdfc3e31f97016},
+abstract = {MOTIVATION
+Metagenomic approaches hold the potential to characterize microbial communities and unravel the intricate link between the microbiome and biological processes. Assembly is one of the most critical steps in metagenomics experiments. It consists of transforming overlapping DNA sequencing reads into sufficiently accurate representations of the community's genomes. This process is computationally difficult and commonly results in genomes fragmented across many contigs. Computational binning methods are used to mitigate fragmentation by partitioning contigs based on their sequence composition, abundance, or chromosome organization into bins representing the community's genomes. Existing binning methods have been principally tuned for bacterial genomes and do not perform favorably on viral metagenomes.
+
+
+RESULTS
+We propose CoCoNet (Composition and Coverage Network), a new binning method for viral metagenomes that leverages the flexibility and the effectiveness of deep learning to model the co-occurrence of contigs belonging to the same viral genome and provide a rigorous framework for binning viral contigs. Our results show that CoCoNet substantially outperforms existing binning methods on viral datasets.
+
+
+AVAILABILITY
+CoCoNet was implemented in Python and is available for download on PyPi. (https://pypi.org/). The source code is hosted on GitHub at https://github.com/Puumanamana/CoCoNet and the documentation is available at https://coconet.readthedocs.io/en/latest/index.html.
+
+
+SUPPLEMENTARY INFORMATION
+Supplementary data are available at Bioinformatics online.},
+author = {Cédric Arisdakessian and O. Nigro and G. Steward and G. Poisson and M. Belcaid},
+doi = {10.1093/bioinformatics/btab213},
+pmid = {33822891},
+}
+
+@article{5b160da1f3c69c7472e0df50b9ebd705560e9681,
+title = {Genome binning of viral entities from bulk metagenomics data},
+year = {2021},
+url = {https://www.semanticscholar.org/paper/5b160da1f3c69c7472e0df50b9ebd705560e9681},
+abstract = {Despite the accelerating number of uncultivated virus sequences discovered in metagenomics and their apparent importance for health and disease, the human gut virome and its interactions with bacteria in the gastrointestinal tract are not well understood. This is partly due to a paucity of whole-virome datasets and limitations in current approaches for identifying viral sequences in metagenomics data. Here, combining a deep-learning based metagenomics binning algorithm with paired metagenome and metavirome datasets, we develop Phages from Metagenomics Binning (PHAMB), an approach that allows the binning of thousands of viral genomes directly from bulk metagenomics data, while simultaneously enabling clustering of viral genomes into accurate taxonomic viral populations. When applied on the Human Microbiome Project 2 (HMP2) dataset, PHAMB recovered 6,077 high-quality genomes from 1,024 viral populations, and identified viral-microbial host interactions. PHAMB can be advantageously applied to existing and future metagenomes to illuminate viral ecological dynamics with other microbiome constituents. Here, Johansen et al . develop an approach, Phages from Metagenomics Binning (PHAMB), that allows the binning of thousands of viral genomes directly from bulk metagenomics data, while simultaneously enabling clustering of viral genomes into accurate taxonomic viral populations, unveiling viral-microbial host interactions in the gut.},
+author = {Joachim Johansen and D. Plichta and J. Nissen and M. Jespersen and Shiraz A. Shah and Ling Deng and J. Stokholm and H. Bisgaard and D. Nielsen and S. Sørensen and S. Rasmussen},
+doi = {10.1101/2021.07.07.451412},
+pmid = {35181661},
+}
+
+@article{eef4819602a161086b94f7f95ff7c44b9f965294,
+title = {Exploring the Consistency of the Quality Scores with Machine Learning for Next-Generation Sequencing Experiments},
+year = {2018},
+url = {https://www.semanticscholar.org/paper/eef4819602a161086b94f7f95ff7c44b9f965294},
+abstract = {Background Next-generation sequencing enables massively parallel processing, allowing lower cost than the other sequencing technologies. In the subsequent analysis with the NGS data, one of the major concerns is the reliability of variant calls. Although researchers can utilize raw quality scores of variant calling, they are forced to start the further analysis without any preevaluation of the quality scores. Method We presented a machine learning approach for estimating quality scores of variant calls derived from BWA+GATK. We analyzed correlations between the quality score and these annotations, specifying informative annotations which were used as features to predict variant quality scores. To test the predictive models, we simulated 24 paired-end Illumina sequencing reads with 30x coverage base. Also, twenty-four human genome sequencing reads resulting from Illumina paired-end sequencing with at least 30x coverage were secured from the Sequence Read Archive. Results Using BWA+GATK, VCFs were derived from simulated and real sequencing reads. We observed that the prediction models learned by RFR outperformed other algorithms in both simulated and real data. The quality scores of variant calls were highly predictable from informative features of GATK Annotation Modules in the simulated human genome VCF data (R2: 96.7%, 94.4%, and 89.8% for RFR, MLR, and NNR, respectively). The robustness of the proposed data-driven models was consistently maintained in the real human genome VCF data (R2: 97.8% and 96.5% for RFR and MLR, respectively).},
+author = {E. Coşgun and Min Oh},
+doi = {10.1155/2020/8531502},
+pmid = {32219145},
+}
+
+@article{3bfd1ef71c9914d65792f28c2f54c731f027f539,
+title = {Large-scale comparative review and assessment of computational methods for phage virion proteins identification},
+year = {2022},
+url = {https://www.semanticscholar.org/paper/3bfd1ef71c9914d65792f28c2f54c731f027f539},
+abstract = {Phage virion proteins (PVPs) are effective at recognizing and binding to host cell receptors while having no deleterious effects on human or animal cells. Understanding their functional mechanisms is regarded as a critical goal that will aid in rational antibacterial drug discovery and development. Although high-throughput experimental methods for identifying PVPs are considered the gold standard for exploring crucial PVP features, these procedures are frequently time-consuming and labor-intensive. Thusfar, more than ten sequence-based predictors have been established for the in silico identification of PVPs in conjunction with traditional experimental approaches. As a result, a revised and more thorough assessment is extremely desirable. With this purpose in mind, we first conduct a thorough survey and evaluation of a vast array of 13 state-of-the-art PVP predictors. Among these PVP predictors, they can be classified into three groups according to the types of machine learning (ML) algorithms employed (i.e. traditional ML-based methods, ensemble-based methods and deep learning-based methods). Subsequently, we explored which factors are important for building more accurate and stable predictors and this included training/independent datasets, feature encoding algorithms, feature selection methods, core algorithms, performance evaluation metrics/strategies and web servers. Finally, we provide insights and future perspectives for the design and development of new and more effective computational approaches for the detection and characterization of PVPs.},
+author = {Muhammad Kabir and C. Nantasenamat and Sakawrat Kanthawong and Phasit Charoenkwan and W. Shoombuatong},
+doi = {10.17179/excli2021-4411},
+pmid = {35145365},
+}
+
+@article{d82093d48a9d20ddda3405a2ff5530eaca055bf9,
+title = {DeepCapTail: A Deep Learning Framework to Predict Capsid and Tail Proteins of Phage Genomes},
+year = {2018},
+url = {https://www.semanticscholar.org/paper/d82093d48a9d20ddda3405a2ff5530eaca055bf9},
+abstract = {The capsid and tail proteins are considered the main structural proteins for phages and also their footprint since they exist only in phage genomes. These proteins are known to lack sequence conservation, making them extremely diverse and thus posing a major challenge to identify and annotate them in genomic sequences. In this study, we aim to overcome this challenge and predict these proteins by using deep neural networks with composition-based features. We develop two models trained with k-mer features to predict capsid and tail proteins respectively. Evaluating the models on two different testing sets shows that they outperform state-of-the-art methods with improved F-1 scores.},
+author = {D. Abid and Liqing Zhang},
+doi = {10.1101/477885},
+}
+
+@article{4619da34be2d50fc983bf09c6fd2971d11d4043d,
+title = {Identifying Phage Virion Proteins by Using Two-Step Feature Selection Methods},
+year = {2018},
+url = {https://www.semanticscholar.org/paper/4619da34be2d50fc983bf09c6fd2971d11d4043d},
+abstract = {Accurate identification of phage virion protein is not only a key step for understanding the function of the phage virion protein but also helpful for further understanding the lysis mechanism of the bacterial cell. Since traditional experimental methods are time-consuming and costly for identifying phage virion proteins, it is extremely urgent to apply machine learning methods to accurately and efficiently identify phage virion proteins. In this work, a support vector machine (SVM) based method was proposed by mixing multiple sets of optimal g-gap dipeptide compositions. The analysis of variance (ANOVA) and the minimal-redundancy-maximal-relevance (mRMR) with an increment feature selection (IFS) were applied to single out the optimal feature set. In the five-fold cross-validation test, the proposed method achieved an overall accuracy of 87.95%. We believe that the proposed method will become an efficient and powerful method for scientists concerning phage virion proteins.},
+author = {Jiu-Xin Tan and Fu-Ying Dao and Hao Lv and Pengmian Feng and H. Ding},
+doi = {10.3390/molecules23082000},
+pmid = {30103458},
+}
+
+@article{0ded6bcbd6adcd53e74b254ed4c1c456e7159273,
+title = {DeePVP: Identification and classification of phage virion proteins using deep learning},
+year = {2021},
+url = {https://www.semanticscholar.org/paper/0ded6bcbd6adcd53e74b254ed4c1c456e7159273},
+abstract = {The poor annotation of phage virion protein (PVP) is the bottleneck of many areas of viral research, such as viral phylogenetic analysis, viral host identification and antibacterial drug design. Because of the high diversity of the PVP sequences, the PVP annotation remains a great challenging bioinformatic task. Based on deep learning, we present DeePVP that contains a main module and an extended module. The main module aims to identify the PVPs from non-PVP over a phage genome, while the extended module can further classify the predicted PVP into one of the ten major classes of PVP. Compared with the state-of-the-art tools that can distinguish PVP from non-PVP, DeePVP’s main module performs much better, with an F1-score 9.05% higher in the PVP identification task. Compared with PhANNs, a tool that can further classify the predicted PVP into a specific class, the overall accuracy of DeePVP’s extended module is approximately 3.72% higher in the PVP classification task. Two application cases on the genome of mycobacteriophage PDRPxv and Escherichia phage HP3 show that the predictions of DeePVP are much more reliable and can better reveal the compact PVP-enriched region, which may be conserved during the viral evolution process, over the phage genome.},
+author = {Zhencheng Fang and Tao Feng and Hongwei Zhou and Muxuan Chen},
+doi = {10.1101/2021.10.23.465539},
+pmid = {35950840},
+}
+
+@article{7abc67d4d1cef0f1c8ef8913509b0d3adfb42c3b,
+title = {iPVP-MCV: A Multi-Classifier Voting Model for the Accurate Identification of Phage Virion Proteins},
+year = {2021},
+url = {https://www.semanticscholar.org/paper/7abc67d4d1cef0f1c8ef8913509b0d3adfb42c3b},
+abstract = {The classic structure of a bacteriophage is commonly characterized by complex symmetry. The head of the structure features icosahedral symmetry, whereas the tail features helical symmetry. The phage virion protein (PVP), a type of bacteriophage structural protein, is an essential material of the infectious viral particles and is responsible for multiple biological functions. Accurate identification of PVPs is of great significance for comprehending the interaction between phages and host bacteria and developing new antimicrobial drugs or antibiotics. However, traditional experimental approaches for identifying PVPs are often time-consuming and laborious. Therefore, the development of computational methods that can efficiently and accurately identify PVPs is desired. In this study, we proposed a multi-classifier voting model called iPVP-MCV to enhance the predictive performance of PVPs based on their amino acid sequences. First, three types of evolutionary features were extracted from the position-specific scoring matrix (PSSM) profiles to represent PVPs and non-PVPs. Then, a set of baseline models were trained based on the support vector machine (SVM) algorithm combined with each type of feature descriptors. Finally, the outputs of these baseline models were integrated to construct the proposed method iPVP-MCV by using the majority voting strategy. Our results demonstrated that the proposed iPVP-MCV model was superior to existing methods when performing the rigorous independent dataset test.},
+author = {Haitao Han and Wenhong Zhu and Chenchen Ding and Taigang Liu},
+doi = {10.3390/sym13081506},
+}
+
+@article{940ca9be19cf58c12fa48954f0d48cfc036374b2,
+title = {Application of machine learning in bacteriophage research},
+year = {2021},
+url = {https://www.semanticscholar.org/paper/940ca9be19cf58c12fa48954f0d48cfc036374b2},
+abstract = {Phages are one of the key components in the structure, dynamics, and interactions of microbial communities in different bins. It has a clear impact on human health and the food industry. Bacteriophage characterization using in vitro approaches are time/cost consuming and laborious tasks. On the other hand, with the advent of new high-throughput sequencing technology, the development of a powerful computational framework to characterize the newly identified bacteriophages is inevitable for future research. Machine learning includes powerful techniques that enable the analysis of complex datasets for knowledge discovery and pattern recognition. In this study, we have conducted a comprehensive review of machine learning methods application using different types of features were applied in various aspects of bacteriophage research including, automated curation, identification, classification, host species recognition, virion protein identification, and life cycle prediction. Moreover, potential limitations and advantages of the developed frameworks were discussed.},
+author = {Y. Nami and Nazila Imeni and B. Panahi},
+doi = {10.1186/s12866-021-02256-5},
+pmid = {34174831},
+}
+
+@article{ddc6b167a23c97a6ba378a72b6b5899f8ec4afce,
+title = {SCORPION is a stacking-based ensemble learning framework for accurate prediction of phage virion proteins},
+year = {2022},
+url = {https://www.semanticscholar.org/paper/ddc6b167a23c97a6ba378a72b6b5899f8ec4afce},
+abstract = {Fast and accurate identification of phage virion proteins (PVPs) would greatly aid facilitation of antibacterial drug discovery and development. Although, several research efforts based on machine learning (ML) methods have been made for in silico identification of PVPs, these methods have certain limitations. Therefore, in this study, we propose a new computational approach, termed SCORPION, (StaCking-based Predictior fOR Phage VIrion PrOteiNs), to accurately identify PVPs using only protein primary sequences. Specifically, we explored comprehensive 13 different feature descriptors from different aspects (i.e., compositional information, composition-transition-distribution information, position-specific information and physicochemical properties) with 10 popular ML algorithms to construct a pool of optimal baseline models. These optimal baseline models were then used to generate probabilistic features (PFs) and considered as a new feature vector. Finally, we utilized a two-step feature selection strategy to determine the optimal PF feature vector and used this feature vector to develop a stacked model (SCORPION). Both tenfold cross-validation and independent test results indicate that SCORPION achieves superior predictive performance than its constitute baseline models and existing methods. We anticipate SCORPION will serve as a useful tool for the cost-effective and large-scale screening of new PVPs. The source codes and datasets for this work are available for downloading in the GitHub repository (https://github.com/saeed344/SCORPION).},
+author = {Saeed Ahmad and Phasit Charoenkwan and J. Quinn and M. Moni and M. Hasan and P. Lio’ and W. Shoombuatong},
+doi = {10.1038/s41598-022-08173-5},
+pmid = {35260777},
+}
+
+@article{2d9682907a5b444fa35a78dcbd644925e2754df5,
+title = {Identification of Bacteriophage Virion Proteins Using Multinomial Naïve Bayes with g-Gap Feature Tree},
+year = {2018},
+url = {https://www.semanticscholar.org/paper/2d9682907a5b444fa35a78dcbd644925e2754df5},
+abstract = {Bacteriophages, which are tremendously important to the ecology and evolution of bacteria, play a key role in the development of genetic engineering. Bacteriophage virion proteins are essential materials of the infectious viral particles and in charge of several of biological functions. The correct identification of bacteriophage virion proteins is of great importance for understanding both life at the molecular level and genetic evolution. However, few computational methods are available for identifying bacteriophage virion proteins. In this paper, we proposed a new method to predict bacteriophage virion proteins using a Multinomial Naïve Bayes classification model based on discrete feature generated from the g-gap feature tree. The accuracy of the proposed model reaches 98.37% with MCC of 96.27% in 10-fold cross-validation. This result suggests that the proposed method can be a useful approach in identifying bacteriophage virion proteins from sequence information. For the convenience of experimental scientists, a web server (PhagePred) that implements the proposed predictor is available, which can be freely accessed on the Internet.},
+author = {Y. Pan and Hui Gao and Hao Lin and Z. Liu and Lixia Tang and Songtao Li},
+doi = {10.3390/ijms19061779},
+pmid = {29914091},
+}
+
+@article{797e882a6bbe070073edfa666670d688c66f412b,
+title = {Defining a Core Genome for the Herpesvirales and Exploring their Evolutionary Relationship with the Caudovirales},
+year = {2019},
+url = {https://www.semanticscholar.org/paper/797e882a6bbe070073edfa666670d688c66f412b},
+abstract = {The order Herpesvirales encompasses a wide variety of important and broadly distributed human pathogens. During the last decades, similarities in the viral cycle and the structure of some of their proteins with those of the order Caudovirales, the tailed bacterial viruses, have brought speculation regarding the existence of an evolutionary relationship between these clades. To evaluate such hypothesis, we used over 600 Herpesvirales and 2000 Caudovirales complete genomes to search for the presence or absence of clusters of orthologous protein domains and constructed a dendrogram based on their compositional similarities. The results obtained strongly suggest an evolutionary relationship between the two orders. Furthermore, they allowed to propose a core genome for the Herpesvirales, composed of 4 proteins, including the ATPase subunit of the DNA-packaging terminase, the only protein with previously verified conservation. Accordingly, a phylogenetic tree constructed with sequences derived from the clusters associated to these proteins grouped the Herpesvirales strains accordingly to the established families and subfamilies. Overall, this work provides results supporting the hypothesis that the two orders are evolutionarily related and contributes to the understanding of the history of the Herpesvirales.},
+author = {J. Andrade-Martínez and J. L. Moreno-Gallego and A. Reyes},
+doi = {10.1038/s41598-019-47742-z},
+pmid = {31383901},
+}
+
+@article{3111251c90e6d693fef758ba7428c666ffb42639,
+title = {iDPPIV-SCM: A sequence-based predictor for identifying and analyzing dipeptidyl peptidase IV (DPP-IV) inhibitory peptides using a scoring card method.},
+year = {2020},
+url = {https://www.semanticscholar.org/paper/3111251c90e6d693fef758ba7428c666ffb42639},
+abstract = {The inhibition of dipeptidyl peptidase IV (DPP-IV, E.C.3.4.14.5) is well recognized as a new avenue for the treatment of Type 2 diabetes (T2D). Until now, peptide-like DDP-IV inhibitors have been shown to normalize the blood glucose concentration in T2D subjects. To the best of our knowledge, there is yet no computational model for predicting and analyzing DPP-IV inhibitory peptides using sequence information. In this study, we present for the first time a simple and easily interpretable sequence-based predictor using the scoring card method (SCM) for modeling the bioactivity of DPP-IV inhibitory peptides (iDPPIV-SCM). Particularly, the iDPPIV-SCM was developed by employing the SCM method together with the propensity scores of amino acids. Rigorous independent test results demonstrated that the proposed iDPPIV-SCM was found to be superior to those of well-known machine learning (ML) classifiers (e.g. k-nearest neighbor, logistic regression and decision tree) with demonstrated improvements of 2-11%, 4-22% and 7-10% for accuracy, MCC and AUC, respectively, while also achieving comparable results to that of support vector machine. Furthermore, the analysis of estimated propensity scores of amino acids as derived from the iDPPIV-SCM was performed so as to provide a more in-depth understanding on the molecular basis for enhancing the DPP-IV inhibitory potency. Taken together, these results revealed that iDPPIV-SCM was superior to those of other well-known ML classifiers owing to its simplicity, interpretability and validity. For the convenience of biologists, the predictive model is deployed as a publicly accessible web server at http://camt.pythonanywhere.com/iDPPIV-SCM. It is anticipated that iDPPIV-SCM can serve as an important tool for the rapid screening of promising DPP-IV inhibitory peptides prior to their synthesis.},
+author = {Phasit Charoenkwan and Sakawrat Kanthawong and C. Nantasenamat and M. Hasan and W. Shoombuatong},
+doi = {10.1021/acs.jproteome.0c00590},
+pmid = {32897718},
+}
+
+@article{78e285e91c92f46082056c19ded027424f494144,
+title = {MultiPhATE2: Code for Functional Annotation and Comparison of Bacteriophage Genomes},
+year = {2020},
+url = {https://www.semanticscholar.org/paper/78e285e91c92f46082056c19ded027424f494144},
+abstract = {To address the need for improved tools for annotation and comparative genomics of bacteriophage genomes, we developed multiPhATE2. As an extension of the multiPhATE code, multiPhATE2 performs gene finding and functional sequence annotation of predicted gene and protein sequences, and additional search algorithms and databases extend the search space of the original functional annotation subsystem. MultiPhATE2 includes comparative genomics codes for gene matching among sets of input bacteriophage genomes, and scales well to large input data sets with the incorporation of multiprocessing in the functional annotation and comparative genomics subsystems. MultiPhATE2 was implemented in Python 3.7 and runs as a command-line code under Linux or MAC-OS. MultiPhATE2 is freely available under an open-source GPL-3 license at https://github.com/carolzhou/multiPhATE2. Instructions for acquiring the databases and third party codes used by multiPhATE2 are found in the README file included with the distribution. Users may report bugs by submitting issues to the project GitHub repository webpage. Contact: zhou4@llnl.gov or multiphate@gmail.com. Supplementary materials, which demonstrate the outputs of multiPhATE2, are available in a GitHub repository, at https://github.com/carolzhou/multiPhATE2_supplementaryData/.},
+author = {Carol L. Ecale Zhou and Jeffrey A. Kimbrel and R. Edwards and K. McNair and B. Souza and S. Malfatti},
+doi = {10.1101/2020.10.05.324566},
+}
+
+@article{a1bf69c36b010a4d13c1c8ff6b7658123e25c00b,
+title = {MetaPop: A pipeline for macro- and micro-diversity analyses and visualization of microbial and viral metagenome-derived populations},
+year = {2020},
+url = {https://www.semanticscholar.org/paper/a1bf69c36b010a4d13c1c8ff6b7658123e25c00b},
+abstract = {Background Microbes and their viruses are hidden engines driving Earth’s ecosystems from the oceans and soils to humans and bioreactors. Though gene marker approaches can now be complemented by genome-resolved studies of inter- (macrodiversity) and intra- (microdiversity) population variation, analytical tools to do so remain scattered or under-developed. Results Here we introduce MetaPop, an open-source bioinformatic pipeline that provides a single interface to analyze and visualize microbial and viral community metagenomes at both the macro- and micro-diversity levels. Macrodiversity estimates include population abundances and α- and β-diversity. Microdiversity calculations include identification of single nucleotide polymorphisms, novel codon-constrained linkage of SNPs, nucleotide diversity (π and θ) and selective pressures (pN/pS and Tajima’s D) within and fixation indices (FST) between populations. MetaPop will also identify genes with distinct codon usage. Following rigorous validation, we applied MetaPop to the gut viromes of autistic children that underwent fecal microbiota transfers and their neurotypical peers. The macrodiversity results confirmed our prior findings for viral populations (microbial shotgun metagenomes were not available), that diversity did not significantly differ between autistic and neurotypical children. However, by also quantifying microdiversity, MetaPop revealed lower average viral nucleotide diversity (π) in autistic children. Analysis of the percentage of genomes detected under positive selection was also lower among autistic children, suggesting that higher viral π in neurotypical children may be beneficial because it allows populations to better ‘bet hedge’ in changing environments. Further, comparisons of microdiversity pre- and post-FMT in the autistic children revealed that the delivery FMT method (oral versus rectal) may influence viral activity and engraftment of microdiverse viral populations, with children who received their FMT rectally having higher microdiversity post-FMT. Overall, these results show that analyses at the macro-level alone can miss important biological differences. Conclusions These findings suggest that standardized population and genetic variation analyses will be invaluable for maximizing biological inference, and MetaPop provides a convenient tools package to explore the dual impact of macro- and micro-diversity across microbial communities.},
+author = {A. Gregory and Kenji Gerhardt and Zhi-Ping Zhong and B. Bolduc and B. Temperton and K. Konstantinidis and M. Sullivan},
+doi = {10.1101/2020.11.01.363960},
+}
+
+@article{52764e6ae096857aaf476f8ebdecedd51e28a2c5,
+title = {Closely related Lak megaphages replicate in the microbiomes of diverse animals},
+year = {2021},
+url = {https://www.semanticscholar.org/paper/52764e6ae096857aaf476f8ebdecedd51e28a2c5},
+abstract = {Summary Lak phages with alternatively coded ∼540 kbp genomes were recently reported to replicate in Prevotella in microbiomes of humans that consume a non-Western diet, baboons, and pigs. Here, we explore Lak phage diversity and broader distribution using diagnostic polymerase chain reaction and genome-resolved metagenomics. Lak phages were detected in 13 animal types, including reptiles, and are particularly prevalent in pigs. Tracking Lak through the pig gastrointestinal tract revealed significant enrichment in the hindgut compared to the foregut. We reconstructed 34 new Lak genomes, including six curated complete genomes, all of which are alternatively coded. An anomalously large (∼660 kbp) complete genome reconstructed for the most deeply branched Lak from a horse microbiome is also alternatively coded. From the Lak genomes, we identified proteins associated with specific animal species; notably, most have no functional predictions. The presence of closely related Lak phages in diverse animals indicates facile distribution coupled to host-specific adaptation.},
+author = {Marco A. Crisci and Lin-Xing Chen and Audra E. Devoto and Adair L. Borges and N. Bordin and R. Sachdeva and Adrian Tett and A. Sharrar and N. Segata and Francesco Debenedetti and M. Bailey and R. Burt and Rhiannon M Wood and Lewis J. Rowden and Paula M. Corsini and S. van Winden and M. Holmes and Shufei Lei and J. Banfield and J. Santini},
+doi = {10.1016/j.isci.2021.102875},
+pmid = {34386733},
+}
+
+@article{ab778d4656d2a0d7f691c3ac20a7cabeb9b0db3f,
+title = {Phage Commander, an Application for Rapid Gene Identification in Bacteriophage Genomes Using Multiple Programs},
+year = {2021},
+url = {https://www.semanticscholar.org/paper/ab778d4656d2a0d7f691c3ac20a7cabeb9b0db3f},
+abstract = {},
+author = {Matt Lazeroff and Geordie Ryder and Sarah L. Harris and Philippos K. Tsourkas},
+doi = {10.1089/phage.2020.0044},
+}
+
+@article{b7ba524fa5d557096dba0e37eb80ffd45ee013fe,
+title = {Comparative analysis of gene prediction tools for viral genome annotation},
+year = {2021},
+url = {https://www.semanticscholar.org/paper/b7ba524fa5d557096dba0e37eb80ffd45ee013fe},
+abstract = {The number of newly available viral genomes and metagenomes has increased exponentially since the development of high throughput sequencing platforms and genome analysis tools. Bioinformatic annotation pipelines are largely based on open reading frame (ORF) calling software, which identifies genes independently of the sequence taxonomical background. Although ORF-calling programs provide a rapid genome annotation, they can misidentify ORFs and start codons; errors that might be perpetuated and propagated over time. This study evaluated the performance of multiple ORF-calling programs for viral genome annotation against the complete RefSeq viral database. Programs outputs varied when considering the viral nucleic acid type versus the viral host. According to the number of ORFs, Prodigal and Metaprodigal were the most accurate programs for DNA viruses, while FragGeneScan and Prodigal generated the most accurate outputs for RNA viruses. Similarly, Prodigal outperformed the benchmark for viruses infecting prokaryotes, and GLIMMER and GeneMarkS produced the most accurate annotations for viruses infecting eukaryotes. When the coordinates of the ORFs were considered, Prodigal scored high for all scenarios except for RNA viruses, where GeneMarkS generated the most reliable results. Overall, the quality of the coordinates predicted for RNA viruses was poorer than for DNA viruses, suggesting the need for improved ORF-calling programs to deal with RNA viruses. Moreover, none of the ORF-calling programs reached 90% accuracy for annotation of DNA viruses. Any automatic annotation can still be improved by manual curation, especially when the presence of ORFs is validated with wet-lab experiments. However, our evaluation of the current ORF-calling programs is expected to be useful for the improvement of viral genome annotation pipelines and highlights the need for more expression data to improve the rigor of reference genomes.},
+author = {E. González-Tortuero and R. Krishnamurthi and H. Allison and I. Goodhead and Chloe E. James},
+doi = {10.1101/2021.12.11.472104},
+}
+
+@article{a1f13ab89447325c28ccf9fefcfed4cdf62d1d29,
+title = {MetaGeneMark-2: Improved Gene Prediction in Metagenomes},
+year = {2022},
+url = {https://www.semanticscholar.org/paper/a1f13ab89447325c28ccf9fefcfed4cdf62d1d29},
+abstract = {Accurate prediction of protein-coding genes in metagenomic contigs presents a well-known challenge. Particularly difficult is to identify short and incomplete genes as well as positions of translation initiation sites. It is frequently assumed that initiation of translation in prokaryotes is controlled by a ribosome binding site (RBS), a sequence with the Shine-Dalgarno (SD) consensus situated in the 5’ UTR. However, ∼30% of the 5,007 genomes, representing the RefSeq collection of prokaryotic genomes, have either non-SD RBS sequences or no RBS site due to physical absence of the 5’ UTR (the case of leaderless transcription). Predictions of the gene 3’ ends are much more accurate; still, errors could occur due to the use of incorrect genetic code. Hence, an effective gene finding algorithm would identify true genetic code in a process of the sequence analysis. In this work prediction of gene starts was improved by inferring the GC content dependent generating functions for RBS sequences as well as for promoter sequences involved in leaderless transcription. An additional feature of the algorithm was the ability to identify alternative genetic code defined by a reassignment of the TGA stop codon (the only stop codon reassignment type known in prokaryotes). It was demonstrated that MetaGeneMark-2 made more accurate gene predictions in metagenomic sequences than several existing state-of-the-art tools.},
+author = {Karl Gemayel and A. Lomsadze and M. Borodovsky},
+doi = {10.1101/2022.07.25.500264},
+}
+
+@article{f5bcb480685f4767c261c05adffbac6493cd266d,
+title = {A Method for Improving the Accuracy and Efficiency of Bacteriophage Genome Annotation},
+year = {2019},
+url = {https://www.semanticscholar.org/paper/f5bcb480685f4767c261c05adffbac6493cd266d},
+abstract = {Bacteriophages are the most numerous entities on Earth. The number of sequenced phage genomes is approximately 8000 and increasing rapidly. Sequencing of a genome is followed by annotation, where genes, start codons, and functions are putatively identified. The mainstays of phage genome annotation are auto-annotation programs such as Glimmer and GeneMark. Due to the relatively small size of phage genomes, many groups choose to manually curate auto-annotation results to increase accuracy. An additional benefit of manual curation of auto-annotated phage genomes is that the process is amenable to be performed by students, and has been shown to improve student recruitment to the sciences. However, despite its greater accuracy and pedagogical value, manual curation suffers from high labor cost, lack of standardization and a degree of subjectivity in decision making, and susceptibility to mistakes. Here, we present a method developed in our lab that is designed to produce accurate annotations while reducing subjectivity and providing a degree of standardization in decision-making. We show that our method produces genome annotations more accurate than auto-annotation programs while retaining the pedagogical benefits of manual genome curation.},
+author = {A. Salisbury and Philippos K. Tsourkas},
+doi = {10.3390/ijms20143391},
+pmid = {31295925},
+}
+
+@article{fee4ca0e77e2f4c05166e127e90dd9ddd79429ca,
+title = {Complete Genome Sequences of Cluster P1 and Cluster C1 Mycobacterium smegmatis Phages Jung and Ronan},
+year = {2020},
+url = {https://www.semanticscholar.org/paper/fee4ca0e77e2f4c05166e127e90dd9ddd79429ca},
+abstract = {We present the complete genome sequences of Mycobacterium smegmatis phages Jung and Ronan, isolated from soil in Las Vegas, Nevada. The phages were isolated and annotated by students enrolled in a course for undergraduate research experience (CURE). Jung is a cluster P1 mycobacteriophage, while Ronan is in cluster C1. ABSTRACT We present the complete genome sequences of Mycobacterium smegmatis phages Jung and Ronan, isolated from soil in Las Vegas, Nevada. The phages were isolated and annotated by students enrolled in a course for undergraduate research experience (CURE). Jung is a cluster P1 mycobacteriophage, while Ronan is in cluster C1.},
+author = {Richard Van and W. Nie and Feruz Abdela and Bardia Eivazi and Dolores Kickbusch and Michael Finkle and Cody Cris and M. Rubinstein and Baylor Akavan and Mahdeed Raja and Jessica Vergara and Wilson Andrade and Abimael Barajas and Jocelyn Sanchez and M. Duenas and Jay Barilla and K. Regner and Christy L. Strong and Philippos K. Tsourkas},
+doi = {10.1128/MRA.00678-20},
+pmid = {32816976},
+}
+
+@article{e35d757310c1f52254ab15bb43d011eb174831bb,
+title = {StackHCV: a web-based integrative machine-learning framework for large-scale identification of hepatitis C virus NS5B inhibitors},
+year = {2021},
+url = {https://www.semanticscholar.org/paper/e35d757310c1f52254ab15bb43d011eb174831bb},
+abstract = {Fast and accurate identification of inhibitors with potency against HCV NS5B polymerase is currently a challenging task. As conventional experimental methods is the gold standard method for the design and development of new HCV inhibitors, they often require costly investment of time and resources. In this study, we develop a novel machine learning-based meta-predictor (termed StackHCV) for accurate and large-scale identification of HCV inhibitors. Unlike the existing method, which is based on single-feature-based approach, we first constructed a pool of various baseline models by employing a wide range of heterogeneous molecular fingerprints with five popular machine learning algorithms (k-nearest neighbor, multi-layer perceptron, partial least squares, random forest and support vectors machine). Secondly, we integrated these baseline models in order to develop the final meta-based model by means of the stacking strategy. Extensive benchmarking experiments showed that StackHCV achieved a more accurate and stable performance as compared to its constituent baseline models on the training dataset and also outperformed the existing predictor on the independent test dataset. To facilitate the high-throughput identification of HCV inhibitors, we built a web server that can be freely accessed at http://camt.pythonanywhere.com/StackHCV. It is expected that StackHCV could be a useful tool for fast and precise identification of potential drugs against HCV NS5B particularly for liver cancer therapy and other clinical applications.},
+author = {A. Malik and Warot Chotpatiwetchkul and Chuleeporn Phanus-umporn and C. Nantasenamat and Phasit Charoenkwan and W. Shoombuatong},
+doi = {10.1007/s10822-021-00418-1},
+pmid = {34622387},
+}
